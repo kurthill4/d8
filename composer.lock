@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a567101df61921ba46f40781adb487cb",
+    "content-hash": "212175dc056793b78803b512bbd5df83",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -989,7 +989,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.19.zip",
-                "reference": null,
+                "reference": "8.x-1.19",
                 "shasum": "87de41eab3c5cd49d4e1b5b764cb3b9d5ad683a0"
             },
             "require": {
@@ -1036,6 +1036,112 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
+            }
+        },
+        {
+            "name": "drupal/bootstrap",
+            "version": "3.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/bootstrap",
+                "reference": "8.x-3.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.3.zip",
+                "reference": "8.x-3.3",
+                "shasum": "008a0c795bc4ad20987fa34a456524740030d77b"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.3",
+                    "datestamp": "1491860942"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "markcarver",
+                    "homepage": "https://www.drupal.org/user/501638"
+                },
+                {
+                    "name": "neardark",
+                    "homepage": "https://www.drupal.org/user/661076"
+                },
+                {
+                    "name": "sylus",
+                    "homepage": "https://www.drupal.org/user/339714"
+                },
+                {
+                    "name": "wundo",
+                    "homepage": "https://www.drupal.org/user/25523"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/bootstrap",
+            "support": {
+                "source": "http://cgit.drupalcode.org/bootstrap"
+            }
+        },
+        {
+            "name": "drupal/bootstrap_layouts",
+            "version": "4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/bootstrap_layouts",
+                "reference": "8.x-4.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_layouts-8.x-4.1.zip",
+                "reference": null,
+                "shasum": "3f1e7598e9a476e4d396ddc1e49cd2851e948a2c"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/layout_plugin": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-4.x": "4.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-4.1",
+                    "datestamp": "1481413087"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "darol100",
+                    "homepage": "https://www.drupal.org/user/2667123"
+                },
+                {
+                    "name": "hctom",
+                    "homepage": "https://www.drupal.org/user/112790"
+                },
+                {
+                    "name": "markcarver",
+                    "homepage": "https://www.drupal.org/user/501638"
+                }
+            ],
+            "description": "This module is going to generate layouts with Bootstrap grid system.",
+            "homepage": "https://www.drupal.org/project/bootstrap_layouts",
+            "support": {
+                "source": "http://cgit.drupalcode.org/bootstrap_layouts"
             }
         },
         {
@@ -1485,7 +1591,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0-beta1.zip",
-                "reference": null,
+                "reference": "8.x-3.0-beta1",
                 "shasum": "8798ba7640a9188df9f9043e6f49b5ff0252e3dc"
             },
             "require": {
@@ -1557,6 +1663,61 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/ctools",
                 "issues": "https://www.drupal.org/project/issues/ctools"
+            }
+        },
+        {
+            "name": "drupal/layout_plugin",
+            "version": "1.0.0-alpha23",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/layout_plugin",
+                "reference": "8.x-1.0-alpha23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/layout_plugin-8.x-1.0-alpha23.zip",
+                "reference": "8.x-1.0-alpha23",
+                "shasum": "c79992e2f52ac6a7c8dc0706512f2c70fc9f5e11"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha23",
+                    "datestamp": "1476269960"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "David Snopek",
+                    "homepage": "https://www.drupal.org/user/172527"
+                },
+                {
+                    "name": "Bram Goffings",
+                    "homepage": "https://www.drupal.org/user/266527"
+                },
+                {
+                    "name": "Fredrik Lassen",
+                    "homepage": "https://www.drupal.org/user/243377"
+                }
+            ],
+            "description": "An API module to hold the Drupal 8 plugin manager for layouts.",
+            "homepage": "https://www.drupal.org/project/layout_plugin",
+            "keywords": [
+                "layout",
+                "php"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/layout_plugin"
             }
         },
         {
