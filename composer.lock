@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "da22f2489e3b91e42ec5b93cbd30146f",
+    "content-hash": "d218cc7b86ecb5dd51486f2f14868a85",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2643,7 +2643,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/migrate_source_csv-8.x-2.0.zip",
-                "reference": null,
+                "reference": "8.x-2.0",
                 "shasum": "056845ce1679a051733b12576e3204609dce293d"
             },
             "require": {
@@ -2729,6 +2729,271 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/migrate_tools"
             }
+        },
+        {
+            "name": "drupal/page_manager",
+            "version": "1.0.0-alpha24",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/page_manager",
+                "reference": "8.x-1.0-alpha24"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/page_manager-8.x-1.0-alpha24.zip",
+                "reference": "8.x-1.0-alpha24",
+                "shasum": "f0d5a6ff5ef1151265fd21c1758455902e6940df"
+            },
+            "require": {
+                "drupal/core": "^8.0.5",
+                "drupal/ctools": "~3.0.0-alpha21"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha24",
+                    "datestamp": "1471723439"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Tim Plunkett",
+                    "homepage": "https://www.drupal.org/u/tim.plunkett",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "dsnopek",
+                    "homepage": "https://www.drupal.org/user/266527"
+                },
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "tim.plunkett",
+                    "homepage": "https://www.drupal.org/user/241634"
+                }
+            ],
+            "description": "Provides a way to place blocks on a custom page.",
+            "homepage": "https://www.drupal.org/project/page_manager",
+            "support": {
+                "source": "https://git.drupal.org/project/page_manager.git",
+                "issues": "https://www.drupal.org/project/issues/page_manager",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/paragraphs",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/paragraphs",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/paragraphs-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "c678e5704a98c6a0549e415412da081cfeb03a00"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/entity_reference_revisions": "*"
+            },
+            "require-dev": {
+                "drupal/diff": "*",
+                "drupal/field_group": "*",
+                "drupal/inline_entity_form": "*",
+                "drupal/replicate": "*",
+                "drupal/search_api": "*",
+                "drupal/search_api_db": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1487331784"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Frans",
+                    "homepage": "https://www.drupal.org/user/514222"
+                },
+                {
+                    "name": "Primsi",
+                    "homepage": "https://www.drupal.org/user/282629"
+                },
+                {
+                    "name": "jeroen.b",
+                    "homepage": "https://www.drupal.org/user/1853532"
+                },
+                {
+                    "name": "miro_dietiker",
+                    "homepage": "https://www.drupal.org/user/227761"
+                }
+            ],
+            "description": "Enables the creation of paragraphs entities.",
+            "homepage": "https://www.drupal.org/project/paragraphs",
+            "support": {
+                "source": "http://cgit.drupalcode.org/paragraphs"
+            }
+        },
+        {
+            "name": "drupal/paragraphs_previewer",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/paragraphs_previewer",
+                "reference": "a02b5e209c377262206706d7e32faca93c437ece"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/paragraphs": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1463617439"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "recrit",
+                    "homepage": "https://www.drupal.org/user/452914"
+                }
+            ],
+            "description": "Provides a rendered preview of a paragraphs item while on an entity form.",
+            "homepage": "https://www.drupal.org/project/paragraphs_previewer",
+            "support": {
+                "source": "http://cgit.drupalcode.org/paragraphs_previewer"
+            },
+            "time": "2016-05-19 00:21:58"
+        },
+        {
+            "name": "drupal/pathauto",
+            "version": "1.0.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/pathauto",
+                "reference": "8.x-1.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0-rc1.zip",
+                "reference": "8.x-1.0-rc1",
+                "shasum": "2460339ac8739317b3c4e66e9ce7142cc02adac3"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/ctools": "*",
+                "drupal/token": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc1",
+                    "datestamp": "1485702484"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "Freso",
+                    "homepage": "https://www.drupal.org/user/27504"
+                },
+                {
+                    "name": "greggles",
+                    "homepage": "https://www.drupal.org/user/36762"
+                }
+            ],
+            "description": "Provides a mechanism for modules to automatically generate aliases for the content they manage.",
+            "homepage": "https://www.drupal.org/project/pathauto",
+            "support": {
+                "source": "http://cgit.drupalcode.org/pathauto"
+            }
+        },
+        {
+            "name": "drupal/taxonomy_manager",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/taxonomy_manager",
+                "reference": "793f2257636b285da379b77fd22ff5a70ef00073"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1449008639"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "kalinchernev",
+                    "homepage": "https://www.drupal.org/user/231185"
+                },
+                {
+                    "name": "mh86",
+                    "homepage": "https://www.drupal.org/user/59747"
+                }
+            ],
+            "description": "Tool for administrating taxonomy terms.",
+            "homepage": "https://www.drupal.org/project/taxonomy_manager",
+            "support": {
+                "source": "http://cgit.drupalcode.org/taxonomy_manager"
+            },
+            "time": "2015-12-01 22:19:12"
         },
         {
             "name": "drupal/token",
@@ -7328,7 +7593,11 @@
         "drupal/field_group": 5,
         "drupal/file_entity": 10,
         "drupal/libraries": 20,
-        "drupal/media_entity_video": 10
+        "drupal/media_entity_video": 10,
+        "drupal/page_manager": 15,
+        "drupal/paragraphs_previewer": 20,
+        "drupal/pathauto": 5,
+        "drupal/taxonomy_manager": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
