@@ -29,6 +29,7 @@
         "drupal/devel": "^1.0@RC",
         "drupal/entity_clone": "1.x-dev",
         "drupal/entity_reference_revisions": "^1.2",
+        "drupal/feeds": "3.x-dev",
         "drupal/field_group": "^1.0@RC",
         "drupal/file_entity": "^2.0@beta",
         "drupal/imce": "^1.5",
