@@ -1,4 +1,4 @@
 Notes file.
 
 2017-04-17	Added notes files, and testing bnranching.
-
+2017-04-17	With multiple people working on composer stuff (e.g., composer require...), there can be merge conflicts in the composer.lock; this would typically occur at the composer.hash line; other lines could be automerged.  Since the hash is generated from the .json file, it appears thnat one way to deal with this is to just accept one has or the other, then do a "composer update nothing" which will regenerate the hash...
