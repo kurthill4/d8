@@ -20,5 +20,8 @@ regions:
   page_bottom: 'Page bottom'
 
 libraries:
-  - 'THEMENAME/global-styling'
-  - 'THEMENAME/bootstrap-scripts'
+  - 'miramar/global-styling'
+  - 'miramar/bootstrap-scripts'
+  - 'miramar/flickity'
+  - 'miramar/Roboto'
+  - 'miramar/Oswald'
