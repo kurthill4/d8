@@ -41,3 +41,12 @@ Oswald:
     theme:
       //fonts.googleapis.com/css?family=Oswald:400: { type: external }
     scss/style.css: {}
+
+Nixie:
+  license:
+    name: Apache License 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0
+  css:
+    theme:
+      //fonts.googleapis.com/css?family=Nixie+One:400: { type: external }
+    scss/style.css: {}
