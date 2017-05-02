@@ -1,0 +1,29 @@
+uuid: d029d48c-0706-42b1-b307-08a615719bb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_contact
+    - taxonomy.vocabulary.student_life
+id: taxonomy_term.student_life.field_contact
+field_name: field_contact
+entity_type: taxonomy_term
+bundle: student_life
+label: Contact
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: field_last_name
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

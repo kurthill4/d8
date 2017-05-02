@@ -1,0 +1,19 @@
+uuid: c6080dd3-64cc-40e2-ac67-f87c1b35939e
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - telephone
+id: taxonomy_term.field_tty
+field_name: field_tty
+entity_type: taxonomy_term
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

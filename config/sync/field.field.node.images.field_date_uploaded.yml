@@ -1,0 +1,24 @@
+uuid: 260a9826-7969-4fe4-abc4-37d249ec9590
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_uploaded
+    - node.type.images
+  module:
+    - datetime
+id: node.images.field_date_uploaded
+field_name: field_date_uploaded
+entity_type: node
+bundle: images
+label: 'Date Uploaded'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

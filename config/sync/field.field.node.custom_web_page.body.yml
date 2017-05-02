@@ -1,0 +1,22 @@
+uuid: 145a25e4-b768-42b4-b800-4a99593d740c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.custom_web_page
+  module:
+    - text
+id: node.custom_web_page.body
+field_name: body
+entity_type: node
+bundle: custom_web_page
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

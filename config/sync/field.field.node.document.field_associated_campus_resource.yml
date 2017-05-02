@@ -1,0 +1,28 @@
+uuid: 1ada0003-6d24-4162-865b-59e58441315b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_associated_campus_resource
+    - node.type.document
+    - taxonomy.vocabulary.campus_resources
+id: node.document.field_associated_campus_resource
+field_name: field_associated_campus_resource
+entity_type: node
+bundle: document
+label: 'Associated Campus Resource'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      campus_resources: campus_resources
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

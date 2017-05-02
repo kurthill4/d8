@@ -1,0 +1,23 @@
+uuid: be3be91a-1017-43b7-8e7a-d1f93a0db814
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_external_website
+  module:
+    - link
+    - user
+id: user.user.field_external_website
+field_name: field_external_website
+entity_type: user
+bundle: user
+label: 'External Website'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

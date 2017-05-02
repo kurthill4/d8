@@ -1,0 +1,44 @@
+uuid: 9485dea9-a2e3-45fe-978e-f7e248b8ee08
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slideshows.body
+    - field.field.node.slideshows.field_associated_campus_resource
+    - field.field.node.slideshows.field_associated_committee
+    - field.field.node.slideshows.field_associated_department
+    - field.field.node.slideshows.field_associated_faculty_member
+    - field.field.node.slideshows.field_associated_program
+    - field.field.node.slideshows.field_date_uploaded
+    - field.field.node.slideshows.field_short_description
+    - field.field.node.slideshows.field_uploaded_file
+    - node.type.slideshows
+  module:
+    - text
+    - user
+id: node.slideshows.teaser
+targetEntityType: node
+bundle: slideshows
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_associated_campus_resource: true
+  field_associated_committee: true
+  field_associated_department: true
+  field_associated_faculty_member: true
+  field_associated_program: true
+  field_date_uploaded: true
+  field_short_description: true
+  field_uploaded_file: true

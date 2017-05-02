@@ -1,0 +1,22 @@
+uuid: a34525d8-de88-4e22-8c17-9450cf9bb934
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - miramar
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: miramar_help
+theme: miramar
+region: help
+weight: -9
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

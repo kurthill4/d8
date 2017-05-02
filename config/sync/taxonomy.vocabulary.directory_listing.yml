@@ -1,0 +1,9 @@
+uuid: 51bf4678-ec21-4e02-8bf8-4a6351fe9aed
+langcode: en
+status: true
+dependencies: {  }
+name: 'Directory Listing'
+vid: directory_listing
+description: ''
+hierarchy: 0
+weight: 0
