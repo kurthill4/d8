@@ -5,3 +5,8 @@
  *
  * Place your custom PHP code in this file.
  */
+
+function miramar_preprocess_html(&$variables, $hook)
+{
+    $variables['base_path'] = base_path();
+}
