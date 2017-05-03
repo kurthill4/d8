@@ -1,0 +1,9 @@
+uuid: b1d15f58-209d-4521-b83b-460bde5fbab0
+langcode: en
+status: true
+dependencies: {  }
+name: 'Student Life'
+vid: student_life
+description: ''
+hierarchy: 0
+weight: 0

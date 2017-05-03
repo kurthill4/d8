@@ -1,0 +1,29 @@
+uuid: 56f0f8ef-253b-41ea-a694-b99868b1416d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_committee
+    - node.type.committee_meeting
+    - node.type.committee_page
+id: node.committee_meeting.field_committee
+field_name: field_committee
+entity_type: node
+bundle: committee_meeting
+label: Committee
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      committee_page: committee_page
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

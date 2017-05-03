@@ -1,0 +1,59 @@
+uuid: a7663d3e-fe5a-48f9-966d-fdc5bfe049ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.testimonial
+    - field.field.block_content.testimonial.body
+    - field.field.block_content.testimonial.field_major
+    - field.field.block_content.testimonial.field_student_first_name
+    - field.field.block_content.testimonial.field_student_last_name
+    - field.field.block_content.testimonial.field_year_graduated
+  module:
+    - text
+id: block_content.testimonial.default
+targetEntityType: block_content
+bundle: testimonial
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_major:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_student_first_name:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_student_last_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_year_graduated:
+    weight: 3
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+hidden: {  }

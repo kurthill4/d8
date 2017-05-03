@@ -1,0 +1,30 @@
+uuid: 1776b3ff-f1a2-4d38-91e9-009f6e3fae90
+langcode: en
+status: true
+dependencies: {  }
+id: custom_web_page_manager
+label: 'Custom Web Page Manager'
+weight: 7
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access in-place editing'
+  - 'access toolbar'
+  - 'create custom_web_page content'
+  - 'create document content'
+  - 'create images content'
+  - 'create slideshows content'
+  - 'create videos content'
+  - 'delete own custom_web_page content'
+  - 'delete own document content'
+  - 'delete own images content'
+  - 'delete own slideshows content'
+  - 'delete own videos content'
+  - 'edit own custom_web_page content'
+  - 'edit own document content'
+  - 'edit own images content'
+  - 'edit own slideshows content'
+  - 'edit own videos content'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'view any paragraphs previewer'

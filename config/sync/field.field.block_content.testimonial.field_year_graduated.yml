@@ -1,0 +1,25 @@
+uuid: c7b70638-cd16-484d-9344-7316428e05db
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.testimonial
+    - field.storage.block_content.field_year_graduated
+id: block_content.testimonial.field_year_graduated
+field_name: field_year_graduated
+entity_type: block_content
+bundle: testimonial
+label: 'Year Graduated'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 2016
+default_value_callback: ''
+settings:
+  min: 1967
+  max: 2020
+  prefix: ''
+  suffix: ''
+field_type: integer

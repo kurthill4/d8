@@ -1,0 +1,30 @@
+uuid: b9550ef7-f3b7-49d8-822f-5d2a136973ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_assignment
+    - node.type.department
+  module:
+    - user
+id: user.user.field_assignment
+field_name: field_assignment
+entity_type: user
+bundle: user
+label: 'Teaching Assignment'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      department: department
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: custom_web_page
+field_type: entity_reference

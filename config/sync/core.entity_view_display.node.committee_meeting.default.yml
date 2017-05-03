@@ -1,0 +1,63 @@
+uuid: 71b29edd-e8d6-412f-826e-2381012af98a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.committee_meeting.body
+    - field.field.node.committee_meeting.field_agenda
+    - field.field.node.committee_meeting.field_committee
+    - field.field.node.committee_meeting.field_meeting_date
+    - field.field.node.committee_meeting.field_minutes
+    - node.type.committee_meeting
+  module:
+    - datetime
+    - file
+    - text
+    - user
+id: node.committee_meeting.default
+targetEntityType: node
+bundle: committee_meeting
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_agenda:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_committee:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_meeting_date:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_minutes:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

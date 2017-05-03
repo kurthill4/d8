@@ -1,0 +1,27 @@
+uuid: 67305672-c584-464e-80a8-2ae43b3040ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_agenda
+    - node.type.committee_meeting
+  module:
+    - file
+id: node.committee_meeting.field_agenda
+field_name: field_agenda
+entity_type: node
+bundle: committee_meeting
+label: Agenda
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'committees/agendas/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf doc docx txt xml'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file
