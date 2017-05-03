@@ -1,9 +1,0 @@
-uuid: 54493aab-163d-4bd6-aaad-3a97ffddadf3
-langcode: en
-status: true
-dependencies: {  }
-name: 'Employment Type'
-vid: employment_type
-description: 'Categories of employment'
-hierarchy: 0
-weight: 0
