@@ -13,7 +13,20 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        }
+        },
+	{
+	     "type": "package",
+	      "package": {
+		"name": "woothemes/flexslider",
+		"version": "2.6.3",
+		"type": "drupal-library",
+		"source": {
+		  "url": "https://github.com/woothemes/FlexSlider.git",
+		  "type": "git",
+		  "reference": "2.6.3"
+		}
+      }
+    }
     ],
     "require": {
         "composer/installers": "^1.2",
@@ -21,7 +34,6 @@
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/admin_toolbar": "^1.19",
         "drupal/better_exposed_filters": "^3.0@alpha",
-        "drupal/bootstrap": "^3.3",
         "drupal/bootstrap_layouts": "^4.1",
         "drupal/calendar": "1.x-dev",
         "drupal/console": "~1.0",
@@ -33,6 +45,7 @@
         "drupal/feeds": "3.x-dev",
         "drupal/field_group": "^1.0@RC",
         "drupal/file_entity": "^2.0@beta",
+        "drupal/flexslider": "^2.0@beta",
         "drupal/imce": "^1.5",
         "drupal/libraries": "3.x-dev",
         "drupal/media_entity": "^1.6",
@@ -40,17 +53,19 @@
         "drupal/media_entity_image": "^1.2",
         "drupal/media_entity_slideshow": "^1.2",
         "drupal/media_entity_video": "^1.0@beta",
-        "drupal/migrate_plus": "^2.0",
+        "drupal/migrate_plus": "~2.0",
         "drupal/migrate_source_csv": "^2.0",
         "drupal/migrate_tools": "^2.0",
         "drupal/page_manager": "^1.0@alpha",
         "drupal/paragraphs": "^1.1",
         "drupal/paragraphs_previewer": "1.x-dev",
         "drupal/pathauto": "^1.0@RC",
-        "drupal/taxonomy_manager": "1.x-dev",
+        "drupal/taxonomy_manager": "~1.0",
+        "drupal/views_jump_menu": "^1.0@beta",
         "drush/drush": "~8.0",
         "webflo/drupal-finder": "^0.2.1",
-        "webmozart/path-util": "^2.3"
+        "webmozart/path-util": "^2.3",
+        "woothemes/flexslider": "~2.0"
     },
     "require-dev": {
         "behat/mink": "~1.7",

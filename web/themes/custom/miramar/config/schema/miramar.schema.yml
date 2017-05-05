@@ -1,5 +1,5 @@
-# Schema for the theme setting configuration file of the mirmar theme.
+# Schema for the theme setting configuration file of the Miramar theme.
 
 miramar.settings:
   type: theme_settings
-  label: 'miramar settings'
+  label: 'Miramar theme settings'
