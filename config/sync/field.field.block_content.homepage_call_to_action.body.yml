@@ -1,0 +1,22 @@
+uuid: 203a0d4b-3f55-42a0-b0c1-db3c57a94e68
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_call_to_action
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.homepage_call_to_action.body
+field_name: body
+entity_type: block_content
+bundle: homepage_call_to_action
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

@@ -7,11 +7,15 @@ dependencies:
     - field.field.node.program.field_career_transfer_options
     - field.field.node.program.field_contact_2
     - field.field.node.program.field_director_contact
+    - field.field.node.program.field_image
     - field.field.node.program.field_program_emphasis
+    - field.field.node.program.field_program_hero_image
     - field.field.node.program.field_student_learning_outcomes
     - field.field.node.program.field_web_pages
+    - image.style.thumbnail
     - node.type.program
   module:
+    - image
     - path
     - text
 id: node.program.default
@@ -60,6 +64,14 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_image:
+    weight: 38
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
   field_program_emphasis:
     weight: 34
     settings:
@@ -67,6 +79,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_program_hero_image:
+    weight: 39
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_student_learning_outcomes:
     weight: 36

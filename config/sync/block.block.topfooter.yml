@@ -1,0 +1,25 @@
+uuid: 0cd593b2-b187-47f9-b06f-d6395410d49c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:top_footer:380ca37c-c856-4077-b405-7e4a4e48dc9e'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: topfooter
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:380ca37c-c856-4077-b405-7e4a4e48dc9e'
+settings:
+  id: 'block_content:380ca37c-c856-4077-b405-7e4a4e48dc9e'
+  label: 'Top Footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

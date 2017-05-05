@@ -1,0 +1,15 @@
+uuid: 4963d4ea-135c-4a80-92e6-96c53bf9924b
+langcode: en
+status: true
+dependencies: {  }
+name: program_carousel
+label: 'Program Carousel'
+effects:
+  054185d3-ad15-4582-a192-7e0619026e97:
+    uuid: 054185d3-ad15-4582-a192-7e0619026e97
+    id: image_scale
+    weight: 1
+    data:
+      width: 155
+      height: 320
+      upscale: true

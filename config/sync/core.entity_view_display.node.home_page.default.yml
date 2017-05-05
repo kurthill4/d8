@@ -1,0 +1,26 @@
+uuid: 595e701c-7185-4ff4-8f8b-e0e1ccfed384
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.home_page.body
+    - node.type.home_page
+  module:
+    - text
+    - user
+id: node.home_page.default
+targetEntityType: node
+bundle: home_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

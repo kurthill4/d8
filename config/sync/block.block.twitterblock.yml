@@ -1,0 +1,42 @@
+uuid: 3b4f4862-f1c4-4406-9632-7b73a12da689
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - twitter_block
+  theme:
+    - bartik
+id: twitterblock
+theme: bartik
+region: content
+weight: -2
+provider: null
+plugin: twitter_block
+settings:
+  id: twitter_block
+  label: 'Recent Tweets @SDMiramar'
+  provider: twitter_block
+  label_display: visible
+  widget_id: '524274569788399616'
+  theme: ''
+  link_color: ''
+  width: ''
+  height: ''
+  chrome:
+    noheader: noheader
+    nofooter: nofooter
+    noborders: noborders
+    noscrollbar: noscrollbar
+    transparent: transparent
+  border_color: ''
+  language: ''
+  tweet_limit: '1'
+  related: ''
+  polite: polite
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
