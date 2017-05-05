@@ -7854,11 +7854,8 @@
         "drupal/page_manager": 15,
         "drupal/paragraphs_previewer": 20,
         "drupal/pathauto": 5,
-<<<<<<< HEAD
-        "drupal/taxonomy_manager": 20
-=======
+        "drupal/taxonomy_manager": 20,
         "drupal/views_jump_menu": 10
->>>>>>> devbranch1
     },
     "prefer-stable": true,
     "prefer-lowest": false,
