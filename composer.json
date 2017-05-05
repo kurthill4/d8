@@ -61,6 +61,7 @@
         "drupal/paragraphs_previewer": "1.x-dev",
         "drupal/pathauto": "^1.0@RC",
         "drupal/taxonomy_manager": "~1.0",
+        "drupal/twitter_block": "^2.1",
         "drupal/views_jump_menu": "^1.0@beta",
         "drush/drush": "~8.0",
         "webflo/drupal-finder": "^0.2.1",
