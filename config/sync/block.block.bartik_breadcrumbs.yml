@@ -1,4 +1,4 @@
-uuid: 5ac00a16-bfe0-4028-8a7c-9ae81e7623f9
+uuid: 2918c58a-f1a2-4185-88c5-35e500b0972d
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: bartik_breadcrumbs
 theme: bartik
 region: breadcrumb
-weight: 0
+weight: -7
 provider: null
 plugin: system_breadcrumb_block
 settings:

@@ -1,0 +1,18 @@
+uuid: 6cf60ac6-786b-4ddc-994a-04a4b85f6ca8
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'By The Numbers'
+type: by_the_numbers
+description: 'Holds images for Miramar By The Numbers homepage section'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

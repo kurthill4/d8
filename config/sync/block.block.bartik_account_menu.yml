@@ -1,4 +1,4 @@
-uuid: 1aadf3f5-dc5b-4c50-b8d0-1b1156678b1f
+uuid: 9d9053a0-6848-4cab-87bc-793ed2f7ade0
 langcode: en
 status: true
 dependencies:
@@ -12,8 +12,8 @@ _core:
   default_config_hash: DweBpscQZdG0-fHkSpUzdYucrNH45G_KF7Z82V-oyQM
 id: bartik_account_menu
 theme: bartik
-region: secondary_menu
-weight: 0
+region: sidebar_second
+weight: -7
 provider: null
 plugin: 'system_menu_block:account'
 settings:
@@ -23,4 +23,9 @@ settings:
   label_display: '0'
   level: 1
   depth: 1
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

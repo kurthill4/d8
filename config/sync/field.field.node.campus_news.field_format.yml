@@ -1,0 +1,23 @@
+uuid: 604d77c3-fabb-46df-b996-42c82562303c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_format
+    - node.type.campus_news
+  module:
+    - options
+id: node.campus_news.field_format
+field_name: field_format
+entity_type: node
+bundle: campus_news
+label: Format
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Web & Mobile'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

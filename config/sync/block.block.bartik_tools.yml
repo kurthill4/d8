@@ -1,4 +1,4 @@
-uuid: 22958a43-03a6-4bc1-a5a8-25cc70471c1b
+uuid: c89ca3ab-c7d6-4e99-9d51-4aca7cc2268c
 langcode: en
 status: true
 dependencies:
@@ -23,4 +23,9 @@ settings:
   label_display: visible
   level: 1
   depth: 0
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

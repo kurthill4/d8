@@ -1,4 +1,4 @@
-uuid: e1a01b5a-23d5-45da-bede-15647ea01fa3
+uuid: b6cf3eca-935f-4fd6-8a3f-96cbdaeb7398
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: bartik_content
 theme: bartik
 region: content
-weight: 0
+weight: -5
 provider: null
 plugin: system_main_block
 settings:
@@ -19,4 +19,9 @@ settings:
   label: 'Main page content'
   provider: system
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

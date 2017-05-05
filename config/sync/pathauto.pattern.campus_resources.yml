@@ -8,16 +8,16 @@ dependencies:
 id: campus_resources
 label: 'Campus Resources'
 type: 'canonical_entities:taxonomy_term'
-pattern: '/campus/[current-page:title]'
+pattern: '/campus/[term:name]'
 selection_criteria:
-  ec66fe87-43cc-4cff-9d1c-0989546cd6df:
+  be3dddcc-c191-43fc-b1b3-500266a6b98d:
     id: 'entity_bundle:taxonomy_term'
     bundles:
       campus_resources: campus_resources
     negate: false
     context_mapping:
       taxonomy_term: taxonomy_term
-    uuid: ec66fe87-43cc-4cff-9d1c-0989546cd6df
+    uuid: be3dddcc-c191-43fc-b1b3-500266a6b98d
 selection_logic: and
 weight: -5
 relationships: {  }

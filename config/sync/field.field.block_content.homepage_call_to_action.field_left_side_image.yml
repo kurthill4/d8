@@ -1,0 +1,38 @@
+uuid: 5fa0e55c-a416-4eeb-9023-1f03c5749789
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_call_to_action
+    - field.storage.block_content.field_left_side_image
+  module:
+    - image
+id: block_content.homepage_call_to_action.field_left_side_image
+field_name: field_left_side_image
+entity_type: block_content
+bundle: homepage_call_to_action
+label: 'Left Side Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 8b84837e-08b0-4e7f-961b-f984b31bf832
+    alt: ''
+    title: ''
+    width: 357
+    height: 62
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

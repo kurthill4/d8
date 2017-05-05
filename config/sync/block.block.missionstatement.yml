@@ -1,0 +1,31 @@
+uuid: d27bb733-c601-4244-bc63-91e00e73ab85
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3a5653f1-0482-4f0f-a3e1-f90917629ef5'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: missionstatement
+theme: bartik
+region: content
+weight: -3
+provider: null
+plugin: 'block_content:3a5653f1-0482-4f0f-a3e1-f90917629ef5'
+settings:
+  id: 'block_content:3a5653f1-0482-4f0f-a3e1-f90917629ef5'
+  label: 'Mission Statement'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -8,6 +8,8 @@ dependencies:
     - field.field.node.campus_news.field_display_on_pathways
     - field.field.node.campus_news.field_external_website
     - field.field.node.campus_news.field_featured_on_homepage_
+    - field.field.node.campus_news.field_format
+    - field.field.node.campus_news.field_homepage_image
     - field.field.node.campus_news.field_image
     - field.field.node.campus_news.field_priority
     - field.field.node.campus_news.field_story_date
@@ -71,6 +73,22 @@ content:
       format_custom_true: ''
     third_party_settings: {  }
     type: boolean
+    region: content
+  field_format:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_homepage_image:
+    weight: 110
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
     region: content
   field_image:
     weight: 105
