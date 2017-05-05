@@ -3359,7 +3359,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/twitter_block-8.x-2.1.zip",
-                "reference": null,
+                "reference": "8.x-2.1",
                 "shasum": "374eff45b257ca112177b38ef040fd2d920c5d16"
             },
             "require": {
