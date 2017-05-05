@@ -1,0 +1,23 @@
+uuid: ceddef2c-7890-492e-a14f-36500adfeea9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_num_administrators
+    - node.type.committee_page
+id: node.committee_page.field_num_administrators
+field_name: field_num_administrators
+entity_type: node
+bundle: committee_page
+label: Administrators
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,29 @@
+uuid: c200ca96-9bdf-4ddb-bf1d-8a29f3b67392
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact
+    - node.type.event
+id: node.event.field_contact
+field_name: field_contact
+entity_type: node
+bundle: event
+label: Contact
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: field_last_name
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

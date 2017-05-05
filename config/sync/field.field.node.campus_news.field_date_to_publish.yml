@@ -1,0 +1,26 @@
+uuid: 83acf99d-0ccf-4aa4-88bf-f93fece054e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_to_publish
+    - node.type.campus_news
+  module:
+    - datetime_range
+id: node.campus_news.field_date_to_publish
+field_name: field_date_to_publish
+entity_type: node
+bundle: campus_news
+label: 'Date to Publish'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    default_end_date_type: relative
+    default_end_date: '+90 days'
+default_value_callback: ''
+settings: {  }
+field_type: daterange

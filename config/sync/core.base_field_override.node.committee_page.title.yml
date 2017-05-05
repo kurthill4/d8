@@ -1,0 +1,18 @@
+uuid: bb9c3c7e-22f6-4ca0-9832-120408dc1a03
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.committee_page
+id: node.committee_page.title
+field_name: title
+entity_type: node
+bundle: committee_page
+label: 'Committee Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

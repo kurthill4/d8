@@ -1,0 +1,30 @@
+uuid: 1beb6672-7b95-40f1-8dfc-15727ec4d0f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_web_pages
+    - node.type.custom_web_page
+  module:
+    - user
+id: user.user.field_web_pages
+field_name: field_web_pages
+entity_type: user
+bundle: user
+label: 'Web Pages'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      custom_web_page: custom_web_page
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

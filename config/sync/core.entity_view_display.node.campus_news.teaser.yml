@@ -1,0 +1,28 @@
+uuid: c0f33520-c430-4eb6-b557-0f9f09f5cb58
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.campus_news.body
+    - node.type.campus_news
+  module:
+    - text
+    - user
+id: node.campus_news.teaser
+targetEntityType: node
+bundle: campus_news
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

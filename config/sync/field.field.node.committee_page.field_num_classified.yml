@@ -1,0 +1,23 @@
+uuid: cb5ce82e-4c29-432f-ad27-e5917cc43c9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_num_classified
+    - node.type.committee_page
+id: node.committee_page.field_num_classified
+field_name: field_num_classified
+entity_type: node
+bundle: committee_page
+label: Classified
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

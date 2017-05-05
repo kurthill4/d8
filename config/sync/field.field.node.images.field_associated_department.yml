@@ -1,0 +1,29 @@
+uuid: ba8378b7-a216-4c51-8111-d555a1b01398
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_associated_department
+    - node.type.department_page
+    - node.type.images
+id: node.images.field_associated_department
+field_name: field_associated_department
+entity_type: node
+bundle: images
+label: 'Associated Department'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      department_page: department_page
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

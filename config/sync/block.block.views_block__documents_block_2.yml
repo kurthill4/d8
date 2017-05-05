@@ -1,0 +1,32 @@
+uuid: 7282dba2-5252-45f8-b29d-c0617a6c1e9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.documents
+  module:
+    - ctools
+    - views
+  theme:
+    - bootstrap
+id: views_block__documents_block_2
+theme: bootstrap
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:documents-block_2'
+settings:
+  id: 'views_block:documents-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      committee_page: committee_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
