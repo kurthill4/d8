@@ -1,0 +1,39 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="container-fluid blue">
+  <div class="container">
+{% if title %}
+  <h2>{{ title }}</h2>
+{% endif %}
+          <div class="col-md-12">
+            <div class="col-md-7">
+              <h3>Lorem Ipsum</h3>
+              <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <img src="img/campus-resources-health.jpg" />
+            </div>
+            <div class="col-md-5 mini-sidebar">
+<ul>
+{% for row in rows %}
+    <li>{{ row.content }}</li>
+{% endfor %}
+</ul>
+</div>
+</div></div>
+</div>
