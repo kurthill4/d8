@@ -32,7 +32,6 @@
  * @see template_preprocess_views_view()
  */
 #}
-{#{ kint() }#}
 {%
   set classes = [
     'view',
@@ -66,7 +65,6 @@
 
   {% if rows %}
     <div class="view-content">
-	{{ vardumper(rows) }}
       {{ rows }}
     </div>
   {% elseif empty %}
