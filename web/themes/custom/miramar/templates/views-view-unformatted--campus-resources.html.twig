@@ -23,6 +23,13 @@
         <div class="col-md-12">
             <div class="col-md-7">
 <h3>Lorem Ipsum</h3>
+<p>
+{% for row in rows %}
+
+{{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ description__value }}'] }}
+
+{% endfor %}
+</p>
         	</div>
         <div class="col-md-5 mini-sidebar">
 		<ul>
