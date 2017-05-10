@@ -1,9 +1,0 @@
-uuid: 29da59c0-92aa-4bf8-9957-53db2e1304a4
-langcode: en
-status: true
-dependencies: {  }
-name: Pathways
-vid: pathways
-description: 'For gateway development'
-hierarchy: 0
-weight: 0

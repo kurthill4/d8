@@ -1,9 +1,0 @@
-uuid: a221adf0-0dea-430e-943a-0aadcf2ac44e
-langcode: en
-status: true
-dependencies: {  }
-name: 'Campus Resources'
-vid: campus_resources
-description: 'Campus office main pages'
-hierarchy: 0
-weight: 0
