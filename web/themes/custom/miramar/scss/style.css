@@ -8107,7 +8107,7 @@ header {
     margin: 0; }
 
 /* line 189, style.scss */
-nav:not(.toolbar-bar).main-menu {
+nav:not(.toolbar-lining).main-menu {
   position: absolute;
   top: 60px;
   background: #1d2451;
@@ -8117,11 +8117,11 @@ nav:not(.toolbar-bar).main-menu {
   text-align: right;
   padding: 12px 0 8px; }
   /* line 198, style.scss */
-  nav:not(.toolbar-bar).main-menu ul {
+  nav:not(.toolbar-lining).main-menu ul {
     margin: 0;
     padding: 0; }
   /* line 202, style.scss */
-  nav:not(.toolbar-bar).main-menu li {
+  nav:not(.toolbar-lining).main-menu li {
     display: inline-block;
     width: 80px;
     text-align: left;
@@ -8129,7 +8129,7 @@ nav:not(.toolbar-bar).main-menu {
     line-height: 18px;
     display: inline-block; }
     /* line 209, style.scss */
-    nav:not(.toolbar-bar).main-menu li a {
+    nav:not(.toolbar-lining).main-menu li a {
       color: #fff;
       font-family: Oswald, Tahoma, sans-serif;
       font-size: 20px;
@@ -8137,14 +8137,14 @@ nav:not(.toolbar-bar).main-menu {
       text-transform: uppercase;
       text-decoration: none; }
     /* line 217, style.scss */
-    nav:not(.toolbar-bar).main-menu li:hover {
+    nav:not(.toolbar-lining).main-menu li:hover {
       border-bottom: 5px solid #fff; }
       /* line 219, style.scss */
-      nav:not(.toolbar-bar).main-menu li:hover a {
+      nav:not(.toolbar-lining).main-menu li:hover a {
         text-decoration: none;
         color: #31b8c9; }
     /* line 225, style.scss */
-    nav:not(.toolbar-bar).main-menu li:first-child a {
+    nav:not(.toolbar-lining).main-menu li:first-child a {
       border: 1px solid #fff;
       padding: 6px 5px 4px;
       display: inline-block;
@@ -8155,28 +8155,28 @@ nav:not(.toolbar-bar).main-menu {
       border-radius: 20px;
       text-align: center; }
     /* line 236, style.scss */
-    nav:not(.toolbar-bar).main-menu li:first-child li:first-child i {
+    nav:not(.toolbar-lining).main-menu li:first-child li:first-child i {
       font-size: 25px; }
 /* line 242, style.scss */
-nav:not(.toolbar-bar).mobile-nav {
+nav:not(.toolbar-lining).mobile-nav {
   position: fixed;
   z-index: 100;
   background: #fff;
   width: 100%;
   top: 80px; }
   /* line 248, style.scss */
-  nav:not(.toolbar-bar).mobile-nav ul {
+  nav:not(.toolbar-lining).mobile-nav ul {
     margin: 0;
     padding: 0; }
   /* line 252, style.scss */
-  nav:not(.toolbar-bar).mobile-nav li {
+  nav:not(.toolbar-lining).mobile-nav li {
     margin: 0 0 5px; }
     /* line 254, style.scss */
-    nav:not(.toolbar-bar).mobile-nav li.nv-green a {
+    nav:not(.toolbar-lining).mobile-nav li.nv-green a {
       background: #2c7d80;
       text-transform: capitalize; }
     /* line 258, style.scss */
-    nav:not(.toolbar-bar).mobile-nav li a {
+    nav:not(.toolbar-lining).mobile-nav li a {
       display: block;
       padding: 5px 10px;
       background: #1d2451;
@@ -8187,18 +8187,18 @@ nav:not(.toolbar-bar).mobile-nav {
       text-transform: uppercase;
       font-weight: 500; }
     /* line 269, style.scss */
-    nav:not(.toolbar-bar).mobile-nav li:hover a {
+    nav:not(.toolbar-lining).mobile-nav li:hover a {
       background: #a12130; }
     /* line 272, style.scss */
-    nav:not(.toolbar-bar).mobile-nav li:first-child {
+    nav:not(.toolbar-lining).mobile-nav li:first-child {
       background: #a8a8a8;
       padding: 10px;
       margin-bottom: 0; }
       /* line 276, style.scss */
-      nav:not(.toolbar-bar).mobile-nav li:first-child li:first-child:hover a {
+      nav:not(.toolbar-lining).mobile-nav li:first-child li:first-child:hover a {
         background: none; }
       /* line 279, style.scss */
-      nav:not(.toolbar-bar).mobile-nav li:first-child a.close-xm {
+      nav:not(.toolbar-lining).mobile-nav li:first-child a.close-xm {
         position: absolute;
         top: 16px;
         right: 80px;
@@ -8209,7 +8209,7 @@ nav:not(.toolbar-bar).mobile-nav {
         margin: 0;
         font-size: 18px; }
       /* line 290, style.scss */
-      nav:not(.toolbar-bar).mobile-nav li:first-child.form-control, nav:not(.toolbar-bar).mobile-nav li:first-child.btn {
+      nav:not(.toolbar-lining).mobile-nav li:first-child.form-control, nav:not(.toolbar-lining).mobile-nav li:first-child.btn {
         border-radius: 0;
         border: 0;
         outline: none;
@@ -8217,32 +8217,32 @@ nav:not(.toolbar-bar).mobile-nav {
         height: 60px;
         font-size: 27px; }
       /* line 298, style.scss */
-      nav:not(.toolbar-bar).mobile-nav li:first-child.btn {
+      nav:not(.toolbar-lining).mobile-nav li:first-child.btn {
         background: #a22130;
         color: #fff;
         padding-left: 20px;
         padding-right: 20px; }
       /* line 305, style.scss */
-      nav:not(.toolbar-bar).mobile-nav li:first-child ol li {
+      nav:not(.toolbar-lining).mobile-nav li:first-child ol li {
         background: #f2f2f2;
         margin: 0 0 1px; }
         /* line 308, style.scss */
-        nav:not(.toolbar-bar).mobile-nav li:first-child ol li:first-child {
+        nav:not(.toolbar-lining).mobile-nav li:first-child ol li:first-child {
           padding: 0;
           margin: 0 0 1px; }
   /* line 316, style.scss */
-  nav:not(.toolbar-bar).mobile-nav ol {
+  nav:not(.toolbar-lining).mobile-nav ol {
     margin: 0;
     padding: 0; }
     /* line 319, style.scss */
-    nav:not(.toolbar-bar).mobile-nav ol a {
+    nav:not(.toolbar-lining).mobile-nav ol a {
       background: #f2f2f2;
       color: #acb2b2;
       font-family: Roboto, sans-serif;
       font-size: 24px;
       text-transform: capitalize; }
       /* line 325, style.scss */
-      nav:not(.toolbar-bar).mobile-nav ol a:hover {
+      nav:not(.toolbar-lining).mobile-nav ol a:hover {
         color: #31b8c9; }
 
 /* line 333, style.scss */
