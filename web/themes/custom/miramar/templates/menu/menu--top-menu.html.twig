@@ -1,0 +1,66 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *
+ * @ingroup templates
+ */
+#}
+{% import _self as menus %}
+
+{#
+  We call a macro which calls itself to render the full tree.
+  @see http://twig.sensiolabs.org/doc/tags/macro.html
+#}
+{{ menus.menu_links(items, attributes, 0) }}
+
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+    {% for item in items %}
+      {%
+        set item_classes = [
+          item.is_expanded? 'expanded',
+          item.is_expanded and menu_level == 0 ? 'dropdown',
+          item.in_active_trail ? 'active',
+        ]
+      %}
+
+      {% if item.title == 'Career Services' %}
+        <a href="{{ item.url }}"><i class="fa fa-briefcase" aria-hidden="true"></i> {{ item.title }}</a>
+      {% elseif item.title == 'Library' %}
+        <a href="{{ item.url }}"><i class="fa fa-book" aria-hidden="true"></i> {{ item.title }}</a>
+      {% elseif item.title == 'Blackboard' %}
+        <a href="{{ item.url }}"><i class="fa fa-laptop" aria-hidden="true"></i> {{ item.title }}</a>
+      {% endif %}
+    {% endfor %}
+    <div class="search-desktop">
+      <a class="close-x" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+       <ul>
+         <li>
+           <div class="input-group">
+             <input type="text" class="form-control" placeholder="Enter Search...">
+             <span class="input-group-btn">
+               <button class="btn btn-secondary" type="button">
+                 <i class="fa fa-search" aria-hidden="true"></i>
+               </button>
+             </span>
+           </div>
+         </li>
+         <li><a href="#">Similar Search Terms</a></li>
+         <li><a href="#">Similar Search Terms</a></li>
+         <li><a href="#">Similar Search Terms</a></li>
+         <li><a href="#">Similar Search Terms</a></li>
+       </ul>
+    </div>
+  {% endif %}
+{% endmacro %}

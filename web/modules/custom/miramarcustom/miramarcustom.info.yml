@@ -1,0 +1,6 @@
+name: Miramar College
+description: Main module for Miramar College
+package: Custom
+
+type: module
+core: 8.x

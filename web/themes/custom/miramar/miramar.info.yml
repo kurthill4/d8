@@ -9,6 +9,12 @@ package: 'Bootstrap'
 regions:
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
+  banner: 'Site Banner'
+  number: 'Miramar By The Numbers'
+  gallery: "Gallery Block"
+  buttons: "Buttons Block"
+  mission: "Mission Statement and Recent Tweets"
+  news: "News and Events"
   header: 'Top Bar'
   highlighted: 'Highlighted'
   help: 'Help'

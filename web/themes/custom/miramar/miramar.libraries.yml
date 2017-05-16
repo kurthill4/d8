@@ -1,7 +1,22 @@
 global-styling:
   css:
     theme:
-      scss/style.css: {}
+      css/bootstrap.min.css: {}
+      css/style.css: {}
+      css/flickity.css: {}
+      css/style.css: {}
+      font-awesome-4.7.0/css/font-awesome.min.css: {}
+
+  js:
+    js/jquery.min.js: {}
+    js/bootstrap.min.js: {}
+    js/jquery-ui.js: {}
+    js/main.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupal.dialog.ajax
 
 bootstrap-scripts:
   js:
@@ -19,8 +34,6 @@ bootstrap-scripts:
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
 
 flickity:
-  css:
-    scss/flickity.scss: {}
   js:
     js/flickity.pkgd.min.js: {}
 
