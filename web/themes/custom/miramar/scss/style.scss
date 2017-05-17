@@ -21,6 +21,13 @@ body {
 	font-size: 16px;
 	overflow-x: hidden;
 }
+div.spacer {clear:both;}
+#toolbar-administration {display:block;position:absolute;top:0;min-height:50px;margin-bottom:10px!important;}
+
+.banner {
+	.caption,get-started,slide-buttons {position:fixed
+	}
+}
 
 ul {
 	list-style: none;
@@ -79,7 +86,7 @@ h2, h3, h4 {
 
 header {
 	position: absolute;
-	top: 0;
+	//top: 0;
 	left: 15px;
 	right: 0;
 	z-index: 100;
@@ -336,11 +343,11 @@ nav {
 }
 
 .banner {
-	max-height: 450px;
-	overflow: hidden;
-	&.carousel button {
+	//max-height: 600px;
+	//overflow: hidden;
+	/*&.carousel button {
 		display: none;
-	}
+	}*/
 }
 
 .page-cover {

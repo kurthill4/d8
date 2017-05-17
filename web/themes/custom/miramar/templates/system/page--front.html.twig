@@ -67,6 +67,7 @@
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
     %}
+<div class="spacer" style="height:1px">&nbsp;</div>
     <header>
         {{ page.navigation }}
         {# .btn-navbar is used as the toggle for collapsed navbar content #}
@@ -89,7 +90,11 @@
 
 <div class="banner">
   <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true }'>
-      <div class="carousel-cell slide-1">
+      <div class="carousel-cell slide-1"></div>
+      <div class="carousel-cell slide-2"></div>
+      <div class="carousel-cell slide-3"></div>
+      <div class="carousel-cell slide-4"></div>
+</div>
         <div class="banner-content">
           <div class="caption">
             <h1>Success Starts With You</h1>
@@ -105,45 +110,6 @@
             <a href="#">Apply</a>
             <a href="#">Register</a>
           </div>
-        </div>
-      </div>
-      <div class="carousel-cell slide-2">
-        <div class="banner-content">
-          <div class="caption">
-            <h1>Success Starts With You</h1>
-            <p>Just a long description that describe your slider here.</p>
-          </div>
-          <div class="get-started">
-            <a href="#">
-              <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-              Get Started Now
-            </a>
-          </div>
-          <div class="slide-buttons">
-            <a href="#">Apply</a>
-            <a href="#">Register</a>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-cell slide-1">
-        <div class="banner-content">
-          <div class="caption">
-            <h1>Success Starts With You</h1>
-            <p>Just a long description that describe your slider here.</p>
-          </div>
-          <div class="get-started">
-            <a href="#">
-              <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-              Get Started Now
-            </a>
-          </div>
-          <div class="slide-buttons">
-            <a href="#">Apply</a>
-            <a href="#">Register</a>
-          </div>
-        </div>
-      </div>
-    </div>
 </div>
 
 {% if page.number %}

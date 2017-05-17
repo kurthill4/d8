@@ -23,8 +23,6 @@ h2, h3, h4{
 
 #toolbar-administration {
 	display: grid;
-	position:absolute;
-	top:0;
 }
 header{
 	position: relative;
@@ -274,8 +272,8 @@ nav.mobile-nav li:first-child ol li{
 	width: 100%;
 }
 .banner {
-  max-height: 700px;
-  //overflow: hidden;
+  max-height: 628px;
+  overflow: hidden;
 }
 .banner .carousel button{
 	display: none;
@@ -315,28 +313,14 @@ nav.mobile-nav li:first-child ol li{
 	color: #fff;
 }
 .slide-1{
-	background: transparent url(../images/herofront/Hero_1.png) no-repeat center bottom;
+	background: transparent url(../images/slide-1.jpg) no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .slide-2{
-	background: transparent url(../images/herofront/Hero_2.png) no-repeat center bottom;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.slide-3{
-	background: transparent url(../images/herofront/Hero_3.png) no-repeat center bottom;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.slide-4{
-	background: transparent url(../images/herofront/Hero_5.png) no-repeat center bottom;
+	background: transparent url(../images/slide-2.jpg) no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -344,21 +328,17 @@ nav.mobile-nav li:first-child ol li{
 }
 .banner-content{
 	position: absolute;
-	bottom: 100px;
+	bottom: 50px;
 	left: 15px;
-	z-index:1000;
-	color:#ffffff;
 }
 .caption{
 	background: rgba(29, 26, 81, 0.9);
 	width: 550px;
 	padding: 40px 50px;
-	margin: 5px;
 }
 .caption h1{
 	font-family: 'Nixie One', cursive;
 	font-size: 60px;
-	z-index:1000;
 }
 .caption p{
 	font-family: 'Oswald', sans-serif;
