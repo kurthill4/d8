@@ -51,19 +51,18 @@
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
     'clearfix',
+    'hide-xs',
   ]
 %}
-<div class="news-title">
-	<img src="/themes/custom/miramar/images/icon-news.png" alt="">
-	<h3>News<br /> &amp; Events</h3>
-</div>
-<div class="news-block hide-xs">
-  <div class="container-fluid">
-    <div class="row">
-      {% block content %}
-        {{ content }}
-      {% endblock %}
-    </div>
-  </div>
-</div>
+<section{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h3><img src="/themes/custom/miramar/images/icon-clock.png" alt="Miramar by the numbers" />&nbsp;&nbsp;{{ label }}</h3>
+  {% endif %}
+  {{ title_suffix }}
+
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+</section>
 

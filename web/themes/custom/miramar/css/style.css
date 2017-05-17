@@ -274,8 +274,8 @@ nav.mobile-nav li:first-child ol li{
 	width: 100%;
 }
 .banner {
-  max-height: 700px;
-  //overflow: hidden;
+  max-height: 650px;
+//  overflow: hidden;
 }
 .banner .carousel button{
 	display: none;
@@ -404,6 +404,12 @@ nav.mobile-nav li:first-child ol li{
 	text-decoration: none;
 	background: #1d2451;
 }
+.block-views-blockmiramar-by-the-numbers-block-1,
+.numbers .views-row {
+	width: 900px;
+	margin: 0 auto;
+}
+
 .mbtn{
 	margin: 20px 0 0;
 }
@@ -597,6 +603,7 @@ nav.mobile-nav li:first-child ol li{
 .news-title{
 	position: relative;
 	padding: 0 0 0 65px;
+	margin-left: 30px;
 }
 .recent-jobs .news-title {
 	padding-bottom: 15px;
@@ -1296,6 +1303,16 @@ table.faculty thead th i {
 .resources-students li p {
 	margin: 0;
 }
+
+.centered {
+	margin-left:auto;
+	margin-right:auto;
+	width:auto;
+}
+.center {
+	text-align:center;
+}
+
 
 /* Media Queries */
 @media only screen and (min-width : 1200px) {
