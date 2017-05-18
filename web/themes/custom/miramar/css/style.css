@@ -416,6 +416,15 @@ nav.mobile-nav li:first-child ol li{
 .mbtn .flickity-page-dots{
 	display: none;
 }
+
+.region-dates .block,
+.region-mission .block {
+	display:inline-block;
+	width:50%;
+	float:left;
+	
+}
+
 .important-dates{
 	padding: 30px;
 	background: #dbf3f5;
