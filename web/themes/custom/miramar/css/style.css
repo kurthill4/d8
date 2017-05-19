@@ -3,6 +3,7 @@ body{
 	font-size: 16px;
 	overflow-x: hidden;
 }
+.spacer {clear:both}
 ul { list-style: none; }
 h1, h2, h3, h4{
 	margin-top: 0;
@@ -406,6 +407,7 @@ nav.mobile-nav li:first-child ol li{
 }
 .region-number {
 	background-color:#d1d4d3;
+	margin: 0 auto;
 }
 
 .block-views-blockmiramar-by-the-numbers-block-1,
@@ -415,18 +417,43 @@ nav.mobile-nav li:first-child ol li{
 }
 
 .mbtn{
-	//margin: 20px 0 0;
+	margin: 25px auto 0;
 }
 .mbtn .flickity-page-dots{
 	display: none;
 }
 
-.region-dates .block,
-.region-mission .block {
-	display:inline-block;
-	width:50%;
-	float:left;
-	
+#block-homepagebuttons {margin:1em auto;}
+.region-dates section,.region-mission section {display:table-cell;}
+.region-dates section,.region-dates .view {margin: 0 auto!important}
+.region-dates,.region-mission {
+	display:table;
+	border-spacing:5px;
+	width:100%;
+	margin: 0 auto;
+}
+.region-dates .block,.region-mission .block {
+	margin:0;
+}
+
+.region-dates .block-views-blockimportant-dates-block-1 {
+	width:33%;
+}
+
+.region-dates .block-views-blockwhat-do-you-want-to-be-block-1 {
+	width:65%;
+	background: #a22130;
+
+}
+
+.region-mission #block-missionstatement-2 {
+	width:65%;
+	margin: 0 auto;
+}
+
+.region-mission #block-twitterforhomepage {
+	width:33%;
+	margin: 0 auto;
 }
 
 .important-dates{
@@ -532,7 +559,7 @@ nav.mobile-nav li:first-child ol li{
 	opacity: 1;
 }
 .cc-buttons{
-	margin: 50px 0 0;
+	margin: 25px 0 0;
 }
 .cc-buttons a{
 	background: #1d2451;
@@ -594,6 +621,7 @@ nav.mobile-nav li:first-child ol li{
 	display: inline-block;
 	margin: 0 20px 0 0;
 }
+.region-gallery {display:block;margin: 25px auto}
 .news-block{
 	position: relative;
 	background: #dbf3f5;

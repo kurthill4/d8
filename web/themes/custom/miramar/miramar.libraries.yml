@@ -3,8 +3,6 @@ global-styling:
     theme:
       css/bootstrap.min.css: {}
       css/style.css: {}
-      css/flickity.css: {}
-      css/style.css: {}
       font-awesome-4.7.0/css/font-awesome.min.css: {}
 
   js:
@@ -34,6 +32,8 @@ bootstrap-scripts:
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
 
 flickity:
+  css:
+    css/flickity.css: {}
   js:
     js/flickity.pkgd.min.js: {}
 

@@ -65,6 +65,7 @@
         "drupal/taxonomy_manager": "~1.0",
         "drupal/twig_field_value": "^1.1",
         "drupal/twig_vardumper": "^1.0",
+        "drupal/twitter": "1.x-dev",
         "drupal/twitter_block": "^2.1",
         "drupal/views_jump_menu": "^1.0@beta",
         "drush/drush": "~8.0",
