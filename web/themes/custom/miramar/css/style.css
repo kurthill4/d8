@@ -343,6 +343,20 @@ nav.mobile-nav li:first-child ol li{
   -o-background-size: cover;
   background-size: cover;
 }
+.slide-cr{
+	background: transparent url(../images/campus-resources-banner.jpg) no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.slide-ns{
+	background: transparent url(../images/student-banner.jpg) no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .banner-content{
 	position: absolute;
 	bottom: 100px;
@@ -637,9 +651,10 @@ nav.mobile-nav li:first-child ol li{
 	z-index: 1;
 	cursor: pointer;
 }
-.news-block a.see-more{
+.news-block .see-more a {
 	color: #31b8c9;
 	font-weight: bold;
+	float:right;
 }
 .news-title{
 	position: relative;
@@ -830,6 +845,11 @@ footer h4{
 	font-family: 'Oswald', sans-serif;
 	font-size: 22px;
 }
+
+.step-panel tr,.step-panel td {
+	vertical-align: top;
+}
+
 .news-block-2{
 	margin-top: 0;
 }

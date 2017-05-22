@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b7d6d5ef4fb5ab3feb3cc0c5b97c8a4a",
+    "content-hash": "92a0a60a5e398a9e77f14c75beeac2b7",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -6825,7 +6825,7 @@
             "version": "2.6.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/woothemes/FlexSlider.git",
+                "url": "https://github.com/woocommerce/FlexSlider.git",
                 "reference": "2.6.3"
             },
             "type": "drupal-library"
