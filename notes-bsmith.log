@@ -1,1 +1,7 @@
 Notes file
+
+Installed php-dev and curl as requirements for Twitter module. These will probably be uninstalled when a themable Twitter solution is found.
+
+Ongoing issues with programs carousel. Suspect a JavaScript conflict. Works in Bartik and Bootstrap themes, but not in the Promet theme, which uses a combination of local and Drupal resources.
+
+Promet's CSS classes to show and hide sections based on screen size work, even with views.

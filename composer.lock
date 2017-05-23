@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "92a0a60a5e398a9e77f14c75beeac2b7",
+    "content-hash": "4cc45f7b2d3d8542835f1d7eebe67474",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2468,6 +2468,49 @@
             }
         },
         {
+            "name": "drupal/flickity",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/flickity",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/flickity-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "88932b16df5760645d7cebad28d323d9b066446d"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1455160739"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "swim",
+                    "homepage": "https://www.drupal.org/user/1968266"
+                }
+            ],
+            "description": "Provides Flickity library integration with Drupal.",
+            "homepage": "https://www.drupal.org/project/flickity",
+            "support": {
+                "source": "http://cgit.drupalcode.org/flickity"
+            }
+        },
+        {
             "name": "drupal/imce",
             "version": "1.5.0",
             "source": {
@@ -3738,6 +3781,59 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/twitter_block"
             }
+        },
+        {
+            "name": "drupal/views_bootstrap",
+            "version": "dev-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views_bootstrap",
+                "reference": "ef95dac8dfeb8f2d61b0e5d40075a0a6e23e53ca"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.x-dev",
+                    "datestamp": "1490369283"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "aburrows",
+                    "homepage": "https://www.drupal.org/user/577844"
+                },
+                {
+                    "name": "ericpugh",
+                    "homepage": "https://www.drupal.org/user/130084"
+                },
+                {
+                    "name": "ikeigenwijs",
+                    "homepage": "https://www.drupal.org/user/583238"
+                },
+                {
+                    "name": "mrded",
+                    "homepage": "https://www.drupal.org/user/556088"
+                }
+            ],
+            "description": "Integrate the Bootstrap framework with Views.",
+            "homepage": "https://www.drupal.org/project/views_bootstrap",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/views_bootstrap"
+            },
+            "time": "2017-03-29 14:23:33"
         },
         {
             "name": "drupal/views_jump_menu",
@@ -6825,7 +6921,7 @@
             "version": "2.6.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/woocommerce/FlexSlider.git",
+                "url": "https://github.com/woothemes/FlexSlider.git",
                 "reference": "2.6.3"
             },
             "type": "drupal-library"
@@ -8354,6 +8450,7 @@
         "drupal/paragraphs_previewer": 20,
         "drupal/pathauto": 5,
         "drupal/twitter": 20,
+        "drupal/views_bootstrap": 20,
         "drupal/views_jump_menu": 10
     },
     "prefer-stable": true,

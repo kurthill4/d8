@@ -89,56 +89,19 @@
 {% endif %}
 
 <div class="banner">
-  <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "pageDots": false }'>
-      <div class="carousel-cell slide-1"></div>
-      <div class="carousel-cell slide-2"></div>
-      <div class="carousel-cell slide-3"></div>
-      <div class="carousel-cell slide-4"></div>
-  </div>
+  <div class="carousel">
+      <div class="carousel-cell slide-dr"></div>
+</div>
         <div class="banner-content">
           <div class="caption">
-            <h1>Success Starts With You</h1>
-            <p>Prepare for university transfer and for high-demand, well-paying careers.</p>
-          </div>
-          <div class="get-started">
-            <a href="#">
-              <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-              Get Started Now
-            </a>
-          </div>
-          <div class="slide-buttons">
-            <a href="#">Apply</a>
-            <a href="#">Register</a>
+            <h1>Campus Directory</h1>
+            <p>Find People &amp; Places</p>
           </div>
 </div>
 
-{% if page.number %}
-  {{ page.number }}
-{% endif %}
-
-{% if page.gallery %}
-  {{ page.gallery }}
-{% endif %}
-
-{% if page.dates %}
-  {{ page.dates }}
-{% endif %}
-
-{% if page.buttons %}
-  {{ page.buttons }}
-{% endif %}
-
-{% if page.mission %}
-  {{ page.mission }}
-{% endif %}
-
-{% if page.news %}
-  {{ page.news }}
-{% endif %}
-
 {# Main #}
 {% block main %}
-  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+  <div role="main" class="main-container {{ container }} js-quickedit-main-content gateway">
     <div class="row">
 
       {# Header #}
@@ -165,7 +128,7 @@
           page.sidebar_first and page.sidebar_second ? 'col-sm-6',
           page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
           page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
-          page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
+          page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12',
         ]
       %}
       <section{{ content_attributes.addClass(content_classes) }}>

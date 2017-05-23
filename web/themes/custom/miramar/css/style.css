@@ -3,12 +3,13 @@ body{
 	font-size: 16px;
 	overflow-x: hidden;
 }
+
 .spacer {clear:both}
 ul { list-style: none; }
 h1, h2, h3, h4{
 	margin-top: 0;
 }
-h2, h3, h4{
+h1,h2, h3, h4{
 	font-family: 'Oswald', sans-serif;
 }
 .main-content h1, .main-content h2, .main-content h3 {
@@ -303,12 +304,16 @@ nav.mobile-nav li:first-child ol li{
 	font-size: 12px;
 }
 .main-content{
-	padding: 30px 0 0;
+/*	padding: 30px 0 0;*/
+padding:0;
 }
 .main-content h1 {
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 }
+.gateway {width:100%;padding:0!important;margin:0!important;}
+.gateway .views-view-grid {width:100%;padding:0!important;margin:0!important;}
+.gateway .container, .gateway .views-row {width:900px;margin:0 auto;}
 .carousel-cell {
 	background: #151b2c;
   width: 100%;
@@ -350,8 +355,22 @@ nav.mobile-nav li:first-child ol li{
   -o-background-size: cover;
   background-size: cover;
 }
+.slide-dr{
+	background: transparent url(../images/directory-banner.jpg) no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .slide-ns{
 	background: transparent url(../images/student-banner.jpg) no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.slide-pr{
+	background: transparent url(../images/program-banner.jpg) no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -784,6 +803,7 @@ footer h4{
 }
 .step-panel{
 	margin-left: 6px;
+	width:100%;
 }
 .step-panel ul{
 	margin: 0 0 0 12px;
@@ -806,6 +826,7 @@ footer h4{
 	font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   cursor: pointer;
+width:100%;
 }
 .step-panel .step-title span{
 	background: #a22130;
@@ -1415,7 +1436,7 @@ table.faculty thead th i {
 	 /* Small Devices, Tablets */
 	 @media only screen and (max-width : 768px) {
 		 .hide-xs{
-			 display: none;
+			 display: none!important;
 		 }
 		 .top-links, nav.main-menu, .mbtn, .page-cover{
 			 display: none;

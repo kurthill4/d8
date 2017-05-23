@@ -6,6 +6,8 @@
  * Place your custom PHP code in this file.
  */
 
+use Drupal\taxonomy\Entity\Term;
+
 function miramar_preprocess_html(&$variables, $hook)
 {
     $variables['base_path'] = base_path();
@@ -30,5 +32,12 @@ function miramar_preprocess_block(&$variables) {
         break;
 
     }
+  }
+}
+
+function miramar_theme_suggestions_page_alter(&$suggestions, &$vars) {
+  if (\Drupal::routeMatch()->getRouteName() == 'entity.taxonomy_term.canonical' && $tid = \Drupal::routeMatch()->getRawParameter('taxonomy_term')) {
+    $term = Term::load($tid);
+    $suggestions[] = 'page__taxonomy__' . $term->getVocabularyId();
   }
 }
