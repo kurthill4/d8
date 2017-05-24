@@ -41,3 +41,5 @@ function miramar_theme_suggestions_page_alter(&$suggestions, &$vars) {
     $suggestions[] = 'page__taxonomy__' . $term->getVocabularyId();
   }
 }
+
+
