@@ -21,7 +21,7 @@ bootstrap-scripts:
     bootstrap/assets/javascripts/bootstrap/affix.js: {}
     bootstrap/assets/javascripts/bootstrap/alert.js: {}
     bootstrap/assets/javascripts/bootstrap/button.js: {}
-#   bootstrap/assets/javascripts/bootstrap/carousel.js: {}
+    bootstrap/assets/javascripts/bootstrap/carousel.js: {}
     bootstrap/assets/javascripts/bootstrap/collapse.js: {}
     bootstrap/assets/javascripts/bootstrap/dropdown.js: {}
     bootstrap/assets/javascripts/bootstrap/modal.js: {}
@@ -31,11 +31,11 @@ bootstrap-scripts:
     bootstrap/assets/javascripts/bootstrap/tab.js: {}
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
 
-flickity:
-  css:
-    css/flickity.css: {}
-  js:
-    js/flickity.pkgd.min.js: {}
+#flickity:
+#  css:
+#    css/flickity.css: {}
+#  js:
+#    js/flickity.pkgd.min.js: {}
 
 Roboto:
   license:

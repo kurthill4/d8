@@ -369,6 +369,13 @@ padding:0;
   -o-background-size: cover;
   background-size: cover;
 }
+.slide-pa{
+	background: transparent url(../images/personas-path-banner.jpg) no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .slide-pr{
 	background: transparent url(../images/program-banner.jpg) no-repeat center bottom;
   -webkit-background-size: cover;
@@ -675,7 +682,7 @@ padding:0;
 	font-weight: bold;
 	float:right;
 }
-.news-title{
+/*.news-title{
 	position: relative;
 	padding: 0 0 0 65px;
 	margin-left: 30px;
@@ -687,7 +694,7 @@ padding:0;
 	position: absolute;
 	top: 0;
 	left: 0;
-}
+}*/
 .ne-wrap{
 	position: relative;
 	margin: 6px 0;
@@ -843,7 +850,11 @@ width:100%;
 	color: #1d2451;
 }
 .step-panel img{
-	width: 100%;
+	/*width: 100%;*/
+}
+.step-panel img.icon{
+	max-width: 45px;
+	max-height:51px;
 }
 .step-panel .step-desc{
 	padding: 30px 30px 30px 60px;
@@ -870,9 +881,26 @@ width:100%;
 	font-family: 'Oswald', sans-serif;
 	font-size: 22px;
 }
+.step-panel table {
+	width:100%;
+}
+.step-panel table h1,.step-panel table h3 {
+	margin:0;
+}
+.step-panel table img.image-responsive {
+	width:auto;
+	max-width:225px;
+	height:auto;
+	max-height:310px;
+}
 
-.step-panel tr,.step-panel td {
-	vertical-align: top;
+/*.step-panel td.views-field-field-image {
+	max-width:225px!important;
+}*/
+.step-panel tr,.step-panel td,.step-panel td img {
+	padding:0;
+	margin:0;
+	vertical-align: top!important;
 }
 
 .news-block-2{
@@ -1367,7 +1395,6 @@ table.faculty thead th i {
 .student-path h1 {
 	font-size: 24px;
   font-weight: 700;
-  width: 190px;
 }
 .student-path ul {
 	margin-top: 20px;
@@ -1611,7 +1638,7 @@ table.faculty thead th i {
 			 line-height: 24px;
 		 }
 		 .step-panel img{
-			 margin: 5px 0;
+			 margin: 0;
 		 }
 		 ul.dp-menu li{
     	 padding: 0 10px;
