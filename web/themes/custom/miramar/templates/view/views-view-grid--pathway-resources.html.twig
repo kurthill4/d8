@@ -54,12 +54,6 @@
     ]
   %}
 {% endif %}
-{% if title %}
- <div class="news-title">
-<img src="/themes/custom/miramar/images/icon-documents.png" />
- {{ title }}
-</div>
-{% endif %}
 <div{{ attributes.addClass(classes) }}>
   {% if options.alignment == 'horizontal' %}
     {% for row in items %}

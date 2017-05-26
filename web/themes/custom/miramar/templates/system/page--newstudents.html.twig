@@ -88,9 +88,9 @@
   {% endblock %}
 {% endif %}
 
-<div class="banner">
+<div class="banner notfront">
   <div class="carousel">
-      <div class="carousel-cell slide-ns"></div>
+      <div class="carousel-cell slide-ns notfront"></div>
 </div>
         <div class="banner-content">
           <div class="caption">
@@ -179,6 +179,13 @@
     </div>
   </div>
 {% endblock %}
+    {# Below Content #}
+        {% block below_content %}
+          {{ page.below_content }}
+        {% endblock %}
+
+
+
 <div class="grn-block">
   <div class="container-fluid">
     <div class="row">

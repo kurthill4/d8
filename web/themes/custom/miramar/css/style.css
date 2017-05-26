@@ -22,6 +22,14 @@ h1,h2, h3, h4{
 .main-content > div.row > div:first-child h4 {
 	margin-top: 30px;
 }
+.bold {font-weight:bold}
+.italic {font-style:italic}
+.paragraph--type--two-column {display:table-row;width:100%}
+.field--name-field-column-1,
+.field--name-field-column-2 {
+	display:table-cell;
+	width:50%;
+}
 
 #toolbar-administration {
 	display: grid;
@@ -275,9 +283,13 @@ nav.mobile-nav li:first-child ol li{
 	position: relative;
 	width: 100%;
 }
-.banner {
+.banner.front{
   max-height: 650px;
 //  overflow: hidden;
+}
+.banner.notfront{
+  max-height: 450px!important;
+/*  overflow: hidden;*/
 }
 .banner .carousel button{
 	display: none;
@@ -376,7 +388,7 @@ padding:0;
   -o-background-size: cover;
   background-size: cover;
 }
-.slide-pr{
+.slide-pr, .slide-gr {
 	background: transparent url(../images/program-banner.jpg) no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -494,6 +506,23 @@ padding:0;
 .region-mission #block-twitterforhomepage {
 	width:33%;
 	margin: 0 auto;
+}
+
+.region-below-content .views-view-grid {
+	width:95%;
+	margin: 0 auto;
+}
+
+
+.region-below-content .views-row,
+ {
+	width:80%
+	margin: 0 auto;
+}
+
+.region-below-content h4 {
+	padding:0;
+	margin:0;
 }
 
 .important-dates{
@@ -682,7 +711,7 @@ padding:0;
 	font-weight: bold;
 	float:right;
 }
-/*.news-title{
+.news-title{
 	position: relative;
 	padding: 0 0 0 65px;
 	margin-left: 30px;
@@ -694,7 +723,7 @@ padding:0;
 	position: absolute;
 	top: 0;
 	left: 0;
-}*/
+}
 .ne-wrap{
 	position: relative;
 	margin: 6px 0;
@@ -1009,8 +1038,6 @@ width:100%;
 	cursor: pointer;
 }
 .id-block{
-	position: relative;
-	margin: 15px 0 0;
 	background: #dbf3f5;
 	padding: 20px;
 }
@@ -1027,7 +1054,7 @@ width:100%;
 	margin: 0 0 30px;
 }
 .id-block .rfm-block h4{
-	margin: 0 0 25px;
+	margin: 0;
 	font-size: 18px;
 	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
@@ -1049,11 +1076,11 @@ width:100%;
 	margin: 0 20px 0 0;
 }
 .id-block ul{
-	margin: 0;
+	margin: 0 0 0 25px;
 	padding: 0;
 }
 .id-block ul li{
-	margin: 0 0 5px;
+	margin: 0;
 }
 .dp-block{
 	background: #daf2f4;
