@@ -31,11 +31,11 @@ bootstrap-scripts:
     bootstrap/assets/javascripts/bootstrap/tab.js: {}
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
 
-#flickity:
-#  css:
-#    css/flickity.css: {}
-#  js:
-#    js/flickity.pkgd.min.js: {}
+flickity:
+  css:
+    css/flickity.css: {}
+  js:
+    js/flickity.pkgd.min.js: {}
 
 Roboto:
   license:
@@ -44,7 +44,7 @@ Roboto:
   css:
     theme:
       //fonts.googleapis.com/css?family=Roboto:400: { type: external }
-    scss/style.css: {}
+    css/style.css: {}
 
 Oswald:
   license:
@@ -53,7 +53,7 @@ Oswald:
   css:
     theme:
       //fonts.googleapis.com/css?family=Oswald:400: { type: external }
-    scss/style.css: {}
+    css/style.css: {}
 
 Nixie:
   license:
@@ -62,4 +62,6 @@ Nixie:
   css:
     theme:
       //fonts.googleapis.com/css?family=Nixie+One:400: { type: external }
-    scss/style.css: {}
+    css/style.css: {}
+
+

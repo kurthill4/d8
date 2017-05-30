@@ -30,7 +30,8 @@ regions:
 libraries:
   - 'miramar/global-styling'
   - 'miramar/bootstrap-scripts'
-#  - 'miramar/flickity'
+  - 'miramar/flickity'
   - 'miramar/Roboto'
   - 'miramar/Oswald'
   - 'miramar/Nixie'
+

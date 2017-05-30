@@ -6,6 +6,15 @@ body{
 
 .spacer {clear:both}
 ul { list-style: none; }
+ul.bull li {
+	text-indent: -1em;
+	padding-left: 1em;
+}
+ul.bull li:before {
+	content: '❖ ';
+}
+table.small {font-size:0.75em;}
+table.small td {padding:2px;vertical-align:top;}
 h1, h2, h3, h4{
 	margin-top: 0;
 }
@@ -24,7 +33,14 @@ h1,h2, h3, h4{
 }
 .bold {font-weight:bold}
 .italic {font-style:italic}
-.paragraph--type--two-column {display:table-row;width:100%}
+.paragraph--type--two-column {
+	display:table;
+	width:90%;
+	margin: 0 auto;
+}
+.paragraph--type--two-column h3{
+	width:80%;
+}
 .field--name-field-column-1,
 .field--name-field-column-2 {
 	display:table-cell;
@@ -285,11 +301,11 @@ nav.mobile-nav li:first-child ol li{
 }
 .banner.front{
   max-height: 650px;
-//  overflow: hidden;
+  overflow: hidden;
 }
 .banner.notfront{
-  max-height: 450px!important;
-/*  overflow: hidden;*/
+  max-height: 500px!important;
+  overflow: hidden;
 }
 .banner .carousel button{
 	display: none;
@@ -368,7 +384,7 @@ padding:0;
   background-size: cover;
 }
 .slide-dr{
-	background: transparent url(../images/directory-banner.jpg) no-repeat center bottom;
+	background: transparent url(../images/directory-banner-1.jpg) no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -395,9 +411,16 @@ padding:0;
   -o-background-size: cover;
   background-size: cover;
 }
-.banner-content{
+.front .banner-content{
 	position: absolute;
-	bottom: 100px;
+	bottom: 150px;
+	left: 15px;
+	z-index:1000;
+	color:#ffffff;
+}
+.notfront .banner-content{
+	position: absolute;
+	bottom: 250px;
 	left: 15px;
 	z-index:1000;
 	color:#ffffff;
@@ -405,7 +428,7 @@ padding:0;
 .caption{
 	background: rgba(29, 26, 81, 0.9);
 	width: 550px;
-	padding: 40px 50px;
+	padding: 30px 40px;
 	margin: 5px;
 }
 .caption h1{
@@ -691,6 +714,11 @@ padding:0;
 	margin: 0 20px 0 0;
 }
 .region-gallery {display:block;margin: 25px auto}
+.region-sidebar-second .block {
+	background: #dbf3f5;
+	margin:12px 0;
+	padding-left:5px;
+}
 .news-block{
 	position: relative;
 	background: #dbf3f5;
