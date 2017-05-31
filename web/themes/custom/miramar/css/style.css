@@ -13,7 +13,7 @@ ul.bull li {
 ul.bull li:before {
 	content: '❖ ';
 }
-table.small {font-size:0.75em;}
+table.small,ul.small {font-size:0.75em;}
 table.small td {padding:2px;vertical-align:top;}
 h1, h2, h3, h4{
 	margin-top: 0;
