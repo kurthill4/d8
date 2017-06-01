@@ -3516,7 +3516,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/themable_forms-8.x-1.0-beta1.zip",
-                "reference": null,
+                "reference": "8.x-1.0-beta1",
                 "shasum": "6bf19b93a29ef3a2b220697c8e19eb789f8c1953"
             },
             "require": {

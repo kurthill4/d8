@@ -5,3 +5,9 @@ Installed php-dev and curl as requirements for Twitter module. These will probab
 Ongoing issues with programs carousel. Suspect a JavaScript conflict. Works in Bartik and Bootstrap themes, but not in the Promet theme, which uses a combination of local and Drupal resources.
 
 Promet's CSS classes to show and hide sections based on screen size work, even with views.
+
+Display issue on Campus Resources page is fixed; all I need are images and copy from Steve.
+
+Relevant Counseling, Financial Aid, DSPS, CARE, CALWorks, PLACe, Transfer (not the individual articulation pages), Health, Admin/Student/Instruction offices, Schools, Admissions, Assessment, Honors have all been moved into template and just need minor formatting changes. Staff lists have not been moved due to too many formats. We need a consistent one.
+
+I now find myself seriously hampered by the content migration problem. Nothing works and we need it to work.

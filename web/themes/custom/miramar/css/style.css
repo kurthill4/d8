@@ -19,13 +19,14 @@ ul.bull li:before {
 }
 table.small,ul.small {font-size:0.75em;}
 table.small td {padding:2px;vertical-align:top;}
+table.medium {width:75%;}
 td.vcenter {
 	vertical-align: center;
 }
-h1, h2, h3, h4{
+h1, h2, h3, h4,h5 {
 	margin-top: 0;
 }
-h1,h2, h3, h4{
+h1,h2, h3, h4, h5{
 	font-family: 'Oswald', sans-serif;
 }
 .main-content h1, .main-content h2, .main-content h3 {
@@ -721,16 +722,22 @@ padding:0;
 	margin: 0 20px 0 0;
 }
 .region-gallery {display:block;margin: 25px auto}
+.region-sidebar-second {
+	background: #dbf3f5;
+	width: 100%;
+	padding:5px;
+}
 .region-sidebar-second .block {
 	background: #dbf3f5;
+	width:100%;
 	margin:12px 0;
 	padding-left:5px;
 }
 .news-block{
-	position: relative;
 	background: #dbf3f5;
-	margin: 12px 0 0;
-	padding: 20px;
+	width:100%;
+	margin: 0 0 10px 0;
+	padding: 5px;
 }
 .news-block i{
 	position: absolute;
@@ -971,17 +978,14 @@ width:100%;
 	margin-top: 0;
 }
 .news-block-2 ul{
-	margin: 10px 0 0;
+	margin: 10px 0 0 0;
 	padding: 0;
 }
 .news-block-2 ul li{
 	position: relative;
-	min-height: 88px;
-	background: #fff;
-	overflow: hidden;
-	border-radius: 0 5px 5px 0;
-	padding: 10px 10px 10px 145px;
-	margin: 0 0 15px;
+	padding: 0;
+	margin: 0 0 0.5em 0;
+	font-size: 0.75em;
 }
 .news-block-2 a.see-more{
 	float: right;
@@ -990,9 +994,9 @@ width:100%;
 	text-decoration: none;
 	color: #000;
 }
-.news-block-2 ul li:hover a{
+.news-block-2 ul li a:hover{
 	color: #a22130;
-	font-weight: bold;
+	text-decoration: underline;
 }
 .news-block-2 ul span{
 	display: block;
