@@ -19,6 +19,9 @@ ul.bull li:before {
 }
 table.small,ul.small {font-size:0.75em;}
 table.small td {padding:2px;vertical-align:top;}
+td.vcenter {
+	vertical-align: center;
+}
 h1, h2, h3, h4{
 	margin-top: 0;
 }
