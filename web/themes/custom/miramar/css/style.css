@@ -6,6 +6,10 @@ body{
 
 .spacer {clear:both}
 ul { list-style: none; }
+ul.noindent,ul.noindent li {
+	padding:0;
+	margin: 0;
+}
 ul.bull li {
 	text-indent: -1em;
 	padding-left: 1em;
