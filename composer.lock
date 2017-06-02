@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0d37d02193b8f5c82c4bc13249469464",
+    "content-hash": "324ebb52b0a30625ba02061070084466",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3136,7 +3136,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/migrate_tools-8.x-2.0-beta1.zip",
-                "reference": "8.x-2.0-beta1",
+                "reference": null,
                 "shasum": "bf823a9d08d08b99d5ea1469729b30f9969ef519"
             },
             "require": {
