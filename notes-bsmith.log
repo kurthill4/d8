@@ -11,3 +11,5 @@ Display issue on Campus Resources page is fixed; all I need are images and copy 
 Relevant Counseling, Financial Aid, DSPS, CARE, CALWorks, PLACe, Transfer (not the individual articulation pages), Health, Admin/Student/Instruction offices, Schools, Admissions, Assessment, Honors have all been moved into template and just need minor formatting changes. Staff lists have not been moved due to too many formats. We need a consistent one.
 
 I now find myself seriously hampered by the content migration problem. Nothing works and we need it to work.
+
+No cosmetic changes since 06/01; I have been focused on data migration. Programs, Depts, Degrees, Committees, and people have now been migrated. However, some fields; e.g, contact person, must be updated manually.
