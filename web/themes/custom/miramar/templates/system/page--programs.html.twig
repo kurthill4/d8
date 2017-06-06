@@ -59,7 +59,7 @@
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
-  {% block navbar %}
+ {% block navbar %}
     {%
       set navbar_classes = [
         'navbar',
@@ -69,14 +69,15 @@
     %}
 <div class="spacer" style="height:1px">&nbsp;</div>
     <header>
-        {{ page.navigation }}
+         {{ page.navigation }}
         {# .btn-navbar is used as the toggle for collapsed navbar content #}
         {% if page.navigation_collapsible %}
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <button class="navbar-toggle" data-toggle="collapse" data-target=".main-menu">
             <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
+		Mobile Menu
           </button>
         {% endif %}
 
@@ -92,10 +93,10 @@
   <div class="carousel">
       <div class="carousel-cell slide-pr"></div>
 </div>
-        <div class="banner-content">
-          <div class="caption">
+        <div class="banner-content hide-xs">
+          <div class="caption hide-xs">
             <h1>Our Programs</h1>
-            <p>Start Here. Get There!</p>
+            <p>Miramar offers over 150 degrees and certificates. Start Here. Get There!</p>
           </div>
 	</div>
 </div>

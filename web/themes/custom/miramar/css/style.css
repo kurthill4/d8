@@ -174,6 +174,7 @@ nav.main-menu{
 	text-align: right;
 	padding: 12px 0 8px;
 }
+
 nav.main-menu ul{
 	margin: 0;
 	padding: 0;
@@ -201,6 +202,9 @@ nav.main-menu li:hover a{
 	text-decoration: none;
 	color: #31b8c9;
 }
+/*nav.main-menu li:first-child {
+	margin-right:10em;
+}*/
 nav.main-menu li:first-child a{
 	border: 1px solid #fff;
 	padding: 6px 5px 4px;
@@ -220,7 +224,7 @@ nav.mobile-nav{
   z-index: 100;
   background: #fff;
   width: 100%;
-  top: 80px;
+  top: 0px;
 }
 nav.mobile-nav ul{
 	margin: 0;
@@ -306,17 +310,6 @@ nav.mobile-nav li:first-child ol li{
 .carousel {
 	position: relative;
 	width: 100%;
-}
-.banner.front{
-  max-height: 650px;
-  overflow: hidden;
-}
-.banner.notfront{
-  max-height: 500px!important;
-  overflow: hidden;
-}
-.banner .carousel button{
-	display: none;
 }
 .page-cover{
 	height: 159px;
@@ -419,16 +412,31 @@ padding:0;
   -o-background-size: cover;
   background-size: cover;
 }
+.banner.front{
+  max-height: 650px;
+  overflow: hidden;
+}
+.banner.notfront{
+  max-height: 500px!important;
+  overflow: hidden;
+}
+.banner .carousel button{
+	display: none;
+}
+
+.banner-content {
+	width:100%;
+}
 .front .banner-content{
 	position: absolute;
-	bottom: 150px;
+	top: 200px;
 	left: 15px;
 	z-index:1000;
 	color:#ffffff;
 }
 .notfront .banner-content{
 	position: absolute;
-	bottom: 250px;
+	top: 200px;
 	left: 15px;
 	z-index:1000;
 	color:#ffffff;
@@ -880,8 +888,9 @@ footer h4{
 	font-size: 21px;
 	color: #000;
 }
-.inner img{
+.inner div{
 	width: 100%;
+	max-height: 650px;
 }
 .step-panel{
 	margin-left: 6px;
@@ -891,7 +900,7 @@ footer h4{
 	margin: 0 0 0 12px;
 	padding: 0;
 }
-.step-panel .step-caption{
+.step-caption{
 	background: rgba(29, 26, 81, 0.9);
 	color: #fff;
 	margin: -137px -9px 0 63px;
@@ -1549,8 +1558,8 @@ table.faculty thead th i {
 		 }
 		 .logo a.mobile-menu{
 			 position: absolute;
-		 	 top: 23px;
-		 	 right: 30px;
+		 	 top: 0px;
+		 	 right: 0px;
 		 	 color: #fff;
 		 	 font-size: 25px;
 		 	 transition: transform 0.2s;
@@ -1558,7 +1567,7 @@ table.faculty thead th i {
 		 .logo a.mobile-menu.collapsed {
 		 		transform: rotate(90deg);
 		 	}
-		 .banner-content{
+		 /*.banner-content{
 			 position: relative;
 			 bottom: 0;
 			 left: 0;
@@ -1579,7 +1588,7 @@ table.faculty thead th i {
 			 width: 49%;
 			 text-align: center;
 			 margin: 1% 0;
-		 }
+		 }*/
 		 body{
 			 padding: 80px 0 0;
 		 }
@@ -1776,3 +1785,6 @@ table.faculty thead th i {
 	 @media only screen and (max-width : 320px) {
 
 	 }
+
+
+
