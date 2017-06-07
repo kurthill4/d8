@@ -22,7 +22,7 @@
 #}
 <div class="news-title">
 <h3>
-<img src="{{ directory }}/images/icon-documents.png" class="icon" />
+<img src="/themes/custom/miramar/images/icon-documents.png" class="icon" />
 Frequently Requested Resources
 </h3>
 </div>

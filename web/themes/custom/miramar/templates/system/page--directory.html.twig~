@@ -59,7 +59,7 @@
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
- {% block navbar %}
+  {% block navbar %}
     {%
       set navbar_classes = [
         'navbar',
@@ -69,15 +69,14 @@
     %}
 <div class="spacer" style="height:1px">&nbsp;</div>
     <header>
-         {{ page.navigation }}
+        {{ page.navigation }}
         {# .btn-navbar is used as the toggle for collapsed navbar content #}
         {% if page.navigation_collapsible %}
-          <button class="navbar-toggle" data-toggle="collapse" data-target=".main-menu">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
             <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-		Mobile Menu
           </button>
         {% endif %}
 
@@ -88,19 +87,18 @@
     </header>
   {% endblock %}
 {% endif %}
-
-<div class="banner notfront">
+<div class="banner">
   <div class="carousel">
-      <div class="carousel-cell slide-pr"></div>
-</div>
+      <div class="carousel-cell slide-dr"></div>
+  </div>
         <div class="banner-content hide-xs">
-          <div class="caption hide-xs">
-            <h1>Our Programs</h1>
-            <p>Miramar offers over 150 degrees and certificates. Start Here. Get There!</p>
+          <div class="caption">
+            <h1>Campus Directory</h1>
+            <p>Find People &amp; Places</p>
           </div>
 	</div>
 </div>
-
+</section>
 {# Main #}
 {% block main %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content gateway">
@@ -130,7 +128,7 @@
           page.sidebar_first and page.sidebar_second ? 'col-sm-6',
           page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
           page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
-          page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
+          page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12',
         ]
       %}
       <section{{ content_attributes.addClass(content_classes) }}>
@@ -185,7 +183,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12">
-        <img class="img-responsive" src="{{ directory }}/images/logo-2.png" alt="">
+        <img class="img-responsive" src="/themes/custom/miramar/images/logo-2.png" alt="">
       </div>
     </div>
   </div>

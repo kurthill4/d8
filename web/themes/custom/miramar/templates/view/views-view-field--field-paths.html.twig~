@@ -20,11 +20,10 @@
  * @ingroup themeable
  */
 #}
-<div class="news-title">
-<h3>
-<img src="{{ directory }}/images/icon-documents.png" class="icon" />
-Frequently Requested Resources
-</h3>
-</div>
-<br />
+<div class="student-path">
+<h1>
+<img src="/themes/custom/miramar/images/persons-path-select-icon.jpg" class="icon" />
+Select a Path
+</h1>
 {{ output -}}
+</div>

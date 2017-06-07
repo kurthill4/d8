@@ -170,11 +170,18 @@
     </div>
   </div>
 {% endblock %}
+    {# Below Content #}
+      {% if page.below_content %}
+        {% block below_content %}
+          {{ page.below_content }}
+        {% endblock %}
+      {% endif %}
+
 <div class="grn-block">
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12">
-        <img class="img-responsive" src="/themes/custom/miramar/images/logo-2.png" alt="">
+        <img class="img-responsive" src="{{ directory }}/images/logo-2.png" alt="">
       </div>
     </div>
   </div>
