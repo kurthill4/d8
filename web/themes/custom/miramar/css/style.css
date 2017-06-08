@@ -202,16 +202,17 @@ nav.main-menu li:hover a{
 	text-decoration: none;
 	color: #31b8c9;
 }
-/*nav.main-menu li:first-child {
-	margin-right:10em;
-}*/
+nav.main-menu li:first-child {
+	margin-right:25%;
+	width: 40px!important;
+}
 nav.main-menu li:first-child a{
 	border: 1px solid #fff;
 	padding: 6px 5px 4px;
 	display: inline-block;
 	position: absolute;
 	top: 13px;
-	width: 40px;
+	width: 40px!important;
 	height: 40px;
 	border-radius: 20px;
 	text-align: center;
@@ -220,7 +221,7 @@ nav.main-menu li:first-child i{
 	font-size: 25px;
 }
 nav.mobile-nav{
-	position: fixed;
+	position: absolute;
   z-index: 100;
   background: #fff;
   width: 100%;
@@ -319,6 +320,9 @@ nav.mobile-nav li:first-child ol li{
   -o-background-size: cover;
   background-size: cover;
 }
+.page-header {
+	margin-left:2em;
+}
 .bc-block{
 	background: #daf2f4;
 }
@@ -412,6 +416,7 @@ padding:0;
   -o-background-size: cover;
   background-size: cover;
 }
+.banner {position:relative}
 .banner.front{
   max-height: 650px;
   overflow: hidden;
@@ -424,19 +429,19 @@ padding:0;
 	display: none;
 }
 
-.banner-content {
+/*.banner-content {
 	width:100%;
-}
+}*/
 .front .banner-content{
 	position: absolute;
-	top: 200px;
+	bottom:10%;
 	left: 15px;
 	z-index:1000;
 	color:#ffffff;
 }
 .notfront .banner-content{
 	position: absolute;
-	top: 200px;
+	bottom:10%;
 	left: 15px;
 	z-index:1000;
 	color:#ffffff;
@@ -1533,6 +1538,7 @@ table.faculty thead th i {
 
 	 /* Medium Devices, Desktops */
 	 @media only screen and (max-width : 992px) {
+		.hide-xl {display:none!important;}
 		 nav.main-menu li{
 			 width: 40px;
 			 margin-right: 40px;
@@ -1545,8 +1551,11 @@ table.faculty thead th i {
 		 }
 	 }
 
+	 @media only screen and (max-height : 640px) or (max-width:800px) {
+		 .banner-content{display:none!important;}
+	}
 
-	 @media only screen and (min-width : 769px) {
+	 @media only screen and (min-width : 801px) {
 		 .hide-lg{
 			 display: none !important;
 		 }
@@ -1556,7 +1565,7 @@ table.faculty thead th i {
 	 }
 
 	 /* Small Devices, Tablets */
-	 @media only screen and (max-width : 768px) {
+	 @media only screen and (max-width : 800px) {
 		 .hide-xs{
 			 display: none!important;
 		 }
@@ -1583,10 +1592,10 @@ table.faculty thead th i {
 		 .logo a.mobile-menu.collapsed {
 		 		transform: rotate(90deg);
 		 	}
-		 /*.banner-content{
-			 position: relative;
-			 bottom: 0;
-			 left: 0;
+		 .banner-content{
+			 position: relative!important;
+			 bottom: 0!important;
+			 left: 0!important;
 		 }
 		 .caption{
 			 background: rgba(29, 26, 81, 1);
@@ -1604,9 +1613,9 @@ table.faculty thead th i {
 			 width: 49%;
 			 text-align: center;
 			 margin: 1% 0;
-		 }*/
+		 }
 		 body{
-			 padding: 80px 0 0;
+			 padding: 0;/*40px 0 0;*/
 		 }
 		 .carousel-cell{
 			 height: auto;

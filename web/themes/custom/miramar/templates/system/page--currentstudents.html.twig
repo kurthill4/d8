@@ -67,7 +67,6 @@
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
     %}
-<div class="spacer" style="height:1px">&nbsp;</div>
     <header>
         {{ page.navigation }}
         {# .btn-navbar is used as the toggle for collapsed navbar content #}
@@ -89,17 +88,17 @@
 {% endif %}
 <div class="banner notfront">
       <div class="carousel-cell slide-ns">
-     </div>
           <div class="banner-content hide-xs">
 		<div class="caption">
                     <h1>Current Students</h1>
                    <p>This is your path to success.</p>
 		</div>
           </div>
+     </div>
 </div>
-
 {# Main #}
 {% block main %}
+<div class="spacer hide-lg" style="height:2em">&nbsp;</div>
   <div role="main" class="main-container {{ container }} js-quickedit-main-content gateway">
     <div class="row">
 
