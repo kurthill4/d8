@@ -203,8 +203,8 @@ nav.main-menu li:hover a{
 	color: #31b8c9;
 }
 nav.main-menu li:first-child {
-	margin-right:25%;
-	width: 40px!important;
+	max-width: 40px!important;
+	margin-right:20%;
 }
 nav.main-menu li:first-child a{
 	border: 1px solid #fff;
@@ -321,7 +321,13 @@ nav.mobile-nav li:first-child ol li{
   background-size: cover;
 }
 .page-header {
-	margin-left:2em;
+	padding-left:2em;
+	margin:0;
+	width:100%;
+	font-family:Oswald;
+	color:#ffffff;
+	background:#1d2451;
+	
 }
 .bc-block{
 	background: #daf2f4;
@@ -428,10 +434,6 @@ padding:0;
 .banner .carousel button{
 	display: none;
 }
-
-/*.banner-content {
-	width:100%;
-}*/
 .front .banner-content{
 	position: absolute;
 	bottom:10%;
@@ -446,9 +448,14 @@ padding:0;
 	z-index:1000;
 	color:#ffffff;
 }
+.front .caption {
+	width: 550px;
+}
+.notfront .caption {
+	width: 450px;
+}
 .caption{
 	background: rgba(29, 26, 81, 0.9);
-	width: 550px;
 	padding: 30px 40px;
 	margin: 5px;
 }
@@ -1522,7 +1529,7 @@ table.faculty thead th i {
 	text-align:center;
 }
 
-
+.hide-title {display:none;}
 /* Media Queries */
 @media only screen and (min-width : 1200px) {
 	.red-box{
@@ -1549,10 +1556,18 @@ table.faculty thead th i {
 		 .ne-wrap .news-overlay{
 			 padding: 20% 30px;
 		 }
+		nav.main-menu li:first-child {
+			margin-right:10%;
+		}
 	 }
 
-	 @media only screen and (max-height : 640px) or (max-width:800px) {
+	 @media only screen and (max-height : 640px){
 		 .banner-content{display:none!important;}
+		.hide-title {display:block}
+	}
+	 @media only screen and (max-width : 800px){
+		 .banner-content{display:none!important;}
+		.hide-title {display:block}
 	}
 
 	 @media only screen and (min-width : 801px) {
