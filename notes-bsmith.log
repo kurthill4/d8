@@ -13,3 +13,11 @@ Relevant Counseling, Financial Aid, DSPS, CARE, CALWorks, PLACe, Transfer (not t
 I now find myself seriously hampered by the content migration problem. Nothing works and we need it to work.
 
 No cosmetic changes since 06/01; I have been focused on data migration. Programs, Depts, Degrees, Committees, and people have now been migrated. However, some fields; e.g, contact person, must be updated manually.
+
+Most of the programs and committees' data fields have been cleaned up. A permanent fix for the hero display is proving harder than I thought, but we are now close.
+
+Beginning the process of translating the custom RSS for the mobile app.
+
+If you get that THEMENAME issue when uploading a config, go into the database and in the config table, look for an entry named THEMENAME.settings.yaml. Delete it, and make sure it's not in the tar of the config that you're uploading.
+
+
