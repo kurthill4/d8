@@ -322,7 +322,7 @@ nav.mobile-nav li:first-child ol li{
 }
 .page-header {
 	padding-left:2em;
-	margin:0;
+	margin:0,75em 0;
 	width:100%;
 	font-family:Oswald;
 	color:#ffffff;
@@ -351,8 +351,24 @@ padding:0;
 	text-transform: uppercase;
 }
 .gateway {width:100%;padding:0!important;margin:0!important;}
-.gateway .views-view-grid {width:100%;padding:0!important;margin:0!important;}
-.gateway .container, .gateway .views-row {width:900px;margin:0 auto;}
+.gateway .views-view-grid {
+	width:100%;
+	padding:0!important;
+	margin:0!important;
+	background: #dbf3f5;
+}
+.gateway .container, .gateway .views-row {width:100%;}
+.gateway .container {
+	padding:0;
+	margin:0;
+}
+.gateway .views-row {
+	padding:0;
+	margin: 10px 0;
+}
+.gateway .views-row .views-col {padding:0;margin:0;}
+.gateway .views-row .views-col img {padding:0;margin:0;}
+
 .carousel-cell {
 	background: #151b2c;
   width: 100%;
@@ -1287,10 +1303,11 @@ ul.dp-menu li:hover a{
 	display: block;
 	font-weight: bold;
 	font-family:Oswald;
-	width: 100%;
-	padding: 0 25px;
+	width: 80px;
+	padding: 0;
 	position: absolute;
 	bottom: 50px;
+	margin-left: 20px;
 	text-align:center;
 	color: #ffffff;
 }
@@ -1529,7 +1546,7 @@ table.faculty thead th i {
 	text-align:center;
 }
 
-.hide-title {display:none;}
+.gateway .hide-title {display:none;}
 /* Media Queries */
 @media only screen and (min-width : 1200px) {
 	.red-box{
