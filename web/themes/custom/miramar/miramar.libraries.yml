@@ -5,10 +5,10 @@ global-styling:
       css/style.css: {}
       font-awesome-4.7.0/css/font-awesome.min.css: {}
   js:
-    js/jquery.min.js: {}
-    js/bootstrap.min.js: {}
+#    js/jquery.min.js: {}
+#    js/bootstrap.min.js: {}
     bootstrap/assets/javascripts/bootstrap.min.js: {}
-    js/jquery-ui.js: {}
+#    js/jquery-ui.js: {}
     js/main.js: {}
   dependencies:
     - core/jquery

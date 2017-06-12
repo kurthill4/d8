@@ -172,7 +172,7 @@ nav.main-menu{
 	width: 100%;
 	z-index: 1;
 	text-align: right;
-	padding: 12px 0 8px;
+	padding: 12px 160px 8px 0;
 }
 
 nav.main-menu ul{
@@ -204,7 +204,8 @@ nav.main-menu li:hover a{
 }
 nav.main-menu li:first-child {
 	max-width: 40px!important;
-	margin-right:20%;
+	text-align:left;
+	margin-right:160px;
 }
 nav.main-menu li:first-child a{
 	border: 1px solid #fff;
@@ -1299,7 +1300,9 @@ ul.dp-menu li:hover a{
 .program-list-panel .col-md-2 a img.force-height {
 	min-height: 305px;
 }
-.program-list-panel strong,.step-panel strong {
+.program-list-panel strong,
+.step-panel strong,
+#flexslider-1 strong {
 	display: block;
 	font-weight: bold;
 	font-family:Oswald;
@@ -1315,11 +1318,13 @@ ul.dp-menu li:hover a{
 .resource .region-content .view-content {
 	display:none;
 }
-.step-panel .program img {
+.step-panel .program img,
+#flexslider-1 img {
     -webkit-filter: brightness(50%); /* Safari 6.0 - 9.0 */
     filter: brightness(50%);}
 
-.step-panel .program a:hover img {
+.step-panel .program a:hover img,
+#flexslider-1 a:hover img {
     -webkit-filter: brightness(100%); /* Safari 6.0 - 9.0 */
     filter: brightness(100%);}
 
@@ -1574,7 +1579,7 @@ table.faculty thead th i {
 			 padding: 20% 30px;
 		 }
 		nav.main-menu li:first-child {
-			margin-right:10%;
+			margin-left:10%;
 		}
 	 }
 
