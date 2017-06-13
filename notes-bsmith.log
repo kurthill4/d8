@@ -20,4 +20,8 @@ Beginning the process of translating the custom RSS for the mobile app.
 
 If you get that THEMENAME issue when uploading a config, go into the database and in the config table, look for an entry named THEMENAME.settings.yaml. Delete it, and make sure it's not in the tar of the config that you're uploading.
 
+The homepage uses too much memory for the full size screenshot.
+
+Most camppus resources have been migrated.
+
 

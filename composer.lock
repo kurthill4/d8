@@ -3136,7 +3136,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/migrate_tools-8.x-2.0-beta1.zip",
-                "reference": null,
+                "reference": "8.x-2.0-beta1",
                 "shasum": "bf823a9d08d08b99d5ea1469729b30f9969ef519"
             },
             "require": {

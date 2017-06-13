@@ -543,7 +543,7 @@ padding:0;
 	display: none;
 }
 
-#block-homepagebuttons {margin:1em auto;}
+.region-buttons,#block-homepagebuttons {margin:1em auto;}
 .region-dates section,.region-mission section {display:table-cell;}
 .region-dates section,.region-dates .view {margin: 0 auto!important}
 .region-dates,.region-mission {
@@ -758,7 +758,9 @@ padding:0;
 	display: inline-block;
 	margin: 0 20px 0 0;
 }
-.region-gallery {display:block;margin: 25px auto}
+.region-gallery,
+.region-gallery section,
+.region-gallery .block-views-blockprogram-carousel-block-1 {margin: 0 auto}
 .region-sidebar-second {
 	background: #dbf3f5;
 	width: 100%;
