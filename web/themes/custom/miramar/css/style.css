@@ -4,6 +4,7 @@ body{
 	overflow-x: hidden;
 }
 
+
 .spacer {clear:both}
 ul { list-style: none; }
 ul.noindent,ul.noindent li {
@@ -29,6 +30,7 @@ h1, h2, h3, h4,h5 {
 h1,h2, h3, h4, h5{
 	font-family: 'Oswald', sans-serif;
 }
+
 .main-content h1, .main-content h2, .main-content h3 {
 	color: #1d2451;
 	margin-bottom: 25px;
@@ -163,7 +165,7 @@ header{
   padding: 15px 0;
 	margin: 0;
 }
-
+button.navbar-toggle {margin-right:40px!important;}
 nav.main-menu{
 	position: absolute;
 	top: 60px;
@@ -537,7 +539,7 @@ padding:0;
 }
 
 .mbtn{
-	margin: 25px auto 0;
+	margin: 0 auto;
 }
 .mbtn .flickity-page-dots{
 	display: none;
@@ -1330,7 +1332,6 @@ ul.dp-menu li:hover a{
     -webkit-filter: brightness(100%); /* Safari 6.0 - 9.0 */
     filter: brightness(100%);}
 
-
 .program-list-panel .col-md-2 a:hover img {
 	filter: brightness(100%);
 }
@@ -1422,8 +1423,13 @@ table.faculty thead th i {
 	background: #daf2f4;
 	padding: 30px 0;
 }
+
 .campus-resources-content .container-fluid {
+	padding-left:10px;
 	margin: 20px 0 0;
+}
+.campus-resources-content h2 {
+	margin-left:10px;
 }
 .campus-resources-content .mini-sidebar a {
     color: #31b6c7;
@@ -1654,7 +1660,7 @@ table.faculty thead th i {
 			 margin: 1% 0;
 		 }
 		 body{
-			 padding: 0;/*40px 0 0;*/
+			 padding: 10px 0 0;
 		 }
 		 .carousel-cell{
 			 height: auto;
@@ -1851,4 +1857,39 @@ table.faculty thead th i {
 	 }
 
 
-
+.flex-direction-nav a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: -20px 0 0;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    overflow: hidden;
+    opacity: 0;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    text-align: center;
+}
+.flex-direction-nav a:before {
+    font-family: "flexslider-icon";
+    font-size: 20px;
+    display: inline-block;
+    content: '\f001';
+    color: #FFF;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+    line-height: 40px;
+}
+.flex-direction-nav .flex-next {
+    right: -50px;
+    text-align: center;
+}
