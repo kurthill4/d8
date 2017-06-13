@@ -358,14 +358,14 @@ padding:0;
 	margin:0!important;
 	background: #dbf3f5;
 }
-.gateway .container, .gateway .views-row {width:100%;}
+.gateway .container, /*.gateway .views-row*/ {width:100%;}
 .gateway .container {
 	padding:0;
 	margin:0;
 }
-.gateway .views-row {
+.gateway .views-row {width:90%;display:block;
 	padding:0;
-	margin: 10px 0;
+	margin: 10px auto;
 }
 .gateway .views-row .views-col {padding:0;margin:0;}
 .gateway .views-row .views-col img {padding:0;margin:0;}
