@@ -1,0 +1,109 @@
+/* --------------- System Tabs  --------------- */
+
+ul.quicktabs-tabs {
+  font-family: Oswald, sans-serif;
+  margin-bottom: 20px;
+}
+ul.quicktabs-tabs li a {
+  color: #000;
+  background-color: #ededed;
+  border-color: #bbb;
+  border-style: solid solid none solid;
+  border-width: 1px;
+  height: 1.8em;
+  line-height: 1.9;
+  display: block;
+  font-size: 1.5em;
+  padding: 0 10px 3px;
+  text-shadow: 0 1px 0 #fff;
+}
+ul.quicktabs-tabs li.active a {
+  background-color: #ffffff;
+  border: 1px solid #bbb;
+}
+@media screen and (max-width: 37.5em) { /* 600px */
+  ul.quicktabs-tabs ul.primary {
+    border-bottom: 1px solid #bbb;
+  }
+  ul.quicktabs-tabs li {
+    display: inline;
+    margin: 0;
+  }
+  ul.quicktabs-tabs li a {
+    padding: 5px 10px;
+  }
+  ul.quicktabs-tabs li.is-active a {
+    border-bottom: none;
+  }
+}
+@media screen and (min-width: 37.5em) { /* 600px */
+  ul.quicktabs-tabs {
+    border-collapse: collapse;
+    height: auto;
+    line-height: normal;
+    padding: 0 3px;
+    margin: 0;
+    overflow: hidden;
+    border: none;
+    background: transparent url(../../images/tabs-border.png) repeat-x left bottom;
+    white-space: nowrap;
+  }
+  ul.quicktabs-tabs li {
+    display: block;
+    float: left; /* LTR */
+    vertical-align: bottom;
+    margin: 0 5px 0 0; /* LTR */
+  }
+  [dir="rtl"] ul.quicktabs-tabs li {
+    margin: 0 0 0 5px;
+    float: right;
+  }
+  ul.quicktabs-tabs li a {
+    float: left; /* not LTR */
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  ul.quicktabs-tabs li.is-active a {
+    border-bottom: 1px solid #fff;
+  }
+}
+ul.quicktabs-tabs ul.secondary {
+  border-bottom: none;
+  margin: 5px;
+  padding: 0.5em 0;
+  overflow: hidden;
+}
+ul.quicktabs-tabs ul.secondary li {
+  border-right: 1px solid #ccc; /* LTR */
+  display: block;
+  float: left; /* LTR */
+  margin: 0;
+  padding: 0 1em;
+}
+[dir="rtl"] ul.quicktabs-tabs ul.secondary li {
+  border-left: 1px solid #ccc;
+  border-right: none;
+  float: right;
+}
+ul.quicktabs-tabs ul.secondary li:last-child {
+  border-right: none; /* LTR */
+}
+[dir="rtl"] ul.quicktabs-tabs ul.secondary li:last-child {
+  border-left: none;
+}
+ul.quicktabs-tabs ul.secondary li:first-child {
+  padding-left: 0; /* LTR */
+}
+[dir="rtl"] ul.quicktabs-tabs ul.secondary li:first-child {
+  padding-right: 0;
+}
+ul.quicktabs-tabs ul.secondary li a {
+  display: inline;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+}
+ul.quicktabs-tabs ul.secondary li a.is-active {
+  background: #f2f2f2;
+  border-bottom: none;
+  border-radius: 5px;
+}
