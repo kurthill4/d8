@@ -1305,34 +1305,48 @@ ul.dp-menu li:hover a{
 .program-list-panel .col-md-2 a img.force-height {
 	min-height: 305px;
 }
+.slide-content {padding:0;margin:0;}
+.slide__caption {height:75px!important;}
 .program-list-panel strong,
 .step-panel strong,
-#flexslider-1 strong {
-	display: block;
-	font-weight: bold;
-	font-family:Oswald;
-	width: 80px;
-	padding: 0;
-	position: absolute;
-	bottom: 50px;
-	margin-left: 20px;
-	text-align:center;
-	color: #ffffff;
+.view-program-carousel .slide__caption,.view-program-carousel .slide__title {
+	display: block!important;
+	float:center;
+	background:none;
+	font-weight: bold!important;
+	font-size:16px!important;
+	font-family:Oswald!important;
+	width: 80%!important;
+	padding: 0!important;
+	position: absolute!important;
+	bottom: 150px!important;
+	margin-left: 20px!important;
+	text-align:center!important;
+	color: #ffffff!important;
 }
 
-#flexslider-1 ul,#flexslider-1 ul.slides li,#flexslider-1 ul.slides li img {padding:0;margin:0}
+.view-program-carousel .slide__caption a,.view-program-carousel .slide__caption a:visited {
+	color:#ffffff!important;
+	height:100%;
+}
+.view-program-carousel .slide__caption a:hover {
+	color:#ffffff!important;
+	text-decoration:underline;
+}
+
+.slick-1 ul,.slick-1 ul.slides li,.slick-1 ul.slides li img {padding:0;margin:0}
 .resource .region-content .view-content {
 	display:none;
 }
-#flexslider-1 {width:90%;margin:0 auto;}
+.slick-1 {width:100%;margin:0 auto;}
 .step-panel .program img,
-#flexslider-1 img {
+.slick-1 img {
 	/*width:155px!important;*/
     -webkit-filter: brightness(50%); /* Safari 6.0 - 9.0 */
     filter: brightness(50%);}
 
 .step-panel .program a:hover img,
-#flexslider-1 a:hover img {
+.slick-1 a:hover img {
     -webkit-filter: brightness(100%); /* Safari 6.0 - 9.0 */
     filter: brightness(100%);}
 .slides
@@ -1342,7 +1356,7 @@ ul.dp-menu li:hover a{
 table.faculty {width:100%;}
 table.faculty thead th {
     color: #31b6c7;
-    font-size: 20pt;
+    font-size: 20pt;#fl
 }
 table.faculty thead th i {
 	color: #91a2a3;

@@ -47,7 +47,6 @@
         "drupal/field_group": "^1.0@RC",
         "drupal/field_redirection": "2.x-dev",
         "drupal/file_entity": "^2.0@beta",
-        "drupal/flexslider": "^2.0@beta",
         "drupal/flickity": "^1.0",
         "drupal/imce": "^1.5",
         "drupal/libraries": "3.x-dev",
@@ -66,6 +65,7 @@
         "drupal/pathauto": "^1.0@RC",
         "drupal/quicktabs": "^3.0@alpha",
         "drupal/slick": "^1.0",
+        "drupal/slick_extras": "^1.0@beta",
         "drupal/slick_views": "^1.0@RC",
         "drupal/taxonomy_manager": "~1.0",
         "drupal/themable_forms": "^1.0@beta",
@@ -79,8 +79,7 @@
         "kenwheeler/slick": "^1.6",
         "kint-php/kint": "^2.0",
         "webflo/drupal-finder": "^0.2.1",
-        "webmozart/path-util": "^2.3",
-        "woothemes/flexslider": "^2.6"
+        "webmozart/path-util": "^2.3"
     },
     "require-dev": {
         "behat/mink": "~1.7",

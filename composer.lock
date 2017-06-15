@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9dc120fef8c1472aeb5440f67be69fbf",
+    "content-hash": "5781438e4ef4a10b9fc321330f0f5c93",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2505,70 +2505,6 @@
             }
         },
         {
-            "name": "drupal/flexslider",
-            "version": "2.0.0-beta1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/flexslider",
-                "reference": "8.x-2.0-beta1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/flexslider-8.x-2.0-beta1.zip",
-                "reference": "8.x-2.0-beta1",
-                "shasum": "fa298a5b065c5868a36c45d95fa57068be079220"
-            },
-            "require": {
-                "drupal/core": "*",
-                "drupal/libraries": "*"
-            },
-            "require-dev": {
-                "drupal/flexslider_fields": "*",
-                "drupal/flexslider_views": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-2.0-beta1",
-                    "datestamp": "1492020545"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "ClassicCut",
-                    "homepage": "https://www.drupal.org/user/2703101"
-                },
-                {
-                    "name": "amaria",
-                    "homepage": "https://www.drupal.org/user/66428"
-                },
-                {
-                    "name": "minorOffense",
-                    "homepage": "https://www.drupal.org/user/129088"
-                },
-                {
-                    "name": "ryanwebpage",
-                    "homepage": "https://www.drupal.org/user/737596"
-                },
-                {
-                    "name": "spotzero",
-                    "homepage": "https://www.drupal.org/user/657848"
-                }
-            ],
-            "description": "Integrate the FlexSlider 2 library with Drupal",
-            "homepage": "https://www.drupal.org/project/flexslider",
-            "support": {
-                "source": "http://cgit.drupalcode.org/flexslider"
-            }
-        },
-        {
             "name": "drupal/flickity",
             "version": "1.0.0",
             "source": {
@@ -3691,6 +3627,54 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/slick",
                 "issues": "https://drupal.org/project/issues/slick"
+            }
+        },
+        {
+            "name": "drupal/slick_extras",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/slick_extras",
+                "reference": "8.x-1.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/slick_extras-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "c9f093852117e1d03af59bf152be939deaea7496"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/slick": "*"
+            },
+            "require-dev": {
+                "drupal/slick": "*",
+                "drupal/slick_views": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1473198839"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "gausarts",
+                    "homepage": "https://www.drupal.org/user/159062"
+                }
+            ],
+            "description": "Provides Slick carousel extras.",
+            "homepage": "https://www.drupal.org/project/slick_extras",
+            "support": {
+                "source": "http://cgit.drupalcode.org/slick_extras"
             }
         },
         {
@@ -7252,16 +7236,6 @@
             "time": "2015-12-17T08:42:14+00:00"
         },
         {
-            "name": "woothemes/flexslider",
-            "version": "2.6.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/woothemes/FlexSlider.git",
-                "reference": "2.6.3"
-            },
-            "type": "drupal-library"
-        },
-        {
             "name": "zendframework/zend-diactoros",
             "version": "1.4.0",
             "source": {
@@ -8779,13 +8753,13 @@
         "drupal/field_group": 5,
         "drupal/field_redirection": 20,
         "drupal/file_entity": 10,
-        "drupal/flexslider": 10,
         "drupal/libraries": 20,
         "drupal/media_entity_video": 10,
         "drupal/page_manager": 15,
         "drupal/paragraphs_previewer": 20,
         "drupal/pathauto": 5,
         "drupal/quicktabs": 15,
+        "drupal/slick_extras": 10,
         "drupal/slick_views": 5,
         "drupal/themable_forms": 10,
         "drupal/twitter": 20,
