@@ -4,7 +4,7 @@ body{
 	overflow-x: hidden;
 }
 
-
+div.cheat {width:95%;min-width:900px}
 .spacer {clear:both}
 ul { list-style: none; }
 ul.noindent,ul.noindent li {
@@ -380,28 +380,28 @@ padding:0;
 	color: #fff;
 }
 .slide-1{
-	background: transparent url(../images/herofront/Hero_1.png) no-repeat center bottom scroll;
+	background: transparent url(../images/herofront/Hero_1.png) no-repeat center bottom local;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .slide-2{
-	background: transparent url(../images/herofront/Hero_2.png) no-repeat center bottom scroll;
+	background: transparent url(../images/herofront/Hero_2.png) no-repeat center bottom local;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .slide-3{
-	background: transparent url(../images/herofront/Hero_3.png) no-repeat center bottom scroll;
+	background: transparent url(../images/herofront/Hero_3.png) no-repeat center bottom local;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .slide-4{
-	background: transparent url(../images/herofront/Hero_5.png) no-repeat center bottom scroll;
+	background: transparent url(../images/herofront/Hero_5.png) no-repeat center bottom local;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
