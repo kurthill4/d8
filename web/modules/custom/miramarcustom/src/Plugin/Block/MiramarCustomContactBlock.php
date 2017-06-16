@@ -37,45 +37,44 @@ class MiramarCustomContactBlock extends BlockBase {
 
             <!-- Colleges -->
             <ul class="colleges hide-xs">
-              <li><a href="#">San Diego Community College District</a></li>
-              <li><a href="#">San Diego City College</a></li>
-              <li><a href="#">San Diego Mesa College</a></li>
-              <li><a href="#">San Diego Miramar College</a></li>
-              <li><a href="#">San Diego Continuing Education</a></li>
+              <li><a href="http://www.sdccd.edu">San Diego Community College District</a></li>
+              <li><a href="http://www.sdcity.edu">San Diego City College</a></li>
+              <li><a href="http://www.sdmesa.edu">San Diego Mesa College</a></li>
+              <li><a href="http://www.sdmiramar.edu">San Diego Miramar College</a></li>
+              <li><a href="http://www.sdce.edu">San Diego Continuing Education</a></li>
             </ul>
           </div>
           <div class="col-sm-9 hide-xs">
             <div class="row">
               <div class="col-sm-4">
                 <h4><img src="' . $imagepath . '/images/icon-building.png" alt=""></h4>
-                <strong>Campus</strong>
+                <strong>Campus Information</strong>
                 <ul class="campus">
-                  <li><a href="#">Parking</a></li>
+                  <li><a href="#">Parking/Transit</a></li>
                   <li><a href="#">Safety</a></li>
-                  <li><a href="#">Jobs</a></li>
-                  <li><a href="#">President\'s Message</a></li>
+                  <li><a href="https://www.sdccdjobs.com/" target="_blank">Jobs</a></li>
+                  <li><a href="/directory">Directory</a></li>
+                  <li><a href="/campus/president">President\'s Message</a></li>
                 </ul>
               </div>
               <div class="col-sm-4">
                 <h4><img src="' . $imagepath . '/images/icon-users.png" alt=""></h4>
-                <strong>Miramar</strong>
+                <strong>Resources</strong>
                 <ul class="miramar">
-                  <li><a href="#">Resources for Industry Partners</a></li>
-                  <li><a href="#">Resources for Faculty/Staff</a></li>
-                  <li><a href="#">Clery Act Information</a></li>
-                  <li><a href="#">The Miarmar College Foundation</a></li>
-                  <li><a href="#">District Info</a></li>
-                  <li><a href="#">Directory</a></li>
+                  <li><a href="/facultystaff">Resources for Faculty/Staff</a></li>
+                  <li><a href="http://police.sdccd.edu/jclery.cfm">Clery Act Information</a></li>
+                  <li><a href="/campus/foundation">The Miramar College Foundation</a></li>
+                  <li><a href="http://www.sdccd.edu/daapp/">Smoking/Substance Policy</a></li>
+                  <li><a href="/privacy">Privacy Statement</a></li>
                 </ul>
               </div>
               <div class="col-sm-4">
                 <h4><img src="' . $imagepath . '/images/icon-note.png" alt=""></h4>
                 <strong>Accreditation Information</strong>
                 <ul class="acc-info">
+                  <li><a href="/campus/planning/accreditation">Accreditation</a></li>
+                  <li><a href="/campus/planning">Planning</a></li>
                   <li><a href="#">Student Success Scorecard</a></li>
-                  <li><a href="#">District Policies</a></li>
-                  <li><a href="#">Smoking/Substance Policy</a></li>
-                  <li><a href="#">Privacy Statement</a></li>
                 </ul>
               </div>
             </div>
