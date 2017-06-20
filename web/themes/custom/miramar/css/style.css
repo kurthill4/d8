@@ -5,6 +5,7 @@ body{
 	max-width:1280px!important;
 	background:#dbf3f5;
 }
+		.gateway .page-header,.directory .page-header {display:none!important;}
 
 div.cheat {width:95%;min-width:900px}
 .spacer {clear:both}
@@ -14,7 +15,7 @@ ul.noindent,ul.noindent li {
 	margin: 0;
 }
 
-
+.content li {margin-bottom:1em;}
 .content ul li {
 	text-indent: -1em;
 	padding-left: 1em;
@@ -22,8 +23,9 @@ ul.noindent,ul.noindent li {
 .content ul li:before {
 	content: '❖ ';
 }
+ul.nobull li:before{ content:none;}
 table.small,ul.small {font-size:0.75em;}
-table.small td {padding:2px;vertical-align:top;}
+table.small td,table.small th {padding:2px;vertical-align:top;}
 table.medium {width:75%;}
 table.degrees {margin-bottom: 2em;}
 td.vcenter {
