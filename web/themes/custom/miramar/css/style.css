@@ -25,6 +25,7 @@ ul.noindent,ul.noindent li {
 table.small,ul.small {font-size:0.75em;}
 table.small td {padding:2px;vertical-align:top;}
 table.medium {width:75%;}
+table.degrees {margin-bottom: 2em;}
 td.vcenter {
 	vertical-align: center;
 }
@@ -203,7 +204,7 @@ nav.main-menu li a{
 	text-transform: uppercase;
 	text-decoration: none;
 }
-nav.main-menu li:hover {
+nav.main-menu li:hover:not(:first-child) {
   border-bottom: 5px solid #fff;
 }
 nav.main-menu li:hover a{
@@ -226,7 +227,7 @@ nav.main-menu li:first-child a{
 	border-radius: 20px;
 	text-align: center;
 }
-nav.main-menu li:first-child a:hover {
+nav.main-menu li:first-child:hover a {
 	text-decoration:none!important;
 	border:none!important;
 }
@@ -551,7 +552,7 @@ nav.mobile-nav li:first-child ol li{
 
 .block-views-blockmiramar-by-the-numbers-block-1,
 .numbers .views-row {
-	width: 900px;
+	width: 98%;
 	margin: 0 auto;
 }
 
@@ -1575,6 +1576,7 @@ table.faculty thead th i {
 .student-path h1 {
 	font-size: 24px;
   font-weight: 700;
+	margin-top:1em!important;
 }
 .student-path ul {
 	margin-top: 20px;
@@ -1588,11 +1590,22 @@ table.faculty thead th i {
   font-family: Oswald;
   font-size: 15pt;
 }
+.getstarted table td:nth-child(2) {max-width:350px;}
+.getstarted table td:nth-child(3) ul {margin-right:0.5em;}
+.getstarted .news-title h3 {
+	margin-top:1em!important;
+}
+.resources-students ul {
+	margin-left:50px!important;
+}
 .resources-students a {
 	color: #31b8c9;
+	border:none;
+	font-size:0.9em;
 }
 .resources-students li {
-	margin-bottom: 10px;
+	margin-bottom: 8px;
+	border:none;
 }
 .resources-students li p {
 	margin: 0;
