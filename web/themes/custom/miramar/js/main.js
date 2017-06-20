@@ -3,7 +3,7 @@ function _toggleArrow(ele) {
   $(ele).toggleClass('fa-chevron-down').effect('pulsate', 'fast');
 }
 
-$(document).ready(function() {
+(function($) {
   // Mobile Menu controls.
   $('.mobile-nav').hide();
   $('a.mobile-menu').click(function() {
@@ -39,7 +39,7 @@ $(document).ready(function() {
       if (i == 1)
         _toggleArrow($(this).parents('.container-fluid').prev());
       i++;
-    });
+    }(jQuery));
     i = 1;
   });
 

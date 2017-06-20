@@ -2,7 +2,8 @@ body{
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	overflow-x: hidden;
-	max-width:960px!important;
+	max-width:1280px!important;
+	background:#dbf3f5;
 }
 
 div.cheat {width:95%;min-width:900px}
@@ -12,11 +13,13 @@ ul.noindent,ul.noindent li {
 	padding:0;
 	margin: 0;
 }
-ul.bull li {
+
+
+.content ul li {
 	text-indent: -1em;
 	padding-left: 1em;
 }
-ul.bull li:before {
+.content ul li:before {
 	content: '❖ ';
 }
 table.small,ul.small {font-size:0.75em;}
@@ -31,7 +34,7 @@ h1, h2, h3, h4,h5 {
 h1,h2, h3, h4, h5{
 	font-family: 'Oswald', sans-serif;
 }
-
+.region-content{background:#ffffff}
 .main-content h1, .main-content h2, .main-content h3 {
 	color: #1d2451;
 	margin-bottom: 25px;
@@ -118,6 +121,7 @@ header{
 	margin: 0;
 	padding: 0;
 	width: 326px;
+	list-style:none;
 }
 .search-desktop ul li:first-child{
 	padding: 0;
@@ -166,21 +170,22 @@ header{
   padding: 15px 0;
 	margin: 0;
 }
-button.navbar-toggle {margin-right:40px!important;}
+button.navbar-toggle {margin-right:50px!important;}
 nav.main-menu{
 	position: absolute;
 	top: 60px;
 	background: #1d2451;
 	color: #fff;
-	width: 100%;
+	width: 99%;
 	z-index: 1;
 	text-align: right;
-	padding: 12px 60px 8px 0;
+	padding: 12px 30px 8px 0;
 }
 
 nav.main-menu ul{
 	margin: 0;
 	padding: 0;
+	list-style:none!important;
 }
 nav.main-menu li{
 	display: inline-block;
@@ -208,7 +213,7 @@ nav.main-menu li:hover a{
 nav.main-menu li:first-child {
 	max-width: 40px!important;
 	text-align:left;
-	/*margin-right:160px;*/
+	margin-left:160px;
 }
 nav.main-menu li:first-child a{
 	border: 1px solid #fff;
@@ -220,6 +225,10 @@ nav.main-menu li:first-child a{
 	height: 40px;
 	border-radius: 20px;
 	text-align: center;
+}
+nav.main-menu li:first-child a:hover {
+	text-decoration:none!important;
+	border:none!important;
 }
 nav.main-menu li:first-child i{
 	font-size: 25px;
@@ -360,6 +369,7 @@ nav.mobile-nav li:first-child ol li{
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 }
+.main-container {padding-top:0!important;margin-top:0!important}
 .gateway {width:100%;padding:0!important;margin:0!important;}
 .gateway .views-view-grid {
 	width:100%;
@@ -387,68 +397,68 @@ nav.mobile-nav li:first-child ol li{
 }
 .slide-1{
 	background: transparent url(../images/herofront/Hero_1.png) no-repeat left top local;
-  -webkit-background-size: 960 px 640px;
-  -moz-background-size: 960 px 640px;
-  -o-background-size: 960 px 640px;
-  background-size: 960 px 640px;
+  -webkit-background-size: 1280 px 853px;
+  -moz-background-size: 1280px 853px;
+  -o-background-size: 1280px 853px;
+  background-size: 1280px 853px;
 }
 .slide-2{
 	background: transparent url(../images/herofront/Hero_2.png) no-repeat left top local;
-  -webkit-background-size: 960 px 640px;
-  -moz-background-size: 960 px 640px;
-  -o-background-size: 960 px 640px;
-  background-size: 960 px 640px;
+  -webkit-background-size: 1280px 853px;
+  -moz-background-size: 1280px 853px;
+  -o-background-size: 1280px 853px;
+  background-size: 1280px 853px;
 }
 .slide-3{
 	background: transparent url(../images/herofront/Hero_3.png) no-repeat left top local;
-  -webkit-background-size: 960 px 640px;
-  -moz-background-size: 960 px 640px;
-  -o-background-size: 960 px 640px;
-  background-size: 960 px 640px;
+  -webkit-background-size: 1280px 853px;
+  -moz-background-size: 1280px 853px;
+  -o-background-size: 1280px 853px;
+  background-size: 1280px 853px;
 }
 .slide-4{
 	background: transparent url(../images/herofront/Hero_5.png) no-repeat left top local;
-  -webkit-background-size: 960 px 640px;
-  -moz-background-size: 960 px 640px;
-  -o-background-size: 960 px 640px;
-  background-size: 960 px 640px;
+  -webkit-background-size: 1280px 853px;
+  -moz-background-size: 1280px 853px;
+  -o-background-size: 1280px 853px;
+  background-size: 1280px 853px;
 }
 .slide-cr{
 	background: transparent url(../images/campus-resources-banner.jpg) no-repeat left top scroll;
-  -webkit-background-size: 960 px 450px;
-  -moz-background-size: 960 px 450px;
-  -o-background-size: 960 px 450px;
-  background-size: 960 px 450px;
+  -webkit-background-size: 1280px 600px;
+  -moz-background-size: 1280px 600px;
+  -o-background-size: 1280px 600px;
+  background-size: 1280px 600px;
 }
 .slide-dr{
 	background: transparent url(../images/directory-banner-1.jpg) no-repeat left top scroll;
-  -webkit-background-size: 960 px 450px;
-  -moz-background-size: 960 px 450px;
-  -o-background-size: 960 px 450px;
-  background-size: 960 px 450px;
+  -webkit-background-size: 1280px 600px;
+  -moz-background-size: 1280px 600px;
+  -o-background-size: 1280px 600px;
+  background-size: 1280px 600px;
 }
 .slide-ns{
 	background: transparent url(../images/student-banner.jpg) no-repeat left top scroll;
-  -webkit-background-size: 960 px 450px;
-  -moz-background-size: 960 px 450px;
-  -o-background-size: 960 px 450px;
-  background-size: 960 px 450px;
+  -webkit-background-size: 1280px 600px;
+  -moz-background-size: 1280px 600px;
+  -o-background-size: 1280px 600px;
+  background-size: 1280px 600px;
 }
 .slide-pa{
 	background: transparent url(../images/personas-path-banner.jpg) no-repeat left top scroll;
-  -webkit-background-size: 960 px 450px;
-  -moz-background-size: 960 px 450px;
-  -o-background-size: 960 px 450px;
-  background-size: 960 px 450px;
+  -webkit-background-size: 1280px 600px;
+  -moz-background-size: 1280px 600px;
+  -o-background-size: 1280px 600px;
+  background-size: 1280px 600px;
 }
 .slide-pr, .slide-gr {
 	background: transparent url(../images/program-banner.jpg) no-repeat left top scroll;
-  -webkit-background-size: 960 px 450px;
-  -moz-background-size: 960 px 450px;
-  -o-background-size: 960 px 450px;
-  background-size: 960 px 450px;
+  -webkit-background-size: 1280px 600px;
+  -moz-background-size: 1280px 600px;
+  -o-background-size: 1280px 600px;
+  background-size: 1280px 600px;
 }
-.banner {position:relative;background:#00727d}
+.banner {position:relative;}
 .banner.front{
   max-height: 640px;
   overflow: hidden;
@@ -603,7 +613,7 @@ nav.mobile-nav li:first-child ol li{
 }
 
 .important-dates{
-	padding: 30px;
+	padding: 20px;
 	background: #dbf3f5;
 	position: relative;
 	z-index: 1;
@@ -619,6 +629,7 @@ nav.mobile-nav li:first-child ol li{
 .important-dates ul{
 	margin: 0;
 	padding: 0;
+	list-style:none;
 }
 .important-dates ul li{
 	position: relative;
@@ -628,6 +639,7 @@ nav.mobile-nav li:first-child ol li{
 	margin: 0 0 10px;
 	height: 50px;
 	line-height: 50px;
+	font-size:14px;
 }
 .important-dates ul li:last-child{
 	margin-bottom: 0;
@@ -853,6 +865,7 @@ footer{
 footer ul{
 	margin: 0;
 	padding: 0;
+	list-style:none;
 }
 footer ul.colleges{
 	margin: 20px 0;
@@ -939,6 +952,7 @@ footer h4{
 .step-panel ul{
 	margin: 0 0 0 12px;
 	padding: 0;
+	list-style:none;
 }
 .step-caption{
 	background: rgba(29, 26, 81, 0.9);
@@ -1029,6 +1043,7 @@ width:100%;
 .news-block-2 ul{
 	margin: 10px 0 0 0;
 	padding: 0;
+	list-style:none;
 }
 .news-block-2 ul li{
 	position: relative;
@@ -1065,6 +1080,7 @@ width:100%;
 .recent-jobs ul{
 	margin: 0;
 	padding: 0;
+	list-style:none;
 }
 .recent-jobs ul li{
 	position: relative;
@@ -1178,6 +1194,7 @@ ul.dp-menu{
 	display:table;
 	margin:0 auto;
 	padding: 0;
+	list-style:none;
 }
 ul.dp-menu li{
 	display: inline;
@@ -1415,6 +1432,7 @@ table.faculty thead th i {
 .counseling-address {
 	margin: 0 0 20px 20px;
 }
+.campus-resources ul {list-style:none;}
 .campus-resources ul li {
 	margin: 10px 0;
 }
@@ -1450,29 +1468,32 @@ table.faculty thead th i {
 
 .campus-resources-content .container-fluid {
 	padding-left:10px;
-	margin: 20px 0 0;
+	margin: 0;
 }
+/*.campus-resources-content table {width:100%;}
+.campus-resources-content td {vertical-align:top;width:50%;}
+.campus-resources-content td:last-child {background: #ffffff;}*/
 .campus-resources-content h2 {
 	margin-left:10px;
 }
-.campus-resources-content .mini-sidebar a {
+.campus-resources-content .mini-sidebar a,.campus-resources-content td a {
     color: #31b6c7;
     display: block;
     padding: 10px 15px;
     text-decoration: none;
-		font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 1.3em;
 }
-.campus-resources-content .mini-sidebar li:nth-child(odd) a {
+.campus-resources-content li:nth-child(odd) a {
 	border-top: 1px solid #83b2b5;
 }
-.campus-resources-content .mini-sidebar li:nth-child(even) a {
+.campus-resources-content li:nth-child(even) a {
 	border-top: 1px solid #2c7d80;
 }
-.campus-resources-content .mini-sidebar li:last-child a {
+.campus-resources-content li:last-child a {
 	border-bottom: 1px solid #83b2b5;
 }
-.campus-resources-content .mini-sidebar li:after {
+.campus-resources-content li:after {
     content: ">";
     float: right;
     margin: -45px 10px 0 0;
@@ -1480,7 +1501,8 @@ table.faculty thead th i {
     font-size: 1.5em;
 }
 .campus-resources-content img {
-	margin: 20px 0;
+	/*margin: 20px 0*/;
+	max-width:none;
 }
 .search-form {
 	padding-top: 10px;
@@ -1495,6 +1517,7 @@ table.faculty thead th i {
     color: #fff;
     margin-left: -5px;
 }
+.search-results ul {list-style:none;}
 .search-results li {
 	margin: 25px 0;
 }
@@ -1555,6 +1578,7 @@ table.faculty thead th i {
 }
 .student-path ul {
 	margin-top: 20px;
+	list-style:none;
 }
 .student-path ul li {
   margin: 10px 10px 5px 0;
@@ -1583,7 +1607,7 @@ table.faculty thead th i {
 	text-align:center;
 }
 
-.gateway .hide-title {display:none;}
+.hide-title {display:none;}
 /* Media Queries */
 @media only screen and (min-width : 1200px) {
 	.red-box{
@@ -1599,13 +1623,88 @@ table.faculty thead th i {
 
 	 /* Medium Devices, Desktops */
 	 @media only screen and (max-width : 992px) {
+.body {max-width:960px;}
+.slide-1{
+	background: transparent url(../images/herofront/Hero_1.png) no-repeat left top local;
+  -webkit-background-size: 960px 640px;
+  -moz-background-size: 960px 640px;
+  -o-background-size: 960px 640px;
+  background-size: 960px 640px;
+}
+.slide-2{
+	background: transparent url(../images/herofront/Hero_2.png) no-repeat left top local;
+  -webkit-background-size: 960px 640px;
+  -moz-background-size: 960px 640px;
+  -o-background-size: 960px 640px;
+  background-size: 960px 640px;
+}
+.slide-3{
+	background: transparent url(../images/herofront/Hero_3.png) no-repeat left top local;
+  -webkit-background-size: 960px 640px;
+  -moz-background-size: 960px 640px;
+  -o-background-size: 960px 640px;
+  background-size: 960px 640px;
+}
+.slide-4{
+	background: transparent url(../images/herofront/Hero_5.png) no-repeat left top local;
+  -webkit-background-size: 960px 640px;
+  -moz-background-size: 960px 640px;
+  -o-background-size: 960px 640px;
+  background-size: 960px 640px;
+}
+.slide-cr{
+	background: transparent url(../images/campus-resources-banner.jpg) no-repeat left top scroll;
+  -webkit-background-size: 960px 450px;
+  -moz-background-size: 960px 450px;
+  -o-background-size: 960px 450px;
+  background-size: 960px 450px;
+}
+.slide-dr{
+	background: transparent url(../images/directory-banner-1.jpg) no-repeat left top scroll;
+  -webkit-background-size: 960px 450px;
+  -moz-background-size: 960px 450px;
+  -o-background-size: 960px 450px;
+  background-size: 960px 450px;
+}
+.slide-ns{
+	background: transparent url(../images/student-banner.jpg) no-repeat left top scroll;
+  -webkit-background-size: 960px 450px;
+  -moz-background-size: 960px 450px;
+  -o-background-size: 960px 450px;
+  background-size: 960px 450px;
+}
+.slide-pa{
+	background: transparent url(../images/personas-path-banner.jpg) no-repeat left top scroll;
+  -webkit-background-size: 960px 450px;
+  -moz-background-size: 960px 450px;
+  -o-background-size: 960px 450px;
+  background-size: 960px 450px;
+}
+.slide-pr, .slide-gr {
+	background: transparent url(../images/program-banner.jpg) no-repeat left top scroll;
+  -webkit-background-size: 960px 450px;
+  -moz-background-size: 960px 450px;
+  -o-background-size: 960px 450px;
+  background-size: 960px 450px;
+}
 		.hide-xl {display:none!important;}
 		 nav.main-menu li{
 			 width: 40px;
 			 margin-right: 40px;
+			line-height:12px;
+		 }
+		 nav.main-menu li:first-child a{
+			height: 20px!important;
+			width: 20px!important;
+			padding:0;
+			border-radius:50%!important;
+			top:10px;
+		 }
+		 nav.main-menu li:first-child i{
+			font-size:18px;
 		 }
 		 nav.main-menu li a{
-			 font-size: 14px;
+			 font-size: 12px;
 		 }
 		 .ne-wrap .news-overlay{
 			 padding: 20% 30px;
@@ -1617,11 +1716,11 @@ table.faculty thead th i {
 
 	 @media only screen and (max-height : 640px){
 		 .banner-content{display:none!important;}
-		.hide-title {display:block}
+		*.hide-title {display:block!important}
 	}
 	 @media only screen and (max-width : 800px){
 		 .banner-content{display:none!important;}
-		.hide-title {display:block}
+		*.hide-title {display:block!important}
 	}
 
 	 @media only screen and (min-width : 801px) {
@@ -1640,7 +1739,7 @@ table.faculty thead th i {
 		 }
 body p {font-size:12px;}
 .block-views-blockwhat-do-you-want-to-be-block-1 {display:block;margin-top:1px;}
-		 .top-links, nav.main-menu, .mbtn, .page-cover{
+		 .top-links, .mbtn, .page-cover{
 			 display: none;
 		 }
 		 header{
@@ -1653,7 +1752,7 @@ body p {font-size:12px;}
 			 height: 80px;
 			 padding: 26px 70px 0 30px;
 		 }
-		 .logo a.mobile-menu{
+		 .logo a.mobile-menu, logo button {
 			 position: absolute;
 		 	 top: 0px;
 		 	 right: 0px;
@@ -1664,6 +1763,20 @@ body p {font-size:12px;}
 		 .logo a.mobile-menu.collapsed {
 		 		transform: rotate(90deg);
 		 	}
+		nav.main-menu {
+			position:relative;
+		}
+		nav.main-menu ul li {
+			display:block;
+			width:100%;
+			font-size: 14px;
+			font-weight:bold;
+			padding:0;
+			margin:0;
+		}
+		nav.main-menu ul li:first-child {
+			display:none;
+		}
 		 .banner-content{
 			 position: relative!important;
 			 bottom: 0!important;
@@ -1695,8 +1808,8 @@ body p {font-size:12px;}
 		 .get-started a{
 			 padding: 10px 0;
 			 width: 100%;
-    	 text-align: center;
-    	 position: relative;
+    	 		text-align: center;
+    	 		position: relative;
 		 }
 		 .get-started span{
 			 position: absolute;
