@@ -3502,17 +3502,17 @@
         },
         {
             "name": "drupal/quicktabs",
-            "version": "3.0.0-alpha1",
+            "version": "3.0.0-alpha2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/quicktabs",
-                "reference": "8.x-3.0-alpha1"
+                "reference": "8.x-3.0-alpha2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/quicktabs-8.x-3.0-alpha1.zip",
-                "reference": "8.x-3.0-alpha1",
-                "shasum": "e00354d4b15abf77eec2b013df065ca210c27793"
+                "url": "https://ftp.drupal.org/files/projects/quicktabs-8.x-3.0-alpha2.zip",
+                "reference": null,
+                "shasum": "783da3f1284b70b937d047f2ea5745340cc729d4"
             },
             "require": {
                 "drupal/core": "*"
@@ -3523,8 +3523,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-alpha1",
-                    "datestamp": "1490285882"
+                    "version": "8.x-3.0-alpha2",
+                    "datestamp": "1497623642"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
