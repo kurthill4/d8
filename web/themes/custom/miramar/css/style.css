@@ -5,10 +5,13 @@ body{
 	max-width:1280px!important;
 	background:#dbf3f5;
 }
-		.gateway .page-header,.directory .page-header {display:none!important;}
+.gateway .page-header,.directory .page-header {display:none!important;}
 
 div.cheat {width:95%;min-width:900px}
 .spacer {clear:both}
+.content {padding:0.5em;}
+.content p {margin-bottom:1em}
+
 ul { list-style: none; }
 ul.noindent,ul.noindent li {
 	padding:0;
@@ -24,7 +27,7 @@ ul.noindent,ul.noindent li {
 	content: '❖ ';
 }
 ul.nobull li:before{ content:none;}
-table.small,ul.small {font-size:0.75em;}
+table.small,ul.small,ol.small,p.small {font-size:0.75em;}
 table.small td,table.small th {padding:2px;vertical-align:top;}
 table.medium {width:75%;}
 table.degrees {margin-bottom: 2em;}
@@ -1469,17 +1472,17 @@ table.faculty thead th i {
 	padding: 30px 0;
 }
 
-.campus-resources-content .container-fluid {
+.resources .container-fluid {
 	padding-left:10px;
 	margin: 0;
 }
-/*.campus-resources-content table {width:100%;}
-.campus-resources-content td {vertical-align:top;width:50%;}
-.campus-resources-content td:last-child {background: #ffffff;}*/
-.campus-resources-content h2 {
+/*.resources table {width:100%;}
+.resources td {vertical-align:top;width:50%;}
+.resources td:last-child {background: #ffffff;}*/
+.resources h2 {
 	margin-left:10px;
 }
-.campus-resources-content .mini-sidebar a,.campus-resources-content td a {
+.resources .mini-sidebar a,.resources td a {
     color: #31b6c7;
     display: block;
     padding: 10px 15px;
@@ -1487,23 +1490,23 @@ table.faculty thead th i {
     font-family: 'Oswald', sans-serif;
     font-size: 1.3em;
 }
-.campus-resources-content li:nth-child(odd) a {
+.resources li:nth-child(odd) a {
 	border-top: 1px solid #83b2b5;
 }
-.campus-resources-content li:nth-child(even) a {
+.resources li:nth-child(even) a {
 	border-top: 1px solid #2c7d80;
 }
-.campus-resources-content li:last-child a {
+.resources li:last-child a {
 	border-bottom: 1px solid #83b2b5;
 }
-.campus-resources-content li:after {
+.resources li:after {
     content: ">";
     float: right;
     margin: -45px 10px 0 0;
     color: #31b6c7;
     font-size: 1.5em;
 }
-.campus-resources-content img {
+.resources img {
 	/*margin: 20px 0*/;
 	max-width:none;
 }
