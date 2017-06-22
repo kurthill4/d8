@@ -5,7 +5,7 @@ body{
 	max-width:1280px!important;
 	background:#dbf3f5;
 }
-.gateway .page-header,.directory .page-header {display:none!important;}
+.gateway .page-header,.directory .page-header, .resources .page-header {display:none!important;}
 
 div.cheat {width:95%;min-width:900px}
 .spacer {clear:both}
@@ -41,7 +41,7 @@ h1,h2, h3, h4, h5{
 	font-family: 'Oswald', sans-serif;
 }
 .region-content{background:#ffffff}
-.main-content h1, .main-content h2, .main-content h3 {
+.content h2, .content h3 {
 	color: #1d2451;
 	margin-bottom: 25px;
 }
@@ -1476,12 +1476,18 @@ table.faculty thead th i {
 	padding-left:10px;
 	margin: 0;
 }
+.resources .container-fluid:nth-child(odd) {
+	background: #daf2f4;
+}
+
+
 /*.resources table {width:100%;}
 .resources td {vertical-align:top;width:50%;}
 .resources td:last-child {background: #ffffff;}*/
 .resources h2 {
 	margin-left:10px;
 }
+.resources p {color:#000000}
 .resources .mini-sidebar a,.resources td a {
     color: #31b6c7;
     display: block;
@@ -1763,11 +1769,12 @@ body p {font-size:12px;}
 		 header{
 			 left: 0;
 		 }
+.region-navigation {min-height:80px;}
 		 .logo{
 			 position: fixed;
 			top:0;
 			 width: 100%;
-			 height: 80px;
+			 min-height: 80px;
 			 padding: 26px 70px 0 30px;
 		 }
 		 .logo a.mobile-menu, logo button {
