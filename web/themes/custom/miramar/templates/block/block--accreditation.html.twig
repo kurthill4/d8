@@ -50,19 +50,15 @@
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
-    'mbtn',
     'clearfix',
   ]
 %}
 <section{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
-  {% if label %}
-    <h3><img src="{{ directory }}/images/icon-office.png" alt="Campus Resources Directory" />&nbsp;&nbsp;{{ label }}</h3>
-  {% endif %}
-  {{ title_suffix }}
-
-  {% block content %}
+            <div class="news-block news-block-2">
+                    <h3 style="margin-bottom:2em"><img src="/{{ directory }}/images/icon-office.png" alt="Accreditation" style="float:left" /> Accreditation</h3>
+		  {% block content %}
     {{ content }}
+	    </div>
   {% endblock %}
 </section>
 

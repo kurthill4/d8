@@ -9,7 +9,7 @@ body{
 
 div.cheat {width:95%;min-width:900px}
 .spacer {clear:both}
-.content {padding:0.5em;}
+.content {padding:5px 10px;}
 .content p {margin-bottom:1em}
 
 ul { list-style: none; }
@@ -907,7 +907,7 @@ footer h4{
 }
 .resources{
 	margin: 6px 0 0;
-	background: #1d2451;
+	/*background: #1d2451;*/
 	color: #fff;
 }
 .resources a{
@@ -1473,8 +1473,8 @@ table.faculty thead th i {
 }
 
 .resources .container-fluid {
-	padding-left:10px;
-	margin: 0;
+	padding:0 5px 10px 10px;
+	margin:0;
 }
 .resources .container-fluid:nth-child(odd) {
 	background: #daf2f4;
@@ -1487,7 +1487,7 @@ table.faculty thead th i {
 .resources h2 {
 	margin-left:10px;
 }
-.resources p {color:#000000}
+.resources p,.resources h2,.resources h3 {color:#000000}
 .resources .mini-sidebar a,.resources td a {
     color: #31b6c7;
     display: block;
