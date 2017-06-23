@@ -16,7 +16,7 @@ global-styling:
     - core/jquery.ui
     - core/jquery.once
     - core/drupal
-    - core/drupal.ajax
+#    - core/drupal.ajax
     - core/drupal.dialog.ajax
     - core/drupalSettings
 

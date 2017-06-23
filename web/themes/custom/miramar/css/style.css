@@ -431,7 +431,7 @@ nav.mobile-nav li:first-child ol li{
   background-size: 1280px 853px;
 }
 .slide-cr{
-	background: transparent url(../images/campus-resources-banner.jpg) no-repeat left top scroll;
+	background: transparent url(../images/campus-resources-banner.png) no-repeat left top scroll;
   -webkit-background-size: 1280px 600px;
   -moz-background-size: 1280px 600px;
   -o-background-size: 1280px 600px;
@@ -1678,7 +1678,7 @@ table.faculty thead th i {
   background-size: 960px 640px;
 }
 .slide-cr{
-	background: transparent url(../images/campus-resources-banner.jpg) no-repeat left top scroll;
+	background: transparent url(../images/campus-resources-banner.png) no-repeat left top scroll;
   -webkit-background-size: 960px 450px;
   -moz-background-size: 960px 450px;
   -o-background-size: 960px 450px;
