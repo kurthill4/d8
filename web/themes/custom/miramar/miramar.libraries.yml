@@ -7,15 +7,18 @@ global-styling:
       font-awesome-4.7.0/css/font-awesome.min.css: {}
   js:
 #    js/jquery.min.js: {}
-#    js/bootstrap.min.js: {}
+    js/bootstrap.min.js: {}
     bootstrap/assets/javascripts/bootstrap.min.js: {}
 #    js/jquery-ui.js: {}
     js/main.js: {}
   dependencies:
     - core/jquery
+    - core/jquery.ui
     - core/jquery.once
     - core/drupal
+    - core/drupal.ajax
     - core/drupal.dialog.ajax
+    - core/drupalSettings
 
 bootstrap-scripts:
   js:

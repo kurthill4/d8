@@ -9,8 +9,9 @@ body{
 
 div.cheat {width:95%;min-width:900px}
 .spacer {clear:both}
-.content {padding:5px 10px;}
+.content,.dir-content {padding:5px 10px;}
 .content p {margin-bottom:1em}
+.content img {padding:3px}
 
 ul { list-style: none; }
 ul.noindent,ul.noindent li {

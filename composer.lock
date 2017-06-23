@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5781438e4ef4a10b9fc321330f0f5c93",
+    "content-hash": "3fb176c5bc4e29a37aac4774804ea961",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2064,6 +2064,67 @@
             }
         },
         {
+            "name": "drupal/embed",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/embed",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/embed-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "cc746ad807260e01c7788dd82110dcebbb4d678a"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1490755685"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "Devin Carlson",
+                    "homepage": "https://www.drupal.org/user/290182"
+                },
+                {
+                    "name": "Drupal Media Team",
+                    "homepage": "https://www.drupal.org/user/3260690"
+                },
+                {
+                    "name": "cs_shadow",
+                    "homepage": "https://www.drupal.org/user/2828287"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                }
+            ],
+            "description": "Provide a framework for various different types of embeds in WYSIWYG editors, common functionality, interfaces, and standards.",
+            "homepage": "https://www.drupal.org/project/embed",
+            "support": {
+                "source": "http://cgit.drupalcode.org/embed",
+                "issues": "https://www.drupal.org/project/issues/embed",
+                "irc": "irc://irc.freenode.org/drupal-media"
+            }
+        },
+        {
             "name": "drupal/entity",
             "version": "1.0.0-alpha4",
             "source": {
@@ -2159,6 +2220,71 @@
                 "source": "http://cgit.drupalcode.org/entity_clone"
             },
             "time": "2016-04-14 07:57:21"
+        },
+        {
+            "name": "drupal/entity_embed",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/entity_embed",
+                "reference": "8.x-1.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_embed-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "21cdeb2b058efce461683aed9a8951053512dca7"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/embed": "*"
+            },
+            "require-dev": {
+                "drupal/entity_browser": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1476698339"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "Devin Carlson",
+                    "homepage": "https://www.drupal.org/user/290182"
+                },
+                {
+                    "name": "Drupal Media Team",
+                    "homepage": "https://www.drupal.org/user/3260690"
+                },
+                {
+                    "name": "cs_shadow",
+                    "homepage": "https://www.drupal.org/user/2828287"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                }
+            ],
+            "description": "Allows any entity to be embedded within a text area using a WYSIWYG editor.",
+            "homepage": "https://www.drupal.org/project/entity_embed",
+            "support": {
+                "source": "http://cgit.drupalcode.org/entity_embed",
+                "issues": "https://www.drupal.org/project/issues/entity_embed",
+                "irc": "irc://irc.freenode.org/drupal-media"
+            }
         },
         {
             "name": "drupal/entity_reference_revisions",
@@ -2502,49 +2628,6 @@
             "homepage": "https://www.drupal.org/project/file_entity",
             "support": {
                 "source": "http://cgit.drupalcode.org/file_entity"
-            }
-        },
-        {
-            "name": "drupal/flickity",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/flickity",
-                "reference": "8.x-1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/flickity-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "88932b16df5760645d7cebad28d323d9b066446d"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1455160739"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "swim",
-                    "homepage": "https://www.drupal.org/user/1968266"
-                }
-            ],
-            "description": "Provides Flickity library integration with Drupal.",
-            "homepage": "https://www.drupal.org/project/flickity",
-            "support": {
-                "source": "http://cgit.drupalcode.org/flickity"
             }
         },
         {
@@ -3498,81 +3581,6 @@
             "homepage": "https://www.drupal.org/project/pathauto",
             "support": {
                 "source": "http://cgit.drupalcode.org/pathauto"
-            }
-        },
-        {
-            "name": "drupal/quicktabs",
-            "version": "3.0.0-alpha2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/quicktabs",
-                "reference": "8.x-3.0-alpha2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/quicktabs-8.x-3.0-alpha2.zip",
-                "reference": null,
-                "shasum": "783da3f1284b70b937d047f2ea5745340cc729d4"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-3.0-alpha2",
-                    "datestamp": "1497623642"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Palashvijay4O",
-                    "homepage": "https://www.drupal.org/user/2995945"
-                },
-                {
-                    "name": "Pasqualle",
-                    "homepage": "https://www.drupal.org/user/80733"
-                },
-                {
-                    "name": "ezra-g",
-                    "homepage": "https://www.drupal.org/user/69959"
-                },
-                {
-                    "name": "jaydub",
-                    "homepage": "https://www.drupal.org/user/46257"
-                },
-                {
-                    "name": "katbailey",
-                    "homepage": "https://www.drupal.org/user/172987"
-                },
-                {
-                    "name": "nedjo",
-                    "homepage": "https://www.drupal.org/user/4481"
-                },
-                {
-                    "name": "netw3rker",
-                    "homepage": "https://www.drupal.org/user/89684"
-                },
-                {
-                    "name": "systemick",
-                    "homepage": "https://www.drupal.org/user/819746"
-                },
-                {
-                    "name": "ultimateboy",
-                    "homepage": "https://www.drupal.org/user/153963"
-                }
-            ],
-            "description": "Render content with tabs and other display styles",
-            "homepage": "https://www.drupal.org/project/quicktabs",
-            "support": {
-                "source": "http://cgit.drupalcode.org/quicktabs"
             }
         },
         {
@@ -8749,6 +8757,7 @@
         "drupal/ctools": 10,
         "drupal/devel": 5,
         "drupal/entity_clone": 20,
+        "drupal/entity_embed": 10,
         "drupal/feeds": 20,
         "drupal/field_group": 5,
         "drupal/field_redirection": 20,
@@ -8758,7 +8767,6 @@
         "drupal/page_manager": 15,
         "drupal/paragraphs_previewer": 20,
         "drupal/pathauto": 5,
-        "drupal/quicktabs": 15,
         "drupal/slick_extras": 10,
         "drupal/slick_views": 5,
         "drupal/themable_forms": 10,

@@ -8,6 +8,18 @@
 
 use Drupal\taxonomy\Entity\Term;
 
+/**
+ * Implements hook_preprocess_HOOK() for Node templates.
+ *
+ * Adds two Views blocks as a variable in order to ouput the Directory blocks in a node template.
+ *
+ * Yes, it's kludgy.
+ */
+
+function miramar_preprocess_node(&$variables) {
+  $variables['places'] = views_embed_view('directory_test', 'block_1');
+  $variables['people'] = views_embed_view('faculty_staff_directory', 'block_1');
+}
 
 /**
  * Implements hook_preprocess_HOOK() for block templates.
@@ -29,6 +41,7 @@ function miramar_preprocess_block(&$variables) {
     }
   }
 }
+
 
 function miramar_theme_suggestions_page_alter(&$suggestions, &$vars) {
   if (\Drupal::routeMatch()->getRouteName() == 'entity.taxonomy_term.canonical' && $tid = \Drupal::routeMatch()->getRawParameter('taxonomy_term')) {
