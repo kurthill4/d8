@@ -16,10 +16,10 @@
  */
 #}
 <item>
-<title><![CDATA[{{ label }}]]></title>
+<title><![CDATA[{{ title }}]]></title>
 <link>{{ link }}</link>
-<description><![CDATA[{{ body }}]></description>
-<news:media_target>{{ content.field_format }}</news:media_target>
+<description><![CDATA[{{ description }}]></description>
+<news:media_target>{{ node.field_format.value|raw }}</news:media_target>
 <news:tags></news:tags>
 <news:start_date></news:start_date>
 <news:pub_start_date></news:pub_start_date>

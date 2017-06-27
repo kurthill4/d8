@@ -7,11 +7,11 @@ body{
 }
 .gateway .page-header,.directory .page-header, .resources .page-header {display:none!important;}
 
-div.cheat {width:95%;min-width:900px}
 .spacer {clear:both}
-.content,.dir-content {padding:5px 10px;}
-.content p {margin-bottom:1em}
-.content img {padding:3px}
+.content,.dir-content,.field--name-description {padding:5px 10px;}
+.content p,
+.field--name-description p {margin-bottom:1em}
+.content img,.field--name-description img {padding:3px}
 
 ul { list-style: none; }
 ul.noindent,ul.noindent li {
@@ -19,12 +19,12 @@ ul.noindent,ul.noindent li {
 	margin: 0;
 }
 
-.content li {margin-bottom:1em;}
-.content ul li {
+.content li,.field--name-description li {margin-bottom:1em;}
+.content ul li,.field--name-description ul li {
 	text-indent: -1em;
 	padding-left: 1em;
 }
-.content ul li:before {
+.content ul > li:before,.field--name-description ul > li:before {
 	content: '❖ ';
 }
 ul.nobull li:before{ content:none;}
@@ -67,7 +67,7 @@ h1,h2, h3, h4, h5{
 	display:table-cell;
 	width:50%;
 }
-
+.campus-news img {float:left}
 #toolbar-administration {
 	display: grid;
 	position:absolute;
@@ -344,7 +344,7 @@ nav.mobile-nav li:first-child ol li{
 .page-header,
 .directory .block-title {
 	padding-left:2em;
-	margin:0,75em 0;
+	margin:20px 0 0 0;
 	width:100%;
 	font-family:Oswald;
 	color:#ffffff;
@@ -437,7 +437,7 @@ nav.mobile-nav li:first-child ol li{
   -o-background-size: 1280px 600px;
   background-size: 1280px 600px;
 }
-.slide-dr{
+.slide-dr,.slide-ns{
 	background: transparent url(../images/directory-banner-1.jpg) no-repeat left top scroll;
   -webkit-background-size: 1280px 600px;
   -moz-background-size: 1280px 600px;
@@ -919,6 +919,8 @@ footer h4{
 	text-decoration: none;
 	padding: 0 7px;
 }
+#block-views-block-resource-information-block-1 {background: #d1d4d3 }
+#block-views-block-resource-information-block-1 p {font-size:0.8em}
 .campus-alert{
 	background: #ee1c1c;
 }
@@ -1312,6 +1314,7 @@ ul.dp-menu li:hover a{
 	color: #575c5d;
 	font-size: 1em;
 }
+.program .views-row {width:99%;padding-left:20px;margin-left:auto!important;margin-right:auto!important}
 .program-list-panel {
 	background: url('../images/zigzag.png') center center no-repeat fixed;
 }
@@ -1684,7 +1687,7 @@ table.faculty thead th i {
   -o-background-size: 960px 450px;
   background-size: 960px 450px;
 }
-.slide-dr{
+.slide-dr,.slide-ns{
 	background: transparent url(../images/directory-banner-1.jpg) no-repeat left top scroll;
   -webkit-background-size: 960px 450px;
   -moz-background-size: 960px 450px;
