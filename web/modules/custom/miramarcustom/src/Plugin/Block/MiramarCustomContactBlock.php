@@ -50,22 +50,22 @@ class MiramarCustomContactBlock extends BlockBase {
                 <h4><img src="' . $imagepath . '/images/icon-building.png" alt=""></h4>
                 <strong>Campus Information</strong>
                 <ul class="campus">
-                  <li><a href="/campus/getting-here">Parking/Transit</a></li>
-                  <li><a href="http://police.sdccd.edu">Safety</a></li>
-                  <li><a href="https://www.sdccdjobs.com/" target="_blank">Jobs</a></li>
                   <li><a href="/directory">Directory</a></li>
+                  <li><a href="https://www.sdccdjobs.com/" target="_blank">Jobs</a></li>
+                  <li><a href="/campus/directions">Parking/Transit</a></li>
                   <li><a href="/campus/president">President\'s Message</a></li>
+                  <li><a href="http://police.sdccd.edu">Safety</a></li>
                 </ul>
               </div>
               <div class="col-sm-4">
                 <h4><img src="' . $imagepath . '/images/icon-users.png" alt=""></h4>
                 <strong>Resources &amp; Information</strong>
                 <ul class="miramar">
-                  <li><a href="/facultystaff">Resources for Faculty &amp; Staff</a></li>
                   <li><a href="http://police.sdccd.edu/jclery.cfm">Clery Act Information</a></li>
                   <li><a href="/campus/foundation">The Miramar College Foundation</a></li>
-                  <li><a href="http://www.sdccd.edu/daapp/">Smoking/Substance Policy</a></li>
+                  <li><a href="/facultystaff">Resources for Faculty &amp; Staff</a></li>
                   <li><a href="/privacy">Privacy Statement</a></li>
+                  <li><a href="http://www.sdccd.edu/daapp/">Smoking/Substance Policy</a></li>
                 </ul>
               </div>
               <div class="col-sm-4">
@@ -74,7 +74,7 @@ class MiramarCustomContactBlock extends BlockBase {
                 <ul class="acc-info">
                   <li><a href="/accreditation">Accreditation</a></li>
                   <li><a href="/campus/planning">Planning</a></li>
-                  <li><a href="#">Student Success Scorecard</a></li>
+                  <li><a href="http://www1.sdmiramar.edu/webfm_send/15889">Student Success Scorecard</a></li>
                 </ul>
               </div>
             </div>

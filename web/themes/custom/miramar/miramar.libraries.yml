@@ -35,6 +35,10 @@ bootstrap-scripts:
     bootstrap/assets/javascripts/bootstrap/tab.js: {}
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
 
+vtour:
+  js:
+    http://www.youvisit.com/tour/Embed/js2: { type: external }
+
 flickity:
   css:
     css/flickity.css: {}
