@@ -1104,6 +1104,10 @@ width:100%;
 	top: 0;
 	left: 0;
 }
+.news-block-2 table {width:100%}
+.news-block-2 td {font-size:0.75em}
+.news-block-2 tr td:first-child {width:100px!important;}
+.news-block-2 td img {width:100px!important;}
 .recent-jobs{
 	position: relative;
 	margin: 10px 0 0;
