@@ -1,0 +1,17 @@
+header {
+  overflow: hidden;
+
+  #fortytwo-admin-page-title {
+    float: left;
+  }
+
+  #sitebranding {
+    float: left;
+    margin-right: 30px;
+
+    .logo img {
+      height: 60px;
+      width: auto;
+    }
+  }
+}

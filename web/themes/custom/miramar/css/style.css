@@ -845,11 +845,7 @@ nav.mobile-nav li:first-child ol li{
 }
 .ne-wrap img{
 	width: 100%;
-/*	opacity:0.5;*/
 }
-/*.ne-wrap:hover img{
-	opacity:1;
-}*/
 .ne-wrap .news-overlay{
 	position: absolute;
 	left: 0;
@@ -871,7 +867,10 @@ nav.mobile-nav li:first-child ol li{
   	background: rgba(29, 26, 81, 0.5);
 	text-align: center;
 	color: #fff;
-	padding: 25% 30px;
+	padding: 75% 30px 0 30px;
+}
+.program-list .news-overlay a {
+	top:75px;
 }
 .ne-wrap:hover .news-overlay{
 	background:none;
@@ -887,6 +886,7 @@ nav.mobile-nav li:first-child ol li{
 .view-id-campus_directory {
 	margin: 10px 10px 0 20px;
 }
+
 footer{
 	padding: 30px 20px 20px;
 	font-size: 13px;
@@ -904,8 +904,8 @@ footer ul.colleges{
 footer ul.campus, footer ul.miramar, footer ul.acc-info{
 	margin-left: 20px;
 }
-footer ul a{
-	color: #fff;
+footer ul a,footer ul a:visited,footer ul a:active {
+	color: #ffffff!important;
 }
 footer li:hover a{
 	color: #31b8c9;
@@ -1361,10 +1361,10 @@ ul.dp-menu li:hover a{
   text-align: center;
   color: #fff;
   text-decoration: none;
-	font-weight: bold!important;
-	font-size:16px!important;
-	font-family:Oswald!important;
-	color: #ffffff!important;
+  font-weight: bold!important;
+  font-size:16px!important;
+  font-family:Oswald!important;
+  color: #ffffff!important;
 
 }
 
@@ -1421,7 +1421,10 @@ ul.dp-menu li:hover a{
 	/*width:155px!important;*/
     -webkit-filter: brightness(50%); /* Safari 6.0 - 9.0 */
     filter: brightness(50%);}
-
+.slick-1 a,.slick-1 a:visited,.slick-1 a:active {
+	color:#ffffff;
+	text-decoration:none;
+}
 /*.step-panel .program a:hover img,*/
 .slick-1 a:hover img {
     -webkit-filter: brightness(100%); /* Safari 6.0 - 9.0 */

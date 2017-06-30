@@ -27,16 +27,16 @@ class MiramarCustomSocialBlock extends BlockBase {
           <div class="col-sm-4">
             <!-- Social Media -->
             <div class="social-media hide-xs">
-              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/SanDiegoMiramarCollege"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/SDMiramar"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="https://instagram.com/sdmiramar/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://www.pinterest.com/MiramarCollege/"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+              <a href="https://www.youtube.com/channel/UCAW9o2tK52NekfZFixJOU0w"><i class="fa fa-youtube" aria-hidden="true"></i></a>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="copyright">
-              &copy; 2017 San Diego Miramar College | Disclaimer
+              &copy; 2017 San Diego Miramar College | <a href="/legal">Disclaimer</a>
             </div>
           </div>
         </div>'
