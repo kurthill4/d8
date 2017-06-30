@@ -122,6 +122,15 @@ AddEncoding gzip svgz
   # uncomment the following line:
   # RewriteBase /
 
+  # Custom Redirects
+
+  Redirect 301 /campus/library http://www1.sdmiramar.edu/library
+  Redirect 301 /campus/av http://www1.sdmiramar.edu/library/av
+  Redirect 301 /campus/campus-police http://police.sdccd.edu
+  Redirect 301 /campus/bookstore http://www.bookstore.sdccd.edu/miramar
+  Redirect 301 /campus/athletics http://www.miramarjets.com
+  Redirect 301 /campus/as http://www.sdmiramarasg.com
+
   # Redirect common PHP files to their new locations.
   RewriteCond %{REQUEST_URI} ^(.*)?/(install.php) [OR]
   RewriteCond %{REQUEST_URI} ^(.*)?/(rebuild.php)

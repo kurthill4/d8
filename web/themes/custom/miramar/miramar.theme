@@ -19,6 +19,7 @@ use Drupal\taxonomy\Entity\Term;
 function miramar_preprocess_node(&$variables) {
   $variables['places'] = views_embed_view('directory_test', 'default');
   $variables['people'] = views_embed_view('faculty_staff_directory', 'default');
+  $variables['map'] = views_embed_view('map_block_display', 'block_1');
 }
 
 /**

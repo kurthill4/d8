@@ -62,9 +62,9 @@ class MiramarCustomContactBlock extends BlockBase {
                 <strong>Resources &amp; Information</strong>
                 <ul class="miramar">
                   <li><a href="http://police.sdccd.edu/jclery.cfm">Clery Act Information</a></li>
-                  <li><a href="/campus/foundation">The Miramar College Foundation</a></li>
-                  <li><a href="/facultystaff">Resources for Faculty &amp; Staff</a></li>
+                  <li><a href="/campus/foundation">Miramar College Foundation</a></li>
                   <li><a href="/privacy">Privacy Statement</a></li>
+                  <li><a href="/facultystaff">Resources for Faculty &amp; Staff</a></li>
                   <li><a href="http://www.sdccd.edu/daapp/">Smoking/Substance Policy</a></li>
                 </ul>
               </div>

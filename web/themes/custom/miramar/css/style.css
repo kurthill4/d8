@@ -858,7 +858,7 @@ nav.mobile-nav li:first-child ol li{
 	color: #fff;
 	padding: 25% 30px;
 }
-.program-list .news-overlay{
+.program-list .news-overlay {
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -866,11 +866,13 @@ nav.mobile-nav li:first-child ol li{
 	height: 100%;
   	background: rgba(29, 26, 81, 0.5);
 	text-align: center;
+	vertical-align:bottom;
 	color: #fff;
-	padding: 75% 30px 0 30px;
+	padding: 100px 25px 0 25px;
 }
-.program-list .news-overlay a {
-	top:75px;
+.program-list a.news-overlay {
+	padding-top:95%!important;
+	vertical-align:bottom;
 }
 .ne-wrap:hover .news-overlay{
 	background:none;
@@ -906,6 +908,7 @@ footer ul.campus, footer ul.miramar, footer ul.acc-info{
 }
 footer ul a,footer ul a:visited,footer ul a:active {
 	color: #ffffff!important;
+	font-size:0.9em;
 }
 footer li:hover a{
 	color: #31b8c9;
@@ -1298,8 +1301,19 @@ ul.dp-menu li:hover a{
 	padding: 10px 30px;
 	background: #daf2f4;
 }
-.dcf-content tbody{
+.dcf-content table {
+	table-layout:fixed;
+	empty-cells: show;
+}
+.dcf-content thead, .dcf-content tbody {
+	display:block;
+	width:100%;
+}
+
+.dcf-content tbody {
+	height: 500px!important;
 	background: #fff;
+	overflow:auto!important;
 }
 .dcf-content .table>tbody>tr>td, .dcf-content .table>tbody>tr>th, .dcf-content .table>tfoot>tr>td, .dcf-content .table>tfoot>tr>th, .dcf-content .table>thead>tr>td, .dcf-content .table>thead>tr>th{
 	border-top: 0;
