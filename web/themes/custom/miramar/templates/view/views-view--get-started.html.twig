@@ -56,9 +56,11 @@
   {% endif %}
 
   {% if rows %}
+<div class="table-wrapper">
     <div class="view-content">
       {{ rows }}
     </div>
+</div>
   {% elseif empty %}
     <div class="view-empty">
       {{ empty }}

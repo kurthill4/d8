@@ -1671,6 +1671,7 @@ table.faculty thead th i {
   font-family: Oswald;
   font-size: 15pt;
 }
+.getstarted .table-wrapper {overflow-x: scroll}
 .getstarted table tr td:nth-child(2) {text-align:left!important;padding:0!important;min-width:385px;}
 .getstarted td.views-field-field-image {max-width:215px!important;}
 .views-field-field-paths {text-align:left!important;padding:0!important;margin:0!important;}
