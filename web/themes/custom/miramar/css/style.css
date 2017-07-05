@@ -985,7 +985,7 @@ footer h4{
 	margin-left: 6px;
 	width:100%;
 }
-.step-panel ul{
+.step-panel ul.resource{
 	margin: 0 0 0 12px;
 	padding: 0;
 	list-style:none;
@@ -1646,28 +1646,35 @@ table.faculty thead th i {
   margin-right: 10px;
 }
 .student-path {
-	margin: 20px;
+	display:block;
+	margin: 0;
+	padding:0;
 	font-family: 'Oswald';
+	width:100%;
 }
 .student-path h1 {
 	font-size: 24px;
-  font-weight: 700;
+  	font-weight: 700;
 	margin-top:1em!important;
 }
 .student-path ul {
 	margin-top: 20px;
 	list-style:none;
+	width:99%;
+	padding:0;
 }
 .student-path ul li {
-  margin: 10px 10px 5px 0;
+  margin: 10px 0;
 }
 .student-path ul li a {
   color: #31b8c9;
   font-family: Oswald;
   font-size: 15pt;
 }
-.getstarted table td:nth-child(2) {max-width:350px;}
-.getstarted table td:nth-child(3) ul {margin-right:0.5em;}
+.getstarted table tr td:nth-child(2) {text-align:left!important;padding:0!important;min-width:385px;}
+.getstarted td.views-field-field-image {max-width:215px!important;}
+.views-field-field-paths {text-align:left!important;padding:0!important;margin:0!important;}
+.getstarted table tr td:nth-child(3) ul {margin:1em 0 0 3em;}
 .getstarted .news-title h3 {
 	margin-top:1em!important;
 }
