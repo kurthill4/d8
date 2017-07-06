@@ -40,6 +40,15 @@ I'm a lot more worried about the mobile menu.
 
 July 5--Got the directory listings imported. Database changes but nothing else to commit at this time.
 
+20170706-11:31:
+No template or file changes to commit. Final database and file dump.
+
+Changes that should show up in this dump: 
+
+Directory Listings should all have a Category. Previously missing.
+
+Each Program should now have a contact person. Some were missing. Additionally, some Programs now have a course sequence file. Example: Biology.
+
 
 
 
