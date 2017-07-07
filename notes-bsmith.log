@@ -51,4 +51,9 @@ Each Program should now have a contact person. Some were missing. Additionally, 
 
 Most of today's work was done in the database; nothing further to commit.
 
+20170707:
+After an entire day of trying various things, the directory has basic function on a single page. It's not ready for production, as some stylistic aspects must be adjusted. Also, the map display if still required, must be done differently and that will take time.
+
+No further database dumps will be made until requested.
+
 
