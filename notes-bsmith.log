@@ -60,6 +60,9 @@ IMPORTANT CONFIG CHANGE
 
 Composer began throwing an error when installing a module: Out of swap spave. Following research, I increased my VM's PHP memory limit to 1792k in /etc/php/php7/apache2/php.ini. This fixed the issue and thus far has caused no other problems.
 
+20170710:
+The directory is proving to be much more intricate than I had thought. In order to get it to work the way Promet requested (and it's a little late to change their data model; I did it that way because i thought they were giving us a theme), I'm going to need to do a little more to get it fully functional.
 
+Deep structural changes were made to the Directory Listing content type. Somehow this will need to be moved to production.
 
 
