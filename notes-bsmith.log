@@ -56,4 +56,10 @@ After an entire day of trying various things, the directory has basic function o
 
 No further database dumps will be made until requested.
 
+IMPORTANT CONFIG CHANGE
+
+Composer began throwing an error when installing a module: Out of swap spave. Following research, I increased my VM's PHP memory limit to 1792k in /etc/php/php7/apache2/php.ini. This fixed the issue and thus far has caused no other problems.
+
+
+
 
