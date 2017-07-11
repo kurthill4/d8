@@ -877,7 +877,7 @@ nav.mobile-nav li:first-child ol li{
 	padding: 20px;
 }
 
-.view-id-campus_directory {
+.view-id-directory {
 	margin: 10px 10px 0 20px;
 }
 
@@ -1440,6 +1440,12 @@ table.faculty thead th i {
 }
 .directory input[type="text"] {
 	width: 88%;
+}
+.form-item-field-directory-category-target-id .control-label {
+	margin-bottom:10px!important;
+}
+.directory .form-submit {
+	margin-top:20px;
 }
 .directory .btn {
 	border-radius: 0;
