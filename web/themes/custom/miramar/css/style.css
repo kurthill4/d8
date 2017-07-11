@@ -1430,7 +1430,7 @@ ul.dp-menu li:hover a{
 /*.program-list-panel .col-md-2 a:hover img {
 	filter: brightness(100%);
 }*/
-table.faculty {width:100%;}
+table.faculty {width:100%!important;}
 table.faculty thead th {
     color: #31b6c7;
     font-size: 20pt;#fl
