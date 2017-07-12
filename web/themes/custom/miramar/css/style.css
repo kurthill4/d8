@@ -1876,9 +1876,9 @@ body p {font-size:12px;}
 		 	 font-size: 25px;
 		 	 transition: transform 0.2s;
 		 }
-		 .logo a.mobile-menu.collapsed {
+		 /*.logo a.mobile-menu.collapsed {
 		 		transform: rotate(90deg);
-		 	}
+		 	}*/
 		nav.main-menu {
 			display:block;
 			position:static;
@@ -1887,6 +1887,7 @@ body p {font-size:12px;}
 		nav.main-menu ul li {
 			display:block;
 			width:100%;
+			margin-left:10px;
 			margin-bottom:10px;
 		}
 		nav.main-menu ul li a {
