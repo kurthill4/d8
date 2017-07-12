@@ -5,6 +5,15 @@ function _toggleArrow(ele) {
 
 (function($) {
   // Mobile Menu controls.
+  /*$('.mobile-nav').hide();
+  $('a.mobile-menu').click(function() {
+    $('.mobile-nav').slideToggle('fast',function() {
+      $('a.mobile-menu').toggleClass('collapsed');
+    });
+  })*/
+
+/*
+
   $('.mobile-nav').hide();
   $('a.mobile-menu').click(function() {
     $('.mobile-nav').slideToggle('fast',function() {
@@ -12,6 +21,7 @@ function _toggleArrow(ele) {
     });
   })
 
+*/
   // Searchbar show/hide controls.
   $('.top-links .fa-search').parent().click(function() {
     $('.search-desktop').fadeToggle();
