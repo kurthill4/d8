@@ -1884,19 +1884,22 @@ body p {font-size:12px;}
 			position:static;
 			margin-bottom:10px;
 		}
+		nav.main-menu ul {
+			width:100%;
+		}
 		nav.main-menu ul li {
 			display:block;
-			width:100%;
+			width:100%!important;
 			margin-left:10px;
 			margin-bottom:10px;
 		}
 		nav.main-menu ul li a {
-			width:100%;
+			width:100%!important;
 			font-size: 14px;
 			font-weight:bold;
 			padding:0;
 		}
-		nav.main-menu ul li:hover a {
+		nav.main-menu ul li:hover, nav.main-menu ul li:hover a,nav.main-menu ul li a:hover {
 			text-decoration:none!important;
 		}
 		nav.main-menu ul li:first-child {

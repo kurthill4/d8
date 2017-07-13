@@ -11,15 +11,26 @@ use Drupal\taxonomy\Entity\Term;
 /**
  * Implements hook_preprocess_HOOK() for Node templates.
  *
- * Adds two Views blocks as a variable in order to ouput the Directory blocks in a node template.
+ * 
  *
- * Yes, it's kludgy.
+ * 
  */
 
 function miramar_preprocess_node(&$variables) {
-  $variables['places'] = views_embed_view('directory_test', 'default');
-  $variables['people'] = views_embed_view('faculty_staff_directory', 'default');
-  $variables['map'] = views_embed_view('map_block_display', 'block_1');
+
+  
+}
+
+function miramar_preprocess_views_view_row_rss(&$variables) {
+    $item = $variables['row'];
+    $node = node_load($item->nid);
+    $variables['media_target'] = $node->get('field_format')->value;
+    $variables['story_date'] = $node->get('field_story_date')->value;
+    $variables['pub_start_date'] = $node->get('field_start_date')->value;
+    $variables['pub_end_date'] = $node->get('field_end_date')->value;
+    $variables['url'] = $node->get('field_link')->getString;
+    $variables['url_label'] = $node->get('field_link_label')->value;
+    $variables['priority'] = $node->get('field_priority')->value;
 }
 
 /**

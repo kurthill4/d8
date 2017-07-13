@@ -19,12 +19,12 @@
 <title><![CDATA[{{ title }}]]></title>
 <link>{{ link }}</link>
 <description><![CDATA[{{ description }}]></description>
-<news:media_target>{{ node.field_format.value|raw }}</news:media_target>
+<news:media_target>{{ media_target }}</news:media_target>
 <news:tags></news:tags>
-<news:start_date></news:start_date>
-<news:pub_start_date></news:pub_start_date>
-<news:pub_end_date></news:pub_end_date>
-<news:url><![CDATA[]]></news:url>
-<news:url_label><![CDATA[]]></news:url_label>
-<news:priority></news:priority>
+<news:start_date>{{ story_date }}</news:start_date>
+<news:pub_start_date>{{ pub_start_date }}</news:pub_start_date>
+<news:pub_end_date>{{ pub_end_date }}</news:pub_end_date>
+<news:url><![CDATA[{{ url }}]]></news:url>
+<news:url_label><![CDATA[{{ url_label }}]]></news:url_label>
+<news:priority>{{ priority }}</news:priority>
 </item>
