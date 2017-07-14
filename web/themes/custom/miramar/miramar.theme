@@ -62,10 +62,10 @@ function miramar_preprocess_page(&$variables) {
 
 		if($node->getType() == "program")
 		{
-			$image = $node->field_program_hero_image;	// Extract field value from content
+			$image = $node->field_program_hero_image;		// Extract field value from content
 			if(!$image->isEmpty())
 			{
-				$imageUri = $image->entity->getFileUri();
+				$imageUri = $image->entity->getFileUri();	// Build URL to image for Twig display
 				$pgmHero = file_create_url($imageUri);
 				$variables['hero'] = $pgmHero;
 			}
@@ -84,9 +84,9 @@ function miramar_preprocess_page(&$variables) {
 function miramar_preprocess_views_view_row_rss(&$variables) {
     $item = $variables['row'];
     $node = node_load($item->nid);
-    if($node->getType() == "campus_news")
+    if($node->getType() == "campus_news")	// Is the node the correct content type?
     {
-	    $variables['article'] = strip_tags(removeInvalidXML($node->body->value));
+	    $variables['article'] = strip_tags(removeInvalidXML($node->body->value));	// Assign fields to Twig variables
 	    $variables['media_target'] = $node->get('field_format')->value;
 	    $variables['tags'] = $node->get('field_story_type')->value;
 	    $variables['story_date'] = $node->get('field_story_date')->value;
