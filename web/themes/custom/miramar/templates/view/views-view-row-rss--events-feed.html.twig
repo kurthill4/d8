@@ -1,0 +1,32 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display an item in a views RSS feed.
+ *
+ * Available variables:
+ * - title: RSS item title.
+ * - link: RSS item link.
+ * - description: RSS body text.
+ * - item_elements: RSS item elements to be rendered as XML (pubDate, creator,
+ *   guid).
+ *
+ * @see template_preprocess_views_view_row_rss()
+ *
+ * @ingroup themeable
+ */
+#}
+<item>
+<title><![CDATA[{{ title }}]]></title>
+<link>{{ link }}</link>
+<description><![CDATA[{{ article }}]></description>
+<calendar:media_target>{{ media_target }}</calendar:media_target>
+<calendar:tags>{{ tags }}</calendar:tags>
+<calendar:start_date>{{ event_date }}</calendar:start_date>
+<calendar:end_date>{{ event_date_end }}</calendar:end_date>
+<calendar:pub_start_date>{{ pub_start_date }}</calendar:pub_start_date>
+<calendar:pub_end_date>{{ pub_end_date }}</calendar:pub_end_date>
+<calendar:location><![CDATA[{{ location }}]]></calendar:location>
+<calendar:rsvp><![CDATA[{{ rsvp }}]]></calendar:rsvp>
+<calendar:reply_email><![CDATA[{{ reply_email }}]]></calendar:reply_email>
+<calendar:priority>{{ priority }}</calendar:priority>
+</item>

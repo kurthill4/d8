@@ -78,9 +78,15 @@
     </header>
   {% endblock %}
 {% endif %}
-
+{# % if hero is not null % #}
+<!--div class="banner notfront">
+  <div class="carousel">
+      <div class="carousel-cell slide-test" style="background:url({# { hero } #})  transparent no-repeat left top scroll"></div>
+</div>
+</div-->
+{# % else % #}
 <div class="page-cover">&nbsp;</div>
-
+{# % endif % #}
 {# Main #}
 {% block main %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">

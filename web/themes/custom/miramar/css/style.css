@@ -470,8 +470,8 @@ nav.mobile-nav li:first-child ol li{
   -o-background-size: 1280px 600px;
   background-size: 1280px 600px;
 }
-.slide-test {
-	background: transparent no-repeat left top scroll;
+.slide-custom {
+/*	background: transparent no-repeat left top scroll;*/
   -webkit-background-size: 1280px 600px;
   -moz-background-size: 1280px 600px;
   -o-background-size: 1280px 600px;
