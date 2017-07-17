@@ -41,11 +41,13 @@
         <a href="{{ item.url }}"><i class="fa fa-book" aria-hidden="true"></i> {{ item.title }}</a>
       {% elseif item.title == 'Blackboard' %}
         <a href="{{ item.url }}"><i class="fa fa-laptop" aria-hidden="true"></i> {{ item.title }}</a>
+      {% else %}
+        <a class="search" href="#"><i class="fa fa-search" aria-hidden="true"></i> {{ item.title }}</a>
       {% endif %}
     {% endfor %}
     <div class="search-desktop">
       <a class="close-x" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
-       <ul>
+       <!--ul>
          <li>
            <div class="input-group">
              <input type="text" class="form-control" placeholder="Enter Search...">
@@ -60,7 +62,8 @@
          <li><a href="#">Similar Search Terms</a></li>
          <li><a href="#">Similar Search Terms</a></li>
          <li><a href="#">Similar Search Terms</a></li>
-       </ul>
+       </ul-->
+	{{ searchblock }}
     </div>
   {% endif %}
 {% endmacro %}

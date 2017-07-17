@@ -3,6 +3,7 @@ function _toggleArrow(ele) {
   $(ele).toggleClass('fa-chevron-down').effect('pulsate', 'fast');
 }
 
+
 (function($) {
   // Mobile Menu controls.
   /*$('.mobile-nav').hide();
@@ -22,13 +23,20 @@ function _toggleArrow(ele) {
   })
 
 */
+
   // Searchbar show/hide controls.
-  $('.top-links .fa-search').parent().click(function() {
-    $('.search-desktop').fadeToggle();
-  });
+
+	Drupal.behaviors.toggleSearch = {
+		attach: function(context,settings) {
+			$('.top-links .search').click(function() {
+				$('.search-desktop').toggle();
+			});
+		}
+	};
+
   $('.search-desktop a.close-x').click(function() {
     $(this).parent().fadeToggle();
-  });
+  })(jQuery);
 
   // Campus alert toggle.
   $('.campus-alert .fa-chevron-up').click(function() {
@@ -59,4 +67,4 @@ function _toggleArrow(ele) {
        _toggleArrow($(this).parent().find('i'));
     });
   });
-});
+})(jQuery);
