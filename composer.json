@@ -74,6 +74,7 @@
         "drupal/slick_views": "^1.0@RC",
         "drupal/taxonomy_manager": "~1.0",
         "drupal/themable_forms": "^1.0@beta",
+        "drupal/twig_blocks": "^2.0",
         "drupal/twig_field_value": "^1.1",
         "drupal/twig_vardumper": "^1.0",
         "drupal/twitter": "1.x-dev",
