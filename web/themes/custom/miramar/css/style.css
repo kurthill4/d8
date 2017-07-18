@@ -129,7 +129,6 @@ header{
 	z-index: 100;
 	padding: 6px;
 	display: none;
-	/*opacity:0;*/
 }
 .search-desktop ul{
 	margin: 0;
@@ -175,9 +174,9 @@ header{
 	color: #fff;
   text-decoration: none;
   display: inline-block;
-  /*top: -48px;
+  top: -48px;
   right: 0;
-  position: absolute;*/
+  position: absolute;
   width: 60px;
   text-align: center;
   background: #a8a8a8;

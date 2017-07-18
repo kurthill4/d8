@@ -68,6 +68,7 @@ function miramar_preprocess_page(&$variables) {
 				$imageUri = $image->entity->getFileUri();	// Build URL to image for Twig display
 				$pgmHero = file_create_url($imageUri);
 				$variables['hero'] = $pgmHero;
+				$variables['pgmtitle'] = $node->getTitle()->value;
 			}
 		}
 
