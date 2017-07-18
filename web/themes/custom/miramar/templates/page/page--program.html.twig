@@ -78,21 +78,17 @@
     </header>
   {% endblock %}
 {% endif %}
-{# % if hero is not null % #}
-<!--div class="banner notfront">
+<div class="banner notfront">
   <div class="carousel">
-      <div class="carousel-cell slide-test" style="background:url({# { hero } #})  transparent no-repeat left top scroll"></div>
-</div>
+      <div class="carousel-cell slide-custom" style="background:url({{ hero }}) transparent no-repeat left top scroll"></div>
+  </div>
         <div class="banner-content">
           <div class="caption">
-            <h1>{# { pgmtitle } #}</h1>
+            <h1>{{ pgmtitle }}</h1>
             <p>What Do You Want To Be?<br /> Miramar College can get you there.</p>
           </div>
-
-</div-->
-{# % else % #}
-<div class="page-cover">&nbsp;</div>
-{# % endif % #}
+    </div>
+</div>
 {# Main #}
 {% block main %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
