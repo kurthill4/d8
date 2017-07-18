@@ -1836,7 +1836,7 @@ display:none!important;
 		}*/
 	 }
 
-	 @media only screen and (max-height : 640px){
+	 @media only screen and (max-height : 600px){
 		 .banner-content{display:none!important;}
 		*.hide-title {display:block!important}
 	}
