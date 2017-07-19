@@ -482,7 +482,7 @@ nav.mobile-nav li:first-child ol li{
   max-height: 640px;
   overflow: hidden;
 }
-.banner.notfront{
+.banner.notfront,.banner.custom{
   max-height: 500px!important;
   overflow: hidden;
 }
@@ -496,17 +496,29 @@ nav.mobile-nav li:first-child ol li{
 	z-index:1000;
 	color:#ffffff;
 }
-.notfront .banner-content{
+.notfront .banner-content,.custom .banner-content{
 	position: absolute;
 	bottom:10%;
 	left: 15px;
 	z-index:1000;
 	color:#ffffff;
 }
+
+.notfront .banner-content {
+	bottom:10%;
+
+}
+.custom .banner-content{
+	bottom:5%;
+
+}
 .front .caption {
 	width: 550px;
 }
 .notfront .caption {
+	width: 450px;
+}
+.notfront .caption,.custom .caption {
 	width: 450px;
 }
 .caption{
@@ -517,6 +529,11 @@ nav.mobile-nav li:first-child ol li{
 .caption h1{
 	font-family: 'Nixie One', cursive;
 	font-size: 60px;
+	z-index:1000;
+}
+.custom .caption h1{
+	font-family: 'Nixie One', cursive;
+	font-size: 40px;
 	z-index:1000;
 }
 .caption p{
@@ -1601,6 +1618,7 @@ table.faculty thead th i {
     color: #fff;
     margin-left: -5px;
 }
+#mobile-search {margin: 3px 0;}
 .search-results ul {list-style:none;}
 .search-results li {
 	margin: 25px 0;

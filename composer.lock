@@ -4214,7 +4214,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/twig_blocks-8.x-2.0.zip",
-                "reference": null,
+                "reference": "8.x-2.0",
                 "shasum": "136d6f4a4ddcb106be253daec7d229831e442447"
             },
             "require": {
