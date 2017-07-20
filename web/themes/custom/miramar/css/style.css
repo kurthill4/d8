@@ -1607,18 +1607,22 @@ table.faculty thead th i {
 }
 .search-form {
 	padding-top: 10px;
+	display:inline-block;
 }
 .search-form  input[type="text"] {
-    width: 90%;
+    width: 95%;
     border-radius: 0;
 }
 .search-form .btn {
     border-radius: 0;
     background: #a22130;
     color: #fff;
-    margin-left: -5px;
+    margin-left: -15px;
 }
-#mobile-search {margin: 3px 0;}
+.mobile-search {margin: 3px 0;}
+.mobile-search input#edit-keys--2 {
+	width:75%!important;
+}
 .search-results ul {list-style:none;}
 .search-results li {
 	margin: 25px 0;
