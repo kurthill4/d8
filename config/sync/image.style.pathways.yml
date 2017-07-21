@@ -1,0 +1,15 @@
+uuid: 336ae862-21ae-478a-a604-efaed709c934
+langcode: en
+status: true
+dependencies: {  }
+name: pathways
+label: Pathways
+effects:
+  ffc51d12-5076-4ce6-b8fe-8c5a11ddca6c:
+    uuid: ffc51d12-5076-4ce6-b8fe-8c5a11ddca6c
+    id: image_scale
+    weight: 1
+    data:
+      width: 215
+      height: 310
+      upscale: false

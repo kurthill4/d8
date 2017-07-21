@@ -1,0 +1,27 @@
+uuid: 42bf90a6-c0a1-44bc-adae-a12e0bf52810
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - miramar
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: miramar_content
+theme: miramar
+region: content
+weight: -13
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

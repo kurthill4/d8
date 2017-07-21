@@ -1,0 +1,30 @@
+uuid: 48978eca-01f8-4796-9952-2636d9166fcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.miramar_by_the_numbers
+  module:
+    - system
+    - views
+  theme:
+    - miramar
+id: views_block__miramar_by_the_numbers_block_1
+theme: miramar
+region: number
+weight: 0
+provider: null
+plugin: 'views_block:miramar_by_the_numbers-block_1'
+settings:
+  id: 'views_block:miramar_by_the_numbers-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

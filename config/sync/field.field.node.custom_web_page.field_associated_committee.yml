@@ -1,0 +1,28 @@
+uuid: 2bc93132-22af-4f8f-be7d-75bbc4d3d54c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_associated_committee
+    - node.type.committee_page
+    - node.type.custom_web_page
+id: node.custom_web_page.field_associated_committee
+field_name: field_associated_committee
+entity_type: node
+bundle: custom_web_page
+label: 'Associated Committee'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      committee_page: committee_page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

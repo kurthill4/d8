@@ -1,0 +1,28 @@
+uuid: 7d8531f2-219f-42d1-956b-92ebd238893e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slick.body
+    - node.type.slick
+  module:
+    - text
+    - user
+id: node.slick.teaser
+targetEntityType: node
+bundle: slick
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

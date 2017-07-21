@@ -1,0 +1,90 @@
+uuid: 53d4a36f-4d1a-47bb-98a7-625007253a4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.degree.body
+    - field.field.node.degree.field_aa_degree
+    - field.field.node.degree.field_aa_transfer
+    - field.field.node.degree.field_as_degree
+    - field.field.node.degree.field_certificate_achievement
+    - field.field.node.degree.field_certificate_performance
+    - field.field.node.degree.field_program
+    - node.type.degree
+  module:
+    - text
+    - user
+id: node.degree.default
+targetEntityType: node
+bundle: degree
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_aa_degree:
+    weight: 103
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_aa_transfer:
+    weight: 105
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_as_degree:
+    weight: 104
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_certificate_achievement:
+    weight: 106
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_certificate_performance:
+    weight: 107
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_program:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

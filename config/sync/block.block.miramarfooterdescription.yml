@@ -1,0 +1,20 @@
+uuid: 2cd5819e-d35a-42f4-88d8-464e29437783
+langcode: en
+status: true
+dependencies:
+  module:
+    - miramarcustom
+  theme:
+    - miramar
+id: miramarfooterdescription
+theme: miramar
+region: footer
+weight: 0
+provider: null
+plugin: miramar_description
+settings:
+  id: miramar_description
+  label: ' Miramar Footer Description'
+  provider: miramarcustom
+  label_display: '0'
+visibility: {  }

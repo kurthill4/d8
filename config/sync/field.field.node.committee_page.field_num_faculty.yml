@@ -1,0 +1,23 @@
+uuid: dfc7fc51-3352-4035-9909-8d685d0ab81c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_num_faculty
+    - node.type.committee_page
+id: node.committee_page.field_num_faculty
+field_name: field_num_faculty
+entity_type: node
+bundle: committee_page
+label: Faculty
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

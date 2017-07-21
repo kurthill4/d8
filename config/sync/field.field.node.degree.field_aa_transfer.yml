@@ -1,0 +1,23 @@
+uuid: 239428e2-e65b-4119-999d-2d055bafd245
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aa_transfer
+    - node.type.degree
+id: node.degree.field_aa_transfer
+field_name: field_aa_transfer
+entity_type: node
+bundle: degree
+label: 'AA for Transfer'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

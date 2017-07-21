@@ -1,0 +1,21 @@
+uuid: 4a40235a-050b-4f9c-a67b-b001bfc894d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_order
+    - node.type.resource_links
+  module:
+    - options
+id: node.resource_links.field_order
+field_name: field_order
+entity_type: node
+bundle: resource_links
+label: Order
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

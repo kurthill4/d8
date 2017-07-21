@@ -1,0 +1,19 @@
+uuid: 903b561f-8c7f-46fe-ab6d-13db1c7a7224
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slug_line
+    - node.type.new_student_step
+id: node.new_student_step.field_slug_line
+field_name: field_slug_line
+entity_type: node
+bundle: new_student_step
+label: 'Slug Line'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: baf01ee4-4f01-43ec-a0da-bf2b693f9ce3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_committee_procedures
+field_name: field_committee_procedures
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

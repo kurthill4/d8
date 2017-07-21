@@ -1,0 +1,28 @@
+uuid: 9a380c74-2e22-4ac4-afb3-458d2d897195
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_associated_department
+    - node.type.custom_web_page
+    - node.type.department_page
+id: node.custom_web_page.field_associated_department
+field_name: field_associated_department
+entity_type: node
+bundle: custom_web_page
+label: 'Associated Department'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      department_page: department_page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

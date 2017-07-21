@@ -1,0 +1,22 @@
+uuid: 86cd42df-5f32-4968-bbbb-0977d762cd3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.committee_page
+  module:
+    - text
+id: node.committee_page.body
+field_name: body
+entity_type: node
+bundle: committee_page
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,22 @@
+uuid: 1279a43d-9484-45b1-9274-747d7b4bb52b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.directory_listing
+  module:
+    - text
+id: node.directory_listing.body
+field_name: body
+entity_type: node
+bundle: directory_listing
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

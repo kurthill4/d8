@@ -1,0 +1,21 @@
+uuid: ead38c7a-5fe8-4507-907a-b0232b4cb8b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_directions
+    - node.type.event
+  module:
+    - text
+id: node.event.field_directions
+field_name: field_directions
+entity_type: node
+bundle: event
+label: Directions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,27 @@
+uuid: 18a21a75-0752-4fd4-8da5-75c1db9a727d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uploaded_file
+    - node.type.slideshows
+  module:
+    - file
+id: node.slideshows.field_uploaded_file
+field_name: field_uploaded_file
+entity_type: node
+bundle: slideshows
+label: 'Uploaded File'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'documents/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf doc docx txt xml'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

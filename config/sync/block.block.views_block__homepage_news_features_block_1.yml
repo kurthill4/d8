@@ -1,0 +1,30 @@
+uuid: 278a7ed5-0830-427b-8d73-913cf5dcb5e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.homepage_news_features
+  module:
+    - system
+    - views
+  theme:
+    - miramar
+id: views_block__homepage_news_features_block_1
+theme: miramar
+region: news
+weight: 0
+provider: null
+plugin: 'views_block:homepage_news_features-block_1'
+settings:
+  id: 'views_block:homepage_news_features-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,8 @@
+uuid: 4de98058-add2-4cd7-a23a-2158bba18a55
+langcode: en
+status: true
+dependencies: {  }
+id: research
+label: Research
+description: ''
+locked: false

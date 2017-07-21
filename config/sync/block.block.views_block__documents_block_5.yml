@@ -1,0 +1,31 @@
+uuid: 33213de1-61d6-40f5-baf9-92aab7eaf35b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.documents
+  module:
+    - system
+    - views
+  theme:
+    - miramar
+id: views_block__documents_block_5
+theme: miramar
+region: below_content
+weight: -18
+provider: null
+plugin: 'views_block:documents-block_5'
+settings:
+  id: 'views_block:documents-block_5'
+  label: 'Important Documents'
+  provider: views
+  label_display: visible
+  views_label: 'Important Documents'
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/campus/*'
+    negate: false
+    context_mapping: {  }

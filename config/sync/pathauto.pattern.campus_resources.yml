@@ -1,0 +1,23 @@
+uuid: bfa50010-639f-4627-8e0f-8a30e76c3c66
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: campus_resources
+label: 'Campus Resources'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/campus/[term:name]'
+selection_criteria:
+  be3dddcc-c191-43fc-b1b3-500266a6b98d:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      campus_resources: campus_resources
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: be3dddcc-c191-43fc-b1b3-500266a6b98d
+selection_logic: and
+weight: -5
+relationships: {  }

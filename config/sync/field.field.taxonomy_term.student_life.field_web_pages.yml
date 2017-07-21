@@ -1,0 +1,29 @@
+uuid: fc44e757-afe9-40cf-b763-90f63f564bc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_web_pages
+    - node.type.custom_web_page
+    - taxonomy.vocabulary.student_life
+id: taxonomy_term.student_life.field_web_pages
+field_name: field_web_pages
+entity_type: taxonomy_term
+bundle: student_life
+label: 'Web Pages'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      custom_web_page: custom_web_page
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

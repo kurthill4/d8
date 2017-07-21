@@ -1,0 +1,28 @@
+uuid: 31b5bacf-d042-4cb1-bd8b-8de387aedfe7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_school
+    - node.type.department_page
+    - taxonomy.vocabulary.schools
+id: node.department_page.field_school
+field_name: field_school
+entity_type: node
+bundle: department_page
+label: School
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      schools: schools
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

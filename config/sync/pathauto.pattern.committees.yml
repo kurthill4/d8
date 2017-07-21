@@ -1,0 +1,22 @@
+uuid: 1d8cf34c-31e1-4ded-bb6e-e062155d5e40
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: committees
+label: Committees
+type: 'canonical_entities:node'
+pattern: '/campus/governance/committees/[node:field_committee_code]'
+selection_criteria:
+  75e26d9d-e2e9-4be7-8ac7-5b1a0b3f3f25:
+    id: node_type
+    bundles:
+      committee_page: committee_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 75e26d9d-e2e9-4be7-8ac7-5b1a0b3f3f25
+selection_logic: and
+weight: -5
+relationships: {  }

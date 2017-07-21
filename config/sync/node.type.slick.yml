@@ -1,0 +1,18 @@
+uuid: 1bb508c7-53bb-4c85-8226-8517ce1deff6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Slick
+type: slick
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

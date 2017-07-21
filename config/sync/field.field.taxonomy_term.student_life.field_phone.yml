@@ -1,0 +1,21 @@
+uuid: 53bd1540-38eb-4dc2-ab74-de33f7f7d63a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_phone
+    - taxonomy.vocabulary.student_life
+  module:
+    - telephone
+id: taxonomy_term.student_life.field_phone
+field_name: field_phone
+entity_type: taxonomy_term
+bundle: student_life
+label: Phone
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

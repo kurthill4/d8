@@ -1,0 +1,11 @@
+uuid: 3b51dba2-1835-4433-85e9-b36f47b1cc85
+langcode: en
+status: true
+dependencies: {  }
+id: admin
+label: Admin
+weight: 3
+is_admin: null
+permissions:
+  - 'edit any image files'
+  - 'use text format basic_html'

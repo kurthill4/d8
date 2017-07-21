@@ -1,0 +1,24 @@
+uuid: 449e4372-1953-4ab0-8fa5-5b495c798825
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.top-menu
+  module:
+    - system
+  theme:
+    - miramar
+id: miramar_topmenu
+theme: miramar
+region: navigation
+weight: -12
+provider: null
+plugin: 'system_menu_block:top-menu'
+settings:
+  id: 'system_menu_block:top-menu'
+  label: 'Top Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

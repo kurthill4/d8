@@ -1,0 +1,31 @@
+uuid: d76492b0-653c-4c79-930a-c4c767be2e87
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0b28f63d-e3c7-4c56-a4f8-2726cb7034fe'
+  module:
+    - block_content
+    - system
+  theme:
+    - miramar
+id: twitterforhomepage
+theme: miramar
+region: mission
+weight: 0
+provider: null
+plugin: 'block_content:0b28f63d-e3c7-4c56-a4f8-2726cb7034fe'
+settings:
+  id: 'block_content:0b28f63d-e3c7-4c56-a4f8-2726cb7034fe'
+  label: 'Twitter for Homepage'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

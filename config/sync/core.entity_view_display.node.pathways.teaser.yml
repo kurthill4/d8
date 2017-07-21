@@ -1,0 +1,28 @@
+uuid: b8799a5d-5106-4765-aa4d-96e791bebd0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pathways.body
+    - node.type.pathways
+  module:
+    - text
+    - user
+id: node.pathways.teaser
+targetEntityType: node
+bundle: pathways
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

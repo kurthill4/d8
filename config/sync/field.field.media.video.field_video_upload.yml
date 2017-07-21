@@ -1,0 +1,27 @@
+uuid: 8924c0bc-5205-4cfd-a3b4-3cb11c2a5411
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_video_upload
+    - media_entity.bundle.video
+  module:
+    - file
+id: media.video.field_video_upload
+field_name: field_video_upload
+entity_type: media
+bundle: video
+label: 'Video Upload'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'avi mp4 mov wmv flv'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

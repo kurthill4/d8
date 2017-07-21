@@ -1,0 +1,8 @@
+uuid: 1df885f4-0983-40bc-b286-472350cd18ad
+langcode: en
+status: true
+dependencies: {  }
+id: top_footer
+label: 'Top Footer'
+revision: 0
+description: 'This is the upper footer section, displaying the District logo'

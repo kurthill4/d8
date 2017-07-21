@@ -1,0 +1,24 @@
+uuid: a7b37abb-a366-49cd-9b1f-4f34e4af2511
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_end_date
+    - node.type.campus_news
+  module:
+    - datetime
+id: node.campus_news.field_end_date
+field_name: field_end_date
+entity_type: node
+bundle: campus_news
+label: 'End Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: relative
+    default_date: '+5 days'
+default_value_callback: ''
+settings: {  }
+field_type: datetime

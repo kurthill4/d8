@@ -1,0 +1,28 @@
+uuid: 8c0df701-e526-4696-b897-37e985d0b43a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.degree.body
+    - node.type.degree
+  module:
+    - text
+    - user
+id: node.degree.teaser
+targetEntityType: node
+bundle: degree
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

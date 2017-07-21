@@ -1,0 +1,19 @@
+uuid: 7d85c09e-1aea-425a-87a9-83b0c70982e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_committee_code
+    - node.type.committee_page
+id: node.committee_page.field_committee_code
+field_name: field_committee_code
+entity_type: node
+bundle: committee_page
+label: 'Committee Code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

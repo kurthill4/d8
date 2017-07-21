@@ -1,0 +1,30 @@
+uuid: 92ddcc4f-e8af-46fa-bbb1-d7e16f348bdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.program_carousel
+  module:
+    - system
+    - views
+  theme:
+    - miramar
+id: views_block__program_carousel_block_1
+theme: miramar
+region: gallery
+weight: 0
+provider: null
+plugin: 'views_block:program_carousel-block_1'
+settings:
+  id: 'views_block:program_carousel-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

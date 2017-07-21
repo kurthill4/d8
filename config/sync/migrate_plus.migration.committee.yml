@@ -1,0 +1,31 @@
+uuid: 88230dec-91a3-4b9f-9b75-505cc40d5654
+langcode: en
+status: true
+dependencies: {  }
+id: committee
+migration_tags: null
+migration_group: null
+label: 'Import committees'
+source:
+  plugin: csv
+  path: /home/webmaster/committees.csv
+  header_row_count: 1
+  keys:
+    - Id2
+process:
+  title: Committeename
+  field_committee_code: Title
+  field_membership: Members
+  field_committee_procedures: Procedures
+  field_committee_goals: Goals
+  field_num_administrators: Admin
+  field_num_faculty: Faculty
+  field_num_classified: Classified
+  field_num_students: Students
+  field_url: URL
+  type:
+    plugin: default_value
+    default_value: committee_page
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

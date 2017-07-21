@@ -1,0 +1,14 @@
+uuid: ba9a2d59-4089-418d-bd95-54b25997c80e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.custom_web_page_manager
+  module:
+    - user
+id: user_remove_role_action.custom_web_page_manager
+label: 'Remove the Custom Web Page Manager role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: custom_web_page_manager

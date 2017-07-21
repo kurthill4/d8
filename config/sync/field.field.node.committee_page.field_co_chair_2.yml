@@ -1,0 +1,29 @@
+uuid: b07429d8-5b98-4fd9-9d2f-63ddf05264c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_co_chair_2
+    - node.type.committee_page
+id: node.committee_page.field_co_chair_2
+field_name: field_co_chair_2
+entity_type: node
+bundle: committee_page
+label: 'Co-chair 2'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: field_last_name
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

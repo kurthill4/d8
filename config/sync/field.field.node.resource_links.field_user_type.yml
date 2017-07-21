@@ -1,0 +1,21 @@
+uuid: f34256cf-9561-480c-a29b-3b2d90319452
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user_type
+    - node.type.resource_links
+  module:
+    - options
+id: node.resource_links.field_user_type
+field_name: field_user_type
+entity_type: node
+bundle: resource_links
+label: 'User Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,21 @@
+uuid: a57eb618-8ad5-48a8-8b1f-acdb74b12676
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user_type
+    - node.type.new_student_step
+  module:
+    - options
+id: node.new_student_step.field_user_type
+field_name: field_user_type
+entity_type: node
+bundle: new_student_step
+label: 'User Type'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

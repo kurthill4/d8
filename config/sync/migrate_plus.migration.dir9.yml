@@ -1,0 +1,32 @@
+uuid: e430eeeb-ef96-4346-81e7-47db9c547750
+langcode: en
+status: true
+dependencies: {  }
+id: dir9
+migration_tags: null
+migration_group: null
+label: 'Import directory listings'
+source:
+  plugin: csv
+  path: /home/webmaster/offices.csv
+  header_row_count: 1
+  keys:
+    - Id2
+process:
+  title: Name
+  field_link_office:
+    plugin: entity_lookup
+    entity_type: taxonomy_term
+    value_key: name
+    source: Name
+  field_directory_category:
+    plugin: entity_lookup
+    entity_type: taxonomy_term
+    value_key: name
+    source: Category
+  type:
+    plugin: default_value
+    default_value: directory_listing
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

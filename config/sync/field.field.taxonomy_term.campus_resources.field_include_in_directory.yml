@@ -1,0 +1,23 @@
+uuid: c52c1e97-e8c2-4d15-b15a-3662709c8839
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_include_in_directory
+    - taxonomy.vocabulary.campus_resources
+id: taxonomy_term.campus_resources.field_include_in_directory
+field_name: field_include_in_directory
+entity_type: taxonomy_term
+bundle: campus_resources
+label: 'Include In Directory'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

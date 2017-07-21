@@ -1,0 +1,25 @@
+uuid: cd2f13ec-4510-465f-b176-c8296cf3b844
+langcode: en
+status: true
+dependencies: {  }
+id: dept
+migration_tags: null
+migration_group: null
+label: 'Import departments'
+source:
+  plugin: csv
+  path: /home/webmaster/dept.csv
+  header_row_count: 1
+  keys:
+    - Id2
+process:
+  title: Department
+  field_school:
+    plugin: entity_generate
+    source: School
+  type:
+    plugin: default_value
+    default_value: department_page
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

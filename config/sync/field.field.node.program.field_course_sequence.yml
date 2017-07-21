@@ -1,0 +1,27 @@
+uuid: f4bc6d52-fdaf-4ba0-8c77-c8e8f2af9908
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_course_sequence
+    - node.type.program
+  module:
+    - file
+id: node.program.field_course_sequence
+field_name: field_course_sequence
+entity_type: node
+bundle: program
+label: 'Course Sequence'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: programs/sequence
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,29 @@
+uuid: 624e8575-e266-4c50-99dd-3f69844cd289
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.accreditation
+  module:
+    - system
+  theme:
+    - miramar
+id: accreditation
+theme: miramar
+region: sidebar_second
+weight: -14
+provider: null
+plugin: 'system_menu_block:accreditation'
+settings:
+  id: 'system_menu_block:accreditation'
+  label: Accreditation
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: "/accreditation\r\n/accreditation/*"
+    negate: false
+    context_mapping: {  }

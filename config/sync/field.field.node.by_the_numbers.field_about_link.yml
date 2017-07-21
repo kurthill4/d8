@@ -1,0 +1,21 @@
+uuid: eb28706c-489e-473e-8230-cd9b15a1d68e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_about_link
+    - node.type.by_the_numbers
+id: node.by_the_numbers.field_about_link
+field_name: field_about_link
+entity_type: node
+bundle: by_the_numbers
+label: 'About Link'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: /about
+default_value_callback: ''
+settings: {  }
+field_type: string

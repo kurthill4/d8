@@ -1,0 +1,18 @@
+uuid: fa48cb2a-1142-49bd-8c43-b6bbda03f7c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_include_in_directory
+field_name: field_include_in_directory
+entity_type: taxonomy_term
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

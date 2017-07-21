@@ -1,0 +1,25 @@
+uuid: fcfad43f-e0db-44d4-9894-765bc0d0bc28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_human
+    - node.type.directory_listing
+id: node.directory_listing.field_link_human
+field_name: field_link_human
+entity_type: node
+bundle: directory_listing
+label: 'Link (Human)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: selectusers
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

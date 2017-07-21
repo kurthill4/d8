@@ -1,0 +1,33 @@
+uuid: 202bf7d4-d395-407b-a321-65dbfb14c478
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.web_page_list
+  module:
+    - ctools
+    - views
+  theme:
+    - miramar
+id: views_block__web_page_list_block_1
+theme: miramar
+region: sidebar_second
+weight: -13
+provider: null
+plugin: 'views_block:web_page_list-block_1'
+settings:
+  id: 'views_block:web_page_list-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      program: program
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
