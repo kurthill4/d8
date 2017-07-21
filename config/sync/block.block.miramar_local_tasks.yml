@@ -1,0 +1,22 @@
+uuid: 0453dc02-492b-41a5-82ad-209e32e66d2d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - miramar
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: miramar_local_tasks
+theme: miramar
+region: content
+weight: -14
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

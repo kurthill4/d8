@@ -1,0 +1,14 @@
+uuid: bbb9d350-1915-4dc5-b928-0ae8a5994594
+langcode: en
+status: true
+dependencies: {  }
+name: news_and_events
+label: 'News and Events'
+effects:
+  bc00faea-5fb7-4949-8724-e9f2a70572b0:
+    uuid: bc00faea-5fb7-4949-8724-e9f2a70572b0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 610
+      height: 413

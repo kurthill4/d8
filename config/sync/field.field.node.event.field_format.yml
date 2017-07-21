@@ -1,0 +1,21 @@
+uuid: c03d3a2e-d02a-42de-bfe4-4f31ccbd22da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_format
+    - node.type.event
+  module:
+    - options
+id: node.event.field_format
+field_name: field_format
+entity_type: node
+bundle: event
+label: Format
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

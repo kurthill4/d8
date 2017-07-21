@@ -1,0 +1,8 @@
+uuid: dd8add70-1bf7-4c76-91a7-d6e1697bb63b
+langcode: en
+status: true
+dependencies: {  }
+id: short_text
+label: 'Short Text'
+locked: false
+pattern: 'F j'

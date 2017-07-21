@@ -1,0 +1,7 @@
+uuid: 6d435e3b-f124-4c61-96bd-a4f52d6b13f3
+langcode: en
+status: true
+dependencies: {  }
+id: two_column
+label: 'Two Column'
+behavior_plugins: {  }

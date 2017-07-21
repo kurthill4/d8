@@ -1,0 +1,23 @@
+uuid: bbd36298-2794-45d1-a9b5-dd9fd8bb62ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_course_sequence
+field_name: field_course_sequence
+entity_type: node
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

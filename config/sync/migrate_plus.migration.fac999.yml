@@ -1,0 +1,34 @@
+uuid: 0e5a2cd1-b01f-43f5-86c3-5efcf58ba9f8
+langcode: en
+status: true
+dependencies: {  }
+id: fac999
+migration_tags: null
+migration_group: null
+label: 'Import directory listings'
+source:
+  plugin: csv
+  path: /home/webmaster/faculty.csv
+  header_row_count: 1
+  keys:
+    - Id2
+process:
+  title: Name
+  field_link_human:
+    plugin: entity_lookup
+    entity_type: user
+    value_key: name
+    source: uname
+  field_directory_category:
+    plugin: entity_lookup
+    entity_type: taxonomy_term
+    value_key: name
+    source: Category
+  field_office_location: Room
+  field_phone: Phone
+  type:
+    plugin: default_value
+    default_value: directory_listing
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

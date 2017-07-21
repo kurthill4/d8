@@ -1,0 +1,23 @@
+uuid: b13d9b9b-0154-492e-8e82-9868a0bd5147
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_certificate_achievement
+    - node.type.degree
+id: node.degree.field_certificate_achievement
+field_name: field_certificate_achievement
+entity_type: node
+bundle: degree
+label: 'Certificate of Achievement'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,14 @@
+uuid: 68a14980-19ae-412c-931f-08c69fa16c59
+langcode: en
+status: true
+dependencies: {  }
+name: news_sidebar
+label: 'News Sidebar'
+effects:
+  8385d248-4618-4b31-91d6-74491483d094:
+    uuid: 8385d248-4618-4b31-91d6-74491483d094
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 100
+      height: 80

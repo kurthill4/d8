@@ -1,0 +1,21 @@
+uuid: de205fec-a2c7-4d3b-949e-7fea23542d25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_order
+    - node.type.pathways
+  module:
+    - options
+id: node.pathways.field_order
+field_name: field_order
+entity_type: node
+bundle: pathways
+label: Order
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

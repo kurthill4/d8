@@ -1,0 +1,19 @@
+uuid: 82b3be73-60cb-4047-8605-ab1853f450da
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_link_office
+field_name: field_link_office
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

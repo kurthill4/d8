@@ -1,0 +1,11 @@
+uuid: 8c3ecfb7-d42f-4782-90c0-cf9924f6bb71
+langcode: en
+status: true
+dependencies: {  }
+id: faculty
+label: Faculty
+weight: 12
+is_admin: null
+permissions:
+  - 'administer users'
+  - 'use text format basic_html'

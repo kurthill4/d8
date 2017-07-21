@@ -1,0 +1,28 @@
+uuid: 6cf162f6-3c50-4978-a8de-fdfd5fdf023b
+langcode: en
+status: true
+dependencies:
+  config:
+    - blocktabs.blocktabs.directory_test
+  module:
+    - blocktabs
+    - system
+  theme:
+    - miramar
+id: blocktabsdirectorytest
+theme: miramar
+region: content
+weight: 0
+provider: null
+plugin: 'blocktabs_block:directory_test'
+settings:
+  id: 'blocktabs_block:directory_test'
+  label: 'Blocktabs:Directory Test'
+  provider: blocktabs
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /test
+    negate: false
+    context_mapping: {  }

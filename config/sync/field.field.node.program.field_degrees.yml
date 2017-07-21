@@ -1,0 +1,29 @@
+uuid: b094aa93-3020-4e4b-80c8-67e1267fe36d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_degrees
+    - node.type.degree
+    - node.type.program
+id: node.program.field_degrees
+field_name: field_degrees
+entity_type: node
+bundle: program
+label: 'Degrees & Certificates'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      degree: degree
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

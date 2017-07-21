@@ -1,0 +1,25 @@
+uuid: 4bebe412-1e6c-40d5-9b42-a172573378b9
+langcode: en
+status: true
+dependencies: {  }
+name: directory_test
+label: 'Directory Test'
+tabs:
+  469435ae-9d52-4676-9361-c394df1ad8d7:
+    uuid: 469435ae-9d52-4676-9361-c394df1ad8d7
+    id: views_tab
+    title: Places
+    weight: '1'
+    data:
+      view_name: directory_test
+      view_display: default
+      view_arg: ''
+  c307d8b7-23a5-4b51-969e-d43a9848f979:
+    uuid: c307d8b7-23a5-4b51-969e-d43a9848f979
+    id: views_tab
+    title: People
+    weight: '2'
+    data:
+      view_name: faculty_staff_directory
+      view_display: default
+      view_arg: ''

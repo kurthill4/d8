@@ -1,0 +1,31 @@
+uuid: 3fab9db9-5cc4-4064-bbac-6c0d5f8683dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.resource_web_pages
+  module:
+    - system
+    - views
+  theme:
+    - miramar
+id: views_block__resource_web_pages_block_1
+theme: miramar
+region: sidebar_second
+weight: -18
+provider: null
+plugin: 'views_block:resource_web_pages-block_1'
+settings:
+  id: 'views_block:resource_web_pages-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/campus/*'
+    negate: false
+    context_mapping: {  }

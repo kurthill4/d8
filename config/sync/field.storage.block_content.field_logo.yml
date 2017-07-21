@@ -1,0 +1,30 @@
+uuid: 1b6c256b-8ec6-4f10-b7b4-f8aa684afba5
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - file
+    - image
+id: block_content.field_logo
+field_name: field_logo
+entity_type: block_content
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: 74c56e66-3a83-4687-bae1-4bcb1810a00e
+    alt: 'San Diego Miramar College--SDCCD'
+    title: ''
+    width: 347
+    height: 58
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

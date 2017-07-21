@@ -1,0 +1,8 @@
+uuid: 35466740-21aa-4bd1-86ff-e98abafb155f
+langcode: en
+status: true
+dependencies: {  }
+id: accreditation
+label: Accreditation
+description: ''
+locked: false

@@ -1,0 +1,21 @@
+uuid: d2f20e36-a34b-4865-b97c-dbdc871d40db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_phone
+    - taxonomy.vocabulary.campus_resources
+  module:
+    - telephone
+id: taxonomy_term.campus_resources.field_phone
+field_name: field_phone
+entity_type: taxonomy_term
+bundle: campus_resources
+label: Phone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

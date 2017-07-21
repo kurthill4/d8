@@ -1,0 +1,29 @@
+uuid: 5117c26d-59a0-41a5-b805-962dc38f73f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_web_pages
+    - node.type.custom_web_page
+    - node.type.program
+id: node.program.field_web_pages
+field_name: field_web_pages
+entity_type: node
+bundle: program
+label: 'Web Pages'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      custom_web_page: custom_web_page
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

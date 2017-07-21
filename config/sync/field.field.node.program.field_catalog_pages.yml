@@ -1,0 +1,19 @@
+uuid: f14bfbd7-abe3-41e3-89e2-c1f4d23549f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_catalog_pages
+    - node.type.program
+id: node.program.field_catalog_pages
+field_name: field_catalog_pages
+entity_type: node
+bundle: program
+label: 'Catalog Pages'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

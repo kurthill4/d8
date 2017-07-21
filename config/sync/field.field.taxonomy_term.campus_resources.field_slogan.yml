@@ -1,0 +1,19 @@
+uuid: ed44b1cb-c707-464a-b2a3-99ed27b6da9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_slogan
+    - taxonomy.vocabulary.campus_resources
+id: taxonomy_term.campus_resources.field_slogan
+field_name: field_slogan
+entity_type: taxonomy_term
+bundle: campus_resources
+label: Slogan
+description: 'For top level terms ONLY. This displays on the Resources gateway'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

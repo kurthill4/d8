@@ -1,0 +1,22 @@
+uuid: e3d99e00-bf03-46bb-86a4-dae3fd57592c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.new_student_step
+  module:
+    - text
+id: node.new_student_step.body
+field_name: body
+entity_type: node
+bundle: new_student_step
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

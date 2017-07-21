@@ -1,0 +1,23 @@
+uuid: 6e57e9e5-550e-43c3-8396-55eabbd76efa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_story_type
+    - node.type.campus_news
+  module:
+    - options
+id: node.campus_news.field_story_type
+field_name: field_story_type
+entity_type: node
+bundle: campus_news
+label: 'Story Type'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'Campus News'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

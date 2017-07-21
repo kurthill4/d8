@@ -1,0 +1,31 @@
+uuid: 59c4746d-0840-41e5-9d8d-4ba51ec3358d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:74e0b0f9-43a1-48af-8cfb-f9fb383cb710'
+  module:
+    - block_content
+    - system
+  theme:
+    - miramar
+id: pardonourcyberdust
+theme: miramar
+region: content
+weight: -10
+provider: null
+plugin: 'block_content:74e0b0f9-43a1-48af-8cfb-f9fb383cb710'
+settings:
+  id: 'block_content:74e0b0f9-43a1-48af-8cfb-f9fb383cb710'
+  label: 'Pardon Our Cyberdust!'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/campus/cafe\r\n/campus/mailroom\r\n/campus/aquatics-center\r\n/campus/business-office"
+    negate: false
+    context_mapping: {  }

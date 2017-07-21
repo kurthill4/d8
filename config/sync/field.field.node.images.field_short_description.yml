@@ -1,0 +1,19 @@
+uuid: 5911bf9c-320f-44c1-86a6-d3fe4baaecef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_short_description
+    - node.type.images
+id: node.images.field_short_description
+field_name: field_short_description
+entity_type: node
+bundle: images
+label: 'Short Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

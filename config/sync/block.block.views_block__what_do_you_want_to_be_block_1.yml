@@ -1,0 +1,30 @@
+uuid: abc342c5-310d-4efb-95de-c23bf83af2a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.what_do_you_want_to_be
+  module:
+    - system
+    - views
+  theme:
+    - miramar
+id: views_block__what_do_you_want_to_be_block_1
+theme: miramar
+region: dates
+weight: -13
+provider: null
+plugin: 'views_block:what_do_you_want_to_be-block_1'
+settings:
+  id: 'views_block:what_do_you_want_to_be-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

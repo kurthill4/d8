@@ -1,0 +1,21 @@
+uuid: 55bae0d1-53b3-43e4-865c-8fe7a562706c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_committee_procedures
+    - node.type.committee_page
+  module:
+    - text
+id: node.committee_page.field_committee_procedures
+field_name: field_committee_procedures
+entity_type: node
+bundle: committee_page
+label: 'Committee Procedures'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

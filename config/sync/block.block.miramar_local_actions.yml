@@ -1,0 +1,20 @@
+uuid: 156b460d-e393-47cc-9455-cf027267c3d5
+langcode: en
+status: true
+dependencies:
+  theme:
+    - miramar
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: miramar_local_actions
+theme: miramar
+region: content
+weight: -15
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

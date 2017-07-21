@@ -1,0 +1,23 @@
+uuid: 92d7f434-ce8e-4db9-88f8-582a67e46d08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resources
+    - node.type.pathways
+  module:
+    - link
+id: node.pathways.field_resources
+field_name: field_resources
+entity_type: node
+bundle: pathways
+label: Resources
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

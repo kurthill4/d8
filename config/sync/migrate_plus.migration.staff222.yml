@@ -1,0 +1,36 @@
+uuid: e0cab129-667d-4645-b350-476134e99960
+langcode: en
+status: true
+dependencies: {  }
+id: staff222
+migration_tags: null
+migration_group: null
+label: 'Import staff'
+source:
+  plugin: csv
+  path: /home/webmaster/staff.csv
+  header_row_count: 1
+  keys:
+    - Id2
+process:
+  name: Name
+  mail: Email
+  field_email: Email
+  status: Status
+  field_last_name: Last
+  field_first_name: First
+  field_job_title: Title
+  field_degree_or_honor: Degree
+  field_assignment: Assignment
+  field_external_website: URL
+  field_employment_type:
+    plugin: entity_lookup
+    entity_type: taxonomy_term
+    property: name
+    source: Category
+  field_office: Room
+  field_phone: Phone
+  roles: roles
+destination:
+  plugin: 'entity:user'
+migration_dependencies: {  }

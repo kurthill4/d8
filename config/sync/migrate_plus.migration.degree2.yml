@@ -1,0 +1,31 @@
+uuid: e78ab333-1606-4949-89b5-1c9ea8346d43
+langcode: en
+status: true
+dependencies: {  }
+id: degree2
+migration_tags: null
+migration_group: null
+label: 'Import degrees'
+source:
+  plugin: csv
+  path: /home/webmaster/degree.csv
+  header_row_count: 1
+  keys:
+    - Id2
+process:
+  title: Title
+  field_program:
+    plugin: entity_generate
+    source: Program
+  field_catalog_pages: Catalog
+  field_aa_degree: AA
+  field_as_degree: AS
+  field_aa_transfer: Transfer
+  field_certificate_achievement: Achievement
+  field_certificate_performance: Performance
+  type:
+    plugin: default_value
+    default_value: degree
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

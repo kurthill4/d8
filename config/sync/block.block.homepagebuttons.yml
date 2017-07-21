@@ -1,0 +1,31 @@
+uuid: 48ff10c1-8993-41cc-a587-c1f7cad20e1d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:426abd4f-60bd-423b-9c23-db2eb3404dab'
+  module:
+    - block_content
+    - system
+  theme:
+    - miramar
+id: homepagebuttons
+theme: miramar
+region: buttons
+weight: 0
+provider: null
+plugin: 'block_content:426abd4f-60bd-423b-9c23-db2eb3404dab'
+settings:
+  id: 'block_content:426abd4f-60bd-423b-9c23-db2eb3404dab'
+  label: 'Homepage Buttons'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

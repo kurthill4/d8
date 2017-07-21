@@ -1,0 +1,23 @@
+uuid: 838d2fdf-9dea-4684-9336-2148a64d6c54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_certificate_performance
+    - node.type.degree
+id: node.degree.field_certificate_performance
+field_name: field_certificate_performance
+entity_type: node
+bundle: degree
+label: 'Certificate of Performance'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,21 @@
+uuid: 8e1313cd-9fd0-491b-a01c-c7a4e7c8471f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_order
+    - node.type.new_student_step
+  module:
+    - options
+id: node.new_student_step.field_order
+field_name: field_order
+entity_type: node
+bundle: new_student_step
+label: Order
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

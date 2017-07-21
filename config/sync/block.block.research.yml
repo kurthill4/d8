@@ -1,0 +1,29 @@
+uuid: 96c2301d-98a1-4b29-8503-38c5712a4edd
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.research
+  module:
+    - system
+  theme:
+    - miramar
+id: research
+theme: miramar
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'system_menu_block:research'
+settings:
+  id: 'system_menu_block:research'
+  label: Research
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: "/campus/planning/research\r\n/campus/planning/research/*"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,77 @@
+uuid: cc9d7be2-a438-48c8-992a-54332f432df5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.new_student_step.body
+    - field.field.node.new_student_step.field_image
+    - field.field.node.new_student_step.field_order
+    - field.field.node.new_student_step.field_slug_line
+    - field.field.node.new_student_step.field_url
+    - field.field.node.new_student_step.field_user_type
+    - node.type.new_student_step
+  module:
+    - image
+    - link
+    - options
+    - text
+    - user
+id: node.new_student_step.default
+targetEntityType: node
+bundle: new_student_step
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_order:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_slug_line:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_url:
+    weight: 105
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_user_type:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

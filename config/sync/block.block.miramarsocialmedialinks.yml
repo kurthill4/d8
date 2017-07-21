@@ -1,0 +1,20 @@
+uuid: b9beb009-a097-4015-86e0-05b2b4dfcfc5
+langcode: en
+status: true
+dependencies:
+  module:
+    - miramarcustom
+  theme:
+    - miramar
+id: miramarsocialmedialinks
+theme: miramar
+region: footer
+weight: 0
+provider: null
+plugin: miramar_social
+settings:
+  id: miramar_social
+  label: 'Miramar Social Media Links'
+  provider: miramarcustom
+  label_display: '0'
+visibility: {  }

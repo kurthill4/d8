@@ -1,0 +1,22 @@
+uuid: 71997745-400d-4703-89fa-a3ac73832969
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.pathways
+  module:
+    - text
+id: node.pathways.body
+field_name: body
+entity_type: node
+bundle: pathways
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

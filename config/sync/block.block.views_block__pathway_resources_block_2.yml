@@ -1,0 +1,30 @@
+uuid: a7cbfdf4-f7db-4d19-bd5f-282ee903f628
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.pathway_resources
+  module:
+    - system
+    - views
+  theme:
+    - miramar
+id: views_block__pathway_resources_block_2
+theme: miramar
+region: below_content
+weight: -17
+provider: null
+plugin: 'views_block:pathway_resources-block_2'
+settings:
+  id: 'views_block:pathway_resources-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /currentstudents
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,8 @@
+uuid: 64932833-56d0-4099-82a2-e9cb0c594d73
+langcode: en
+status: true
+dependencies: {  }
+id: homepage_call_to_action
+label: 'Homepage Call to Action'
+revision: 0
+description: 'Contains graphic links to college catalog and course schedule'

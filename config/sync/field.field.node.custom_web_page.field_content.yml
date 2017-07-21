@@ -1,0 +1,40 @@
+uuid: 98ec8b79-beaf-45d3-8d3a-846b568b179d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.custom_web_page
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.two_column
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+id: node.custom_web_page.field_content
+field_name: field_content
+entity_type: node
+bundle: custom_web_page
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text: text
+      two_column: two_column
+      video: video
+    target_bundles_drag_drop:
+      text:
+        enabled: true
+        weight: 4
+      two_column:
+        enabled: true
+        weight: 5
+      video:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions

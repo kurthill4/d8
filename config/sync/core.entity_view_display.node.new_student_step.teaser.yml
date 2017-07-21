@@ -1,0 +1,28 @@
+uuid: e995b238-a536-40ad-8fb4-8eecfdb411d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.new_student_step.body
+    - node.type.new_student_step
+  module:
+    - text
+    - user
+id: node.new_student_step.teaser
+targetEntityType: node
+bundle: new_student_step
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

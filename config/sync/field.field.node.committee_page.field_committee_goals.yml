@@ -1,0 +1,21 @@
+uuid: 0559c182-a691-4147-a985-8e1b480107d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_committee_goals
+    - node.type.committee_page
+  module:
+    - text
+id: node.committee_page.field_committee_goals
+field_name: field_committee_goals
+entity_type: node
+bundle: committee_page
+label: 'Committee Goals'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

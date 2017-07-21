@@ -1,0 +1,47 @@
+uuid: a7d70cca-fe49-499c-b620-b65e5cd00b36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.slick.body
+    - field.field.node.slick.field_image
+    - field.field.node.slick.field_images
+    - node.type.slick
+  module:
+    - image
+    - text
+    - user
+id: node.slick.default
+targetEntityType: node
+bundle: slick
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_images:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }
