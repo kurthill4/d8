@@ -1,0 +1,41 @@
+uuid: 23f0f7b0-d7c5-43b4-b631-6acb00aae3e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.academy_dates
+    - field.field.block_content.academy_dates.body
+    - field.field.block_content.academy_dates.field_academy_dates
+  module:
+    - tablefield
+    - text
+id: block_content.academy_dates.default
+targetEntityType: block_content
+bundle: academy_dates
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_academy_dates:
+    weight: 27
+    settings:
+      input_type: textfield
+    third_party_settings: {  }
+    type: tablefield
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

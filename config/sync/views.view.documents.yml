@@ -378,6 +378,7 @@ display:
         groups:
           1: AND
       block_description: 'Departmental Documents Contextual Block Display'
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -463,6 +464,7 @@ display:
         groups:
           1: AND
       block_description: 'Committee Documents Contextual Block Display'
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -520,6 +522,7 @@ display:
           plugin_id: numeric
       defaults:
         arguments: false
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -640,6 +643,7 @@ display:
           plugin_id: numeric
       defaults:
         arguments: false
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:

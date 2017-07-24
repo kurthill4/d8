@@ -245,7 +245,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      css_class: rfm-block
+      css_class: 'rfm-block hide-xs'
       title: PathwayResources
     cache_metadata:
       max-age: -1

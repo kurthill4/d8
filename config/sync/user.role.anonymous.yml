@@ -12,6 +12,7 @@ permissions:
   - 'access content'
   - 'access site-wide contact form'
   - 'access user contact forms'
+  - 'download any audio files'
   - 'download any document files'
   - 'download any image files'
   - 'download any video files'

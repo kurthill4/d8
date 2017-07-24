@@ -1,0 +1,50 @@
+uuid: 4e064f73-9bd2-4199-8237-971ee0d5280d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.academy_dates
+    - field.storage.block_content.field_academy_dates
+  module:
+    - tablefield
+id: block_content.academy_dates.field_academy_dates
+field_name: field_academy_dates
+entity_type: block_content
+bundle: academy_dates
+label: 'Academy Dates'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    rebuild:
+      cols: '2'
+      rows: '5'
+    value:
+      -
+        - ''
+        - ''
+      -
+        - ''
+        - ''
+      -
+        - ''
+        - ''
+      -
+        - ''
+        - ''
+      -
+        - ''
+        - ''
+    format: null
+default_value_callback: ''
+settings:
+  export: 0
+  restrict_rebuild: 1
+  restrict_import: 1
+  lock_values: 0
+  cell_processing: '0'
+  empty_rules:
+    ignore_table_structure: 0
+    ignore_table_header: 0
+field_type: tablefield
