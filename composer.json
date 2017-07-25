@@ -67,6 +67,7 @@
         "drupal/paragraphs": "^1.1",
         "drupal/paragraphs_previewer": "1.x-dev",
         "drupal/pathauto": "^1.0@RC",
+        "drupal/permissions_by_term": "^1.21",
         "drupal/php": "^1.0@beta",
         "drupal/redirect": "^1.0@alpha",
         "drupal/slick": "^1.0",
