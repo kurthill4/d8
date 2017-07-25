@@ -1893,6 +1893,8 @@ display:none!important;
 		 }
 body p {font-size:12px;}
 .block-views-blockwhat-do-you-want-to-be-block-1 {display:block;margin-top:1px;}
+.block-views-blockwhat-do-you-want-to-be-block-1 h1 {font-size:4rem!important;}
+.block-views-blockwhat-do-you-want-to-be-block-1 p {font-size:2rem!important;}
 		 .top-links, .mbtn, .page-cover{
 			 display: none;
 		 }
