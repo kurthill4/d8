@@ -1,0 +1,45 @@
+uuid: 25e0e2db-0e95-4a58-807a-428eb19e9c3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column_1
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.text_and_image_left
+  module:
+    - entity_reference_revisions
+id: paragraph.text_and_image_left.field_column_1
+field_name: field_column_1
+entity_type: paragraph
+bundle: text_and_image_left
+label: 'Column 1'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      image: image
+    target_bundles_drag_drop:
+      two_column:
+        weight: 7
+        enabled: false
+      image:
+        enabled: true
+        weight: 8
+      table:
+        weight: 9
+        enabled: false
+      text:
+        weight: 10
+        enabled: false
+      text_and_image_left:
+        weight: 11
+        enabled: false
+      video:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

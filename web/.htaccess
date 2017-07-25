@@ -187,3 +187,19 @@ AddEncoding gzip svgz
   # Disable Proxy header, since it's an attack vector.
   RequestHeader unset Proxy
 </IfModule>
+
+
+# All custom alterations start here
+
+<IfModule mod_rewrite.c>
+
+  # Custom Redirects
+
+  Redirect 301 /campus/library http://www1.sdmiramar.edu/library
+  Redirect 301 /campus/av http://www1.sdmiramar.edu/library/av
+  Redirect 301 /campus/campus-police http://police.sdccd.edu
+  Redirect 301 /campus/bookstore http://www.bookstore.sdccd.edu/miramar
+  Redirect 301 /campus/athletics http://www.miramarjets.com
+  Redirect 301 /campus/as http://www.sdmiramarasg.com
+
+</IfModule>

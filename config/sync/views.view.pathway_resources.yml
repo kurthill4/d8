@@ -58,7 +58,7 @@ display:
         type: grid
         options:
           grouping: {  }
-          columns: 3
+          columns: 4
           automatic_width: true
           alignment: horizontal
           col_class_default: true
@@ -245,8 +245,45 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      css_class: rfm-block
+      css_class: 'rfm-block hide-xs'
       title: PathwayResources
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_links'
+  attachment_1:
+    display_plugin: attachment
+    id: attachment_1
+    display_title: Attachment
+    position: 3
+    display_options:
+      display_extenders: {  }
+      css_class: 'rfm-block hide-lg'
+      defaults:
+        css_class: false
+        style: false
+        row: false
+      displays:
+        block_1: block_1
+        block_2: block_2
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+      row:
+        type: fields
+        options:
+          inline: {  }
+          separator: ''
+          hide_empty: false
+          default_field_elements: true
     cache_metadata:
       max-age: -1
       contexts:

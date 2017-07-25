@@ -259,13 +259,47 @@ display:
       arguments: {  }
       display_extenders: {  }
       title: 'Important Documents'
-      css_class: rfm-block
+      css_class: 'rfm-block hide-xs'
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_uploaded_file'
+  attachment_1:
+    display_plugin: attachment
+    id: attachment_1
+    display_title: Attachment
+    position: 6
+    display_options:
+      display_extenders: {  }
+      css_class: 'rfm-block hide-lg'
+      defaults:
+        css_class: false
+        style: false
+        row: false
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+      row:
+        type: fields
+        options:
+          inline: {  }
+          separator: ''
+          hide_empty: false
+          default_field_elements: true
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -344,6 +378,7 @@ display:
         groups:
           1: AND
       block_description: 'Departmental Documents Contextual Block Display'
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -429,6 +464,7 @@ display:
         groups:
           1: AND
       block_description: 'Committee Documents Contextual Block Display'
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -486,6 +522,7 @@ display:
           plugin_id: numeric
       defaults:
         arguments: false
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -606,6 +643,7 @@ display:
           plugin_id: numeric
       defaults:
         arguments: false
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:

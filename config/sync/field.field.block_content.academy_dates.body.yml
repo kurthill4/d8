@@ -1,0 +1,22 @@
+uuid: d07970e7-11e3-44ae-92db-984e4b9b58d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.academy_dates
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.academy_dates.body
+field_name: body
+entity_type: block_content
+bundle: academy_dates
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

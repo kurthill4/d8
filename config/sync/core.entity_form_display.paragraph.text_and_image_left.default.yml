@@ -1,0 +1,37 @@
+uuid: f5233098-b48e-4409-ab87-4f75d6fc77fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_and_image_left.field_column_1
+    - field.field.paragraph.text_and_image_left.field_column_2
+    - paragraphs.paragraphs_type.text_and_image_left
+  module:
+    - entity_reference_revisions
+id: paragraph.text_and_image_left.default
+targetEntityType: paragraph
+bundle: text_and_image_left
+mode: default
+content:
+  field_column_1:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_autocomplete
+    region: content
+  field_column_2:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

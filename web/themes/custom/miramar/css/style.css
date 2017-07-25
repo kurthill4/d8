@@ -1249,6 +1249,12 @@ width:100%;
 .id-block ul li{
 	margin: 0;
 }
+.rfm-block .views-col {
+	padding:0.5em;
+}
+.rfm-block .views-col p {
+	font-size: 0.9em;
+}
 .dp-block{
 	background: #daf2f4;
 	margin: 0 0 10px;

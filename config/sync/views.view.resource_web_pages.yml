@@ -377,6 +377,7 @@ display:
           1: AND
       allow:
         items_per_page: false
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:
