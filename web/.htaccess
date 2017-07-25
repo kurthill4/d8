@@ -201,5 +201,6 @@ AddEncoding gzip svgz
   Redirect 301 /campus/bookstore http://www.bookstore.sdccd.edu/miramar
   Redirect 301 /campus/athletics http://www.miramarjets.com
   Redirect 301 /campus/as http://www.sdmiramarasg.com
+  Redirect 301 /academics/ilc /campus/labs/ilc
 
 </IfModule>
