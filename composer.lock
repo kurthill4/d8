@@ -3798,7 +3798,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/permissions_by_term-8.x-1.21.zip",
-                "reference": null,
+                "reference": "8.x-1.21",
                 "shasum": "5030b7a50a45213e2a3e1c961197c4f60f022127"
             },
             "require": {
