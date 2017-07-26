@@ -989,19 +989,19 @@ display:
           expose:
             label: ''
           plugin_id: standard
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          relationship: none
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
+          relationship: field_link_resource
           group_type: group
           admin_label: ''
           order: ASC
           exposed: false
           expose:
             label: ''
-          entity_type: node
-          entity_field: title
+          entity_type: taxonomy_term
+          entity_field: name
           plugin_id: standard
       header: {  }
       footer: {  }

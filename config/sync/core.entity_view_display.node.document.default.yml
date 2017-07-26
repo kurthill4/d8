@@ -14,24 +14,15 @@ dependencies:
     - field.field.node.document.field_uploaded_file
     - node.type.document
   module:
-    - datetime
     - file
-    - text
     - user
 id: node.document.default
 targetEntityType: node
 bundle: document
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_associated_campus_resource:
-    weight: 102
+    weight: 1
     label: above
     settings:
       link: true
@@ -39,7 +30,7 @@ content:
     type: entity_reference_label
     region: content
   field_associated_committee:
-    weight: 103
+    weight: 2
     label: above
     settings:
       link: true
@@ -47,7 +38,7 @@ content:
     type: entity_reference_label
     region: content
   field_associated_department:
-    weight: 104
+    weight: 3
     label: above
     settings:
       link: true
@@ -55,7 +46,7 @@ content:
     type: entity_reference_label
     region: content
   field_associated_faculty_member:
-    weight: 106
+    weight: 5
     label: above
     settings:
       link: true
@@ -63,24 +54,15 @@ content:
     type: entity_reference_label
     region: content
   field_associated_program:
-    weight: 105
+    weight: 4
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_date_uploaded:
-    weight: 107
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
   field_short_description:
-    weight: 108
+    weight: 6
     label: above
     settings:
       link_to_entity: false
@@ -88,13 +70,13 @@ content:
     type: string
     region: content
   field_uploaded_file:
-    weight: 109
+    weight: 0
     label: above
     settings: {  }
     third_party_settings: {  }
     type: file_default
     region: content
-  links:
-    weight: 100
-    region: content
-hidden: {  }
+hidden:
+  body: true
+  field_date_uploaded: true
+  links: true

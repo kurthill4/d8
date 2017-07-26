@@ -5,7 +5,10 @@ dependencies:
   config:
     - field.storage.node.field_content
     - node.type.custom_web_page
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.table
     - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.text_and_image_left
     - paragraphs.paragraphs_type.two_column
     - paragraphs.paragraphs_type.video
   module:
@@ -27,6 +30,9 @@ settings:
       text: text
       two_column: two_column
       video: video
+      image: image
+      table: table
+      text_and_image_left: text_and_image_left
     target_bundles_drag_drop:
       text:
         enabled: true
@@ -37,4 +43,13 @@ settings:
       video:
         enabled: true
         weight: 6
+      image:
+        enabled: true
+        weight: 7
+      table:
+        enabled: true
+        weight: 8
+      text_and_image_left:
+        enabled: true
+        weight: 10
 field_type: entity_reference_revisions
