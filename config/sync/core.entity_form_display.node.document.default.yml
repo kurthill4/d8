@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.document.body
     - field.field.node.document.field_associated_campus_resource
     - field.field.node.document.field_associated_committee
     - field.field.node.document.field_associated_department
@@ -20,7 +19,10 @@ third_party_settings:
   field_group:
     group_advanced:
       children:
+        - field_associated_campus_resource
         - field_associated_department
+        - field_associated_committee
+        - field_associated_program
         - field_associated_faculty_member
       parent_name: ''
       weight: 20
@@ -46,7 +48,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_associated_committee:
-    weight: 5
+    weight: 6
     settings:
       match_operator: CONTAINS
       size: 60
@@ -55,7 +57,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_associated_department:
-    weight: 7
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60
@@ -73,7 +75,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_associated_program:
-    weight: 6
+    weight: 7
     settings:
       match_operator: CONTAINS
       size: 60
@@ -105,7 +107,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
 hidden:
-  body: true
   created: true
   field_date_uploaded: true
   path: true

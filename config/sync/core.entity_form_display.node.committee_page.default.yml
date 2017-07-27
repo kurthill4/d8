@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.committee_page.body
     - field.field.node.committee_page.field_chair_requirements
     - field.field.node.committee_page.field_co_chair_2
     - field.field.node.committee_page.field_committee_chair
@@ -21,7 +20,6 @@ dependencies:
     - node.type.committee_page
   module:
     - field_group
-    - path
     - text
 third_party_settings:
   field_group:
@@ -29,10 +27,7 @@ third_party_settings:
       children:
         - field_chair_requirements
         - field_membership
-        - field_num_administrators
-        - field_num_faculty
-        - field_num_classified
-        - field_num_students
+        - group_group_composition
       parent_name: ''
       weight: 4
       format_type: fieldset
@@ -42,26 +37,26 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Membership
+    group_group_composition:
+      children:
+        - field_num_administrators
+        - field_num_faculty
+        - field_num_classified
+        - field_num_students
+      parent_name: group_membership
+      weight: 12
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Group Composition'
 id: node.committee_page.default
 targetEntityType: node
 bundle: committee_page
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 5
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  created:
-    type: datetime_timestamp
-    weight: 12
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_chair_requirements:
     weight: 10
     settings:
@@ -89,7 +84,7 @@ content:
     type: options_select
     region: content
   field_committee_code:
-    weight: 15
+    weight: 10
     settings:
       size: 60
       placeholder: ''
@@ -121,28 +116,28 @@ content:
     type: text_textarea
     region: content
   field_num_administrators:
-    weight: 12
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: number
-    region: content
-  field_num_classified:
-    weight: 14
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: number
-    region: content
-  field_num_faculty:
     weight: 13
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
-  field_num_students:
+  field_num_classified:
     weight: 15
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_num_faculty:
+    weight: 14
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_num_students:
+    weight: 16
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -160,26 +155,6 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
-  path:
-    type: path
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 14
-    region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 11
-    region: content
-    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0
@@ -188,13 +163,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 13
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    region: content
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true
