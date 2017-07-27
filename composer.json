@@ -87,6 +87,7 @@
         "drush/drush": "~8.0",
         "kenwheeler/slick": "^1.6",
         "kint-php/kint": "^2.0",
+        "oomphinc/composer-installers-extender": "^1.1",
         "webflo/drupal-finder": "^0.2.1",
         "webmozart/path-util": "^2.3"
     },
@@ -128,9 +129,10 @@
         ]
     },
     "extra": {
+		"installer-types": ["library"],
         "installer-paths": {
             "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/libraries/{$name}": ["type:drupal-library", "kenwheeler/slick"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/modules/custom/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
