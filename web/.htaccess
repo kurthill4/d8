@@ -202,5 +202,6 @@ AddEncoding gzip svgz
   Redirect 301 /campus/athletics http://www.miramarjets.com
   Redirect 301 /campus/as http://www.sdmiramarasg.com
   Redirect 302 /academics/ilc /campus/labs/ilc
+  Redirect 302 /sites/default/custom/pages/biotech http://www1.sdmiramar.edu/sites/default/custom/pages/biotech
 
 </IfModule>
