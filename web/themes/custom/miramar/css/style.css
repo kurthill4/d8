@@ -1134,6 +1134,8 @@ width:100%;
 .news-block-2 td {font-size:0.75em}
 .news-block-2 tr td:first-child {width:100px!important;}
 .news-block-2 td img {width:100px!important;}
+.news-block-3 img {float:left;}
+.news-block-3 p {width:25%;}
 .recent-jobs{
 	position: relative;
 	margin: 10px 0 0;
