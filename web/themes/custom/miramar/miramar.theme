@@ -87,10 +87,25 @@ function miramar_preprocess_page(&$variables) {
 function miramar_preprocess_views_view_row_rss(&$variables) {
     $item = $variables['row'];
     $node = node_load($item->nid);
-    if($node->getType() == "campus_news")	// Is the node the correct content type?
+    $currNode = $node->getType();
+    if($currNode == "campus_news" || $currNode =="event")	// Is the node the correct content type?
+    {
+	    switch($node->get('field_format')->value)
+	    {
+		case 'Web':
+		    $format = 0;
+		    break;
+		case 'Mobile':
+		    $format = 1;
+		    break;
+		default:
+		    $format = 2;
+	    }
+    }
+    if($currNode == "campus_news")	// Is the node the correct content type?
     {
 	    $variables['article'] = strip_tags(removeInvalidXML($node->body->value));	// Assign fields to Twig variables
-	    $variables['media_target'] = $node->get('field_format')->value;
+	    $variables['media_target'] = $format;
 	    $variables['tags'] = $node->get('field_story_type')->value;
 	    $variables['story_date'] = $node->get('field_story_date')->value;
 	    $variables['pub_start_date'] = $node->get('field_start_date')->value;
@@ -99,10 +114,10 @@ function miramar_preprocess_views_view_row_rss(&$variables) {
 	    $variables['url_label'] = $node->get('field_link_label')->value;
 	    $variables['priority'] = $node->get('field_priority')->value;
     }
-    elseif($node->getType() == "event")
+    elseif($currNode == "event")
     {
 	    $variables['article'] = strip_tags(removeInvalidXML($node->body->value));
-	    $variables['media_target'] = $node->get('field_format')->value;
+	    $variables['media_target'] = $format;
 	    $variables['event_date'] = $node->get('field_event_date')->value;
 	    $variables['event_date_end'] = $node->get('field_event_date')->end_value;
 	    $variables['tags'] = $node->get('field_event_type')->value;
