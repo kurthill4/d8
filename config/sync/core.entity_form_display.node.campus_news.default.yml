@@ -21,10 +21,28 @@ dependencies:
     - node.type.campus_news
   module:
     - datetime
+    - field_group
     - image
     - link
-    - path
     - text
+third_party_settings:
+  field_group:
+    group_display_routing_options:
+      children:
+        - field_story_type
+        - field_priority
+        - field_featured_on_homepage_
+        - field_display_on_pathways
+        - field_format
+      parent_name: ''
+      weight: 10
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Display & Routing Options'
 id: node.campus_news.default
 targetEntityType: node
 bundle: campus_news
@@ -32,33 +50,27 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 6
+    weight: 4
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
     region: content
-  created:
-    type: datetime_timestamp
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_display_on_pathways:
-    weight: 5
+    weight: 13
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_end_date:
-    weight: 29
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_external_website:
-    weight: 8
+    weight: 7
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -66,20 +78,20 @@ content:
     type: link_default
     region: content
   field_featured_on_homepage_:
-    weight: 4
+    weight: 12
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_format:
-    weight: 26
+    weight: 14
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_homepage_image:
-    weight: 27
+    weight: 6
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -87,7 +99,7 @@ content:
     type: image_image
     region: content
   field_image:
-    weight: 7
+    weight: 5
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -95,7 +107,7 @@ content:
     type: image_image
     region: content
   field_link:
-    weight: 30
+    weight: 8
     settings:
       size: 60
       placeholder: ''
@@ -103,7 +115,7 @@ content:
     type: string_textfield
     region: content
   field_link_label:
-    weight: 31
+    weight: 9
     settings:
       size: 60
       placeholder: ''
@@ -111,13 +123,13 @@ content:
     type: string_textfield
     region: content
   field_priority:
-    weight: 3
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_start_date:
-    weight: 28
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
@@ -129,31 +141,11 @@ content:
     type: datetime_default
     region: content
   field_story_type:
-    weight: 32
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
-  path:
-    type: path
-    weight: 13
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 11
-    region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 12
-    region: content
-    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0
@@ -162,13 +154,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 9
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    region: content
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

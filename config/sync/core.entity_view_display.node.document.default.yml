@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.document.body
     - field.field.node.document.field_associated_campus_resource
     - field.field.node.document.field_associated_committee
     - field.field.node.document.field_associated_department
@@ -77,6 +76,5 @@ content:
     type: file_default
     region: content
 hidden:
-  body: true
   field_date_uploaded: true
   links: true

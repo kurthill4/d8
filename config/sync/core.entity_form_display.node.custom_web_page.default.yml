@@ -11,9 +11,51 @@ dependencies:
     - field.field.node.custom_web_page.field_content
     - node.type.custom_web_page
   module:
-    - paragraphs
+    - field_group
+    - paragraphs_previewer
     - path
     - text
+third_party_settings:
+  field_group:
+    group_advanced_display_options:
+      children:
+        - field_associated_campus_resource
+        - field_associated_committee
+        - field_associated_program
+        - field_associated_department
+      parent_name: ''
+      weight: 3
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Advanced Display Options'
+    group_simple_content:
+      children:
+        - body
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: true
+        required_fields: true
+      label: 'Simple Content'
+    group_advanced_content:
+      children:
+        - field_content
+      parent_name: ''
+      weight: 2
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Advanced Content'
 id: node.custom_web_page.default
 targetEntityType: node
 bundle: custom_web_page
@@ -21,21 +63,15 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 31
+    weight: 2
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
     region: content
-  created:
-    type: datetime_timestamp
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_associated_campus_resource:
-    weight: 33
+    weight: 4
     settings:
       match_operator: CONTAINS
       size: 60
@@ -44,7 +80,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_associated_committee:
-    weight: 34
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60
@@ -53,7 +89,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_associated_department:
-    weight: 36
+    weight: 7
     settings:
       match_operator: CONTAINS
       size: 60
@@ -62,7 +98,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_associated_program:
-    weight: 35
+    weight: 6
     settings:
       match_operator: CONTAINS
       size: 60
@@ -71,8 +107,8 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_content:
-    type: entity_reference_paragraphs
-    weight: 32
+    type: entity_reference_paragraphs_previewer
+    weight: 3
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -84,39 +120,20 @@ content:
     region: content
   path:
     type: path
-    weight: 30
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 15
-    region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 16
-    region: content
-    third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 5
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    region: content
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  created: true
+  promote: true
+  sticky: true
+  uid: true

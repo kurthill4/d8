@@ -4,25 +4,31 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.document.body
+    - field.field.node.document.field_associated_campus_resource
+    - field.field.node.document.field_associated_committee
+    - field.field.node.document.field_associated_department
+    - field.field.node.document.field_associated_faculty_member
+    - field.field.node.document.field_associated_program
+    - field.field.node.document.field_date_uploaded
+    - field.field.node.document.field_short_description
+    - field.field.node.document.field_uploaded_file
     - node.type.document
   module:
-    - text
     - user
 id: node.document.teaser
 targetEntityType: node
 bundle: document
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_associated_campus_resource: true
+  field_associated_committee: true
+  field_associated_department: true
+  field_associated_faculty_member: true
+  field_associated_program: true
+  field_date_uploaded: true
+  field_short_description: true
+  field_uploaded_file: true

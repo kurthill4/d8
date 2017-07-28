@@ -1,58 +1,47 @@
-uuid: 78f97c92-a599-4e19-a246-761356f00066
+uuid: 06a4f24c-fc55-4685-bf16-3b1b57b2c6f9
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - field.storage.node.field_link_human
-    - field.storage.node.field_link_office
-    - field.storage.node.field_office_location
-    - field.storage.node.field_phone
-    - node.type.directory_listing
-    - system.menu.main
-    - taxonomy.vocabulary.directory_listing
-  content:
-    - 'taxonomy_term:directory_listing:13510ac4-8199-4e6e-841d-a3e89b1f8dd3'
-    - 'taxonomy_term:directory_listing:1f24ea28-77ad-4c52-b646-5d4b698dcd1b'
-    - 'taxonomy_term:directory_listing:a0a116b2-2d23-4199-a273-b07fa7e62c2e'
-    - 'taxonomy_term:directory_listing:bc7cc593-3fe6-4d35-904f-0548e7cae843'
-    - 'taxonomy_term:directory_listing:f3513d22-94de-41f3-95e9-e0ca5d81f36b'
+    - field.storage.user.field_assignment
+    - field.storage.user.field_email
+    - field.storage.user.field_first_name
+    - field.storage.user.field_job_title
+    - field.storage.user.field_last_name
+    - field.storage.user.field_office
+    - field.storage.user.field_phone
   module:
-    - node
-    - taxonomy
+    - telephone
     - user
-_core:
-  default_config_hash: '-pCFOVfbt__jaohFffTLnVavh4OBC6CjREAnchiRomQ'
-id: campus_directory
-label: 'Campus Directory'
-module: node
-description: 'All content, by letter.'
-tag: default
-base_table: node_field_data
-base_field: nid
-core: '8'
+id: people_directory
+label: 'People Directory'
+module: views
+description: ''
+tag: ''
+base_table: users_field_data
+base_field: uid
+core: 8.x
 display:
   default:
+    display_plugin: default
     id: default
     display_title: Master
-    display_plugin: default
     position: 0
     display_options:
-      query:
-        type: views_query
-        options:
-          query_comment: ''
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_tags: {  }
-      use_ajax: true
       access:
-        type: perm
-        options:
-          perm: 'access content'
+        type: none
+        options: {  }
       cache:
         type: tag
         options: {  }
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
       exposed_form:
         type: basic
         options:
@@ -66,13 +55,13 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 0
+          items_per_page: 25
           offset: 0
           id: 0
           total_pages: null
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
+            previous: ‹‹
+            next: ››
             first: '« First'
             last: 'Last »'
           expose:
@@ -84,15 +73,281 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
+      style:
+        type: table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          override: true
+          sticky: false
+          caption: ''
+          summary: ''
+          description: ''
+          columns:
+            field_email: field_email
+            field_first_name: field_first_name
+            field_last_name: field_last_name
+            field_job_title: field_job_title
+            field_assignment: field_assignment
+            field_office: field_office
+            field_phone: field_phone
+          info:
+            field_email:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_first_name:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_last_name:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_job_title:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-low
+            field_assignment:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-low
+            field_office:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-medium
+            field_phone:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-medium
+          default: field_last_name
+          empty_table: false
+      row:
+        type: fields
+        options:
+          inline: {  }
+          separator: ''
+          hide_empty: false
+          default_field_elements: true
       fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
+        field_email:
+          id: field_email
+          table: user__field_email
+          field: field_email
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: basic_string
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_first_name:
+          id: field_first_name
+          table: user__field_first_name
+          field: field_first_name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_last_name:
+          id: field_last_name
+          table: user__field_last_name
+          field: field_last_name
           relationship: none
           group_type: group
           admin_label: ''
           label: Name
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<i class="fa fa-envelope-o" aria-hidden="true"></i> {{ field_last_name }}, {{ field_first_name }}'
+            make_link: true
+            path: 'mailto:{{ field_email }}'
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_job_title:
+          id: field_job_title
+          table: user__field_job_title
+          field: field_job_title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Job Title'
           exclude: false
           alter:
             alter_text: false
@@ -148,16 +403,14 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-          entity_type: node
-          entity_field: title
-        field_link_human:
-          id: field_link_human
-          table: node__field_link_human
-          field: field_link_human
+        field_assignment:
+          id: field_assignment
+          table: user__field_assignment
+          field: field_assignment
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Link to Web Page'
+          label: Assignment
           exclude: false
           alter:
             alter_text: false
@@ -198,11 +451,11 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
+          click_sort_column: value
+          type: string
           settings:
-            link: true
-          group_column: target_id
+            link_to_entity: false
+          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -213,77 +466,14 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_link_office:
-          id: field_link_office
-          table: node__field_link_office
-          field: field_link_office
+        field_office:
+          id: field_office
+          table: user__field_office
+          field: field_office
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: true
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_office_location:
-          id: field_office_location
-          table: node__field_office_location
-          field: field_office_location
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Office/Location
+          label: Office
           exclude: false
           alter:
             alter_text: false
@@ -341,7 +531,7 @@ display:
           plugin_id: field
         field_phone:
           id: field_phone
-          table: node__field_phone
+          table: user__field_phone
           field: field_phone
           relationship: none
           group_type: group
@@ -388,9 +578,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: string
+          type: telephone_link
           settings:
-            link_to_entity: false
+            title: ''
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -402,118 +592,163 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-      arguments:
-        title:
-          id: title
-          table: node_field_data
-          field: title
+      filters:
+        status:
+          value: '1'
+          table: users_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: user
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        field_last_name_value:
+          id: field_last_name_value
+          table: user__field_last_name
+          field: field_last_name_value
           relationship: none
           group_type: group
           admin_label: ''
-          default_action: ignore
-          exception:
-            value: all
-            title_enable: true
-            title: All
-          title_enable: false
-          title: ''
-          default_argument_type: date
-          default_argument_options: {  }
-          default_argument_skip_url: false
-          summary_options:
-            base_path: ''
-            count: true
-            items_per_page: 25
-            override: false
-          summary:
-            sort_order: asc
-            number_of_records: 0
-            format: default_summary
-          specify_validation: true
-          validate:
-            type: none
-            fail: 'not found'
-          validate_options: {  }
-          glossary: true
-          limit: 1
-          case: upper
-          path_case: lower
-          transform_dash: false
-          break_phrase: false
+          operator: 'not empty'
+          value: ''
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
           plugin_id: string
-          entity_type: node
-          entity_field: title
-      relationships: {  }
-      style:
-        type: table
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
-          override: true
-          sticky: false
-          caption: ''
-          summary: ''
-          description: ''
-          columns:
-            title: title
-            field_link_human: field_link_human
-            field_link_office: field_link_human
-            field_office_location: field_office_location
-            field_phone: field_phone
-          info:
-            title:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_link_human:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_link_office:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_office_location:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_phone:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-          default: '-1'
-          empty_table: false
-      row:
-        type: fields
-        options:
-          inline: {  }
-          separator: ''
-          hide_empty: false
-          default_field_elements: true
-      header: {  }
-      footer: {  }
-      empty: {  }
+        combine:
+          id: combine
+          table: views
+          field: combine
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: combine_op
+            label: 'Search by Keyword'
+            description: 'Type '
+            use_operator: false
+            operator: combine_op
+            identifier: combine
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              admin: '0'
+              event_manager: '0'
+              content_editor: '0'
+              content_publisher: '0'
+              custom_web_page_manager: '0'
+              dean: '0'
+              block_manager: '0'
+              taxonomy_manager: '0'
+              user_manager: '0'
+              faculty: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          fields:
+            field_first_name: field_first_name
+            field_last_name: field_last_name
+            field_job_title: field_job_title
+            field_assignment: field_assignment
+          plugin_id: combine
+        combine_1:
+          id: combine_1
+          table: views
+          field: combine
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: combine_1_op
+            label: 'Search by Name'
+            description: ''
+            use_operator: false
+            operator: combine_1_op
+            identifier: combine_1
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              admin: '0'
+              event_manager: '0'
+              content_editor: '0'
+              content_publisher: '0'
+              custom_web_page_manager: '0'
+              dean: '0'
+              block_manager: '0'
+              taxonomy_manager: '0'
+              user_manager: '0'
+              faculty: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          fields:
+            field_first_name: field_first_name
+            field_last_name: field_last_name
+          plugin_id: combine
       sorts:
-        title:
-          id: title
-          table: node_field_data
-          field: title
+        field_last_name_value:
+          id: field_last_name_value
+          table: user__field_last_name
+          field: field_last_name_value
           relationship: none
           group_type: group
           admin_label: ''
@@ -521,293 +756,78 @@ display:
           exposed: false
           expose:
             label: ''
-          entity_type: node
-          entity_field: title
           plugin_id: standard
-      filters:
-        type:
-          id: type
-          table: node_field_data
-          field: type
+        field_first_name_value:
+          id: field_first_name_value
+          table: user__field_first_name
+          field: field_first_name_value
           relationship: none
           group_type: group
           admin_label: ''
-          operator: in
-          value:
-            directory_listing: directory_listing
-          group: 1
+          order: ASC
           exposed: false
           expose:
-            operator_id: type_op
-            label: 'Content type'
-            description: ''
-            use_operator: false
-            operator: type_op
-            identifier: type
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              admin: '0'
-              event_manager: '0'
-              content_editor: '0'
-              content_publisher: '0'
-              custom_web_page_manager: '0'
-              dean: '0'
-              block_manager: '0'
-              taxonomy_manager: '0'
-              user_manager: '0'
-              faculty: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
             label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-        field_directory_category_target_id:
-          id: field_directory_category_target_id
-          table: node__field_directory_category
-          field: field_directory_category_target_id
+          plugin_id: standard
+      header:
+        area:
+          id: area
+          table: views
+          field: area
           relationship: none
           group_type: group
           admin_label: ''
-          operator: or
-          value:
-            140: 140
-            138: 138
-            139: 139
-            141: 141
-            142: 142
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_directory_category_target_id_op
-            label: ''
-            description: ''
-            use_operator: false
-            operator: field_directory_category_target_id_op
-            identifier: field_directory_category_target_id
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              admin: '0'
-              event_manager: '0'
-              content_editor: '0'
-              content_publisher: '0'
-              custom_web_page_manager: '0'
-              dean: '0'
-              block_manager: '0'
-              taxonomy_manager: '0'
-              user_manager: '0'
-              faculty: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          type: select
-          limit: true
-          vid: directory_listing
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: word
-          value: ''
-          group: 1
-          exposed: true
-          expose:
-            operator_id: title_op
-            label: ''
-            description: 'Office or Person Name'
-            use_operator: false
-            operator: title_op
-            identifier: title
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              admin: '0'
-              event_manager: '0'
-              content_editor: '0'
-              content_publisher: '0'
-              custom_web_page_manager: '0'
-              dean: '0'
-              block_manager: '0'
-              taxonomy_manager: '0'
-              user_manager: '0'
-              faculty: '0'
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          entity_field: title
-          plugin_id: string
+          empty: false
+          tokenize: false
+          content:
+            value: '<h4 class="hide-lg hide-xl"><a href="/directory/places">Click Here to Find Campus Resources</a></h4>'
+            format: full_html
+          plugin_id: text
+      footer: {  }
+      empty: {  }
+      relationships: {  }
+      arguments: {  }
       display_extenders: {  }
+      filter_groups:
+        operator: OR
+        groups:
+          1: AND
+      css_class: dcf-content
     cache_metadata:
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user
-        - 'user.node_grants:view'
-        - user.permissions
-      max-age: 0
       tags:
-        - 'config:field.storage.node.field_link_human'
-        - 'config:field.storage.node.field_link_office'
-        - 'config:field.storage.node.field_office_location'
-        - 'config:field.storage.node.field_phone'
-  attachment_1:
-    id: attachment_1
-    display_title: Attachment
-    display_plugin: attachment
-    position: 2
-    display_options:
-      query:
-        type: views_query
-        options: {  }
-      pager:
-        type: none
-        options:
-          offset: 0
-          items_per_page: 0
-      defaults:
-        arguments: false
-      arguments:
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          default_action: summary
-          exception:
-            title_enable: true
-          default_argument_type: fixed
-          default_argument_options:
-            argument: a
-          summary:
-            format: unformatted_summary
-          summary_options:
-            items_per_page: 25
-            inline: true
-            separator: ' | '
-          specify_validation: true
-          glossary: true
-          limit: 1
-          case: upper
-          path_case: lower
-          transform_dash: false
-          plugin_id: string
-          relationship: none
-          group_type: group
-          admin_label: ''
-          title_enable: false
-          title: ''
-          default_argument_skip_url: false
-          validate:
-            type: none
-            fail: 'not found'
-          validate_options: {  }
-          break_phrase: false
-          entity_type: node
-          entity_field: title
-      displays:
-        default: default
-        page_1: page_1
-      inherit_arguments: false
-      display_extenders: {  }
-      enabled: true
-    cache_metadata:
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - url
-        - user
-        - 'user.node_grants:view'
-        - user.permissions
-      max-age: 0
-      tags:
-        - 'config:field.storage.node.field_link_human'
-        - 'config:field.storage.node.field_link_office'
-        - 'config:field.storage.node.field_office_location'
-        - 'config:field.storage.node.field_phone'
+        - 'config:field.storage.user.field_assignment'
+        - 'config:field.storage.user.field_email'
+        - 'config:field.storage.user.field_first_name'
+        - 'config:field.storage.user.field_job_title'
+        - 'config:field.storage.user.field_last_name'
+        - 'config:field.storage.user.field_office'
+        - 'config:field.storage.user.field_phone'
   page_1:
+    display_plugin: page
     id: page_1
     display_title: Page
-    display_plugin: page
     position: 1
     display_options:
-      query:
-        type: views_query
-        options: {  }
-      path: directory
-      menu:
-        type: normal
-        title: Directory
-        weight: -45
-        menu_name: main
-        parent: ''
-        description: ''
-        expanded: false
-        enabled: true
       display_extenders: {  }
+      path: directory/people
     cache_metadata:
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user
-        - 'user.node_grants:view'
-        - user.permissions
-      max-age: 0
       tags:
-        - 'config:field.storage.node.field_link_human'
-        - 'config:field.storage.node.field_link_office'
-        - 'config:field.storage.node.field_office_location'
-        - 'config:field.storage.node.field_phone'
+        - 'config:field.storage.user.field_assignment'
+        - 'config:field.storage.user.field_email'
+        - 'config:field.storage.user.field_first_name'
+        - 'config:field.storage.user.field_job_title'
+        - 'config:field.storage.user.field_last_name'
+        - 'config:field.storage.user.field_office'
+        - 'config:field.storage.user.field_phone'

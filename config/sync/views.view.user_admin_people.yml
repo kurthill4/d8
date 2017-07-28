@@ -865,7 +865,7 @@ display:
       group_by: false
       link_url: ''
       link_display: page_1
-      css_class: ''
+      css_class: dcf-content
       filter_groups:
         operator: AND
         groups:

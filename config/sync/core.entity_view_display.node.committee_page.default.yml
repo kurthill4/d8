@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.committee_page.body
     - field.field.node.committee_page.field_chair_requirements
     - field.field.node.committee_page.field_co_chair_2
     - field.field.node.committee_page.field_committee_chair
@@ -27,13 +26,6 @@ targetEntityType: node
 bundle: committee_page
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_chair_requirements:
     weight: 104
     label: above

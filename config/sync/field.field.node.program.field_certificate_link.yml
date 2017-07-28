@@ -1,0 +1,33 @@
+uuid: 727180d1-878b-4f36-b7b0-75f821be97bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_certificate_link
+    - node.type.program
+  module:
+    - link
+id: node.program.field_certificate_link
+field_name: field_certificate_link
+entity_type: node
+bundle: program
+label: 'Got Units? Get a Certificate!'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'http://www.sdmiramar.edu/file/12650/download?token=XpFKzZ2E'
+    title: 'Petition for Certificate of Achievement'
+    options: {  }
+  -
+    attributes: {  }
+    uri: 'http://www.sdmiramar.edu/file/12651/download?token=NcikHQG5'
+    title: 'Petition for Certificate of Performance'
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

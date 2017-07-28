@@ -7,7 +7,7 @@ dependencies:
     - field.field.paragraph.text_and_image_left.field_column_2
     - paragraphs.paragraphs_type.text_and_image_left
   module:
-    - entity_reference_revisions
+    - paragraphs_previewer
 id: paragraph.text_and_image_left.default
 targetEntityType: paragraph
 bundle: text_and_image_left
@@ -16,20 +16,26 @@ content:
   field_column_1:
     weight: 0
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: image
     third_party_settings: {  }
-    type: entity_reference_revisions_autocomplete
+    type: entity_reference_paragraphs_previewer
     region: content
   field_column_2:
     weight: 1
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
     third_party_settings: {  }
-    type: entity_reference_revisions_autocomplete
+    type: entity_reference_paragraphs_previewer
     region: content
 hidden:
   created: true
