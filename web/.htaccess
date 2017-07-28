@@ -204,4 +204,7 @@ AddEncoding gzip svgz
   Redirect 302 /academics/ilc /campus/labs/ilc
   Redirect 302 /sites/default/custom/pages/biotech http://www1.sdmiramar.edu/sites/default/custom/pages/biotech
 
+  Redirect 302 /webfm_send/(.*)$ http://www1.sdmiramar.edu/webfm_send/$1
+  Redirect 302 (/feeds/.*)$ http://www1.sdmiramar.edu/$1
+
 </IfModule>
