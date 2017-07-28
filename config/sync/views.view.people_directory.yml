@@ -29,9 +29,8 @@ display:
     position: 0
     display_options:
       access:
-        type: perm
-        options:
-          perm: 'access user profiles'
+        type: none
+        options: {  }
       cache:
         type: tag
         options: {  }
@@ -781,7 +780,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h4 class="hide-lg"><a href="/directory/places">Click Here to Find Campus Resources</a></h4>'
+            value: '<h4><a href="/directory/places">Click Here to Find Campus Resources</a></h4>'
             format: full_html
           plugin_id: text
       footer: {  }
@@ -801,7 +800,6 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user.permissions
       tags:
         - 'config:field.storage.user.field_assignment'
         - 'config:field.storage.user.field_email'
@@ -825,7 +823,6 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user.permissions
       tags:
         - 'config:field.storage.user.field_assignment'
         - 'config:field.storage.user.field_email'
