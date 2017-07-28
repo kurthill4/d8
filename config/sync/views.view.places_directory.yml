@@ -89,6 +89,9 @@ display:
             name: name
             field_location: field_location
             field_phone: field_phone
+            field_email: field_email
+            field_first_name: field_first_name
+            field_last_name: field_last_name
           info:
             name:
               sortable: false
@@ -103,14 +106,35 @@ display:
               align: ''
               separator: ''
               empty_column: false
-              responsive: ''
+              responsive: priority-medium
             field_phone:
               sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
-              responsive: ''
+              responsive: priority-medium
+            field_email:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-low
+            field_first_name:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-low
+            field_last_name:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-low
           default: '-1'
           empty_table: false
       row:
@@ -562,7 +586,20 @@ display:
           entity_type: taxonomy_term
           entity_field: name
           plugin_id: standard
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<h4 class="hide-lg hide-xl"><a href="/directory/people">Find Faculty &amp; Staff</a></h4>'
+            format: full_html
+          plugin_id: text
       footer: {  }
       empty: {  }
       relationships:
@@ -577,6 +614,7 @@ display:
           plugin_id: standard
       arguments: {  }
       display_extenders: {  }
+      css_class: dcf-content
     cache_metadata:
       max-age: 0
       contexts:

@@ -1,0 +1,27 @@
+uuid: 13faa112-bb29-47ab-ba4a-39c8f13c0aaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.program_document_links
+    - field.field.block_content.program_document_links.field_downloads
+  module:
+    - link
+id: block_content.program_document_links.default
+targetEntityType: block_content
+bundle: program_document_links
+mode: default
+content:
+  field_downloads:
+    weight: 0
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

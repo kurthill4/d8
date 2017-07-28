@@ -493,14 +493,14 @@ nav.mobile-nav li:first-child ol li{
 	position: absolute;
 	bottom:10%;
 	left: 15px;
-	z-index:1000;
+	z-index:10;
 	color:#ffffff;
 }
 .notfront .banner-content,.custom .banner-content{
 	position: absolute;
 	bottom:10%;
 	left: 15px;
-	z-index:1000;
+	z-index:10;
 	color:#ffffff;
 }
 
@@ -1328,6 +1328,7 @@ ul.dp-menu li:hover a{
 }
 .dcf-content{
 	padding: 10px 30px;
+	margin-left:10px;
 	background: #daf2f4;
 }
 .dcf-content table {

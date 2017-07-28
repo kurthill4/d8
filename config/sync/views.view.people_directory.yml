@@ -781,7 +781,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h5><a href="/directory/places">Click Here to Find Campus Resources</a></h5>'
+            value: '<h4 class="hide-lg"><a href="/directory/places">Click Here to Find Campus Resources</a></h4>'
             format: full_html
           plugin_id: text
       footer: {  }

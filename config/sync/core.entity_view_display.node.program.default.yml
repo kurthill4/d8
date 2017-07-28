@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.program.body
     - field.field.node.program.field_career_transfer_options
     - field.field.node.program.field_catalog_pages
+    - field.field.node.program.field_certificate_link
     - field.field.node.program.field_contact_2
     - field.field.node.program.field_course_sequence
     - field.field.node.program.field_degrees
@@ -19,6 +20,7 @@ dependencies:
     - node.type.program
   module:
     - file_entity
+    - link
     - text
     - user
 id: node.program.default
@@ -47,6 +49,18 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_certificate_link:
+    weight: 9
+    label: above
+    settings:
+      trim_length: null
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
     region: content
   field_contact_2:
     weight: 3
