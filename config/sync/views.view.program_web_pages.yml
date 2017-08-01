@@ -260,12 +260,12 @@ display:
             fail: 'not found'
           validate_options: {  }
           break_phrase: false
-          not: false
+          not: true
           entity_type: node
           entity_field: nid
           plugin_id: node_nid
       display_extenders: {  }
-      title: 'Program Web Pages'
+      title: 'Program Pages'
     cache_metadata:
       max-age: -1
       contexts:

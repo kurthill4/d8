@@ -1,22 +1,22 @@
-uuid: 202bf7d4-d395-407b-a321-65dbfb14c478
+uuid: 29a847b6-468c-4775-9781-fef537195e1a
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.web_page_list
+    - views.view.program_block
   module:
     - ctools
     - views
   theme:
     - miramar
-id: views_block__web_page_list_block_1
+id: views_block__program_block_block_1
 theme: miramar
 region: sidebar_second
-weight: -13
+weight: -21
 provider: null
-plugin: 'views_block:web_page_list-block_1'
+plugin: 'views_block:program_block-block_1'
 settings:
-  id: 'views_block:web_page_list-block_1'
+  id: 'views_block:program_block-block_1'
   label: ''
   provider: views
   label_display: visible

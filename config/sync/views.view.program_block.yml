@@ -1,24 +1,24 @@
-uuid: 7809d588-6195-4449-abd3-bc1916b3b8d4
+uuid: b9f782ef-b7de-4fe1-8cde-dc6f9018e188
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.taxonomy_term.field_hours
-    - field.storage.taxonomy_term.field_location
-    - field.storage.taxonomy_term.field_phone
-    - taxonomy.vocabulary.campus_resources
+    - field.storage.user.field_email
+    - field.storage.user.field_first_name
+    - field.storage.user.field_last_name
+    - field.storage.user.field_phone
+    - node.type.program
   module:
-    - taxonomy
+    - node
     - telephone
-    - text
     - user
-id: resource_information
-label: 'Resource Information'
+id: program_block
+label: 'Program Block'
 module: views
 description: ''
 tag: ''
-base_table: taxonomy_term_field_data
-base_field: tid
+base_table: node_field_data
+base_field: nid
 core: 8.x
 display:
   default:
@@ -53,19 +53,42 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: none
+        type: mini
         options:
-          items_per_page: 0
+          items_per_page: 10
           offset: 0
+          id: 0
+          total_pages: null
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          tags:
+            previous: ‹‹
+            next: ››
       style:
         type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
       row:
         type: fields
+        options:
+          inline: {  }
+          separator: ''
+          hide_empty: false
+          default_field_elements: true
       fields:
-        name:
-          id: name
-          table: taxonomy_term_field_data
-          field: name
+        title:
+          id: title
+          table: node_field_data
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
@@ -98,8 +121,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: h3
-          element_class: ''
+          element_type: ''
+          element_class: bold
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -124,19 +147,18 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          convert_spaces: false
-          entity_type: taxonomy_term
-          entity_field: name
-          plugin_id: term_name
-        field_location:
-          id: field_location
-          table: taxonomy_term__field_location
-          field: field_location
-          relationship: none
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+        field_email:
+          id: field_email
+          table: user__field_email
+          field: field_email
+          relationship: field_director_contact
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -164,8 +186,133 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: p
-          element_class: bold
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: basic_string
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_first_name:
+          id: field_first_name
+          table: user__field_first_name
+          field: field_first_name
+          relationship: field_director_contact
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_last_name:
+          id: field_last_name
+          table: user__field_last_name
+          field: field_last_name
+          relationship: field_director_contact
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '{{ field_first_name }} {{ field_last_name }}'
+            make_link: true
+            path: 'mailto:{{ field_email }}'
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -193,9 +340,9 @@ display:
           plugin_id: field
         field_phone:
           id: field_phone
-          table: taxonomy_term__field_phone
+          table: user__field_phone
           field: field_phone
-          relationship: none
+          relationship: field_director_contact
           group_type: group
           admin_label: ''
           label: ''
@@ -227,7 +374,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: p
+          element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -254,125 +401,55 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_hours:
-          id: field_hours
-          table: taxonomy_term__field_hours
-          field: field_hours
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: p
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
       filters:
-        vid:
-          id: vid
-          table: taxonomy_term_field_data
-          field: vid
-          value:
-            campus_resources: campus_resources
-          entity_type: taxonomy_term
-          entity_field: vid
-          plugin_id: bundle
-        field_location_value:
-          id: field_location_value
-          table: taxonomy_term__field_location
-          field: field_location_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: 'not empty'
-          value: ''
-          group: 1
-          exposed: false
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
           expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
             operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: string
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            program: program
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
       sorts: {  }
-      title: 'Resource Information'
       header: {  }
       footer: {  }
       empty: {  }
-      relationships: {  }
+      relationships:
+        field_director_contact:
+          id: field_director_contact
+          table: node__field_director_contact
+          field: field_director_contact
+          relationship: none
+          group_type: group
+          admin_label: 'field_director_contact: User'
+          required: false
+          plugin_id: standard
+        field_contact_2:
+          id: field_contact_2
+          table: node__field_contact_2
+          field: field_contact_2
+          relationship: none
+          group_type: group
+          admin_label: 'field_contact_2: User'
+          required: false
+          plugin_id: standard
       arguments:
-        tid:
-          id: tid
-          table: taxonomy_term_field_data
-          field: tid
+        nid:
+          id: nid
+          table: node_field_data
+          field: nid
           relationship: none
           group_type: group
           admin_label: ''
@@ -383,14 +460,8 @@ display:
             title: All
           title_enable: false
           title: ''
-          default_argument_type: taxonomy_tid
-          default_argument_options:
-            term_page: '1'
-            limit: true
-            vids:
-              campus_resources: campus_resources
-            anyall: ','
-            node: false
+          default_argument_type: node
+          default_argument_options: {  }
           default_argument_skip_url: false
           summary_options:
             base_path: ''
@@ -408,21 +479,25 @@ display:
           validate_options: {  }
           break_phrase: false
           not: false
-          entity_type: taxonomy_term
-          entity_field: tid
-          plugin_id: taxonomy
+          entity_type: node
+          entity_field: nid
+          plugin_id: node_nid
       display_extenders: {  }
+      title: 'Find Out More'
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - url.query_args
+        - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.taxonomy_term.field_hours'
-        - 'config:field.storage.taxonomy_term.field_location'
-        - 'config:field.storage.taxonomy_term.field_phone'
+        - 'config:field.storage.user.field_email'
+        - 'config:field.storage.user.field_first_name'
+        - 'config:field.storage.user.field_last_name'
+        - 'config:field.storage.user.field_phone'
   block_1:
     display_plugin: block
     id: block_1
@@ -436,8 +511,11 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - url.query_args
+        - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.taxonomy_term.field_hours'
-        - 'config:field.storage.taxonomy_term.field_location'
-        - 'config:field.storage.taxonomy_term.field_phone'
+        - 'config:field.storage.user.field_email'
+        - 'config:field.storage.user.field_first_name'
+        - 'config:field.storage.user.field_last_name'
+        - 'config:field.storage.user.field_phone'

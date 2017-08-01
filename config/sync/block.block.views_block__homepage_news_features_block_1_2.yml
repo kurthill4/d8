@@ -1,31 +1,30 @@
-uuid: 3fab9db9-5cc4-4064-bbac-6c0d5f8683dc
+uuid: 389e730e-ad0e-4e7b-a1c8-cffa58705f09
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.resource_web_pages
+    - views.view.homepage_news_features
   module:
     - system
     - views
   theme:
     - miramar
-id: views_block__resource_web_pages_block_1
+id: views_block__homepage_news_features_block_1_2
 theme: miramar
-region: sidebar_second
-weight: -16
+region: content
+weight: 0
 provider: null
-plugin: 'views_block:resource_web_pages-block_1'
+plugin: 'views_block:homepage_news_features-block_1'
 settings:
-  id: 'views_block:resource_web_pages-block_1'
+  id: 'views_block:homepage_news_features-block_1'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
   items_per_page: none
-  context_mapping: {  }
 visibility:
   request_path:
     id: request_path
-    pages: '/campus/*'
+    pages: /news
     negate: false
     context_mapping: {  }
