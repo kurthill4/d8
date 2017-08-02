@@ -19,7 +19,7 @@ default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'avi mp4 mov wmv flv'
+  file_extensions: 'avi mp4 mov wmv flv m4v'
   max_filesize: ''
   description_field: true
   handler: 'default:file'
