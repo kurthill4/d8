@@ -695,6 +695,9 @@ nav.mobile-nav li:first-child ol li{
 	color: #fff;
 	line-height: 49px;
 }
+.important-dates ul a {
+	font-size:1.25em;
+}
 .wh-box, .mr-block, .news-block, .grn-block, footer{
 	overflow: hidden;
 }
@@ -969,8 +972,10 @@ footer h4{
 	text-decoration: none;
 	padding: 0 7px;
 }
-#block-views-block-resource-information-block-1 {background: #d1d4d3 }
-#block-views-block-resource-information-block-1 p {font-size:0.8em}
+#block-views-block-resource-information-block-1,#block-views-block-program-block-block-1 {background: #d1d4d3 }
+#block-views-block-resource-information-block-1 p,#block-views-block-program-block-block-1 p {font-size:0.8em}
+
+.prog-block h3:before {content:url(../images/icon-globe.png);}
 .campus-alert{
 	background: #ee1c1c;
 }
@@ -1134,6 +1139,8 @@ width:100%;
 .news-block-2 td {font-size:0.75em}
 .news-block-2 tr td:first-child {width:100px!important;}
 .news-block-2 td img {width:100px!important;}
+.news-block-3 img {float:left;}
+.news-block-3 p {width:25%;}
 .recent-jobs{
 	position: relative;
 	margin: 10px 0 0;
