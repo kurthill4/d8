@@ -297,6 +297,7 @@ display:
           plugin_id: 'null'
       display_extenders: {  }
       title: 'Resource Web Pages'
+      group_by: true
     cache_metadata:
       max-age: -1
       contexts:

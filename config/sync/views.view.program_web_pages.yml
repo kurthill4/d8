@@ -260,7 +260,7 @@ display:
             fail: 'not found'
           validate_options: {  }
           break_phrase: false
-          not: true
+          not: false
           entity_type: node
           entity_field: nid
           plugin_id: node_nid

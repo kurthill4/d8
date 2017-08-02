@@ -1,30 +1,31 @@
-uuid: 389e730e-ad0e-4e7b-a1c8-cffa58705f09
+uuid: f83df366-e24f-4841-b1ae-0819667e2240
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.homepage_news_features
+    - views.view.documents
   module:
     - system
     - views
   theme:
     - miramar
-id: views_block__homepage_news_features_block_1_2
+id: views_block__documents_block_3
 theme: miramar
-region: content
+region: below_content
 weight: 0
 provider: null
-plugin: 'views_block:homepage_news_features-block_1'
+plugin: 'views_block:documents-block_3'
 settings:
-  id: 'views_block:homepage_news_features-block_1'
+  id: 'views_block:documents-block_3'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
   items_per_page: none
+  context_mapping: {  }
 visibility:
   request_path:
     id: request_path
-    pages: /news
+    pages: '/programs/*'
     negate: false
     context_mapping: {  }
