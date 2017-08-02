@@ -1,22 +1,22 @@
-uuid: 29a847b6-468c-4775-9781-fef537195e1a
+uuid: 30fe933c-743c-49c7-8e58-bf0510fd7cad
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.program_block
+    - views.view.program_contact
   module:
     - ctools
     - views
   theme:
     - miramar
-id: views_block__program_block_block_1
+id: views_block__program_contact_block_1
 theme: miramar
 region: sidebar_second
 weight: -21
 provider: null
-plugin: 'views_block:program_block-block_1'
+plugin: 'views_block:program_contact-block_1'
 settings:
-  id: 'views_block:program_block-block_1'
+  id: 'views_block:program_contact-block_1'
   label: ''
   provider: views
   label_display: visible

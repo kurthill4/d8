@@ -56,16 +56,44 @@ display:
           items_per_page: 3
           offset: 0
       style:
-        type: grid
+        type: table
         options:
           grouping: {  }
-          columns: 2
-          automatic_width: true
-          alignment: horizontal
-          col_class_default: true
-          col_class_custom: ''
-          row_class_default: true
-          row_class_custom: ''
+          row_class: ''
+          default_row_class: false
+          override: true
+          sticky: false
+          caption: ''
+          summary: ''
+          description: ''
+          columns:
+            field_image: field_image
+            title: title
+            nothing: nothing
+          info:
+            field_image:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            title:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            nothing:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          default: '-1'
+          empty_table: false
       row:
         type: fields
         options:
@@ -73,7 +101,6 @@ display:
           inline:
             field_image: field_image
             title: title
-            nothing: nothing
           separator: ''
           hide_empty: false
       fields:
@@ -303,7 +330,7 @@ display:
       link_url: /news
       link_display: custom_url
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -322,26 +349,7 @@ display:
       defaults:
         title: false
     cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.field_image'
-  block_2:
-    display_plugin: block
-    id: block_2
-    display_title: 'Block 2'
-    position: 2
-    display_options:
-      display_extenders: {  }
-      title: 'All News'
-      defaults:
-        title: false
-    cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'

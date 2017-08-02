@@ -695,8 +695,15 @@ nav.mobile-nav li:first-child ol li{
 	color: #fff;
 	line-height: 49px;
 }
-.important-dates ul a {
+.important-dates ul p {
 	font-size:1.25em;
+}
+.important-dates ul a {
+	color:#000000;
+}
+.important-dates ul a:hover {
+	color:#000000;
+	text-decoration:underline;
 }
 .wh-box, .mr-block, .news-block, .grn-block, footer{
 	overflow: hidden;

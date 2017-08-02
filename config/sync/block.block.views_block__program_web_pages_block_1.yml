@@ -1,6 +1,6 @@
 uuid: f276993f-257b-4633-9add-824d69137437
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.program_web_pages
@@ -13,7 +13,7 @@ dependencies:
 id: views_block__program_web_pages_block_1
 theme: miramar
 region: sidebar_second
-weight: -15
+weight: -11
 provider: null
 plugin: 'views_block:program_web_pages-block_1'
 settings:

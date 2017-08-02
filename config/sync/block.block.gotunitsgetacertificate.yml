@@ -1,20 +1,23 @@
-uuid: 1f3215ea-4365-44eb-9865-32de67962e2b
+uuid: f948ca26-e5d0-4ed1-85ef-7f799bc7735a
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:program_document_links:e2879964-8b23-4b29-b566-27d6bdc99719'
   module:
+    - block_content
     - ctools
   theme:
     - miramar
-id: certificatelinks
+id: gotunitsgetacertificate
 theme: miramar
 region: content
 weight: -14
 provider: null
-plugin: 'block_content:dad7d2be-8ba0-42d8-8f3c-fc808b1b96c7'
+plugin: 'block_content:e2879964-8b23-4b29-b566-27d6bdc99719'
 settings:
-  id: 'block_content:dad7d2be-8ba0-42d8-8f3c-fc808b1b96c7'
-  label: 'Got Units? Get a Certificate!'
+  id: 'block_content:e2879964-8b23-4b29-b566-27d6bdc99719'
+  label: 'Got Units?  Get a Certificate!'
   provider: block_content
   label_display: visible
   status: true
