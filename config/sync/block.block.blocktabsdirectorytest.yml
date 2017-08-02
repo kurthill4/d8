@@ -12,7 +12,7 @@ dependencies:
 id: blocktabsdirectorytest
 theme: miramar
 region: content
-weight: -11
+weight: -12
 provider: null
 plugin: 'blocktabs_block:directory_test'
 settings:
