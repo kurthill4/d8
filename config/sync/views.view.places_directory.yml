@@ -597,7 +597,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h4 class="hide-lg hide-xl"><a href="/directory/people">Find Faculty &amp; Staff</a></h4>'
+            value: "<h4 class=\"hide-lg hide-xl\"><a href=\"/directory/people\">Find Faculty &amp; Staff</a></h4>\n<h4 class=\"hide-lg hide-xl\"><a href=\"/directory/departments\">Find Academic Departments</a></h4>"
             format: full_html
           plugin_id: text
       footer: {  }
@@ -614,7 +614,8 @@ display:
           plugin_id: standard
       arguments: {  }
       display_extenders: {  }
-      css_class: dcf-content
+      css_class: 'dcf-content faculty'
+      title: 'Campus Resources'
     cache_metadata:
       max-age: 0
       contexts:
