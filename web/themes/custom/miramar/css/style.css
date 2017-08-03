@@ -498,14 +498,14 @@ nav.mobile-nav li:first-child ol li{
 }
 .notfront .banner-content,.custom .banner-content{
 	position: absolute;
-	bottom:10%;
+	bottom:5%;
 	left: 15px;
 	z-index:10;
 	color:#ffffff;
 }
 
 .notfront .banner-content {
-	bottom:10%;
+	bottom:5%;
 
 }
 .custom .banner-content{
@@ -1484,12 +1484,12 @@ ul.dp-menu li:hover a{
 /*.program-list-panel .col-md-2 a:hover img {
 	filter: brightness(100%);
 }*/
-table.faculty {width:100%!important;}
-table.faculty thead th {
+.faculty table {width:100%!important;}
+.faculty table thead th {
     color: #31b6c7;
     font-size: 20pt;#fl
 }
-table.faculty thead th i {
+.faculty table thead th i {
 	color: #91a2a3;
 }
 .directory input[type="text"] {
