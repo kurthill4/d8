@@ -1,26 +1,26 @@
-uuid: f3f93bb6-aa6f-4df5-b728-55ea36bb3f28
+uuid: aa9e4ed6-a43c-4e4d-bbae-6646d18abbeb
 langcode: en
 status: true
 dependencies:
   module:
-    - search
     - system
+    - youtubechannel
   theme:
     - miramar
-id: searchform
+id: youtubechannel
 theme: miramar
-region: content
-weight: -11
+region: below_content
+weight: 0
 provider: null
-plugin: search_form_block
+plugin: youtubechannel_block
 settings:
-  id: search_form_block
-  label: 'Search form'
-  provider: search
+  id: youtubechannel_block
+  label: 'Youtube Channel'
+  provider: youtubechannel
   label_display: visible
 visibility:
   request_path:
     id: request_path
-    pages: "/search\r\n/search/*"
+    pages: /news
     negate: false
     context_mapping: {  }

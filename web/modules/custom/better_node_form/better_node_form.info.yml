@@ -1,0 +1,6 @@
+name: Better Node Form
+type: module
+description: "Displays the Save button at both top and bottom of Node Create form."
+package: Custom
+core: 8.x
+

@@ -85,6 +85,7 @@
         "drupal/video_embed_field": "^1.5",
         "drupal/views_bootstrap": "3.x-dev",
         "drupal/views_jump_menu": "^1.0@beta",
+        "drupal/youtubechannel": "^3.0",
         "drush/drush": "~8.0",
         "kenwheeler/slick": "^1.6",
         "kint-php/kint": "^2.0",

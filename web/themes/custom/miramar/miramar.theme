@@ -55,7 +55,8 @@ use Drupal\taxonomy\Entity\Term;
  */
 
 function miramar_preprocess_page(&$variables) {
-	if($variables['node'])
+	extract($variables);
+	if(!empty($variables['node']))
 	{
 		$node = $variables['node'];
 
