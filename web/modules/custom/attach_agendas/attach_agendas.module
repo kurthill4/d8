@@ -1,0 +1,47 @@
+<?php
+    use \Drupal\node\Entity\Node;
+    use \Drupal\file\Entity\File;
+	
+	$path = '/home/webmaster/web-projects/dev/web/sites/default/files/';
+	$newpath = 'public://';
+	
+	$query = \Drupal::entityQuery('node')
+		->condition('type', 'committee_meeting');
+	$nids = $query->execute();
+function attachem() {
+	foreach ($nids as $nid) {
+		$node = node_load($nid, NULL, TRUE);
+		$fileCode = $node->field_file_code->getString();
+		$fileCodeNum = $node->field_file_code_num->getString();
+		if($fileCodeNum !== '')
+		{
+			$fileCodeAgendas = $fileCode . '-a' . $fileCodeNum;
+			$fileCodeMinutes = $fileCode . '-m' . $fileCodeNum;
+			
+			$pathToAgendas = $path . 'agendas/' . $fileCodeAgendas;
+			$pathToMinutes = $path . 'minutes/' . $fileCodeMinutes;
+			
+			echo $pathToAgendas . "<br>" . $pathToMinutes . "<br>";
+			
+			
+		// Create file object from a locally copied file.
+			if(file_exists($pathToAgendas))
+			{
+				$uriAgendas = file_unmanaged_copy($pathToAgendas, $newpath . 'committees/agendas/' . $fileCodeAgendas,FILE_EXISTS_REPLACE);
+				$agendas = File::Create(['uri' => $uriAgendas,]);
+				$agendas->save();
+				$node->field_agenda->setValue(['target_id' => $agendas->id(),]);
+			}
+
+			if(file_exists($pathToMinutes))
+			{
+				$uriMinutes = file_unmanaged_copy($pathToMinutes, $newpath . 'committees/minutes/' . $fileCodeMinutes,FILE_EXISTS_REPLACE);
+				$minutes = File::Create(['uri' => $uriMinutes,]);
+				$minutes->save();
+				$node->field_minutes->setValue(['target_id' => $minutes->id(),]);
+			}
+		$node->save();
+		\Drupal::entityManager()->getStorage('node')->resetCache(array($nid));
+		}
+	}
+}

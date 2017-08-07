@@ -1,0 +1,6 @@
+name: Attach Agendas
+type: module
+description: "Programmatically attaches agendas and minutes to existing Committee Meetings"
+package: Custom
+core: 8.x
+
