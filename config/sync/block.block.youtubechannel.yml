@@ -1,0 +1,26 @@
+uuid: aa9e4ed6-a43c-4e4d-bbae-6646d18abbeb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - youtubechannel
+  theme:
+    - miramar
+id: youtubechannel
+theme: miramar
+region: below_content
+weight: 0
+provider: null
+plugin: youtubechannel_block
+settings:
+  id: youtubechannel_block
+  label: 'Youtube Channel'
+  provider: youtubechannel
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /news
+    negate: false
+    context_mapping: {  }

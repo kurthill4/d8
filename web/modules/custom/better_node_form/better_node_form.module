@@ -1,0 +1,61 @@
+<?php
+/**
+* Implementation of HOOK_form_alter()
+*/
+function better_node_form_form_alter(&$form, $form_state, $form_id) {
+
+  /**
+   * Copy the action buttons (submit, preview, etc ..) 
+   * and place them at the top of the form
+   */
+  if(!empty($form['actions'])) {
+
+    foreach($form['actions'] as $name => $button) {
+      
+     // I DEFINE EACH BUTTON SEPERATELY BECAUSE I WISH TO DEFINE THE ORDER
+     // OTHERWISE YOU COULD SIMPLY USE:
+
+
+        $form["$name-copy"] = $button;
+        $form["$name-copy"]['#weight'] = -1000;
+
+
+/*      
+      // SUBMIT BUTTON
+      if($name == 'submit') {
+        // WE NEED TO USE DOUBLE QUOTATION MARKS 
+        // SO PHP CAN SEE AND INTERPRET VARIABLES WITHIN
+        $form["$name-copy"] = $button;
+        $form["$name-copy"]['#weight'] = -1001;
+      }
+      
+      // PREVIEW BUTTON
+      if($name == 'preview') {
+        // WE NEED TO USE DOUBLE QUOTATION MARKS 
+        // SO PHP CAN SEE AND INTERPRET VARIABLES WITHIN
+        $form["$name-copy"] = $button;
+        $form["$name-copy"]['#weight'] = -1000;
+      }
+      
+      // CHANGES DEPENDS ON DIFF MODULE
+      if($name == 'preview_changes') {
+        // WE NEED TO USE DOUBLE QUOTATION MARKS 
+        // SO PHP CAN SEE AND INTERPRET VARIABLES WITHIN
+        $form["$name-copy"] = $button;
+        $form["$name-copy"]['#weight'] = -999;
+      }
+      
+      // DELETE BUTTON
+      if($name == 'delete') {
+        // WE NEED TO USE DOUBLE QUOTATION MARKS 
+        // SO PHP CAN SEE AND INTERPRET VARIABLES WITHIN
+        $form["$name-copy"] = $button;
+        $form["$name-copy"]['#weight'] = -998;
+      }  */          
+
+    } // end foreach 
+  }
+
+}
+
+
