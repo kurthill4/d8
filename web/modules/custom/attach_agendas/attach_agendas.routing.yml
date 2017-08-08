@@ -1,0 +1,8 @@
+attach_agendas.admin_settings:
+  path: '/admin/config/media/attach_agendas'
+  defaults:
+    _form: '\Drupal\attach_agendas\Form\AttachAgendasForm'
+    _title: 'Attach Agendas'
+  requirements:
+    _permission: 'administer site configuration'
+

@@ -1,14 +1,34 @@
 <?php
-    use \Drupal\node\Entity\Node;
-    use \Drupal\file\Entity\File;
-	
-	$path = '/home/webmaster/web-projects/dev/web/sites/default/files/';
+use Drupal\Core\Routing\RouteMatchInterface;
+use \Drupal\node\Entity\Node;
+use \Drupal\file\Entity\File;
+
+
+/**
+ * Implements hook_help().
+ */
+function attach_agendas_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.attach_agendas':
+      return t('
+        <h2>Attach Agendas</h2>
+        <h3>Instructions</h3>
+        <p>You need two folders, preferably in /sites/default/files.</p>
+        <p>"agendas" holds agendas; "minutes" holds minutes</p>
+        <p>Type in the absolute path to these folders. Include trailing slash but do NOT include"agendas" or "minutes."</p>
+        <p>Submit the form and wait.</p>'
+	);
+  }
+}
+
+function attachem($pathIn,$form_state = null) {
+	//$path = '/home/webmaster/web-projects/dev/web/sites/default/files/';
+	$path = $pathIn;
 	$newpath = 'public://';
-	
+
 	$query = \Drupal::entityQuery('node')
 		->condition('type', 'committee_meeting');
 	$nids = $query->execute();
-function attachem() {
 	foreach ($nids as $nid) {
 		$node = node_load($nid, NULL, TRUE);
 		$fileCode = $node->field_file_code->getString();
@@ -17,13 +37,11 @@ function attachem() {
 		{
 			$fileCodeAgendas = $fileCode . '-a' . $fileCodeNum;
 			$fileCodeMinutes = $fileCode . '-m' . $fileCodeNum;
-			
+	
 			$pathToAgendas = $path . 'agendas/' . $fileCodeAgendas;
 			$pathToMinutes = $path . 'minutes/' . $fileCodeMinutes;
-			
-			echo $pathToAgendas . "<br>" . $pathToMinutes . "<br>";
-			
-			
+	
+	
 		// Create file object from a locally copied file.
 			if(file_exists($pathToAgendas))
 			{

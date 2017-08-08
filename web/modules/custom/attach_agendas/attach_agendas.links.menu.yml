@@ -1,0 +1,6 @@
+attach_agendas.admin_settings:
+  title: 'Attach Agendas'
+  description: 'Attach files to existing Committee Meetings'
+  route_name: attach_agendas.admin_settings
+  parent: system.admin_config_media
+  weight: 10
