@@ -1,31 +1,30 @@
-uuid: f83df366-e24f-4841-b1ae-0819667e2240
+uuid: 0ae80a88-d07e-40a3-8229-b9f82e532db6
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.documents
+    - views.view.news_sidebar
   module:
     - system
     - views
   theme:
     - miramar
-id: views_block__documents_block_3
+id: views_block__news_sidebar_block_2
 theme: miramar
-region: below_content
-weight: -19
+region: content
+weight: -11
 provider: null
-plugin: 'views_block:documents-block_3'
+plugin: 'views_block:news_sidebar-block_2'
 settings:
-  id: 'views_block:documents-block_3'
+  id: 'views_block:news_sidebar-block_2'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
   items_per_page: none
-  context_mapping: {  }
 visibility:
   request_path:
     id: request_path
-    pages: '/programs/*'
+    pages: /news
     negate: false
     context_mapping: {  }

@@ -4823,7 +4823,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/youtubechannel-8.x-3.0.zip",
-                "reference": null,
+                "reference": "8.x-3.0",
                 "shasum": "33aaf59c4aea010dd88e4dce7038358ade65c8d0"
             },
             "require": {

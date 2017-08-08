@@ -12,7 +12,7 @@ dependencies:
 id: views_block__pathway_resources_block_2
 theme: miramar
 region: below_content
-weight: -17
+weight: -21
 provider: null
 plugin: 'views_block:pathway_resources-block_2'
 settings:

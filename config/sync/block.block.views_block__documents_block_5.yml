@@ -12,7 +12,7 @@ dependencies:
 id: views_block__documents_block_5
 theme: miramar
 region: below_content
-weight: -18
+weight: -22
 provider: null
 plugin: 'views_block:documents-block_5'
 settings:
