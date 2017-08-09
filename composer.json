@@ -84,6 +84,7 @@
         "drupal/twitter_block": "^2.1",
         "drupal/video_embed_field": "^1.5",
         "drupal/views_bootstrap": "3.x-dev",
+        "drupal/views_data_export": "^1.0@alpha",
         "drupal/views_jump_menu": "^1.0@beta",
         "drupal/youtubechannel": "^3.0",
         "drush/drush": "~8.0",

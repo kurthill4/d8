@@ -435,6 +435,13 @@ nav.mobile-nav li:first-child ol li{
   -o-background-size: 1280px 853px;
   background-size: 1280px 853px;
 }
+.slide-5{
+	background: transparent url(../images/herofront/Pony.png) no-repeat left top local;
+  -webkit-background-size: 1280px 853px;
+  -moz-background-size: 1280px 853px;
+  -o-background-size: 1280px 853px;
+  background-size: 1280px 853px;
+}
 .slide-cr{
 	background: transparent url(../images/campus-resources-banner.png) no-repeat left top scroll;
   -webkit-background-size: 1280px 600px;
@@ -1815,6 +1822,13 @@ td.resources-students {
 }
 .slide-4{
 	background: transparent url(../images/herofront/Hero_5.png) no-repeat left top local;
+  -webkit-background-size: 960px 640px;
+  -moz-background-size: 960px 640px;
+  -o-background-size: 960px 640px;
+  background-size: 960px 640px;
+}
+.slide-5{
+	background: transparent url(../images/herofront/Pony.png) no-repeat left top local;
   -webkit-background-size: 960px 640px;
   -moz-background-size: 960px 640px;
   -o-background-size: 960px 640px;
