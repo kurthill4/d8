@@ -21,7 +21,7 @@ function attach_agendas_help($route_name, RouteMatchInterface $route_match) {
   }
 }
 
-function attachem($pathIn,$form_state = null) {
+function attachem($pathIn,$form_state) {
 	//$path = '/home/webmaster/web-projects/dev/web/sites/default/files/';
 	$path = $pathIn;
 	$newpath = 'public://';
@@ -40,7 +40,6 @@ function attachem($pathIn,$form_state = null) {
 	
 			$pathToAgendas = $path . 'agendas/' . $fileCodeAgendas;
 			$pathToMinutes = $path . 'minutes/' . $fileCodeMinutes;
-	
 	
 		// Create file object from a locally copied file.
 			if(file_exists($pathToAgendas))
