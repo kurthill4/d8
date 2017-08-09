@@ -1,0 +1,34 @@
+uuid: c922c792-894b-492f-9eb1-0155e3150404
+langcode: en
+status: true
+dependencies: {  }
+id: meeting555
+migration_tags: null
+migration_group: null
+label: 'Import committee meetings'
+source:
+  plugin: csv
+  path: /home/webmaster/meetings.csv
+  header_row_count: 1
+  keys:
+    - Id1
+process:
+  title: title
+  field_file_code: code
+  field_file_code_num: file
+  field_meeting_date:
+    plugin: format_date
+    from_format: m/d/Y
+    to_format: Y-m-d
+    source: title
+  field_committee:
+    plugin: entity_lookup
+    entity_type: node
+    value_key: title
+    source: name
+  type:
+    plugin: default_value
+    default_value: committee_meeting
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

@@ -1,0 +1,20 @@
+<?php
+use Drupal\Core\Routing\RouteMatchInterface;
+
+
+/**
+ * Implements hook_help().
+ */
+function attach_agendas_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.attach_agendas':
+      return t('
+        <h2>Attach Agendas</h2>
+        <h3>Instructions</h3>
+        <p>You need two folders, preferably in /sites/default/files.</p>
+        <p>"agendas" holds agendas; "minutes" holds minutes</p>
+        <p>Type in the absolute path to these folders. Include trailing slash but do NOT include"agendas" or "minutes."</p>
+        <p>Submit the form and wait.</p>'
+	);
+  }
+}

@@ -398,10 +398,10 @@ display:
     display_options:
       display_extenders: {  }
       arguments:
-        field_associated_committee_page_target_id:
-          id: field_associated_committee_page_target_id
-          table: node__field_associated_committee_page
-          field: field_associated_committee_page_target_id
+        field_associated_committee_target_id:
+          id: field_associated_committee_target_id
+          table: node__field_associated_committee
+          field: field_associated_committee_target_id
           relationship: none
           group_type: group
           admin_label: ''

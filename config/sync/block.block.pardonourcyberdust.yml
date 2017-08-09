@@ -12,7 +12,7 @@ dependencies:
 id: pardonourcyberdust
 theme: miramar
 region: content
-weight: -13
+weight: -14
 provider: null
 plugin: 'block_content:74e0b0f9-43a1-48af-8cfb-f9fb383cb710'
 settings:
