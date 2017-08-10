@@ -407,6 +407,13 @@ nav.mobile-nav li:first-child ol li{
   height: 100vh;
 	color: #fff;
 }
+.slide-0{
+ /*	background: transparent no-repeat left top scroll;*/
+ -webkit-background-size: 1280 px 853px!important;
+  -moz-background-size: 1280px 853px!important;
+  -o-background-size: 1280px 853px!important;
+  background-size: 1280px 853px!important;
+}
 .slide-1{
 	background: transparent url(../images/herofront/Hero_1.png) no-repeat left top local;
   -webkit-background-size: 1280 px 853px;
@@ -1799,6 +1806,12 @@ td.resources-students {
 	 /* Medium Devices, Desktops */
 	 @media only screen and (max-width : 992px) {
 .body {max-width:960px;}
+.slide-0{
+  -webkit-background-size: 960px 640px!important;
+  -moz-background-size: 960px 640px!important;
+  -o-background-size: 960px 640px!important;
+  background-size: 960px 640px!important;
+}
 .slide-1{
 	background: transparent url(../images/herofront/Hero_1.png) no-repeat left top local;
   -webkit-background-size: 960px 640px;

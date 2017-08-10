@@ -61,17 +61,33 @@ function miramar_preprocess_page(&$variables) {
 		$node = $variables['node'];
 
 		// Sets up program custom hero image for display
-
-		if($node->getType() == "program")
+		
+		switch($node->getType())
 		{
-			$image = $node->field_program_hero_image;		// Extract field value from content
-			if(!$image->isEmpty())
-			{
-				$imageUri = $image->entity->getFileUri();	// Build URL to image for Twig display
-				$pgmHero = file_create_url($imageUri);
-				$variables['hero'] = $pgmHero;
-				$variables['pgmtitle'] = $node->get('title')->value;
+			case"program": {
+				$image = $node->field_program_hero_image;		// Extract field value from content
+				if(!$image->isEmpty()) {
+					$imageUri = $image->entity->getFileUri();	// Build URL to image for Twig display
+					$pgmHero = file_create_url($imageUri);
+					$variables['hero'] = $pgmHero;
+					$variables['pgmtitle'] = $node->get('title')->value;
+				}
+				break;
 			}
+			case "home_page": {
+				$nids = \Drupal::entityQuery('node')->condition('type','homepage_hero')->execute();
+				$targetNodes =  \Drupal\node\Entity\Node::loadMultiple($nids);
+				foreach($targetNodes as $targetNode) {
+					$image = $targetNode->field_image;			
+					if(!$image->isEmpty()) {
+						$imageUri = $image->entity->getFileUri();
+						$homeHero = file_create_url($imageUri);
+						$variables['home_hero'][] = $homeHero;
+					}
+				}
+				break;
+			}
+			default: {}
 		}
 
 	}
