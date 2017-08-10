@@ -67,3 +67,12 @@ Deep structural changes were made to the Directory Listing content type. Somehow
 
 2017-07-14
 Testing a patched version of Calendar on another branch. Not ready to commit.
+
+2017-08-10
+Tested SQL query to change all usernames to whatever their email name is.
+
+UPDATE users_field_data
+SET name = LEFT(mail, LOCATE('@',mail)-1)
+WHERE name IS NOT NULL
+AND mail IS NOT NULL
+AND NOT name LIKE '%admin%'

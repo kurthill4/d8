@@ -60,7 +60,7 @@ function miramar_preprocess_page(&$variables) {
 	{
 		$node = $variables['node'];
 
-		// Sets up program custom hero image for display
+		// Sets up custom hero images for display on Program or home page
 		
 		switch($node->getType())
 		{
@@ -75,9 +75,10 @@ function miramar_preprocess_page(&$variables) {
 				break;
 			}
 			case "home_page": {
-				$nids = \Drupal::entityQuery('node')->condition('type','homepage_hero')->execute();
-				$targetNodes =  \Drupal\node\Entity\Node::loadMultiple($nids);
-				foreach($targetNodes as $targetNode) {
+				$nids = \Drupal::entityQuery('node')->
+					condition('type','homepage_hero')->execute();		// Get Homepage Hero content type
+				$targetNodes =  \Drupal\node\Entity\Node::loadMultiple($nids);	// Now, load the nodes
+				foreach($targetNodes as $targetNode) {				// Loop through content types
 					$image = $targetNode->field_image;			
 					if(!$image->isEmpty()) {
 						$imageUri = $image->entity->getFileUri();
