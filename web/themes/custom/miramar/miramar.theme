@@ -65,12 +65,12 @@ function miramar_preprocess_page(&$variables) {
 		switch($node->getType())
 		{
 			case"program": {
-				$image = $node->field_program_hero_image;		// Extract field value from content
-				if(!$image->isEmpty()) {
-					$imageUri = $image->entity->getFileUri();	// Build URL to image for Twig display
-					$pgmHero = file_create_url($imageUri);
-					$variables['hero'] = $pgmHero;
-					$variables['pgmtitle'] = $node->get('title')->value;
+				$image = $node->field_program_hero_image;			// Extract field value from content
+				if(!$image->isEmpty()) {					// Is there data?
+					$imageUri = $image->entity->getFileUri();		// Build URL to image
+					$pgmHero = file_create_url($imageUri);			//	for Twig display
+					$variables['hero'] = $pgmHero;				// Load URL into a Twig variable
+					$variables['pgmtitle'] = $node->get('title')->value;	// Load page title into a Twig variable
 				}
 				break;
 			}
@@ -79,16 +79,17 @@ function miramar_preprocess_page(&$variables) {
 					condition('type','homepage_hero')->execute();		// Get Homepage Hero content type
 				$targetNodes =  \Drupal\node\Entity\Node::loadMultiple($nids);	// Now, load the nodes
 				foreach($targetNodes as $targetNode) {				// Loop through content types
-					$image = $targetNode->field_image;			
-					if(!$image->isEmpty()) {
-						$imageUri = $image->entity->getFileUri();
-						$homeHero = file_create_url($imageUri);
-						$variables['home_hero'][] = $homeHero;
+					$image = $targetNode->field_image;			// Get field value
+					if(!$image->isEmpty()) {				// Same as lines 68 - 72
+						$imageUri = $image->entity->getFileUri();	//	except
+						$homeHero = file_create_url($imageUri);		//	with
+						$variables['home_hero'][] = $homeHero;		// 	an array
 					}
 				}
 				break;
 			}
-			default: {}
+			default: {								// Possible future garbage collector
+			}
 		}
 
 	}
@@ -106,9 +107,9 @@ function miramar_preprocess_views_view_row_rss(&$variables) {
     $item = $variables['row'];
     $node = node_load($item->nid);
     $currNode = $node->getType();
-    if($currNode == "campus_news" || $currNode =="event")	// Is the node the correct content type?
+    if($currNode == "campus_news" || $currNode =="event")				// Is the node the correct content type?
     {
-	    switch($node->get('field_format')->value)
+	    switch($node->get('field_format')->value)					// Assign proper media target
 	    {
 		case 'Web':
 		    $format = 0;
@@ -120,7 +121,7 @@ function miramar_preprocess_views_view_row_rss(&$variables) {
 		    $format = 2;
 	    }
     }
-    if($currNode == "campus_news")	// Is the node the correct content type?
+    if($currNode == "campus_news")							// Is the node the correct content type?
     {
 	    $variables['article'] = strip_tags(removeInvalidXML($node->body->value));	// Assign fields to Twig variables
 	    $variables['media_target'] = $format;

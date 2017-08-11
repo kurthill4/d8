@@ -208,7 +208,7 @@ nav.main-menu li{
 	display: inline-block;
 }
 nav.main-menu li:not(:first-child) {
-	margin-right: 40px;
+	margin-right: 2em;
 }
 nav.main-menu li a{
 	color: #fff;
@@ -998,7 +998,11 @@ footer h4{
 #block-views-block-program-block-block-1 {background: #d1d4d3 }
 #block-views-block-resource-information-block-1 p,#block-views-block-program-contact-block-1 p,
 #block-views-block-program-block-block-1 p {font-size:0.8em}
-
+#block-views-block-announcement-block-1 {
+	background: #dbf3f5;
+	padding: 0.5em 1em;
+}
+.announce-block h3 {color:#a12130}
 .campus-alert{
 	background: #ee1c1c;
 }
