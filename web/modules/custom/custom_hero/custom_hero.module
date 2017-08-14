@@ -33,7 +33,7 @@ function custom_hero_preprocess_page(&$variables) {
 				$targetNodes =  \Drupal\node\Entity\Node::loadMultiple($nids);	// Now, load the nodes
 				foreach($targetNodes as $targetNode) {				// Loop through content types
 					$image = $targetNode->field_image;			// Get field value
-					if(!$image->isEmpty()) {				// Same as lines 68 - 72
+					if(!$image->isEmpty()) {				// Same as lines 22 - 25
 						$imageUri = $image->entity->getFileUri();	//	except
 						$homeHero = file_create_url($imageUri);		//	with
 						$variables['home_hero'][] = $homeHero;		// 	an array

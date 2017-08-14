@@ -1,0 +1,25 @@
+uuid: bd9811de-910f-437d-995e-831870762c43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_to_your_file
+    - node.type.document
+  module:
+    - field_token_value
+id: node.document.field_link_to_your_file
+field_name: field_link_to_your_file
+entity_type: node
+bundle: document
+label: 'Link to Your File'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '[node:field_uploaded_file]'
+default_value_callback: ''
+settings:
+  field_value: '<a href="[node:field_uploaded_file]">[node:field_uploaded_file]</a>'
+  remove_empty: 1
+field_type: field_token_value

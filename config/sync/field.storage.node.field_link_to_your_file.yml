@@ -1,0 +1,19 @@
+uuid: 9dc705ee-f4d4-4bac-824c-fdbdf2b7162b
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_token_value
+    - node
+id: node.field_link_to_your_file
+field_name: field_link_to_your_file
+entity_type: node
+type: field_token_value
+settings: {  }
+module: field_token_value
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

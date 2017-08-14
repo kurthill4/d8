@@ -11,7 +11,7 @@ id: node.document.field_uploaded_file
 field_name: field_uploaded_file
 entity_type: node
 bundle: document
-label: 'Uploaded File'
+label: 'File to Upload'
 description: ''
 required: false
 translatable: false
