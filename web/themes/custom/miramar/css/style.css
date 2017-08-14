@@ -557,7 +557,7 @@ nav.mobile-nav li:first-child ol li{
 .get-started a{
 	background: #1d2451;
 	display: inline-block;
-	padding: 0 50px 0 0;
+	padding: 0 110px 0 0;
 	color: #fff;
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
@@ -578,8 +578,11 @@ nav.mobile-nav li:first-child ol li{
 	background: #1d2451;
 }
 .slide-buttons{
-	margin: 15px 0 0 60px;
+	margin: 15px 0 0 0px;
 }
+/*.slide-buttons{
+	margin: 15px 0 0 60px;
+}*/
 .slide-buttons a{
 	display: inline-block;
 	background: #a22130;
