@@ -7,60 +7,7 @@
  */
 
 
-
-
-
 use Drupal\taxonomy\Entity\Term;
-
-/**
- * Implements hook_preprocess_HOOK() for page templates.
- *
- * 
- *
- * 
- */
-
-function miramar_preprocess_page(&$variables) {
-	extract($variables);
-	if(!empty($variables['node']))
-	{
-		$node = $variables['node'];
-
-		// Sets up custom hero images for display on Program or home page
-		
-		switch($node->getType()) {
-			case"program": {
-				$image = $node->field_program_hero_image;			// Extract field value from content
-				if(!$image->isEmpty()) {					// Is there data?
-					$imageUri = $image->entity->getFileUri();		// Build URL to image
-					$pgmHero = file_create_url($imageUri);			//	for Twig display
-					$variables['hero'] = $pgmHero;				// Load URL into a Twig variable
-					$variables['pgmtitle'] = $node->get('title')->value;	// Load page title into a Twig variable
-				}
-				break;
-			}
-			case "home_page": {
-				$nids = \Drupal::entityQuery('node')->
-					condition('type','homepage_hero')->execute();		// Get Homepage Hero content type
-				$targetNodes =  \Drupal\node\Entity\Node::loadMultiple($nids);	// Now, load the nodes
-				foreach($targetNodes as $targetNode) {				// Loop through content types
-					$image = $targetNode->field_image;			// Get field value
-					if(!$image->isEmpty()) {				// Same as lines 68 - 72
-						$imageUri = $image->entity->getFileUri();	//	except
-						$homeHero = file_create_url($imageUri);		//	with
-						$variables['home_hero'][] = $homeHero;		// 	an array
-					}
-				}
-				break;
-			}
-			default: {								// Possible future garbage collector
-			}
-		}
-
-	}
-}
-
-
 
 /**
  * Implements hook_preprocess_HOOK() for block templates.

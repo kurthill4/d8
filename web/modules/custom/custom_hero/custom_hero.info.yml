@@ -1,0 +1,6 @@
+name: Custom Hero
+type: module
+description: "Setup for custom hero images on home page and program pages."
+package: Custom
+core: 8.x
+
