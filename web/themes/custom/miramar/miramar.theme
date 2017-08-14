@@ -18,26 +18,22 @@ function removeInvalidXml($value)
 {
     $ret = "";
     $current;
-    if (empty($value)) 
-    {
+    if (empty($value)) {
         return $ret;
     }
 
     $length = strlen($value);
-    for ($i=0; $i < $length; $i++)
-    {
+    for ($i=0; $i < $length; $i++) {
         $current = ord($value{$i});
         if (($current == 0x9) ||
             ($current == 0xA) ||
             ($current == 0xD) ||
             (($current >= 0x20) && ($current <= 0xD7FF)) ||
             (($current >= 0xE000) && ($current <= 0xFFFD)) ||
-            (($current >= 0x10000) && ($current <= 0x10FFFF)))
-        {
+            (($current >= 0x10000) && ($current <= 0x10FFFF))) {
             $ret .= chr($current);
         }
-        else
-        {
+        else {
             $ret .= " ";
         }
     }
@@ -62,8 +58,7 @@ function miramar_preprocess_page(&$variables) {
 
 		// Sets up custom hero images for display on Program or home page
 		
-		switch($node->getType())
-		{
+		switch($node->getType()) {
 			case"program": {
 				$image = $node->field_program_hero_image;			// Extract field value from content
 				if(!$image->isEmpty()) {					// Is there data?

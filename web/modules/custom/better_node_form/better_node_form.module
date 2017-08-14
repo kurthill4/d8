@@ -2,7 +2,7 @@
 /**
 * Implementation of HOOK_form_alter()
 */
-function better_node_form_form_alter(&$form, $form_state, $form_id) {
+function better_node_form_form_node_form_alter(&$form, $form_state, $form_id) {
 
   /**
    * Copy the action buttons (submit, preview, etc ..) 
