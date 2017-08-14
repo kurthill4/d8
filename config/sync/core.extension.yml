@@ -67,7 +67,6 @@ module:
   paragraphs: 0
   paragraphs_previewer: 0
   path: 0
-  permissions_by_term: 0
   quickedit: 0
   rdf: 0
   redirect: 0
@@ -108,6 +107,7 @@ module:
   menu_link_content: 1
   pathauto: 1
   views: 10
+  tac_lite: 100
   standard: 1000
 theme:
   stable: 0
