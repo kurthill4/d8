@@ -9,10 +9,10 @@ module:
   blazy_ui: 0
   block: 0
   block_content: 0
-  blocktabs: 0
   breakpoint: 0
   calendar: 0
   calendar_datetime: 0
+  cer: 0
   ckeditor: 0
   color: 0
   comment: 0
@@ -58,6 +58,7 @@ module:
   migrate_source_csv: 0
   migrate_tools: 0
   miramarcustom: 0
+  mobile_app: 0
   node: 0
   oauth: 0
   options: 0

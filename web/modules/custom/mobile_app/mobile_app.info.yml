@@ -1,0 +1,6 @@
+name: Mobile App
+type: module
+description: "Formats RSS feed for Miramar College mobile app."
+package: Custom
+core: 8.x
+

@@ -1,0 +1,47 @@
+uuid: d92f9afe-dc15-4a2c-b43c-4f46c0a36537
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_announcement_content
+    - node.type.announcement
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.text_and_image_left
+  module:
+    - entity_reference_revisions
+id: node.announcement.field_announcement_content
+field_name: field_announcement_content
+entity_type: node
+bundle: announcement
+label: 'Announcement Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text: text
+      text_and_image_left: text_and_image_left
+    target_bundles_drag_drop:
+      image:
+        weight: 7
+        enabled: false
+      table:
+        weight: 8
+        enabled: false
+      text:
+        enabled: true
+        weight: 9
+      text_and_image_left:
+        enabled: true
+        weight: 10
+      two_column:
+        weight: 11
+        enabled: false
+      video:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions
