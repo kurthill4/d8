@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3319b77aa2af7bab35946a3c729c5070",
+    "content-hash": "06118324c4fe2839d0a3d97881e84b85",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3898,49 +3898,6 @@
             }
         },
         {
-            "name": "drupal/permissions_by_term",
-            "version": "1.21.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/permissions_by_term",
-                "reference": "8.x-1.21"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/permissions_by_term-8.x-1.21.zip",
-                "reference": "8.x-1.21",
-                "shasum": "5030b7a50a45213e2a3e1c961197c4f60f022127"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.21",
-                    "datestamp": "1500199442"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Peter Majmesku",
-                    "homepage": "https://www.drupal.org/user/786132"
-                }
-            ],
-            "description": "Limits the selection of specific taxonomy terms by users or roles. Prevents users to display nodes and nodes on views pages, for which which they do not have access by taxonomy term restriction.",
-            "homepage": "https://www.drupal.org/project/permissions_by_term",
-            "support": {
-                "source": "http://cgit.drupalcode.org/permissions_by_term"
-            }
-        },
-        {
             "name": "drupal/php",
             "version": "1.0.0-beta1",
             "source": {
@@ -4269,6 +4226,57 @@
             "homepage": "https://www.drupal.org/project/tablefield",
             "support": {
                 "source": "http://cgit.drupalcode.org/tablefield"
+            }
+        },
+        {
+            "name": "drupal/tac_lite",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/tac_lite",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/tac_lite-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "f8468c93d579502a62bd37218ce296cf27ca8706"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1479382442",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Cohen",
+                    "homepage": "https://www.drupal.org/user/18468"
+                },
+                {
+                    "name": "mukila",
+                    "homepage": "https://www.drupal.org/user/3223526"
+                }
+            ],
+            "description": "Simple access control based on categories.",
+            "homepage": "https://www.drupal.org/project/tac_lite",
+            "support": {
+                "source": "http://cgit.drupalcode.org/tac_lite"
             }
         },
         {
