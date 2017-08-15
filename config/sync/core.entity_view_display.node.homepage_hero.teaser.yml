@@ -1,0 +1,28 @@
+uuid: 61b2a969-372f-402c-856f-2e5b20df6c25
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.homepage_hero.body
+    - node.type.homepage_hero
+  module:
+    - text
+    - user
+id: node.homepage_hero.teaser
+targetEntityType: node
+bundle: homepage_hero
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

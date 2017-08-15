@@ -1,0 +1,179 @@
+tac_lite_categories:
+  campus_resources: campus_resources
+tac_lite_schemes: '2'
+menu_rebuild_needed: true
+_core:
+  default_config_hash: O3rsbjEveBvnof1Hdq3ih8UBqlRN2betEk9OZhaiTPM
+tac_lite_config_scheme_1:
+  name: Everyone
+  perms:
+    grant_view: grant_view
+  unpublished: 0
+  term_visibility: 0
+tac_lite_grants_scheme_1:
+  anonymous:
+    campus_resources:
+      263: '263'
+      265: '265'
+      266: '266'
+      267: '267'
+      264: '264'
+      282: '282'
+      283: '283'
+      285: '285'
+      286: '286'
+      287: '287'
+      268: '268'
+      269: '269'
+      270: '270'
+      271: '271'
+      272: '272'
+      273: '273'
+      275: '275'
+      276: '276'
+      277: '277'
+      294: '294'
+      296: '296'
+      297: '297'
+      298: '298'
+      299: '299'
+      300: '300'
+      301: '301'
+      302: '302'
+      252: '252'
+      253: '253'
+      254: '254'
+      255: '255'
+      256: '256'
+      257: '257'
+      260: '260'
+      258: '258'
+      259: '259'
+      262: '262'
+      261: '261'
+      278: '278'
+      280: '280'
+      310: '310'
+      279: '279'
+      281: '281'
+      303: '303'
+      304: '304'
+      305: '305'
+      307: '307'
+      308: '308'
+      288: '288'
+      293: '293'
+      290: '290'
+      291: '291'
+      289: '289'
+  authenticated:
+    campus_resources:
+      263: '263'
+      265: '265'
+      266: '266'
+      267: '267'
+      264: '264'
+      282: '282'
+      283: '283'
+      285: '285'
+      286: '286'
+      287: '287'
+      268: '268'
+      269: '269'
+      270: '270'
+      271: '271'
+      272: '272'
+      273: '273'
+      275: '275'
+      276: '276'
+      277: '277'
+      294: '294'
+      296: '296'
+      297: '297'
+      298: '298'
+      299: '299'
+      300: '300'
+      301: '301'
+      302: '302'
+      252: '252'
+      253: '253'
+      254: '254'
+      255: '255'
+      256: '256'
+      257: '257'
+      260: '260'
+      258: '258'
+      259: '259'
+      262: '262'
+      261: '261'
+      278: '278'
+      280: '280'
+      310: '310'
+      279: '279'
+      281: '281'
+      303: '303'
+      304: '304'
+      305: '305'
+      307: '307'
+      308: '308'
+      288: '288'
+      293: '293'
+      290: '290'
+      291: '291'
+      289: '289'
+  administrator:
+    campus_resources: {  }
+  admin:
+    campus_resources: {  }
+  event_manager:
+    campus_resources: {  }
+  content_editor:
+    campus_resources: {  }
+  content_publisher:
+    campus_resources: {  }
+  custom_web_page_manager:
+    campus_resources: {  }
+  dean:
+    campus_resources: {  }
+  block_manager:
+    campus_resources: {  }
+  taxonomy_manager:
+    campus_resources: {  }
+  user_manager:
+    campus_resources: {  }
+  faculty:
+    campus_resources: {  }
+tac_lite_config_scheme_2:
+  name: Edit
+  perms:
+    grant_view: grant_view
+    grant_update: grant_update
+  unpublished: 0
+  term_visibility: 0
+tac_lite_grants_scheme_2:
+  anonymous:
+    campus_resources: {  }
+  authenticated:
+    campus_resources: {  }
+  administrator:
+    campus_resources: {  }
+  admin:
+    campus_resources: {  }
+  event_manager:
+    campus_resources: {  }
+  content_editor:
+    campus_resources: {  }
+  content_publisher:
+    campus_resources: {  }
+  custom_web_page_manager:
+    campus_resources: {  }
+  dean:
+    campus_resources: {  }
+  block_manager:
+    campus_resources: {  }
+  taxonomy_manager:
+    campus_resources: {  }
+  user_manager:
+    campus_resources: {  }
+  faculty:
+    campus_resources: {  }

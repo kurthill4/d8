@@ -14,35 +14,6 @@
  * @param string $value
  * @return string
  */
-function removeInvalidXml($value)
-{
-    $ret = "";
-    $current;
-    if (empty($value)) 
-    {
-        return $ret;
-    }
-
-    $length = strlen($value);
-    for ($i=0; $i < $length; $i++)
-    {
-        $current = ord($value{$i});
-        if (($current == 0x9) ||
-            ($current == 0xA) ||
-            ($current == 0xD) ||
-            (($current >= 0x20) && ($current <= 0xD7FF)) ||
-            (($current >= 0xE000) && ($current <= 0xFFFD)) ||
-            (($current >= 0x10000) && ($current <= 0x10FFFF)))
-        {
-            $ret .= chr($current);
-        }
-        else
-        {
-            $ret .= " ";
-        }
-    }
-    return $ret;
-}
 
 use Drupal\taxonomy\Entity\Term;
 
@@ -61,75 +32,26 @@ function miramar_preprocess_page(&$variables) {
 		$node = $variables['node'];
 
 		// Sets up program custom hero image for display
-
-		if($node->getType() == "program")
+		
+		switch($node->getType())
 		{
-			$image = $node->field_program_hero_image;		// Extract field value from content
-			if(!$image->isEmpty())
-			{
-				$imageUri = $image->entity->getFileUri();	// Build URL to image for Twig display
-				$pgmHero = file_create_url($imageUri);
-				$variables['hero'] = $pgmHero;
-				$variables['pgmtitle'] = $node->get('title')->value;
+			case"program": {
+				$image = $node->field_program_hero_image;		// Extract field value from content
+				if(!$image->isEmpty()) {
+					$imageUri = $image->entity->getFileUri();	// Build URL to image for Twig display
+					$pgmHero = file_create_url($imageUri);
+					$variables['hero'] = $pgmHero;
+					$variables['pgmtitle'] = $node->get('title')->value;
+				}
+				break;
 			}
+			default: {}
 		}
 
 	}
 }
 
-/**
- * Implements template_preprocess_HOOK() for RSS data rows.
- *
- * Extracts node fields and formats them for XML template.
- *
- * 
- */
 
-function miramar_preprocess_views_view_row_rss(&$variables) {
-    $item = $variables['row'];
-    $node = node_load($item->nid);
-    $currNode = $node->getType();
-    if($currNode == "campus_news" || $currNode =="event")	// Is the node the correct content type?
-    {
-	    switch($node->get('field_format')->value)
-	    {
-		case 'Web':
-		    $format = 0;
-		    break;
-		case 'Mobile':
-		    $format = 1;
-		    break;
-		default:
-		    $format = 2;
-	    }
-    }
-    if($currNode == "campus_news")	// Is the node the correct content type?
-    {
-	    $variables['article'] = strip_tags(removeInvalidXML($node->body->value));	// Assign fields to Twig variables
-	    $variables['media_target'] = $format;
-	    $variables['tags'] = $node->get('field_story_type')->value;
-	    $variables['story_date'] = $node->get('field_story_date')->value;
-	    $variables['pub_start_date'] = $node->get('field_start_date')->value;
-	    $variables['pub_end_date'] = $node->get('field_end_date')->value;
-	    $variables['url'] = $node->get('field_link')->getString;
-	    $variables['url_label'] = $node->get('field_link_label')->value;
-	    $variables['priority'] = $node->get('field_priority')->value;
-    }
-    elseif($currNode == "event")
-    {
-	    $variables['article'] = strip_tags(removeInvalidXML($node->body->value));
-	    $variables['media_target'] = $format;
-	    $variables['event_date'] = $node->get('field_event_date')->value;
-	    $variables['event_date_end'] = $node->get('field_event_date')->end_value;
-	    $variables['tags'] = $node->get('field_event_type')->value;
-	    $variables['pub_start_date'] = $node->field_date_to_publish->value;
-	    $variables['pub_end_date'] = $node->field_date_to_publish->end_value;
-	    $variables['location'] = $node->get('field_event_location')->getString;
-	    $variables['rsvp'] = $node->get('field_rsvp_required')->value;
-	    $variables['reply_email'] = $node->field_contact->entity->field_email->value;
-	    $variables['priority'] = $node->get('field_priority')->value;
-    }
-}
 
 /**
  * Implements hook_preprocess_HOOK() for block templates.

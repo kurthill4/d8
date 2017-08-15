@@ -1,20 +1,19 @@
-uuid: acee5cad-afb7-475a-bdc6-9c2968cc5df9
+uuid: 5b83a03d-87a8-415e-824b-3d05d0375ce5
 langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.node.field_committee_chair
+    - field.storage.node.field_committee_co_chair
     - field.storage.user.field_email
     - field.storage.user.field_first_name
     - field.storage.user.field_last_name
-    - field.storage.user.field_office
-    - field.storage.user.field_phone
-    - node.type.program
+    - node.type.committee_page
   module:
     - node
-    - telephone
     - user
-id: program_contact
-label: 'Program Contact'
+id: committee_contact
+label: 'Committee Contact'
 module: views
 description: ''
 tag: ''
@@ -86,6 +85,132 @@ display:
           hide_empty: false
           default_field_elements: true
       fields:
+        field_committee_chair:
+          id: field_committee_chair
+          table: node__field_committee_chair
+          field: field_committee_chair
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_committee_co_chair:
+          id: field_committee_co_chair
+          table: node__field_committee_co_chair
+          field: field_committee_co_chair
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         title:
           id: title
           table: node_field_data
@@ -94,7 +219,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -122,7 +247,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: strong
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -137,7 +262,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -155,7 +280,7 @@ display:
           id: field_email
           table: user__field_email
           field: field_email
-          relationship: field_director_contact
+          relationship: field_committee_chair
           group_type: group
           admin_label: ''
           label: ''
@@ -217,7 +342,7 @@ display:
           id: field_first_name
           table: user__field_first_name
           field: field_first_name
-          relationship: field_director_contact
+          relationship: field_committee_chair
           group_type: group
           admin_label: ''
           label: ''
@@ -280,15 +405,15 @@ display:
           id: field_last_name
           table: user__field_last_name
           field: field_last_name
-          relationship: field_director_contact
+          relationship: field_committee_chair
           group_type: group
           admin_label: ''
           label: ''
           exclude: false
           alter:
             alter_text: true
-            text: '<i class="fa fa-envelope"></i> <a href="mailto:{{ field_email }}">{{ field_first_name }} {{ field_last_name }}</a>'
-            make_link: false
+            text: '{{ field_first_name }} {{ field_last_name }}'
+            make_link: true
             path: 'mailto:{{ field_email }}'
             absolute: false
             external: false
@@ -339,15 +464,77 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_office:
-          id: field_office
-          table: user__field_office
-          field: field_office
-          relationship: field_director_contact
+        field_email_1:
+          id: field_email_1
+          table: user__field_email
+          field: field_email
+          relationship: field_committee_co_chair
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: basic_string
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_first_name_1:
+          id: field_first_name_1
+          table: user__field_first_name
+          field: field_first_name
+          relationship: field_committee_co_chair
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -402,20 +589,20 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_phone:
-          id: field_phone
-          table: user__field_phone
-          field: field_phone
-          relationship: field_director_contact
+        field_last_name_1:
+          id: field_last_name_1
+          table: user__field_last_name
+          field: field_last_name
+          relationship: field_committee_co_chair
           group_type: group
           admin_label: ''
           label: ''
           exclude: false
           alter:
             alter_text: true
-            text: '<i class="fa fa-phone"></i>{{ field_phone }}'
-            make_link: false
-            path: ''
+            text: '{{ field_first_name_1 }} {{ field_last_name_1 }} '
+            make_link: true
+            path: 'mailto:{{ field_email_1 }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -451,9 +638,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: telephone_link
+          type: string
           settings:
-            title: ''
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -482,7 +669,7 @@ display:
           table: node_field_data
           field: type
           value:
-            program: program
+            committee_page: committee_page
           entity_type: node
           entity_field: type
           plugin_id: bundle
@@ -491,22 +678,31 @@ display:
       footer: {  }
       empty: {  }
       relationships:
-        field_director_contact:
-          id: field_director_contact
-          table: node__field_director_contact
-          field: field_director_contact
+        field_committee_chair:
+          id: field_committee_chair
+          table: node__field_committee_chair
+          field: field_committee_chair
           relationship: none
           group_type: group
-          admin_label: 'field_director_contact: User'
+          admin_label: 'field_committee_chair: User'
           required: false
           plugin_id: standard
-        field_contact_2:
-          id: field_contact_2
-          table: node__field_contact_2
-          field: field_contact_2
+        field_committee_co_chair:
+          id: field_committee_co_chair
+          table: node__field_committee_co_chair
+          field: field_committee_co_chair
           relationship: none
           group_type: group
-          admin_label: 'field_contact_2: User'
+          admin_label: 'field_committee_co_chair: User'
+          required: false
+          plugin_id: standard
+        field_co_chair_2:
+          id: field_co_chair_2
+          table: node__field_co_chair_2
+          field: field_co_chair_2
+          relationship: none
+          group_type: group
+          admin_label: 'field_co_chair_2: User'
           required: false
           plugin_id: standard
       arguments:
@@ -547,7 +743,7 @@ display:
           entity_field: nid
           plugin_id: node_nid
       display_extenders: {  }
-      title: 'More Information'
+      title: 'Committee Contact Information'
       css_class: side-contact
     cache_metadata:
       max-age: -1
@@ -559,11 +755,11 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.field_committee_chair'
+        - 'config:field.storage.node.field_committee_co_chair'
         - 'config:field.storage.user.field_email'
         - 'config:field.storage.user.field_first_name'
         - 'config:field.storage.user.field_last_name'
-        - 'config:field.storage.user.field_office'
-        - 'config:field.storage.user.field_phone'
   block_1:
     display_plugin: block
     id: block_1
@@ -581,8 +777,8 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.field_committee_chair'
+        - 'config:field.storage.node.field_committee_co_chair'
         - 'config:field.storage.user.field_email'
         - 'config:field.storage.user.field_first_name'
         - 'config:field.storage.user.field_last_name'
-        - 'config:field.storage.user.field_office'
-        - 'config:field.storage.user.field_phone'

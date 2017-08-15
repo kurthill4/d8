@@ -27,30 +27,14 @@ bundle: committee_page
 mode: default
 content:
   field_chair_requirements:
-    weight: 104
+    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_co_chair_2:
-    weight: 115
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_committee_chair:
-    weight: 102
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_committee_co_chair:
-    weight: 103
+    weight: 12
     label: above
     settings:
       link: true
@@ -58,7 +42,7 @@ content:
     type: entity_reference_label
     region: content
   field_committee_code:
-    weight: 114
+    weight: 11
     label: above
     settings:
       link_to_entity: false
@@ -66,28 +50,28 @@ content:
     type: string
     region: content
   field_committee_goals:
-    weight: 110
+    weight: 7
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_committee_procedures:
-    weight: 111
+    weight: 8
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_membership:
-    weight: 105
+    weight: 2
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_num_administrators:
-    weight: 106
+    weight: 3
     label: above
     settings:
       thousand_separator: ''
@@ -96,7 +80,7 @@ content:
     type: number_integer
     region: content
   field_num_classified:
-    weight: 108
+    weight: 5
     label: above
     settings:
       thousand_separator: ''
@@ -105,7 +89,7 @@ content:
     type: number_integer
     region: content
   field_num_faculty:
-    weight: 107
+    weight: 4
     label: above
     settings:
       thousand_separator: ''
@@ -114,7 +98,7 @@ content:
     type: number_integer
     region: content
   field_num_students:
-    weight: 109
+    weight: 6
     label: above
     settings:
       thousand_separator: ''
@@ -123,7 +107,7 @@ content:
     type: number_integer
     region: content
   field_standing_subcommittees:
-    weight: 112
+    weight: 9
     label: above
     settings:
       link: true
@@ -131,7 +115,7 @@ content:
     type: entity_reference_label
     region: content
   field_web_pages:
-    weight: 113
+    weight: 10
     label: above
     settings:
       link: true
@@ -139,6 +123,10 @@ content:
     type: entity_reference_label
     region: content
   links:
-    weight: 100
+    weight: 0
     region: content
-hidden: {  }
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_committee_chair: true
+  field_committee_co_chair: true

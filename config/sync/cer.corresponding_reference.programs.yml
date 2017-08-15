@@ -1,0 +1,13 @@
+uuid: 13352eef-68cd-4c39-9b15-b2f0ed6d8f4d
+langcode: en
+status: true
+dependencies: {  }
+id: programs
+label: Programs
+enabled: true
+first_field: field_web_pages
+second_field: field_associated_program
+bundles:
+  node:
+    - custom_web_page
+    - program
