@@ -20,7 +20,11 @@ class MiramarCustomSocialBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-
+	
+	if(!\Drupal::currentUser()->isAnonymous())
+		$logOut = ' | <a href="/user/logout">Log Out</a>';
+	else
+		$logout = '';
     $build['social']['content'] = [
       '#markup' => '
         <div class="row">
@@ -36,7 +40,8 @@ class MiramarCustomSocialBlock extends BlockBase {
           </div>
           <div class="col-sm-4">
             <div class="copyright">
-              &copy; 2017 San Diego Miramar College | <a href="/legal">Disclaimer</a>
+              &copy; 2017 San Diego Miramar College | <a href="/legal">Disclaimer</a>'
+		. $logOut . '
             </div>
           </div>
         </div>'
