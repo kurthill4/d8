@@ -7,51 +7,7 @@
  */
 
 
-/**
- * Removes invalid XML
- *
- * @access public
- * @param string $value
- * @return string
- */
-
 use Drupal\taxonomy\Entity\Term;
-
-/**
- * Implements hook_preprocess_HOOK() for page templates.
- *
- * 
- *
- * 
- */
-
-function miramar_preprocess_page(&$variables) {
-	extract($variables);
-	if(!empty($variables['node']))
-	{
-		$node = $variables['node'];
-
-		// Sets up program custom hero image for display
-		
-		switch($node->getType())
-		{
-			case"program": {
-				$image = $node->field_program_hero_image;		// Extract field value from content
-				if(!$image->isEmpty()) {
-					$imageUri = $image->entity->getFileUri();	// Build URL to image for Twig display
-					$pgmHero = file_create_url($imageUri);
-					$variables['hero'] = $pgmHero;
-					$variables['pgmtitle'] = $node->get('title')->value;
-				}
-				break;
-			}
-			default: {}
-		}
-
-	}
-}
-
-
 
 /**
  * Implements hook_preprocess_HOOK() for block templates.
