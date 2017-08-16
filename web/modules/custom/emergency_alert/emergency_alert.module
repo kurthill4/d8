@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Main module file.
+ */
+
+use Drupal\Core\State;
+
+function emergency_alert_preprocess_page(&$variables) {
+	$variables['emergency'] = "Foobar";
+drupal_set_message(\Drupal::state()->get(t('emergency')));
+}

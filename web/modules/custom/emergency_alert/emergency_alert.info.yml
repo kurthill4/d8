@@ -1,0 +1,5 @@
+name: Emergency Message
+description: Displays emergency alert from District
+package: Custom
+type: module
+core: 8.x
