@@ -7,7 +7,11 @@
 
 use Drupal\Core\State;
 
-function emergency_alert_preprocess_page(&$variables) {
-	$variables['emergency'] = "Foobar";
-drupal_set_message(\Drupal::state()->get(t('emergency')));
+function emergency_alert_preprocess_node(&$variables) {
+\Drupal::state()->set('emergency','Test');
+}
+
+function emergency_alert_preprocess_block(&$variables) {
+	// Possible future enhancements to the block
+	// will go here.
 }

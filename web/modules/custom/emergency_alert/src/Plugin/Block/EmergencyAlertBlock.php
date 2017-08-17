@@ -19,43 +19,43 @@ class EmergencyAlertBlock extends BlockBase {
   /**
    * {@inheritdoc}
    */
-
-  public function build() {
-//	$foo = \Drupal::state()->get(t('emergency'));
-$foo = "bar";
-    $build = array(
+	private $foo;
+	public function __construct() {
+		$this->foo = \Drupal::state()->get('emergency');
+	}
+	public function build() {
+	$build = array(
 	'#type' => 'markup',
-      '#markup' => '
+	'#attributes' => array(
+		'class' => array('ca-block')
+		),
+	'#markup' => '
 	<div class="container">
 		<div class="row">
 		  <div class="col-sm-12">
 		    <h1><i class="fa fa-bell" aria-hidden="true"></i> Campus Alert</h1>
 		  </div>
 		</div>
-		<!--div class="row">
-		  <div class="col-sm-3">
-		    <div class="ca-date">
-		    </div>
-		  </div-->
+		<div class="row">
 		  <div class="col-sm-12">
 		    <div class="ca-desc">' .
-			t($foo) . '
+			t($this->foo) . '
 		    </div>
 		  </div>
 		</div>
-      	</div>'
-    );
+	</div>'
+	);
 	return $build;
   }
 
   /**
    * {@inheritdoc}
    */
-  /*protected function blockAccess(&$variables,Drupal\Core\Session\AccountInterface $account) {
-	if($variables['emergency'] != '')
-		return AccessResult::allowedIfHasPermission($account, 'access content');
+  protected function blockAccess(AccountInterface $account) {
+	if($this->foo !== '')
+		return AccessResult::allowed();
 	else
 		return AccessResult::forbidden();
-  }*/
+  }
 
 }
