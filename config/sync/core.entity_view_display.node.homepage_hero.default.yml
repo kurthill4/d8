@@ -8,22 +8,14 @@ dependencies:
     - node.type.homepage_hero
   module:
     - blazy
-    - text
     - user
 id: node.homepage_hero.default
 targetEntityType: node
 bundle: homepage_hero
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_image:
-    weight: 102
+    weight: 0
     label: above
     settings:
       image_style: ''
@@ -55,9 +47,6 @@ content:
     third_party_settings: {  }
     type: blazy
     region: content
-  links:
-    weight: 100
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  body: true
+  links: true
