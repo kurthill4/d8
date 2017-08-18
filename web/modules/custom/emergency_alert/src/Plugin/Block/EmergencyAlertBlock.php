@@ -19,9 +19,9 @@ class EmergencyAlertBlock extends BlockBase {
   /**
    * {@inheritdoc}
    */
-	private $foo;
+	private $message;
 	public function __construct() {
-		$this->foo = \Drupal::state()->get('emergency');
+		$this->message = \Drupal::state()->get('emergency');
 	}
 	public function build() {
 	$build = array(
@@ -29,21 +29,8 @@ class EmergencyAlertBlock extends BlockBase {
 	'#attributes' => array(
 		'class' => array('ca-block')
 		),
-	'#markup' => '
-	<div class="container">
-		<div class="row">
-		  <div class="col-sm-12">
-		    <h1><i class="fa fa-bell" aria-hidden="true"></i> Campus Alert</h1>
-		  </div>
-		</div>
-		<div class="row">
-		  <div class="col-sm-12">
-		    <div class="ca-desc">' .
-			t($this->foo) . '
-		    </div>
-		  </div>
-		</div>
-	</div>'
+	'#emergency' => $this->message,
+	'#theme' => 'block__emergency_alert',
 	);
 	return $build;
   }
@@ -52,7 +39,7 @@ class EmergencyAlertBlock extends BlockBase {
    * {@inheritdoc}
    */
   protected function blockAccess(AccountInterface $account) {
-	if($this->foo !== '')
+	if($this->message !== '')
 		return AccessResult::allowed();
 	else
 		return AccessResult::forbidden();
