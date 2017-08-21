@@ -37,6 +37,10 @@ table.small,ul.small,ol.small,p.small {font-size:0.75em;}
 table.small td,table.small th {padding:2px;vertical-align:top;}
 table.medium {width:75%;}
 table.degrees {margin-bottom: 2em;}
+table.degrees th {text-align:center}
+table.degrees tr > td:not(:first-of-type) {
+	text-align:center!important;
+}
 td.vcenter {
 	vertical-align: center;
 }
@@ -1018,21 +1022,21 @@ footer h4{
   color: #fff;
   font-size: 20px;
 }
-.ca-block{
+.emergency-alert-block{
 	background: #f3da5c;
 	padding: 30px 0;
 }
-.ca-block h1{
+.emergency-alert-block h1{
 	color: #ee1c1c;
 	font-size: 48px;
   font-family: 'Oswald', sans-serif;
 	font-weight: 700;
 }
-.ca-date, .ca-desc{
+.emergency-alert-date, .emergency-alert-desc{
 	border-top: 1px solid #ee1c1c;
 	padding: 10px 0 0;
 }
-.ca-desc{
+.emergency-alert-desc{
 	font-size: 21px;
 	color: #000;
 }
