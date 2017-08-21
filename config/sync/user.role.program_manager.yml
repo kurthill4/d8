@@ -1,0 +1,13 @@
+uuid: 55c6f8a8-063b-4010-a02e-057b17526e2e
+langcode: en
+status: true
+dependencies: {  }
+id: program_manager
+label: 'Program Manager'
+weight: 13
+is_admin: null
+permissions:
+  - 'create files'
+  - 'create program content'
+  - 'delete any program content'
+  - 'edit any program content'
