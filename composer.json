@@ -13,7 +13,21 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        }
+        },
+        {
+             "type": "package",
+              "package": {
+                "name": "woothemes/flexslider",
+                "version": "2.6.3",
+                "type": "drupal-library",
+                "source": {
+                  "url": "https://github.com/woothemes/FlexSlider.git",
+                  "type": "git",
+                  "reference": "2.6.3"
+                }
+      	       }
+    	}
+
     ],
     "require": {
         "composer/installers": "^1.2",
