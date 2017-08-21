@@ -52,6 +52,7 @@
         "drupal/field_redirection": "2.x-dev",
         "drupal/field_token_value": "1.x-dev",
         "drupal/file_entity": "^2.0@beta",
+        "drupal/flexslider": "^2.0@beta",
         "drupal/fortytwo_admin": "^1.7",
         "drupal/imce": "^1.5",
         "drupal/libraries": "3.x-dev",
