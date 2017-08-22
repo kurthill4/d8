@@ -65,6 +65,7 @@
         "drupal/migrate_plus": "~2.0",
         "drupal/migrate_source_csv": "^2.0",
         "drupal/migrate_tools": "^2.0",
+        "drupal/page_access": "^1.1",
         "drupal/page_manager": "^1.0@alpha",
         "drupal/paragraphs": "^1.1",
         "drupal/paragraphs_previewer": "1.x-dev",
@@ -143,6 +144,11 @@
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "web/themes/custom/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
-        }
+        },
+	"patches": {
+		"drupal/page_access": {
+			"Allow read-only access to anonymous user": "https://www.drupal.org/files/issues/support_anonymous_role_and_edit_by_role_dropdown_REROLL_1.patch"
+		}
+	}
     }
 }
