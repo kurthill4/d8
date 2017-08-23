@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "648fc23d6bc8a610ea2a91e2026770b5",
+    "content-hash": "a07408b635fafd34a9d29bc82f328608",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3707,6 +3707,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Allow read-only access to anonymous user": "https://www.drupal.org/files/issues/support_anonymous_role_and_edit_by_role_dropdown_REROLL_1.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3866,6 +3869,54 @@
             "homepage": "https://www.drupal.org/project/paragraphs",
             "support": {
                 "source": "http://cgit.drupalcode.org/paragraphs"
+            }
+        },
+        {
+            "name": "drupal/paragraphs_edit",
+            "version": "1.0.0-alpha4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/paragraphs_edit",
+                "reference": "8.x-1.0-alpha4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/paragraphs_edit-8.x-1.0-alpha4.zip",
+                "reference": "8.x-1.0-alpha4",
+                "shasum": "b278beeac795532ad76dd4e5ae971aadcdecb376"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/paragraphs": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha4",
+                    "datestamp": "1464865035",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "casey",
+                    "homepage": "https://www.drupal.org/user/32403"
+                }
+            ],
+            "description": "Allows users to edit/clone and delete paragraphs.",
+            "homepage": "https://www.drupal.org/project/paragraphs_edit",
+            "support": {
+                "source": "http://cgit.drupalcode.org/paragraphs_edit"
             }
         },
         {
@@ -9710,6 +9761,7 @@
         "drupal/libraries": 20,
         "drupal/media_entity_video": 10,
         "drupal/page_manager": 15,
+        "drupal/paragraphs_edit": 15,
         "drupal/paragraphs_previewer": 20,
         "drupal/pathauto": 5,
         "drupal/php": 10,

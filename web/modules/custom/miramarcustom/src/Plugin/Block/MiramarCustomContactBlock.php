@@ -74,7 +74,8 @@ class MiramarCustomContactBlock extends BlockBase {
                 <ul class="acc-info">
                   <li><a href="/accreditation">Accreditation</a></li>
                   <li><a href="/campus/planning">Planning</a></li>
-                  <li><a href="http://www1.sdmiramar.edu/webfm_send/15889">Student Success Scorecard</a></li>
+                  <li><a href="/sites/default/files/documents/2017-08/Miramar%20College%20Student%20Success%20Scorecard%202016.pdf
+">Student Success Scorecard</a></li>
                 </ul>
               </div>
             </div>

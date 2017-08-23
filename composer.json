@@ -68,6 +68,7 @@
         "drupal/page_access": "^1.1",
         "drupal/page_manager": "^1.0@alpha",
         "drupal/paragraphs": "^1.1",
+        "drupal/paragraphs_edit": "^1.0@alpha",
         "drupal/paragraphs_previewer": "1.x-dev",
         "drupal/pathauto": "^1.0@RC",
         "drupal/php": "^1.0@beta",
