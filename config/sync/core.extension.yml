@@ -63,6 +63,7 @@ module:
   node: 0
   oauth: 0
   options: 0
+  page_access: 0
   page_cache: 0
   paragraphs: 0
   paragraphs_previewer: 0

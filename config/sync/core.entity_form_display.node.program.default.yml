@@ -22,6 +22,7 @@ dependencies:
   module:
     - file
     - image
+    - link
     - path
     - text
 id: node.program.default
@@ -53,6 +54,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_certificate_link:
+    weight: 26
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   field_contact_2:
     weight: 3
@@ -139,7 +148,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  field_certificate_link: true
   promote: true
   sticky: true
   uid: true

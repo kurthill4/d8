@@ -1,4 +1,4 @@
-uuid: 55c6f8a8-063b-4010-a02e-057b17526e2e
+uuid: 8c43541c-987f-40ab-a574-a7dd3fa68f3e
 langcode: en
 status: true
 dependencies: {  }
@@ -7,7 +7,15 @@ label: 'Program Manager'
 weight: 13
 is_admin: null
 permissions:
+  - 'access content overview'
+  - 'access files overview'
+  - 'create degree content'
   - 'create files'
   - 'create program content'
+  - 'delete any degree content'
   - 'delete any program content'
+  - 'delete own document files'
+  - 'edit any committee_page content'
+  - 'edit any degree content'
   - 'edit any program content'
+  - 'edit own document files'

@@ -412,7 +412,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '{{ field_first_name }} {{ field_last_name }}'
+            text: '<i class="fa fa-envelope"></i> {{ field_first_name }} {{ field_last_name }}'
             make_link: true
             path: 'mailto:{{ field_email }}'
             absolute: false
@@ -600,7 +600,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '{{ field_first_name_1 }} {{ field_last_name_1 }} '
+            text: '<i class="fa fa-envelope"></i> {{ field_first_name_1 }} {{ field_last_name_1 }} '
             make_link: true
             path: 'mailto:{{ field_email_1 }}'
             absolute: false
