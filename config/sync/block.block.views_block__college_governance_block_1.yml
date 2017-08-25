@@ -1,32 +1,32 @@
-uuid: 998dd207-453d-4e46-bdbd-bf3eb9232b16
+uuid: e17b2741-c361-4fb3-825a-03eb08b03e8b
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.committee_contact
+    - views.view.college_governance
   module:
     - ctools
     - views
   theme:
     - miramar
-id: views_block__committee_contact_block_1
+id: views_block__college_governance_block_1
 theme: miramar
 region: sidebar_second
-weight: -22
+weight: -13
 provider: null
-plugin: 'views_block:committee_contact-block_1'
+plugin: 'views_block:college_governance-block_1'
 settings:
-  id: 'views_block:committee_contact-block_1'
+  id: 'views_block:college_governance-block_1'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
   items_per_page: none
-  context_mapping: {  }
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
     bundles:
+      committee_meeting: committee_meeting
       committee_page: committee_page
     negate: false
     context_mapping:

@@ -47,6 +47,7 @@ module:
   layout_plugin: 0
   libraries: 0
   link: 0
+  markup: 0
   media_entity: 0
   media_entity_document: 0
   media_entity_image: 0

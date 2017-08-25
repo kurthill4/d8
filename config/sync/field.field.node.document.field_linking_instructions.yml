@@ -1,0 +1,25 @@
+uuid: 2d97f165-0227-4dcc-bb0c-eba9d6289108
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_linking_instructions
+    - node.type.document
+  module:
+    - markup
+id: node.document.field_linking_instructions
+field_name: field_linking_instructions
+entity_type: node
+bundle: document
+label: 'Linking Instructions'
+description: ''
+required: false
+translatable: false
+default_value:
+  - {  }
+default_value_callback: ''
+settings:
+  markup:
+    value: "<p>If you need to link this document <strong><span class=\"bold\">within</span></strong> the content of your page, right-click on the above link, Copy, then Paste the result into a link in your page.</p>\r\n"
+    format: full_html
+field_type: markup

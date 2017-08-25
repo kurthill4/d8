@@ -4,25 +4,27 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.committee_meeting.body
+    - field.field.node.committee_meeting.field_agenda
+    - field.field.node.committee_meeting.field_committee
+    - field.field.node.committee_meeting.field_file_code
+    - field.field.node.committee_meeting.field_file_code_num
+    - field.field.node.committee_meeting.field_meeting_date
+    - field.field.node.committee_meeting.field_minutes
     - node.type.committee_meeting
   module:
-    - text
     - user
 id: node.committee_meeting.teaser
 targetEntityType: node
 bundle: committee_meeting
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_agenda: true
+  field_committee: true
+  field_file_code: true
+  field_file_code_num: true
+  field_meeting_date: true
+  field_minutes: true

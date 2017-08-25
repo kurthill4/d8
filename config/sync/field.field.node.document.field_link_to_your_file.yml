@@ -12,12 +12,12 @@ field_name: field_link_to_your_file
 entity_type: node
 bundle: document
 label: 'Link to Your File'
-description: ''
+description: 'If you wish to link to this document WITHIN the content of a page, right-click this link and Copy. Then Paste into the link you want.'
 required: false
 translatable: false
 default_value:
   -
-    value: '[node:field_uploaded_file]'
+    value: '<a href="[node:field_uploaded_file]">[node:field_uploaded_file]</a>'
 default_value_callback: ''
 settings:
   field_value: '<a href="[node:field_uploaded_file]">[node:field_uploaded_file]</a>'

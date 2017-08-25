@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.homepage_hero.body
     - field.field.node.homepage_hero.field_image
     - node.type.homepage_hero
   module:
@@ -48,5 +47,4 @@ content:
     type: blazy
     region: content
 hidden:
-  body: true
   links: true

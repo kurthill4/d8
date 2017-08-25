@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.committee_meeting.body
     - field.field.node.committee_meeting.field_agenda
+    - field.field.node.committee_meeting.field_attached_documents
     - field.field.node.committee_meeting.field_committee
     - field.field.node.committee_meeting.field_file_code
     - field.field.node.committee_meeting.field_file_code_num
@@ -13,22 +13,23 @@ dependencies:
     - node.type.committee_meeting
   module:
     - file_entity
-    - text
     - user
 id: node.committee_meeting.default
 targetEntityType: node
 bundle: committee_meeting
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_agenda:
     weight: 3
+    label: above
+    settings:
+      access_message: 'You don''t have access to download this file.'
+      text: 'Download [file:name]'
+    third_party_settings: {  }
+    type: file_download_link
+    region: content
+  field_attached_documents:
+    weight: 5
     label: above
     settings:
       access_message: 'You don''t have access to download this file.'
