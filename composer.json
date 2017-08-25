@@ -56,6 +56,7 @@
         "drupal/fortytwo_admin": "^1.7",
         "drupal/imce": "^1.5",
         "drupal/libraries": "3.x-dev",
+        "drupal/markup": "^1.0@beta",
         "drupal/media_entity": "^1.6",
         "drupal/media_entity_document": "^1.1",
         "drupal/media_entity_image": "^1.2",
