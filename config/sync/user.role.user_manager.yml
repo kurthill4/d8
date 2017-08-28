@@ -7,4 +7,6 @@ label: 'User Manager'
 weight: 11
 is_admin: null
 permissions:
+  - 'access user profiles'
+  - 'administer users'
   - 'use text format basic_html'

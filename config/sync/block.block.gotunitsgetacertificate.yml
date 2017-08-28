@@ -2,10 +2,7 @@ uuid: 664270ea-db00-46c2-9177-20cd4c4a6a5d
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:program_document_links:756b7f75-bd53-4d98-ac8f-e8aff6f6349e'
   module:
-    - block_content
     - ctools
   theme:
     - miramar

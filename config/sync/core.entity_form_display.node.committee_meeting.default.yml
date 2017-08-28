@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.committee_meeting.body
     - field.field.node.committee_meeting.field_agenda
+    - field.field.node.committee_meeting.field_attached_documents
     - field.field.node.committee_meeting.field_committee
     - field.field.node.committee_meeting.field_file_code
     - field.field.node.committee_meeting.field_file_code_num
@@ -15,21 +15,11 @@ dependencies:
     - datetime
     - file
     - path
-    - text
 id: node.committee_meeting.default
 targetEntityType: node
 bundle: committee_meeting
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 31
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 10
@@ -38,6 +28,13 @@ content:
     third_party_settings: {  }
   field_agenda:
     weight: 34
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_attached_documents:
+    weight: 38
     settings:
       progress_indicator: throbber
     third_party_settings: {  }

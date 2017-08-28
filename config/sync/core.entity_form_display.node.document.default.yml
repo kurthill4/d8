@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.document.field_associated_program
     - field.field.node.document.field_date_uploaded
     - field.field.node.document.field_link_to_your_file
+    - field.field.node.document.field_linking_instructions
     - field.field.node.document.field_short_description
     - field.field.node.document.field_uploaded_file
     - node.type.document
@@ -27,7 +28,7 @@ third_party_settings:
         - field_associated_program
         - field_associated_faculty_member
       parent_name: ''
-      weight: 20
+      weight: 3
       format_type: details
       format_settings:
         id: ''
@@ -86,7 +87,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_link_to_your_file:
-    weight: 26
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: field_token_value_default
@@ -117,6 +118,7 @@ content:
 hidden:
   created: true
   field_date_uploaded: true
+  field_linking_instructions: true
   path: true
   promote: true
   sticky: true

@@ -47,6 +47,7 @@ module:
   layout_plugin: 0
   libraries: 0
   link: 0
+  markup: 0
   media_entity: 0
   media_entity_document: 0
   media_entity_image: 0
@@ -63,8 +64,10 @@ module:
   node: 0
   oauth: 0
   options: 0
+  page_access: 0
   page_cache: 0
   paragraphs: 0
+  paragraphs_edit: 0
   paragraphs_previewer: 0
   path: 0
   quickedit: 0

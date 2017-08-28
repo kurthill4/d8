@@ -12,7 +12,7 @@ field_name: field_table
 entity_type: paragraph
 bundle: table
 label: Table
-description: ''
+description: 'You can type in your table data or upload from a file (CSV format only).'
 required: false
 translatable: false
 default_value: {  }

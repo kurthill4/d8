@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.homepage_hero.body
     - field.field.node.homepage_hero.field_image
     - image.style.thumbnail
     - node.type.homepage_hero
@@ -45,7 +44,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
 hidden:
-  body: true
   created: true
   sticky: true
   uid: true

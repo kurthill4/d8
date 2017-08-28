@@ -12,7 +12,7 @@ field_name: field_agenda
 entity_type: node
 bundle: committee_meeting
 label: Agenda
-description: ''
+description: 'Upload the meeting agenda here--PDF format preferred'
 required: false
 translatable: false
 default_value: {  }

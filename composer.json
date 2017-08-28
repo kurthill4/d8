@@ -56,6 +56,7 @@
         "drupal/fortytwo_admin": "^1.7",
         "drupal/imce": "^1.5",
         "drupal/libraries": "3.x-dev",
+        "drupal/markup": "^1.0@beta",
         "drupal/media_entity": "^1.6",
         "drupal/media_entity_document": "^1.1",
         "drupal/media_entity_image": "^1.2",
@@ -65,8 +66,10 @@
         "drupal/migrate_plus": "~2.0",
         "drupal/migrate_source_csv": "^2.0",
         "drupal/migrate_tools": "^2.0",
+        "drupal/page_access": "^1.1",
         "drupal/page_manager": "^1.0@alpha",
         "drupal/paragraphs": "^1.1",
+        "drupal/paragraphs_edit": "^1.0@alpha",
         "drupal/paragraphs_previewer": "1.x-dev",
         "drupal/pathauto": "^1.0@RC",
         "drupal/php": "^1.0@beta",
@@ -143,6 +146,11 @@
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "web/themes/custom/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
-        }
+        },
+	"patches": {
+		"drupal/page_access": {
+			"Allow read-only access to anonymous user": "https://www.drupal.org/files/issues/support_anonymous_role_and_edit_by_role_dropdown_REROLL_1.patch"
+		}
+	}
     }
 }

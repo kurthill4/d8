@@ -75,6 +75,11 @@
 
 		$path = $pathIn;
 		$newpath = 'public://';
+
+		$numAdded = 0;
+		$numErrors = 0;
+		$numSkipped = 0;
+		$numNodes = 0;
 		
 		// Now, pull the correct nodes
 
@@ -88,48 +93,60 @@
 			$node = node_load($nid, NULL, TRUE);					// Get one node
 			$fileCode = $node->field_file_code->getString();			// Extract the committee and date
 			$fileCodeNum = $node->field_file_code_num->getString();
-			if($fileCodeNum !== null)						// Is this meeting supposed to have files?
+			if($fileCodeNum !== null && $fileCodeNum != ' ')			// Is this meeting supposed to have files?
 			{
-				$fileCodeAgendas = $fileCode . '-a' . $fileCodeNum;		// Build the paths to the files
-				$fileCodeMinutes = $fileCode . '-m' . $fileCodeNum;		// 	you're going to attach
+				try {
+					$fileCodeAgendas = $fileCode . '-a' . $fileCodeNum;		// Build the paths to the files
+					$fileCodeMinutes = $fileCode . '-m' . $fileCodeNum;		// 	you're going to attach
 	
-				$pathToAgendas = $path . 'agendas/' . $fileCodeAgendas;
-				$pathToMinutes = $path . 'minutes/' . $fileCodeMinutes;
+					$pathToAgendas = $path . 'agendas/' . $fileCodeAgendas;
+					$pathToMinutes = $path . 'minutes/' . $fileCodeMinutes;
 
-			// Create Agenda file object from a locally copied file.
-			// Then, put the file into Drupal and attach to the node
+				// Create Agenda file object from a locally copied file.
+				// Then, put the file into Drupal and attach to the node
 
-				if(file_exists($pathToAgendas))
-				{
-					$uriAgendas = file_unmanaged_copy($pathToAgendas, $newpath . 'committees/agendas/' .
-						$fileCodeAgendas,FILE_EXISTS_REPLACE);
-					if(isset($uriAgendas))
+					if(file_exists($pathToAgendas))
 					{
-						$agendas = File::Create(['uri' => $uriAgendas,]);
-						$agendas->save();
-						$node->field_agenda->setValue(['target_id' => $agendas->id(),]);
+						$uriAgendas = file_unmanaged_copy($pathToAgendas, $newpath . 'committees/agendas/' .
+							$fileCodeAgendas,FILE_EXISTS_REPLACE);
+						if(isset($uriAgendas))
+						{
+							$agendas = File::Create(['uri' => $uriAgendas,]);
+							$agendas->save();
+							$node->field_agenda->setValue(['target_id' => $agendas->id(),]);
+							$numAdded++;
+						}
 					}
-				}
-			// Now, do the same for Minutes
+				// Now, do the same for Minutes
 
-				if(file_exists($pathToMinutes))
-				{
-					$uriMinutes = file_unmanaged_copy($pathToMinutes, $newpath . 'committees/minutes/' . 							$fileCodeMinutes,FILE_EXISTS_REPLACE);
-					if(isset($uriMinutes))
+					if(file_exists($pathToMinutes))
 					{
-						$minutes = File::Create(['uri' => $uriMinutes,]);
-						$minutes->save();
-						$node->field_minutes->setValue(['target_id' => $minutes->id(),]);
+						$uriMinutes = file_unmanaged_copy($pathToMinutes, $newpath . 'committees/minutes/' . 							$fileCodeMinutes,FILE_EXISTS_REPLACE);
+						if(isset($uriMinutes))
+						{
+							$minutes = File::Create(['uri' => $uriMinutes,]);
+							$minutes->save();
+							$node->field_minutes->setValue(['target_id' => $minutes->id(),]);
+							$numAdded++;
+						}
 					}
+
+				// Finally, save the node with its new content and reset the cache for the next iteration
+
+					if(isset($uriAgendas) || isset($uriMinutes))
+						$node->save();
+					\Drupal::entityManager()->getStorage('node')->resetCache(array($nid));
+					$numNodes++;
 				}
-
-			// Finally, save the node with its new content and reset the cache for the next iteration
-
-				if(isset($uriAgendas) || isset($uriMinutes))
-					$node->save();
-				\Drupal::entityManager()->getStorage('node')->resetCache(array($nid));
+				catch(Exception $e) {
+						$numErrors ++;
+				}
 			}
+			else {
+				$numSkipped++;
+			}
+
 		}
-		return 'The module is done running.';	
-	}
+		return 'The module ran with ' . $numAdded . ' files attached to , ' . $numNodes . ' nodes,' . $numErrors . ' errors, '. $numSkipped . ' nodes skipped.';	
+}
 }

@@ -4,25 +4,17 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.homepage_hero.body
+    - field.field.node.homepage_hero.field_image
     - node.type.homepage_hero
   module:
-    - text
     - user
 id: node.homepage_hero.teaser
 targetEntityType: node
 bundle: homepage_hero
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_image: true

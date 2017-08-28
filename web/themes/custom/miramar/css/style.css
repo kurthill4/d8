@@ -800,6 +800,11 @@ nav.mobile-nav li:first-child ol li{
 	line-height: 60px;
 	margin: 1px 0 0;
 }
+.cc-buttons a:hover{
+	text-decoration: none;
+	background: #a22130;
+}
+
 .cc-buttons span{
 	background: #a22130;
 	display: inline-block;
@@ -1582,7 +1587,9 @@ ul.dp-menu li:hover a{
   font-family: Oswald;
   font-weight: normal;
 }
-#block-views-block-campus-resources-block-1 .news-block .form-group {
+#block-views-block-campus-resources-block-1 .news-block .form-group,
+#block-views-block-college-governance-block-1 .news-block .form-group,
+#block-views-block-committee-meetings-block-1 .news-block .form-group {
 	height:300px!important;
 	overflow-y:scroll;
 }

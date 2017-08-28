@@ -13,7 +13,7 @@ id: paragraph.two_column.field_column_1
 field_name: field_column_1
 entity_type: paragraph
 bundle: two_column
-label: 'Column 1'
+label: 'Left Column'
 description: ''
 required: false
 translatable: false
@@ -35,4 +35,13 @@ settings:
       video:
         enabled: true
         weight: 6
+      image:
+        weight: 7
+        enabled: false
+      table:
+        weight: 8
+        enabled: false
+      text_and_image_left:
+        weight: 10
+        enabled: false
 field_type: entity_reference_revisions
