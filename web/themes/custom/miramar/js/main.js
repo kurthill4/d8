@@ -31,16 +31,19 @@ function _toggleArrow(ele) {
 		attach: function(context,settings) {
 			$('.top-links a.search').unbind('click').click(function() {
 				$('.search-desktop').slideToggle();
+				$('#edit-keys').focus();
 			});
 		}
 	};
 })(jQuery);
+
 
 (function ($) {
 	Drupal.behaviors.closeSearch = {
 		attach: function(context,settings) {
 		  $('.search-desktop a.close-x').unbind('click').click(function() {
 		    $(this).parent().fadeToggle();
+		    $('#edit-keys').blur();
 		  });
 		}
 	};
