@@ -9,7 +9,7 @@ dependencies:
 id: gotunitsgetacertificate
 theme: miramar
 region: content
-weight: -16
+weight: -12
 provider: null
 plugin: 'block_content:756b7f75-bd53-4d98-ac8f-e8aff6f6349e'
 settings:
