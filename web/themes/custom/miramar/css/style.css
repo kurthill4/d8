@@ -46,10 +46,9 @@ td.vcenter {
 }
 h1, h2, h3, h4,h5 {
 	margin-top: 0;
-}
-h1,h2, h3, h4, h5{
 	font-family: 'Oswald', sans-serif;
 }
+
 .region-content{background:#ffffff}
 .content h2, .content h3 {
 	color: #1d2451;
