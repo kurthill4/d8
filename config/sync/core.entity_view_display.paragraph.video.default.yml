@@ -3,22 +3,24 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.video.field_video
+    - field.field.paragraph.video.field_url_to_video
     - paragraphs.paragraphs_type.video
   module:
-    - entity_reference_revisions
+    - video_embed_field
 id: paragraph.video.default
 targetEntityType: paragraph
 bundle: video
 mode: default
 content:
-  field_video:
-    weight: 0
-    label: hidden
+  field_url_to_video:
+    weight: 1
+    label: above
     settings:
-      view_mode: default
-      link: ''
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
+    type: video_embed_field_video
     region: content
 hidden: {  }
