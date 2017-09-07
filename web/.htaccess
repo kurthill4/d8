@@ -69,6 +69,16 @@ AddEncoding gzip svgz
 <IfModule mod_rewrite.c>
   RewriteEngine on
 
+  RewriteCond %{HTTPS} off
+  RewriteCond %{REQUEST_URI} ^/user [NC]
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,E=nocache:1]
+
+  <IfModule headers_module>
+	  Header always set Cache-Control "no-store, no-cache, must-revalidate" env=nocache
+    Header always set Expires "Thu, 01 Jan 1970 00:00:00 GMT" env=nocache
+  </IfModule>
+
+
   # Set "protossl" to "s" if we were accessed via https://.  This is used later
   # if you enable "www." stripping or enforcement, in order to ensure that
   # you don't bounce between http and https.
@@ -186,4 +196,22 @@ AddEncoding gzip svgz
   Header always set X-Content-Type-Options nosniff
   # Disable Proxy header, since it's an attack vector.
   RequestHeader unset Proxy
+</IfModule>
+
+
+# All custom alterations start here
+
+<IfModule mod_rewrite.c>
+  # Custom Redirects
+  Redirect 302 /library http://www1.sdmiramar.edu/library
+  Redirect 302 /campus/library http://www1.sdmiramar.edu/library
+  Redirect 302 /campus/av http://www1.sdmiramar.edu/library/av
+  Redirect 301 /campus/campus-police http://police.sdccd.edu
+  Redirect 301 /campus/bookstore http://www.bookstore.sdccd.edu/miramar
+  Redirect 301 /campus/athletics http://www.miramarjets.com
+  Redirect 301 /campus/as http://www.sdmiramarasg.com
+  Redirect 302 /academics/ilc /campus/labs/ilc
+
+  RedirectMatch 302 "^/webfm_send/(.*)$" "http://www1.sdmiramar.edu/webfm_send/$1"
+  RedirectMatch 302 "/feeds/(.*)$" "http://www1.sdmiramar.edu/feeds/$1"
 </IfModule>
