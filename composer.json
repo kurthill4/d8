@@ -40,7 +40,6 @@
         "drupal/bootstrap_layouts": "^4.1",
         "drupal/calendar": "1.x-dev",
         "drupal/cer": "^4.0@alpha",
-        "drupal/config_ignore": "^2.0",
         "drupal/console": "~1.0",
         "drupal/core": "~8.0",
         "drupal/ctools": "^3.0@beta",
