@@ -1,0 +1,22 @@
+uuid: 6b43f86d-7906-48b7-919e-abf09bec2048
+langcode: en
+status: true
+dependencies: {  }
+id: pio
+label: PIO
+weight: 14
+is_admin: null
+permissions:
+  - 'access files overview'
+  - 'create announcement content'
+  - 'create campus_news content'
+  - 'create event content'
+  - 'create files'
+  - 'create homepage_hero content'
+  - 'delete any campus_news content'
+  - 'delete any event content'
+  - 'delete any homepage_hero content'
+  - 'edit any announcement content'
+  - 'edit any campus_news content'
+  - 'edit any event content'
+  - 'edit any homepage_hero content'

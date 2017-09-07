@@ -1,6 +1,6 @@
 uuid: 918d6218-0e71-48c2-b2b2-e7f82dbd063b
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - field.storage.taxonomy_term.field_image

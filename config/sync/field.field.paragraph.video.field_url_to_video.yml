@@ -1,0 +1,25 @@
+uuid: 3056652b-bf72-4214-b78f-c0acbd42130a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_url_to_video
+    - paragraphs.paragraphs_type.video
+  module:
+    - video_embed_field
+id: paragraph.video.field_url_to_video
+field_name: field_url_to_video
+entity_type: paragraph
+bundle: video
+label: 'URL to Video'
+description: 'The full web address for the video you wish to embed. Currently we support YouTube and Vimeo.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube: youtube
+    youtube_playlist: '0'
+field_type: video_embed_field

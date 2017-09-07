@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: Announcement
 type: announcement
-description: ''
+description: 'This is used ONLY for one time sensitive, important (non-emergency) announcement on the homepage.'
 help: ''
 new_revision: false
 preview_mode: 1

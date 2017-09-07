@@ -8,11 +8,11 @@ body{
 .gateway .page-header,.directory .page-header, .resources .page-header {display:none;}
 
 .spacer {clear:both}
-.content,.dir-content,.field--name-description {padding:5px 10px;}
+.content,.dir-content,.field--name-description,.degree-block {padding:5px 10px;}
 .content p,
 .field--name-description p {margin-bottom:1em}
 .content img,.field--name-description img {padding:3px}
-
+.degree-block h2 {display:none;}
 ul { list-style: none; }
 ul.noindent,ul.noindent li {
 	padding:0;
@@ -46,10 +46,9 @@ td.vcenter {
 }
 h1, h2, h3, h4,h5 {
 	margin-top: 0;
-}
-h1,h2, h3, h4, h5{
 	font-family: 'Oswald', sans-serif;
 }
+
 .region-content{background:#ffffff}
 .content h2, .content h3 {
 	color: #1d2451;

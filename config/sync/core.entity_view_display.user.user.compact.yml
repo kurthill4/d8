@@ -4,10 +4,18 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
-    - field.field.user.user.user_picture
-    - image.style.thumbnail
+    - field.field.user.user.field_assignment
+    - field.field.user.user.field_degree_or_honor
+    - field.field.user.user.field_email
+    - field.field.user.user.field_employment_type
+    - field.field.user.user.field_external_website
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_job_title
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_office
+    - field.field.user.user.field_phone
+    - field.field.user.user.field_web_pages
   module:
-    - image
     - user
 _core:
   default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
@@ -15,15 +23,17 @@ id: user.user.compact
 targetEntityType: user
 bundle: user
 mode: compact
-content:
-  user_picture:
-    type: image
-    weight: 0
-    region: content
-    settings:
-      image_style: thumbnail
-      image_link: content
-    third_party_settings: {  }
-    label: hidden
+content: {  }
 hidden:
+  field_assignment: true
+  field_degree_or_honor: true
+  field_email: true
+  field_employment_type: true
+  field_external_website: true
+  field_first_name: true
+  field_job_title: true
+  field_last_name: true
+  field_office: true
+  field_phone: true
+  field_web_pages: true
   member_for: true
