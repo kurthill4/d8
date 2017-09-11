@@ -7,5 +7,4 @@ label: Admin
 weight: 3
 is_admin: null
 permissions:
-  - 'edit any image files'
   - 'use text format basic_html'

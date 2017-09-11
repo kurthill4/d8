@@ -1,0 +1,19 @@
+uuid: 19c0b49f-e2d3-4d05-84ca-a6be23746554
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meeting_location
+    - node.type.committee_meeting
+id: node.committee_meeting.field_meeting_location
+field_name: field_meeting_location
+entity_type: node
+bundle: committee_meeting
+label: 'Meeting Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

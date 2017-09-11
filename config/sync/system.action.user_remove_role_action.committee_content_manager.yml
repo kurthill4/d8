@@ -1,0 +1,14 @@
+uuid: fc950eb9-1446-41be-b230-48a2ff9f779e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.committee_content_manager
+  module:
+    - user
+id: user_remove_role_action.committee_content_manager
+label: 'Remove the Committee Content Manager role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: committee_content_manager

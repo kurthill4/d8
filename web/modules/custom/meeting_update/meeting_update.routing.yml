@@ -1,0 +1,8 @@
+meeting_update.admin_settings:
+  path: '/admin/config/development/meeting_update'
+  defaults:
+    _form: '\Drupal\meeting_update\Form\MeetingUpdateForm'
+    _title: 'Meeting Update'
+  requirements:
+    _permission: 'administer site configuration'
+

@@ -1,0 +1,24 @@
+uuid: 1eb5d2de-ce8c-405a-9605-e6536176887f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meeting_date_time
+    - node.type.committee_meeting
+  module:
+    - datetime
+id: node.committee_meeting.field_meeting_date_time
+field_name: field_meeting_date_time
+entity_type: node
+bundle: committee_meeting
+label: 'Meeting Date & Time'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

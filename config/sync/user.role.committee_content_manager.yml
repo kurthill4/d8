@@ -1,0 +1,18 @@
+uuid: 01d41479-1314-491e-b8e7-adacc34e130e
+langcode: en
+status: true
+dependencies: {  }
+id: committee_content_manager
+label: 'Committee Content Manager'
+weight: 15
+is_admin: null
+permissions:
+  - 'create committee_meeting content'
+  - 'create committee_page content'
+  - 'delete any committee_meeting content'
+  - 'delete own committee_meeting content'
+  - 'delete own committee_page content'
+  - 'edit any committee_meeting content'
+  - 'edit any committee_page content'
+  - 'edit own committee_meeting content'
+  - 'edit own committee_page content'

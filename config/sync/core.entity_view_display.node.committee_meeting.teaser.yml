@@ -23,6 +23,7 @@ content:
     region: content
 hidden:
   field_agenda: true
+  field_attached_documents: true
   field_committee: true
   field_file_code: true
   field_file_code_num: true

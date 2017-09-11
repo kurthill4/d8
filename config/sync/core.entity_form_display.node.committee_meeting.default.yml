@@ -9,6 +9,8 @@ dependencies:
     - field.field.node.committee_meeting.field_file_code
     - field.field.node.committee_meeting.field_file_code_num
     - field.field.node.committee_meeting.field_meeting_date
+    - field.field.node.committee_meeting.field_meeting_date_time
+    - field.field.node.committee_meeting.field_meeting_location
     - field.field.node.committee_meeting.field_minutes
     - node.type.committee_meeting
   module:
@@ -70,6 +72,20 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_meeting_date_time:
+    weight: 40
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_meeting_location:
+    weight: 39
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_minutes:
     weight: 35

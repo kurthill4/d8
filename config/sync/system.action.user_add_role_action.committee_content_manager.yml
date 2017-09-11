@@ -1,0 +1,14 @@
+uuid: ee9c3bd4-b801-47bb-8d26-f6a96b25d8ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.committee_content_manager
+  module:
+    - user
+id: user_add_role_action.committee_content_manager
+label: 'Add the Committee Content Manager role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: committee_content_manager

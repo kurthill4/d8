@@ -15,7 +15,6 @@ permissions:
   - 'delete any degree content'
   - 'delete any program content'
   - 'delete own document files'
-  - 'edit any committee_page content'
   - 'edit any degree content'
   - 'edit any program content'
   - 'edit own document files'
