@@ -202,10 +202,10 @@ display:
           entity_field: type
           plugin_id: bundle
       sorts:
-        field_meeting_date_value:
-          id: field_meeting_date_value
-          table: node__field_meeting_date
-          field: field_meeting_date_value
+        field_meeting_date_time_value:
+          id: field_meeting_date_time_value
+          table: node__field_meeting_date_time
+          field: field_meeting_date_time_value
           relationship: none
           group_type: group
           admin_label: ''

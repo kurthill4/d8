@@ -12,7 +12,7 @@ field_name: field_attached_documents
 entity_type: node
 bundle: committee_meeting
 label: 'Attached Documents'
-description: 'Upload any files associated with this meeting.'
+description: 'If there are any other files associated with this meeting, such as charts or reports, upload them here. (No limit).'
 required: false
 translatable: false
 default_value: {  }

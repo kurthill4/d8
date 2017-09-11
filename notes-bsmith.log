@@ -76,3 +76,6 @@ SET name = LEFT(mail, LOCATE('@',mail)-1)
 WHERE name IS NOT NULL
 AND mail IS NOT NULL
 AND NOT name LIKE '%admin%'
+
+2017-09-11
+Local VM has been modified to use SSL, with certificates for each virtual host.

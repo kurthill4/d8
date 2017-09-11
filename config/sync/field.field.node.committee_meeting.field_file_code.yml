@@ -9,8 +9,8 @@ id: node.committee_meeting.field_file_code
 field_name: field_file_code
 entity_type: node
 bundle: committee_meeting
-label: 'File Code'
-description: ''
+label: 'Committee Code'
+description: 'The four-letter code for the committee; e.g., CGOV for College Governance Committee'
 required: false
 translatable: false
 default_value: {  }
