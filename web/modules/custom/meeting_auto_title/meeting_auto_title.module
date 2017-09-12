@@ -1,0 +1,25 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\NodeInterface;
+//use Drupal\Core\Entity;
+//use Drupal\Core\Entity\EntityInterface;
+
+//Implements hook_form_FORM_ID_alter()
+function meeting_auto_title_committee_meeting_form_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+    $form['title']['#access'] = FALSE;
+
+}
+
+
+function meeting_auto_title_node_create(NodeInterface $node) {
+
+  switch ($node->getType()) {
+    case 'committee_meeting':
+      //Change the title
+	$node->setTitle($node->field_meeting_date_time->date->format('m/d/Y'));      
+	break;
+  }
+}
+

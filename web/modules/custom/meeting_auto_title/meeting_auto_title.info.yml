@@ -1,0 +1,6 @@
+name: Meeting Auto Title
+type: module
+description: "Automatically sets node title to meeting date for Committee Meeting nodes"
+package: Custom
+core: 8.x
+
