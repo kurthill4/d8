@@ -276,7 +276,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: "<h2>{{ name_1 }}</h2>\n       <div class=\"col-md-12\">\n            <div class=\"col-md-7\">\n<h3>{{ field_slogan }}</h3>\n<div class=\"spacer\" style=\"height:15px\">&nbsp;</div>\n<div class=\"spacer\">{{ field_image }}</div>"
+            text: "<h2>{{ name_1 }}</h2>\n       <div class=\"col-md-12\">\n            <div class=\"col-md-7\">\n<!--h3>{{ field_slogan }}</h3-->\n<div class=\"spacer\" style=\"height:15px\">&nbsp;</div>\n<div class=\"spacer\">{{ field_image }}</div>"
             make_link: false
             path: ''
             absolute: false
@@ -687,7 +687,7 @@ display:
           plugin_id: standard
       defaults:
         sorts: false
-      enabled: false
+      enabled: true
     cache_metadata:
       max-age: -1
       contexts:
