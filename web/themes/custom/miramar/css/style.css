@@ -208,10 +208,9 @@ nav.main-menu li{
 	width: 80px;
 	text-align: left;
 	line-height: 18px;
-	display: inline-block;
 }
 nav.main-menu li:not(:first-child) {
-	margin-right: 2em;
+	margin-right: 1em;
 }
 nav.main-menu li a{
 	color: #fff;
