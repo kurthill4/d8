@@ -18,7 +18,7 @@ function meeting_auto_title_node_create(NodeInterface $node) {
   switch ($node->getType()) {
     case 'committee_meeting':
       //Change the title
-	$node->setTitle($node->field_meeting_date_time->date->format('m/d/Y'));      
+	$node->setTitle('Committee Meeting');      
 	break;
   }
 }

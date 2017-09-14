@@ -1,0 +1,19 @@
+uuid: cfadaf6c-8b4e-4a7c-8640-821f11c591ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - markup
+    - node
+id: node.field_file_instructions
+field_name: field_file_instructions
+entity_type: node
+type: markup
+settings: {  }
+module: markup
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

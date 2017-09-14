@@ -1130,9 +1130,6 @@ width:100%;
 	max-height:310px;
 }
 
-/*.step-panel td.views-field-field-image {
-	max-width:225px!important;
-}*/
 .step-panel tr,.step-panel td,.step-panel td img {
 	padding:0;
 	margin:0;
@@ -1692,8 +1689,12 @@ ul.dp-menu li:hover a{
 	color: #31b8c9;
 }
 .download {
-	margin-left: 50px	;
+	margin-left: 50px;
 }
+
+#agendas .field--name-field-agenda {display:inline!important;width:40%;float:left!important;}
+#agendas .field--name-field-minutes {display:inline!important;width:40%;float:right!important;}
+
 .faculty-block a {
 	float: none;
 }

@@ -1,0 +1,25 @@
+uuid: a8337e07-3230-4e7a-bd3f-046fa62d2b15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_instructions
+    - node.type.committee_meeting
+  module:
+    - markup
+id: node.committee_meeting.field_file_instructions
+field_name: field_file_instructions
+entity_type: node
+bundle: committee_meeting
+label: 'File Instructions'
+description: ''
+required: false
+translatable: false
+default_value:
+  - {  }
+default_value_callback: ''
+settings:
+  markup:
+    value: "<p>Upload agendas and minutes here. (Must be PDF format). If any supporting documents are needed for this meeting, upload them under \"Attached Documents.\"</p>\r\n"
+    format: full_html
+field_type: markup

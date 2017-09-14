@@ -12,7 +12,7 @@ field_name: field_minutes
 entity_type: node
 bundle: committee_meeting
 label: Minutes
-description: 'Upload the meeting''s minutes here--PDF format preferred'
+description: ''
 required: false
 translatable: false
 default_value: {  }
