@@ -15,7 +15,6 @@ dependencies:
   module:
     - datetime
     - file_entity
-    - markup
     - user
 id: node.committee_meeting.default
 targetEntityType: node
@@ -48,13 +47,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_file_instructions:
-    weight: 6
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: markup
-    region: content
   field_meeting_date_time:
     weight: 2
     label: above
@@ -83,4 +75,5 @@ content:
     region: content
 hidden:
   field_file_code: true
+  field_file_instructions: true
   links: true
