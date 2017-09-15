@@ -1588,6 +1588,11 @@ ul.dp-menu li:hover a{
 	height:300px!important;
 	overflow-y:scroll;
 }
+
+#block-views-block-committee-meetings-block-1 .news-block .form-group {
+	height:150px!important;
+	overflow-y:scroll;
+}
 .committee-side-block li {
 	margin: 20px 0;
 	clear: both;

@@ -350,6 +350,7 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          group: 1
       sorts:
         field_meeting_date_time_value:
           id: field_meeting_date_time_value
@@ -366,20 +367,7 @@ display:
           plugin_id: datetime
       header: {  }
       footer: {  }
-      empty:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: false
-          content:
-            value: 'This is a test.'
-            format: basic_html
-          plugin_id: text
+      empty: {  }
       relationships: {  }
       arguments:
         field_committee_target_id:
@@ -417,8 +405,12 @@ display:
           not: false
           plugin_id: numeric
       display_extenders: {  }
-      title: 'Committee Meetings'
+      title: 'Meetings, Agendas, & Minutes'
       use_ajax: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:
@@ -438,6 +430,35 @@ display:
     display_options:
       display_extenders: {  }
       block_description: 'Committee Meetings'
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            committee_meeting: committee_meeting
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+      defaults:
+        filters: false
+        filter_groups: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:
