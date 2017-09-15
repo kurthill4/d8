@@ -1603,6 +1603,12 @@ ul.dp-menu li:hover a{
 .committee-archive .views-view-grid .views-row {
 	margin-bottom:2em;
 }
+
+.committee-archive h3 {
+	margin-top:1em;
+	margin-bottom:2em;
+}
+
 .committee-side-block li {
 	margin: 20px 0;
 	clear: both;
