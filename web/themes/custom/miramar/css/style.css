@@ -1584,7 +1584,7 @@ ul.dp-menu li:hover a{
   font-weight: normal;
 }
 #block-views-block-campus-resources-block-1 .news-block .form-group,
-#block-views-block-college-governance-block-1 .news-block .form-group,
+#block-views-block-college-governance-block-1 .news-block .form-group
 {
 	height:300px!important;
 	overflow-y:scroll;
