@@ -206,6 +206,7 @@ AddEncoding gzip svgz
   Redirect 302 /library http://www1.sdmiramar.edu/library
   Redirect 302 /campus/library http://www1.sdmiramar.edu/library
   Redirect 302 /campus/av http://www1.sdmiramar.edu/library/av
+  Redirect 301 /campus/asg http://www.sdmiramarasg.com/
   Redirect 301 /campus/campus-police http://police.sdccd.edu
   Redirect 301 /campus/bookstore http://www.bookstore.sdccd.edu/miramar
   Redirect 301 /campus/athletics http://www.miramarjets.com

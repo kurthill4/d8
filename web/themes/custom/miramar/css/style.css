@@ -1,6 +1,8 @@
+html {	font-size: 110%;
+}
+
 body{
 	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
 	overflow-x: hidden;
 	max-width:1280px!important;
 	background:#dbf3f5;
@@ -199,6 +201,8 @@ nav.main-menu{
 }
 
 nav.main-menu ul{
+width:95%;
+float:right;
 	margin: 0;
 	padding: 0;
 	list-style:none!important;
@@ -251,8 +255,8 @@ nav.main-menu li:first-child:hover a {
 nav.main-menu li:first-child i{
 	font-size: 25px;
 }
-/*nav.main-menu li:nth-child(2) {
-	margin-left:25%;
+/*nav.main-menu li:last-child {
+	margin-right:5%;
 }*/
 
 nav.mobile-nav{
@@ -1646,7 +1650,6 @@ ul.dp-menu li:hover a{
 	background: #daf2f4;
 }
 
-
 /*.resources table {width:100%;}
 .resources td {vertical-align:top;width:50%;}
 .resources td:last-child {background: #ffffff;}*/
@@ -1802,7 +1805,7 @@ td.resources-students {
 .resources-students a {
 	color: #31b8c9;
 	border:none;
-	font-size:0.9em;
+	font-size:1em;
 }
 .resources-students li {
 	margin-bottom: 8px;
@@ -1833,12 +1836,12 @@ td.resources-students {
 		 .ne-wrap .news-overlay{
 		 	padding: 22% 30px;
 		 }
-		 nav.main-menu li:first-child a{
+		 nav.main-menu li:first-child {
 			display:none!important;
 		 }
 		 nav.main-menu li {
-			width:40px!important;
-			 margin-right: 15px!important;
+			width:40px;
+			 margin-right:1.5em!important;
 			line-height:12px!important;
 		 }
 		 nav.main-menu li a{
