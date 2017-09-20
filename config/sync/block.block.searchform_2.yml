@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - search
+    - system
   theme:
     - miramar
 id: searchform_2
@@ -17,4 +18,9 @@ settings:
   label: 'Search form'
   provider: search
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /search/results
+    negate: false
+    context_mapping: {  }
