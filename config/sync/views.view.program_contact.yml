@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.user.field_email
     - field.storage.user.field_first_name
     - field.storage.user.field_last_name
     - field.storage.user.field_office
@@ -151,10 +150,10 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-        field_email:
-          id: field_email
-          table: user__field_email
-          field: field_email
+        mail:
+          id: mail
+          table: users_field_data
+          field: mail
           relationship: field_director_contact
           group_type: group
           admin_label: ''
@@ -212,6 +211,8 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: user
+          entity_field: mail
           plugin_id: field
         field_first_name:
           id: field_first_name
@@ -287,7 +288,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<i class="fa fa-envelope"></i> <a href="mailto:{{ field_email }}">{{ field_first_name }} {{ field_last_name }}</a>'
+            text: '<i class="fa fa-envelope"></i> <a href="mailto:{{ mail }}">{{ field_first_name }} {{ field_last_name }}</a>'
             make_link: false
             path: 'mailto:{{ field_email }}'
             absolute: false
@@ -559,7 +560,6 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.user.field_email'
         - 'config:field.storage.user.field_first_name'
         - 'config:field.storage.user.field_last_name'
         - 'config:field.storage.user.field_office'
@@ -581,7 +581,6 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.user.field_email'
         - 'config:field.storage.user.field_first_name'
         - 'config:field.storage.user.field_last_name'
         - 'config:field.storage.user.field_office'

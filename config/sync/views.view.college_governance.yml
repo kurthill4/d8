@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.user.field_email
     - field.storage.user.field_first_name
     - field.storage.user.field_last_name
     - node.type.committee_page
@@ -132,10 +131,10 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-        field_email:
-          id: field_email
-          table: user__field_email
-          field: field_email
+        mail:
+          id: mail
+          table: users_field_data
+          field: mail
           relationship: field_committee_chair
           group_type: group
           admin_label: ''
@@ -193,6 +192,8 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: user
+          entity_field: mail
           plugin_id: field
         field_first_name:
           id: field_first_name
@@ -270,7 +271,7 @@ display:
             alter_text: true
             text: '{{ field_first_name }} {{ field_last_name }}'
             make_link: true
-            path: 'mailto:{{ field_email }}'
+            path: 'mailto:{{ mail }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -320,10 +321,10 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_email_1:
-          id: field_email_1
-          table: user__field_email
-          field: field_email
+        mail_1:
+          id: mail_1
+          table: users_field_data
+          field: mail
           relationship: field_committee_co_chair
           group_type: group
           admin_label: ''
@@ -381,6 +382,8 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: user
+          entity_field: mail
           plugin_id: field
         field_first_name_1:
           id: field_first_name_1
@@ -458,7 +461,7 @@ display:
             alter_text: true
             text: '{{ field_first_name_1 }} {{ field_last_name_1 }}'
             make_link: true
-            path: 'mailto:{{ field_email_1 }}'
+            path: 'mailto:{{ mail_1 }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -577,7 +580,6 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.user.field_email'
         - 'config:field.storage.user.field_first_name'
         - 'config:field.storage.user.field_last_name'
   block_1:
@@ -758,6 +760,5 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.user.field_email'
         - 'config:field.storage.user.field_first_name'
         - 'config:field.storage.user.field_last_name'

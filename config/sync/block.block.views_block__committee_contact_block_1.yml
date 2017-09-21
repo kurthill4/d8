@@ -1,18 +1,18 @@
-uuid: 998dd207-453d-4e46-bdbd-bf3eb9232b16
+uuid: a6f6abe7-f0c1-449e-98e7-77293348c886
 langcode: en
 status: true
 dependencies:
   config:
     - views.view.committee_contact
   module:
-    - ctools
+    - node
     - views
   theme:
     - miramar
 id: views_block__committee_contact_block_1
 theme: miramar
 region: sidebar_second
-weight: -22
+weight: -23
 provider: null
 plugin: 'views_block:committee_contact-block_1'
 settings:
@@ -24,8 +24,8 @@ settings:
   items_per_page: none
   context_mapping: {  }
 visibility:
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
+  node_type:
+    id: node_type
     bundles:
       committee_page: committee_page
     negate: false

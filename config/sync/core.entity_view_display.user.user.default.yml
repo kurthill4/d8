@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.user.user.field_assignment
     - field.field.user.user.field_degree_or_honor
-    - field.field.user.user.field_email
     - field.field.user.user.field_employment_type
     - field.field.user.user.field_external_website
     - field.field.user.user.field_first_name
@@ -32,13 +31,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
-  field_email:
-    weight: 1
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
     region: content
   field_external_website:
     weight: 10

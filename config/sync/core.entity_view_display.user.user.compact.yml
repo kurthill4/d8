@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.user.compact
     - field.field.user.user.field_assignment
     - field.field.user.user.field_degree_or_honor
-    - field.field.user.user.field_email
     - field.field.user.user.field_employment_type
     - field.field.user.user.field_external_website
     - field.field.user.user.field_first_name
@@ -27,7 +26,6 @@ content: {  }
 hidden:
   field_assignment: true
   field_degree_or_honor: true
-  field_email: true
   field_employment_type: true
   field_external_website: true
   field_first_name: true

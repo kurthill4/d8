@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.taxonomy_term.field_location
     - field.storage.taxonomy_term.field_phone
-    - field.storage.user.field_email
     - field.storage.user.field_first_name
     - field.storage.user.field_last_name
     - taxonomy.vocabulary.campus_resources
@@ -337,14 +336,14 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_email:
-          id: field_email
-          table: user__field_email
-          field: field_email
+        mail:
+          id: mail
+          table: users_field_data
+          field: mail
           relationship: field_contact
           group_type: group
           admin_label: ''
-          label: ''
+          label: Email
           exclude: true
           alter:
             alter_text: false
@@ -377,7 +376,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -398,6 +397,8 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: user
+          entity_field: mail
           plugin_id: field
         field_first_name:
           id: field_first_name
@@ -475,7 +476,7 @@ display:
             alter_text: true
             text: '<i class="fa fa-envelope-o" aria-hidden="true"></i> {{ field_first_name }} {{ field_last_name }}'
             make_link: true
-            path: 'mailto:{{ field_email }}'
+            path: 'mailto:{{ mail }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -626,7 +627,6 @@ display:
       tags:
         - 'config:field.storage.taxonomy_term.field_location'
         - 'config:field.storage.taxonomy_term.field_phone'
-        - 'config:field.storage.user.field_email'
         - 'config:field.storage.user.field_first_name'
         - 'config:field.storage.user.field_last_name'
   page_1:
@@ -647,6 +647,5 @@ display:
       tags:
         - 'config:field.storage.taxonomy_term.field_location'
         - 'config:field.storage.taxonomy_term.field_phone'
-        - 'config:field.storage.user.field_email'
         - 'config:field.storage.user.field_first_name'
         - 'config:field.storage.user.field_last_name'
