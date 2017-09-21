@@ -114,7 +114,7 @@ header{
 	display: inline-block;
 	text-align: center;
 	color: #fff;
-	font-size: 14px;
+	font-size: 0.9em;;
 	text-decoration: none;
 }
 .top-links a:hover{
@@ -160,7 +160,7 @@ header{
   outline: none;
   box-shadow: none;
   height: 42px;
-	font-size: 22px;
+	font-size: 1.2em;
 	color: #333;
 }
 .search-desktop ul li{
@@ -171,7 +171,7 @@ header{
 .search-desktop ul li a{
 	color: #acb2b2;
 	text-decoration: none;
-	font-size: 22px;
+	font-size: 1.2em;
 	text-align: left;
 	display: block;
 }
@@ -381,7 +381,7 @@ nav.mobile-nav li:first-child ol li{
 	color: #31b8c9;
 }
 .breadcrumb li{
-	font-size: 12px;
+	font-size: 0.9em;
 }
 .main-content h1 {
 	font-family: 'Oswald', sans-serif;
@@ -548,17 +548,17 @@ nav.mobile-nav li:first-child ol li{
 }
 .caption h1{
 	font-family: 'Nixie One', cursive;
-	font-size: 60px;
+	font-size: 3.75em;
 	z-index:1000;
 }
 .custom .caption h1{
 	font-family: 'Nixie One', cursive;
-	font-size: 40px;
+	font-size: 2.5em;
 	z-index:1000;
 }
 .caption p{
 	font-family: 'Oswald', sans-serif;
-	font-size: 25px;
+	font-size: 1.5625em;
 }
 .get-started a{
 	background: #1d2451;
@@ -1378,10 +1378,6 @@ ul.dp-menu li:hover a{
 	margin-left:10px;
 	background: #daf2f4;
 }
-.dcf-content table {
-	table-layout:fixed;
-	empty-cells: show;
-}
 
 .dcf-content .table>tbody>tr>td, .dcf-content .table>tbody>tr>th, .dcf-content .table>tfoot>tr>td, .dcf-content .table>tfoot>tr>th, .dcf-content .table>thead>tr>td, .dcf-content .table>thead>tr>th{
 	border-top: 0;
@@ -1392,7 +1388,7 @@ ul.dp-menu li:hover a{
 .dcf-content .table>thead>tr>th{
 	border-bottom: 0;
 	font-family: 'Oswald', sans-serif;
-	font-size: 20px;
+	font-size: 1.1363636363636362em;
 	font-weight: 500;
 }
 .dcf-content td, .dcf-content th{
@@ -1409,7 +1405,7 @@ ul.dp-menu li:hover a{
 	font-weight: normal;
 }
 .dcf-title{
-	padding: 20px 40px 10px
+	padding: 20px 40px 10px;
 }
 .zigzag{
 	margin: 20px 0;
