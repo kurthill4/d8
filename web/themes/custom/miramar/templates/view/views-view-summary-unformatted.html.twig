@@ -21,12 +21,22 @@
  */
 #}
 <div class="alpha_pager">
-<ul class="pagination js-pager__items">
+<ul class="pagination js-pager__items hide-xs">
 {% for row in rows  %}
-  <li class="pager__item"><a href="{{ row.url }}"{{ row.attributes.addClass(row.active ? 'is-active')|without('href') }}>{{ row.link }}</a></li>
+<li class="pager__item"><a href="{{ row.url }}"{{ row.attributes.addClass(row.active ? 'is-active')|without('href') }}>{{ row.link }}</a></li><!---->
+{% endfor %}
+</ul>
+<div class="hide-lg">
+{% for row in rows  %}
+  {{ options.inline ? '<span' : '<div' }} >
+  {% if row.separator -%}
+    {{ row.separator }}
+  {%- endif %}
+  <a href="{{ row.url }}"{{ row.attributes.addClass(row.active ? 'is-active')|without('href') }}>{{ row.link }}</a>
   {% if options.count %}
     ({{ row.count }})
   {% endif %}
+  {{ options.inline ? '</span>' : '</div>' }}
 {% endfor %}
-</ul>
+
 </div>
