@@ -1391,6 +1391,10 @@ ul.dp-menu li:hover a{
 	font-size: 1.1363636363636362em;
 	font-weight: 500;
 }
+.dcf-content caption {
+	font-family: 'Oswald', sans-serif;
+	font-size:2.5em;
+}
 .dcf-content td, .dcf-content th{
 	padding: 15px 20px !important;
 }
