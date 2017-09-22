@@ -14,6 +14,7 @@ dependencies:
     - link
     - telephone
     - user
+    - views_bootstrap
 id: people_directory
 label: 'People Directory'
 module: views
@@ -75,7 +76,7 @@ display:
             offset_label: Offset
           quantity: 9
       style:
-        type: table
+        type: views_bootstrap_table
         options:
           grouping:
             -
@@ -84,11 +85,7 @@ display:
               rendered_strip: false
           row_class: ''
           default_row_class: true
-          override: true
-          sticky: false
-          caption: ''
-          summary: ''
-          description: ''
+          uses_fields: false
           columns:
             field_last_name_1: field_last_name_1
             mail: mail
@@ -99,6 +96,7 @@ display:
             field_assignment: field_assignment
             field_office: field_office
             field_phone: field_phone
+          default: field_last_name
           info:
             field_last_name_1:
               sortable: false
@@ -161,8 +159,15 @@ display:
               separator: ''
               empty_column: false
               responsive: priority-medium
-          default: field_last_name
+          override: true
+          sticky: false
+          order: asc
+          caption: ''
+          summary: ''
+          description: ''
           empty_table: false
+          bootstrap_styles: {  }
+          responsive: false
       row:
         type: fields
         options:

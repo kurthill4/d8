@@ -1,22 +1,22 @@
-uuid: dc0bec6c-26dd-49fc-9931-4f6c36cc2a50
+uuid: c167624d-1da9-4f9b-b4cc-39c9229d0dbe
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.committee_meetings
+    - views.view.department_info
   module:
     - node
     - views
   theme:
     - miramar
-id: views_block__committee_meetings_block_1
+id: views_block__department_info_block_1
 theme: miramar
 region: sidebar_second
-weight: -15
+weight: -21
 provider: null
-plugin: 'views_block:committee_meetings-block_1'
+plugin: 'views_block:department_info-block_1'
 settings:
-  id: 'views_block:committee_meetings-block_1'
+  id: 'views_block:department_info-block_1'
   label: ''
   provider: views
   label_display: visible
@@ -27,7 +27,7 @@ visibility:
   node_type:
     id: node_type
     bundles:
-      committee_page: committee_page
+      department_page: department_page
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
