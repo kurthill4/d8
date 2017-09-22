@@ -97,9 +97,9 @@
             <p>Find People &amp; Places</p>
           </div>
           <div class="slide-buttons">
-            <a href="/directory/people">Find People</a>
-            <a href="/directory/places">Find Places</a>
-            <a href="/directory/departments">Find Departments</a>
+            <a href="/directory/people" {% if '/people' in url %}class="active"{% endif %}>Find People</a>
+            <a href="/directory/places" {% if '/places' in url %}class="active"{% endif %}>Find Places</a>
+            <a href="/directory/departments" {% if '/departments' in url %}class="active"{% endif %}>Find Departments</a>
           </div>
 
 	</div>

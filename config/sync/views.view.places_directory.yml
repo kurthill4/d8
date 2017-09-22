@@ -12,6 +12,7 @@ dependencies:
     - taxonomy
     - telephone
     - user
+    - views_bootstrap
 id: places_directory
 label: 'Places Directory'
 module: views
@@ -74,7 +75,7 @@ display:
             offset_label: Offset
           quantity: 9
       style:
-        type: table
+        type: views_bootstrap_table
         options:
           grouping:
             -
@@ -83,8 +84,8 @@ display:
               rendered_strip: false
           row_class: ''
           default_row_class: true
-          override: true
-          sticky: false
+          override: 1
+          sticky: 0
           caption: ''
           summary: ''
           description: ''
@@ -98,56 +99,62 @@ display:
             field_last_name: field_last_name
           info:
             name_1:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             name:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             field_location:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: priority-medium
             field_phone:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: priority-medium
             mail:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             field_first_name:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: priority-low
             field_last_name:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: priority-low
           default: '-1'
-          empty_table: false
+          empty_table: 0
+          responsive: 1
+          bootstrap_styles:
+            striped: striped
+            bordered: 0
+            hover: 0
+            condensed: 0
       row:
         type: fields
         options:

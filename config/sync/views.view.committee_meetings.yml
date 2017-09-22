@@ -15,6 +15,7 @@ dependencies:
     - file_entity
     - node
     - user
+    - views_bootstrap
 id: committee_meetings
 label: 'Committee Meetings'
 module: views
@@ -1554,20 +1555,21 @@ display:
           plugin_id: numeric
       path: campus/governance/committees/archive/%
       style:
-        type: grid
+        type: views_bootstrap_grid
         options:
           grouping:
             -
               field: field_committee
               rendered: true
               rendered_strip: false
-          columns: 3
-          automatic_width: true
+          row_class: ''
+          default_row_class: true
           alignment: horizontal
-          col_class_default: true
-          col_class_custom: ''
-          row_class_default: true
-          row_class_custom: ''
+          columns: '3'
+          col_xs: col-xs-12
+          col_sm: col-sm-6
+          col_md: col-md-6
+          col_lg: col-lg-4
       row:
         type: fields
         options:

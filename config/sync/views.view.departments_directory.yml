@@ -11,6 +11,7 @@ dependencies:
     - node
     - telephone
     - user
+    - views_bootstrap
 id: departments_directory
 label: 'Departments Directory'
 module: views
@@ -70,84 +71,90 @@ display:
             previous: ‹‹
             next: ››
       style:
-        type: table
+        type: views_bootstrap_table
         options:
           grouping: {  }
           row_class: ''
           default_row_class: true
-          override: true
-          sticky: false
+          override: 1
+          sticky: 0
           caption: ''
           summary: ''
           description: ''
           columns:
             title: title
-            field_email: field_email
+            mail: mail
             field_first_name: field_first_name
             field_last_name: field_last_name
-            field_email_1: field_last_name
+            mail_1: mail_1
             field_first_name_1: field_last_name
             field_last_name_1: field_last_name
             field_phone: field_phone
           info:
             title:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
-            field_email:
-              sortable: false
+            mail:
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             field_first_name:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             field_last_name:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: '<br />'
-              empty_column: false
+              empty_column: 0
               responsive: priority-medium
-            field_email_1:
-              sortable: false
+            mail_1:
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             field_first_name_1:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             field_last_name_1:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             field_phone:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: priority-low
           default: '-1'
-          empty_table: false
+          empty_table: 0
+          responsive: 1
+          bootstrap_styles:
+            striped: striped
+            bordered: 0
+            hover: 0
+            condensed: 0
       row:
         type: fields
         options:

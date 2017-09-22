@@ -30,6 +30,10 @@ function miramar_preprocess_block(&$variables) {
   }
 }
 
+function miramar_preprocess_page(&$variables) {
+  $variables['url'] = $_SERVER['REQUEST_URI'];
+  $variables['#cache']['contexts'][] = 'url.path';
+}
 
 function miramar_theme_suggestions_page_alter(&$suggestions, &$vars) {
   if (\Drupal::routeMatch()->getRouteName() == 'entity.taxonomy_term.canonical' && $tid = \Drupal::routeMatch()->getRawParameter('taxonomy_term')) {

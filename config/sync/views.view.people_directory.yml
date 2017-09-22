@@ -85,7 +85,11 @@ display:
               rendered_strip: false
           row_class: ''
           default_row_class: true
-          uses_fields: false
+          override: 1
+          sticky: 0
+          caption: ''
+          summary: ''
+          description: ''
           columns:
             field_last_name_1: field_last_name_1
             mail: mail
@@ -96,78 +100,76 @@ display:
             field_assignment: field_assignment
             field_office: field_office
             field_phone: field_phone
-          default: field_last_name
           info:
             field_last_name_1:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             mail:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             field_external_website:
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             field_first_name:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             field_last_name:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             field_job_title:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: priority-low
             field_assignment:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: priority-low
             field_office:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: priority-medium
             field_phone:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: priority-medium
-          override: true
-          sticky: false
-          order: asc
-          caption: ''
-          summary: ''
-          description: ''
-          empty_table: false
-          bootstrap_styles: {  }
-          responsive: false
+          default: field_last_name
+          empty_table: 0
+          responsive: 0
+          bootstrap_styles:
+            striped: striped
+            bordered: 0
+            hover: 0
+            condensed: 0
       row:
         type: fields
         options:
@@ -566,7 +568,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Assignment
+          label: Office/Dept
           exclude: false
           alter:
             alter_text: false

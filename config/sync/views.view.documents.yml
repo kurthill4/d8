@@ -10,6 +10,7 @@ dependencies:
     - file_entity
     - node
     - user
+    - views_bootstrap
 id: documents
 label: Documents
 module: views
@@ -69,16 +70,17 @@ display:
             previous: ‹‹
             next: ››
       style:
-        type: grid
+        type: views_bootstrap_grid
         options:
           grouping: {  }
-          columns: 4
-          automatic_width: true
+          row_class: ''
+          default_row_class: true
           alignment: horizontal
-          col_class_default: true
-          col_class_custom: ''
-          row_class_default: true
-          row_class_custom: ''
+          columns: '4'
+          col_xs: col-xs-12
+          col_sm: col-sm-6
+          col_md: col-md-4
+          col_lg: col-lg-3
       row:
         type: fields
         options:
