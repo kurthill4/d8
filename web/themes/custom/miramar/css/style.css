@@ -1635,7 +1635,7 @@ div.alpha_pager ul li a {
 }
 
 
-.committee-archive .row {
+#views-bootstrap-committee-meetings-page-1 .row {
 	margin:2em auto;
 }
 
@@ -1884,6 +1884,13 @@ td.resources-students {
 	 /* Medium Devices, Desktops */
 	 @media only screen and (max-width : 992px) {
 .body {max-width:960px;}
+#views-bootstrap-committee-meetings-page-1 .row {
+	margin:2em auto;
+}
+#views-bootstrap-committee-meetings-page-1 .col {
+	margin:1em auto;
+}
+
 .slide-0{
   -webkit-background-size: 960px 640px!important;
   -moz-background-size: 960px 640px!important;
@@ -2014,6 +2021,13 @@ display:none!important;
 			 display: none!important;
 		 }
 body p {font-size:12px;}
+#views-bootstrap-committee-meetings-page-1 .row {
+	margin:2em auto;
+}
+#views-bootstrap-committee-meetings-page-1 .col {
+	margin:1em auto;
+}
+
 .block-views-blockwhat-do-you-want-to-be-block-1 {display:block;margin-top:1px;}
 .block-views-blockwhat-do-you-want-to-be-block-1 h1 {font-size:4rem!important;}
 .block-views-blockwhat-do-you-want-to-be-block-1 p {font-size:2rem!important;}
@@ -2275,6 +2289,13 @@ body p {font-size:12px;}
 	 	.directory input, .directory button {
 	 		float: left;
 	 	}
+#views-bootstrap-committee-meetings-page-1 .row {
+	margin:2em auto;
+}
+#views-bootstrap-committee-meetings-page-1 .col {
+	margin:1em auto;
+}
+
 	}
 
 	 /* Extra Small Devices, Phones */
