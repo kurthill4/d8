@@ -13,6 +13,7 @@ dependencies:
   module:
     - node
     - user
+    - views_bootstrap
     - views_jump_menu
 id: degrees
 label: Degrees
@@ -59,7 +60,7 @@ display:
         options:
           offset: 0
       style:
-        type: table
+        type: views_bootstrap_table
         options:
           grouping:
             -
@@ -68,8 +69,8 @@ display:
               rendered_strip: false
           row_class: ''
           default_row_class: true
-          override: true
-          sticky: false
+          override: 0
+          sticky: 0
           caption: ''
           summary: ''
           description: ''
@@ -84,63 +85,69 @@ display:
             field_catalog_pages: field_catalog_pages
           info:
             title:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             title_1:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             field_aa_degree:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             field_aa_transfer:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             field_as_degree:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             field_certificate_achievement:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             field_certificate_performance:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             field_catalog_pages:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
           default: '-1'
-          empty_table: false
+          empty_table: 0
+          responsive: 1
+          bootstrap_styles:
+            striped: striped
+            bordered: 0
+            hover: 0
+            condensed: 0
       row:
         type: fields
         options:
