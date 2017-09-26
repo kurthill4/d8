@@ -297,6 +297,12 @@ display:
           separator: ''
           hide_empty: false
           default_field_elements: true
+      displays:
+        block_1: block_1
+        block_2: block_2
+        block_3: block_3
+        block_4: block_4
+        block_5: block_5
     cache_metadata:
       max-age: -1
       contexts:

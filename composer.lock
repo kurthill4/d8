@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e6b5e5ac8f8095be83076309dae2ffe9",
+    "content-hash": "6e6d1afa1a9bb722dad73bd7ef933da9",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4546,48 +4546,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/tac_lite"
             }
-        },
-        {
-            "name": "drupal/taxonomy_manager",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/taxonomy_manager",
-                "reference": "793f2257636b285da379b77fd22ff5a70ef00073"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1449008639"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "kalinchernev",
-                    "homepage": "https://www.drupal.org/user/231185"
-                },
-                {
-                    "name": "mh86",
-                    "homepage": "https://www.drupal.org/user/59747"
-                }
-            ],
-            "description": "Tool for administrating taxonomy terms.",
-            "homepage": "https://www.drupal.org/project/taxonomy_manager",
-            "support": {
-                "source": "http://cgit.drupalcode.org/taxonomy_manager"
-            },
-            "time": "2015-12-01 22:19:12"
         },
         {
             "name": "drupal/themable_forms",
