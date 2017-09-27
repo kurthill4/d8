@@ -212,6 +212,7 @@ AddEncoding gzip svgz
   Redirect 301 /campus/athletics http://www.miramarjets.com
   Redirect 301 /campus/as http://www.sdmiramarasg.com
   Redirect 302 /academics/ilc /campus/labs/ilc
+  Redirect 302 /dsps /campus/dsps
 
   RedirectMatch 302 "^/webfm_send/(.*)$" "http://www1.sdmiramar.edu/webfm_send/$1"
   RedirectMatch 302 "/feeds/(.*)$" "http://www1.sdmiramar.edu/feeds/$1"
