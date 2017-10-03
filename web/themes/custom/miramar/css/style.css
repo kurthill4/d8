@@ -1751,9 +1751,9 @@ div.alpha_pager ul li a {
 .download {
 	margin-left: 50px;
 }
-#agendas {display:block}
-#agendas .field--name-field-agenda {display:inline!important;width:40%;float:left!important;}
-#agendas .field--name-field-minutes {display:inline!important;width:40%;float:right!important;}
+#agendas {display:block;width:550px}
+#agendas .field--name-field-agenda {display:inline!important;width:49%;float:left!important;}
+#agendas .field--name-field-minutes {display:inline!important;width:49%;float:right!important;}
 
 .faculty-block a {
 	float: none;
