@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e6b5e5ac8f8095be83076309dae2ffe9",
+    "content-hash": "f08b8380184a1a2a2d9d0daefbcb2812",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2089,54 +2089,6 @@
             "time": "2017-08-16T17:10:35+00:00"
         },
         {
-            "name": "drupal/csv_serialization",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/csv_serialization",
-                "reference": "8.x-1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/csv_serialization-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "90023afb1a9296598c3d8ac9c8c81df4d00a2663"
-            },
-            "require": {
-                "drupal/core": "^8.0.4",
-                "league/csv": "^7.1"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1470405718",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "grasmash",
-                    "homepage": "https://www.drupal.org/user/455714"
-                }
-            ],
-            "description": "Provides CSV as a serialization format.",
-            "homepage": "https://www.drupal.org/project/csv_serialization",
-            "support": {
-                "source": "http://cgit.drupalcode.org/csv_serialization"
-            }
-        },
-        {
             "name": "drupal/ctools",
             "version": "3.0.0",
             "source": {
@@ -2219,84 +2171,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/ctools",
                 "issues": "https://www.drupal.org/project/issues/ctools"
-            }
-        },
-        {
-            "name": "drupal/devel",
-            "version": "1.0.0-rc2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/devel",
-                "reference": "8.x-1.0-rc2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/devel-8.x-1.0-rc2.zip",
-                "reference": "8.x-1.0-rc2",
-                "shasum": "011322bf9c263dab29f94640829f4b654e9c5632"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "suggest": {
-                "symfony/var-dumper": "Pretty print complex values better with var-dumper available"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-rc2",
-                    "datestamp": "1492989244"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Moshe Weitzman",
-                    "homepage": "https://github.com/weitzman",
-                    "email": "weitzman@tejasa.com",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Hans Salvisberg",
-                    "homepage": "https://www.drupal.org/u/salvis",
-                    "email": "drupal@salvisberg.com",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Luca Lusso",
-                    "homepage": "https://www.drupal.org/u/lussoluca",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Marco (willzyx)",
-                    "homepage": "https://www.drupal.org/u/willzyx",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "See contributors",
-                    "homepage": "https://www.drupal.org/node/3236/committers"
-                },
-                {
-                    "name": "salvis",
-                    "homepage": "https://www.drupal.org/user/82964"
-                },
-                {
-                    "name": "willzyx",
-                    "homepage": "https://www.drupal.org/user/1043862"
-                }
-            ],
-            "description": "Various blocks, pages, and functions for developers.",
-            "homepage": "http://drupal.org/project/devel",
-            "support": {
-                "source": "http://cgit.drupalcode.org/devel",
-                "issues": "http://drupal.org/project/devel",
-                "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {
@@ -2418,44 +2292,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/entity"
             }
-        },
-        {
-            "name": "drupal/entity_clone",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/entity_clone",
-                "reference": "9265e359bd31bda693dac9ad84ad52fe63531488"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1460620739"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "vpeltot",
-                    "homepage": "https://www.drupal.org/user/1361586"
-                }
-            ],
-            "description": "Add a clone action for all entities",
-            "homepage": "https://www.drupal.org/project/entity_clone",
-            "support": {
-                "source": "http://cgit.drupalcode.org/entity_clone"
-            },
-            "time": "2016-04-14 07:57:21"
         },
         {
             "name": "drupal/entity_embed",
@@ -3606,158 +3442,6 @@
             }
         },
         {
-            "name": "drupal/migrate_plus",
-            "version": "2.0.0-beta2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/migrate_plus",
-                "reference": "8.x-2.0-beta2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-2.0-beta2.zip",
-                "reference": "8.x-2.0-beta2",
-                "shasum": "0b29113a3c00c7ab3ba73e811da3450edca4c0bb"
-            },
-            "require": {
-                "drupal/core": "^8.1"
-            },
-            "require-dev": {
-                "drupal/migrate_example_advanced_setup": "*",
-                "drupal/migrate_example_setup": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-2.0-beta2",
-                    "datestamp": "1476307439"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Mike Ryan",
-                    "homepage": "https://www.drupal.org/u/mikeryan",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "mikeryan",
-                    "homepage": "https://www.drupal.org/user/4420"
-                }
-            ],
-            "description": "Enhancements to core migration support.",
-            "homepage": "https://www.drupal.org/project/migrate_plus",
-            "support": {
-                "source": "https://cgit.drupalcode.org/migrate_plus",
-                "issues": "https://www.drupal.org/project/issues/migrate_plus",
-                "irc": "irc://irc.freenode.org/drupal-migrate"
-            }
-        },
-        {
-            "name": "drupal/migrate_source_csv",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/migrate_source_csv",
-                "reference": "8.x-2.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_source_csv-8.x-2.0.zip",
-                "reference": "8.x-2.0",
-                "shasum": "056845ce1679a051733b12576e3204609dce293d"
-            },
-            "require": {
-                "drupal/core": "~8.1"
-            },
-            "require-dev": {
-                "mikey179/vfsstream": "~1",
-                "phpunit/phpunit": "~4"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-2.0",
-                    "datestamp": "1479750843"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Lucas Hedding",
-                    "homepage": "https://www.drupal.org/u/heddn",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "mikeryan",
-                    "homepage": "https://www.drupal.org/user/4420"
-                }
-            ],
-            "description": "CSV source migration.",
-            "homepage": "https://www.drupal.org/project/migrate_source_csv",
-            "support": {
-                "source": "https://cgit.drupalcode.org/migrate_source_csv",
-                "issues": "https://www.drupal.org/project/issues/migrate_source_csv",
-                "irc": "irc://irc.freenode.org/drupal-migrate"
-            }
-        },
-        {
-            "name": "drupal/migrate_tools",
-            "version": "2.0.0-beta1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/migrate_tools",
-                "reference": "8.x-2.0-beta1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_tools-8.x-2.0-beta1.zip",
-                "reference": "8.x-2.0-beta1",
-                "shasum": "bf823a9d08d08b99d5ea1469729b30f9969ef519"
-            },
-            "require": {
-                "drupal/core": "^8.1",
-                "drupal/migrate_plus": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-2.0-beta1",
-                    "datestamp": "1476313439"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "mikeryan",
-                    "homepage": "https://www.drupal.org/user/4420"
-                }
-            ],
-            "description": "Tools to assist in developing and running migrations.",
-            "homepage": "https://www.drupal.org/project/migrate_tools",
-            "support": {
-                "source": "http://cgit.drupalcode.org/migrate_tools"
-            }
-        },
-        {
             "name": "drupal/oauth",
             "version": "2.0.0",
             "source": {
@@ -4548,48 +4232,6 @@
             }
         },
         {
-            "name": "drupal/taxonomy_manager",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/taxonomy_manager",
-                "reference": "793f2257636b285da379b77fd22ff5a70ef00073"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1449008639"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "kalinchernev",
-                    "homepage": "https://www.drupal.org/user/231185"
-                },
-                {
-                    "name": "mh86",
-                    "homepage": "https://www.drupal.org/user/59747"
-                }
-            ],
-            "description": "Tool for administrating taxonomy terms.",
-            "homepage": "https://www.drupal.org/project/taxonomy_manager",
-            "support": {
-                "source": "http://cgit.drupalcode.org/taxonomy_manager"
-            },
-            "time": "2015-12-01 22:19:12"
-        },
-        {
             "name": "drupal/themable_forms",
             "version": "1.0.0-beta1",
             "source": {
@@ -5061,74 +4703,6 @@
                 "source": "http://cgit.drupalcode.org/views_bootstrap"
             },
             "time": "2017-03-29 14:23:33"
-        },
-        {
-            "name": "drupal/views_data_export",
-            "version": "1.0.0-alpha4",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/views_data_export",
-                "reference": "8.x-1.0-alpha4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_data_export-8.x-1.0-alpha4.zip",
-                "reference": "8.x-1.0-alpha4",
-                "shasum": "d279137d6de1f8514c7ca69725b305ab58e30ed7"
-            },
-            "require": {
-                "drupal/core": "*",
-                "drupal/csv_serialization": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-alpha4",
-                    "datestamp": "1482169083",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Steven Jones",
-                    "homepage": "https://www.drupal.org/user/99644"
-                },
-                {
-                    "name": "amoebanath",
-                    "homepage": "https://www.drupal.org/user/2810799"
-                },
-                {
-                    "name": "james.williams",
-                    "homepage": "https://www.drupal.org/user/592268"
-                },
-                {
-                    "name": "jamsilver",
-                    "homepage": "https://www.drupal.org/user/476732"
-                },
-                {
-                    "name": "jhedstrom",
-                    "homepage": "https://www.drupal.org/user/208732"
-                },
-                {
-                    "name": "nerdstein",
-                    "homepage": "https://www.drupal.org/user/1557710"
-                }
-            ],
-            "description": "Plugin to export views data into various file formats.",
-            "homepage": "https://www.drupal.org/project/views_data_export",
-            "support": {
-                "source": "http://cgit.drupalcode.org/views_data_export"
-            }
         },
         {
             "name": "drupal/views_jump_menu",
@@ -5908,121 +5482,6 @@
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
             "time": "2017-03-31T12:40:41+00:00"
-        },
-        {
-            "name": "kint-php/kint",
-            "version": "2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kint-php/kint.git",
-                "reference": "d6b2540da2477ec8f4c5d6d30807208e5f814d75"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kint-php/kint/zipball/d6b2540da2477ec8f4c5d6d30807208e5f814d75",
-                "reference": "d6b2540da2477ec8f4c5d6d30807208e5f814d75",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.1.2"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.0",
-                "phpunit/phpunit": "^4.0",
-                "symfony/finder": "^2.6"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "init.php"
-                ],
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Rokas Šleinius",
-                    "homepage": "https://github.com/raveren"
-                },
-                {
-                    "name": "Jonathan Vollebregt",
-                    "homepage": "https://github.com/jnvsor"
-                },
-                {
-                    "name": "Contributors",
-                    "homepage": "https://github.com/kint-php/kint/graphs/contributors"
-                }
-            ],
-            "description": "Kint - debugging tool for PHP developers",
-            "homepage": "https://kint-php.github.io/kint/",
-            "keywords": [
-                "debug",
-                "kint",
-                "php"
-            ],
-            "time": "2017-04-22T13:41:40+00:00"
-        },
-        {
-            "name": "league/csv",
-            "version": "7.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/csv.git",
-                "reference": "69bafa6ff924fbf9effe4275d6eb16be81a853ef"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/csv/zipball/69bafa6ff924fbf9effe4275d6eb16be81a853ef",
-                "reference": "69bafa6ff924fbf9effe4275d6eb16be81a853ef",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "fabpot/php-cs-fixer": "^1.9",
-                "phpunit/phpunit": "^4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "7.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "League\\Csv\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ignace Nyamagana Butera",
-                    "email": "nyamsprod@gmail.com",
-                    "homepage": "https://github.com/nyamsprod/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Csv data manipulation made easy in PHP",
-            "homepage": "http://csv.thephpleague.com",
-            "keywords": [
-                "csv",
-                "export",
-                "filter",
-                "import",
-                "read",
-                "write"
-            ],
-            "time": "2015-11-02T07:36:25+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -8814,6 +8273,437 @@
             "time": "2015-06-14T21:17:01+00:00"
         },
         {
+            "name": "drupal/config_partial_export",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/config_partial_export",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/config_partial_export-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "87ce060a5d9c4ec9ca89e2560661ade573f04438"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1482080283",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "laszlo.kovacs",
+                    "homepage": "https://www.drupal.org/user/3073129"
+                }
+            ],
+            "description": "Partial export of modified configuration files",
+            "homepage": "https://www.drupal.org/project/config_partial_export",
+            "support": {
+                "source": "http://cgit.drupalcode.org/config_partial_export"
+            }
+        },
+        {
+            "name": "drupal/csv_serialization",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/csv_serialization",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/csv_serialization-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "90023afb1a9296598c3d8ac9c8c81df4d00a2663"
+            },
+            "require": {
+                "drupal/core": "^8.0.4",
+                "league/csv": "^7.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1470405718",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "grasmash",
+                    "homepage": "https://www.drupal.org/user/455714"
+                }
+            ],
+            "description": "Provides CSV as a serialization format.",
+            "homepage": "https://www.drupal.org/project/csv_serialization",
+            "support": {
+                "source": "http://cgit.drupalcode.org/csv_serialization"
+            }
+        },
+        {
+            "name": "drupal/devel",
+            "version": "1.0.0-rc2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/devel",
+                "reference": "8.x-1.0-rc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/devel-8.x-1.0-rc2.zip",
+                "reference": "8.x-1.0-rc2",
+                "shasum": "011322bf9c263dab29f94640829f4b654e9c5632"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "suggest": {
+                "symfony/var-dumper": "Pretty print complex values better with var-dumper available"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc2",
+                    "datestamp": "1492989244"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Moshe Weitzman",
+                    "homepage": "https://github.com/weitzman",
+                    "email": "weitzman@tejasa.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Hans Salvisberg",
+                    "homepage": "https://www.drupal.org/u/salvis",
+                    "email": "drupal@salvisberg.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Luca Lusso",
+                    "homepage": "https://www.drupal.org/u/lussoluca",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Marco (willzyx)",
+                    "homepage": "https://www.drupal.org/u/willzyx",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "See contributors",
+                    "homepage": "https://www.drupal.org/node/3236/committers"
+                },
+                {
+                    "name": "salvis",
+                    "homepage": "https://www.drupal.org/user/82964"
+                },
+                {
+                    "name": "willzyx",
+                    "homepage": "https://www.drupal.org/user/1043862"
+                }
+            ],
+            "description": "Various blocks, pages, and functions for developers.",
+            "homepage": "http://drupal.org/project/devel",
+            "support": {
+                "source": "http://cgit.drupalcode.org/devel",
+                "issues": "http://drupal.org/project/devel",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/entity_clone",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/entity_clone",
+                "reference": "9265e359bd31bda693dac9ad84ad52fe63531488"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1460620739"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "vpeltot",
+                    "homepage": "https://www.drupal.org/user/1361586"
+                }
+            ],
+            "description": "Add a clone action for all entities",
+            "homepage": "https://www.drupal.org/project/entity_clone",
+            "support": {
+                "source": "http://cgit.drupalcode.org/entity_clone"
+            },
+            "time": "2016-04-14 07:57:21"
+        },
+        {
+            "name": "drupal/migrate_plus",
+            "version": "2.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/migrate_plus",
+                "reference": "8.x-2.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-2.0-beta2.zip",
+                "reference": "8.x-2.0-beta2",
+                "shasum": "0b29113a3c00c7ab3ba73e811da3450edca4c0bb"
+            },
+            "require": {
+                "drupal/core": "^8.1"
+            },
+            "require-dev": {
+                "drupal/migrate_example_advanced_setup": "*",
+                "drupal/migrate_example_setup": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-beta2",
+                    "datestamp": "1476307439"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mike Ryan",
+                    "homepage": "https://www.drupal.org/u/mikeryan",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
+                }
+            ],
+            "description": "Enhancements to core migration support.",
+            "homepage": "https://www.drupal.org/project/migrate_plus",
+            "support": {
+                "source": "https://cgit.drupalcode.org/migrate_plus",
+                "issues": "https://www.drupal.org/project/issues/migrate_plus",
+                "irc": "irc://irc.freenode.org/drupal-migrate"
+            }
+        },
+        {
+            "name": "drupal/migrate_source_csv",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/migrate_source_csv",
+                "reference": "8.x-2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/migrate_source_csv-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "056845ce1679a051733b12576e3204609dce293d"
+            },
+            "require": {
+                "drupal/core": "~8.1"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "~1",
+                "phpunit/phpunit": "~4"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0",
+                    "datestamp": "1479750843"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Lucas Hedding",
+                    "homepage": "https://www.drupal.org/u/heddn",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
+                }
+            ],
+            "description": "CSV source migration.",
+            "homepage": "https://www.drupal.org/project/migrate_source_csv",
+            "support": {
+                "source": "https://cgit.drupalcode.org/migrate_source_csv",
+                "issues": "https://www.drupal.org/project/issues/migrate_source_csv",
+                "irc": "irc://irc.freenode.org/drupal-migrate"
+            }
+        },
+        {
+            "name": "drupal/migrate_tools",
+            "version": "2.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/migrate_tools",
+                "reference": "8.x-2.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/migrate_tools-8.x-2.0-beta1.zip",
+                "reference": "8.x-2.0-beta1",
+                "shasum": "bf823a9d08d08b99d5ea1469729b30f9969ef519"
+            },
+            "require": {
+                "drupal/core": "^8.1",
+                "drupal/migrate_plus": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-beta1",
+                    "datestamp": "1476313439"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
+                }
+            ],
+            "description": "Tools to assist in developing and running migrations.",
+            "homepage": "https://www.drupal.org/project/migrate_tools",
+            "support": {
+                "source": "http://cgit.drupalcode.org/migrate_tools"
+            }
+        },
+        {
+            "name": "drupal/views_data_export",
+            "version": "1.0.0-alpha4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views_data_export",
+                "reference": "8.x-1.0-alpha4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_data_export-8.x-1.0-alpha4.zip",
+                "reference": "8.x-1.0-alpha4",
+                "shasum": "d279137d6de1f8514c7ca69725b305ab58e30ed7"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/csv_serialization": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha4",
+                    "datestamp": "1482169083",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Steven Jones",
+                    "homepage": "https://www.drupal.org/user/99644"
+                },
+                {
+                    "name": "amoebanath",
+                    "homepage": "https://www.drupal.org/user/2810799"
+                },
+                {
+                    "name": "james.williams",
+                    "homepage": "https://www.drupal.org/user/592268"
+                },
+                {
+                    "name": "jamsilver",
+                    "homepage": "https://www.drupal.org/user/476732"
+                },
+                {
+                    "name": "jhedstrom",
+                    "homepage": "https://www.drupal.org/user/208732"
+                },
+                {
+                    "name": "nerdstein",
+                    "homepage": "https://www.drupal.org/user/1557710"
+                }
+            ],
+            "description": "Plugin to export views data into various file formats.",
+            "homepage": "https://www.drupal.org/project/views_data_export",
+            "support": {
+                "source": "http://cgit.drupalcode.org/views_data_export"
+            }
+        },
+        {
             "name": "fabpot/goutte",
             "version": "v3.2.1",
             "source": {
@@ -8976,6 +8866,121 @@
                 "testing"
             ],
             "time": "2016-12-01T10:57:30+00:00"
+        },
+        {
+            "name": "kint-php/kint",
+            "version": "2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kint-php/kint.git",
+                "reference": "d6b2540da2477ec8f4c5d6d30807208e5f814d75"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kint-php/kint/zipball/d6b2540da2477ec8f4c5d6d30807208e5f814d75",
+                "reference": "d6b2540da2477ec8f4c5d6d30807208e5f814d75",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.1.2"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.0",
+                "phpunit/phpunit": "^4.0",
+                "symfony/finder": "^2.6"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "init.php"
+                ],
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rokas Šleinius",
+                    "homepage": "https://github.com/raveren"
+                },
+                {
+                    "name": "Jonathan Vollebregt",
+                    "homepage": "https://github.com/jnvsor"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/kint-php/kint/graphs/contributors"
+                }
+            ],
+            "description": "Kint - debugging tool for PHP developers",
+            "homepage": "https://kint-php.github.io/kint/",
+            "keywords": [
+                "debug",
+                "kint",
+                "php"
+            ],
+            "time": "2017-04-22T13:41:40+00:00"
+        },
+        {
+            "name": "league/csv",
+            "version": "7.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/csv.git",
+                "reference": "69bafa6ff924fbf9effe4275d6eb16be81a853ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/csv/zipball/69bafa6ff924fbf9effe4275d6eb16be81a853ef",
+                "reference": "69bafa6ff924fbf9effe4275d6eb16be81a853ef",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "^1.9",
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "7.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Csv\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ignace Nyamagana Butera",
+                    "email": "nyamsprod@gmail.com",
+                    "homepage": "https://github.com/nyamsprod/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Csv data manipulation made easy in PHP",
+            "homepage": "http://csv.thephpleague.com",
+            "keywords": [
+                "csv",
+                "export",
+                "filter",
+                "import",
+                "read",
+                "write"
+            ],
+            "time": "2015-11-02T07:36:25+00:00"
         },
         {
             "name": "mikey179/vfsStream",
@@ -9899,8 +9904,6 @@
         "drupal/calendar": 20,
         "drupal/cer": 15,
         "drupal/ctools": 10,
-        "drupal/devel": 5,
-        "drupal/entity_clone": 20,
         "drupal/entity_embed": 10,
         "drupal/feeds": 20,
         "drupal/field_group": 5,
@@ -9923,8 +9926,10 @@
         "drupal/themable_forms": 10,
         "drupal/twitter": 20,
         "drupal/views_bootstrap": 20,
-        "drupal/views_data_export": 15,
-        "drupal/views_jump_menu": 10
+        "drupal/views_jump_menu": 10,
+        "drupal/devel": 5,
+        "drupal/entity_clone": 20,
+        "drupal/views_data_export": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,

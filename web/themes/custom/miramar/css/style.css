@@ -884,7 +884,7 @@ nav.mobile-nav li:first-child ol li{
 }
 .news-block .see-more a,
 .committee-meetings-block .see-more a {
-	color: #31b8c9;
+	color: #1e6e78;
 	font-weight: bold;
 	float:right;
 }
@@ -1290,7 +1290,7 @@ width:100%;
 	font-size: 1em;
 }
 .id-block .rfm-block a{
-	color: #217c88;
+	color: #1e6e78;
 	display: inline-block;
 	margin: 0 20px 0 0;
 }
@@ -1327,14 +1327,14 @@ ul.dp-menu li:last-child{
 }
 ul.dp-menu li a{
   font-family: 'Oswald', sans-serif;
-	color: #31b6c7;
+	color: #1e6e78;
 	font-size: 22px;
 	padding: 10px 0;
 	display: inline-block;
 	text-decoration: none;
 }
 ul.dp-menu li:hover a{
-	border-bottom: 4px solid #31b6c7;
+	border-bottom: 4px solid #1e6e78;
 	padding: 10px 0 6px;
 }
 .dp-content{
@@ -1548,8 +1548,8 @@ div.alpha_pager ul li a {
 }*/
 .faculty table {width:100%!important;}
 .faculty table thead th {
-    color: #31b6c7;
-    font-size: 20pt;#fl
+    color: #1e6e78;
+    font-size: 20pt;
 }
 .faculty table thead th i {
 	color: #91a2a3;
@@ -1614,7 +1614,7 @@ div.alpha_pager ul li a {
 }
 .campus-resources a {
   font-size: 1.3em;
-  color: #31b6c7;
+  color: #1e6e78;
   font-family: Oswald;
   font-weight: normal;
 }
@@ -1689,7 +1689,7 @@ div.alpha_pager ul li a {
 }
 .resources p,.resources h2,.resources h3 {color:#000000}
 .resources .mini-sidebar a,.resources td a {
-    color: #31b6c7;
+    color: #1e6e78;
     display: block;
     padding: 10px 15px;
     text-decoration: none;
@@ -1813,7 +1813,7 @@ div.alpha_pager ul li a {
   margin: 10px 0;
 }
 .student-path ul li a {
-  color: #31b8c9;
+  color: #1e6e78;
   font-family: Oswald;
   font-size: 15pt;
 }
@@ -1834,7 +1834,7 @@ td.resources-students {
 	margin-left:50px!important;
 }
 .resources-students a {
-	color: #31b8c9;
+	color: #1e6e78;
 	border:none;
 	font-size:1em;
 }

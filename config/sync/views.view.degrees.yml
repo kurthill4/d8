@@ -13,6 +13,7 @@ dependencies:
   module:
     - node
     - user
+    - views_bootstrap
     - views_jump_menu
 id: degrees
 label: Degrees
@@ -59,7 +60,7 @@ display:
         options:
           offset: 0
       style:
-        type: table
+        type: views_bootstrap_table
         options:
           grouping:
             -
@@ -68,8 +69,8 @@ display:
               rendered_strip: false
           row_class: ''
           default_row_class: true
-          override: true
-          sticky: false
+          override: 0
+          sticky: 0
           caption: ''
           summary: ''
           description: ''
@@ -84,63 +85,69 @@ display:
             field_catalog_pages: field_catalog_pages
           info:
             title:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             title_1:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             field_aa_degree:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             field_aa_transfer:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             field_as_degree:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             field_certificate_achievement:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             field_certificate_performance:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
             field_catalog_pages:
-              sortable: false
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
           default: '-1'
-          empty_table: false
+          empty_table: 0
+          responsive: 1
+          bootstrap_styles:
+            striped: striped
+            bordered: 0
+            hover: 0
+            condensed: 0
       row:
         type: fields
         options:
@@ -1018,6 +1025,8 @@ display:
         arguments: false
         fields: false
         css_class: false
+        style: false
+        row: false
       css_class: 'degree-list degree-block'
       fields:
         title:
@@ -1093,7 +1102,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1538,6 +1547,98 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+      style:
+        type: views_bootstrap_table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          override: 0
+          sticky: 0
+          caption: ''
+          summary: ''
+          description: ''
+          columns:
+            title: title
+            title_1: title_1
+            field_aa_degree: field_aa_degree
+            field_aa_transfer: field_aa_transfer
+            field_as_degree: field_as_degree
+            field_certificate_achievement: field_certificate_achievement
+            field_certificate_performance: field_certificate_performance
+            field_catalog_pages: field_catalog_pages
+          info:
+            title:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            title_1:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_aa_degree:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_aa_transfer:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_as_degree:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_certificate_achievement:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_certificate_performance:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_catalog_pages:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+          default: '-1'
+          empty_table: 0
+          responsive: 1
+          bootstrap_styles:
+            striped: striped
+            bordered: 0
+            hover: 0
+            condensed: 0
+      row:
+        type: fields
+        options:
+          inline: {  }
+          separator: ''
+          hide_empty: false
+          default_field_elements: true
     cache_metadata:
       max-age: 0
       contexts:

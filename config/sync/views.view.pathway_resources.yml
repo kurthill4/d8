@@ -10,6 +10,7 @@ dependencies:
     - node
     - options
     - user
+    - views_bootstrap
 id: pathway_resources
 label: 'Pathway Resources'
 module: views
@@ -55,16 +56,17 @@ display:
         options:
           offset: 0
       style:
-        type: grid
+        type: views_bootstrap_grid
         options:
           grouping: {  }
-          columns: 4
-          automatic_width: true
+          row_class: ''
+          default_row_class: true
           alignment: horizontal
-          col_class_default: true
-          col_class_custom: ''
-          row_class_default: true
-          row_class_custom: ''
+          columns: '4'
+          col_xs: col-xs-12
+          col_sm: col-sm-12
+          col_md: col-md-6
+          col_lg: col-lg-4
       row:
         type: fields
         options:
@@ -245,45 +247,8 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      css_class: 'rfm-block hide-xs'
+      css_class: rfm-block
       title: PathwayResources
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.field_links'
-  attachment_1:
-    display_plugin: attachment
-    id: attachment_1
-    display_title: Attachment
-    position: 3
-    display_options:
-      display_extenders: {  }
-      css_class: 'rfm-block hide-lg'
-      defaults:
-        css_class: false
-        style: false
-        row: false
-      displays:
-        block_1: block_1
-        block_2: block_2
-      style:
-        type: default
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
-      row:
-        type: fields
-        options:
-          inline: {  }
-          separator: ''
-          hide_empty: false
-          default_field_elements: true
     cache_metadata:
       max-age: -1
       contexts:

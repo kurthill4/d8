@@ -3,13 +3,36 @@ langcode: en
 status: true
 dependencies: {  }
 id: dean
-label: Dean
+label: 'Office of Instruction'
 weight: 8
 is_admin: null
 permissions:
   - 'access content overview'
+  - 'create custom_web_page content'
+  - 'create degree content'
   - 'create department content'
   - 'create department_page content'
+  - 'create document content'
+  - 'create program content'
+  - 'delete any custom_web_page content'
+  - 'delete any degree content'
+  - 'delete any department_page content'
+  - 'delete any document content'
+  - 'delete any program content'
+  - 'delete own custom_web_page content'
+  - 'delete own degree content'
+  - 'delete own department_page content'
+  - 'delete own document content'
+  - 'delete own program content'
+  - 'edit any custom_web_page content'
+  - 'edit any degree content'
   - 'edit any department content'
   - 'edit any department_page content'
+  - 'edit any document content'
+  - 'edit any program content'
+  - 'edit own custom_web_page content'
+  - 'edit own degree content'
+  - 'edit own department_page content'
+  - 'edit own document content'
+  - 'edit own program content'
   - 'use text format basic_html'
