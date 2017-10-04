@@ -203,8 +203,8 @@ AddEncoding gzip svgz
 
 <IfModule mod_rewrite.c>
   # Custom Redirects
-  Redirect 302 /library http://www1.sdmiramar.edu/library
-  Redirect 302 /campus/library http://www1.sdmiramar.edu/library
+  # Redirect 302 /library http://www1.sdmiramar.edu/library
+  # Redirect 302 /campus/library http://www1.sdmiramar.edu/library
   Redirect 302 /campus/av http://www1.sdmiramar.edu/library/av
   Redirect 301 /campus/asg http://www.sdmiramarasg.com/
   Redirect 301 /campus/campus-police http://police.sdccd.edu
@@ -216,4 +216,8 @@ AddEncoding gzip svgz
 
   RedirectMatch 302 "^/webfm_send/(.*)$" "http://www1.sdmiramar.edu/webfm_send/$1"
   RedirectMatch 302 "/feeds/(.*)$" "http://www1.sdmiramar.edu/feeds/$1"
+
+  Redirect 302 /academics/automotive/about/toyota /programs/automotive-technology/toyota
+  Redirect 302 /academics/automotive/about/honda  /programs/automotive-technology/honda
+
 </IfModule>
