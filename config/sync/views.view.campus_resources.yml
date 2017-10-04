@@ -687,7 +687,7 @@ display:
           plugin_id: standard
       defaults:
         sorts: false
-      enabled: false
+      enabled: true
     cache_metadata:
       max-age: -1
       contexts:
