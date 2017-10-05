@@ -20,6 +20,7 @@ permissions:
   - 'access site-wide contact form'
   - 'access toolbar'
   - 'access user contact forms'
+  - 'access user profiles'
   - 'create files'
   - 'create media'
   - 'delete own document files'
