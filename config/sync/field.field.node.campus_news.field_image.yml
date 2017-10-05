@@ -28,11 +28,11 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: ''
-    alt: ''
+    uuid: e65cc8b4-2f65-42ab-ad0e-97c024d330f0
+    alt: 'San Diego Miramar College'
     title: ''
-    width: null
-    height: null
+    width: 318
+    height: 160
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

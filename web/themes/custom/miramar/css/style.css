@@ -1697,6 +1697,12 @@ div.alpha_pager ul li a {
     font-family: 'Oswald', sans-serif;
     font-size: 1.3em;
 }
+
+.resources .mini-sidebar a:hover {
+	color:#000000;
+	text-decoration:underline;
+}
+
 .resources li:nth-child(odd) a {
 	border-top: 1px solid #83b2b5;
 }
@@ -1711,7 +1717,7 @@ div.alpha_pager ul li a {
     float: right;
     margin: -45px 10px 0 0;
     color: #31b6c7;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 .resources img {
 	/*margin: 20px 0*/;
