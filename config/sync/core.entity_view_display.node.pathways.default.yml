@@ -10,11 +10,17 @@ dependencies:
     - field.field.node.pathways.field_resources
     - node.type.pathways
   module:
+    - field_layout
     - image
+    - layout_discovery
     - link
     - options
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.pathways.default
 targetEntityType: node
 bundle: pathways

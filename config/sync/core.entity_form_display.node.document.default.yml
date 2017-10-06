@@ -16,8 +16,10 @@ dependencies:
     - node.type.document
   module:
     - field_group
+    - field_layout
     - field_token_value
     - file
+    - layout_discovery
 third_party_settings:
   field_group:
     group_advanced:
@@ -36,6 +38,9 @@ third_party_settings:
         open: false
         required_fields: true
       label: Advanced
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.document.default
 targetEntityType: node
 bundle: document

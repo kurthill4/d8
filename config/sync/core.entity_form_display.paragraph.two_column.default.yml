@@ -7,7 +7,13 @@ dependencies:
     - field.field.paragraph.two_column.field_column_2
     - paragraphs.paragraphs_type.two_column
   module:
+    - field_layout
+    - layout_discovery
     - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: paragraph.two_column.default
 targetEntityType: paragraph
 bundle: two_column

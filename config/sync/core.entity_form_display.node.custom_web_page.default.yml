@@ -12,6 +12,8 @@ dependencies:
     - node.type.custom_web_page
   module:
     - field_group
+    - field_layout
+    - layout_discovery
     - paragraphs_previewer
     - path
     - text
@@ -56,6 +58,9 @@ third_party_settings:
         open: false
         required_fields: true
       label: 'Advanced Content'
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.custom_web_page.default
 targetEntityType: node
 bundle: custom_web_page

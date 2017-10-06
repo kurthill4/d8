@@ -20,11 +20,17 @@ dependencies:
     - image.style.thumbnail
     - node.type.program
   module:
+    - field_layout
     - file
     - image
+    - layout_discovery
     - link
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.program.default
 targetEntityType: node
 bundle: program

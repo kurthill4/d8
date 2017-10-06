@@ -10,7 +10,13 @@ dependencies:
     - field.field.block_content.testimonial.field_student_last_name
     - field.field.block_content.testimonial.field_year_graduated
   module:
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: block_content.testimonial.default
 targetEntityType: block_content
 bundle: testimonial

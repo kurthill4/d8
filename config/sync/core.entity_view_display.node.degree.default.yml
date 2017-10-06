@@ -12,8 +12,14 @@ dependencies:
     - field.field.node.degree.field_program
     - node.type.degree
   module:
+    - field_layout
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.degree.default
 targetEntityType: node
 bundle: degree

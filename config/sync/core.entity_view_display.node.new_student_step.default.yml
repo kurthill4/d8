@@ -11,11 +11,17 @@ dependencies:
     - field.field.node.new_student_step.field_user_type
     - node.type.new_student_step
   module:
+    - field_layout
     - image
+    - layout_discovery
     - link
     - options
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.new_student_step.default
 targetEntityType: node
 bundle: new_student_step

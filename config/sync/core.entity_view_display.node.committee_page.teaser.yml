@@ -20,7 +20,13 @@ dependencies:
     - field.field.node.committee_page.field_web_pages
     - node.type.committee_page
   module:
+    - field_layout
+    - layout_discovery
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.committee_page.teaser
 targetEntityType: node
 bundle: committee_page

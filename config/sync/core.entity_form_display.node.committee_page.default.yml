@@ -20,6 +20,8 @@ dependencies:
     - node.type.committee_page
   module:
     - field_group
+    - field_layout
+    - layout_discovery
     - text
 third_party_settings:
   field_group:
@@ -52,6 +54,9 @@ third_party_settings:
         description: ''
         required_fields: true
       label: 'Group Composition'
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.committee_page.default
 targetEntityType: node
 bundle: committee_page

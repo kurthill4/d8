@@ -10,8 +10,14 @@ dependencies:
     - field.field.taxonomy_term.student_life.field_web_pages
     - taxonomy.vocabulary.student_life
   module:
+    - field_layout
     - image
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: taxonomy_term.student_life.default
 targetEntityType: taxonomy_term
 bundle: student_life

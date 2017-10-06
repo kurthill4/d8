@@ -5,10 +5,21 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.new_student_step.body
+    - field.field.node.new_student_step.field_image
+    - field.field.node.new_student_step.field_order
+    - field.field.node.new_student_step.field_slug_line
+    - field.field.node.new_student_step.field_url
+    - field.field.node.new_student_step.field_user_type
     - node.type.new_student_step
   module:
+    - field_layout
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.new_student_step.teaser
 targetEntityType: node
 bundle: new_student_step
@@ -25,4 +36,9 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_image: true
+  field_order: true
+  field_slug_line: true
+  field_url: true
+  field_user_type: true
