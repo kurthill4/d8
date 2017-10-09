@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.committee_page.field_committee_code
     - field.field.node.committee_page.field_committee_goals
     - field.field.node.committee_page.field_committee_procedures
+    - field.field.node.committee_page.field_custom_url
     - field.field.node.committee_page.field_membership
     - field.field.node.committee_page.field_num_administrators
     - field.field.node.committee_page.field_num_classified
@@ -20,8 +21,6 @@ dependencies:
     - node.type.committee_page
   module:
     - field_group
-    - field_layout
-    - layout_discovery
     - text
 third_party_settings:
   field_group:
@@ -54,9 +53,6 @@ third_party_settings:
         description: ''
         required_fields: true
       label: 'Group Composition'
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.committee_page.default
 targetEntityType: node
 bundle: committee_page
@@ -111,6 +107,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_custom_url:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_membership:
     weight: 11

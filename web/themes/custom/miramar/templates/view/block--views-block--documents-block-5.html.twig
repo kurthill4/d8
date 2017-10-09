@@ -51,17 +51,13 @@
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
     'clearfix',
-    'id-block',
   ]
 %}
 <section{{ attributes.addClass(classes) }}>
- <div class="news-title">
-<img src="/{{ directory }}/images/icon-documents.png" />
- <h3>{{ label }}</h3>
-</div>
-
-  {% block content %}
+            <div class="news-block news-block-2">
+                    <h3><img src="/{{ directory }}/images/icon-documents.png" alt="All Resources" style="float:left" />Important<br />Documents</h3>
+		  {% block content %}
     {{ content }}
-  {% endblock %}
+	    </div>
 </section>
 

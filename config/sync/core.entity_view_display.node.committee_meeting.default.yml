@@ -14,14 +14,8 @@ dependencies:
     - node.type.committee_meeting
   module:
     - datetime
-    - field_layout
     - file_entity
-    - layout_discovery
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.committee_meeting.default
 targetEntityType: node
 bundle: committee_meeting

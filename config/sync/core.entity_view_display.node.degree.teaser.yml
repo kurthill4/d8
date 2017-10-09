@@ -5,22 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.degree.body
-    - field.field.node.degree.field_aa_degree
-    - field.field.node.degree.field_aa_transfer
-    - field.field.node.degree.field_as_degree
-    - field.field.node.degree.field_certificate_achievement
-    - field.field.node.degree.field_certificate_performance
-    - field.field.node.degree.field_program
     - node.type.degree
   module:
-    - field_layout
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.degree.teaser
 targetEntityType: node
 bundle: degree
@@ -37,10 +25,4 @@ content:
   links:
     weight: 100
     region: content
-hidden:
-  field_aa_degree: true
-  field_aa_transfer: true
-  field_as_degree: true
-  field_certificate_achievement: true
-  field_certificate_performance: true
-  field_program: true
+hidden: {  }

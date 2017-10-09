@@ -14,15 +14,9 @@ dependencies:
     - field.field.user.user.field_phone
     - field.field.user.user.field_web_pages
   module:
-    - field_layout
-    - layout_discovery
     - link
     - telephone
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 _core:
   default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
 id: user.user.default

@@ -12,14 +12,8 @@ dependencies:
     - node.type.custom_web_page
   module:
     - entity_reference_revisions
-    - field_layout
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.custom_web_page.default
 targetEntityType: node
 bundle: custom_web_page

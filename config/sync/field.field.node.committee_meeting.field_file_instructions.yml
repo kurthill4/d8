@@ -20,6 +20,6 @@ default_value:
 default_value_callback: ''
 settings:
   markup:
-    value: "<div class=\"spacer\" style=\"height:1.5em\">&nbsp;</div>\r\n\r\n<p><strong>Agendas, Minutes, and Other Files</strong></p>\r\n\r\n<p>Upload agendas and minutes here. (Must be PDF format). If any supporting documents are needed for this meeting, upload them under \"Attached Documents.\"</p>\r\n"
+    value: "<p>Upload agendas and minutes here. (Must be PDF format). If any supporting documents are needed for this meeting, upload them under \"Attached Documents.\"</p>\r\n"
     format: full_html
 field_type: markup

@@ -126,6 +126,31 @@ header{
 	text-align: center;
 	font-size: 18px;
 }
+
+ul.pager li.previous a,
+ul.pager li.next a {
+	font-size:2em!important;
+	background-color:#31b6c7!important;
+}
+
+ul.pager li.previous a span,
+ul.pager li.next a span {
+	font-size:1.25em!important;
+	font-weight:bold;
+	color:#ffffff!important;
+}
+
+
+ul.pager li.previous a:hover,
+ul.pager li.next a:hover {
+	background-color:#1e6e78!important;
+}
+
+ul.pager li.previous a:hover span,
+ul.pager li.next a:hover span {
+	color:#31b6c7!important;
+}
+
 .search-desktop{
 	position: absolute;
 	top: 48px;
@@ -1255,7 +1280,7 @@ width:100%;
 	z-index: 1;
 	cursor: pointer;
 }
-.id-block{
+/*.id-block{
 	background: #dbf3f5;
 	padding: 20px;
 }
@@ -1301,7 +1326,7 @@ width:100%;
 }
 .id-block ul li{
 	margin: 0;
-}
+}*/
 .rfm-block .views-col {
 	padding:0.5em;
 }
@@ -1619,13 +1644,14 @@ div.alpha_pager ul li a {
   font-family: Oswald;
   font-weight: normal;
 }
+/*
 #block-views-block-campus-resources-block-1 .news-block .form-group,
 #block-views-block-college-governance-block-1 .news-block .form-group
 {
 	height:300px!important;
 	overflow-y:scroll;
 }
-
+*/
 /*#block-views-block-committee-meetings-block-1 .news-block .form-group {
 	height:150px!important;
 	overflow-y:scroll;

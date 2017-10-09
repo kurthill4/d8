@@ -10,19 +10,11 @@ dependencies:
     - field.field.node.document.field_associated_faculty_member
     - field.field.node.document.field_associated_program
     - field.field.node.document.field_date_uploaded
-    - field.field.node.document.field_link_to_your_file
-    - field.field.node.document.field_linking_instructions
     - field.field.node.document.field_short_description
     - field.field.node.document.field_uploaded_file
     - node.type.document
   module:
-    - field_layout
-    - layout_discovery
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.document.teaser
 targetEntityType: node
 bundle: document
@@ -38,7 +30,5 @@ hidden:
   field_associated_faculty_member: true
   field_associated_program: true
   field_date_uploaded: true
-  field_link_to_your_file: true
-  field_linking_instructions: true
   field_short_description: true
   field_uploaded_file: true

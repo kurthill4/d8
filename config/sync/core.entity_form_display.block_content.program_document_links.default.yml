@@ -6,13 +6,7 @@ dependencies:
     - block_content.type.program_document_links
     - field.field.block_content.program_document_links.field_downloads
   module:
-    - field_layout
-    - layout_discovery
     - link
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: block_content.program_document_links.default
 targetEntityType: block_content
 bundle: program_document_links

@@ -5,20 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.pathways.body
-    - field.field.node.pathways.field_image
-    - field.field.node.pathways.field_order
-    - field.field.node.pathways.field_paths
-    - field.field.node.pathways.field_resources
     - node.type.pathways
   module:
-    - field_layout
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.pathways.teaser
 targetEntityType: node
 bundle: pathways
@@ -35,8 +25,4 @@ content:
   links:
     weight: 100
     region: content
-hidden:
-  field_image: true
-  field_order: true
-  field_paths: true
-  field_resources: true
+hidden: {  }

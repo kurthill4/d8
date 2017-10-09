@@ -11,7 +11,6 @@ dependencies:
     - field.field.taxonomy_term.campus_resources.field_fax
     - field.field.taxonomy_term.campus_resources.field_hours
     - field.field.taxonomy_term.campus_resources.field_image
-    - field.field.taxonomy_term.campus_resources.field_include_in_directory
     - field.field.taxonomy_term.campus_resources.field_location
     - field.field.taxonomy_term.campus_resources.field_phone
     - field.field.taxonomy_term.campus_resources.field_slogan
@@ -20,14 +19,8 @@ dependencies:
     - taxonomy.vocabulary.campus_resources
   module:
     - entity_reference_revisions
-    - field_layout
     - image
-    - layout_discovery
     - text
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: taxonomy_term.campus_resources.full
 targetEntityType: taxonomy_term
 bundle: campus_resources
@@ -72,7 +65,6 @@ hidden:
   field_contact_3: true
   field_fax: true
   field_hours: true
-  field_include_in_directory: true
   field_location: true
   field_phone: true
   field_tty: true

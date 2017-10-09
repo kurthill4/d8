@@ -12,16 +12,10 @@ dependencies:
     - image.style.thumbnail
     - node.type.new_student_step
   module:
-    - field_layout
     - image
-    - layout_discovery
     - link
     - path
     - text
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.new_student_step.default
 targetEntityType: node
 bundle: new_student_step

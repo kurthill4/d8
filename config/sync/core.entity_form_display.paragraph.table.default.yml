@@ -6,13 +6,7 @@ dependencies:
     - field.field.paragraph.table.field_table
     - paragraphs.paragraphs_type.table
   module:
-    - field_layout
-    - layout_discovery
     - tablefield
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: paragraph.table.default
 targetEntityType: paragraph
 bundle: table

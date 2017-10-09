@@ -3,14 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_uploaded_file
+    - field.storage.node.field_link_to_your_file
     - node.type.document
     - taxonomy.vocabulary.campus_resources
   module:
-    - file_entity
+    - field_token_value
     - node
     - user
-    - views_bootstrap
 id: documents
 label: Documents
 module: views
@@ -54,10 +53,13 @@ display:
       pager:
         type: mini
         options:
-          items_per_page: 10
+          items_per_page: 5
           offset: 0
-          id: 0
+          id: 2
           total_pages: null
+          tags:
+            previous: ‹‹
+            next: ››
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -66,21 +68,15 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          tags:
-            previous: ‹‹
-            next: ››
       style:
-        type: views_bootstrap_grid
+        type: html_list
         options:
           grouping: {  }
           row_class: ''
           default_row_class: true
-          alignment: horizontal
-          columns: '4'
-          col_xs: col-xs-12
-          col_sm: col-sm-6
-          col_md: col-md-4
-          col_lg: col-lg-3
+          type: ul
+          wrapper_class: item-list
+          class: ''
       row:
         type: fields
         options:
@@ -89,20 +85,20 @@ display:
           hide_empty: false
           default_field_elements: true
       fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
+        field_link_to_your_file:
+          id: field_link_to_your_file
+          table: node__field_link_to_your_file
+          field: field_link_to_your_file
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
-            alter_text: false
+            alter_text: true
             text: ''
             make_link: false
-            path: '{{ field_uploaded_file }}'
+            path: ''
             absolute: false
             external: false
             replace_spaces: false
@@ -121,12 +117,12 @@ display:
             more_link: false
             more_link_text: ''
             more_link_path: ''
-            strip_tags: false
+            strip_tags: true
             trim: false
             preserve_tags: ''
             html: false
-          element_type: p
-          element_class: bold
+          element_type: ''
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -138,9 +134,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: string
+          type: field_token_value_text
           settings:
-            link_to_entity: false
+            wrapper: ''
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -151,21 +147,19 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: title
           plugin_id: field
-        field_uploaded_file:
-          id: field_uploaded_file
-          table: node__field_uploaded_file
-          field: field_uploaded_file
+        title:
+          id: title
+          table: node_field_data
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<a href="{{ field_link_to_your_file }}">{{ title }}</a>'
             make_link: false
             path: ''
             absolute: false
@@ -202,12 +196,11 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: file_download_link
+          click_sort_column: value
+          type: string
           settings:
-            access_message: 'You don''t have access to download this file.'
-            text: 'Download File'
-          group_column: ''
+            link_to_entity: false
+          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -217,6 +210,8 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: node
+          entity_field: title
           plugin_id: field
       filters:
         status:
@@ -261,7 +256,8 @@ display:
       arguments: {  }
       display_extenders: {  }
       title: 'Important Documents'
-      css_class: rfm-block
+      css_class: ''
+      use_ajax: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -271,7 +267,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_uploaded_file'
+        - 'config:field.storage.node.field_link_to_your_file'
   block_1:
     display_plugin: block
     id: block_1
@@ -357,7 +353,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_uploaded_file'
+        - 'config:field.storage.node.field_link_to_your_file'
   block_2:
     display_plugin: block
     id: block_2
@@ -443,7 +439,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_uploaded_file'
+        - 'config:field.storage.node.field_link_to_your_file'
   block_3:
     display_plugin: block
     id: block_3
@@ -501,7 +497,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_uploaded_file'
+        - 'config:field.storage.node.field_link_to_your_file'
   block_4:
     display_plugin: block
     id: block_4
@@ -558,7 +554,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_uploaded_file'
+        - 'config:field.storage.node.field_link_to_your_file'
   block_5:
     display_plugin: block
     id: block_5
@@ -622,4 +618,4 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_uploaded_file'
+        - 'config:field.storage.node.field_link_to_your_file'

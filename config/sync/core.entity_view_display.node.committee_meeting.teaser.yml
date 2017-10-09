@@ -8,19 +8,12 @@ dependencies:
     - field.field.node.committee_meeting.field_attached_documents
     - field.field.node.committee_meeting.field_committee
     - field.field.node.committee_meeting.field_file_code
-    - field.field.node.committee_meeting.field_file_instructions
     - field.field.node.committee_meeting.field_meeting_date_time
     - field.field.node.committee_meeting.field_meeting_location
     - field.field.node.committee_meeting.field_minutes
     - node.type.committee_meeting
   module:
-    - field_layout
-    - layout_discovery
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.committee_meeting.teaser
 targetEntityType: node
 bundle: committee_meeting
@@ -34,7 +27,6 @@ hidden:
   field_attached_documents: true
   field_committee: true
   field_file_code: true
-  field_file_instructions: true
   field_meeting_date_time: true
   field_meeting_location: true
   field_minutes: true

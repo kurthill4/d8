@@ -10,13 +10,7 @@ dependencies:
   module:
     - datetime
     - entity_reference_revisions
-    - field_layout
-    - layout_discovery
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.announcement.default
 targetEntityType: node
 bundle: announcement

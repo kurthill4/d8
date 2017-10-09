@@ -14,14 +14,40 @@ dependencies:
     - node.type.committee_meeting
   module:
     - datetime
-    - field_layout
+    - field_group
     - file
-    - layout_discovery
     - markup
 third_party_settings:
-  field_layout:
-    id: layout_twocol_bricks
-    settings: {  }
+  field_group:
+    group_meeting_information:
+      children:
+        - field_committee
+        - field_meeting_date_time
+        - field_meeting_location
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Meeting Information'
+    group_agendas_minutes_and_other_:
+      children:
+        - field_file_instructions
+        - field_agenda
+        - field_minutes
+        - field_attached_documents
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        id: Agendas
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Agendas, Minutes, and Other Files'
 id: node.committee_meeting.default
 targetEntityType: node
 bundle: committee_meeting
@@ -29,68 +55,68 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 8
-    region: second_below
+    weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
   field_agenda:
-    weight: 4
-    settings:
-      progress_indicator: throbber
-    third_party_settings: {  }
-    type: file_generic
-    region: first_above
-  field_attached_documents:
     weight: 6
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
-    region: middle
+    region: content
+  field_attached_documents:
+    weight: 8
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
   field_committee:
-    weight: 0
+    weight: 1
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
-    region: top
+    region: content
   field_file_instructions:
-    weight: 3
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     type: markup
-    region: top
+    region: content
   field_meeting_date_time:
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
-    region: top
+    region: content
   field_meeting_location:
-    weight: 2
+    weight: 3
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: top
+    region: content
   field_minutes:
-    weight: 5
+    weight: 7
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
-    region: second_above
+    region: content
   uid:
     type: entity_reference_autocomplete
-    weight: 7
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
-    region: first_below
+    region: content
     third_party_settings: {  }
 hidden:
   field_file_code: true
