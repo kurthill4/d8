@@ -28,6 +28,14 @@ function miramar_preprocess_block(&$variables) {
 
     }
   }
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if ($node) {
+    $nid = $node->id();
+  }
+  else {
+    $nid = 0;
+  }
+  $variables['nodeid'] = $nid;
 }
 
 function miramar_preprocess_page(&$variables) {
