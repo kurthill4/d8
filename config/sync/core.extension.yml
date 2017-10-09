@@ -10,6 +10,7 @@ module:
   blazy_ui: 0
   block: 0
   block_content: 0
+  block_visibility_groups: 0
   breakpoint: 0
   calendar: 0
   calendar_datetime: 0
