@@ -893,6 +893,10 @@ nav.mobile-nav li:first-child ol li{
 	margin:12px 0;
 	padding-left:5px;
 }
+
+.region-sidebar-second .block h3 a {
+	color:#000000!important;
+}
 .news-block{
 	background: #dbf3f5;
 	width:100%;
