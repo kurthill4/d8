@@ -770,17 +770,17 @@ nav.mobile-nav li:first-child ol li{
 .red-box .form-control{
 	border-radius: 0;
 	height: 50px;
-	font-size: 24px;
+	font-size: 1.5em;
 	box-shadow: none;
 	border: 0;
 }
 .red-box h1{
 	font-family: 'Nixie One', cursive;
-	font-size: 54px;
+	font-size: 4rem;
 }
 .red-box p{
 	font-family: 'Oswald', sans-serif;
-	font-size: 23px;
+	font-size: 1.5em;
 }
 .gb-block{
 	margin: 20px 0 0;
@@ -879,9 +879,9 @@ nav.mobile-nav li:first-child ol li{
 	display: inline-block;
 	margin: 0 20px 0 0;
 }
-/*.region-gallery,
-.region-gallery section,
-.region-gallery .block-views-blockprogram-carousel-block-1 {margin: 0 1px}*/
+/*.region-gallery,*/
+/*.region-gallery section {display:table}*/
+/*.region-gallery .block-views-blockprogram-carousel-block-1 {display:table-cell}*/
 .region-sidebar-second {
 	background: #dbf3f5;
 	width: 100%;
@@ -1553,7 +1553,7 @@ div.alpha_pager ul li a {
 	color:#ffffff!important;
 	text-decoration:underline;
 }
-
+#slick-views-program-carousel-block-1-1 {width:99%}
 .slick-1 ul,.slick-1 ul.slides li,.slick-1 ul.slides li img {padding:0;margin:0}
 .resource .region-content .view-content {
 	display:none;
@@ -2074,8 +2074,8 @@ body p {font-size:12px;}
 }
 
 .block-views-blockwhat-do-you-want-to-be-block-1 {display:block;margin-top:1px;}
-.block-views-blockwhat-do-you-want-to-be-block-1 h1 {font-size:4rem!important;}
-.block-views-blockwhat-do-you-want-to-be-block-1 p {font-size:2rem!important;}
+.block-views-blockwhat-do-you-want-to-be-block-1 h1 {font-size:4em!important;}
+.block-views-blockwhat-do-you-want-to-be-block-1 p {font-size:2em!important;}
 		 .top-links, .mbtn, .page-cover{
 			 display: none;
 		 }

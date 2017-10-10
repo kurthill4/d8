@@ -148,9 +148,6 @@
             "drush/contrib/{$name}": ["type:drupal-drush"]
         },
 	"patches": {
-		"drupal/page_access": {
-			"Allow read-only access to anonymous user": "https://www.drupal.org/files/issues/support_anonymous_role_and_edit_by_role_dropdown_REROLL_1.patch" },
-		
 		"drupal/core": {"Role permission to view user email": "https://www.drupal.org/files/issues/role_based_email_access-2799049-2.patch"
 		}
 	}

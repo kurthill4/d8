@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1f07e80094e3abe354be72414b55fd46",
+    "content-hash": "b4a66f099079f2e138821aede7175f73",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -8375,8 +8375,7 @@
             "homepage": "https://www.drupal.org/project/entity_clone",
             "support": {
                 "source": "http://cgit.drupalcode.org/entity_clone"
-            },
-            "time": "2017-10-04 11:47:45"
+            }
         },
         {
             "name": "drupal/migrate_plus",
