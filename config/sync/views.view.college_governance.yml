@@ -912,7 +912,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: false
-          content: '<p><a href="/campus/governance/committees/info"><strong>Click Here for Information about College Governance</strong></a></p>'
+          content: '<p><a href="/campus/governance/info"><strong>Click Here for Information about College Governance</strong></a></p>'
           plugin_id: text_custom
     cache_metadata:
       max-age: 0

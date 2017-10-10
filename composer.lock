@@ -8375,7 +8375,8 @@
             "homepage": "https://www.drupal.org/project/entity_clone",
             "support": {
                 "source": "http://cgit.drupalcode.org/entity_clone"
-            }
+            },
+            "time": "2017-10-04 11:47:45"
         },
         {
             "name": "drupal/migrate_plus",

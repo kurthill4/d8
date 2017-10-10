@@ -3,8 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_visibility_groups.block_visibility_group.committees
     - views.view.campus_resources
   module:
+    - block_visibility_groups
     - system
     - views
   theme:
@@ -27,4 +29,9 @@ visibility:
     id: request_path
     pages: '/campus/*'
     negate: false
+    context_mapping: {  }
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: committees
     context_mapping: {  }
