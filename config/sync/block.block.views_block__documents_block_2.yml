@@ -5,7 +5,9 @@ dependencies:
   config:
     - views.view.documents
   module:
+    - block_visibility_groups
     - ctools
+    - system
     - views
   theme:
     - miramar
@@ -31,3 +33,13 @@ visibility:
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '/campus/governance/committees/*'
+    negate: false
+    context_mapping: {  }

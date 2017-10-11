@@ -1,22 +1,23 @@
-uuid: 3fab9db9-5cc4-4064-bbac-6c0d5f8683dc
+uuid: 6a15860e-2f21-41ee-8728-3185f8c196ce
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.resource_web_pages
+    - views.view.documents
   module:
+    - block_visibility_groups
     - system
     - views
   theme:
     - miramar
-id: views_block__resource_web_pages_block_1
+id: views_block__documents_block_5_2
 theme: miramar
 region: sidebar_second
-weight: -18
+weight: -15
 provider: null
-plugin: 'views_block:resource_web_pages-block_1'
+plugin: 'views_block:documents-block_5'
 settings:
-  id: 'views_block:resource_web_pages-block_1'
+  id: 'views_block:documents-block_5'
   label: ''
   provider: views
   label_display: visible
@@ -24,6 +25,11 @@ settings:
   items_per_page: none
   context_mapping: {  }
 visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
   request_path:
     id: request_path
     pages: '/campus/*'
