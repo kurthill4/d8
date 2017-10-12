@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.committee_page.field_committee_code
     - field.field.node.committee_page.field_committee_goals
     - field.field.node.committee_page.field_committee_procedures
+    - field.field.node.committee_page.field_custom_url
     - field.field.node.committee_page.field_membership
     - field.field.node.committee_page.field_num_administrators
     - field.field.node.committee_page.field_num_classified
@@ -116,3 +117,4 @@ hidden:
   field_committee_chair: true
   field_committee_co_chair: true
   field_committee_code: true
+  field_custom_url: true

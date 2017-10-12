@@ -54,7 +54,6 @@ display:
       pager:
         type: none
         options:
-          items_per_page: 0
           offset: 0
       style:
         type: default
@@ -542,6 +541,8 @@ display:
         filters: false
         filter_groups: false
         relationships: false
+        use_ajax: false
+        pager: false
       style:
         type: html_list
         options:
@@ -641,11 +642,31 @@ display:
         groups:
           1: AND
       relationships: {  }
+      use_ajax: true
+      pager:
+        type: mini
+        options:
+          items_per_page: 10
+          offset: 0
+          id: 0
+          total_pages: null
+          tags:
+            previous: ‹‹
+            next: ››
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - user.permissions
       tags: {  }
   page_1:

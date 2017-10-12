@@ -41,6 +41,8 @@
         <a href="{{ item.url }}"><i class="fa fa-book" aria-hidden="true"></i> {{ item.title }}</a>
       {% elseif item.title == 'Blackboard' %}
         <a href="{{ item.url }}"><i class="fa fa-laptop" aria-hidden="true"></i> {{ item.title }}</a>
+      {% elseif item.title == 'Employee Resources' %}
+        <a href="{{ item.url }}"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> {{ item.title }}</a>
       {% else %}
         <a class="search" href="JavaScript://"><i class="fa fa-search" aria-hidden="true"></i> {{ item.title }}</a>
       {% endif %}

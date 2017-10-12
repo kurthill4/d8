@@ -5,14 +5,15 @@ dependencies:
   config:
     - views.view.college_governance
   module:
-    - node
+    - block_visibility_groups
+    - system
     - views
   theme:
     - miramar
 id: views_block__college_governance_block_1
 theme: miramar
 region: sidebar_second
-weight: -14
+weight: -11
 provider: null
 plugin: 'views_block:college_governance-block_1'
 settings:
@@ -23,10 +24,13 @@ settings:
   views_label: ''
   items_per_page: none
 visibility:
-  node_type:
-    id: node_type
-    bundles:
-      committee_page: committee_page
+  condition_group:
+    id: condition_group
     negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '/campus/governance/committees/*'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,17 @@
+uuid: 79b2956d-b7ef-4465-9727-2170749e6657
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: committees
+label: Committees
+logic: and
+conditions:
+  f053a573-0b4d-4546-a97d-31a524caa8f1:
+    id: request_path
+    pages: '/campus/governance/committees/*'
+    negate: true
+    context_mapping: {  }
+    uuid: f053a573-0b4d-4546-a97d-31a524caa8f1
+allow_other_conditions: true

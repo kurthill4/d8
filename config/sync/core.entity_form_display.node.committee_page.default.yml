@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.committee_page.field_committee_code
     - field.field.node.committee_page.field_committee_goals
     - field.field.node.committee_page.field_committee_procedures
+    - field.field.node.committee_page.field_custom_url
     - field.field.node.committee_page.field_membership
     - field.field.node.committee_page.field_num_administrators
     - field.field.node.committee_page.field_num_classified
@@ -106,6 +107,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_custom_url:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_membership:
     weight: 11
