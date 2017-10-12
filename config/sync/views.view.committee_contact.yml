@@ -8,6 +8,7 @@ dependencies:
     - field.storage.user.field_first_name
     - field.storage.user.field_last_name
     - node.type.committee_page
+    - node.type.custom_web_page
   module:
     - node
     - user
