@@ -1025,7 +1025,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: '<h5><a href="/directory/people">Display All</a></h5>'
+          content: '<h5><a href="/directory/people">Back to List</a></h5>'
           plugin_id: text_custom
     cache_metadata:
       max-age: 0

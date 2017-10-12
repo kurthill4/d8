@@ -19,10 +19,16 @@ dependencies:
     - field.field.node.program.field_web_pages
     - node.type.program
   module:
+    - field_layout
     - file_entity
+    - layout_discovery
     - link
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.program.default
 targetEntityType: node
 bundle: program

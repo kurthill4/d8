@@ -32,9 +32,12 @@ function miramar_preprocess_block(&$variables) {
   if ($node) {
     $nid = $node->id();
   }
-  else {
-    $nid = 0;
-  }
+  elseif(\Drupal::routeMatch()->getRouteName() == 'entity.taxonomy_term.canonical') {
+	  $nid = \Drupal::routeMatch()->getRawParameter('taxonomy_term');
+}
+   else {
+     $nid = 0;
+}
   $variables['nodeid'] = $nid;
 }
 

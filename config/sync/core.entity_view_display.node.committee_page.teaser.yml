@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.committee_page.field_committee_code
     - field.field.node.committee_page.field_committee_goals
     - field.field.node.committee_page.field_committee_procedures
+    - field.field.node.committee_page.field_custom_url
     - field.field.node.committee_page.field_membership
     - field.field.node.committee_page.field_num_administrators
     - field.field.node.committee_page.field_num_classified
@@ -20,7 +21,13 @@ dependencies:
     - field.field.node.committee_page.field_web_pages
     - node.type.committee_page
   module:
+    - field_layout
+    - layout_discovery
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.committee_page.teaser
 targetEntityType: node
 bundle: committee_page
@@ -37,6 +44,7 @@ hidden:
   field_committee_code: true
   field_committee_goals: true
   field_committee_procedures: true
+  field_custom_url: true
   field_membership: true
   field_num_administrators: true
   field_num_classified: true

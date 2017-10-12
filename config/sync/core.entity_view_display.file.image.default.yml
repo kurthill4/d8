@@ -7,7 +7,13 @@ dependencies:
     - field.field.file.image.field_image_title_text
     - file_entity.type.image
   module:
+    - field_layout
     - file_entity
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: _Bf428kqU4oErwcNNTL2Wj4HQfES94Bs4usKnK3iL2Q
 id: file.image.default

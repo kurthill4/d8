@@ -21,8 +21,10 @@ dependencies:
   module:
     - datetime_range
     - field_group
+    - field_layout
     - file
     - image
+    - layout_discovery
     - link
     - text
 third_party_settings:
@@ -71,6 +73,9 @@ third_party_settings:
         description: ''
         required_fields: true
       label: 'Location & Contact'
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.event.default
 targetEntityType: node
 bundle: event

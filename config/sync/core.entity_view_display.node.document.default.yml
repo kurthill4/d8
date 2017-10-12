@@ -15,9 +15,15 @@ dependencies:
     - field.field.node.document.field_uploaded_file
     - node.type.document
   module:
+    - field_layout
     - field_token_value
+    - layout_discovery
     - markup
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.document.default
 targetEntityType: node
 bundle: document
