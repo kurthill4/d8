@@ -277,7 +277,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: campus/governance/committees/archive/%
+      path: campus/governance/committees/documents/%
       arguments:
         field_associated_committee_target_id:
           id: field_associated_committee_target_id
