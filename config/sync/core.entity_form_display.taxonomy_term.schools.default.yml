@@ -1,0 +1,81 @@
+uuid: d28aadcb-2ca3-4feb-85cf-256e7400295b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.schools.field_contact
+    - field.field.taxonomy_term.schools.field_dean
+    - field.field.taxonomy_term.schools.field_location
+    - field.field.taxonomy_term.schools.field_phone
+    - taxonomy.vocabulary.schools
+  module:
+    - field_layout
+    - layout_discovery
+    - path
+    - telephone
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: taxonomy_term.schools.default
+targetEntityType: taxonomy_term
+bundle: schools
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 5
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_contact:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_dean:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_location:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_phone:
+    weight: 3
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

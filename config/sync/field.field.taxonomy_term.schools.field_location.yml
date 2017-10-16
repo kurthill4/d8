@@ -1,0 +1,19 @@
+uuid: 3f11ac44-6cd1-429e-9752-5bc272133b4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_location
+    - taxonomy.vocabulary.schools
+id: taxonomy_term.schools.field_location
+field_name: field_location
+entity_type: taxonomy_term
+bundle: schools
+label: Location
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

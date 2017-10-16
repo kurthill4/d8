@@ -1,0 +1,21 @@
+uuid: c97731e1-c030-4b69-921d-5cd276d9490c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_phone
+    - taxonomy.vocabulary.schools
+  module:
+    - telephone
+id: taxonomy_term.schools.field_phone
+field_name: field_phone
+entity_type: taxonomy_term
+bundle: schools
+label: Phone
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

@@ -1,0 +1,28 @@
+uuid: 16b6b806-6cde-4924-9a1a-3dc6d5c0b443
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_dean
+    - taxonomy.vocabulary.schools
+id: taxonomy_term.schools.field_dean
+field_name: field_dean
+entity_type: taxonomy_term
+bundle: schools
+label: Dean
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,28 @@
+uuid: 1871f212-aec1-4615-9384-9a990ab6bc01
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_contact
+    - taxonomy.vocabulary.schools
+id: taxonomy_term.schools.field_contact
+field_name: field_contact
+entity_type: taxonomy_term
+bundle: schools
+label: Contact
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

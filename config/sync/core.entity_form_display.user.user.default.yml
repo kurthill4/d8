@@ -12,6 +12,7 @@ dependencies:
     - field.field.user.user.field_last_name
     - field.field.user.user.field_office
     - field.field.user.user.field_phone
+    - field.field.user.user.field_program
     - field.field.user.user.field_web_pages
   module:
     - field_layout
@@ -109,6 +110,15 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
+    region: content
+  field_program:
+    weight: 34
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_web_pages:
     weight: 10

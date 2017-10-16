@@ -1,0 +1,62 @@
+uuid: 804cd547-2336-417f-a87d-6354649bf00c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.schools.field_contact
+    - field.field.taxonomy_term.schools.field_dean
+    - field.field.taxonomy_term.schools.field_location
+    - field.field.taxonomy_term.schools.field_phone
+    - taxonomy.vocabulary.schools
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: taxonomy_term.schools.default
+targetEntityType: taxonomy_term
+bundle: schools
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_contact:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_dean:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_location:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_phone:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }
