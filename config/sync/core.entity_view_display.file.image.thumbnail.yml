@@ -9,7 +9,13 @@ dependencies:
     - file_entity.type.image
     - image.style.thumbnail
   module:
+    - field_layout
     - file_entity
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: 8trPid18Dj2TjH8c4n0Eb1KrYcJR0xYIyNlgYlGk2XI
 id: file.image.thumbnail

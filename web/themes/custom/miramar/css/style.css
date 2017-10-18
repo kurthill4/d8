@@ -1669,7 +1669,9 @@ div.alpha_pager ul li a {
 #views-bootstrap-committee-meetings-page-1 .row {
 	margin:2em auto;
 }
-
+.committee-archive .views-field {
+	padding-bottom:1em!important;
+}
 .committee-archive .views-view-grid br {
 	content: '';
 	margin: 0.3em auto;

@@ -5,10 +5,21 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.custom_web_page.body
+    - field.field.node.custom_web_page.field_associated_campus_resource
+    - field.field.node.custom_web_page.field_associated_committee
+    - field.field.node.custom_web_page.field_associated_department
+    - field.field.node.custom_web_page.field_associated_program
+    - field.field.node.custom_web_page.field_content
     - node.type.custom_web_page
   module:
+    - field_layout
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.custom_web_page.teaser
 targetEntityType: node
 bundle: custom_web_page
@@ -25,4 +36,9 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_associated_campus_resource: true
+  field_associated_committee: true
+  field_associated_department: true
+  field_associated_program: true
+  field_content: true

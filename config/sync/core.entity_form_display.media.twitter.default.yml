@@ -7,6 +7,13 @@ dependencies:
     - field.field.media.twitter.field_tweet_url
     - field.field.media.twitter.field_tweeter
     - media_entity.bundle.twitter
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: media.twitter.default
 targetEntityType: media
 bundle: twitter

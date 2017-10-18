@@ -5,10 +5,19 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.by_the_numbers.body
+    - field.field.node.by_the_numbers.field_about_link
+    - field.field.node.by_the_numbers.field_image
+    - field.field.node.by_the_numbers.field_url
     - node.type.by_the_numbers
   module:
+    - field_layout
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.by_the_numbers.teaser
 targetEntityType: node
 bundle: by_the_numbers
@@ -25,4 +34,7 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_about_link: true
+  field_image: true
+  field_url: true

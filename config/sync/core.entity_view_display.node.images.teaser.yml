@@ -11,11 +11,18 @@ dependencies:
     - field.field.node.images.field_associated_faculty_member
     - field.field.node.images.field_associated_program
     - field.field.node.images.field_date_uploaded
+    - field.field.node.images.field_image
     - field.field.node.images.field_short_description
     - node.type.images
   module:
+    - field_layout
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.images.teaser
 targetEntityType: node
 bundle: images
@@ -39,4 +46,5 @@ hidden:
   field_associated_faculty_member: true
   field_associated_program: true
   field_date_uploaded: true
+  field_image: true
   field_short_description: true

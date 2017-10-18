@@ -8,6 +8,12 @@ dependencies:
     - paragraphs.paragraphs_type.text_and_image_left
   module:
     - entity_reference_revisions
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: paragraph.text_and_image_left.default
 targetEntityType: paragraph
 bundle: text_and_image_left

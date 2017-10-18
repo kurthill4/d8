@@ -10,10 +10,16 @@ dependencies:
     - image.style.thumbnail
     - node.type.by_the_numbers
   module:
+    - field_layout
     - image
+    - layout_discovery
     - link
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.by_the_numbers.default
 targetEntityType: node
 bundle: by_the_numbers

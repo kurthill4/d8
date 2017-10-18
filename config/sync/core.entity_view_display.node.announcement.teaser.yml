@@ -5,9 +5,17 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.announcement.field_announcement_content
+    - field.field.node.announcement.field_end_date
+    - field.field.node.announcement.field_start_date
     - node.type.announcement
   module:
+    - field_layout
+    - layout_discovery
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.announcement.teaser
 targetEntityType: node
 bundle: announcement

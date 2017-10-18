@@ -817,7 +817,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: false
-          content: '<h5><a href="/directory/places">Display All</a></h5>'
+          content: '<h5><a href="/directory/places">Back to List</a></h5>'
           plugin_id: text_custom
       inherit_arguments: false
     cache_metadata:
