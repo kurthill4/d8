@@ -215,7 +215,7 @@ AddEncoding gzip svgz
   Redirect 302 /dsps /campus/dsps
   Redirect 302 /campus/aquatics-center https://www.sandiego.gov/park-and-recreation/centers/aquatics/nedbaumer
   RedirectMatch 302 "^/webfm_send/(.*)$" "http://www1.sdmiramar.edu/webfm_send/$1"
-  RedirectMatch 302 "/feeds/(.*)$" "http://www1.sdmiramar.edu/feeds/$1"
+  #RedirectMatch 302 "/feeds/(.*)$" "http://www1.sdmiramar.edu/feeds/$1"
 
   Redirect 302 /academics/automotive/about/toyota /programs/automotive-technology/toyota
   Redirect 302 /academics/automotive/about/honda  /programs/automotive-technology/honda
