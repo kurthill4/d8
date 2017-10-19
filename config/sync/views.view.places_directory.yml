@@ -8,6 +8,7 @@ dependencies:
     - field.storage.user.field_first_name
     - field.storage.user.field_last_name
     - taxonomy.vocabulary.campus_resources
+    - taxonomy.vocabulary.schools
   module:
     - taxonomy
     - telephone
@@ -621,6 +622,7 @@ display:
           entity_type: taxonomy_term
           entity_field: vid
           plugin_id: bundle
+          group: 1
         field_include_in_directory_value:
           id: field_include_in_directory_value
           table: taxonomy_term__field_include_in_directory
@@ -657,6 +659,46 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: boolean
+        vid_1:
+          id: vid_1
+          table: taxonomy_term_field_data
+          field: vid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            schools: schools
+          group: 2
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: taxonomy_term
+          entity_field: vid
+          plugin_id: bundle
       sorts:
         name:
           id: name
@@ -732,6 +774,11 @@ display:
       display_extenders: {  }
       css_class: 'dcf-content faculty'
       title: 'Campus Resources'
+      filter_groups:
+        operator: OR
+        groups:
+          1: AND
+          2: AND
     cache_metadata:
       max-age: 0
       contexts:
