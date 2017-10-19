@@ -1,22 +1,23 @@
-uuid: dc0bec6c-26dd-49fc-9931-4f6c36cc2a50
+uuid: 0ba11f7a-faf4-4fdb-a27a-79f2a0d5c05d
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.committee_meetings
+    - views.view.committee_contact
   module:
+    - block_visibility_groups
     - node
     - views
   theme:
     - miramar
-id: views_block__committee_meetings_block_1
+id: views_block__committee_contact_block_2
 theme: miramar
 region: sidebar_second
-weight: -15
+weight: -23
 provider: null
-plugin: 'views_block:committee_meetings-block_1'
+plugin: 'views_block:committee_contact-block_2'
 settings:
-  id: 'views_block:committee_meetings-block_1'
+  id: 'views_block:committee_contact-block_2'
   label: ''
   provider: views
   label_display: visible
@@ -24,10 +25,15 @@ settings:
   items_per_page: none
   context_mapping: {  }
 visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
   node_type:
     id: node_type
     bundles:
-      committee_page: committee_page
+      custom_web_page: custom_web_page
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
