@@ -7,6 +7,7 @@ dependencies:
     - field.field.taxonomy_term.schools.field_dean
     - field.field.taxonomy_term.schools.field_location
     - field.field.taxonomy_term.schools.field_phone
+    - field.field.taxonomy_term.schools.field_url
     - taxonomy.vocabulary.schools
   module:
     - field_layout
@@ -63,6 +64,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
+    region: content
+  field_url:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   name:
     type: string_textfield

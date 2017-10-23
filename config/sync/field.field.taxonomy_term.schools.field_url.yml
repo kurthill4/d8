@@ -1,0 +1,19 @@
+uuid: c5106755-92bc-463f-a1d8-900c2e5e6794
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_url
+    - taxonomy.vocabulary.schools
+id: taxonomy_term.schools.field_url
+field_name: field_url
+entity_type: taxonomy_term
+bundle: schools
+label: URL
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
