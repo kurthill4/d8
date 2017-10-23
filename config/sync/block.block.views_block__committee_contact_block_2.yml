@@ -7,6 +7,7 @@ dependencies:
   module:
     - block_visibility_groups
     - node
+    - system
     - views
   theme:
     - miramar
@@ -37,3 +38,8 @@ visibility:
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '/campus/governance/*'
+    negate: false
+    context_mapping: {  }

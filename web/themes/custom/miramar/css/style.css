@@ -1039,6 +1039,7 @@ footer h4{
 	padding: 0 7px;
 }
 #block-views-block-resource-information-block-1,
+#block-views-block-resource-contact-secondary-block-1,
 #block-views-block-program-contact-block-1,
 #block-views-block-committee-contact-block-1,
 #block-views-block-committee-contact-block-2,
@@ -1109,7 +1110,6 @@ footer h4{
 	font-size: 1.5909090909090908em;
 	font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
-  cursor: pointer;
 width:100%;
 }
 .step-panel .step-title span{

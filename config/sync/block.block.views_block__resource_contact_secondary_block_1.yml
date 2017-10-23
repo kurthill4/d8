@@ -1,29 +1,37 @@
-uuid: 40c54b80-78b6-42d8-9110-d7ac7c522df0
+uuid: 4329830d-682b-43fd-945f-d99a26ac5bf3
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.other_pages
+    - block_visibility_groups.block_visibility_group.committees
+    - views.view.resource_contact_secondary
   module:
+    - block_visibility_groups
     - ctools
     - system
     - views
   theme:
     - miramar
-id: views_block__other_pages_block_1
+id: views_block__resource_contact_secondary_block_1
 theme: miramar
 region: sidebar_second
-weight: -15
+weight: -21
 provider: null
-plugin: 'views_block:other_pages-block_1'
+plugin: 'views_block:resource_contact_secondary-block_1'
 settings:
-  id: 'views_block:other_pages-block_1'
-  label: 'Related Pages'
+  id: 'views_block:resource_contact_secondary-block_1'
+  label: ''
   provider: views
   label_display: visible
-  views_label: 'Related Pages'
+  views_label: ''
   items_per_page: none
+  context_mapping: {  }
 visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: committees
+    context_mapping: {  }
   'entity_bundle:node':
     id: 'entity_bundle:node'
     bundles:
