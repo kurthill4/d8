@@ -58,7 +58,11 @@ display:
       style:
         type: html_list
         options:
-          grouping: {  }
+          grouping:
+            -
+              field: field_associated_program
+              rendered: true
+              rendered_strip: false
           row_class: ''
           default_row_class: true
           type: ul
