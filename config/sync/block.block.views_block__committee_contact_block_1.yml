@@ -6,6 +6,7 @@ dependencies:
     - views.view.committee_contact
   module:
     - block_visibility_groups
+    - node
     - system
     - views
   theme:
@@ -35,3 +36,10 @@ visibility:
     pages: "/campus/governance/committees/*\r\n/campus/governance/committees/*/*"
     negate: false
     context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      committee_page: committee_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
