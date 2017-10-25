@@ -1,23 +1,24 @@
-uuid: f276993f-257b-4633-9add-824d69137437
+uuid: 8e77916b-c3d9-4634-aab1-def4564924c0
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.program_web_pages
+    - views.view.program_contact
   module:
+    - block_visibility_groups
     - node
     - system
     - views
   theme:
     - miramar
-id: views_block__program_web_pages_block_1
+id: views_block__program_contact_block_2
 theme: miramar
 region: sidebar_second
-weight: -17
+weight: -24
 provider: null
-plugin: 'views_block:program_web_pages-block_1'
+plugin: 'views_block:program_contact-block_2'
 settings:
-  id: 'views_block:program_web_pages-block_1'
+  id: 'views_block:program_contact-block_2'
   label: ''
   provider: views
   label_display: visible
@@ -25,6 +26,11 @@ settings:
   items_per_page: none
   context_mapping: {  }
 visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
   node_type:
     id: node_type
     bundles:
