@@ -50,7 +50,7 @@ class MiramarCustomContactBlock extends BlockBase {
                 <h4><img src="' . $imagepath . '/images/icon-building.png" alt=""></h4>
                 <strong>Campus Information</strong>
                 <ul class="campus">
-                  <li><a href="/directory">Directory</a></li>
+                  <li><a href="/directory/people">Directory</a></li>
                   <li><a href="https://www.sdccdjobs.com/" target="_blank">Jobs</a></li>
                   <li><a href="/campus/directions">Parking/Transit</a></li>
                   <li><a href="/campus/president">President\'s Message</a></li>

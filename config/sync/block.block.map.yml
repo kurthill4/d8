@@ -1,0 +1,37 @@
+uuid: e34a6ecb-a1f8-461a-b3a1-763e1286a787
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a9b9fc80-7b7e-4146-9ed5-cfb7ff93fa60'
+  module:
+    - block_content
+    - block_visibility_groups
+    - system
+  theme:
+    - miramar
+id: map
+theme: miramar
+region: below_content
+weight: 0
+provider: null
+plugin: 'block_content:a9b9fc80-7b7e-4146-9ed5-cfb7ff93fa60'
+settings:
+  id: 'block_content:a9b9fc80-7b7e-4146-9ed5-cfb7ff93fa60'
+  label: Map
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /map
+    negate: false
+    context_mapping: {  }
