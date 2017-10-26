@@ -1,0 +1,45 @@
+uuid: 616939f6-a04e-45a8-8841-c0ab3cb175df
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.committees
+    - views.view.resource_pages_secondary
+  module:
+    - block_visibility_groups
+    - node
+    - system
+    - views
+  theme:
+    - miramar
+id: views_block__resource_pages_secondary_block_1
+theme: miramar
+region: sidebar_second
+weight: -14
+provider: null
+plugin: 'views_block:resource_pages_secondary-block_1'
+settings:
+  id: 'views_block:resource_pages_secondary-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: committees
+    context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      custom_web_page: custom_web_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '/campus/*'
+    negate: false
+    context_mapping: {  }
