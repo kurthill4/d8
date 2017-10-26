@@ -59,7 +59,7 @@ display:
         options:
           grouping:
             -
-              field: name
+              field: title_1
               rendered: true
               rendered_strip: false
           columns: 3
