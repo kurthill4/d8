@@ -78,59 +78,12 @@
     </header>
   {% endblock %}
 {% endif %}
-<section id="hero">
-<div class="banner front">
-  <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": 7500, "pauseAutoPlayOnHover": false, "pageDots": false }'>
-    {% for item in home_hero %}
-      <div class="carousel-cell slide-0 front" style="background:url({{ item }}) transparent no-repeat left top local"></div>
-    {% endfor %}
-  </div>
-        <div class="banner-content hide-xs">
-          <div class="caption">
-            <h1>Success Starts With You</h1>
-            <p>Prepare for university transfer and for high-demand, well-paying careers.</p>
-          </div>
-          <div class="get-started">
-            <a href="/futurestudents">
-              <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-              Get Started Now
-            </a>
-          </div>
-          <div class="slide-buttons">
-            <a href="#tour">Virtual Tour</a>
-            <a href="https://applyonline.communitycollege.net/studentappview.cfm" target="_blank">Apply</a>
-            <a href="https://studentweb.sdccd.edu/reg-e" target="_blank">Register</a>
-          </div>
-	</div>
-</div>
-</section>
-{% if page.number %}
-  {{ page.number }}
-{% endif %}
 
-{% if page.dates %}
-  {{ page.dates }}
-{% endif %}
-
-{% if page.gallery %}
-  {{ page.gallery }}
-{% endif %}
-
-{% if page.buttons %}
-  {{ page.buttons }}
-{% endif %}
-
-{% if page.mission %}
-  {{ page.mission }}
-{% endif %}
-
-{% if page.news %}
-  {{ page.news }}
-{% endif %}
+<div class="page-cover">&nbsp;</div>
 
 {# Main #}
 {% block main %}
-  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+  <div role="main" class="main-container {{ container }} js-quickedit-main-content gateway">
     <div class="row">
 
       {# Header #}
@@ -142,14 +95,6 @@
         {% endblock %}
       {% endif %}
 
-      {# Sidebar First #}
-      {% if page.sidebar_first %}
-        {% block sidebar_first %}
-          <aside class="col-sm-3" role="complementary">
-            {{ page.sidebar_first }}
-          </aside>
-        {% endblock %}
-      {% endif %}
 
       {# Content #}
       {%
@@ -157,32 +102,16 @@
           page.sidebar_first and page.sidebar_second ? 'col-sm-6',
           page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
           page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
-          page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
+          page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12',
         ]
       %}
       <section{{ content_attributes.addClass(content_classes) }}>
-
-        {# Highlighted #}
-        {% if page.highlighted %}
-          {% block highlighted %}
-            <div class="highlighted">{{ page.highlighted }}</div>
-          {% endblock %}
-        {% endif %}
-
         {# Breadcrumbs #}
         {% if breadcrumb %}
           {% block breadcrumb %}
             {{ breadcrumb }}
           {% endblock %}
         {% endif %}
-
-        {# Action Links #}
-        {% if action_links %}
-          {% block action_links %}
-            <ul class="action-links">{{ action_links }}</ul>
-          {% endblock %}
-        {% endif %}
-
         {# Help #}
         {% if page.help %}
           {% block help %}
@@ -197,32 +126,23 @@
         {% endblock %}
       </section>
 
-      {# Sidebar Second #}
-      {% if page.sidebar_second %}
-        {% block sidebar_second %}
-          <aside class="col-sm-3" role="complementary">
-            {{ page.sidebar_second }}
-          </aside>
+    {# Below Content #}
+      {% if page.below_content %}
+        {% block below_content %}
+          {{ page.below_content }}
         {% endblock %}
       {% endif %}
-    </div>
-  </div>
-{% endblock %}
+        {% endblock %}
+<div style="display:block;height:600px;overflow:auto"><iframe onload="resizeIframe(this)" border="0" frameborder="0" height="100%" id="map_frame" scrolling="no" src="https://map.concept3d.com?id=1045" style="border:0px solid #fff; margin:0; padding:0;vertical-align:bottom" width="100%"><p>Your browser does not support iframes.</p></iframe></div>
+
+<div class="spacer" style="height:1em">&nbsp;</div>
 <div class="grn-block">
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12">
-        <img class="img-responsive" src="{{ directory }}/images/logo-2.png" alt="">
+        <img class="img-responsive" src="/{{ directory }}/images/logo-2.png" alt="">
       </div>
     </div>
   </div>
 </div>
-{% if page.footer %}
-  {% block footer %}
-    <footer>
-      <div class="container-fluid">
-        {{ page.footer }}
-      </div>
-    </footer>
-  {% endblock %}
-{% endif %}
+

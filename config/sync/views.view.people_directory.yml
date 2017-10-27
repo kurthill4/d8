@@ -933,7 +933,18 @@ display:
           expose:
             label: ''
           plugin_id: standard
-      header: {  }
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: "<h5 class=\"hide-lg\"><a href=\"/directory/people\">Find People</a></h5>\n<h5 class=\"hide-lg\"><a href=\"/directory/places\">Find Places</a></h5>\n<h5 class=\"hide-lg\"><a href=\"/directory/departments\">Find Departments</a></h5>\n"
+          plugin_id: text_custom
       footer: {  }
       empty: {  }
       relationships: {  }
