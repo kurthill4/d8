@@ -1,9 +1,9 @@
-uuid: a6f6abe7-f0c1-449e-98e7-77293348c886
+uuid: 8e77916b-c3d9-4634-aab1-def4564924c0
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.committee_contact
+    - views.view.program_contact
   module:
     - block_visibility_groups
     - node
@@ -11,14 +11,14 @@ dependencies:
     - views
   theme:
     - miramar
-id: views_block__committee_contact_block_1
+id: views_block__program_contact_block_2
 theme: miramar
 region: sidebar_second
-weight: -23
+weight: -24
 provider: null
-plugin: 'views_block:committee_contact-block_1'
+plugin: 'views_block:program_contact-block_2'
 settings:
-  id: 'views_block:committee_contact-block_1'
+  id: 'views_block:program_contact-block_2'
   label: ''
   provider: views
   label_display: visible
@@ -31,15 +31,15 @@ visibility:
     negate: false
     block_visibility_group: ''
     context_mapping: {  }
-  request_path:
-    id: request_path
-    pages: "/campus/governance/committees/*\r\n/campus/governance/committees/*/*"
-    negate: false
-    context_mapping: {  }
   node_type:
     id: node_type
     bundles:
-      committee_page: committee_page
+      custom_web_page: custom_web_page
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '/programs/*'
+    negate: false
+    context_mapping: {  }

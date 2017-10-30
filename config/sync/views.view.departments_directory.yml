@@ -718,7 +718,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<h4 class=\"hide-lg hide-xl\"><a href=\"/directory/people\">Find Faculty &amp; Staff</a></h4>\n<h4 class=\"hide-lg hide-xl\"><a href=\"/directory/places\">Find Campus Resources</a></h4>"
+            value: "<h5 class=\"hide-lg\"><a href=\"/directory/people\">Find People</a></h5>\n<h5 class=\"hide-lg\"><a href=\"/directory/places\">Find Places</a></h5>\n<h5 class=\"hide-lg\"><a href=\"/directory/departments\">Find Departments</a></h5>\n"
             format: full_html
           plugin_id: text
       footer: {  }

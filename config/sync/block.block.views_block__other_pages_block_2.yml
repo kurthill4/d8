@@ -1,10 +1,11 @@
 uuid: b810e18c-7397-4d05-88ef-c7a90c52dba6
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.other_pages
   module:
+    - block_visibility_groups
     - ctools
     - node
     - system
@@ -14,7 +15,7 @@ dependencies:
 id: views_block__other_pages_block_2
 theme: miramar
 region: sidebar_second
-weight: -6
+weight: -16
 provider: null
 plugin: 'views_block:other_pages-block_2'
 settings:
@@ -44,4 +45,9 @@ visibility:
     id: request_path
     pages: '/programs/*'
     negate: false
+    context_mapping: {  }
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
     context_mapping: {  }

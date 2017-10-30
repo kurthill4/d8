@@ -24,7 +24,7 @@ class MiramarCustomSocialBlock extends BlockBase {
 	if(!\Drupal::currentUser()->isAnonymous())
 		$logOut = ' | <a href="/user/logout">Log Out</a>';
 	else
-		$logout = '';
+		$logOut = '';
     $build['social']['content'] = [
       '#markup' => '
         <div class="row">
