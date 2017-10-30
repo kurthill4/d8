@@ -2121,16 +2121,25 @@ body p {font-size:12px;}
 		 /*.logo a.mobile-menu.collapsed {
 		 		transform: rotate(90deg);
 		 	}*/
+		#navbar-collapse {
+			position:static;
+			top:5px;
+			height:100px;
+			background: #1d2451;
+			margin-bottom:1em;
+		}
 		nav.main-menu {
 			display:block;
-			position:static;
+			background: #1d2451;
 			margin-bottom:10px;
+			height:auto;
+		
 		}
 		nav.main-menu ul {
 			width:100%;
+			clear:both;
 		}
 		nav.main-menu ul li {
-			display:block;
 			width:100%!important;
 			margin-left:10px;
 			margin-bottom:10px;
