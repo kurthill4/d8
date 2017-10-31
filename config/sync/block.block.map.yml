@@ -1,12 +1,13 @@
-uuid: e34a6ecb-a1f8-461a-b3a1-763e1286a787
+uuid: 03545b65-39a9-42ee-a22a-8688554a949d
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:a9b9fc80-7b7e-4146-9ed5-cfb7ff93fa60'
+    - 'block_content:basic:e1b4d611-e74f-4c37-8535-cb8960c099a1'
   module:
     - block_content
     - block_visibility_groups
+    - node
     - system
   theme:
     - miramar
@@ -15,10 +16,10 @@ theme: miramar
 region: below_content
 weight: 0
 provider: null
-plugin: 'block_content:a9b9fc80-7b7e-4146-9ed5-cfb7ff93fa60'
+plugin: 'block_content:e1b4d611-e74f-4c37-8535-cb8960c099a1'
 settings:
-  id: 'block_content:a9b9fc80-7b7e-4146-9ed5-cfb7ff93fa60'
-  label: Map
+  id: 'block_content:e1b4d611-e74f-4c37-8535-cb8960c099a1'
+  label: 'Campus Map'
   provider: block_content
   label_display: '0'
   status: true
@@ -30,6 +31,13 @@ visibility:
     negate: false
     block_visibility_group: ''
     context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      map_page: map_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
   request_path:
     id: request_path
     pages: /map

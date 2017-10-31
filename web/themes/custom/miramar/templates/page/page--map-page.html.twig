@@ -83,7 +83,7 @@
 
 {# Main #}
 {% block main %}
-  <div role="main" class="main-container {{ container }} js-quickedit-main-content gateway">
+  <div role="main" class="main-container {{ container }} js-quickedit-main-content map-page">
     <div class="row">
 
       {# Header #}
@@ -133,7 +133,7 @@
         {% endblock %}
       {% endif %}
         {% endblock %}
-<div style="display:block;height:600px;overflow:auto"><iframe onload="resizeIframe(this)" border="0" frameborder="0" height="100%" id="map_frame" scrolling="no" src="https://map.concept3d.com?id=1045" style="border:0px solid #fff; margin:0; padding:0;vertical-align:bottom" width="100%"><p>Your browser does not support iframes.</p></iframe></div>
+
 
 <div class="spacer" style="height:1em">&nbsp;</div>
 <div class="grn-block">
@@ -145,4 +145,13 @@
     </div>
   </div>
 </div>
+{% if page.footer %}
+  {% block footer %}
+    <footer>
+      <div class="container-fluid">
+        {{ page.footer }}
+      </div>
+    </footer>
+  {% endblock %}
+{% endif %}
 
