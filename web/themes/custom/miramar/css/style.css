@@ -2132,14 +2132,15 @@ body p {font-size:12px;}
 		 	}*/
 		#navbar-collapse {
 			position:static;
-			/*top:5px;*/
-			height:150px;
+			top:80px;
+			min-height:100px;
 			width:100%;
+			overflow:auto;
 			background: #1d2451;
-			margin-bottom:1em;
+			margin-bottom:0.5em;
 		}
 		nav.main-menu {
-			margin:0 0 10px 0;
+			margin:0;/* 0 10px 0;*/
 			background: #1d2451;
 			width:100%;
 			height:auto;
@@ -2148,24 +2149,35 @@ body p {font-size:12px;}
 		nav.main-menu ul {
 			width:100%;
 			clear:both;
+			margin:0 0 0 20px;
+			list-style:none!important;
 		}
 		nav.main-menu ul li {
+			display:block;
 			width:100%!important;
-			margin-left:20px;
+			/*margin-left:20px;*/
 			margin-bottom:10px;
-		}
-		nav.main-menu ul li a {
-			width:100%!important;
-			font-size: 0.75em;
-			font-weight:bold;
-			padding:0;
-		}
-		nav.main-menu ul li:hover, nav.main-menu ul li:hover a,nav.main-menu ul li a:hover {
-			text-decoration:none!important;
 		}
 		nav.main-menu ul li:first-child {
 			display:none!important;
 		}
+		nav.main-menu ul li:last-child {
+			margin-bottom:0;
+		}
+		nav.main-menu ul li a {
+			width:100%!important;
+			font-size: 0.95em;
+			font-weight:bold;
+			padding:0;
+			margin:0;
+		}
+		nav.main-menu ul li:hover, nav.main-menu ul li:hover a,nav.main-menu ul li a:hover {
+			text-decoration:none!important;
+		}
+
+
+section#hero {margin-top:-25px;}
+
 		 .banner-content{
 			 position: relative!important;
 			 bottom: 0!important;
