@@ -2174,7 +2174,7 @@ position:fixed;
 		 /*.logo a.mobile-menu.collapsed {
 		 		transform: rotate(90deg);
 		 	}*/
-/*body {padding-top:65px!important;}*/
+body {padding-top:65px!important;}
 
 .push{
   transition: transform 0.5s;
@@ -2204,14 +2204,14 @@ position:fixed;
 		nav.main-menu ul {
 			width:100%;
 			clear:both;
-			margin:10px 0 0 20px;
+			margin:20px 0 0 20px;
 			list-style:none!important;
 		}
 		nav.main-menu ul li {
 			display:block;
 			width:100%!important;
 			/*margin-left:20px;*/
-			padding-bottom:10px;
+			padding-bottom:15px;
 		}
 		nav.main-menu ul li:first-child {
 			display:none!important;
@@ -2221,7 +2221,7 @@ position:fixed;
 		}
 		nav.main-menu ul li a {
 			width:100%!important;
-			font-size: 0.95em;
+			font-size: 1em;
 			font-weight:bold;
 			padding:0;
 			margin:0;

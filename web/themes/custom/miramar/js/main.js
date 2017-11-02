@@ -2,6 +2,7 @@
 function _toggleArrow(ele) {
   $(ele).toggleClass('fa-chevron-down').effect('pulsate', 'fast');
 }
+var pushDown = document.getElementById("push");
 
 (function($) {
   $('a.mobile-menu').click(function(){
