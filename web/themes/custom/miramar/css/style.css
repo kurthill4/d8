@@ -9,7 +9,7 @@ body{
 }
 .gateway .page-header,.directory .page-header, .resources .page-header {display:none;}
 
-.map-page .page-header {width:100%!important;}
+.map-page .page-header {display:block;width:100%!important;}
 
 .spacer {clear:both}
 .content,.dir-content,.field--name-description,.degree-block {padding:5px 10px;}
@@ -390,7 +390,7 @@ nav.mobile-nav li:first-child ol li{
 }
 .page-header,
 .directory .block-title {
-	padding-left:2em;
+	padding-left:1em;
 	margin:20px 0 0 0;
 	width:100%;
 	font-family:Oswald;
@@ -595,7 +595,7 @@ nav.mobile-nav li:first-child ol li{
 	color: #fff;
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
-  font-size: 28px;
+  	font-size: 28px;
 	text-transform: uppercase;
 }
 .get-started a:hover{
@@ -611,6 +611,33 @@ nav.mobile-nav li:first-child ol li{
 .get-started a:hover span{
 	background: #1d2451;
 }
+
+.call {width:100%}
+
+.call a{
+	background: #1d2451;
+	display: inline-block;
+	padding: 0 50px 0 0;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+  	font-size: 18px;
+	text-transform: uppercase;
+}
+.call a:hover{
+	text-decoration: none;
+	background: #a22130;
+}
+.call span{
+	margin-right: 25px;
+	background: #a22130;
+	display: inline-block;
+	padding: 10px 20px;
+}
+.call a:hover span{
+	background: #1d2451;
+}
+
 .slide-buttons{
 	margin: 15px 0 0 0px;
 }
@@ -679,6 +706,7 @@ nav.mobile-nav li:first-child ol li{
 
 .region-mission #block-twitterforhomepage {
 	width:33%;
+	height:100%;
 	margin: 0 auto;
 }
 
@@ -1123,14 +1151,17 @@ footer h4{
 	font-family: 'Nixie One', cursive;
 	font-size: 2.6704545454545454em;
 }
-.step-panel .step-title{
+.step-title {
 	background: #1d2451;
 	color: #fff;
 	font-size: 1.5909090909090908em;
 	font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
-width:100%;
 }
+.step-panel .step-title{
+	width:100%;
+}
+
 .step-panel .step-title span{
 	background: #a22130;
   display: inline-block;
@@ -1580,12 +1611,24 @@ div.alpha_pager ul li a {
 	color:#ffffff!important;
 	text-decoration:underline;
 }
-#slick-views-program-carousel-block-1-1 {width:99%}
+#slick-views-program-carousel-block-1-1 {width:95%;margin:0 auto;}
+.slick-1 {
+	display:block;
+	position:relative;
+	float:none;
+	margin: 0 auto;
+	width:95%;
+}
 .slick-1 ul,.slick-1 ul.slides li,.slick-1 ul.slides li img {padding:0;margin:0}
 .resource .region-content .view-content {
 	display:none;
 }
-.slick-1 {width:100%;margin:0 auto;}
+.slick-prev, .slick-next {
+    /*position: absolute;*/
+	height:100%;
+	width:50px;
+}
+.slick-prev {left:-40px;}
 /*.step-panel .program img,*/
 .slick-1 img {
 	/*width:155px!important;*/
@@ -2047,7 +2090,7 @@ nav.main-menu {padding-left:0;}
   background-size: 960px 450px;
 }
 		.hide-xl {display:none!important;}
-.gateway .page-header,.directory .page-header, .resources .page-header {display:block;}
+.gateway .page-header,.directory .page-header, .resources .page-header,.map-page .page-header {display:block;}
 
 		 nav.main-menu li:not(:first-child){
 			 width: 40px;
@@ -2109,13 +2152,14 @@ body p {font-size:12px;}
 			 display: none;
 		 }
 		 header{
+position:fixed;
 			 left: 0;
 		 }
 .region-navigation {min-height:80px;}
 		 .logo{
 			 position: fixed;
 			top:0;
-			 width: 100%;
+			 width: 100vw;
 			 min-height: 80px;
 			 padding: 26px 70px 0 30px;
 		 }
@@ -2130,14 +2174,25 @@ body p {font-size:12px;}
 		 /*.logo a.mobile-menu.collapsed {
 		 		transform: rotate(90deg);
 		 	}*/
+/*body {padding-top:65px!important;}*/
+
+.push{
+  transition: transform 0.5s;
+  transform: translate(0px, 160px);
+}
+
+.pushUp{
+  transition: transform 0.5s;
+  transform: translate(0px, 0px);
+}
 		#navbar-collapse {
-			position:static;
-			top:80px;
-			min-height:100px;
-			width:100%;
-			overflow:auto;
+			/*position:fixed;
+			top:80px;*/
+			min-height:175px;
+			width:100vw;
+			/*overflow:auto;*/
 			background: #1d2451;
-			margin-bottom:0.5em;
+			margin:0 0 0.5em 0;
 		}
 		nav.main-menu {
 			margin:0;/* 0 10px 0;*/
@@ -2149,14 +2204,14 @@ body p {font-size:12px;}
 		nav.main-menu ul {
 			width:100%;
 			clear:both;
-			margin:0 0 0 20px;
+			margin:10px 0 0 20px;
 			list-style:none!important;
 		}
 		nav.main-menu ul li {
 			display:block;
 			width:100%!important;
 			/*margin-left:20px;*/
-			margin-bottom:10px;
+			padding-bottom:10px;
 		}
 		nav.main-menu ul li:first-child {
 			display:none!important;
@@ -2176,7 +2231,7 @@ body p {font-size:12px;}
 		}
 
 
-section#hero {margin-top:-25px;}
+/*section#hero {margin-top:-25px;}*/
 
 		 .banner-content{
 			 position: relative!important;

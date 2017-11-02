@@ -3,6 +3,16 @@ function _toggleArrow(ele) {
   $(ele).toggleClass('fa-chevron-down').effect('pulsate', 'fast');
 }
 
+(function($) {
+  $('a.mobile-menu').click(function(){
+    if($(pushDown).hasClass("push")){
+      pushDown.className = "pushUp";
+    }
+    else{
+      pushDown.className = "push";
+    }
+  })
+}(jQuery));
 
 (function($) {
   // Mobile Menu controls.

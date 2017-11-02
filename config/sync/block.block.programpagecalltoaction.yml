@@ -1,0 +1,32 @@
+uuid: 3b876773-ae3e-4115-9113-4fab1de9ee3a
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - miramarcustom
+    - system
+  theme:
+    - miramar
+id: programpagecalltoaction
+theme: miramar
+region: sidebar_second
+weight: -14
+provider: null
+plugin: miramar_pgmcall
+settings:
+  id: miramar_pgmcall
+  label: 'Program Page Call to Action'
+  provider: miramarcustom
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '/programs/*'
+    negate: false
+    context_mapping: {  }
