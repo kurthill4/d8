@@ -13,6 +13,7 @@ dependencies:
     - image.style.thumbnail
     - node.type.department_page
   module:
+    - entity_reference_views_select
     - field_layout
     - image
     - layout_discovery
@@ -45,21 +46,15 @@ content:
     third_party_settings: {  }
   field_chair:
     weight: 32
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: erviews_options_select
     region: content
   field_co_chair:
     weight: 33
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: erviews_options_select
     region: content
   field_image:
     weight: 35

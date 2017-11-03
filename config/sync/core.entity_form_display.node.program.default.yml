@@ -20,6 +20,7 @@ dependencies:
     - image.style.thumbnail
     - node.type.program
   module:
+    - entity_reference_views_select
     - field_layout
     - file
     - image
@@ -73,7 +74,7 @@ content:
     weight: 3
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: erviews_options_select
     region: content
   field_course_sequence:
     weight: 13
@@ -92,7 +93,7 @@ content:
     weight: 2
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: erviews_options_select
     region: content
   field_image:
     weight: 8
