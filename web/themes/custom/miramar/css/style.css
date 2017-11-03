@@ -689,6 +689,8 @@ nav.mobile-nav li:first-child ol li{
 	margin:0;
 }
 
+.region-mission section {display:table-cell}
+
 .region-dates .block-views-blockimportant-dates-block-1 {
 	width:33%;
 }
@@ -706,11 +708,11 @@ nav.mobile-nav li:first-child ol li{
 
 .region-mission #block-twitterforhomepage {
 	width:33%;
-	height:100%;
 	margin: 0 auto;
+	background:#ffffff;
 }
 
-.region-mission #block-twitterforhomepage #twitter-widget-0 {height:100% !important;}
+/*.region-mission #block-twitterforhomepage #twitter-widget-0 {height:100%!important;}*/
 
 .region-below-content .views-view-grid {
 	width:95%;
