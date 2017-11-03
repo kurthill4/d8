@@ -268,7 +268,7 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: true
+            alter_text: false
             text: "<p>\n{% if body is not empty %}\n<a href=\"{{ path }}\">{{ title }}</a>\n{% else %}\n{{ title }}\n{% endif %}\n</p>"
             make_link: false
             path: ''
@@ -294,7 +294,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: p
           element_class: ''
           element_label_type: ''
           element_label_class: ''

@@ -139,7 +139,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -271,7 +271,7 @@ display:
             alter_text: true
             text: '<i class="fa fa-envelope"></i> {{ field_first_name }} {{ field_last_name }}'
             make_link: true
-            path: '{{ mail }}'
+            path: 'mailto:{{ mail }}'
             absolute: false
             external: false
             replace_spaces: false
