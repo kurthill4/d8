@@ -19,6 +19,7 @@ dependencies:
     - image.style.thumbnail
     - taxonomy.vocabulary.campus_resources
   module:
+    - entity_reference_views_select
     - field_layout
     - image
     - layout_discovery
@@ -47,13 +48,13 @@ content:
     weight: 6
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: erviews_options_select
     region: content
   field_contact_2:
     weight: 7
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: erviews_options_select
     region: content
   field_contact_3:
     weight: 8

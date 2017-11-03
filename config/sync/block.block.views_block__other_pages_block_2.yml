@@ -15,7 +15,7 @@ dependencies:
 id: views_block__other_pages_block_2
 theme: miramar
 region: sidebar_second
-weight: -16
+weight: -17
 provider: null
 plugin: 'views_block:other_pages-block_2'
 settings:

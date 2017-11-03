@@ -10,6 +10,7 @@ dependencies:
     - field.field.taxonomy_term.schools.field_url
     - taxonomy.vocabulary.schools
   module:
+    - entity_reference_views_select
     - field_layout
     - layout_discovery
     - path
@@ -34,21 +35,15 @@ content:
     third_party_settings: {  }
   field_contact:
     weight: 1
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: erviews_options_select
     region: content
   field_dean:
     weight: 2
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: erviews_options_select
     region: content
   field_location:
     weight: 4

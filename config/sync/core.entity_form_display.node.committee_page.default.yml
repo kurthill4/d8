@@ -20,6 +20,7 @@ dependencies:
     - field.field.node.committee_page.field_web_pages
     - node.type.committee_page
   module:
+    - entity_reference_views_select
     - field_group
     - field_layout
     - layout_discovery
@@ -75,19 +76,19 @@ content:
     weight: 3
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: erviews_options_select
     region: content
   field_committee_chair:
     weight: 1
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: erviews_options_select
     region: content
   field_committee_co_chair:
     weight: 2
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: erviews_options_select
     region: content
   field_committee_code:
     weight: 10
