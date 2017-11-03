@@ -710,6 +710,8 @@ nav.mobile-nav li:first-child ol li{
 	margin: 0 auto;
 }
 
+.region-mission #block-twitterforhomepage #twitter-widget-0 {height:100% !important;}
+
 .region-below-content .views-view-grid {
 	width:95%;
 	margin: 0 auto;
@@ -2113,10 +2115,6 @@ nav.main-menu {padding-left:0;}
 		 .banner-content{display:none!important;}
 		*.hide-title {display:block!important}
 	}
-	 @media only screen and (max-width : 800px){
-		 .banner-content{display:none!important;}
-		*.hide-title {display:block!important}
-	}
 
 	 @media only screen and (min-width : 801px) {
 		 .hide-lg{
@@ -2132,6 +2130,8 @@ nav.main-menu {padding-left:0;}
 		 .hide-xs{
 			 display: none!important;
 		 }
+		 .banner-content{display:none!important;}
+		*.hide-title {display:block!important}
 body p {font-size:12px;}
 #views-bootstrap-committee-meetings-page-1 .row {
 	margin:2em auto;
@@ -2147,11 +2147,11 @@ body p {font-size:12px;}
 			 display: none;
 		 }
 		 header{
-position:fixed;
+			position:fixed;
 			 left: 0;
 		 }
-.region-navigation {min-height:80px;}
-		 .logo{
+		.region-navigation {min-height:80px;}
+		.logo{
 			 position: fixed;
 			top:0;
 			 width: 100vw;
@@ -2183,7 +2183,7 @@ body {padding-top:65px!important;}
 		#navbar-collapse {
 			/*position:fixed;
 			top:80px;*/
-			min-height:175px;
+			min-height:160px;
 			width:100vw;
 			/*overflow:auto;*/
 			background: #1d2451;
