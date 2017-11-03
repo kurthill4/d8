@@ -2141,7 +2141,28 @@ body p {font-size:12px;}
 #views-bootstrap-committee-meetings-page-1 .col {
 	margin:1em auto;
 }
+.region-dates section,.region-mission section {display:block;width:100%}
+.region-dates .block-views-blockimportant-dates-block-1 {
+	width:100%;
+}
 
+.region-dates .block-views-blockwhat-do-you-want-to-be-block-1 {
+	width:100%;
+	background: #a22130;
+
+}
+
+.region-mission, .region-mission section {display:block;}
+.region-mission #block-missionstatement-2 {
+	width:95%;
+	margin: 0 auto;
+}
+
+.region-mission #block-twitterforhomepage {
+	width:95%;
+	margin: 0 auto;
+	background:#ffffff;
+}
 .block-views-blockwhat-do-you-want-to-be-block-1 {display:block;margin-top:1px;}
 .block-views-blockwhat-do-you-want-to-be-block-1 h1 {font-size:4em!important;}
 .block-views-blockwhat-do-you-want-to-be-block-1 p {font-size:2em!important;}
