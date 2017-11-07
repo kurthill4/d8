@@ -1020,6 +1020,12 @@ nav.mobile-nav li:first-child ol li{
 	margin: 10px 10px 0 20px;
 }
 
+.feedback-form form {margin:1em 2em}
+
+.feedback-form .form-select {width:auto}
+
+.feedback-form .field--name-message {width:80%; margin: 0 auto;}
+
 footer{
 	padding: 30px 20px 20px;
 	font-size: 13px;
