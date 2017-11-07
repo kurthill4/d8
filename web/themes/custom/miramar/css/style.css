@@ -283,9 +283,9 @@ nav.main-menu li:first-child:hover a {
 nav.main-menu li:first-child i{
 	font-size: 25px;
 }
-/*nav.main-menu li:last-child {
-	margin-right:5%;
-}*/
+nav.main-menu li:last-child {
+	margin-right:0.5em;
+}
 
 nav.mobile-nav{
 	position: absolute;
@@ -1623,11 +1623,13 @@ div.alpha_pager ul li a {
 	display:none;
 }
 .slick-prev, .slick-next {
-    /*position: absolute;*/
+    position: absolute;
+	display:inline-block;
 	height:100%;
 	width:50px;
 }
 .slick-prev {left:-40px;}
+.slick-next {right:-8px;}
 /*.step-panel .program img,*/
 .slick-1 img {
 	/*width:155px!important;*/
@@ -2005,6 +2007,7 @@ nav.main-menu {padding-left:0;}
 	 /* Medium Devices, Desktops */
 	 @media only screen and (max-width : 992px) {
 .body {max-width:960px;}
+	
 #views-bootstrap-committee-meetings-page-1 .row {
 	margin:2em auto;
 }
@@ -2134,38 +2137,38 @@ nav.main-menu {padding-left:0;}
 		 }
 		 .banner-content{display:none!important;}
 		*.hide-title {display:block!important}
-body p {font-size:12px;}
-#views-bootstrap-committee-meetings-page-1 .row {
-	margin:2em auto;
-}
-#views-bootstrap-committee-meetings-page-1 .col {
-	margin:1em auto;
-}
-.region-dates section,.region-mission section {display:block;width:100%}
-.region-dates .block-views-blockimportant-dates-block-1 {
-	width:100%;
-}
+		body p {font-size:12px;}
+		#views-bootstrap-committee-meetings-page-1 .row {
+			margin:2em auto;
+		}
+		#views-bootstrap-committee-meetings-page-1 .col {
+			margin:1em auto;
+		}
+		.region-dates section,.region-mission section {display:block;width:100%}
+		.region-dates .block-views-blockimportant-dates-block-1 {
+			width:100%;
+		}
 
-.region-dates .block-views-blockwhat-do-you-want-to-be-block-1 {
-	width:100%;
-	background: #a22130;
+		.region-dates .block-views-blockwhat-do-you-want-to-be-block-1 {
+			width:100%;
+			background: #a22130;
 
-}
+		}
 
-.region-mission, .region-mission section {display:block;}
-.region-mission #block-missionstatement-2 {
-	width:95%;
-	margin: 0 auto;
-}
+		.region-mission, .region-mission section {display:block;}
+		.region-mission #block-missionstatement-2 {
+			width:95%;
+			margin: 0 auto;
+		}
 
-.region-mission #block-twitterforhomepage {
-	width:95%;
-	margin: 0 auto;
-	background:#ffffff;
-}
-.block-views-blockwhat-do-you-want-to-be-block-1 {display:block;margin-top:1px;}
-.block-views-blockwhat-do-you-want-to-be-block-1 h1 {font-size:4em!important;}
-.block-views-blockwhat-do-you-want-to-be-block-1 p {font-size:2em!important;}
+		.region-mission #block-twitterforhomepage {
+			width:95%;
+			margin: 0 auto;
+			background:#ffffff;
+		}
+		.block-views-blockwhat-do-you-want-to-be-block-1 {display:block;margin-top:1px;}
+		.block-views-blockwhat-do-you-want-to-be-block-1 h1 {font-size:4em!important;}
+		.block-views-blockwhat-do-you-want-to-be-block-1 p {font-size:2em!important;}
 		 .top-links, .mbtn, .page-cover{
 			 display: none;
 		 }
@@ -2176,18 +2179,18 @@ body p {font-size:12px;}
 		.region-navigation {min-height:80px;}
 		.logo{
 			 position: fixed;
-			top:0;
+			 top:0;
 			 width: 100vw;
 			 min-height: 80px;
 			 padding: 26px 70px 0 30px;
 		 }
-		 .logo a.mobile-menu, logo button {
+		 .logo a.mobile-menu, .logo button {
 			 position: absolute;
 		 	 top: 0px;
 		 	 right: 0px;
-		 	 color: #fff;
+		 	 color: #ffffff!important;
 		 	 font-size: 25px;
-		 	 transition: transform 0.2s;
+		 	 transition: transform 0.5s;
 		 }
 		 /*.logo a.mobile-menu.collapsed {
 		 		transform: rotate(90deg);
@@ -2208,7 +2211,6 @@ body {padding-top:65px!important;}
 			top:80px;*/
 			min-height:160px;
 			width:100vw;
-			/*overflow:auto;*/
 			background: #1d2451;
 			margin:0 0 0.5em 0;
 		}

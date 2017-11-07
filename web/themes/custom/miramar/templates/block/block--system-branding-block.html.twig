@@ -16,11 +16,15 @@
  */
 #}
 {% block content %}
+
   <div class="logo">
     <a href="{{ path('<front>') }}" title="{{ 'San Diego Miramar College'|t }}" rel="home">
       <img class="hide-xs" src="{{ site_logo }}" alt="{{ 'San Diego Miramar College'|t }}" />
       <img class="hide-lg img-responsive" src="/{{ directory }}/images/logo-mobile.png" alt="San Diego Miramar College">
     </a>
-    <a href="#" class="mobile-menu navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></a>
+    <a href="#" class="mobile-menu navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></a>
+    <!--button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">                        <span class="fa fa-bars"></span>
+</button-->
+
   </div>
 {% endblock %}

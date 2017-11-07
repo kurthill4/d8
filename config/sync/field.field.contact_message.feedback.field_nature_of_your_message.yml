@@ -1,0 +1,21 @@
+uuid: a29cc538-46b9-44d8-87d1-20a46fed6786
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.storage.contact_message.field_nature_of_your_message
+  module:
+    - options
+id: contact_message.feedback.field_nature_of_your_message
+field_name: field_nature_of_your_message
+entity_type: contact_message
+bundle: feedback
+label: 'Nature of your message'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

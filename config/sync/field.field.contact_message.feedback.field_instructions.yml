@@ -1,0 +1,25 @@
+uuid: db436f30-7be2-4013-9b49-7fe954ebaa71
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.storage.contact_message.field_instructions
+  module:
+    - markup
+id: contact_message.feedback.field_instructions
+field_name: field_instructions
+entity_type: contact_message
+bundle: feedback
+label: Instructions
+description: ''
+required: false
+translatable: false
+default_value:
+  - {  }
+default_value_callback: ''
+settings:
+  markup:
+    value: 'This form is for questions and comments regarding the campus website only. All other queries should be directed to the <a href="/resources">appropriate campus office</a>.'
+    format: full_html
+field_type: markup
