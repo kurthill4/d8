@@ -642,10 +642,10 @@ display:inline-block;
 	background: #a22130;
 }
 .get-started span{
-	margin-right: 1.5vw;
+	margin: 0 2.5vw 0 0;
 	background: #a22130;
 	display: inline-block;
-	padding: 1vw 20px;
+	padding: 10px 20px;
 }
 .get-started a:hover span{
 	background: #1d2451;
