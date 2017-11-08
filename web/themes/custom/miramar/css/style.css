@@ -525,6 +525,15 @@ nav.mobile-nav li:first-child ol li{
   -o-background-size: 1280px 600px;
   background-size: 1280px 600px;
 }
+
+.campaign {
+	background: transparent url(../images/ad/miramar_Spring18_0.png) no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .banner {position:relative;}
 .banner.front{
   max-height: 640px;
@@ -537,7 +546,7 @@ nav.mobile-nav li:first-child ol li{
 .banner .carousel button{
 	display: none;
 }
-.front .banner-content{
+.front .banner-content,.campaign  .banner-content {
 	position: absolute;
 	bottom:10%;
 	left: 15px;
@@ -546,7 +555,8 @@ nav.mobile-nav li:first-child ol li{
 }
 .notfront .banner-content,.custom .banner-content{
 	position: absolute;
-	bottom:5%;
+	/*top:35vh;*/
+	bottom:20vh;
 	left: 15px;
 	z-index:10;
 	color:#ffffff;
@@ -560,6 +570,11 @@ nav.mobile-nav li:first-child ol li{
 	bottom:5%;
 
 }
+
+.banner-footer {
+	width:100%;
+	background-color:#00727d;
+}
 .front .caption {
 	width: 550px;
 }
@@ -571,12 +586,21 @@ nav.mobile-nav li:first-child ol li{
 }
 .caption{
 	background: rgba(29, 26, 81, 0.9);
-	padding: 30px 40px;
+	padding: 2vh 4vw;
 	margin: 5px;
 }
 .caption h1{
 	font-family: 'Nixie One', cursive;
-	font-size: 3.75em;
+	/*font-size: 3.75em;*/
+	font-size: 4vw;
+	z-index:1000;
+}
+.caption h2{
+	font-size: 3vw;
+	z-index:1000;
+}
+.caption h2{
+	font-size: 2vw;
 	z-index:1000;
 }
 .custom .caption h1{
@@ -588,14 +612,29 @@ nav.mobile-nav li:first-child ol li{
 	font-family: 'Oswald', sans-serif;
 	font-size: 1.5625em;
 }
+.adbuttons {
+	/*position:relative;
+	bottom:0.5em;*/
+	width:100%;
+	text-align:center;
+}
+.adbuttons .get-started {
+display:inline-block;
+	/*width:auto;*/
+	margin: 0 auto;
+}
+.adbuttons .get-started a{
+	min-width:20vw;
+}
 .get-started a{
 	background: #1d2451;
 	display: inline-block;
-	padding: 0 110px 0 0;
+	padding: 0 4vw 0 0;
 	color: #fff;
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
-  	font-size: 28px;
+/*  	font-size: 1.75em;*/
+  	font-size: 2vw;
 	text-transform: uppercase;
 }
 .get-started a:hover{
@@ -603,13 +642,21 @@ nav.mobile-nav li:first-child ol li{
 	background: #a22130;
 }
 .get-started span{
-	margin-right: 45px;
+	margin-right: 1.5vw;
 	background: #a22130;
 	display: inline-block;
-	padding: 10px 20px;
+	padding: 1vw 20px;
 }
 .get-started a:hover span{
 	background: #1d2451;
+}
+.banner-footer .get-started {
+	display:block!important;
+	width:100%;
+}
+
+.banner-footer .get-started a {
+	width:100%;
 }
 
 .call {width:100%}
@@ -1993,6 +2040,14 @@ nav.main-menu {padding-left:0;}
 
 /* Large Devices, Wide Screens */
 	 @media only screen and (max-width : 1199px) {
+		.call a{
+			padding: 0 5px 0 0;
+		  	font-size: 1em;
+		}
+		.call span{
+			margin-right: 5px;
+			padding: 10px;
+		}	
 		 .ne-wrap .news-overlay{
 		 	padding: 22% 30px;
 		 }
@@ -2013,7 +2068,7 @@ nav.main-menu {padding-left:0;}
 	 /* Medium Devices, Desktops */
 	 @media only screen and (max-width : 992px) {
 .body {max-width:960px;}
-	
+
 #views-bootstrap-committee-meetings-page-1 .row {
 	margin:2em auto;
 }
@@ -2122,10 +2177,10 @@ nav.main-menu {padding-left:0;}
 		}*/
 	 }
 
-	 @media only screen and (max-height : 600px){
+	 /*@media only screen and (max-height : 600px){
 		 .banner-content{display:none!important;}
 		*.hide-title {display:block!important}
-	}
+	}*/
 
 	 @media only screen and (min-width : 801px) {
 		 .hide-lg{
