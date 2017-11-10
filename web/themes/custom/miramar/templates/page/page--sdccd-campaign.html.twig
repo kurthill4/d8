@@ -67,7 +67,6 @@
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
     %}
-<div class="spacer" style="height:1px">&nbsp;</div>
     <header>
         {{ page.navigation }}
 
@@ -79,19 +78,19 @@
   {% endblock %}
 {% endif %}
 <div id="push" class="">
-<section id="hero">
+<section id="hero" class="ad">
 <div class="banner campaign">
-  <div class="carousel">
-      <div class="carousel-cell campaign front" style="transparent no-repeat left top local"></div>
+  <div class="foo">
+      <div class="carousel-cell slide-campaign ad" style="transparent no-repeat left top scroll"></div>
   </div>
-        <div class="banner-content hide-xs">
+        <div class="banner-content">
           <div class="caption">
             <h1>Imagine the Possibilities</h1>
             <h2>Spring Classes Begin January 29</h2>
             <h3><span class="italic">Expanded Intersession January 2</span></h3>
           </div>
 	</div>
-	<div class="adbuttons">
+	<div class="adbuttons hide-xs">
           <div class="get-started">
             <a href="/programs">
               <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
@@ -106,27 +105,33 @@
               Register Online
             </a>
           </div>
-          <!--div class="slide-buttons">
-            <a href="#tour">Virtual Tour</a>
-            <a href="https://applyonline.communitycollege.net/studentappview.cfm" target="_blank">Apply</a>
-            <a href="https://studentweb.sdccd.edu/reg-e" target="_blank">Register</a>
-          </div-->
 	</div>
 </div>
 </section>
 	<div class="banner-footer hide-lg">
+	<div class="slide-campaign"></div>
+	<div class="adtext">
+	<div class="adtext-l">
+            <h2>Spring Classes Begin January 29</h2>
+	</div>
+	<div class="adtext-r">
+            <h3><span class="italic">Expanded Intersession January 2</span></h3>
+	</div>
+	</div>
           <div class="get-started">
             <a href="/programs">
               <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
               Our Programs
             </a>
           </div>
+	<div class="spacer" style="height:0,5em">&nbsp;</div>
           <div class="get-started">
             <a href="https://applyonline.communitycollege.net/studentappview.cfm" target="_blank">
               <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
               Apply Now
             </a>
           </div>
+	<div class="spacer" style="height:0,5em">&nbsp;</div>
           <div class="get-started">
             <a href="https://studentweb.sdccd.edu/reg-e" target="_blank">
               <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
@@ -135,110 +140,6 @@
           </div>
 
 	</div>
-{% if page.number %}
-  {{ page.number }}
-{% endif %}
-
-{% if page.dates %}
-  {{ page.dates }}
-{% endif %}
-
-{% if page.gallery %}
-  {{ page.gallery }}
-{% endif %}
-
-{% if page.buttons %}
-  {{ page.buttons }}
-{% endif %}
-
-{% if page.mission %}
-  {{ page.mission }}
-{% endif %}
-
-{% if page.news %}
-  {{ page.news }}
-{% endif %}
-
-{# Main #}
-{% block main %}
-  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
-    <div class="row">
-
-      {# Header #}
-      {% if page.header %}
-        {% block header %}
-          <div class="col-sm-12" role="heading">
-            {{ page.header }}
-          </div>
-        {% endblock %}
-      {% endif %}
-
-      {# Sidebar First #}
-      {% if page.sidebar_first %}
-        {% block sidebar_first %}
-          <aside class="col-sm-3" role="complementary">
-            {{ page.sidebar_first }}
-          </aside>
-        {% endblock %}
-      {% endif %}
-
-      {# Content #}
-      {%
-        set content_classes = [
-          page.sidebar_first and page.sidebar_second ? 'col-sm-6',
-          page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
-          page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
-          page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
-        ]
-      %}
-      <section{{ content_attributes.addClass(content_classes) }}>
-
-        {# Highlighted #}
-        {% if page.highlighted %}
-          {% block highlighted %}
-            <div class="highlighted">{{ page.highlighted }}</div>
-          {% endblock %}
-        {% endif %}
-
-        {# Breadcrumbs #}
-        {% if breadcrumb %}
-          {% block breadcrumb %}
-            {{ breadcrumb }}
-          {% endblock %}
-        {% endif %}
-
-        {# Action Links #}
-        {% if action_links %}
-          {% block action_links %}
-            <ul class="action-links">{{ action_links }}</ul>
-          {% endblock %}
-        {% endif %}
-
-        {# Help #}
-        {% if page.help %}
-          {% block help %}
-            {{ page.help }}
-          {% endblock %}
-        {% endif %}
-
-        {# Content #}
-        {% block content %}
-          <a id="main-content"></a>
-          {{ page.content }}
-        {% endblock %}
-      </section>
-
-      {# Sidebar Second #}
-      {% if page.sidebar_second %}
-        {% block sidebar_second %}
-          <aside class="col-sm-3" role="complementary">
-            {{ page.sidebar_second }}
-          </aside>
-        {% endblock %}
-      {% endif %}
-    </div>
-  </div>
-{% endblock %}
 <div class="grn-block">
   <div class="container-fluid">
     <div class="row">
