@@ -2255,8 +2255,7 @@ banner.custom,banner.notfront {max-height:450px}
 			 display: none!important;
 		 }
 /*.banner-content {display:block;position:static;width:100%}*/
-		 .banner-content{display:none!important;}
-		.carousel {position:static}
+		.carousel {position:static;}
 		.slide-campaign {
 			background: transparent url(../images/ad/miramar_Spring18_sm.png) no-repeat center bottom local;
 			-webkit-background-size: 100% auto;
@@ -2380,7 +2379,7 @@ body {padding-top:65px!important;}
 		}
 
 
-section#hero {display:block;margin-top:25px;}
+section#hero {display:block;position:static;margin-top:25px;}
 
 		 .banner-content{
 			 position: relative!important;
