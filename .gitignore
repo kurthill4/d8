@@ -15,11 +15,6 @@
 /web/sites/*/files/
 /web/sites/*/custom/
 
-#Ignore critical Drupal configuration files
-/config/sync/google.analytics.settings.yml
-/config/sync/user.*
-
-
 # Ignore files & custom even if they are symlinks
 /web/sites/*/files
 /web/sites/*/custom

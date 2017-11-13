@@ -604,7 +604,7 @@ display:inline-block;
 }
 
 .banner-footer {
-	width:100%;
+	width:100vw;
 	background-color:#00727d;
 	color:yellow;
 }
@@ -1100,7 +1100,8 @@ display:inline-block;
 
 footer{
 	padding: 30px 20px 20px;
-	font-size: 13px;
+	margin:0;
+	font-size: 1vw;
 	background: #1d2451;
 	color: #fff;
 }
@@ -2254,6 +2255,20 @@ banner.custom,banner.notfront {max-height:450px}
 		 .hide-xs{
 			 display: none!important;
 		 }
+.navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  .navbar-header .collapse, .navbar-toggle {
+    display:block !important;
+  }
+  .navbar-header {
+    float: none;
+  }
+
+
 /*.banner-content {display:block;position:static;width:100%}*/
 		.carousel {position:static;}
 		.slide-campaign {
@@ -2599,6 +2614,15 @@ section#hero {display:block;position:static;margin-top:25px;}
 }
 
 	}
+	 /* Extra Small Devices, Phones LANDSCAPE */
+	 @media only screen and (min-width : 668px) {
+			.hide-mobile-ls {display:none!important}
+
+		}
+
+		.hide-mobile {display:none!important}
+		img.ad {width:100%;padding:0!important;margin:0!important;}
+	 }
 
 	 /* Extra Small Devices, Phones */
 	 @media only screen and (max-width : 480px) {
@@ -2609,9 +2633,9 @@ section#hero {display:block;position:static;margin-top:25px;}
 			-o-background-size: contain;
 			background-size: contain;
 		}
-
+		.hide-xs {display:none!important}
 		.hide-mobile {display:none!important}
-		img.ad {padding:0!important;margin:0!important;}
+		img.ad {width:100%;padding:0!important;margin:0!important;}
 	 }
 
 	 /* Custom, iPhone Retina */
