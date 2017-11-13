@@ -2603,14 +2603,15 @@ section#hero {display:block;position:static;margin-top:25px;}
 	 /* Extra Small Devices, Phones */
 	 @media only screen and (max-width : 480px) {
 			.slide-campaign {
-			background: transparent url(../images/ad/miramar_Spring18_sm.png) no-repeat center bottom;
+			background: transparent url(../images/ad/miramar_Spring18_xs.png) no-repeat center bottom;
 			-webkit-background-size: contain;
 			-moz-background-size: contain;
 			-o-background-size: contain;
 			background-size: contain;
 		}
 
-
+		.hide-mobile {display:none!important}
+		img.ad {padding:0!important;margin:0!important;}
 	 }
 
 	 /* Custom, iPhone Retina */
