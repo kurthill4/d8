@@ -78,109 +78,74 @@
   {% endblock %}
 {% endif %}
 <div id="push" class="">
-<div class="banner notfront">
-      <div class="carousel-cell slide-ns">
-          <div class="banner-content hide-xs">
-		<div class="caption">
-                    <h1>Current Students</h1>
-                   <p>This is your path to success.</p>
-		</div>
-          </div>
-     </div>
-</div>
-{# Main #}
-{% block main %}
-<!--div class="spacer hide-title" style="height:2em">&nbsp;</div-->
-  <div role="main" class="main-container {{ container }} js-quickedit-main-content gateway">
-    <div class="row">
-
-      {# Header #}
-      {% if page.header %}
-        {% block header %}
-          <div class="col-sm-12" role="heading">
-            {{ page.header }}
-          </div>
-        {% endblock %}
-      {% endif %}
-
-      {# Sidebar First #}
-      {% if page.sidebar_first %}
-        {% block sidebar_first %}
-          <aside class="col-sm-3" role="complementary">
-            {{ page.sidebar_first }}
-          </aside>
-        {% endblock %}
-      {% endif %}
-
-      {# Content #}
-      {%
-        set content_classes = [
-          page.sidebar_first and page.sidebar_second ? 'col-sm-6',
-          page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
-          page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
-          page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12',
-        ]
-      %}
-      <section{{ content_attributes.addClass(content_classes) }}>
-
-        {# Highlighted #}
-        {% if page.highlighted %}
-          {% block highlighted %}
-            <div class="highlighted">{{ page.highlighted }}</div>
-          {% endblock %}
-        {% endif %}
-
-        {# Breadcrumbs #}
-        {% if breadcrumb %}
-          {% block breadcrumb %}
-            {{ breadcrumb }}
-          {% endblock %}
-        {% endif %}
-
-        {# Action Links #}
-        {% if action_links %}
-          {% block action_links %}
-            <ul class="action-links">{{ action_links }}</ul>
-          {% endblock %}
-        {% endif %}
-
-        {# Help #}
-        {% if page.help %}
-          {% block help %}
-            {{ page.help }}
-          {% endblock %}
-        {% endif %}
-
-        {# Content #}
-        {% block content %}
-          <a id="main-content"></a>
-          {{ page.content }}
-        {% endblock %}
-      </section>
-
-      {# Sidebar Second #}
-      {% if page.sidebar_second %}
-        {% block sidebar_second %}
-          <aside class="col-sm-3" role="complementary">
-            {{ page.sidebar_second }}
-          </aside>
-        {% endblock %}
-      {% endif %}
-    </div>
+<section id="hero" class="ad">
+<div class="banner campaign">
+  <div class="foo">
+      <div class="carousel-cell slide-campaign ad" style="transparent no-repeat left top scroll"></div>
   </div>
-{% endblock %}
-    {# Below Content #}
-        {% block below_content %}
-          {{ page.below_content }}
-        {% endblock %}
+        <div class="banner-content hide-xs">
+          <div class="caption">
+            <h1>Imagine the Possibilities</h1>
+            <h2>Spring Classes Begin January 29</h2>
+            <h3><span class="italic">Expanded Intersession January 2</span></h3>
+          </div>
+	</div>
+	<div class="adbuttons hide-xs">
+          <div class="get-started">
+            <a href="/programs">
+              <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+              Our Programs
+            </a>
+            <a href="https://applyonline.communitycollege.net/studentappview.cfm" target="_blank">
+              <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+              Apply Now
+            </a>
+            <a href="https://studentweb.sdccd.edu/reg-e" target="_blank">
+              <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+              Register Online
+            </a>
+          </div>
+	</div>
+</div>
+</section>
+	<div class="banner-footer hide-lg">
+	<!--img class="ad img-responsive hide-mobile" src="/themes/custom/miramar/images/ad/miramar_Spring18_xsl.png" /-->
+	<img class="ad img-responsive" src="/themes/custom/miramar/images/ad/miramar_Spring18_xs.png" />
+	<div class="adtext">
+	<div class="adtext-l">
+            <h2>Spring Classes Begin January 29</h2>
+	</div>
+	<div class="adtext-r">
+            <h3><span class="italic">Expanded Intersession January 2</span></h3>
+	</div>
+	</div>
+          <div class="get-started">
+            <a href="/programs">
+              <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+              Our Programs
+            </a>
+          </div>
+	<div class="spacer" style="height:0,5em">&nbsp;</div>
+          <div class="get-started">
+            <a href="https://applyonline.communitycollege.net/studentappview.cfm" target="_blank">
+              <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+              Apply Now
+            </a>
+          </div>
+	<div class="spacer" style="height:0,5em">&nbsp;</div>
+          <div class="get-started">
+            <a href="https://studentweb.sdccd.edu/reg-e" target="_blank">
+              <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+              Register for Classes
+            </a>
+          </div>
 
-
-
+	</div>
 <div class="grn-block">
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12">
-        <img class="img-responsive" src="{{ directory }}/images/logo-2.png" alt="">
+        <img src="{{ directory }}/images/logo-2.png" alt="">
       </div>
     </div>
   </div>

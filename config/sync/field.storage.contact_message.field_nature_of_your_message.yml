@@ -1,0 +1,33 @@
+uuid: f6f84a10-a181-408f-93cd-cfde317ed15a
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - options
+id: contact_message.field_nature_of_your_message
+field_name: field_nature_of_your_message
+entity_type: contact_message
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Question for the Web staff'
+      label: 'Question for the Web staff'
+    -
+      value: 'Comment about the website'
+      label: 'Comment about the website'
+    -
+      value: 'Error report'
+      label: 'Error report'
+    -
+      value: Other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

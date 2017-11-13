@@ -67,6 +67,7 @@
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
     %}
+<div class="spacer" style="height:1px">&nbsp;</div>
     <header>
         {{ page.navigation }}
 
@@ -77,21 +78,12 @@
     </header>
   {% endblock %}
 {% endif %}
-<div id="push" class="">
-<div class="banner notfront">
-      <div class="carousel-cell slide-ns">
-          <div class="banner-content hide-xs">
-		<div class="caption">
-                    <h1>Current Students</h1>
-                   <p>This is your path to success.</p>
-		</div>
-          </div>
-     </div>
-</div>
+
+<div class="page-cover">&nbsp;</div>
+
 {# Main #}
 {% block main %}
-<!--div class="spacer hide-title" style="height:2em">&nbsp;</div-->
-  <div role="main" class="main-container {{ container }} js-quickedit-main-content gateway">
+  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">
 
       {# Header #}
@@ -119,6 +111,7 @@
           page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
           page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
           page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12',
+	  'feedback-form',
         ]
       %}
       <section{{ content_attributes.addClass(content_classes) }}>
@@ -170,17 +163,17 @@
   </div>
 {% endblock %}
     {# Below Content #}
+      {% if page.below_content %}
         {% block below_content %}
           {{ page.below_content }}
         {% endblock %}
-
-
+      {% endif %}
 
 <div class="grn-block">
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12">
-        <img class="img-responsive" src="{{ directory }}/images/logo-2.png" alt="">
+        <img class="img-responsive" src="/{{ directory }}/images/logo-2.png" alt="">
       </div>
     </div>
   </div>
@@ -194,4 +187,3 @@
     </footer>
   {% endblock %}
 {% endif %}
-</div>

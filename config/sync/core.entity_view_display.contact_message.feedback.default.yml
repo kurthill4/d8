@@ -1,0 +1,37 @@
+uuid: 91ad2073-2fd2-4134-888e-d55f13b0b407
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.field.contact_message.feedback.field_instructions
+    - field.field.contact_message.feedback.field_nature_of_your_message
+  module:
+    - field_layout
+    - layout_discovery
+    - options
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: contact_message.feedback.default
+targetEntityType: contact_message
+bundle: feedback
+mode: default
+content:
+  field_nature_of_your_message:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  message:
+    type: basic_string
+    weight: 0
+    label: above
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_instructions: true

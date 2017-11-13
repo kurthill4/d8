@@ -283,9 +283,9 @@ nav.main-menu li:first-child:hover a {
 nav.main-menu li:first-child i{
 	font-size: 25px;
 }
-/*nav.main-menu li:last-child {
-	margin-right:5%;
-}*/
+nav.main-menu li:last-child {
+	margin-right:0.5em;
+}
 
 nav.mobile-nav{
 	position: absolute;
@@ -525,8 +525,22 @@ nav.mobile-nav li:first-child ol li{
   -o-background-size: 1280px 600px;
   background-size: 1280px 600px;
 }
+
+.slide-campaign {
+	background: transparent url(../images/ad/miramar_Spring18_0.png) no-repeat center 0;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+}
+section#hero {max-height:640px;margin:0}
+
 .banner {position:relative;}
-.banner.front{
+.banner.front {
+  max-height: 640px;
+  overflow: hidden;
+}
+.banner.campaign {
   max-height: 640px;
   overflow: hidden;
 }
@@ -537,15 +551,43 @@ nav.mobile-nav li:first-child ol li{
 .banner .carousel button{
 	display: none;
 }
-.front .banner-content{
+.front .banner-content {
 	position: absolute;
 	bottom:10%;
 	left: 15px;
 	z-index:10;
 	color:#ffffff;
 }
+.campaign .banner {
+	width:auto;
+}
+
+.campaign .banner-content {
+	position: absolute;
+	bottom:15%;
+	left: 15px;
+	z-index:10;
+	color:#ffffff;
+}
+
+.adbuttons {
+	position:absolute;
+	bottom:2em;
+	width:100%;
+	text-align:center;
+}
+.adbuttons .get-started {
+display:inline-block;
+	/*width:auto;*/
+	margin: 0 auto;
+}
+.adbuttons .get-started a{
+	min-width:20vw;
+}
+
 .notfront .banner-content,.custom .banner-content{
 	position: absolute;
+	/*top:35vh;*/
 	bottom:5%;
 	left: 15px;
 	z-index:10;
@@ -560,6 +602,18 @@ nav.mobile-nav li:first-child ol li{
 	bottom:5%;
 
 }
+
+.banner-footer {
+	width:100vw;
+	background-color:#00727d;
+	color:yellow;
+}
+.adtext {display:block;width:auto;text-align:center}
+.adtext h2 {font-size:5vw}
+.adtext h3 {font-size:3.5vw}
+
+.adtext-l {float:left;width:50%;padding:0 2px}
+.adtext-r {float:right;width:50%;padding:0 2px}
 .front .caption {
 	width: 550px;
 }
@@ -571,12 +625,21 @@ nav.mobile-nav li:first-child ol li{
 }
 .caption{
 	background: rgba(29, 26, 81, 0.9);
-	padding: 30px 40px;
+	padding: 2vh 4vw;
 	margin: 5px;
 }
 .caption h1{
 	font-family: 'Nixie One', cursive;
-	font-size: 3.75em;
+	/*font-size: 3.75em;*/
+	font-size: 4vw;
+	z-index:1000;
+}
+.caption h2{
+	font-size: 3vw;
+	z-index:1000;
+}
+.caption h2{
+	font-size: 2vw;
 	z-index:1000;
 }
 .custom .caption h1{
@@ -591,11 +654,12 @@ nav.mobile-nav li:first-child ol li{
 .get-started a{
 	background: #1d2451;
 	display: inline-block;
-	padding: 0 110px 0 0;
+	padding: 0 4vw 0 0;
 	color: #fff;
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
-  	font-size: 28px;
+/*  	font-size: 1.75em;*/
+  	font-size: 2vw;
 	text-transform: uppercase;
 }
 .get-started a:hover{
@@ -603,13 +667,21 @@ nav.mobile-nav li:first-child ol li{
 	background: #a22130;
 }
 .get-started span{
-	margin-right: 45px;
+	margin: 0 2.5vw 0 0;
 	background: #a22130;
 	display: inline-block;
 	padding: 10px 20px;
 }
 .get-started a:hover span{
 	background: #1d2451;
+}
+.banner-footer .get-started {
+	display:block!important;
+	width:100%;
+}
+
+.banner-footer .get-started a {
+	width:100%;
 }
 
 .call {width:100%}
@@ -1020,9 +1092,16 @@ nav.mobile-nav li:first-child ol li{
 	margin: 10px 10px 0 20px;
 }
 
+.feedback-form form {margin:1em 2em}
+
+.feedback-form .form-select {width:auto}
+
+.feedback-form .field--name-message {width:80%; margin: 0 auto;}
+
 footer{
 	padding: 30px 20px 20px;
-	font-size: 13px;
+	margin:0;
+	font-size: 1vw;
 	background: #1d2451;
 	color: #fff;
 }
@@ -1623,11 +1702,13 @@ div.alpha_pager ul li a {
 	display:none;
 }
 .slick-prev, .slick-next {
-    /*position: absolute;*/
+    position: absolute;
+	display:inline-block;
 	height:100%;
 	width:50px;
 }
 .slick-prev {left:-40px;}
+.slick-next {right:-8px;}
 /*.step-panel .program img,*/
 .slick-1 img {
 	/*width:155px!important;*/
@@ -1985,6 +2066,14 @@ nav.main-menu {padding-left:0;}
 
 /* Large Devices, Wide Screens */
 	 @media only screen and (max-width : 1199px) {
+		.call a{
+			padding: 0 5px 0 0;
+		  	font-size: 1em;
+		}
+		.call span{
+			margin-right: 5px;
+			padding: 10px;
+		}	
 		 .ne-wrap .news-overlay{
 		 	padding: 22% 30px;
 		 }
@@ -2005,11 +2094,45 @@ nav.main-menu {padding-left:0;}
 	 /* Medium Devices, Desktops */
 	 @media only screen and (max-width : 992px) {
 .body {max-width:960px;}
+
 #views-bootstrap-committee-meetings-page-1 .row {
 	margin:2em auto;
 }
 #views-bootstrap-committee-meetings-page-1 .col {
 	margin:1em auto;
+}
+
+.slide-campaign {
+	background: transparent url(../images/ad/miramar_Spring18_1.png) no-repeat bottom 0;
+  -webkit-background-size: 960px 606px;
+  -moz-background-size: 960px 606px;
+  -o-background-size: 960px 606px;
+  background-size: 960px 606px;
+}
+section#hero {max-height:606px}
+.notfront .banner-content,.custom .banner-content{
+	position: absolute;
+	/*top:35vh;*/
+	bottom:10%;
+	left: 15px;
+	z-index:10;
+	color:#ffffff;
+}
+.campaign .banner-content {
+	position: absolute;
+	bottom:25%;
+	left: 15px;
+	z-index:10;
+	color:#ffffff;
+}
+
+banner.custom,banner.notfront {max-height:450px}
+
+.adbuttons {
+	position:absolute;
+	bottom:3em;
+	width:100%;
+	text-align:center;
 }
 
 .slide-0{
@@ -2061,7 +2184,7 @@ nav.main-menu {padding-left:0;}
   background-size: 960px 450px;
 }
 .slide-dr,.slide-ns{
-	background: transparent url(../images/Directory_Hero.png) no-repeat left top scroll;
+	background: transparent url(../images/Directory_Hero.png) no-repeat left bottom scroll;
   -webkit-background-size: 960px 450px;
   -moz-background-size: 960px 450px;
   -o-background-size: 960px 450px;
@@ -2089,7 +2212,7 @@ nav.main-menu {padding-left:0;}
   background-size: 960px 450px;
 }
 		.hide-xl {display:none!important;}
-.gateway .page-header,.directory .page-header, .resources .page-header,.map-page .page-header {display:block;}
+.gateway .page-header,.directory .page-header, .resources .page-header,.map-page .page-header {display:block;margin:0 0 2em 0}
 
 		 nav.main-menu li:not(:first-child){
 			 width: 40px;
@@ -2113,59 +2236,82 @@ nav.main-menu {padding-left:0;}
 		}*/
 	 }
 
-	 @media only screen and (max-height : 600px){
+	 /*@media only screen and (max-height : 600px){
 		 .banner-content{display:none!important;}
 		*.hide-title {display:block!important}
-	}
+	}*/
 
-	 @media only screen and (min-width : 801px) {
+	 @media only screen and (min-width : 769px) {
 		 .hide-lg{
-			 display: none !important;
+			 display: none!important;
 		 }
 		 .jump-to select {
-				width: 86% !important;
+				width: 86%!important;
 			}
 	 }
 
 	 /* Small Devices, Tablets */
-	 @media only screen and (max-width : 800px) {
+	 @media only screen and (max-width:768px) {
 		 .hide-xs{
 			 display: none!important;
 		 }
-		 .banner-content{display:none!important;}
+.navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  .navbar-header .collapse, .navbar-toggle {
+    display:block !important;
+  }
+  .navbar-header {
+    float: none;
+  }
+
+
+/*.banner-content {display:block;position:static;width:100%}*/
+		.carousel {position:static;}
+		.slide-campaign {
+			background: transparent url(../images/ad/miramar_Spring18_sm.png) no-repeat center bottom local;
+			-webkit-background-size: 100% auto;
+			-moz-background-size: 100% auto;
+			-o-background-size: 100% auto;
+			background-size: 100% auto;
+		}
+
 		*.hide-title {display:block!important}
-body p {font-size:12px;}
-#views-bootstrap-committee-meetings-page-1 .row {
-	margin:2em auto;
-}
-#views-bootstrap-committee-meetings-page-1 .col {
-	margin:1em auto;
-}
-.region-dates section,.region-mission section {display:block;width:100%}
-.region-dates .block-views-blockimportant-dates-block-1 {
-	width:100%;
-}
+		body p {font-size:12px;}
+		#views-bootstrap-committee-meetings-page-1 .row {
+			margin:2em auto;
+		}
+		#views-bootstrap-committee-meetings-page-1 .col {
+			margin:1em auto;
+		}
+		.region-dates section,.region-mission section {display:block;width:100%}
+		.region-dates .block-views-blockimportant-dates-block-1 {
+			width:100%;
+		}
 
-.region-dates .block-views-blockwhat-do-you-want-to-be-block-1 {
-	width:100%;
-	background: #a22130;
+		.region-dates .block-views-blockwhat-do-you-want-to-be-block-1 {
+			width:100%;
+			background: #a22130;
 
-}
+		}
 
-.region-mission, .region-mission section {display:block;}
-.region-mission #block-missionstatement-2 {
-	width:95%;
-	margin: 0 auto;
-}
+		.region-mission, .region-mission section {display:block;}
+		.region-mission #block-missionstatement-2 {
+			width:95%;
+			margin: 0 auto;
+		}
 
-.region-mission #block-twitterforhomepage {
-	width:95%;
-	margin: 0 auto;
-	background:#ffffff;
-}
-.block-views-blockwhat-do-you-want-to-be-block-1 {display:block;margin-top:1px;}
-.block-views-blockwhat-do-you-want-to-be-block-1 h1 {font-size:4em!important;}
-.block-views-blockwhat-do-you-want-to-be-block-1 p {font-size:2em!important;}
+		.region-mission #block-twitterforhomepage {
+			width:95%;
+			margin: 0 auto;
+			background:#ffffff;
+		}
+		.block-views-blockwhat-do-you-want-to-be-block-1 {display:block;margin-top:1px;}
+		.block-views-blockwhat-do-you-want-to-be-block-1 h1 {font-size:4em!important;}
+		.block-views-blockwhat-do-you-want-to-be-block-1 p {font-size:2em!important;}
 		 .top-links, .mbtn, .page-cover{
 			 display: none;
 		 }
@@ -2176,18 +2322,18 @@ body p {font-size:12px;}
 		.region-navigation {min-height:80px;}
 		.logo{
 			 position: fixed;
-			top:0;
+			 top:0;
 			 width: 100vw;
 			 min-height: 80px;
 			 padding: 26px 70px 0 30px;
 		 }
-		 .logo a.mobile-menu, logo button {
+		 .logo a.mobile-menu, .logo button {
 			 position: absolute;
 		 	 top: 0px;
 		 	 right: 0px;
-		 	 color: #fff;
+		 	 color: #ffffff!important;
 		 	 font-size: 25px;
-		 	 transition: transform 0.2s;
+		 	 transition: transform 0.5s;
 		 }
 		 /*.logo a.mobile-menu.collapsed {
 		 		transform: rotate(90deg);
@@ -2208,7 +2354,6 @@ body {padding-top:65px!important;}
 			top:80px;*/
 			min-height:160px;
 			width:100vw;
-			/*overflow:auto;*/
 			background: #1d2451;
 			margin:0 0 0.5em 0;
 		}
@@ -2249,7 +2394,7 @@ body {padding-top:65px!important;}
 		}
 
 
-/*section#hero {margin-top:-25px;}*/
+section#hero {display:block;position:static;margin-top:25px;}
 
 		 .banner-content{
 			 position: relative!important;
@@ -2273,9 +2418,13 @@ body {padding-top:65px!important;}
 			 text-align: center;
 			 margin: 1% 0;
 		 }
+
+
 		 body{
-			 padding: 10px 0 0;
+			 padding: 65px 10px 0 0;
 		 }
+
+
 		 .carousel-cell{
 			 height: auto;
 		 }
@@ -2465,10 +2614,28 @@ body {padding-top:65px!important;}
 }
 
 	}
+	 /* Extra Small Devices, Phones LANDSCAPE */
+	 @media only screen and (min-width : 668px) {
+			.hide-mobile-ls {display:none!important}
+
+		}
+
+		.hide-mobile {display:none!important}
+		img.ad {width:100%;padding:0!important;margin:0!important;}
+	 }
 
 	 /* Extra Small Devices, Phones */
 	 @media only screen and (max-width : 480px) {
-
+			.slide-campaign {
+			background: transparent url(../images/ad/miramar_Spring18_xs.png) no-repeat center bottom;
+			-webkit-background-size: contain;
+			-moz-background-size: contain;
+			-o-background-size: contain;
+			background-size: contain;
+		}
+		.hide-xs {display:none!important}
+		.hide-mobile {display:none!important}
+		img.ad {width:100%;padding:0!important;margin:0!important;}
 	 }
 
 	 /* Custom, iPhone Retina */
