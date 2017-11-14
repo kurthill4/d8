@@ -2245,7 +2245,7 @@ banner.custom,banner.notfront {max-height:450px}
 		*.hide-title {display:block!important}
 	}*/
 
-	 @media only screen and (min-width : 769px) {
+	 @media only screen and (min-width : 768px) {
 		 .hide-lg{
 			 display: none!important;
 		 }
@@ -2257,8 +2257,8 @@ banner.custom,banner.notfront {max-height:450px}
  @media only screen and (max-width:550px) {}
 	 /* Small Devices, Tablets */
 	 @media only screen and (max-width:767px) {
-			.call a {font-size:4vw}
 
+		img.ad {width:100%;padding:0!important;margin:0!important;}
 		 .hide-xs{
 			 display: none!important;
 		 }
@@ -2626,11 +2626,7 @@ section#hero {display:block;position:static;margin-top:25px;}
 			.hide-mobile-ls {display:none!important}
 
 		}
-
-		.hide-mobile {display:none!important}
-		img.ad {width:100%;padding:0!important;margin:0!important;}
-	 }
-
+ 
 	 /* Extra Small Devices, Phones */
 	 @media only screen and (max-width : 480px) {
 			.slide-campaign {
