@@ -569,7 +569,6 @@ section#hero {max-height:640px;margin:0}
 	z-index:10;
 	color:#ffffff;
 }
-
 .adbuttons {
 	position:absolute;
 	bottom:2em;
@@ -608,12 +607,16 @@ display:inline-block;
 	background-color:#00727d;
 	color:yellow;
 }
-.adtext {display:block;width:auto;text-align:center}
+.banner-footer .get-started a {
+	font-size:4vw;
+}
+
+.adtext {display:block;width:auto}
 .adtext h2 {font-size:5vw}
 .adtext h3 {font-size:3.5vw}
 
-.adtext-l {float:left;width:50%;padding:0 2px}
-.adtext-r {float:right;width:50%;padding:0 2px}
+.adtext-l {float:left;width:50%;padding:0 2px;text-align:center}
+.adtext-r {float:right;width:50%;padding:0 2px;text-align:center}
 .front .caption {
 	width: 550px;
 }
@@ -693,7 +696,7 @@ display:inline-block;
 	color: #fff;
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
-  	font-size: 18px;
+  	font-size: 1.5em;
 	text-transform: uppercase;
 }
 .call a:hover{
@@ -701,7 +704,7 @@ display:inline-block;
 	background: #a22130;
 }
 .call span{
-	margin-right: 25px;
+	margin-right: 15px;
 	background: #a22130;
 	display: inline-block;
 	padding: 10px 20px;
@@ -2068,7 +2071,8 @@ nav.main-menu {padding-left:0;}
 	 @media only screen and (max-width : 1199px) {
 		.call a{
 			padding: 0 5px 0 0;
-		  	font-size: 1em;
+		  	/*font-size: 2vw;*/
+			width:100%;
 		}
 		.call span{
 			margin-right: 5px;
@@ -2245,13 +2249,16 @@ banner.custom,banner.notfront {max-height:450px}
 		 .hide-lg{
 			 display: none!important;
 		 }
+			.call a {font-size:1.5vw}
 		 .jump-to select {
 				width: 86%!important;
 			}
 	 }
-
+ @media only screen and (max-width:550px) {}
 	 /* Small Devices, Tablets */
-	 @media only screen and (max-width:768px) {
+	 @media only screen and (max-width:767px) {
+			.call a {font-size:4vw}
+
 		 .hide-xs{
 			 display: none!important;
 		 }
