@@ -27,8 +27,10 @@ class MiramarCustomSocialBlock extends BlockBase {
 		$logOut = '';
     $build['social']['content'] = [
       '#markup' => '
+<div class="bottom-footer">
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-12">
+
             <!-- Social Media -->
             <div class="social-media hide-xs">
               <a href="https://www.facebook.com/SanDiegoMiramarCollege"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -37,14 +39,13 @@ class MiramarCustomSocialBlock extends BlockBase {
               <a href="https://www.pinterest.com/MiramarCollege/"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
               <a href="https://www.youtube.com/channel/UCAW9o2tK52NekfZFixJOU0w"><i class="fa fa-youtube" aria-hidden="true"></i></a>
             </div>
-          </div>
-          <div class="col-sm-4">
             <div class="copyright">
               &copy; 2017 San Diego Miramar College | <a href="/legal">Disclaimer</a>'
 		. $logOut . '
             </div>
           </div>
-        </div>'
+        </div>
+</div>'
     ];
 
     return $build;

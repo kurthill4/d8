@@ -1128,6 +1128,10 @@ footer li:hover a{
 footer h4{
 	text-align: center;
 }
+.bottom-footer {
+	display:block;
+	text-align:center;
+}
 .social-media a{
 	display: inline-block;
 	background: #fff;
@@ -2253,11 +2257,27 @@ banner.custom,banner.notfront {max-height:450px}
 			}
 	 }
 	 @media only screen and (min-width : 769px) {
+			.call a {font-size:1.5vw}
 }
+	 @media only screen and (min-width:768px) {
+			.hide-tablet {display:none!important}
+			.hide-mobile {display:static!important}
+}
+	 @media only screen and (max-width: 767px) {
+			.hide-mobile {display:none!important}
+			.hide-tablet {display:static!important}
+
+		}
+
  	 /* Small Devices, Tablets */
 	 @media only screen and (max-width:768px) {
-			.call a {font-size:1.5vw}
+			.call a {font-size:4vw}
 
+
+.address {
+		display:block;
+		text-align:center;
+}
 		 .hide-xs{
 			 display: none!important;
 		 }
@@ -2619,15 +2639,9 @@ section#hero {display:block;position:static;margin-top:25px;}
 
 	}
 	 /* Extra Small Devices, Phones LANDSCAPE */
-	 @media only screen and (min-width : 668px) {
-			.hide-mobile-ls {display:none!important}
-
-		}
  
 	 /* Extra Small Devices, Phones */
 	 @media only screen and (max-width : 480px) {
-		.hide-xs {display:none!important}
-		.hide-mobile {display:none!important}
 	 }
 
 	 /* Custom, iPhone Retina */
