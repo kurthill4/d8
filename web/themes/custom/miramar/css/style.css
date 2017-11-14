@@ -583,10 +583,9 @@ display:inline-block;
 .adbuttons .get-started a{
 	min-width:20vw;
 }
-
+img.ad {width:100%;padding:0!important;margin:0!important;}
 .notfront .banner-content,.custom .banner-content{
 	position: absolute;
-	/*top:35vh;*/
 	bottom:5%;
 	left: 15px;
 	z-index:10;
@@ -2245,20 +2244,20 @@ banner.custom,banner.notfront {max-height:450px}
 		*.hide-title {display:block!important}
 	}*/
 
-	 @media only screen and (min-width : 768px) {
+	 @media only screen and (min-width : 769px) {
 		 .hide-lg{
 			 display: none!important;
 		 }
-			.call a {font-size:1.5vw}
 		 .jump-to select {
 				width: 86%!important;
 			}
 	 }
- @media only screen and (max-width:550px) {}
-	 /* Small Devices, Tablets */
-	 @media only screen and (max-width:767px) {
+	 @media only screen and (min-width : 769px) {
+}
+ 	 /* Small Devices, Tablets */
+	 @media only screen and (max-width:768px) {
+			.call a {font-size:1.5vw}
 
-		img.ad {width:100%;padding:0!important;margin:0!important;}
 		 .hide-xs{
 			 display: none!important;
 		 }
@@ -2426,11 +2425,9 @@ section#hero {display:block;position:static;margin-top:25px;}
 			 margin: 1% 0;
 		 }
 
-
 		 body{
-			 padding: 65px 10px 0 0;
+			 padding: 65px 1px 0 0;
 		 }
-
 
 		 .carousel-cell{
 			 height: auto;
@@ -2629,23 +2626,14 @@ section#hero {display:block;position:static;margin-top:25px;}
  
 	 /* Extra Small Devices, Phones */
 	 @media only screen and (max-width : 480px) {
-			.slide-campaign {
-			background: transparent url(../images/ad/miramar_Spring18_xs.png) no-repeat center bottom;
-			-webkit-background-size: contain;
-			-moz-background-size: contain;
-			-o-background-size: contain;
-			background-size: contain;
-		}
 		.hide-xs {display:none!important}
 		.hide-mobile {display:none!important}
-		img.ad {width:100%;padding:0!important;margin:0!important;}
 	 }
 
 	 /* Custom, iPhone Retina */
 	 @media only screen and (max-width : 320px) {
 
 	 }
-
 
 .flex-direction-nav a {
     display: block;
