@@ -1256,7 +1256,7 @@ footer h4{
 	margin-right: 25px;
 }
 .step-panel .step-title i{
-	font-size: 28px;
+	font-size: 1.25em;
 	color: #1d2451;
 }
 .step-panel img{
@@ -1278,7 +1278,7 @@ footer h4{
 	text-transform: uppercase;
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
-	font-size: 20px;
+	font-size: 1.2em;
 	font-weight: 500;
 	width: 145px;
 	text-align: center;
@@ -1289,10 +1289,12 @@ footer h4{
 }
 .step-panel .step-desc p{
 	font-family: 'Oswald', sans-serif;
-	font-size: 22px;
+	font-size: 1.5em;
 }
-.step-panel table {
+.step-panel table{
 	width:100%;
+	padding:0;
+	margin:0;
 }
 .step-panel table h1,.step-panel table h3 {
 	margin:0;
@@ -1677,7 +1679,7 @@ div.alpha_pager ul li a {
 	float:center;
 	background:none;
 	font-weight: bold!important;
-	font-size:16px!important;
+	font-size:1em!important;
 	font-family:Oswald!important;
 	width: 75%!important;
 	padding: 0!important;
@@ -2281,6 +2283,10 @@ banner.custom,banner.notfront {max-height:450px}
 		display:block;
 		text-align:center;
 }
+.step-panel .step-title span{
+	padding: 5px 10px;
+	margin-right: 5px;
+}
 		 .hide-xs{
 			 display: none!important;
 		 }
@@ -2367,17 +2373,15 @@ banner.custom,banner.notfront {max-height:450px}
 		 /*.logo a.mobile-menu.collapsed {
 		 		transform: rotate(90deg);
 		 	}*/
-body {padding-top:65px!important;}
+		.push{
+		  transition: transform 0.5s;
+		  transform: translate(0px, 160px);
+		}
 
-.push{
-  transition: transform 0.5s;
-  transform: translate(0px, 160px);
-}
-
-.pushUp{
-  transition: transform 0.5s;
-  transform: translate(0px, 0px);
-}
+		.pushUp{
+		  transition: transform 0.5s;
+		  transform: translate(0px, 0px);
+		}
 		#navbar-collapse {
 			/*position:fixed;
 			top:80px;*/
@@ -2421,9 +2425,7 @@ body {padding-top:65px!important;}
 		nav.main-menu ul li:hover, nav.main-menu ul li:hover a,nav.main-menu ul li a:hover {
 			text-decoration:none!important;
 		}
-
-
-section#hero {display:block;position:static;margin-top:25px;}
+		section#hero {display:block;position:static;margin-top:25px;}
 
 		 .banner-content{
 			 position: relative!important;
@@ -2463,8 +2465,8 @@ section#hero {display:block;position:static;margin-top:25px;}
 		 }
 		 .get-started span{
 			 position: absolute;
-    	 left: 0;
-    	 top: 0;
+		    	 left: 0;
+		    	 top: 0;
 			 margin-right: 0;
 		 }
 		 .red-box .form-control{
@@ -2538,9 +2540,9 @@ section#hero {display:block;position:static;margin-top:25px;}
 		 }
 		 .campus-alert i{
 			 color: #fff;
-    	 position: absolute;
-    	 top: 20px;
-    	 right: 15px;
+		    	 position: absolute;
+		    	 top: 20px;
+		    	 right: 15px;
 		 }
 		 .campus-alert span{
 			 position: relative;
@@ -2616,7 +2618,7 @@ section#hero {display:block;position:static;margin-top:25px;}
 	 	.resources-students {
 	 		margin-top: 30px;
 	 	}
-	 	.step-panel .step-title {
+/*	 	.step-panel .step-title {
 		 	padding: 10px 20px;
 	   }
 	 	.step-panel .step-title span {
@@ -2629,7 +2631,7 @@ section#hero {display:block;position:static;margin-top:25px;}
 	   }
 	 	.step-panel.not-right-arrow .step-title span {
 	 		position: relative;
-	 	}
+	 	}*/
 	 	.directory input, .directory button {
 	 		float: left;
 	 	}
@@ -2641,10 +2643,14 @@ section#hero {display:block;position:static;margin-top:25px;}
 }
 
 	}
-	 /* Extra Small Devices, Phones LANDSCAPE */
- 
+
 	 /* Extra Small Devices, Phones */
 	 @media only screen and (max-width : 480px) {
+		.step-panel .step-title {font-size:1em;}
+		.step-panel img {display:none!important;}
+		.step-panel .step-desc p{
+			font-size: 1.25em;
+		}
 	 }
 
 	 /* Custom, iPhone Retina */
