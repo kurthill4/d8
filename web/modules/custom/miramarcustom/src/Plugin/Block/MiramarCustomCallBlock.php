@@ -26,6 +26,7 @@ class MiramarCustomCallBlock extends BlockBase {
       '#markup' => '
 	<div class="container-full">
 		<div class="row">
+		<div class="homecall">
 			<div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6">
 				<div class="get-started">
 				<a href="http://schedule.sdccd.edu" target="_blank">
@@ -41,6 +42,7 @@ class MiramarCustomCallBlock extends BlockBase {
 					Course Catalog
 					</a>
 				</div>
+			</div>
 			</div>
 	</div>'
     ];

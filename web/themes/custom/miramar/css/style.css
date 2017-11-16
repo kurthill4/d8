@@ -832,7 +832,7 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	margin: 0 0 10px;
 	height: 50px;
 	line-height: 50px;
-	font-size:14px;
+	font-size:1.1em;
 }
 .important-dates ul li:last-child{
 	margin-bottom: 0;
@@ -2102,6 +2102,14 @@ nav.main-menu {padding-left:0;}
 	 }
 
 	 /* Medium Devices, Desktops */
+	 @media only screen and (max-width : 1024px) {
+.homecall .get-started {
+	width:70%;
+	margin:0 auto 1em auto;
+}
+}
+
+
 	 @media only screen and (max-width : 992px) {
 .body {max-width:960px;}
 
@@ -2269,7 +2277,7 @@ banner.custom,banner.notfront {max-height:450px}
 	 @media only screen and (max-width: 767px) {
 			.call a {font-size:4vw}
 			.hide-mobile {display:none!important}
-			.hide-tablet {display:static!important}
+		 	.hide-tablet {display:static!important}
 
 		}
 
@@ -2278,6 +2286,11 @@ banner.custom,banner.notfront {max-height:450px}
 			.region-content {width:100vw!important}
 
 			aside {display:block;clear:both;position:relative;width:100vw!important;float:none;}
+.homecall .get-started {
+	display:block;
+	width:100%;
+	margin:0 auto 1em auto;
+}
 
 .address {
 		display:block;
@@ -2460,6 +2473,7 @@ banner.custom,banner.notfront {max-height:450px}
 		 .get-started a{
 			 padding: 10px 0;
 			 width: 100%;
+			font-size:2em;
     	 		text-align: center;
     	 		position: relative;
 		 }
@@ -2651,6 +2665,11 @@ banner.custom,banner.notfront {max-height:450px}
 		.step-panel .step-desc p{
 			font-size: 1.25em;
 		}
+.important-dates ul li{
+	font-size:0.85em;
+	line-height:1.8em;
+}
+
 	 }
 
 	 /* Custom, iPhone Retina */
