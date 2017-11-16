@@ -569,7 +569,6 @@ section#hero {max-height:640px;margin:0}
 	z-index:10;
 	color:#ffffff;
 }
-
 .adbuttons {
 	position:absolute;
 	bottom:2em;
@@ -584,10 +583,9 @@ display:inline-block;
 .adbuttons .get-started a{
 	min-width:20vw;
 }
-
+img.ad {width:100%;padding:0!important;margin:0!important;}
 .notfront .banner-content,.custom .banner-content{
 	position: absolute;
-	/*top:35vh;*/
 	bottom:5%;
 	left: 15px;
 	z-index:10;
@@ -608,12 +606,16 @@ display:inline-block;
 	background-color:#00727d;
 	color:yellow;
 }
-.adtext {display:block;width:auto;text-align:center}
+.banner-footer .get-started a {
+	font-size:4vw;
+}
+
+.adtext {display:block;width:auto}
 .adtext h2 {font-size:5vw}
 .adtext h3 {font-size:3.5vw}
 
-.adtext-l {float:left;width:50%;padding:0 2px}
-.adtext-r {float:right;width:50%;padding:0 2px}
+.adtext-l {float:left;width:50%;padding:0 2px;text-align:center}
+.adtext-r {float:right;width:50%;padding:0 2px;text-align:center}
 .front .caption {
 	width: 550px;
 }
@@ -693,7 +695,7 @@ display:inline-block;
 	color: #fff;
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
-  	font-size: 18px;
+  	font-size: 1.5em;
 	text-transform: uppercase;
 }
 .call a:hover{
@@ -701,7 +703,8 @@ display:inline-block;
 	background: #a22130;
 }
 .call span{
-	margin-right: 25px;
+	margin-right: 15px;
+	height:100%;
 	background: #a22130;
 	display: inline-block;
 	padding: 10px 20px;
@@ -829,7 +832,7 @@ display:inline-block;
 	margin: 0 0 10px;
 	height: 50px;
 	line-height: 50px;
-	font-size:14px;
+	font-size:1.1em;
 }
 .important-dates ul li:last-child{
 	margin-bottom: 0;
@@ -1126,6 +1129,10 @@ footer li:hover a{
 footer h4{
 	text-align: center;
 }
+.bottom-footer {
+	display:block;
+	text-align:center;
+}
 .social-media a{
 	display: inline-block;
 	background: #fff;
@@ -1249,7 +1256,7 @@ footer h4{
 	margin-right: 25px;
 }
 .step-panel .step-title i{
-	font-size: 28px;
+	font-size: 1.25em;
 	color: #1d2451;
 }
 .step-panel img{
@@ -1271,7 +1278,7 @@ footer h4{
 	text-transform: uppercase;
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
-	font-size: 20px;
+	font-size: 1.2em;
 	font-weight: 500;
 	width: 145px;
 	text-align: center;
@@ -1282,10 +1289,12 @@ footer h4{
 }
 .step-panel .step-desc p{
 	font-family: 'Oswald', sans-serif;
-	font-size: 22px;
+	font-size: 1.5em;
 }
-.step-panel table {
+.step-panel table{
 	width:100%;
+	padding:0;
+	margin:0;
 }
 .step-panel table h1,.step-panel table h3 {
 	margin:0;
@@ -1670,7 +1679,7 @@ div.alpha_pager ul li a {
 	float:center;
 	background:none;
 	font-weight: bold!important;
-	font-size:16px!important;
+	font-size:1em!important;
 	font-family:Oswald!important;
 	width: 75%!important;
 	padding: 0!important;
@@ -2068,7 +2077,8 @@ nav.main-menu {padding-left:0;}
 	 @media only screen and (max-width : 1199px) {
 		.call a{
 			padding: 0 5px 0 0;
-		  	font-size: 1em;
+		  	/*font-size: 2vw;*/
+			width:100%;
 		}
 		.call span{
 			margin-right: 5px;
@@ -2092,6 +2102,14 @@ nav.main-menu {padding-left:0;}
 	 }
 
 	 /* Medium Devices, Desktops */
+	 @media only screen and (max-width : 1024px) {
+.homecall .get-started {
+	width:70%;
+	margin:0 auto 1em auto;
+}
+}
+
+
 	 @media only screen and (max-width : 992px) {
 .body {max-width:960px;}
 
@@ -2249,9 +2267,39 @@ banner.custom,banner.notfront {max-height:450px}
 				width: 86%!important;
 			}
 	 }
+	 @media only screen and (min-width : 769px) {
+			/*.call a {font-size:1.5vw}*/
+}
+	 @media only screen and (min-width:768px) {
+			.hide-tablet {display:none!important}
+			.hide-mobile {display:static!important}
+}
+	 @media only screen and (max-width: 767px) {
+			.call a {font-size:4vw}
+			.hide-mobile {display:none!important}
+		 	.hide-tablet {display:static!important}
 
-	 /* Small Devices, Tablets */
+		}
+
+ 	 /* Small Devices, Tablets */
 	 @media only screen and (max-width:768px) {
+			.region-content {width:100vw!important}
+
+			aside {display:block;clear:both;position:relative;width:100vw!important;float:none;}
+.homecall .get-started {
+	display:block;
+	width:100%;
+	margin:0 auto 1em auto;
+}
+
+.address {
+		display:block;
+		text-align:center;
+}
+.step-panel .step-title span{
+	padding: 5px 10px;
+	margin-right: 5px;
+}
 		 .hide-xs{
 			 display: none!important;
 		 }
@@ -2338,17 +2386,15 @@ banner.custom,banner.notfront {max-height:450px}
 		 /*.logo a.mobile-menu.collapsed {
 		 		transform: rotate(90deg);
 		 	}*/
-body {padding-top:65px!important;}
+		.push{
+		  transition: transform 0.5s;
+		  transform: translate(0px, 160px);
+		}
 
-.push{
-  transition: transform 0.5s;
-  transform: translate(0px, 160px);
-}
-
-.pushUp{
-  transition: transform 0.5s;
-  transform: translate(0px, 0px);
-}
+		.pushUp{
+		  transition: transform 0.5s;
+		  transform: translate(0px, 0px);
+		}
 		#navbar-collapse {
 			/*position:fixed;
 			top:80px;*/
@@ -2392,9 +2438,7 @@ body {padding-top:65px!important;}
 		nav.main-menu ul li:hover, nav.main-menu ul li:hover a,nav.main-menu ul li a:hover {
 			text-decoration:none!important;
 		}
-
-
-section#hero {display:block;position:static;margin-top:25px;}
+		section#hero {display:block;position:static;margin-top:25px;}
 
 		 .banner-content{
 			 position: relative!important;
@@ -2419,11 +2463,9 @@ section#hero {display:block;position:static;margin-top:25px;}
 			 margin: 1% 0;
 		 }
 
-
 		 body{
-			 padding: 65px 10px 0 0;
+			 padding: 65px 1px 0 0;
 		 }
-
 
 		 .carousel-cell{
 			 height: auto;
@@ -2431,13 +2473,14 @@ section#hero {display:block;position:static;margin-top:25px;}
 		 .get-started a{
 			 padding: 10px 0;
 			 width: 100%;
+			font-size:2em;
     	 		text-align: center;
     	 		position: relative;
 		 }
 		 .get-started span{
 			 position: absolute;
-    	 left: 0;
-    	 top: 0;
+		    	 left: 0;
+		    	 top: 0;
 			 margin-right: 0;
 		 }
 		 .red-box .form-control{
@@ -2511,9 +2554,9 @@ section#hero {display:block;position:static;margin-top:25px;}
 		 }
 		 .campus-alert i{
 			 color: #fff;
-    	 position: absolute;
-    	 top: 20px;
-    	 right: 15px;
+		    	 position: absolute;
+		    	 top: 20px;
+		    	 right: 15px;
 		 }
 		 .campus-alert span{
 			 position: relative;
@@ -2589,7 +2632,7 @@ section#hero {display:block;position:static;margin-top:25px;}
 	 	.resources-students {
 	 		margin-top: 30px;
 	 	}
-	 	.step-panel .step-title {
+/*	 	.step-panel .step-title {
 		 	padding: 10px 20px;
 	   }
 	 	.step-panel .step-title span {
@@ -2602,7 +2645,7 @@ section#hero {display:block;position:static;margin-top:25px;}
 	   }
 	 	.step-panel.not-right-arrow .step-title span {
 	 		position: relative;
-	 	}
+	 	}*/
 	 	.directory input, .directory button {
 	 		float: left;
 	 	}
@@ -2614,35 +2657,25 @@ section#hero {display:block;position:static;margin-top:25px;}
 }
 
 	}
-	 /* Extra Small Devices, Phones LANDSCAPE */
-	 @media only screen and (min-width : 668px) {
-			.hide-mobile-ls {display:none!important}
-
-		}
-
-		.hide-mobile {display:none!important}
-		img.ad {width:100%;padding:0!important;margin:0!important;}
-	 }
 
 	 /* Extra Small Devices, Phones */
 	 @media only screen and (max-width : 480px) {
-			.slide-campaign {
-			background: transparent url(../images/ad/miramar_Spring18_xs.png) no-repeat center bottom;
-			-webkit-background-size: contain;
-			-moz-background-size: contain;
-			-o-background-size: contain;
-			background-size: contain;
+		.step-panel .step-title {font-size:1em;}
+		.step-panel img {display:none!important;}
+		.step-panel .step-desc p{
+			font-size: 1.25em;
 		}
-		.hide-xs {display:none!important}
-		.hide-mobile {display:none!important}
-		img.ad {width:100%;padding:0!important;margin:0!important;}
+.important-dates ul li{
+	font-size:0.85em;
+	line-height:1.8em;
+}
+
 	 }
 
 	 /* Custom, iPhone Retina */
 	 @media only screen and (max-width : 320px) {
 
 	 }
-
 
 .flex-direction-nav a {
     display: block;
