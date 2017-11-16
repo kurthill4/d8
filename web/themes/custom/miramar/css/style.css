@@ -2072,12 +2072,18 @@ nav.main-menu {padding-left:0;}
 		 }*/
 
 }
+/*	 @media only screen and (max-width : 1280px) {
+		.call a{
+			padding: 0 5px 0 0;
+		  	font-size: 1.5vw;
+			width:100%;
+		}}*/
 
 /* Large Devices, Wide Screens */
 	 @media only screen and (max-width : 1199px) {
 		.call a{
 			padding: 0 5px 0 0;
-		  	/*font-size: 2vw;*/
+		  	font-size: 1.5vw;
 			width:100%;
 		}
 		.call span{
@@ -2275,7 +2281,6 @@ banner.custom,banner.notfront {max-height:450px}
 			.hide-mobile {display:static!important}
 }
 	 @media only screen and (max-width: 767px) {
-			.call a {font-size:4vw}
 			.hide-mobile {display:none!important}
 		 	.hide-tablet {display:static!important}
 
@@ -2291,6 +2296,10 @@ banner.custom,banner.notfront {max-height:450px}
 	width:100%;
 	margin:0 auto 1em auto;
 }
+		.call a{
+		  	font-size: 4vw;
+			width:100%;
+		}
 
 .address {
 		display:block;
