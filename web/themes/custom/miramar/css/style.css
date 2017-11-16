@@ -219,12 +219,14 @@ button.navbar-toggle {margin-right:50px!important;}
 nav.main-menu{
 	position: absolute;
 	top: 60px;
+	left:0;
 	background: #1d2451;
 	color: #fff;
 	width: 99%;
 	z-index: 1;
 	text-align: right;
 	padding: 12px 0px 8px 0;
+	margin:0;
 }
 
 nav.main-menu ul{
@@ -284,7 +286,7 @@ nav.main-menu li:first-child i{
 	font-size: 25px;
 }
 nav.main-menu li:last-child {
-	margin-right:0.5em;
+	margin-right:0;
 }
 
 nav.mobile-nav{
