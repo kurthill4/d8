@@ -7,7 +7,12 @@ body{
 	max-width:1280px!important;
 	background:#dbf3f5;
 }
-.gateway .page-header,.directory .page-header, .resources .page-header {display:none;}
+.gateway .page-header,
+.directory .page-header,
+.resources .page-header,
+.program .page-header {
+	display:none;
+}
 
 .map-page .page-header {display:block;width:100%!important;}
 
@@ -642,10 +647,6 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	font-size: 3vw;
 	z-index:1000;
 }
-.caption h2{
-	font-size: 2vw;
-	z-index:1000;
-}
 .custom .caption h1{
 	font-family: 'Nixie One', cursive;
 	font-size: 2.5em;
@@ -653,7 +654,7 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 }
 .caption p{
 	font-family: 'Oswald', sans-serif;
-	font-size: 1.5625em;
+	font-size: 2vw;
 }
 .get-started a{
 	background: #1d2451;
@@ -2065,9 +2066,9 @@ td.resources-students {
 
 	 @media only screen and (max-width : 1350px) {
 nav.main-menu {padding-left:0;}
-		 nav.main-menu li:first-child {
+		/* nav.main-menu li:first-child {
 			margin-left:0!important;
-		 }
+		 }*/
 
 /*		 nav.main-menu li:first-child {
 			display:none!important;
@@ -2097,6 +2098,9 @@ nav.main-menu {padding-left:0;}
 		 }
 		 nav.main-menu li:first-child {
 			display:none!important;
+			/*margin-left:80px;
+			font-size:0.8em;
+			line-height:10px!important;*/
 		 }
 		 nav.main-menu li:not(:first-child) {
 			width:40px;
@@ -2120,7 +2124,6 @@ nav.main-menu {padding-left:0;}
 
 	 @media only screen and (max-width : 992px) {
 .body {max-width:960px;}
-
 #views-bootstrap-committee-meetings-page-1 .row {
 	margin:2em auto;
 }
@@ -2238,7 +2241,7 @@ banner.custom,banner.notfront {max-height:450px}
   background-size: 960px 450px;
 }
 		.hide-xl {display:none!important;}
-.gateway .page-header,.directory .page-header, .resources .page-header,.map-page .page-header {display:block;margin:0 0 2em 0}
+/*.gateway .page-header,.directory .page-header, .resources .page-header,.map-page .page-header {display:block;margin:0 0 2em 0}*/
 
 		 nav.main-menu li:not(:first-child){
 			 width: 40px;
@@ -2291,6 +2294,14 @@ banner.custom,banner.notfront {max-height:450px}
  	 /* Small Devices, Tablets */
 	 @media only screen and (max-width:768px) {
 			.region-content {width:100vw!important}
+.banner-content {display:block;width:100%}
+.caption {width:100vw!important;}
+.caption h1 {font-size:8vw}
+.caption p {font-size:4vw}
+.slide-buttons {text-align:center}
+		.block-views-blockwhat-do-you-want-to-be-block-1 {display:block;margin-top:1px;}
+		.block-views-blockwhat-do-you-want-to-be-block-1 h1 {font-size:8vw!important;}
+		.block-views-blockwhat-do-you-want-to-be-block-1 p {font-size:4vw!important;}
 
 			aside {display:block;clear:both;position:relative;width:100vw!important;float:none;}
 .homecall .get-started {
@@ -2327,8 +2338,6 @@ banner.custom,banner.notfront {max-height:450px}
     float: none;
   }
 
-
-/*.banner-content {display:block;position:static;width:100%}*/
 		.carousel {position:static;}
 		.slide-campaign {
 			background: transparent url(../images/ad/miramar_Spring18_sm.png) no-repeat center bottom local;
@@ -2354,7 +2363,6 @@ banner.custom,banner.notfront {max-height:450px}
 		.region-dates .block-views-blockwhat-do-you-want-to-be-block-1 {
 			width:100%;
 			background: #a22130;
-
 		}
 
 		.region-mission, .region-mission section {display:block;}
@@ -2368,9 +2376,6 @@ banner.custom,banner.notfront {max-height:450px}
 			margin: 0 auto;
 			background:#ffffff;
 		}
-		.block-views-blockwhat-do-you-want-to-be-block-1 {display:block;margin-top:1px;}
-		.block-views-blockwhat-do-you-want-to-be-block-1 h1 {font-size:4em!important;}
-		.block-views-blockwhat-do-you-want-to-be-block-1 p {font-size:2em!important;}
 		 .top-links, .mbtn, .page-cover{
 			 display: none;
 		 }
@@ -2460,9 +2465,6 @@ banner.custom,banner.notfront {max-height:450px}
 			 background: rgba(29, 26, 81, 1);
 			 width: 100%;
 			 padding: 30px;
-		 }
-		 .caption h1{
-			 font-size: 33px;
 		 }
 		 .slide-buttons{
 			 margin: 0 -1%;
