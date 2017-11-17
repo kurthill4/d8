@@ -2293,17 +2293,19 @@ banner.custom,banner.notfront {max-height:450px}
 
  	 /* Small Devices, Tablets */
 	 @media only screen and (max-width:768px) {
-			.region-content {width:100vw!important}
-.banner-content {display:block;width:100%}
-.caption {width:100vw!important;}
-.caption h1 {font-size:8vw}
-.caption p {font-size:4vw}
-.slide-buttons {text-align:center}
+		.region-content {width:100vw!important}
+		.banner-content {display:block;width:100%;margin:0;}
+		.banner-content .get-started {width:75%;margin:0 auto}
+		.banner-content .get-started a {font-size:4vw}
+		.caption {width:100vw!important;}
+		.caption h1 {font-size:5vw}
+		.caption p {font-size:3vw}
+		.slide-buttons {text-align:center}
+		.slide-buttons a {font-size:3vw}
 		.block-views-blockwhat-do-you-want-to-be-block-1 {display:block;margin-top:1px;}
-		.block-views-blockwhat-do-you-want-to-be-block-1 h1 {font-size:8vw!important;}
-		.block-views-blockwhat-do-you-want-to-be-block-1 p {font-size:4vw!important;}
-
-			aside {display:block;clear:both;position:relative;width:100vw!important;float:none;}
+		.block-views-blockwhat-do-you-want-to-be-block-1 h1 {font-size:5vw!important;}
+		.block-views-blockwhat-do-you-want-to-be-block-1 p {font-size:3vw!important;}
+		aside {display:block;clear:both;position:relative;width:100vw!important;float:none;}
 .homecall .get-started {
 	display:block;
 	width:100%;
@@ -2477,7 +2479,7 @@ banner.custom,banner.notfront {max-height:450px}
 		 }
 
 		 body{
-			 padding: 65px 1px 0 0;
+			 padding: 65px 0 0 0;
 		 }
 
 		 .carousel-cell{
@@ -2673,6 +2675,13 @@ banner.custom,banner.notfront {max-height:450px}
 
 	 /* Extra Small Devices, Phones */
 	 @media only screen and (max-width : 480px) {
+.banner-content .get-started a {font-size:5vw}
+.caption h1 {font-size:8vw}
+.caption p {font-size:6vw}
+.slide-buttons a {font-size:4vw}
+		.block-views-blockwhat-do-you-want-to-be-block-1 h1 {font-size:8vw!important;}
+		.block-views-blockwhat-do-you-want-to-be-block-1 p {font-size:6vw!important;}
+
 		.step-panel .step-title {font-size:1em;}
 		.step-panel img {display:none!important;}
 		.step-panel .step-desc p{
