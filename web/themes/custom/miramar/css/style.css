@@ -860,6 +860,7 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 }
 .important-dates ul a {
 	color:#000000;
+	vertical-align:middle;
 }
 .important-dates ul a:hover {
 	color:#000000;
@@ -2075,12 +2076,8 @@ nav.main-menu {padding-left:0;}
 		 }*/
 
 }
-/*	 @media only screen and (max-width : 1280px) {
-		.call a{
-			padding: 0 5px 0 0;
-		  	font-size: 1.5vw;
-			width:100%;
-		}}*/
+	 @media only screen and (max-width : 1280px) {
+}
 
 /* Large Devices, Wide Screens */
 	 @media only screen and (max-width : 1199px) {
@@ -2115,131 +2112,138 @@ nav.main-menu {padding-left:0;}
 
 	 /* Medium Devices, Desktops */
 	 @media only screen and (max-width : 1024px) {
-.homecall .get-started {
-	width:70%;
-	margin:0 auto 1em auto;
-}
+		.important-dates ul span{
+			font-size: 2em;
+			line-height: 2ex;
+		}
+		.important-dates ul p {
+			font-size:1em;
+		}
+		.homecall .get-started {
+			width:70%;
+			margin:0 auto 1em auto;
+		}
 }
 
 
 	 @media only screen and (max-width : 992px) {
-.body {max-width:960px;}
-#views-bootstrap-committee-meetings-page-1 .row {
-	margin:2em auto;
-}
-#views-bootstrap-committee-meetings-page-1 .col {
-	margin:1em auto;
-}
+		.body {max-width:960px;}
+		#views-bootstrap-committee-meetings-page-1 .row {
+			margin:2em auto;
+		}
+		#views-bootstrap-committee-meetings-page-1 .col {
+			margin:1em auto;
+		}
 
-.slide-campaign {
-	background: transparent url(../images/ad/miramar_Spring18_1.png) no-repeat bottom 0;
-  -webkit-background-size: 960px 606px;
-  -moz-background-size: 960px 606px;
-  -o-background-size: 960px 606px;
-  background-size: 960px 606px;
-}
-section#hero {max-height:606px}
-.notfront .banner-content,.custom .banner-content{
-	position: absolute;
-	/*top:35vh;*/
-	bottom:10%;
-	left: 15px;
-	z-index:10;
-	color:#ffffff;
-}
-.campaign .banner-content {
-	position: absolute;
-	bottom:25%;
-	left: 15px;
-	z-index:10;
-	color:#ffffff;
-}
+		.slide-campaign {
+			background: transparent url(../images/ad/miramar_Spring18_1.png) no-repeat bottom 0;
+		  -webkit-background-size: 960px 606px;
+		  -moz-background-size: 960px 606px;
+		  -o-background-size: 960px 606px;
+		  background-size: 960px 606px;
+		}
+		section#hero {max-height:606px}
+		.notfront .banner-content,.custom .banner-content{
+			position: absolute;
+			/*top:35vh;*/
+			bottom:10%;
+			left: 15px;
+			z-index:10;
+			color:#ffffff;
+		}
+		.campaign .banner-content {
+			position: absolute;
+			bottom:25%;
+			left: 15px;
+			z-index:10;
+			color:#ffffff;
+		}
 
-banner.custom,banner.notfront {max-height:450px}
+		banner.custom,banner.notfront {max-height:450px}
 
-.adbuttons {
-	position:absolute;
-	bottom:3em;
-	width:100%;
-	text-align:center;
-}
+		.adbuttons {
+			position:absolute;
+			bottom:3em;
+			width:100%;
+			text-align:center;
+		}
 
-.slide-0{
-  -webkit-background-size: 960px 640px!important;
-  -moz-background-size: 960px 640px!important;
-  -o-background-size: 960px 640px!important;
-  background-size: 960px 640px!important;
-}
-.slide-1{
-	background: transparent url(../images/herofront/Hero_1.png) no-repeat left top local;
-  -webkit-background-size: 960px 640px;
-  -moz-background-size: 960px 640px;
-  -o-background-size: 960px 640px;
-  background-size: 960px 640px;
-}
-.slide-2{
-	background: transparent url(../images/herofront/Hero_2.png) no-repeat left top local;
-  -webkit-background-size: 960px 640px;
-  -moz-background-size: 960px 640px;
-  -o-background-size: 960px 640px;
-  background-size: 960px 640px;
-}
-.slide-3{
-	background: transparent url(../images/herofront/Hero_3.png) no-repeat left top local;
-  -webkit-background-size: 960px 640px;
-  -moz-background-size: 960px 640px;
-  -o-background-size: 960px 640px;
-  background-size: 960px 640px;
-}
-.slide-4{
-	background: transparent url(../images/herofront/Hero_5.png) no-repeat left top local;
-  -webkit-background-size: 960px 640px;
-  -moz-background-size: 960px 640px;
-  -o-background-size: 960px 640px;
-  background-size: 960px 640px;
-}
-.slide-5{
-	background: transparent url(../images/herofront/Pony.png) no-repeat left top local;
-  -webkit-background-size: 960px 640px;
-  -moz-background-size: 960px 640px;
-  -o-background-size: 960px 640px;
-  background-size: 960px 640px;
-}
-.slide-cr{
-	background: transparent url(../images/campus-resources-banner.png) no-repeat left top scroll;
-  -webkit-background-size: 960px 450px;
-  -moz-background-size: 960px 450px;
-  -o-background-size: 960px 450px;
-  background-size: 960px 450px;
-}
-.slide-dr,.slide-ns{
-	background: transparent url(../images/Directory_Hero.png) no-repeat left bottom scroll;
-  -webkit-background-size: 960px 450px;
-  -moz-background-size: 960px 450px;
-  -o-background-size: 960px 450px;
-  background-size: 960px 450px;
-}
-.slide-ns{
-	background: transparent url(../images/student-banner.jpg) no-repeat left top scroll;
-  -webkit-background-size: 960px 450px;
-  -moz-background-size: 960px 450px;
-  -o-background-size: 960px 450px;
-  background-size: 960px 450px;
-}
-.slide-pa{
-	background: transparent url(../images/personas-path-banner.jpg) no-repeat left top scroll;
-  -webkit-background-size: 960px 450px;
-  -moz-background-size: 960px 450px;
-  -o-background-size: 960px 450px;
-  background-size: 960px 450px;
-}
-.slide-pr, .slide-gr {
-	background: transparent url(../images/program-banner.jpg) no-repeat left top scroll;
-  -webkit-background-size: 960px 450px;
-  -moz-background-size: 960px 450px;
-  -o-background-size: 960px 450px;
-  background-size: 960px 450px;
-}
+		.slide-0{
+		  -webkit-background-size: 960px 640px!important;
+		  -moz-background-size: 960px 640px!important;
+		  -o-background-size: 960px 640px!important;
+		  background-size: 960px 640px!important;
+		}
+		.slide-1{
+			background: transparent url(../images/herofront/Hero_1.png) no-repeat left top local;
+		  -webkit-background-size: 960px 640px;
+		  -moz-background-size: 960px 640px;
+		  -o-background-size: 960px 640px;
+		  background-size: 960px 640px;
+		}
+		.slide-2{
+			background: transparent url(../images/herofront/Hero_2.png) no-repeat left top local;
+		  -webkit-background-size: 960px 640px;
+		  -moz-background-size: 960px 640px;
+		  -o-background-size: 960px 640px;
+		  background-size: 960px 640px;
+		}
+		.slide-3{
+			background: transparent url(../images/herofront/Hero_3.png) no-repeat left top local;
+		  -webkit-background-size: 960px 640px;
+		  -moz-background-size: 960px 640px;
+		  -o-background-size: 960px 640px;
+		  background-size: 960px 640px;
+		}
+		.slide-4{
+			background: transparent url(../images/herofront/Hero_5.png) no-repeat left top local;
+		  -webkit-background-size: 960px 640px;
+		  -moz-background-size: 960px 640px;
+		  -o-background-size: 960px 640px;
+		  background-size: 960px 640px;
+		}
+		.slide-5{
+			background: transparent url(../images/herofront/Pony.png) no-repeat left top local;
+		  -webkit-background-size: 960px 640px;
+		  -moz-background-size: 960px 640px;
+		  -o-background-size: 960px 640px;
+		  background-size: 960px 640px;
+		}
+		.slide-cr{
+			background: transparent url(../images/campus-resources-banner.png) no-repeat left top scroll;
+		  -webkit-background-size: 960px 450px;
+		  -moz-background-size: 960px 450px;
+		  -o-background-size: 960px 450px;
+		  background-size: 960px 450px;
+		}
+		.slide-dr,.slide-ns{
+			background: transparent url(../images/Directory_Hero.png) no-repeat left bottom scroll;
+		  -webkit-background-size: 960px 450px;
+		  -moz-background-size: 960px 450px;
+		  -o-background-size: 960px 450px;
+		  background-size: 960px 450px;
+		}
+		.slide-ns{
+			background: transparent url(../images/student-banner.jpg) no-repeat left top scroll;
+		  -webkit-background-size: 960px 450px;
+		  -moz-background-size: 960px 450px;
+		  -o-background-size: 960px 450px;
+		  background-size: 960px 450px;
+		}
+		.slide-pa{
+			background: transparent url(../images/personas-path-banner.jpg) no-repeat left top scroll;
+		  -webkit-background-size: 960px 450px;
+		  -moz-background-size: 960px 450px;
+		  -o-background-size: 960px 450px;
+		  background-size: 960px 450px;
+		}
+		.slide-pr, .slide-gr {
+			background: transparent url(../images/program-banner.jpg) no-repeat left top scroll;
+		  -webkit-background-size: 960px 450px;
+		  -moz-background-size: 960px 450px;
+		  -o-background-size: 960px 450px;
+		  background-size: 960px 450px;
+		}
 		.hide-xl {display:none!important;}
 /*.gateway .page-header,.directory .page-header, .resources .page-header,.map-page .page-header {display:block;margin:0 0 2em 0}*/
 
@@ -2314,6 +2318,10 @@ banner.custom,banner.notfront {max-height:450px}
 		.call a{
 		  	font-size: 4vw;
 			width:100%;
+		}
+
+		.important-dates td * {
+			font-size:3vw;
 		}
 
 .address {
