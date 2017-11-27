@@ -2125,6 +2125,15 @@ nav.main-menu {padding-left:0;}
 		}
 }
 
+	 @media only screen and (max-width : 1023px) {
+		.important-dates ul span{
+			font-size: 1em;
+			line-height: 5ex;
+		}
+		.important-dates ul p {
+			font-size:0.9em;
+		}
+}
 
 	 @media only screen and (max-width : 992px) {
 		.body {max-width:960px;}
@@ -2481,7 +2490,7 @@ nav.main-menu {padding-left:0;}
 			 padding: 0 0 0 1%;
 		 }
 		 .slide-buttons a{
-			 width: 49%;
+			 width: 35%;
 			 text-align: center;
 			 margin: 1% 0;
 		 }
