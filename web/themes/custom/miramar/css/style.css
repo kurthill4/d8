@@ -7,7 +7,12 @@ body{
 	max-width:1280px!important;
 	background:#dbf3f5;
 }
-.gateway .page-header,.directory .page-header, .resources .page-header {display:none;}
+.gateway .page-header,
+.directory .page-header,
+.resources .page-header,
+.program .page-header {
+	display:none;
+}
 
 .map-page .page-header {display:block;width:100%!important;}
 
@@ -219,12 +224,14 @@ button.navbar-toggle {margin-right:50px!important;}
 nav.main-menu{
 	position: absolute;
 	top: 60px;
+	left:0;
 	background: #1d2451;
 	color: #fff;
 	width: 99%;
 	z-index: 1;
 	text-align: right;
 	padding: 12px 0px 8px 0;
+	margin:0;
 }
 
 nav.main-menu ul{
@@ -284,7 +291,7 @@ nav.main-menu li:first-child i{
 	font-size: 25px;
 }
 nav.main-menu li:last-child {
-	margin-right:0.5em;
+	margin-right:0;
 }
 
 nav.mobile-nav{
@@ -640,10 +647,6 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	font-size: 3vw;
 	z-index:1000;
 }
-.caption h2{
-	font-size: 2vw;
-	z-index:1000;
-}
 .custom .caption h1{
 	font-family: 'Nixie One', cursive;
 	font-size: 2.5em;
@@ -651,7 +654,7 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 }
 .caption p{
 	font-family: 'Oswald', sans-serif;
-	font-size: 1.5625em;
+	font-size: 2vw;
 }
 .get-started a{
 	background: #1d2451;
@@ -831,7 +834,7 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	border-radius: 5px;
 	margin: 0 0 10px;
 	height: 50px;
-	line-height: 50px;
+	line-height: 25px;
 	font-size:1.1em;
 }
 .important-dates ul li:last-child{
@@ -857,6 +860,7 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 }
 .important-dates ul a {
 	color:#000000;
+	vertical-align:middle;
 }
 .important-dates ul a:hover {
 	color:#000000;
@@ -2063,21 +2067,23 @@ td.resources-students {
 
 	 @media only screen and (max-width : 1350px) {
 nav.main-menu {padding-left:0;}
-		 nav.main-menu li:first-child {
+		/* nav.main-menu li:first-child {
 			margin-left:0!important;
-		 }
+		 }*/
 
 /*		 nav.main-menu li:first-child {
 			display:none!important;
 		 }*/
 
 }
+	 @media only screen and (max-width : 1280px) {
+}
 
 /* Large Devices, Wide Screens */
 	 @media only screen and (max-width : 1199px) {
 		.call a{
 			padding: 0 5px 0 0;
-		  	/*font-size: 2vw;*/
+		  	font-size: 1.5vw;
 			width:100%;
 		}
 		.call span{
@@ -2089,6 +2095,9 @@ nav.main-menu {padding-left:0;}
 		 }
 		 nav.main-menu li:first-child {
 			display:none!important;
+			/*margin-left:80px;
+			font-size:0.8em;
+			line-height:10px!important;*/
 		 }
 		 nav.main-menu li:not(:first-child) {
 			width:40px;
@@ -2103,134 +2112,149 @@ nav.main-menu {padding-left:0;}
 
 	 /* Medium Devices, Desktops */
 	 @media only screen and (max-width : 1024px) {
-.homecall .get-started {
-	width:70%;
-	margin:0 auto 1em auto;
-}
+		.important-dates ul span{
+			font-size: 2em;
+			line-height: 2ex;
+		}
+		.important-dates ul p {
+			font-size:1em;
+		}
+		.homecall .get-started {
+			width:70%;
+			margin:0 auto 1em auto;
+		}
 }
 
+	 @media only screen and (max-width : 1023px) {
+		.important-dates ul span{
+			font-size: 1em;
+			line-height: 5ex;
+		}
+		.important-dates ul p {
+			font-size:0.9em;
+		}
+}
 
 	 @media only screen and (max-width : 992px) {
-.body {max-width:960px;}
+		.body {max-width:960px;}
+		#views-bootstrap-committee-meetings-page-1 .row {
+			margin:2em auto;
+		}
+		#views-bootstrap-committee-meetings-page-1 .col {
+			margin:1em auto;
+		}
 
-#views-bootstrap-committee-meetings-page-1 .row {
-	margin:2em auto;
-}
-#views-bootstrap-committee-meetings-page-1 .col {
-	margin:1em auto;
-}
+		.slide-campaign {
+			background: transparent url(../images/ad/miramar_Spring18_1.png) no-repeat bottom 0;
+		  -webkit-background-size: 960px 606px;
+		  -moz-background-size: 960px 606px;
+		  -o-background-size: 960px 606px;
+		  background-size: 960px 606px;
+		}
+		section#hero {max-height:606px}
+		.notfront .banner-content,.custom .banner-content{
+			position: absolute;
+			/*top:35vh;*/
+			bottom:10%;
+			left: 15px;
+			z-index:10;
+			color:#ffffff;
+		}
+		.campaign .banner-content {
+			position: absolute;
+			bottom:25%;
+			left: 15px;
+			z-index:10;
+			color:#ffffff;
+		}
 
-.slide-campaign {
-	background: transparent url(../images/ad/miramar_Spring18_1.png) no-repeat bottom 0;
-  -webkit-background-size: 960px 606px;
-  -moz-background-size: 960px 606px;
-  -o-background-size: 960px 606px;
-  background-size: 960px 606px;
-}
-section#hero {max-height:606px}
-.notfront .banner-content,.custom .banner-content{
-	position: absolute;
-	/*top:35vh;*/
-	bottom:10%;
-	left: 15px;
-	z-index:10;
-	color:#ffffff;
-}
-.campaign .banner-content {
-	position: absolute;
-	bottom:25%;
-	left: 15px;
-	z-index:10;
-	color:#ffffff;
-}
+		banner.custom,banner.notfront {max-height:450px}
 
-banner.custom,banner.notfront {max-height:450px}
+		.adbuttons {
+			position:absolute;
+			bottom:3em;
+			width:100%;
+			text-align:center;
+		}
 
-.adbuttons {
-	position:absolute;
-	bottom:3em;
-	width:100%;
-	text-align:center;
-}
-
-.slide-0{
-  -webkit-background-size: 960px 640px!important;
-  -moz-background-size: 960px 640px!important;
-  -o-background-size: 960px 640px!important;
-  background-size: 960px 640px!important;
-}
-.slide-1{
-	background: transparent url(../images/herofront/Hero_1.png) no-repeat left top local;
-  -webkit-background-size: 960px 640px;
-  -moz-background-size: 960px 640px;
-  -o-background-size: 960px 640px;
-  background-size: 960px 640px;
-}
-.slide-2{
-	background: transparent url(../images/herofront/Hero_2.png) no-repeat left top local;
-  -webkit-background-size: 960px 640px;
-  -moz-background-size: 960px 640px;
-  -o-background-size: 960px 640px;
-  background-size: 960px 640px;
-}
-.slide-3{
-	background: transparent url(../images/herofront/Hero_3.png) no-repeat left top local;
-  -webkit-background-size: 960px 640px;
-  -moz-background-size: 960px 640px;
-  -o-background-size: 960px 640px;
-  background-size: 960px 640px;
-}
-.slide-4{
-	background: transparent url(../images/herofront/Hero_5.png) no-repeat left top local;
-  -webkit-background-size: 960px 640px;
-  -moz-background-size: 960px 640px;
-  -o-background-size: 960px 640px;
-  background-size: 960px 640px;
-}
-.slide-5{
-	background: transparent url(../images/herofront/Pony.png) no-repeat left top local;
-  -webkit-background-size: 960px 640px;
-  -moz-background-size: 960px 640px;
-  -o-background-size: 960px 640px;
-  background-size: 960px 640px;
-}
-.slide-cr{
-	background: transparent url(../images/campus-resources-banner.png) no-repeat left top scroll;
-  -webkit-background-size: 960px 450px;
-  -moz-background-size: 960px 450px;
-  -o-background-size: 960px 450px;
-  background-size: 960px 450px;
-}
-.slide-dr,.slide-ns{
-	background: transparent url(../images/Directory_Hero.png) no-repeat left bottom scroll;
-  -webkit-background-size: 960px 450px;
-  -moz-background-size: 960px 450px;
-  -o-background-size: 960px 450px;
-  background-size: 960px 450px;
-}
-.slide-ns{
-	background: transparent url(../images/student-banner.jpg) no-repeat left top scroll;
-  -webkit-background-size: 960px 450px;
-  -moz-background-size: 960px 450px;
-  -o-background-size: 960px 450px;
-  background-size: 960px 450px;
-}
-.slide-pa{
-	background: transparent url(../images/personas-path-banner.jpg) no-repeat left top scroll;
-  -webkit-background-size: 960px 450px;
-  -moz-background-size: 960px 450px;
-  -o-background-size: 960px 450px;
-  background-size: 960px 450px;
-}
-.slide-pr, .slide-gr {
-	background: transparent url(../images/program-banner.jpg) no-repeat left top scroll;
-  -webkit-background-size: 960px 450px;
-  -moz-background-size: 960px 450px;
-  -o-background-size: 960px 450px;
-  background-size: 960px 450px;
-}
+		.slide-0{
+		  -webkit-background-size: 960px 640px!important;
+		  -moz-background-size: 960px 640px!important;
+		  -o-background-size: 960px 640px!important;
+		  background-size: 960px 640px!important;
+		}
+		.slide-1{
+			background: transparent url(../images/herofront/Hero_1.png) no-repeat left top local;
+		  -webkit-background-size: 960px 640px;
+		  -moz-background-size: 960px 640px;
+		  -o-background-size: 960px 640px;
+		  background-size: 960px 640px;
+		}
+		.slide-2{
+			background: transparent url(../images/herofront/Hero_2.png) no-repeat left top local;
+		  -webkit-background-size: 960px 640px;
+		  -moz-background-size: 960px 640px;
+		  -o-background-size: 960px 640px;
+		  background-size: 960px 640px;
+		}
+		.slide-3{
+			background: transparent url(../images/herofront/Hero_3.png) no-repeat left top local;
+		  -webkit-background-size: 960px 640px;
+		  -moz-background-size: 960px 640px;
+		  -o-background-size: 960px 640px;
+		  background-size: 960px 640px;
+		}
+		.slide-4{
+			background: transparent url(../images/herofront/Hero_5.png) no-repeat left top local;
+		  -webkit-background-size: 960px 640px;
+		  -moz-background-size: 960px 640px;
+		  -o-background-size: 960px 640px;
+		  background-size: 960px 640px;
+		}
+		.slide-5{
+			background: transparent url(../images/herofront/Pony.png) no-repeat left top local;
+		  -webkit-background-size: 960px 640px;
+		  -moz-background-size: 960px 640px;
+		  -o-background-size: 960px 640px;
+		  background-size: 960px 640px;
+		}
+		.slide-cr{
+			background: transparent url(../images/campus-resources-banner.png) no-repeat left top scroll;
+		  -webkit-background-size: 960px 450px;
+		  -moz-background-size: 960px 450px;
+		  -o-background-size: 960px 450px;
+		  background-size: 960px 450px;
+		}
+		.slide-dr,.slide-ns{
+			background: transparent url(../images/Directory_Hero.png) no-repeat left bottom scroll;
+		  -webkit-background-size: 960px 450px;
+		  -moz-background-size: 960px 450px;
+		  -o-background-size: 960px 450px;
+		  background-size: 960px 450px;
+		}
+		.slide-ns{
+			background: transparent url(../images/student-banner.jpg) no-repeat left top scroll;
+		  -webkit-background-size: 960px 450px;
+		  -moz-background-size: 960px 450px;
+		  -o-background-size: 960px 450px;
+		  background-size: 960px 450px;
+		}
+		.slide-pa{
+			background: transparent url(../images/personas-path-banner.jpg) no-repeat left top scroll;
+		  -webkit-background-size: 960px 450px;
+		  -moz-background-size: 960px 450px;
+		  -o-background-size: 960px 450px;
+		  background-size: 960px 450px;
+		}
+		.slide-pr, .slide-gr {
+			background: transparent url(../images/program-banner.jpg) no-repeat left top scroll;
+		  -webkit-background-size: 960px 450px;
+		  -moz-background-size: 960px 450px;
+		  -o-background-size: 960px 450px;
+		  background-size: 960px 450px;
+		}
 		.hide-xl {display:none!important;}
-.gateway .page-header,.directory .page-header, .resources .page-header,.map-page .page-header {display:block;margin:0 0 2em 0}
+/*.gateway .page-header,.directory .page-header, .resources .page-header,.map-page .page-header {display:block;margin:0 0 2em 0}*/
 
 		 nav.main-menu li:not(:first-child){
 			 width: 40px;
@@ -2275,7 +2299,6 @@ banner.custom,banner.notfront {max-height:450px}
 			.hide-mobile {display:static!important}
 }
 	 @media only screen and (max-width: 767px) {
-			.call a {font-size:4vw}
 			.hide-mobile {display:none!important}
 		 	.hide-tablet {display:static!important}
 
@@ -2283,14 +2306,32 @@ banner.custom,banner.notfront {max-height:450px}
 
  	 /* Small Devices, Tablets */
 	 @media only screen and (max-width:768px) {
-			.region-content {width:100vw!important}
-
-			aside {display:block;clear:both;position:relative;width:100vw!important;float:none;}
+		.region-content {width:100vw!important}
+		.banner-content {display:block;width:100%;margin:0;}
+		.banner-content .get-started {width:75%;margin:0 auto}
+		.banner-content .get-started a {font-size:4vw}
+		.caption {width:100vw!important;}
+		.caption h1 {font-size:5vw}
+		.caption p {font-size:3vw}
+		.slide-buttons {text-align:center}
+		.slide-buttons a {font-size:3vw}
+		.block-views-blockwhat-do-you-want-to-be-block-1 {display:block;margin-top:1px;}
+		.block-views-blockwhat-do-you-want-to-be-block-1 h1 {font-size:5vw!important;}
+		.block-views-blockwhat-do-you-want-to-be-block-1 p {font-size:3vw!important;}
+		aside {display:block;clear:both;position:relative;width:100vw!important;float:none;}
 .homecall .get-started {
 	display:block;
 	width:100%;
 	margin:0 auto 1em auto;
 }
+		.call a{
+		  	font-size: 4vw;
+			width:100%;
+		}
+
+		.important-dates td * {
+			font-size:3vw;
+		}
 
 .address {
 		display:block;
@@ -2316,8 +2357,6 @@ banner.custom,banner.notfront {max-height:450px}
     float: none;
   }
 
-
-/*.banner-content {display:block;position:static;width:100%}*/
 		.carousel {position:static;}
 		.slide-campaign {
 			background: transparent url(../images/ad/miramar_Spring18_sm.png) no-repeat center bottom local;
@@ -2343,7 +2382,6 @@ banner.custom,banner.notfront {max-height:450px}
 		.region-dates .block-views-blockwhat-do-you-want-to-be-block-1 {
 			width:100%;
 			background: #a22130;
-
 		}
 
 		.region-mission, .region-mission section {display:block;}
@@ -2357,9 +2395,6 @@ banner.custom,banner.notfront {max-height:450px}
 			margin: 0 auto;
 			background:#ffffff;
 		}
-		.block-views-blockwhat-do-you-want-to-be-block-1 {display:block;margin-top:1px;}
-		.block-views-blockwhat-do-you-want-to-be-block-1 h1 {font-size:4em!important;}
-		.block-views-blockwhat-do-you-want-to-be-block-1 p {font-size:2em!important;}
 		 .top-links, .mbtn, .page-cover{
 			 display: none;
 		 }
@@ -2450,21 +2485,18 @@ banner.custom,banner.notfront {max-height:450px}
 			 width: 100%;
 			 padding: 30px;
 		 }
-		 .caption h1{
-			 font-size: 33px;
-		 }
 		 .slide-buttons{
 			 margin: 0 -1%;
 			 padding: 0 0 0 1%;
 		 }
 		 .slide-buttons a{
-			 width: 49%;
+			 width: 35%;
 			 text-align: center;
 			 margin: 1% 0;
 		 }
 
 		 body{
-			 padding: 65px 1px 0 0;
+			 padding: 65px 0 0 0;
 		 }
 
 		 .carousel-cell{
@@ -2660,6 +2692,13 @@ banner.custom,banner.notfront {max-height:450px}
 
 	 /* Extra Small Devices, Phones */
 	 @media only screen and (max-width : 480px) {
+.banner-content .get-started a {font-size:5vw}
+.caption h1 {font-size:8vw}
+.caption p {font-size:6vw}
+.slide-buttons a {font-size:4vw}
+		.block-views-blockwhat-do-you-want-to-be-block-1 h1 {font-size:8vw!important;}
+		.block-views-blockwhat-do-you-want-to-be-block-1 p {font-size:6vw!important;}
+
 		.step-panel .step-title {font-size:1em;}
 		.step-panel img {display:none!important;}
 		.step-panel .step-desc p{
