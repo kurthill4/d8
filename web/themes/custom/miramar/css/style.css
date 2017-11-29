@@ -654,6 +654,8 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 }
 
 .front .banner-content .get-started {width:420px;}
+.front .banner-content .get-started a {	width:inherit;
+}
 .get-started a{
 	background: #1d2451;
 	display: inline-block;
@@ -664,7 +666,6 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 /*  	font-size: 1.75em;*/
   	font-size: 2em;
 	text-transform: uppercase;
-	width:inherit;
 }
 .get-started a:hover{
 	text-decoration: none;
