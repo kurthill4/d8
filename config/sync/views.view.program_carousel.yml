@@ -109,7 +109,7 @@ display:
             randomize: '0'
             variableWidth: '0'
           cache: 0
-          current_view_mode: default
+          current_view_mode: block_1
       row:
         type: fields
         options:
