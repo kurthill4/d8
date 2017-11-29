@@ -626,25 +626,21 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 .front .caption {
 	width: 550px;
 }
-.notfront .caption {
-	width: 450px;
-}
 .notfront .caption,.custom .caption {
 	width: 450px;
 }
 .caption{
 	background: rgba(29, 26, 81, 0.9);
-	padding: 2vh 4vw;
+	padding: 15px 20px;
 	margin: 5px;
 }
 .caption h1{
 	font-family: 'Nixie One', cursive;
-	/*font-size: 3.75em;*/
-	font-size: 4vw;
+	font-size: 3.75em;
 	z-index:1000;
 }
 .caption h2{
-	font-size: 3vw;
+	font-size: 2em;
 	z-index:1000;
 }
 .custom .caption h1{
@@ -654,25 +650,28 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 }
 .caption p{
 	font-family: 'Oswald', sans-serif;
-	font-size: 2vw;
+	font-size: 1.5em;
 }
+
+.front .banner-content .get-started {width:420px;}
 .get-started a{
 	background: #1d2451;
 	display: inline-block;
-	padding: 0 4vw 0 0;
+	padding: 0 20px 0 0;
 	color: #fff;
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
 /*  	font-size: 1.75em;*/
-  	font-size: 2vw;
+  	font-size: 2em;
 	text-transform: uppercase;
+	width:inherit;
 }
 .get-started a:hover{
 	text-decoration: none;
 	background: #a22130;
 }
 .get-started span{
-	margin: 0 2.5vw 0 0;
+	margin: 0 10px 0 0;
 	background: #a22130;
 	display: inline-block;
 	padding: 10px 20px;
@@ -1723,7 +1722,16 @@ div.alpha_pager ul li a {
 .slick-prev {left:0; z-index:1000/*-40px;*/}
 .slick-next {right:0; /*-8px;*/}
 
-
+.slick-prev:before {
+content: "";
+font-size: 44px;
+background: #a22130;
+}
+.slick-next:before {
+content: "";
+font-size: 22px;
+background: #a22130;
+}
 
 /*.step-panel .program img,*/
 .slick-1 img {
@@ -2084,6 +2092,38 @@ nav.main-menu {padding-left:0;}
 
 /* Large Devices, Wide Screens */
 	 @media only screen and (max-width : 1199px) {
+		.front .caption {
+	width: 550px;
+}
+.notfront .caption {
+	width: 450px;
+}
+.notfront .caption,.custom .caption {
+	width: 450px;
+}
+.caption{
+	background: rgba(29, 26, 81, 0.9);
+	padding: 10px 20px;
+	margin: 5px;
+}
+.caption h1{
+	font-family: 'Nixie One', cursive;
+	font-size: 2.75em;
+	z-index:1000;
+}
+.caption h2{
+	font-size: 1.75em;
+	z-index:1000;
+}
+.custom .caption h1{
+	font-family: 'Nixie One', cursive;
+	font-size: 2.5em;
+	z-index:1000;
+}
+.caption p{
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5em;
+}
 		.call a{
 			padding: 0 5px 0 0;
 		  	font-size: 1.5vw;
@@ -2115,6 +2155,8 @@ nav.main-menu {padding-left:0;}
 
 	 /* Medium Devices, Desktops */
 	 @media only screen and (max-width : 1024px) {
+		section#hero {max-height:590px}
+
 		.important-dates ul span{
 			font-size: 2em;
 			line-height: 2ex;
@@ -2126,6 +2168,83 @@ nav.main-menu {padding-left:0;}
 			width:70%;
 			margin:0 auto 1em auto;
 		}
+section#hero {max-height:602px!important}
+.slide-0{
+  -webkit-background-size: 1024px 602px!important;
+  -moz-background-size: 1024px 602px!important;
+  -o-background-size: 1024px 602px!important;
+  background-size: 1024px 602px!important;
+}
+.slide-1{
+	background: transparent url(../images/herofront/Hero_1.png) no-repeat left top local;
+  -webkit-background-size: 1024px 602px;
+  -moz-background-size: 1024px 602px;
+  -o-background-size: 1024px 602px;
+  background-size: 1024px 602px;
+}
+.slide-2{
+	background: transparent url(../images/herofront/Hero_2.png) no-repeat left top local;
+  -webkit-background-size: 1024px 602px;
+  -moz-background-size: 1024px 602px;
+  -o-background-size: 1024px 602px;
+  background-size: 1024px 602px;
+}
+.slide-3{
+	background: transparent url(../images/herofront/Hero_3.png) no-repeat left top local;
+  -webkit-background-size: 1024px 602px;
+  -moz-background-size: 1024px 602px;
+  -o-background-size: 1024px 602px;
+  background-size: 1024px 602px;
+}
+.slide-4{
+	background: transparent url(../images/herofront/Hero_5.png) no-repeat left top local;
+  -webkit-background-size: 1024px 602px;
+  -moz-background-size: 1024px 602px;
+  -o-background-size: 1024px 602px;
+  background-size: 1024px 602px;
+}
+.slide-5{
+	background: transparent url(../images/herofront/Pony.png) no-repeat left top local;
+  -webkit-background-size: 1024px 602px;
+  -moz-background-size: 1024px 602px;
+  -o-background-size: 1024px 602px;
+  background-size: 1024px 602px;
+}
+.slide-cr{
+	background: transparent url(../images/campus-resources-banner.png) no-repeat left top scroll;
+  -webkit-background-size: 1024px 480px;
+  -moz-background-size: 1024px 480px;
+  -o-background-size: 1024px 480px;
+  background-size: 1024px 480px;
+}
+.slide-dr,.slide-ns{
+	background: transparent url(../images/Directory_Hero.png) no-repeat left top scroll;
+  -webkit-background-size: 1024px 480px;
+  -moz-background-size: 1024px 480px;
+  -o-background-size: 1024px 480px;
+  background-size: 1024px 480px;
+}
+.slide-ns{
+	background: transparent url(../images/student-banner.jpg) no-repeat left top scroll;
+  -webkit-background-size: 1024px 480px;
+  -moz-background-size: 1024px 480px;
+  -o-background-size: 1024px 480px;
+  background-size: 1024px 480px;
+}
+.slide-pa{
+	background: transparent url(../images/personas-path-banner.jpg) no-repeat left top scroll;
+  -webkit-background-size: 1024px 480px;
+  -moz-background-size: 1024px 480px;
+  -o-background-size: 1024px 480px;
+  background-size: 1024px 480px;
+}
+.slide-pr, .slide-gr {
+	background: transparent url(../images/program-banner.jpg) no-repeat left top scroll;
+  -webkit-background-size: 1024px 480px;
+  -moz-background-size: 1024px 480px;
+  -o-background-size: 1024px 480px;
+  background-size: 1024px 480px;
+}
 }
 
 	 @media only screen and (max-width : 1023px) {
@@ -2136,6 +2255,40 @@ nav.main-menu {padding-left:0;}
 		.important-dates ul p {
 			font-size:0.9em;
 		}
+.front .banner-content {
+	position: absolute;
+	bottom:5%;
+	left: 15px;
+	z-index:10;
+	color:#ffffff;
+}
+.front .caption {
+	width: 500px;
+}
+.notfront .caption,.custom .caption {
+	width: 450px;
+}
+.caption{
+	background: rgba(29, 26, 81, 0.9);
+	padding: 15px 20px;
+	margin: 5px;
+}
+.caption h1{
+	font-size: 2.5em;
+}
+.caption h2{
+	font-size: 1.5em;
+}
+.custom .caption h1{
+	font-size: 2.5em;
+}
+.caption p{
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5em;
+}
+
+.front .banner-content .get-started {width:420px;}
+
 }
 
 	 @media only screen and (max-width : 992px) {
@@ -2154,7 +2307,7 @@ nav.main-menu {padding-left:0;}
 		  -o-background-size: 960px 606px;
 		  background-size: 960px 606px;
 		}
-		section#hero {max-height:606px}
+		/*section#hero {max-height:606px}*/
 		.notfront .banner-content,.custom .banner-content{
 			position: absolute;
 			/*top:35vh;*/
