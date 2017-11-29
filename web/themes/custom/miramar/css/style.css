@@ -1720,8 +1720,11 @@ div.alpha_pager ul li a {
 	height:100%;
 	width:50px;*/
 }
-.slick-prev {left:0; /*-40px;*/}
+.slick-prev {left:0; z-index:1000/*-40px;*/}
 .slick-next {right:0; /*-8px;*/}
+
+
+
 /*.step-panel .program img,*/
 .slick-1 img {
 	/*width:155px!important;*/
