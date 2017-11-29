@@ -1722,7 +1722,7 @@ div.alpha_pager ul li a {
 .slick-prev {left:0; z-index:1000/*-40px;*/}
 .slick-next {right:0; /*-8px;*/}
 
-.slick-prev:before {
+/*.slick-prev:before {
 content: "";
 font-size: 44px;
 background: #a22130;
@@ -1731,7 +1731,7 @@ background: #a22130;
 content: "";
 font-size: 22px;
 background: #a22130;
-}
+}*/
 
 /*.step-panel .program img,*/
 .slick-1 img {
