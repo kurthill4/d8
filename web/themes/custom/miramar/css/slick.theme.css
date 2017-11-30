@@ -173,7 +173,7 @@
   margin-top: -1px;
   pointer-events: none;
   position: absolute;
-  top: 50%;
+  top: 80%;
   width: 100%;
   z-index: 2;
 }
@@ -181,12 +181,12 @@
 /** Keeps decent fallback for when slick-theme.css is disabled, even if dup. */
 .slick-arrow {
   border: 0;
-  border-radius: 50%;
+  border-radius: 0;
   font-size: 0;
-  height: 42px;
+  height: 82px;
   pointer-events: auto;
   position: absolute;
-  top: 50%;
+  top: 80%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 42px;
@@ -204,13 +204,15 @@
 }
 
 .slick-arrow::before {
-  color: #ff6d2c;
+  color: #ffd451;
+  opacity:0.85!important;
   font-size: 36px;
   font-size: 2.25rem;
 }
 
 .slick-arrow:hover::before {
-  color: #37465b;
+  color: #ffffff;
+  opacity:1!important;
 }
 
 /**
