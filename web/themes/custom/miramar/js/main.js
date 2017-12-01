@@ -16,36 +16,13 @@ var pushDown = document.getElementById("push");
 }(jQuery));
 
 
-/*
-(function(){
-        $('.slider').slick({
-            autoplay:true,
-            arrows: true,
-            prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+/*(function($) {
+        $('.slick').slick({
+	    arrows:true,
+            prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-chevron-left' aria-hidden='true'></i></button>",
             nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
         });
-    }(jQuery));
-*/
-(function($) {
-  // Mobile Menu controls.
-  /*$('.mobile-nav').hide();
-  $('a.mobile-menu').click(function() {
-    $('.mobile-nav').slideToggle('fast',function() {
-      $('a.mobile-menu').toggleClass('collapsed');
-    });
-  })*/
-
-/*
-
-  $('.mobile-nav').hide();
-  $('a.mobile-menu').click(function() {
-    $('.mobile-nav').slideToggle('fast',function() {
-      $('a.mobile-menu').toggleClass('collapsed');
-    });
-  })
-
-*/
-}(jQuery));
+    }(jQuery));*/
 
   // Searchbar show/hide controls.
 (function ($) {

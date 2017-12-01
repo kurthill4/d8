@@ -5,6 +5,8 @@ global-styling:
       css/style.css: {}
       css/tabs.css: {}
       font-awesome-4.7.0/css/font-awesome.min.css: {}
+      css/slick.theme.css: {}
+      css/slick.theme--classic.css: {}
   js:
 #    js/jquery.min.js: {}
 #    js/bootstrap.min.js: {}
