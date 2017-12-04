@@ -2467,7 +2467,7 @@ section#hero {max-height:602px!important}
 		.banner-content {display:block;width:100%;margin:0;}
 		.banner-content .get-started {width:75%;margin:0 auto}
 		.banner-content .get-started a {font-size:4vw}
-		.caption {width:100vw!important;}
+		.caption {width:100%!important;margin-left:0;}
 		.caption h1 {font-size:5vw}
 		.caption p {font-size:3vw}
 		.slide-buttons {text-align:center}

@@ -16,7 +16,7 @@ function faculty_page_auto_title_faculty_page_form_node_form_alter(&$form, FormS
 function meeting_auto_title_node_create(NodeInterface $node) {
 
   switch ($node->getType()) {
-    case 'committee_meeting':
+    case 'faculty_page':
       //Change the title
 	$node->setTitle('Committee Meeting');      
 	break;
