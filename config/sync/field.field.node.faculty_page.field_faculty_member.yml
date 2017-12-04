@@ -1,0 +1,25 @@
+uuid: a74efb1d-9699-4577-ae5a-6ce37d8d8c69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_faculty_member
+    - node.type.faculty_page
+id: node.faculty_page.field_faculty_member
+field_name: field_faculty_member
+entity_type: node
+bundle: faculty_page
+label: 'Faculty Member'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: selectfaculty
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

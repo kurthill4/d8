@@ -1,0 +1,37 @@
+uuid: 1347a4fd-cd55-42b6-bfec-a8c6a6029a86
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.faculty_page.body
+    - node.type.faculty_page
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.faculty_page.teaser
+targetEntityType: node
+bundle: faculty_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_content: true
+  field_courses_i_teach: true
+  field_faculty_member: true

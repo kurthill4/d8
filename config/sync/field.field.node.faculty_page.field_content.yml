@@ -1,0 +1,55 @@
+uuid: b460e461-f284-429d-bd44-714acf3db2cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.faculty_page
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.table
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.text_and_image_left
+    - paragraphs.paragraphs_type.two_column
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+id: node.faculty_page.field_content
+field_name: field_content
+entity_type: node
+bundle: faculty_page
+label: 'Advanced Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      image: image
+      table: table
+      text: text
+      text_and_image_left: text_and_image_left
+      two_column: two_column
+      video: video
+    target_bundles_drag_drop:
+      image:
+        enabled: true
+        weight: 7
+      table:
+        enabled: true
+        weight: 8
+      text:
+        enabled: true
+        weight: 9
+      text_and_image_left:
+        enabled: true
+        weight: 10
+      two_column:
+        enabled: true
+        weight: 11
+      video:
+        enabled: true
+        weight: 12
+field_type: entity_reference_revisions
