@@ -1,0 +1,39 @@
+uuid: 6e94a501-ae58-4bdb-84c8-d0e7ef0f333e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.faculty_contact_info
+  module:
+    - block_visibility_groups
+    - node
+    - views
+  theme:
+    - miramar
+id: views_block__faculty_contact_info_block_1
+theme: miramar
+region: content
+weight: -22
+provider: null
+plugin: 'views_block:faculty_contact_info-block_1'
+settings:
+  id: 'views_block:faculty_contact_info-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      faculty_page: faculty_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

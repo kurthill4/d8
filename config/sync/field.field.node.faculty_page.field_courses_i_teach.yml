@@ -1,0 +1,19 @@
+uuid: 04cd46a8-27a7-497e-b28d-cee845af88ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_courses_i_teach
+    - node.type.faculty_page
+id: node.faculty_page.field_courses_i_teach
+field_name: field_courses_i_teach
+entity_type: node
+bundle: faculty_page
+label: 'Courses I Teach'
+description: 'List the courses that you teach. To add a course when you run out of room, click "Add Another Item."'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

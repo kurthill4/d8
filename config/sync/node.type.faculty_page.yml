@@ -1,0 +1,18 @@
+uuid: 6d04fd64-04c9-48fb-b5e5-494fe6b50491
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Faculty Page'
+type: faculty_page
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

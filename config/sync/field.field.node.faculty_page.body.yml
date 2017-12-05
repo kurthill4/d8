@@ -1,0 +1,22 @@
+uuid: c24e3779-6568-401c-a1ba-d9e233843cc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.faculty_page
+  module:
+    - text
+id: node.faculty_page.body
+field_name: body
+entity_type: node
+bundle: faculty_page
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
