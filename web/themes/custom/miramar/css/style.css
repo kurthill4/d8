@@ -2157,7 +2157,30 @@ nav.main-menu {padding-left:0;}
 	 /* Medium Devices, Desktops */
 	 @media only screen and (max-width : 1024px) {
 		section#hero {max-height:590px}
-
+.front .caption {
+	width: 500px;
+}
+.notfront .caption,.custom .caption {
+	width: 450px;
+}
+.caption{
+	background: rgba(29, 26, 81, 0.9);
+	padding: 15px 20px;
+	margin: 5px;
+}
+.caption h1{
+	font-size: 2.5em;
+}
+.caption h2{
+	font-size: 1.5em;
+}
+.custom .caption h1{
+	font-size: 2.5em;
+}
+.caption p{
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5em;
+}
 		.important-dates ul span{
 			font-size: 2em;
 			line-height: 2ex;
@@ -2263,30 +2286,7 @@ section#hero {max-height:602px!important}
 	z-index:10;
 	color:#ffffff;
 }
-.front .caption {
-	width: 500px;
-}
-.notfront .caption,.custom .caption {
-	width: 450px;
-}
-.caption{
-	background: rgba(29, 26, 81, 0.9);
-	padding: 15px 20px;
-	margin: 5px;
-}
-.caption h1{
-	font-size: 2.5em;
-}
-.caption h2{
-	font-size: 1.5em;
-}
-.custom .caption h1{
-	font-size: 2.5em;
-}
-.caption p{
-	font-family: 'Oswald', sans-serif;
-	font-size: 1.5em;
-}
+
 
 .front .banner-content .get-started {width:420px;}
 
@@ -2444,6 +2444,7 @@ section#hero {max-height:602px!important}
 		 .hide-lg{
 			 display: none!important;
 		 }
+		.social-media,copyright {width:75%;margin:0 auto}
 		 .jump-to select {
 				width: 86%!important;
 			}
@@ -2465,22 +2466,22 @@ section#hero {max-height:602px!important}
 	 @media only screen and (max-width:768px) {
 		.region-content {width:100vw!important}
 		.banner-content {display:block;width:100%;margin:0;}
-		.banner-content .get-started {width:75%;margin:0 auto}
+		.banner-content .get-started {width:75%;margin:0 auto!important}
 		.banner-content .get-started a {font-size:4vw}
-		.caption {width:100%!important;margin-left:0;}
-		.caption h1 {font-size:4vw}
-		.caption p {font-size:2.5vw}
+		.caption {width:100%!important;height:auto;padding:0.25em;margin:0 0 10px 0!important;}
+		.caption h1 {font-size:4vw!important}
+		.caption p {display:none!important;}
 		.slide-buttons {text-align:center}
 		.slide-buttons a {font-size:3vw}
 		.block-views-blockwhat-do-you-want-to-be-block-1 {display:block;margin-top:1px;}
 		.block-views-blockwhat-do-you-want-to-be-block-1 h1 {font-size:5vw!important;}
 		.block-views-blockwhat-do-you-want-to-be-block-1 p {font-size:3vw!important;}
 		aside {display:block;clear:both;position:relative;width:100vw!important;float:none;}
-.homecall .get-started {
-	display:block;
-	width:100%;
-	margin:0 auto 1em auto;
-}
+		.homecall .get-started {
+			display:block;
+			width:100%;
+			margin:0 auto 1em auto;
+		}
 		.call a{
 		  	font-size: 4vw;
 			width:100%;
@@ -2490,10 +2491,10 @@ section#hero {max-height:602px!important}
 			font-size:3vw;
 		}
 
-.address {
-		display:block;
-		text-align:center;
-}
+	.address {
+			display:block;
+			text-align:center;
+	}
 .step-panel .step-title span{
 	padding: 5px 10px;
 	margin-right: 5px;
