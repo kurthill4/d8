@@ -585,10 +585,10 @@ section#hero {max-height:640px;margin:0}
 .adbuttons .get-started {
 display:inline-block;
 	/*width:auto;*/
-	margin: 0 auto;
+/*	margin: 0 auto;*/
 }
 .adbuttons .get-started a{
-	min-width:20vw;
+	/*min-width:20vw;*/
 }
 img.ad {width:100%;padding:0!important;margin:0!important;}
 .notfront .banner-content,.custom .banner-content{
@@ -2468,8 +2468,8 @@ section#hero {max-height:602px!important}
 		.banner-content .get-started {width:75%;margin:0 auto}
 		.banner-content .get-started a {font-size:4vw}
 		.caption {width:100%!important;margin-left:0;}
-		.caption h1 {font-size:5vw}
-		.caption p {font-size:3vw}
+		.caption h1 {font-size:4vw}
+		.caption p {font-size:2.5vw}
 		.slide-buttons {text-align:center}
 		.slide-buttons a {font-size:3vw}
 		.block-views-blockwhat-do-you-want-to-be-block-1 {display:block;margin-top:1px;}
@@ -2850,8 +2850,8 @@ section#hero {max-height:602px!important}
 	 /* Extra Small Devices, Phones */
 	 @media only screen and (max-width : 480px) {
 .banner-content .get-started a {font-size:5vw}
-.caption h1 {font-size:8vw}
-.caption p {font-size:6vw}
+.caption h1 {font-size:6vw}
+.caption p {font-size:4.25vw}
 .slide-buttons a {font-size:4vw}
 		.block-views-blockwhat-do-you-want-to-be-block-1 h1 {font-size:8vw!important;}
 		.block-views-blockwhat-do-you-want-to-be-block-1 p {font-size:6vw!important;}
