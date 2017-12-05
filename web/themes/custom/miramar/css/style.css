@@ -653,7 +653,7 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	font-size: 1.5em;
 }
 
-.front .banner-content .get-started {width:420px;}
+.front .banner-content .get-started {width:420px; margin-left:5px;}
 .front .banner-content .get-started a {	width:inherit;
 }
 .get-started a{
@@ -717,7 +717,7 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 }
 
 .slide-buttons{
-	margin: 15px 0 0 0px;
+	margin: 15px 0 0 5px;
 }
 /*.slide-buttons{
 	margin: 15px 0 0 60px;
