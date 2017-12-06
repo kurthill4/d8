@@ -24,7 +24,7 @@ class MiramarCustomContactBlock extends BlockBase {
 
     $build['contact']['content'] = [
       '#markup' => '
-        <div class="row">
+        <div class="row hide-xs">
           <div class="col-sm-3">
 
             <!-- Address -->

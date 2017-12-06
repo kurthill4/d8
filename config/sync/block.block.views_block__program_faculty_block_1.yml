@@ -1,22 +1,23 @@
-uuid: 33cf213a-c69e-4775-8579-7bd25202d216
+uuid: 5784ec00-9b42-4735-b293-bddeaa2424ee
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.degrees
+    - views.view.program_faculty
   module:
+    - block_visibility_groups
     - node
     - views
   theme:
     - miramar
-id: views_block__degrees_block_1
+id: views_block__program_faculty_block_1
 theme: miramar
 region: content
-weight: -21
+weight: -20
 provider: null
-plugin: 'views_block:degrees-block_1'
+plugin: 'views_block:program_faculty-block_1'
 settings:
-  id: 'views_block:degrees-block_1'
+  id: 'views_block:program_faculty-block_1'
   label: ''
   provider: views
   label_display: visible
@@ -24,6 +25,11 @@ settings:
   items_per_page: none
   context_mapping: {  }
 visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
   node_type:
     id: node_type
     bundles:
