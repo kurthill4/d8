@@ -657,7 +657,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '{{ field_first_name_1 }} {{ field_last_name_1 }}'
+            text: '<i class="fa fa-envelope-o"></i> {{ field_first_name_1 }} {{ field_last_name_1 }}'
             make_link: true
             path: 'mailto:{{ mail_1 }}'
             absolute: false
