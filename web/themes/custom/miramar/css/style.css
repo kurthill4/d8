@@ -2636,7 +2636,10 @@ section#hero {max-height:602px!important}
 			padding:0;
 			margin:0;
 		}
-		nav.main-menu ul li:hover, nav.main-menu ul li:hover a,nav.main-menu ul li a:hover {
+		nav.main-menu li:hover:not(:first-child) {
+		  border:none;
+		}
+		nav.main-menu ul li a:hover {
 			text-decoration:none!important;
 		}
 		section#hero {display:block;position:static;margin-top:25px;}
