@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.homepage_hero.field_display_order
     - field.field.node.homepage_hero.field_image
     - node.type.homepage_hero
   module:
@@ -19,6 +20,15 @@ targetEntityType: node
 bundle: homepage_hero
 mode: default
 content:
+  field_display_order:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
   field_image:
     weight: 0
     label: above

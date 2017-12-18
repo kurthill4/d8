@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.committee_page.field_committee_goals
     - field.field.node.committee_page.field_committee_procedures
     - field.field.node.committee_page.field_custom_url
+    - field.field.node.committee_page.field_group_composition
     - field.field.node.committee_page.field_membership
     - field.field.node.committee_page.field_num_administrators
     - field.field.node.committee_page.field_num_classified
@@ -21,41 +22,11 @@ dependencies:
     - node.type.committee_page
   module:
     - entity_reference_views_select
-    - field_group
     - field_layout
     - layout_discovery
+    - tablefield
     - text
 third_party_settings:
-  field_group:
-    group_membership:
-      children:
-        - field_chair_requirements
-        - field_membership
-        - group_group_composition
-      parent_name: ''
-      weight: 4
-      format_type: fieldset
-      format_settings:
-        id: ''
-        classes: ''
-        description: ''
-        required_fields: true
-      label: Membership
-    group_group_composition:
-      children:
-        - field_num_administrators
-        - field_num_faculty
-        - field_num_classified
-        - field_num_students
-      parent_name: group_membership
-      weight: 12
-      format_type: fieldset
-      format_settings:
-        id: ''
-        classes: ''
-        description: ''
-        required_fields: true
-      label: 'Group Composition'
   field_layout:
     id: layout_onecol
     settings: {  }
@@ -65,7 +36,7 @@ bundle: committee_page
 mode: default
 content:
   field_chair_requirements:
-    weight: 10
+    weight: 4
     settings:
       rows: 5
       placeholder: ''
@@ -115,15 +86,22 @@ content:
     type: text_textarea
     region: content
   field_custom_url:
-    weight: 26
+    weight: 15
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_group_composition:
+    weight: 26
+    settings:
+      input_type: textfield
+    third_party_settings: {  }
+    type: tablefield
+    region: content
   field_membership:
-    weight: 11
+    weight: 5
     settings:
       rows: 5
       placeholder: ''
@@ -131,28 +109,28 @@ content:
     type: text_textarea
     region: content
   field_num_administrators:
-    weight: 13
+    weight: 11
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_num_classified:
-    weight: 15
+    weight: 13
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_num_faculty:
-    weight: 14
+    weight: 12
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_num_students:
-    weight: 16
+    weight: 14
     settings:
       placeholder: ''
     third_party_settings: {  }
