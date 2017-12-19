@@ -47,7 +47,7 @@ class MiramarCustomContactBlock extends BlockBase {
           <div class="col-sm-9 hide-xs">
             <div class="row">
               <div class="col-sm-4">
-                <h4><img src="' . $imagepath . '/images/icon-building.png" alt=""></h4>
+                <h4><img src="' . $imagepath . '/images/icon-building.png" alt="Campus Information"></h4>
                 <strong>Campus Information</strong>
                 <ul class="campus">
                   <li><a href="/directory/people">Directory</a></li>
@@ -59,7 +59,7 @@ class MiramarCustomContactBlock extends BlockBase {
                 </ul>
               </div>
               <div class="col-sm-4">
-                <h4><img src="' . $imagepath . '/images/icon-users.png" alt=""></h4>
+                <h4><img src="' . $imagepath . '/images/icon-users.png" alt="Resources & Information"></h4>
                 <strong>Resources &amp; Information</strong>
                 <ul class="miramar">
                   <li><a href="http://police.sdccd.edu/jclery.cfm">Clery Act Information</a></li>
@@ -70,7 +70,7 @@ class MiramarCustomContactBlock extends BlockBase {
                 </ul>
               </div>
               <div class="col-sm-4">
-                <h4><img src="' . $imagepath . '/images/icon-note.png" alt=""></h4>
+                <h4><img src="' . $imagepath . '/images/icon-note.png" alt="Accreditation"></h4>
                 <strong>Accreditation Information</strong>
                 <ul class="acc-info">
                   <li><a href="/accreditation">Accreditation</a></li>
