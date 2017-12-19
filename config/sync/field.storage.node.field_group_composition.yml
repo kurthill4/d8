@@ -1,0 +1,19 @@
+uuid: cdbbd0d1-4622-4d92-9632-9c8c73bda86d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - tablefield
+id: node.field_group_composition
+field_name: field_group_composition
+entity_type: node
+type: tablefield
+settings: {  }
+module: tablefield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

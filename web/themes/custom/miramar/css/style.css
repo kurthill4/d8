@@ -73,8 +73,13 @@ h1, h2, h3, h4,h5 {
 .italic {font-style:italic}
 .paragraph--type--two-column {
 	display:table;
-	width:90%;
+	width:95%;
 	margin: 0 auto;
+}
+.paragraph--type--two-column .field--item {
+	clear:both;
+	min-height:200px;
+	margin:2em 1em;
 }
 .paragraph--type--two-column h3{
 	width:80%;
@@ -84,6 +89,7 @@ h1, h2, h3, h4,h5 {
 .field--name-field-column-2 {
 	display:table-cell;
 	width:50%;
+	
 }
 .campus-news img {float:left}
 #toolbar-administration {

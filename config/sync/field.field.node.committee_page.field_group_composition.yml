@@ -1,0 +1,60 @@
+uuid: 226249b9-4a6b-4831-9e7b-38d0264db21a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_group_composition
+    - node.type.committee_page
+  module:
+    - tablefield
+id: node.committee_page.field_group_composition
+field_name: field_group_composition
+entity_type: node
+bundle: committee_page
+label: 'Group Composition'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    rebuild:
+      cols: '4'
+      rows: '5'
+    value:
+      -
+        - ''
+        - ''
+        - ''
+        - ''
+      -
+        - ''
+        - ''
+        - ''
+        - ''
+      -
+        - ''
+        - ''
+        - ''
+        - ''
+      -
+        - ''
+        - ''
+        - ''
+        - ''
+      -
+        - ''
+        - ''
+        - ''
+        - ''
+    format: null
+default_value_callback: ''
+settings:
+  export: 0
+  restrict_rebuild: 1
+  restrict_import: 1
+  lock_values: 0
+  cell_processing: '0'
+  empty_rules:
+    ignore_table_structure: 1
+    ignore_table_header: 1
+field_type: tablefield

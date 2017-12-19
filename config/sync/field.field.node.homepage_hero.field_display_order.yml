@@ -1,0 +1,23 @@
+uuid: 26d922e9-9068-4f44-bf78-ddf9157d0cbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_order
+    - node.type.homepage_hero
+id: node.homepage_hero.field_display_order
+field_name: field_display_order
+entity_type: node
+bundle: homepage_hero
+label: 'Display Order'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

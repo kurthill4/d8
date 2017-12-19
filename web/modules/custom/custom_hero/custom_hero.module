@@ -31,6 +31,7 @@ function custom_hero_preprocess_page(&$variables) {
 				$nids = \Drupal::entityQuery('node')->
 					condition('type','homepage_hero')->execute();		// Get Homepage Hero content type
 				$targetNodes =  \Drupal\node\Entity\Node::loadMultiple($nids);	// Now, load the nodes
+				usort($targetNodes,"cmp");					// Sort nodes for custom display order
 				foreach($targetNodes as $targetNode) {				// Loop through content types
 					$image = $targetNode->field_image;			// Get field value
 					if(!$image->isEmpty()) {				// Same as lines 22 - 25
@@ -46,4 +47,9 @@ function custom_hero_preprocess_page(&$variables) {
 		}
 
 	}
+}
+
+// Comparison function for node sort
+function cmp($a, $b) {
+        return strcmp($a->get('field_display_order')->value,$b->get('field_display_order')->value);
 }

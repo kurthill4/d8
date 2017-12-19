@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.committee_page.field_committee_goals
     - field.field.node.committee_page.field_committee_procedures
     - field.field.node.committee_page.field_custom_url
+    - field.field.node.committee_page.field_group_composition
     - field.field.node.committee_page.field_membership
     - field.field.node.committee_page.field_num_administrators
     - field.field.node.committee_page.field_num_classified
@@ -22,6 +23,7 @@ dependencies:
   module:
     - field_layout
     - layout_discovery
+    - tablefield
     - text
     - user
 third_party_settings:
@@ -53,6 +55,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: middle
+  field_group_composition:
+    weight: 10
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: tablefield
     region: middle
   field_membership:
     weight: 1
