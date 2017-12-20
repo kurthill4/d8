@@ -7,6 +7,11 @@ body{
 	max-width:1280px!important;
 	background:#dbf3f5;
 }
+
+.noshow {
+	display:none!important;
+}
+
 .gateway .page-header,
 .directory .page-header,
 .resources .page-header,
@@ -71,9 +76,11 @@ h1, h2, h3, h4,h5 {
 }
 .bold {font-weight:bold}
 .italic {font-style:italic}
+
+.field--name-field-content {width:100%}
 .paragraph--type--two-column {
 	display:table;
-	width:95%;
+	width:100%;
 	margin: 0 auto;
 }
 .paragraph--type--two-column .field--item {
