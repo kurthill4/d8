@@ -11,42 +11,11 @@ id: node.committee_page.field_group_composition
 field_name: field_group_composition
 entity_type: node
 bundle: committee_page
-label: 'Group Composition'
+label: 'Committee Composition'
 description: ''
 required: false
 translatable: false
-default_value:
-  -
-    rebuild:
-      cols: '4'
-      rows: '5'
-    value:
-      -
-        - ''
-        - ''
-        - ''
-        - ''
-      -
-        - ''
-        - ''
-        - ''
-        - ''
-      -
-        - ''
-        - ''
-        - ''
-        - ''
-      -
-        - ''
-        - ''
-        - ''
-        - ''
-      -
-        - ''
-        - ''
-        - ''
-        - ''
-    format: null
+default_value: {  }
 default_value_callback: ''
 settings:
   export: 0
