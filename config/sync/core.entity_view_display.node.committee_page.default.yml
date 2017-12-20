@@ -13,10 +13,6 @@ dependencies:
     - field.field.node.committee_page.field_custom_url
     - field.field.node.committee_page.field_group_composition
     - field.field.node.committee_page.field_membership
-    - field.field.node.committee_page.field_num_administrators
-    - field.field.node.committee_page.field_num_classified
-    - field.field.node.committee_page.field_num_faculty
-    - field.field.node.committee_page.field_num_students
     - field.field.node.committee_page.field_standing_subcommittees
     - field.field.node.committee_page.field_web_pages
     - node.type.committee_page
@@ -70,42 +66,6 @@ content:
     third_party_settings: {  }
     type: text_default
     region: top
-  field_num_administrators:
-    weight: 2
-    label: inline
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: first_above
-  field_num_classified:
-    weight: 4
-    label: inline
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: second_above
-  field_num_faculty:
-    weight: 3
-    label: inline
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: first_above
-  field_num_students:
-    weight: 5
-    label: inline
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: second_above
   field_standing_subcommittees:
     weight: 8
     label: above
