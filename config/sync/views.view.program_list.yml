@@ -88,7 +88,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: 'School of {{ field_school }}'
+            text: '{{ field_school }}'
             make_link: false
             path: ''
             absolute: false
