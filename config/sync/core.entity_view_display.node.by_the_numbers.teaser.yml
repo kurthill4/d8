@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.by_the_numbers.body
     - field.field.node.by_the_numbers.field_about_link
     - field.field.node.by_the_numbers.field_image
-    - field.field.node.by_the_numbers.field_url
     - node.type.by_the_numbers
   module:
     - field_layout
@@ -37,4 +36,3 @@ content:
 hidden:
   field_about_link: true
   field_image: true
-  field_url: true

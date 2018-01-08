@@ -1,4 +1,4 @@
-uuid: 3b876773-ae3e-4115-9113-4fab1de9ee3a
+uuid: b8170b9a-bf40-4d1d-a27a-93c1dd679948
 langcode: en
 status: true
 dependencies:
@@ -8,15 +8,15 @@ dependencies:
     - system
   theme:
     - miramar
-id: programpagecalltoaction
+id: admissionspagecalltoaction
 theme: miramar
 region: sidebar_second
-weight: -15
+weight: -14
 provider: null
-plugin: miramar_pgmcall
+plugin: miramar_admcall
 settings:
-  id: miramar_pgmcall
-  label: 'Program Page Call to Action'
+  id: miramar_admcall
+  label: 'Admissions Page Call to Action'
   provider: miramarcustom
   label_display: '0'
 visibility:
@@ -27,6 +27,6 @@ visibility:
     context_mapping: {  }
   request_path:
     id: request_path
-    pages: "/programs/*\r\n/departments/*"
+    pages: "/campus/admissions\r\n/campus/admissions/*"
     negate: false
     context_mapping: {  }

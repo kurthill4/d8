@@ -469,8 +469,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<i class="fa fa-fax"> </i>{{ field_fax }}'
             make_link: false
             path: ''
             absolute: false
