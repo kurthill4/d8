@@ -706,6 +706,7 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 
 .call a{
 	background: #1d2451;
+	width:inherit;
 	display: inline-block;
 	padding: 0 50px 0 0;
 	color: #fff;
