@@ -27,6 +27,7 @@
     <h3>{{ title }}</h3>
   {% endif %}
 <div class="form-group js-viewsJumpMenu">
+<label for="selectProgram" style="display:none">Select a Program</label>
   <select type="text" class="form-control" id="selectProgram">
     <option data-url="">{{ select.select_text }}</option>
   {% for option in select.options %}
