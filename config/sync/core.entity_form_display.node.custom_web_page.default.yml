@@ -11,55 +11,14 @@ dependencies:
     - field.field.node.custom_web_page.field_content
     - node.type.custom_web_page
   module:
-    - field_group
     - field_layout
     - layout_discovery
     - paragraphs_previewer
     - path
     - text
 third_party_settings:
-  field_group:
-    group_advanced_display_options:
-      children:
-        - field_associated_campus_resource
-        - field_associated_committee
-        - field_associated_program
-        - field_associated_department
-      parent_name: ''
-      weight: 3
-      format_type: details
-      format_settings:
-        id: ''
-        classes: ''
-        open: false
-        required_fields: true
-      label: 'Advanced Display Options'
-    group_simple_content:
-      children:
-        - body
-      parent_name: ''
-      weight: 1
-      format_type: details
-      format_settings:
-        id: ''
-        classes: ''
-        open: true
-        required_fields: true
-      label: 'Simple Content'
-    group_advanced_content:
-      children:
-        - field_content
-      parent_name: ''
-      weight: 2
-      format_type: details
-      format_settings:
-        id: ''
-        classes: ''
-        open: false
-        required_fields: true
-      label: 'Advanced Content'
   field_layout:
-    id: layout_onecol
+    id: layout_twocol_bricks
     settings: {  }
 id: node.custom_web_page.default
 targetEntityType: node
@@ -68,41 +27,23 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 2
+    weight: 1
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
-    region: content
+    region: top
   field_associated_campus_resource:
-    weight: 4
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
-    region: content
+    region: first_below
   field_associated_committee:
-    weight: 5
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_associated_department:
-    weight: 7
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_associated_program:
     weight: 6
     settings:
       match_operator: CONTAINS
@@ -110,10 +51,28 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
-    region: content
+    region: second_below
+  field_associated_department:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: second_below
+  field_associated_program:
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: first_below
   field_content:
     type: entity_reference_paragraphs_previewer
-    weight: 3
+    weight: 2
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -122,17 +81,17 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
-    region: content
+    region: middle
   path:
     type: path
-    weight: 4
-    region: content
+    weight: 7
+    region: bottom
     settings: {  }
     third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0
-    region: content
+    region: top
     settings:
       size: 60
       placeholder: ''
