@@ -67,6 +67,7 @@ class MiramarCustomContactBlock extends BlockBase {
                   <li><a href="/privacy">Privacy Statement</a></li>
                   <li><a href="/facultystaff/faculty-info">Resources for Faculty &amp; Staff</a></li>
                   <li><a href="http://www.sdccd.edu/daapp/">Smoking/Substance Policy</a></li>
+                  <li><a href="https://get.adobe.com/reader/" target="_blank">Get Adobe Reader</a></li>
                 </ul>
               </div>
               <div class="col-sm-4">
