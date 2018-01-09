@@ -11,7 +11,7 @@ dependencies:
 id: admissionspagecalltoaction
 theme: miramar
 region: sidebar_second
-weight: -14
+weight: -19
 provider: null
 plugin: miramar_admcall
 settings:
