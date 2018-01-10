@@ -173,25 +173,5 @@
         {% block below_content %}
           {{ page.below_content }}
         {% endblock %}
-
-
-
-<div class="grn-block">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-12">
-        <img class="img-responsive" src="{{ directory }}/images/logo-2.png" alt="">
-      </div>
-    </div>
-  </div>
-</div>
-{% if page.footer %}
-  {% block footer %}
-    <footer role="contentinfo">
-      <div class="container-fluid">
-        {{ page.footer }}
-      </div>
-    </footer>
-  {% endblock %}
-{% endif %}
+{% include 'footer.html.twig' %}
 </div>

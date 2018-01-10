@@ -16,6 +16,7 @@ use Drupal\taxonomy\Entity\Term;
  *
  * @see https://www.drupal.org/node/2472127#comment-10458517
  */
+
 function miramar_preprocess_block(&$variables) {
   if (isset($variables['base_plugin_id'])) {
     switch ($variables['base_plugin_id']) {

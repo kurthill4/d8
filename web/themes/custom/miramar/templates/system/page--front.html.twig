@@ -80,8 +80,8 @@
 {% endif %}
 <div id="push" class="">
 <section id="hero" role="banner">
-<div class="banner front">
-  <div class="carousel" role="marquee" data-flickity='{ "draggable": false, "wrapAround": true, "autoPlay": 7500, "pauseAutoPlayOnHover": false, "pageDots": false }'>
+<div class="banner front" role="marquee">
+  <div class="carousel" data-flickity='{ "draggable": false, "wrapAround": true, "autoPlay": 7500, "pauseAutoPlayOnHover": false, "pageDots": false }'>
     {% for item in home_hero %}
       <div class="carousel-cell slide-0 front" style="background:url({{ item }}) transparent no-repeat left top local"></div>
     {% endfor %}
@@ -209,22 +209,5 @@
     </div>
   </div>
 {% endblock %}
-<div class="grn-block">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-12">
-        <img class="img-responsive" src="{{ directory }}/images/logo-2.png" alt="">
-      </div>
-    </div>
-  </div>
-</div>
-{% if page.footer %}
-  {% block footer %}
-    <footer role="contentinfo">
-      <div class="container-fluid">
-        {{ page.footer }}
-      </div>
-    </footer>
-  {% endblock %}
-{% endif %}
+{% include 'footer.html.twig' %}
 </div>

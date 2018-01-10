@@ -77,7 +77,7 @@
     </header>
   {% endblock %}
 {% endif %}
-
+<div id="push" class="">
 <div class="banner notfront">
   <div class="carousel">
       <div class="carousel-cell slide-ns notfront"></div>
@@ -175,24 +175,5 @@
         {% block below_content %}
           {{ page.below_content }}
         {% endblock %}
-
-
-
-<div class="grn-block">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-12">
-        <img class="img-responsive" src="{{ directory }}/images/logo-2.png" alt="">
-      </div>
-    </div>
-  </div>
+{% include 'footer.html.twig' %}
 </div>
-{% if page.footer %}
-  {% block footer %}
-    <footer role="contentinfo">
-      <div class="container-fluid">
-        {{ page.footer }}
-      </div>
-    </footer>
-  {% endblock %}
-{% endif %}
