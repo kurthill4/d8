@@ -652,16 +652,16 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	font-size: 3.75em;
 	z-index:1000;
 }
-.caption h2{
+/*.caption h2{
 	font-size: 2em;
 	z-index:1000;
-}
+}*/
 .custom .caption h1{
 	font-family: 'Nixie One', cursive;
 	font-size: 2.5em;
 	z-index:1000;
 }
-.caption p{
+.caption p,.caption h2{
 	font-family: 'Oswald', sans-serif;
 	font-size: 1.5em;
 }
@@ -706,6 +706,7 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 
 .call a{
 	background: #1d2451;
+	width:inherit;
 	display: inline-block;
 	padding: 0 50px 0 0;
 	color: #fff;

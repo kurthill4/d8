@@ -6,14 +6,12 @@ dependencies:
     - field.field.node.by_the_numbers.body
     - field.field.node.by_the_numbers.field_about_link
     - field.field.node.by_the_numbers.field_image
-    - field.field.node.by_the_numbers.field_url
     - image.style.thumbnail
     - node.type.by_the_numbers
   module:
     - field_layout
     - image
     - layout_discovery
-    - link
     - path
     - text
 third_party_settings:
@@ -55,14 +53,6 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
-    region: content
-  field_url:
-    weight: 34
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
     region: content
   path:
     type: path
