@@ -29,6 +29,8 @@ function miramar_preprocess_block(&$variables) {
 
     }
   }
+// Get Node ID
+
   $node = \Drupal::routeMatch()->getParameter('node');
   if ($node) {
     $nid = $node->id();

@@ -33,11 +33,11 @@ class MiramarCustomSocialBlock extends BlockBase {
 
             <!-- Social Media -->
             <div class="social-media hide-xs">
-              <a href="https://www.facebook.com/SanDiegoMiramarCollege"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-              <a href="https://twitter.com/SDMiramar"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-              <a href="https://instagram.com/sdmiramar/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-              <a href="https://www.pinterest.com/MiramarCollege/"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-              <a href="https://www.youtube.com/channel/UCAW9o2tK52NekfZFixJOU0w"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/SanDiegoMiramarCollege"><i class="fa fa-facebook" aria-hidden="true"></i><span class="noshow">Facebook</span></a>
+              <a href="https://twitter.com/SDMiramar"><i class="fa fa-twitter" aria-hidden="true"></i><span class="noshow">Twitter</span></a>
+              <a href="https://instagram.com/sdmiramar/"><i class="fa fa-instagram" aria-hidden="true"></i><span class="noshow">Instagram</span></a>
+              <a href="https://www.pinterest.com/MiramarCollege/"><i class="fa fa-pinterest" aria-hidden="true"></i><span class="noshow">Pinterest</span></a>
+              <a href="https://www.youtube.com/channel/UCAW9o2tK52NekfZFixJOU0w"><i class="fa fa-youtube" aria-hidden="true"></i><span class="noshow">YouTube</span></a>
             </div>
             <div class="copyright">
               &copy; 2017 San Diego Miramar College | <a href="/legal">Disclaimer</a>'

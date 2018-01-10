@@ -38,7 +38,7 @@
       
       {% if item.title == 'Home' %}
         <li{{ item.attributes.addClass(item_classes) }}>
-          <a href="{{ item.url }}"><i class="fa fa-home"></i></a>
+          <a href="{{ item.url }}"><i class="fa fa-home"></i><span class="noshow">Home</span></a>
         </li>
       {% else %}
         <li>
