@@ -34,7 +34,7 @@
  */
 #}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-<nav class="main-menu">
+<nav class="main-menu" role="navigation">
   {% block content %}
     {{ content }}
   {% endblock %}

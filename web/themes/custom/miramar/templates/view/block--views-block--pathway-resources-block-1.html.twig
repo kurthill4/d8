@@ -54,7 +54,7 @@
     'id-block',
   ]
 %}
-<section{{ attributes.addClass(classes) }}>
+<section{{ attributes.addClass(classes)}}{{create_attribute({'role':['complementary']}) }}>
  <div class="news-title">
 <img src="/{{ directory }}/images/icon-documents.png" alt="Resources" />
  <h3>{{ label }}</h3>

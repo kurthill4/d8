@@ -55,7 +55,7 @@
     'clearfix',
   ]
 %}
-<section{{ attributes.addClass(classes) }}>
+<section{{ attributes.addClass(classes)}}{{create_attribute({'role':['complementary']}) }}>
   {{ title_prefix }}
   {% if label %}
     <h3><img src="/{{ directory }}/images/icon-calendar.png" alt="Dates & Deadlines" />&nbsp;&nbsp;{{ label }}</h3>

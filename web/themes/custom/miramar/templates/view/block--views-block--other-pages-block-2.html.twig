@@ -54,7 +54,7 @@
   ]
 %}
 {% if content %}
-<section{{ attributes.addClass(classes) }}>
+<section{{ attributes.addClass(classes)}}{{create_attribute({'role':['navigation']}) }}>
             <div class="news-block news-block-2">
                     <h3 class="hide-xs"><img src="/{{ directory }}/images/icon-globe.png" alt="Related Pages" style="float:left" />Program<br />Pages</h3>
                     <h4 class="hide-lg"><img src="/{{ directory }}/images/icon-globe.png" alt="Related Pages" style="float:left" />Program<br />Pages</h4>

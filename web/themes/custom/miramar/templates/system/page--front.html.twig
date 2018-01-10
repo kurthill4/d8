@@ -68,7 +68,7 @@
       ]
     %}
 <div class="spacer" style="height:1px">&nbsp;</div>
-    <header>
+    <header role="landmark">
         {{ page.navigation }}
 
       {# Navigation (collapsible) #}
@@ -81,7 +81,7 @@
 <div id="push" class="">
 <section id="hero" role="banner">
 <div class="banner front">
-  <div class="carousel" data-flickity='{ "draggable": false, "wrapAround": true, "autoPlay": 7500, "pauseAutoPlayOnHover": false, "pageDots": false }'>
+  <div class="carousel" role="marquee" data-flickity='{ "draggable": false, "wrapAround": true, "autoPlay": 7500, "pauseAutoPlayOnHover": false, "pageDots": false }'>
     {% for item in home_hero %}
       <div class="carousel-cell slide-0 front" style="background:url({{ item }}) transparent no-repeat left top local"></div>
     {% endfor %}
@@ -220,7 +220,7 @@
 </div>
 {% if page.footer %}
   {% block footer %}
-    <footer>
+    <footer role="contentinfo">
       <div class="container-fluid">
         {{ page.footer }}
       </div>

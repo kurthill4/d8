@@ -53,7 +53,7 @@
     'clearfix',
   ]
 %}
-<section{{ attributes.addClass(classes) }}>
+<section{{ attributes.addClass(classes)}}{{create_attribute({'role':['navigation']}) }}>
             <div class="news-block news-block-2">
                     <h3 class="hide-xs"><a href="/campus/governance/committees/documents/{{nodeid}}"><img src="/{{ directory }}/images/icon-documents.png" alt="Important Documents" style="float:left" />Important<br />Documents</a></h3>
                     <h4 class="hide-lg" style="clear:both;margin-bottom:1em"><a href="/campus/governance/committees/documents/{{nodeid}}"><img src="/{{ directory }}/images/icon-documents.png" alt="Important Documents" style="float:left" />Important<br />Documents</a></h4>
