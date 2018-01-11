@@ -37,18 +37,15 @@
           item.in_active_trail ? 'active',
         ]
       %}
+	{% set href = item.url %}
       {% if item.title == 'Career Services' %}
 	{% set icon = 'briefcase' %}
-	{% set href = item.url %}
       {% elseif item.title == 'Library' %}
 	{% set icon = 'book' %}
-	{% set href = item.url %}
       {% elseif item.title == 'Blackboard' %}
 	{% set icon = 'laptop' %}
-	{% set href = item.url %}
       {% elseif item.title == 'Employee Resources' %}
 	{% set icon = 'lightbulb-o' %}
-	{% set href = item.url %}
       {% else %}
 	{% set class = 'class=search  '|raw %}
 	{% set href = 'JavaScript://' %}
