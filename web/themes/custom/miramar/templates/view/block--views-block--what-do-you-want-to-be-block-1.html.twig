@@ -53,7 +53,7 @@
     'clearfix',
   ]
 %}
-<section{{ attributes.addClass(classes) }}>
+<section{{ attributes.addClass(classes)}}{{create_attribute({'role':['complementary']}) }}>
   {% block content %}
     {{ content }}
   {% endblock %}

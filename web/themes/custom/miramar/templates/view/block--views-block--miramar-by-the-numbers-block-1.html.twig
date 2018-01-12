@@ -55,7 +55,7 @@
     'hide-xs',
   ]
 %}
-<section{{ attributes.addClass(classes) }}>
+<section{{ attributes.addClass(classes)}}{{create_attribute({'role':['complementary']}) }}>
   {{ title_prefix }}
   {% if label %}
     <!--h3><img src="/{{ directory }}/images/icon-clock.png" alt="Miramar by the numbers" />&nbsp;&nbsp;{{ label }}</h3-->

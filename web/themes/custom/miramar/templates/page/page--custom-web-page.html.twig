@@ -168,22 +168,5 @@
         {% endblock %}
       {% endif %}
 
-<div class="grn-block">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-12">
-        <img class="img-responsive" src="/{{ directory }}/images/logo-2.png" alt="">
-      </div>
-    </div>
-  </div>
+{% include 'footer.html.twig' %}
 </div>
-{% if page.footer %}
-  {% block footer %}
-    <footer>
-      <div class="container-fluid">
-        {{ page.footer }}
-      </div>
-    </footer>
-  {% endblock %}
-{% endif %}
-</div

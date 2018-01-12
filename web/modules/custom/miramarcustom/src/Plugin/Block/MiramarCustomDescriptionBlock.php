@@ -26,11 +26,11 @@ class MiramarCustomDescriptionBlock extends BlockBase {
           <div class="col-sm-12">
             <!-- Social Media -->
             <div class="social-media hide-lg">
-              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true" title="Facebook"></i><span class="sr-only">Facebook</span></a>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true" title="Twitter"></i><span class="sr-only">Twitter</span></a>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true" title="Instagram"></i><span class="sr-only">Instagram</span></a>
+              <a href="#"><i class="fa fa-pinterest" aria-hidden="true" title="Pinterest"></i><span class="sr-only">Pinterest</span></a>
+              <a href="#"><i class="fa fa-youtube" aria-hidden="true" title="UouTube"></i><span class="sr-only">YouTube</span></a>
             </div>
             <div class="address">
               San Diego Miramar College<br />

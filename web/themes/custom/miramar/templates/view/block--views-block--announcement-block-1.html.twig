@@ -54,7 +54,7 @@
   ]
 %}
 {% if content %}
-<section{{ attributes.addClass(classes) }}>
+<section{{ attributes.addClass(classes)}}{{create_attribute({'role':['alert']}) }}>
             <div class="announce-block">
                     <h3><i class="fa fa-bell" aria-hidden="true"></i> Important Announcement</h3>
 		  {% block content %}

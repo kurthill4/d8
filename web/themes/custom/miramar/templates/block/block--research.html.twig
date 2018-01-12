@@ -53,7 +53,7 @@
     'clearfix',
   ]
 %}
-<section{{ attributes.addClass(classes) }}>
+<section{{ attributes.addClass(classes)}}{{create_attribute({'role':['navigation']}) }}>
             <div class="news-block news-block-2">
                     <h3 class="hide-xs" style="margin-bottom:0.75em"><img src="/{{ directory }}/images/icon-office.png" alt="Institutional Research" style="float:left" /> Institutional<br />Research</h3>
                     <h4 class="hide-lg" style="margin-bottom:0.75em"><img src="/{{ directory }}/images/icon-office.png" alt="Institutional Research" style="float:left" /> Institutional<br />Research</h4>

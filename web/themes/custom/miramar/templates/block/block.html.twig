@@ -53,13 +53,15 @@
     'clearfix',
   ]
 %}
-<section{{ attributes.addClass(classes)}}{{create_attribute({'role':['navigation']}) }}>
-            <div class="news-block news-block-2">
-                    <h3 class="hide-xs"><a href="/resources"><img src="/{{ directory }}/images/icon-campus-resources.png" alt="All Resources" style="float:left" />All<br />Resources</a></h3>
-                    <h4 class="hide-lg" style="clear:both;margin-bottom:1em"><a href="/resources"><img src="/{{ directory }}/images/icon-campus-resources.png" alt="All Resources" style="float:left" />All<br />Resources</a></h4>
-		  {% block content %}
+<section{{ attributes.addClass(classes)}}{{create_attribute({'role':['section']}) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  {% block content %}
     {{ content }}
-	    </div>
   {% endblock %}
 </section>
 

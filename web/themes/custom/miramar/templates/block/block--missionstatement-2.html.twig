@@ -53,7 +53,7 @@
     'clearfix',
   ]
 %}
-<section{{ attributes.addClass(classes) }}>
+<section{{ attributes.addClass(classes)}}{{create_attribute({'role':['complementary']}) }}>
   {{ title_prefix }}
 	<h2><img src="/{{ directory }}/images/icon-globe.png" alt=""> Mission Statement</h3>
   {{ title_suffix }}
