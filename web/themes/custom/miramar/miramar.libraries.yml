@@ -47,6 +47,16 @@ flickity:
   js:
     js/flickity.pkgd.min.js: {}
 
+sdccd:
+  header: true
+  js:
+    https://www.googletagmanager.com/gtag/js?id=UA-102982479-1: { type: external, attributes: { async: true } }
+    js/sdccd-google.js: {}
+
+sdccd-blank:
+  js:
+    js/sdccd-blank.js: {}
+
 Roboto:
   license:
     name: Apache License 2.0

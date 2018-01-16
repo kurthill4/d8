@@ -27,6 +27,9 @@
   {% import _self as menus %}
   {% if items %}
     {% for item in items %}
+	{% set icon = '' %}
+	{% set class = '' %}
+	{% set href = '' %}
       {%
         set item_classes = [
           item.is_expanded? 'expanded',
@@ -34,18 +37,21 @@
           item.in_active_trail ? 'active',
         ]
       %}
-
+	{% set href = item.url %}
       {% if item.title == 'Career Services' %}
-        <a href="{{ item.url }}"><i class="fa fa-briefcase" aria-hidden="true"></i> {{ item.title }}</a>
+	{% set icon = 'briefcase' %}
       {% elseif item.title == 'Library' %}
-        <a href="{{ item.url }}"><i class="fa fa-book" aria-hidden="true"></i> {{ item.title }}</a>
+	{% set icon = 'book' %}
       {% elseif item.title == 'Blackboard' %}
-        <a href="{{ item.url }}"><i class="fa fa-laptop" aria-hidden="true"></i> {{ item.title }}</a>
+	{% set icon = 'laptop' %}
       {% elseif item.title == 'Employee Resources' %}
-        <a href="{{ item.url }}"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> {{ item.title }}</a>
+	{% set icon = 'lightbulb-o' %}
       {% else %}
-        <a class="search" href="JavaScript://"><i class="fa fa-search" aria-hidden="true"></i> {{ item.title }}</a>
+	{% set class = 'class=search  '|raw %}
+	{% set href = 'JavaScript://' %}
+	{% set icon = 'search' %}
       {% endif %}
+        <a {{ class }}href="{{ href }}"><i class="fa fa-{{ icon }}" aria-hidden="true"></i> {{ item.title }}</a>
     {% endfor %}
     <div class="search-desktop">
       <a class="close-x" href="#"><i class="fa fa-times" aria-hidden="true" title="Close Search"></i><span class="sr-only">Close Search</span></a>
