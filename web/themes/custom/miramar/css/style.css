@@ -240,7 +240,7 @@ nav.main-menu{
 	left:0;
 	background: #1d2451;
 	color: #fff;
-	width: 99%;
+	width: 98.75%;
 	z-index: 1;
 	text-align: right;
 	padding: 12px 0px 8px 0;
@@ -248,8 +248,8 @@ nav.main-menu{
 }
 
 nav.main-menu ul{
-width:99%;
-float:right;
+width:100%;
+/*float:right;*/
 	margin: 0;
 	padding: 0;
 	list-style:none!important;
@@ -304,6 +304,7 @@ nav.main-menu li:first-child i{
 	font-size: 25px;
 }
 nav.main-menu li:last-child {
+	padding-right:0;
 	margin-right:0;
 }
 
