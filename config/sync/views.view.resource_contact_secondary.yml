@@ -345,9 +345,9 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<a class="fa-fa-envelope"> </i>Email'
-            make_link: true
-            path: 'mailto:{{ field_contact_3 }}'
+            text: '<i class="fa-fa-envelope"> </i><a href="mailto:{{ field_contact_3 }}">Email</a>'
+            make_link: false
+            path: ''
             absolute: false
             external: false
             replace_spaces: false
