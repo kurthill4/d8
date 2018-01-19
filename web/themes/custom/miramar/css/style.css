@@ -91,13 +91,15 @@ h1, h2, h3, h4,h5 {
 .paragraph--type--two-column h3{
 	width:80%;
 }
-.timeline-Tweet-media * {display:none!important;visibility:hidden!important;}
+
+.MediaCard-media {display:none!important;}
 .field--name-field-column-1,
 .field--name-field-column-2 {
 	display:table-cell;
 	width:50%;
 	
 }
+
 .campus-news img {float:left}
 #toolbar-administration {
 	display: grid;
@@ -805,10 +807,8 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 .region-mission #block-twitterforhomepage {
 	width:33%;
 	margin: 0 auto;
-	background:inherit;
+	background:none;
 }
-
-/*.region-mission #block-twitterforhomepage #twitter-widget-0 {height:100%!important;}*/
 
 .region-below-content .views-view-grid {
 	width:95%;
