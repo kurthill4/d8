@@ -12,9 +12,8 @@ if (ifrm !== null){
   if (timelineWidget !== undefined){
     // then change background color css for this class
     timelineWidget.style.background="none";
-var image = document.getElementsByClassName('MediaCard-media');
-//image.style = "-webkit-transform: scale(0.5);-moz-transform: scale(0.5);-ms-transform: scale(0.5);-o-transform: scale(0.5);transform: scale(0.5)";
-image.style = "display:none";
+var image = ifrm.contentWindow.document.getElementsByClassName('MediaCard-media')[0];
+image.style = "-webkit-transform: scale(0.75);-moz-transform: scale(0.75);-ms-transform: scale(0.75);-o-transform: scale(0.75);transform: scale(0.75)";
 
     // and leave setinterval
       clearInterval(myInterval);
