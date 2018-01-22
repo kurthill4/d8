@@ -57,6 +57,11 @@ sdccd-blank:
   js:
     js/sdccd-blank.js: {}
 
+twitter_hack:
+  header: true
+  js:
+    js/twitterhack.js: {}
+
 Roboto:
   license:
     name: Apache License 2.0

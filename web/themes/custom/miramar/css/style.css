@@ -91,13 +91,15 @@ h1, h2, h3, h4,h5 {
 .paragraph--type--two-column h3{
 	width:80%;
 }
-.timeline-Tweet-media * {display:none!important;visibility:hidden!important;}
+
+.MediaCard-media {display:none!important;}
 .field--name-field-column-1,
 .field--name-field-column-2 {
 	display:table-cell;
 	width:50%;
 	
 }
+
 .campus-news img {float:left}
 #toolbar-administration {
 	display: grid;
@@ -774,23 +776,26 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 .region-dates section,.region-dates .view {margin: 0 auto!important}
 .region-dates,.region-mission {
 	display:table;
-	border-spacing:5px;
+	border-spacing:0 5px;
 	width:100%;
 	margin: 0 auto;
 }
 .region-dates .block,.region-mission .block {
-	margin:0;
+	padding:0;
+	margin:0
 }
 
-.region-mission section {display:table-cell}
+.region-mission section {display:table-cell;padding:0;margin:0}
 
 .region-dates .block-views-blockimportant-dates-block-1 {
-	width:33%;
+	width:33.33%;
 }
 
 .region-dates .block-views-blockwhat-do-you-want-to-be-block-1 {
-	width:65%;
+	width:66.67%;
 	background: #a22130;
+	padding-right:0;
+	margin-right:0;
 
 }
 
@@ -802,10 +807,8 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 .region-mission #block-twitterforhomepage {
 	width:33%;
 	margin: 0 auto;
-	background:#ffffff;
+	background:none;
 }
-
-/*.region-mission #block-twitterforhomepage #twitter-widget-0 {height:100%!important;}*/
 
 .region-below-content .views-view-grid {
 	width:95%;
