@@ -8,17 +8,17 @@ use Drupal\node\NodeInterface;
 //Implements hook_form_FORM_ID_alter()
 function faculty_page_auto_title_faculty_page_form_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
 
-    $form['title']['#access'] = FALSE;
+  //  $form['title']['#access'] = FALSE;
 
 }
 
 
-function meeting_auto_title_node_create(NodeInterface $node) {
+function faculty_page_auto_title_node_create(NodeInterface $node) {
 
   switch ($node->getType()) {
     case 'faculty_page':
       //Change the title
-	$node->setTitle('Committee Meeting');      
+//	$node->setTitle('');      
 	break;
   }
 }

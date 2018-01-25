@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.committee_meeting.field_agenda
     - field.field.node.committee_meeting.field_attached_documents
     - field.field.node.committee_meeting.field_committee
+    - field.field.node.committee_meeting.field_event_type
     - field.field.node.committee_meeting.field_file_code
     - field.field.node.committee_meeting.field_file_instructions
     - field.field.node.committee_meeting.field_meeting_date_time
@@ -80,6 +81,7 @@ content:
     type: file_download_link
     region: content
 hidden:
+  field_event_type: true
   field_file_code: true
   field_file_instructions: true
   links: true
