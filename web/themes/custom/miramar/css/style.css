@@ -45,6 +45,14 @@ ul.noindent,ul.noindent li {
 	content: '✔ '!important;
 }
 
+.content ol li {
+	padding:0;
+	margin-left:5%;
+}
+
+.content ol li li {
+	margin-left:5px;
+}
 
 ul.nobull li:before{ content:none;}
 table.small,ul.small,ol.small,p.small {font-size:0.75em;}
@@ -2540,6 +2548,16 @@ section#hero {max-height:602px!important}
   .navbar-header {
     float: none;
   }
+.content ol {padding:2%;overflow:hidden;max-width:100%}
+
+.content ol li {
+	padding:0;
+	margin-left:5px;
+}
+
+.content ol li li {
+	margin-left:7px;
+}
 
 		.carousel {position:static;}
 		.slide-campaign {
