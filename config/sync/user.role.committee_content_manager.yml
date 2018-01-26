@@ -22,3 +22,6 @@ permissions:
   - 'edit own committee_meeting content'
   - 'edit own committee_page content'
   - 'edit own document content'
+  - 'export tablefield'
+  - 'import tablefield'
+  - 'rebuild tablefield'

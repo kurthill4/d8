@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.committee_meeting.field_agenda
     - field.field.node.committee_meeting.field_attached_documents
     - field.field.node.committee_meeting.field_committee
+    - field.field.node.committee_meeting.field_event_date
     - field.field.node.committee_meeting.field_event_type
     - field.field.node.committee_meeting.field_file_code
     - field.field.node.committee_meeting.field_file_instructions
@@ -15,6 +16,7 @@ dependencies:
     - node.type.committee_meeting
   module:
     - datetime
+    - datetime_range
     - field_layout
     - file
     - layout_discovery
@@ -51,6 +53,21 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: top
+  field_event_date:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: daterange_default
+    region: middle
+  field_event_type:
+    type: entity_reference_autocomplete
+    weight: 9
+    region: bottom
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_file_instructions:
     weight: 3
     settings: {  }
@@ -80,7 +97,7 @@ content:
     region: second_above
   uid:
     type: entity_reference_autocomplete
-    weight: 7
+    weight: 8
     region: bottom
     settings:
       match_operator: CONTAINS
@@ -89,7 +106,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  field_event_type: true
   field_file_code: true
   path: true
   promote: true
