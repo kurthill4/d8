@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3b867c2ce11e9cebe73d25a213261849",
+    "content-hash": "5de9dde10e61c04b6fb782bb5da990a6",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4757,6 +4757,193 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/views_templates"
             }
+        },
+        {
+            "name": "drupal/webform",
+            "version": "5.0.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/webform",
+                "reference": "8.x-5.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-rc1.zip",
+                "reference": "8.x-5.0-rc1",
+                "shasum": "44d0dc4194f9ce3217e4d333a40ed6b88815d83b"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-5.x": "5.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-5.0-rc1",
+                    "datestamp": "1514196484",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Jacob Rockowitz (jrockowitz)",
+                    "homepage": "https://www.drupal.org/u/jrockowitz",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Liam Morland",
+                    "homepage": "https://www.drupal.org/user/493050"
+                },
+                {
+                    "name": "fenstrat",
+                    "homepage": "https://www.drupal.org/user/362649"
+                },
+                {
+                    "name": "jrockowitz",
+                    "homepage": "https://www.drupal.org/user/371407"
+                },
+                {
+                    "name": "podarok",
+                    "homepage": "https://www.drupal.org/user/116002"
+                },
+                {
+                    "name": "quicksketch",
+                    "homepage": "https://www.drupal.org/user/35821"
+                },
+                {
+                    "name": "sanchiz",
+                    "homepage": "https://www.drupal.org/user/1671246"
+                },
+                {
+                    "name": "tedbow",
+                    "homepage": "https://www.drupal.org/user/240860"
+                },
+                {
+                    "name": "torotil",
+                    "homepage": "https://www.drupal.org/user/865256"
+                }
+            ],
+            "description": "Enables the creation of webforms and questionnaires.",
+            "homepage": "https://drupal.org/project/webform",
+            "support": {
+                "source": "http://cgit.drupalcode.org/webform",
+                "issues": "https://drupal.org/project/issues/webform"
+            }
+        },
+        {
+            "name": "drupal/webform_layout_container",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/webform_layout_container",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_layout_container-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "5ffccf73ea873f230da2f54144a5c3a15be21e84"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/webform": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1498657743",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "dpape",
+                    "homepage": "https://www.drupal.org/user/2409608"
+                }
+            ],
+            "description": "Provides a layout container element to add to a webform.",
+            "homepage": "https://www.drupal.org/project/webform_layout_container",
+            "support": {
+                "source": "http://cgit.drupalcode.org/webform_layout_container"
+            }
+        },
+        {
+            "name": "drupal/webforms",
+            "version": "dev-0.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/webforms",
+                "reference": "3d499c56ed31907f09f007ac7023a06757a9fdcc"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-0.x": "0.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-0.x-dev",
+                    "datestamp": "1460105341",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "AndreyMaximov",
+                    "homepage": "https://www.drupal.org/user/1024156"
+                },
+                {
+                    "name": "andrii.tiupa",
+                    "homepage": "https://www.drupal.org/user/2932651"
+                },
+                {
+                    "name": "danylevskyi",
+                    "homepage": "https://www.drupal.org/user/322039"
+                },
+                {
+                    "name": "podarok",
+                    "homepage": "https://www.drupal.org/user/116002"
+                },
+                {
+                    "name": "sanchiz",
+                    "homepage": "https://www.drupal.org/user/1671246"
+                }
+            ],
+            "description": "Performs specific alters of default Drupal behavior",
+            "homepage": "https://www.drupal.org/project/webforms",
+            "support": {
+                "source": "http://cgit.drupalcode.org/webforms"
+            },
+            "time": "2016-04-08 08:53:45"
         },
         {
             "name": "drupal/youtubechannel",
@@ -9723,7 +9910,9 @@
         "drupal/themable_forms": 10,
         "drupal/twitter": 20,
         "drupal/views_bootstrap": 20,
-        "drupal/views_jump_menu": 10
+        "drupal/views_jump_menu": 10,
+        "drupal/webform": 5,
+        "drupal/webforms": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
