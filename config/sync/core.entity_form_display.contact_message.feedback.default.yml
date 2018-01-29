@@ -25,32 +25,32 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_instructions:
-    weight: 0
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: markup
     region: first_above
   field_nature_of_your_message:
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: second_above
   mail:
-    weight: 4
-    region: second_below
+    weight: 0
+    region: top
     settings: {  }
     third_party_settings: {  }
   message:
     type: string_textarea
-    weight: 2
+    weight: 3
     settings:
       rows: 12
       placeholder: ''
     region: middle
     third_party_settings: {  }
   name:
-    weight: 3
+    weight: 4
     region: first_below
     settings: {  }
     third_party_settings: {  }

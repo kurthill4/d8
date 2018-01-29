@@ -100,7 +100,6 @@ h1, h2, h3, h4,h5 {
 	width:80%;
 }
 
-.MediaCard-media {display:none!important;}
 .field--name-field-column-1,
 .field--name-field-column-2 {
 	display:table-cell;
@@ -108,6 +107,22 @@ h1, h2, h3, h4,h5 {
 	
 }
 
+/*--------------- FORMS -------------------*/
+
+.webform-flex .form-text,
+.webform-flex .form-email {
+	width:inherit!important;
+}
+
+#edit-address-state-province,#edit-address-country {
+	width:auto;
+}
+
+#edit-address-postal-code {
+	max-width:100px;
+}
+
+/*--------------------------------------*/
 .campus-news img {float:left}
 #toolbar-administration {
 	display: grid;

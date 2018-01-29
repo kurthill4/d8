@@ -1,0 +1,131 @@
+uuid: 4a87203d-4ea4-4248-858d-532da19b7b59
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+uid: 1877
+template: false
+id: apply_for_commencement
+title: 'Apply for Commencement'
+description: ''
+category: 'Student Services'
+elements: "grad:\n  '#type': webform_flexbox\n  '#align_items': center\n  '#align': vert\n  email:\n    '#type': email\n    '#title': Email\n    '#title_display': before\n    '#description_display': after\n    '#minlength': '5'\n    '#maxlength': '255'\n    '#size': '25'\n    '#placeholder': Email\n    '#autocomplete': 'off'\n    '#required': true\n  student_id:\n    '#type': textfield\n    '#title': 'Student ID #'\n    '#size': '10'\n    '#placeholder': 'Student ID Number'\n    '#autocomplete': 'off'\n    '#required': true\nname:\n  '#type': fieldset\n  '#title': Name\n  '#description': 'Type your name as you wish it to appear on your diploma.'\n  '#title_display': invisible\n  flexbox:\n    '#type': webform_flexbox\n    first_name:\n      '#type': textfield\n      '#title': 'First Name'\n      '#help': 'Type your name as you wish it to appear on your diploma.'\n      '#title_display': before\n      '#minlength': '1'\n      '#maxlength': '255'\n      '#size': '25'\n      '#placeholder': 'First Name'\n      '#autocomplete': 'off'\n      '#required': true\n    middle_or_initial:\n      '#type': textfield\n      '#title': 'Middle -or- Initial'\n      '#minlength': '1'\n      '#maxlength': '255'\n      '#size': '10'\n      '#placeholder': 'Middle or Initial'\n      '#autocomplete': 'off'\n    last_name:\n      '#type': textfield\n      '#title': 'Last Name'\n      '#title_display': before\n      '#minlength': '1'\n      '#maxlength': '255'\n      '#size': '25'\n      '#placeholder': 'Last Name'\n      '#autocomplete': 'off'\n      '#required': true\ngrad2:\n  '#type': webform_flexbox\n  address:\n    '#type': webform_address\n    '#title': Address\n    '#attributes':\n      class:\n        - 'form--inline clearfix'\n    '#address__required': true\n    '#city__required': true\n    '#state_province__required': true\n    '#postal_code__required': true\n    '#flexbox': '1'\nprocessed_text:\n  '#type': processed_text\n  '#text': \"<h3>Share Your Story (optional)</h3>\\r\\n<p>\\r\\nHelp us create a profile of the graduating class.  Some of this information may be reported at commencement.  Commencements are often covered by the media in search of human interest stories.\\r\\n</p>\\r\\n<p>Reporters are interested in:</p>\\r\\n<ul class=\\\"adjust\\\">\\r\\n<li>Students graduating against all odds. You can define this any way you see fit.</li>\\r\\n<li>A parent and his/her child graduating together.</li>\\r\\n<li>Success stories, not just confined to GPA.</li>\\r\\n<li>Students as entrepreneurs.</li>\\r\\n<li>Students who have distinguished themselves in the community or the business world.</li>\\r\\n</ul>\\r\\n<div class=\\\"spacer\\\" style=\\\"height: 5px;\\\">&nbsp;</div>\\r\\n<ol>\\r\\n<li>Are you the first person in your family to attend college or to earn a degree or certificate of achievement?</li>\\r\\n<li>Is another member of your family earning a certificate or degree from City, Mesa or Miramar College this year?</li>\\r\\n<li>Tell us something special about your experience at Miramar College, and if there is any one (faculty, staff or administrator) that particularly inspired you or helped you to achieve your goal.</li>\\r\\n<li>What else would you like to share?</li>\\r\\n</ol>\"\n  '#format': full_html\nshare_your_story:\n  '#type': textarea\n  '#title': 'Share Your Story'\n  '#title_display': invisible\n  '#autocomplete': 'off'\n"
+css: ''
+javascript: ''
+settings:
+  ajax: true
+  ajax_scroll_top: ''
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_submit_once: true
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_unsaved: true
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: true
+  form_details_toggle: false
+  form_login: false
+  form_login_message: ''
+  submission_label: ''
+  submission_log: false
+  submission_user_columns: {  }
+  submission_login: false
+  submission_login_message: ''
+  submission_exception_message: ''
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_start_label: ''
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: page
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }

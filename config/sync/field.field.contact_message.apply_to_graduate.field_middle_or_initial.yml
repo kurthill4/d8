@@ -1,0 +1,19 @@
+uuid: f459baea-37ee-4311-bc55-7d964461ea17
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.apply_to_graduate
+    - field.storage.contact_message.field_middle_or_initial
+id: contact_message.apply_to_graduate.field_middle_or_initial
+field_name: field_middle_or_initial
+entity_type: contact_message
+bundle: apply_to_graduate
+label: 'Middle or Initial'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
