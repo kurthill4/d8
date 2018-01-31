@@ -1,0 +1,22 @@
+uuid: 00e64381-0061-4eba-b9cc-392ef77afc4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.apply_to_graduate
+    - field.storage.contact_message.field_story
+  module:
+    - text
+id: contact_message.apply_to_graduate.field_story
+field_name: field_story
+entity_type: contact_message
+bundle: apply_to_graduate
+label: 'Share Your Story (optional)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

@@ -45,6 +45,14 @@ ul.noindent,ul.noindent li {
 	content: '✔ '!important;
 }
 
+.content ol li {
+	padding:0;
+	margin-left:5%;
+}
+
+.content ol li li {
+	margin-left:5px;
+}
 
 ul.nobull li:before{ content:none;}
 table.small,ul.small,ol.small,p.small {font-size:0.75em;}
@@ -92,7 +100,6 @@ h1, h2, h3, h4,h5 {
 	width:80%;
 }
 
-.MediaCard-media {display:none!important;}
 .field--name-field-column-1,
 .field--name-field-column-2 {
 	display:table-cell;
@@ -100,6 +107,32 @@ h1, h2, h3, h4,h5 {
 	
 }
 
+/*--------------- FORMS -------------------*/
+
+form.webform-submission-form {
+	margin:1em 1em;
+}
+
+.webform-flex .form-text,
+.webform-flex .form-email {
+	width:inherit!important;
+}
+#edit-address-city {width:50px;}
+#edit-address-city, #edit-address-state-province,#edit-address-country {
+	width:auto;
+	margin-right:1em!important;
+}
+
+#edit-address-postal-code {
+	max-width:100px;
+}
+
+#edit-processed-text,#edit-share-your-story {
+	width:75%;
+	margin-bottom:1em;
+}
+
+/*--------------------------------------*/
 .campus-news img {float:left}
 #toolbar-administration {
 	display: grid;
@@ -2540,6 +2573,16 @@ section#hero {max-height:602px!important}
   .navbar-header {
     float: none;
   }
+.content ol {padding:2%;overflow:hidden;max-width:100%}
+
+.content ol li {
+	padding:0;
+	margin-left:5px;
+}
+
+.content ol li li {
+	margin-left:7px;
+}
 
 		.carousel {position:static;}
 		.slide-campaign {

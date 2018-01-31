@@ -38,11 +38,11 @@
       
       {% if item.title == 'Home' %}
         <li{{ item.attributes.addClass(item_classes) }}>
-          <a href="{{ item.url }}"><i class="fa fa-home" title="Home" aria-hidden="true"></i><span class="sr-only">Home</span></a>
+          <a href="{{ item.url }}"><i class="fa fa-home"></i></a>
         </li>
       {% else %}
         <li>
-          <a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
+          <a href="{{ item.url }}">{{ item.title }}</a>
         </li>
       {% endif %}
     {% endfor %}

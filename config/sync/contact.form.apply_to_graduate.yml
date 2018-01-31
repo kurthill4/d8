@@ -1,0 +1,13 @@
+uuid: 4e1012e1-12d8-4bb9-a0b1-8610e2ae0059
+langcode: en
+status: true
+dependencies: {  }
+id: apply_to_graduate
+label: 'Apply to Graduate'
+recipients:
+  - MiramarCommencement@sdccd.edu
+  - mmrcommencementreg@sdccd.edu
+reply: ''
+weight: 0
+message: ''
+redirect: ''

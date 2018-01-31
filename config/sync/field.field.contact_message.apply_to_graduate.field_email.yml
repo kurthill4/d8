@@ -1,0 +1,19 @@
+uuid: 1fb0fba6-3693-4692-985a-be904fcb79a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.apply_to_graduate
+    - field.storage.contact_message.field_email
+id: contact_message.apply_to_graduate.field_email
+field_name: field_email
+entity_type: contact_message
+bundle: apply_to_graduate
+label: Email
+description: 'Enter the email address where you wish to be contacted.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

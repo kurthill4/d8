@@ -1,0 +1,21 @@
+uuid: 78f27403-f01f-40bc-922e-6291a171a073
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.apply_to_graduate
+    - field.storage.contact_message.field_phone
+  module:
+    - telephone
+id: contact_message.apply_to_graduate.field_phone
+field_name: field_phone
+entity_type: contact_message
+bundle: apply_to_graduate
+label: Phone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

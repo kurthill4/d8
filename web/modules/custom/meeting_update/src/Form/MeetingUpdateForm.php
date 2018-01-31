@@ -10,6 +10,7 @@
  use \Drupal\Core\Form\FormBase;
  use \Drupal\Core\Form\FormStateInterface;
  use \Drupal\node\Entity\Node;
+ use \Drupal\node\NodeInterface;
 
 # use Symfony\Component\HttpFoundation\Request;
 	
@@ -73,17 +74,23 @@
 			->condition('type', 'committee_meeting');
 		$nids = $query->execute();
 
-		// The mainline logic to attach the files
+		// The mainline logic to set the dates
 
 		foreach ($nids as $nid) {							// Do this as long as there are nodes:
 			$success = FALSE;
 			$node = node_load($nid, NULL, TRUE);					// Get one node
-			$date1 = $node->field_meeting_date->getString();			// Extract the date
+			$date1 = $node->field_meeting_date_time->getString();			// Extract the date
 			$date2 = new \DateTime($date1);						// Create a new Date object
+			$date2End = new \DateTime($date1);						// Create a new Date object
 			$date2->setTimeZone($newTZ);
+			$date2End->setTimeZone($newTZ);
+			$date2End->modify('+1 hours');
 			$date2Out = $date2->format('Y-m-d\TH:i:s');				// Format the date for Drupal storage
+			$date2EndOut = $date2End->format('Y-m-d\TH:i:s');			// Format the date for Drupal storage
 			try {
-				$node->set('field_meeting_date_time',[['value' => $date2Out]]);
+				$node->field_event_date->value = $date2Out;
+				$node->field_event_date->end_value = $date2EndOut;
+				$node->field_event_type->target_id = 318;
 				$success = TRUE;
 
 			}
@@ -91,7 +98,8 @@
 				$numErrors++;
 				drupal_set_message('Error number ' . $numErrors);
 			}
-			if($success == TRUE) {	// Finally, save the node with its new content and reset the cache for the next iteration
+			// Finally, save the node with its new content and reset the cache for the next iteration
+			if($success == TRUE) {	
 				$node->save();
 				\Drupal::entityManager()->getStorage('node')->resetCache(array($nid));
 				$numNodes++;

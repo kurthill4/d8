@@ -21,6 +21,11 @@ class MiramarCustomContactBlock extends BlockBase {
   public function build() {
 
     $imagepath = base_path() . drupal_get_path('theme', 'miramar');
+    $theIP = $_SERVER['REMOTE_ADDR'];
+    if($theIP == '10.72.20.102' OR substr($theIP,0,5) == '10.70' OR !(\Drupal::currentUser()->isAnonymous()))
+	$intra = '<li><a href="http://webissues.ics.sdmiramar.net/issue/report?url=' . $_SERVER['REQUEST_URI'] . '">Report Issues With This Page</a></li>';
+    else
+	$intra = '';
 
     $build['contact']['content'] = [
       '#markup' => '
@@ -67,8 +72,8 @@ class MiramarCustomContactBlock extends BlockBase {
                   <li><a href="/privacy">Privacy Statement</a></li>
                   <li><a href="/facultystaff/faculty-info">Resources for Faculty &amp; Staff</a></li>
                   <li><a href="http://www.sdccd.edu/daapp/">Smoking/Substance Policy</a></li>
-                  <li><a href="https://get.adobe.com/reader/" target="_blank">Get Adobe Reader</a></li>
-                </ul>
+                  <li><a href="https://get.adobe.com/reader/" target="_blank">Get Adobe Reader</a></li>' . $intra .
+               '</ul>
               </div>
               <div class="col-sm-4">
                 <p class="img" role="heading"><img src="' . $imagepath . '/images/icon-note.png" alt="Accreditation"></p>

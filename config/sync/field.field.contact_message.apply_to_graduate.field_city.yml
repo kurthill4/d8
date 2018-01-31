@@ -1,0 +1,19 @@
+uuid: 9e31edfe-8df3-4f4a-8951-e947a6fc04d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.apply_to_graduate
+    - field.storage.contact_message.field_city
+id: contact_message.apply_to_graduate.field_city
+field_name: field_city
+entity_type: contact_message
+bundle: apply_to_graduate
+label: City
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

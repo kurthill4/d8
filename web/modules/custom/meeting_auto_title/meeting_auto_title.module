@@ -6,7 +6,7 @@ use Drupal\node\NodeInterface;
 //use Drupal\Core\Entity\EntityInterface;
 
 //Implements hook_form_FORM_ID_alter()
-function faculty_page_auto_title_faculty_page_form_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+function meeting_auto_title_committee_meeting_form_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
 
     $form['title']['#access'] = FALSE;
 

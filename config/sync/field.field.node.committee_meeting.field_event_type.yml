@@ -1,0 +1,32 @@
+uuid: 98558452-fb13-4203-b349-750b511cc04b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_type
+    - node.type.committee_meeting
+    - taxonomy.vocabulary.event_types
+  content:
+    - 'taxonomy_term:event_types:a560162f-1c16-44fc-90e3-d04748ced4eb'
+id: node.committee_meeting.field_event_type
+field_name: field_event_type
+entity_type: node
+bundle: committee_meeting
+label: 'Event Type'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: a560162f-1c16-44fc-90e3-d04748ced4eb
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event_types: event_types
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

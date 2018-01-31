@@ -53,7 +53,7 @@ sdccd:
     https://www.googletagmanager.com/gtag/js?id=UA-102982479-1: { type: external, attributes: { async: true } }
     js/sdccd-google.js: {}
 
-sdccd-blank:
+sdccd_blank:
   js:
     js/sdccd-blank.js: {}
 

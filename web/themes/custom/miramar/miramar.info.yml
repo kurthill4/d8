@@ -40,8 +40,4 @@ stylesheets-remove:
  - '@modules/contrib/slick/css/theme/slick.theme.css'
  - '@modules/contrib/slick/css/theme/slick.theme--classic.css'
 
-#libraries-override:
-#  modules/slick:
-#    css:
-#      component:
-#        /modules/contrib.slick/css/theme/slick.theme.css: false
+

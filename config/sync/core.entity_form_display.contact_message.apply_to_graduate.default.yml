@@ -1,0 +1,122 @@
+uuid: 28860bda-78bb-47d3-8315-bba64c775469
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.apply_to_graduate
+    - field.field.contact_message.apply_to_graduate.field_city
+    - field.field.contact_message.apply_to_graduate.field_email
+    - field.field.contact_message.apply_to_graduate.field_first_name
+    - field.field.contact_message.apply_to_graduate.field_last_name
+    - field.field.contact_message.apply_to_graduate.field_middle_or_initial
+    - field.field.contact_message.apply_to_graduate.field_phone
+    - field.field.contact_message.apply_to_graduate.field_state
+    - field.field.contact_message.apply_to_graduate.field_story
+    - field.field.contact_message.apply_to_graduate.field_street
+    - field.field.contact_message.apply_to_graduate.field_zip
+  module:
+    - field_layout
+    - layout_discovery
+    - telephone
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_twocol_bricks
+    settings: {  }
+id: contact_message.apply_to_graduate.default
+targetEntityType: contact_message
+bundle: apply_to_graduate
+mode: default
+content:
+  field_city:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: first_above
+  field_email:
+    weight: 0
+    settings:
+      size: 25
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: top
+  field_first_name:
+    weight: 2
+    settings:
+      size: 40
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: top
+  field_last_name:
+    weight: 3
+    settings:
+      size: 40
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: top
+  field_middle_or_initial:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: top
+  field_phone:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: top
+  field_state:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: second_above
+  field_story:
+    weight: 10
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: middle
+  field_street:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: top
+  field_zip:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: second_above
+  message:
+    type: string_textarea
+    weight: 9
+    settings:
+      rows: 12
+      placeholder: ''
+    region: middle
+    third_party_settings: {  }
+hidden:
+  copy: true
+  mail: true
+  name: true
+  preview: true
+  subject: true
