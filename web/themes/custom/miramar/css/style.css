@@ -109,17 +109,27 @@ h1, h2, h3, h4,h5 {
 
 /*--------------- FORMS -------------------*/
 
+form.webform-submission-form {
+	margin:1em 1em;
+}
+
 .webform-flex .form-text,
 .webform-flex .form-email {
 	width:inherit!important;
 }
-
-#edit-address-state-province,#edit-address-country {
+#edit-address-city {width:50px;}
+#edit-address-city, #edit-address-state-province,#edit-address-country {
 	width:auto;
+	margin-right:1em!important;
 }
 
 #edit-address-postal-code {
 	max-width:100px;
+}
+
+#edit-processed-text,#edit-share-your-story {
+	width:75%;
+	margin-bottom:1em;
 }
 
 /*--------------------------------------*/
