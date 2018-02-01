@@ -39,7 +39,7 @@ bootstrap-scripts:
 
 vtour:
   js:
-    http://www.youvisit.com/tour/Embed/js2: { type: external }
+    https://www.youvisit.com/tour/Embed/js2: { type: external }
 
 flickity:
   css:
@@ -58,14 +58,14 @@ sdccd_blank:
     js/sdccd-blank.js: {}
 
 twitter_hack:
-  header: true
+  #header: true
   js:
     js/twitterhack.js: {}
 
 Roboto:
   license:
     name: Apache License 2.0
-    url: http://www.apache.org/licenses/LICENSE-2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0
   css:
     theme:
       //fonts.googleapis.com/css?family=Roboto:400: { type: external }
@@ -74,7 +74,7 @@ Roboto:
 Oswald:
   license:
     name: Apache License 2.0
-    url: http://www.apache.org/licenses/LICENSE-2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0
   css:
     theme:
       //fonts.googleapis.com/css?family=Oswald:400: { type: external }
@@ -83,7 +83,7 @@ Oswald:
 Nixie:
   license:
     name: Apache License 2.0
-    url: http://www.apache.org/licenses/LICENSE-2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0
   css:
     theme:
       //fonts.googleapis.com/css?family=Nixie+One:400: { type: external }
