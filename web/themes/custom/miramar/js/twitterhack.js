@@ -30,15 +30,15 @@ if(ifrm.contentWindow.document.getElementsByClassName('timeline-Tweet-media').le
 	image.style = "-webkit-transform: scale(0.75);-moz-transform: scale(0.75);-ms-transform: scale(0.75);-o-transform: scale(0.75);transform: scale(0.75)";
 }
 var action = ifrm.contentWindow.document.getElementsByClassName('timeline-Tweet-action');
-//timelineWidget.style="height:100%";
-body.style="border:none";
+timelineWidget.style="height:100%";
+body.style="border:none;height:inherit";
 widget.style="background:none";
 header.style = "display:none";
 brand.style = "display:none";
 author.style = "display:none";
 meta.style = "display:none";
 footer.style = "padding-top:0;font-weight:bold;font-size:1em";
-content.style="line-height:100%;-webkit-margin-after:0em;margin-bottom:2px;font-family:'PT',serif;font-style:italic!important;font-size:300%!important;border:none";
+content.style="line-height:100%;height:auto;-webkit-margin-after:0;margin-bottom:2px;font-family:'PT',serif;font-style:italic!important;font-size:300%!important;border:none";
 for(i=0;i<action.length;i++) {
 	action[i].style = "display:none";
 }
