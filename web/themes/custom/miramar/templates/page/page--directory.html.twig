@@ -68,17 +68,8 @@
       ]
     %}
 <div class="spacer" style="height:1px">&nbsp;</div>
-    <header>
+    <header role="landmark">
         {{ page.navigation }}
-        {# .btn-navbar is used as the toggle for collapsed navbar content #}
-        {% if page.navigation_collapsible %}
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-            <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        {% endif %}
 
       {# Navigation (collapsible) #}
       {% if page.navigation_collapsible %}
@@ -188,4 +179,4 @@
   </div>
 {% endblock %}
 {% include 'footer.html.twig' %}
-<div>
+</div>
