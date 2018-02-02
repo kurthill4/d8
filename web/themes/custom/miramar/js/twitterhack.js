@@ -4,7 +4,7 @@ function populateIframe() {
 
 // Look for widget
 var ifrm = document.getElementById('twitter-widget-0');
-
+var fontsize = "250";
 // If widget did generate to iframe
 if (ifrm !== null){
   var timelineWidget = ifrm.contentWindow.document.getElementsByClassName('timeline-Widget')[0];
@@ -17,28 +17,33 @@ var header = ifrm.contentWindow.document.getElementsByClassName('timeline-Header
 var footer = ifrm.contentWindow.document.getElementsByClassName('timeline-Footer')[0];
 var brand = ifrm.contentWindow.document.getElementsByClassName('timeline-Tweet-brand')[0];
 var tweet = ifrm.contentWindow.document.getElementsByClassName('timeline-Tweet')[0];
-var author = ifrm.contentWindow.document.getElementsByClassName('timeline-Tweet-author')[0];//
+var author = ifrm.contentWindow.document.getElementsByClassName('timeline-Tweet-author')[0];
 var meta = ifrm.contentWindow.document.getElementsByClassName('timeline-Tweet-metadata')[0];
 var body = ifrm.contentWindow.document.getElementsByClassName('timeline-Body')[0];
+var viewport = ifrm.contentWindow.document.getElementsByClassName('timeline-Viewport')[0];
 var content = ifrm.contentWindow.document.getElementsByClassName("timeline-Tweet-text")[0];
+//var retweet = ifrm.contentWindow.document.getElementsByClassName("timeline-Tweet-retweetCredit")[0];
 if(ifrm.contentWindow.document.getElementsByClassName('timeline-Tweet-media').length > 0) {
 	var media = ifrm.contentWindow.document.getElementsByClassName('timeline-Tweet-media')[0];
 	var border = ifrm.contentWindow.document.getElementsByClassName('MediaCard')[0];
 	var image = ifrm.contentWindow.document.getElementsByClassName('MediaCard-media')[0];
-	media.style = "padding:0;height:auto;margin-bottom:0;";
+	fontsize = "175";
+	media.style = "padding:0;height:auto;-webkit-margin-after:0;margin-bottom:0;";
 	border.style = "max-height:60%;margin-bottom:0;padding:0";
 	image.style = "-webkit-transform: scale(0.75);-moz-transform: scale(0.75);-ms-transform: scale(0.75);-o-transform: scale(0.75);transform: scale(0.75)";
 }
 var action = ifrm.contentWindow.document.getElementsByClassName('timeline-Tweet-action');
 timelineWidget.style="height:100%";
-body.style="border:none;height:inherit";
+body.style="border:none;";
 widget.style="background:none";
-header.style = "display:none";
+header.style = "display :none";
+//retweet.style = "display:none";
 brand.style = "display:none";
 author.style = "display:none";
 meta.style = "display:none";
-footer.style = "padding-top:0;font-weight:bold;font-size:1em";
-content.style="line-height:100%;height:auto;-webkit-margin-after:0;margin-bottom:2px;font-family:'PT',serif;font-style:italic!important;font-size:300%!important;border:none";
+footer.style = "display:block;margin-top:1em;font-weight:bold;font-size:1em";
+viewport.style="-webkit-margin-after:0em;margin-bottom:1em";
+content.style="line-height:100%;-webkit-margin-after:0em;font-family:'PT',serif;font-style:italic!important;font-size:" + fontsize + "%!important;border:none";
 for(i=0;i<action.length;i++) {
 	action[i].style = "display:none";
 }

@@ -34,6 +34,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: top
+  created:
+    type: datetime_timestamp
+    weight: 9
+    region: bottom
+    settings: {  }
+    third_party_settings: {  }
   field_associated_campus_resource:
     weight: 3
     settings:
@@ -96,8 +102,15 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 8
+    region: bottom
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
 hidden:
-  created: true
   promote: true
   sticky: true
-  uid: true
