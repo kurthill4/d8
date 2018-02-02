@@ -71,6 +71,8 @@ h1, h2, h3, h4,h5 {
 	font-family: 'Oswald', sans-serif;
 }
 
+h2.mobile {background:none;}
+
 .region-content{background:#ffffff}
 .content h2, .content h3 {
 	color: #1d2451;
@@ -840,7 +842,7 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 .region-mission #block-twitterforhomepage {
 	width:33%;
 	margin: 0 auto;
-	background:none;
+	background:#dbf3f5;
 }
 
 .region-below-content .views-view-grid {
@@ -2535,6 +2537,11 @@ section#hero {max-height:602px!important}
 		.block-views-blockwhat-do-you-want-to-be-block-1 {display:block;margin-top:1px;}
 		.block-views-blockwhat-do-you-want-to-be-block-1 h1 {font-size:5vw!important;}
 		.block-views-blockwhat-do-you-want-to-be-block-1 p {font-size:3vw!important;}
+		 #block-twitterforhomepage {
+	width:99%;
+	margin: 0 auto;
+	background:#dbf3f5!important;
+}
 		aside {display:block;clear:both;position:relative;width:100vw!important;float:none;}
 		.homecall .get-started {
 			display:block;

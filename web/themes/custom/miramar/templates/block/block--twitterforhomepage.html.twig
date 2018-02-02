@@ -54,12 +54,15 @@
   ]
 %}
 <section{{ attributes.addClass(classes)}}{{create_attribute({'role':['widget']}) }}>
+<div class="hide-xs">
   {{ title_prefix }}
-	<h2><img src="/{{ directory }}/images/icon-twitter.png" alt="Follow Us On Twitter"> Recent Tweets</h3>
+	<h2><img src="/{{ directory }}/images/icon-twitter.png" alt="Recent Tweets"> Recent Tweets</h3>
   {{ title_suffix }}
 
   {% block content %}
     {{ content }}
   {% endblock %}
+</div>
+<h2 class="mobile hide-lg"><img src="/{{ directory }}/images/icon-twitter.png" alt="Follow Us On Twitter"> <a href="https://twitter.com/SDMiramar">Follow Us On Twitter</a></h2>
 </section>
 
