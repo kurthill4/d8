@@ -12,7 +12,7 @@ dependencies:
 id: views_block__degrees_block_1
 theme: miramar
 region: content
-weight: -21
+weight: -22
 provider: null
 plugin: 'views_block:degrees-block_1'
 settings:
