@@ -18,12 +18,12 @@ class MiramarCustomTestBlock extends BlockBase {
   /**
    * {@inheritdoc}
    */
-  public function build() {
-    $intra = '';
-    $imagepath = base_path() . drupal_get_path('theme', 'miramar');
-    //$theIP = $_SERVER['REMOTE_ADDR'];
+   //$theIP = $_SERVER['REMOTE_ADDR'];
 
-	if (!empty($_SERVER["HTTP_CLIENT_IP"]))
+
+  public function build() {
+    $imagepath = base_path() . drupal_get_path('theme', 'miramar');
+ 	if (!empty($_SERVER["HTTP_CLIENT_IP"]))
 	{
 	 //check for ip from share internet
 	 $theIP = $_SERVER["HTTP_CLIENT_IP"];
