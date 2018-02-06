@@ -1,0 +1,32 @@
+uuid: e569f3a8-c9da-4f0c-89a2-65408392e378
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - miramarcustom
+    - system
+  theme:
+    - miramar
+id: miramartest
+theme: miramar
+region: content
+weight: 0
+provider: null
+plugin: miramar_contact
+settings:
+  id: miramar_contact
+  label: 'Miramar Test'
+  provider: miramarcustom
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /test/test
+    negate: false
+    context_mapping: {  }
