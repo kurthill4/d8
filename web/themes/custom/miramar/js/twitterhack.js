@@ -27,7 +27,7 @@ if(ifrm.contentWindow.document.getElementsByClassName('timeline-Tweet-media').le
 	var media = ifrm.contentWindow.document.getElementsByClassName('timeline-Tweet-media')[0];
 	var border = ifrm.contentWindow.document.getElementsByClassName('MediaCard')[0];
 	var image = ifrm.contentWindow.document.getElementsByClassName('MediaCard-media')[0];
-	fontsize = "175";
+	fontsize = "150";
 	media.style = "padding:0;height:auto;-webkit-margin-after:0;margin-bottom:0;";
 	border.style = "max-height:60%;margin-bottom:0;padding:0";
 	image.style = "-webkit-transform: scale(0.75);-moz-transform: scale(0.75);-ms-transform: scale(0.75);-o-transform: scale(0.75);transform: scale(0.75)";
