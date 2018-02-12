@@ -19,7 +19,7 @@ class MiramarCustomDescriptionBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    //$theIP = $_SERVER['REMOTE_ADDR'];
+	$intra1 = '';
 
 	if (!empty($_SERVER["HTTP_CLIENT_IP"]))
 	{
@@ -35,10 +35,8 @@ class MiramarCustomDescriptionBlock extends BlockBase {
 	{
 	 $theIP = $_SERVER["REMOTE_ADDR"];
 	}
-//    if($theIP == '10.72.20.102' or substr($theIP,0,5) == '10.70' or !(\Drupal::currentUser()->isAnonymous()))
+    if($theIP == '10.72.20.102' or substr($theIP,0,5) == '10.70' or !(\Drupal::currentUser()->isAnonymous()))
 	$intra1 = '<br /><span class="hide-lg"><a href="http://webissues.ics.sdmiramar.net/issue/report?url=' . $_SERVER['REQUEST_URI'] . '">Report Issues With This Page</a></span>';
-//    else
-//	$intra1 = '';
     $build['description']['content'] = [
       '#markup' => '
         <div class="row hide-lg">
