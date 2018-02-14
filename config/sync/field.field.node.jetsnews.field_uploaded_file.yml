@@ -1,0 +1,27 @@
+uuid: a10d72fd-4769-45b2-821a-ce8a3e786b31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uploaded_file
+    - node.type.jetsnews
+  module:
+    - file
+id: node.jetsnews.field_uploaded_file
+field_name: field_uploaded_file
+entity_type: node
+bundle: jetsnews
+label: 'File to Upload'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: jetsnews
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

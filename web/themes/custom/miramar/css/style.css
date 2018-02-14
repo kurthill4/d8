@@ -1144,8 +1144,21 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	display: block;
 }
 
-.newscenter {margin-top:1em!important;}
+.newscenter {margin-top:2em!important;}
+.newscenter .views-field-title {max-width:50px!important;}
+.newscenter a {font-weight:bold!important;}
 
+.newscenter .col {margin-bottom:1em!important}
+.newscenter .col img {margin-right:2px!important}
+#block-views-block-news-sidebar-block-2 {
+	margin:0 1em;
+}
+.jetsnews .views-field-title {
+	font-size:2em;
+
+}
+#youtubechannel-list {height:100px!important}
+#channel_url {font-weight:bold;content:'<p>Foobar</p>'}
 
 .grn-block{
 	min-height:81px!important;
