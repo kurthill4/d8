@@ -37,9 +37,12 @@ class MiramarCustomTestBlock extends BlockBase {
 	{
 	 $theIP = $_SERVER["REMOTE_ADDR"];
 	}
-
+if(substr($theIP,0,5) == "10.70")
+	$test = $theIP;
+else
+	$test = "Not a local device";
     $build['test']['content'] = [
-      '#markup' => '<h1>' . $theIP . '</h1>'
+      '#markup' => '<h1>' . $test . '</h1>'
     ];
 
     return $build;

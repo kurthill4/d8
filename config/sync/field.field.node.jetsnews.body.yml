@@ -1,0 +1,22 @@
+uuid: c112c0ca-1fe2-4335-8926-7b3f9a18083f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.jetsnews
+  module:
+    - text
+id: node.jetsnews.body
+field_name: body
+entity_type: node
+bundle: jetsnews
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

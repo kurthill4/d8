@@ -1,0 +1,52 @@
+uuid: 45da0d29-76f0-461f-b0fd-2576a7ec2f51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.jetsnews.body
+    - field.field.node.jetsnews.field_publication_date
+    - field.field.node.jetsnews.field_uploaded_file
+    - node.type.jetsnews
+  module:
+    - datetime
+    - field_layout
+    - file
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.jetsnews.default
+targetEntityType: node
+bundle: jetsnews
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_publication_date:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_uploaded_file:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

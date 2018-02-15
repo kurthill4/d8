@@ -1,0 +1,24 @@
+uuid: 9dc49bc0-006c-488a-a1a5-b629a08c9316
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_date
+    - node.type.jetsnews
+  module:
+    - datetime
+id: node.jetsnews.field_publication_date
+field_name: field_publication_date
+entity_type: node
+bundle: jetsnews
+label: 'Publication Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime
