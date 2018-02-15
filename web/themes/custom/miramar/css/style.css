@@ -8,7 +8,7 @@ body{
 	background:#dbf3f5;
 }
 
-.noshow {
+.noshow,div.author {
 	display:none!important;
 }
 
