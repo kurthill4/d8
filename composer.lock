@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5de9dde10e61c04b6fb782bb5da990a6",
+    "content-hash": "5ea4644e61b9a0843badea6464b6fdb8",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4886,64 +4886,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/webform_layout_container"
             }
-        },
-        {
-            "name": "drupal/webforms",
-            "version": "dev-0.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/webforms",
-                "reference": "3d499c56ed31907f09f007ac7023a06757a9fdcc"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-0.x": "0.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-0.x-dev",
-                    "datestamp": "1460105341",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "AndreyMaximov",
-                    "homepage": "https://www.drupal.org/user/1024156"
-                },
-                {
-                    "name": "andrii.tiupa",
-                    "homepage": "https://www.drupal.org/user/2932651"
-                },
-                {
-                    "name": "danylevskyi",
-                    "homepage": "https://www.drupal.org/user/322039"
-                },
-                {
-                    "name": "podarok",
-                    "homepage": "https://www.drupal.org/user/116002"
-                },
-                {
-                    "name": "sanchiz",
-                    "homepage": "https://www.drupal.org/user/1671246"
-                }
-            ],
-            "description": "Performs specific alters of default Drupal behavior",
-            "homepage": "https://www.drupal.org/project/webforms",
-            "support": {
-                "source": "http://cgit.drupalcode.org/webforms"
-            },
-            "time": "2016-04-08 08:53:45"
         },
         {
             "name": "drupal/youtubechannel",
@@ -9911,8 +9853,7 @@
         "drupal/twitter": 20,
         "drupal/views_bootstrap": 20,
         "drupal/views_jump_menu": 10,
-        "drupal/webform": 5,
-        "drupal/webforms": 20
+        "drupal/webform": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,
