@@ -1144,10 +1144,10 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	display: block;
 }
 
-.newscenter {margin-top:2em!important;}
+.newscenter {width:auto;margin:2em auto!important;}
 .newscenter .views-field-title {max-width:50px!important;}
 .newscenter a {font-weight:bold!important;}
-
+.newscenter .views-row {padding-bottom:1em;}
 .newscenter .col {margin-bottom:1em!important}
 .newscenter .col img {margin-right:2px!important}
 #block-views-block-news-sidebar-block-2 {
