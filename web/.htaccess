@@ -73,6 +73,10 @@ AddEncoding gzip svgz
   RewriteCond %{REQUEST_URI} ^/user [NC]
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,E=nocache:1]
 
+  RewriteCond %{HTTPS} off
+  RewriteCond %{REQUEST_URI} ^/forms [NC]
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,E=nocache:1]
+
   <IfModule headers_module>
 	  Header always set Cache-Control "no-store, no-cache, must-revalidate" env=nocache
     Header always set Expires "Thu, 01 Jan 1970 00:00:00 GMT" env=nocache
