@@ -1,26 +1,37 @@
-<?php
+ <?php
 
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\node\NodeInterface;
 use Drupal\Core\Entity;
 use Drupal\Core\Entity\EntityInterface;
 
-//Implements hook_form_FORM_ID_alter()
-function meeting_auto_title_committee_meeting_form_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-
-    $form['title']['#access'] = FALSE;
-
+function meeting_auto_title_form_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+	switch($form['#node']->type) {
+		case 'jetsnews':
+		case 'committee_meeting':
+			$form['title']['#access'] = FALSE;
+			break;
+		default:
+	}
 }
 
-
-
-function meeting_auto_title_node_create(NodeInterface $node) {
-
-  switch ($node->getType()) {
+/**
+ * Implements hook_entity_presave().
+ */
+function meeting_auto_title_entity_presave(Drupal\Core\Entity\EntityInterface $entity) {
+  switch ($entity->bundle()) {
+    // Here you modify only content types you want
+    case 'jetsnews':
+      // Setting the title with the value of field_date.
+	$d = date_create($entity->get('field_publication_date')->value);
+      $entity->setTitle(date_format($d,'F Y'));
+     break;
     case 'committee_meeting':
-      //Change the title
-	$node->setTitle('Committee Meeting');      
-	break;
+      // Setting the title with the committee name and date.
+	$c = $entity->get('field_committee')->entity->getTitle();
+	$d = date_create($entity->get('field_meeting_date_time')->value);
+      $entity->setTitle($c . ' Meeting ' . date_format($d,'m/d/Y'));
+     break;
   }
 }
 
