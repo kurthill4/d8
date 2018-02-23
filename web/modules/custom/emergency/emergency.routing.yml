@@ -1,0 +1,15 @@
+emergency_test:
+  path: /emergency/test
+  defaults:
+    _controller: Drupal\emergency\Controller\emergencyController::test
+  requirements:
+    _permission: 'access content'
+
+emergency_checkForMessage:
+  path: /emergency/checkForMessage
+  defaults:
+    _controller: Drupal\emergency\Controller\emergencyController::path_checkForMessage
+  requirements:
+    _permission: 'access content'
+  options:
+    no_cache: TRUE

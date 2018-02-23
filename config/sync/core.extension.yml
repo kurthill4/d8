@@ -30,6 +30,7 @@ module:
   dynamic_page_cache: 0
   editor: 0
   embed: 0
+  emergency: 0
   entity: 0
   entity_reference_revisions: 0
   entity_reference_views_select: 0

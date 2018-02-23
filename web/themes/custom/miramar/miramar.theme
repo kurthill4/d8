@@ -55,3 +55,8 @@ function miramar_theme_suggestions_page_alter(&$suggestions, &$vars) {
   }
 }
 
+function miramar_webform_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+	$form['#https'] = true;  
+
+  }
+
