@@ -1,0 +1,25 @@
+<?php
+/**
+ *
+ *
+ *
+ */
+
+function emergency_page_top(&$page)
+{
+  $msg = \Drupal::state()->get('emergency_message');
+
+  if($msg)
+  {
+    $header = '<h1>SDCCD Districtwide Emergency Announcement</h1>';
+    $msg = "{$header}<p>{$msg}</p>";
+    $msg = '<div id="emergency" style="background-color:red;">' . $msg . '</div>';
+    $msg = '<div id="emergency">' . $msg . '</div>';
+    $page['content'][] = array(
+      '#markup' => t("{$msg}"),
+      '#weight' => 0,
+      '#cache' => ['max-age' => 0]
+    );
+  }
+
+}
