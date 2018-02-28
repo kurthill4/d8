@@ -27,7 +27,7 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '/campus/*'
+    pages: "/campus/*\r\n/forms/*"
     negate: false
     context_mapping: {  }
   condition_group:
