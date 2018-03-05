@@ -740,7 +740,8 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	width:100%;
 }
 
-.call {width:100%}
+.call,.callsmall {width:100%}
+.callsmall {margin-top:0.9em}
 
 .call a{
 	background: #1d2451;
@@ -753,18 +754,30 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
   	font-size: 1.5em;
 	text-transform: uppercase;
 }
-.call a:hover{
+.callsmall a{
+ 	background: #1d2451;
+	width:inherit;
+	display: inline-block;
+	padding: 0 50px 0 0;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+  	font-size: 1.33em;
+	text-transform: uppercase;
+}
+
+.call a:hover,.callsmall a:hover{
 	text-decoration: none;
 	background: #a22130;
 }
-.call span{
+.call span,.callsmall a span{ 
 	margin-right: 15px;
 	height:100%;
 	background: #a22130;
 	display: inline-block;
 	padding: 10px 20px;
 }
-.call a:hover span{
+.call a:hover span,.callsmall a:hover span{
 	background: #1d2451;
 }
 
@@ -2203,7 +2216,12 @@ nav.main-menu {padding-left:0;}
 		  	font-size: 1.5vw;
 			width:100%;
 		}
-		.call span{
+		.callsmall a{
+			padding: 0 5px 0 0;
+		  	font-size: 1.25vw;
+			width:100%;
+		}	
+		.call span, .callsmall span{
 			margin-right: 5px;
 			padding: 10px;
 		}	
