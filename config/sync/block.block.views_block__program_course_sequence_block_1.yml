@@ -1,24 +1,23 @@
-uuid: 8e77916b-c3d9-4634-aab1-def4564924c0
+uuid: 728d4756-d529-495e-9699-c609dca8fe4b
 langcode: en
-status: true
+status: false
 dependencies:
   config:
-    - views.view.program_contact
+    - views.view.program_course_sequence
   module:
     - block_visibility_groups
     - node
-    - system
     - views
   theme:
     - miramar
-id: views_block__program_contact_block_2
+id: views_block__program_course_sequence_block_1
 theme: miramar
 region: sidebar_second
-weight: -28
+weight: -18
 provider: null
-plugin: 'views_block:program_contact-block_2'
+plugin: 'views_block:program_course_sequence-block_1'
 settings:
-  id: 'views_block:program_contact-block_2'
+  id: 'views_block:program_course_sequence-block_1'
   label: ''
   provider: views
   label_display: visible
@@ -34,12 +33,7 @@ visibility:
   node_type:
     id: node_type
     bundles:
-      custom_web_page: custom_web_page
+      program: program
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
-  request_path:
-    id: request_path
-    pages: '/programs/*'
-    negate: false
-    context_mapping: {  }
