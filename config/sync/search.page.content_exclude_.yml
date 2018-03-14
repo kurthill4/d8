@@ -1,0 +1,27 @@
+uuid: 3c742d02-2e41-422f-82ea-7122228ada35
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_exclude
+id: content_exclude_
+label: 'Content (Exclude)'
+path: results
+weight: 0
+plugin: search_exclude_node_search
+configuration:
+  rankings: {  }
+  excluded_bundles:
+    announcement: announcement
+    by_the_numbers: by_the_numbers
+    degree: degree
+    homepage_hero: homepage_hero
+    home_page: home_page
+    images: images
+    news_center: news_center
+    new_student_step: new_student_step
+    pathways: pathways
+    resource_links: resource_links
+    sdccd_campaign: sdccd_campaign
+    slick: slick
+    webform: webform
