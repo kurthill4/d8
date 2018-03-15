@@ -15,6 +15,8 @@ configuration:
     announcement: announcement
     by_the_numbers: by_the_numbers
     degree: degree
+    department_page: department_page
+    faculty_page: faculty_page
     homepage_hero: homepage_hero
     home_page: home_page
     images: images
