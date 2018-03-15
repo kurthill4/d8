@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.taxonomy_term.field_web_pages
     - node.type.custom_web_page
+    - node.type.webform
     - taxonomy.vocabulary.campus_resources
 id: taxonomy_term.campus_resources.field_web_pages
 field_name: field_web_pages
@@ -21,9 +22,10 @@ settings:
   handler_settings:
     target_bundles:
       custom_web_page: custom_web_page
+      webform: webform
     sort:
       field: title
       direction: ASC
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: custom_web_page
 field_type: entity_reference

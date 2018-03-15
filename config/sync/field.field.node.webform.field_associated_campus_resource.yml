@@ -1,0 +1,28 @@
+uuid: da29e1ce-e61c-40f4-bc29-f9b7e7e11300
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_associated_campus_resource
+    - node.type.webform
+    - taxonomy.vocabulary.campus_resources
+id: node.webform.field_associated_campus_resource
+field_name: field_associated_campus_resource
+entity_type: node
+bundle: webform
+label: 'Related Campus Resource'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      campus_resources: campus_resources
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
