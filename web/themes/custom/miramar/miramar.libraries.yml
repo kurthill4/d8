@@ -58,7 +58,7 @@ sdccd_blank:
     js/sdccd-blank.js: {}
 
 twitter_hack:
-  #header: true
+  header: true
   js:
     js/twitterhack.js: {}
 
