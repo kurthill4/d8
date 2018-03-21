@@ -12,7 +12,7 @@ _core:
 id: miramar_page_title
 theme: miramar
 region: content
-weight: -27
+weight: -28
 provider: null
 plugin: page_title_block
 settings:

@@ -11,8 +11,8 @@ dependencies:
     - miramar
 id: views_block__homepage_news_features_block_1_2
 theme: miramar
-region: content
-weight: -19
+region: gallery
+weight: -28
 provider: null
 plugin: 'views_block:homepage_news_features-block_1'
 settings:

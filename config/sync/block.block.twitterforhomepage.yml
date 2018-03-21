@@ -12,7 +12,7 @@ dependencies:
 id: twitterforhomepage
 theme: miramar
 region: mission
-weight: 0
+weight: -28
 provider: null
 plugin: 'block_content:0b28f63d-e3c7-4c56-a4f8-2726cb7034fe'
 settings:

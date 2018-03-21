@@ -11,8 +11,8 @@ dependencies:
     - miramar
 id: views_block__news_sidebar_block_2
 theme: miramar
-region: content
-weight: -18
+region: buttons
+weight: -28
 provider: null
 plugin: 'views_block:news_sidebar-block_2'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: views_block__program_carousel_block_1
 theme: miramar
 region: gallery
-weight: 0
+weight: -29
 provider: null
 plugin: 'views_block:program_carousel-block_1'
 settings:
