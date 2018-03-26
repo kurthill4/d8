@@ -36,6 +36,11 @@ libraries:
   - 'miramar/Oswald'
   - 'miramar/Nixie'
 
+libraries-override:
+  youtubechannel/youtubechannel:
+    js:
+      js/youtubechannel.js: js/youtubechannel.js
+
 stylesheets-remove:
  - '@modules/contrib/slick/css/theme/slick.theme.css'
  - '@modules/contrib/slick/css/theme/slick.theme--classic.css'
