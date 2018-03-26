@@ -15,9 +15,12 @@ body{
 .gateway .page-header,
 .directory .page-header,
 .resources .page-header,
+.news-center .page-header,
 .program .page-header {
 	display:none;
 }
+
+
 
 .map-page .page-header {display:block;width:100%!important;}
 
@@ -114,25 +117,38 @@ h2.mobile {background:none;}
 form.webform-submission-form {
 	margin:1em 1em;
 }
-
+.webform-submission-scholarship-awards-rsvp-form .form-email {width:25%!important;}
 .webform-flex .form-text,
 .webform-flex .form-email {
 	width:inherit!important;
 }
+
+.webform-submission-scholarship-awards-rsvp-form #edit-student-name-first,
+.webform-submission-scholarship-awards-rsvp-form #edit-student-name-last {
+	width:80%;
+}
 #edit-address-city {width:50px;}
-#edit-address-city, #edit-address-state-province,#edit-address-country {
-	width:auto;
+#edit-address-city, #edit-address-state-province {
 	margin-right:1em!important;
 }
+
+#edit-address-city{
+	width:75%!important;
+}
+#edit-address-state-province {
+	width:50%!important;
+}
+
 
 #edit-address-postal-code {
 	max-width:100px;
 }
 
-#edit-processed-text,#edit-share-your-story {
+#edit-processed-text,#edit-share-your-story,#edit-names-of-guests {
 	width:75%;
 	margin-bottom:1em;
 }
+
 
 /*--------------------------------------*/
 .campus-news img {float:left}

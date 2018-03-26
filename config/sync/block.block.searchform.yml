@@ -10,7 +10,7 @@ dependencies:
 id: searchform
 theme: miramar
 region: content
-weight: -20
+weight: -21
 provider: null
 plugin: search_form_block
 settings:

@@ -10,8 +10,8 @@ dependencies:
     - miramar
 id: youtubechannel
 theme: miramar
-region: content
-weight: -17
+region: mission
+weight: -27
 provider: null
 plugin: youtubechannel_block
 settings:

@@ -11,7 +11,7 @@ dependencies:
 id: homepagecalltoaction
 theme: miramar
 region: buttons
-weight: 0
+weight: -29
 provider: null
 plugin: miramar_call
 settings:

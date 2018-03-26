@@ -1,29 +1,28 @@
-uuid: 5784ec00-9b42-4735-b293-bddeaa2424ee
+uuid: 1633949a-6179-4ca0-ad43-a9d6e0962766
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.program_faculty
+    - views.view.jetsnews
   module:
     - block_visibility_groups
     - node
     - views
   theme:
     - miramar
-id: views_block__program_faculty_block_1
+id: views_block__jetsnews_block_1
 theme: miramar
-region: content
-weight: -22
+region: mission
+weight: -26
 provider: null
-plugin: 'views_block:program_faculty-block_1'
+plugin: 'views_block:jetsnews-block_1'
 settings:
-  id: 'views_block:program_faculty-block_1'
+  id: 'views_block:jetsnews-block_1'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
   items_per_page: none
-  context_mapping: {  }
 visibility:
   condition_group:
     id: condition_group
@@ -33,7 +32,7 @@ visibility:
   node_type:
     id: node_type
     bundles:
-      program: program
+      news_center: news_center
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
