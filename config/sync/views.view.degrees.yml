@@ -773,7 +773,7 @@ display:
       title: 'Degrees & Certificates'
       css_class: degree-list
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -1640,7 +1640,7 @@ display:
           hide_empty: false
           default_field_elements: true
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -1667,7 +1667,7 @@ display:
         footer: false
       footer: {  }
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'

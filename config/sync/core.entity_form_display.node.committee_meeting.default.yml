@@ -95,6 +95,13 @@ content:
     third_party_settings: {  }
     type: file_generic
     region: second_above
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 121
+    third_party_settings: {  }
+    region: middle
   uid:
     type: entity_reference_autocomplete
     weight: 8
@@ -104,6 +111,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: middle
 hidden:
   created: true
   field_file_code: true

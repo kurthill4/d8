@@ -81,7 +81,8 @@ content:
   field_event_flyer:
     weight: 104
     label: above
-    settings: {  }
+    settings:
+      use_description_as_link_text: true
     third_party_settings: {  }
     type: file_default
     region: content

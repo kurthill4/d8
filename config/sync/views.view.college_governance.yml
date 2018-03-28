@@ -70,7 +70,7 @@ display:
         path:
           id: path
           table: node
-          field: path
+          field: view_node
           relationship: none
           group_type: group
           admin_label: ''
@@ -117,7 +117,8 @@ display:
           hide_alter_empty: true
           absolute: false
           entity_type: node
-          plugin_id: node_path
+          plugin_id: entity_link
+          output_url_as_text: true
         field_custom_url:
           id: field_custom_url
           table: node__field_custom_url
@@ -777,7 +778,7 @@ display:
         path:
           id: path
           table: node
-          field: path
+          field: view_node
           relationship: none
           group_type: group
           admin_label: ''
@@ -824,7 +825,8 @@ display:
           hide_alter_empty: true
           absolute: false
           entity_type: node
-          plugin_id: node_path
+          plugin_id: entity_link
+          output_url_as_text: true
         title:
           id: title
           table: node_field_data
@@ -1030,7 +1032,7 @@ display:
           content: '<p><a href="/campus/governance/info"><strong>Click Here for Information about College Governance</strong></a></p>'
           plugin_id: text_custom
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
