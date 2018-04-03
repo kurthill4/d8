@@ -1,5 +1,5 @@
 timeout: 1800
-max_timeout: 172800
+max_timeout: 1728000
 padding: 60
 role_logout: false
 redirect_url: /user/login

@@ -1,9 +1,12 @@
+uuid: 4871b2b5-9081-47d4-b648-23d8a6a09d9f
 langcode: en
 status: closed
 dependencies:
   enforced:
     module:
       - webform_templates
+_core:
+  default_config_hash: QPg-l0VMqYN1LLXv7Wfs2dIbg4vFDflx8reGu-2UYl0
 open: null
 close: null
 uid: null
@@ -222,6 +225,3 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-uuid: 4871b2b5-9081-47d4-b648-23d8a6a09d9f
-_core:
-  default_config_hash: QPg-l0VMqYN1LLXv7Wfs2dIbg4vFDflx8reGu-2UYl0

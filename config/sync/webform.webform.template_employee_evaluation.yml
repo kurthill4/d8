@@ -1,9 +1,12 @@
+uuid: d3542b13-f7aa-435e-b329-11df872ab003
 langcode: en
 status: closed
 dependencies:
   enforced:
     module:
       - webform_templates
+_core:
+  default_config_hash: QNlSCGXBlV0di6MrLp3RlRpzQYXN6enj_DI2KOigiU8
 open: null
 close: null
 uid: null
@@ -143,6 +146,3 @@ access:
     users: {  }
     permissions: {  }
 handlers: {  }
-uuid: d3542b13-f7aa-435e-b329-11df872ab003
-_core:
-  default_config_hash: QNlSCGXBlV0di6MrLp3RlRpzQYXN6enj_DI2KOigiU8

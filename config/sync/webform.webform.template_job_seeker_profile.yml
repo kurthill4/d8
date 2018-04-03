@@ -1,9 +1,12 @@
+uuid: cd1df910-4524-49e3-80c8-3c7397038fad
 langcode: en
 status: closed
 dependencies:
   enforced:
     module:
       - webform_templates
+_core:
+  default_config_hash: RgzkOqTbSONSwqMjfWYVi9idwUTLFJnp2NnosLog43E
 open: null
 close: null
 uid: null
@@ -175,6 +178,3 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-uuid: cd1df910-4524-49e3-80c8-3c7397038fad
-_core:
-  default_config_hash: RgzkOqTbSONSwqMjfWYVi9idwUTLFJnp2NnosLog43E
