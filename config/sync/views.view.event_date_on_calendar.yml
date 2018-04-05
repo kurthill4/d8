@@ -3,7 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.node.field_committee
     - field.storage.node.field_event_date
+    - field.storage.node.field_event_type
+    - field.storage.node.field_meeting_date_time
+    - node.type.committee_meeting
     - node.type.event
     - taxonomy.vocabulary.event_types
   module:
@@ -63,7 +67,7 @@ display:
               autosubmit: false
               autosubmit_hide: false
             field_event_type_target_id:
-              bef_format: default
+              bef_format: bef
               more_options:
                 bef_select_all_none: false
                 bef_collapsible: false
@@ -80,7 +84,7 @@ display:
         options:
           calendar_type: month
           mini: '0'
-          name_size: '3'
+          name_size: '99'
           with_weekno: '0'
           max_items: '0'
           max_items_behavior: more
@@ -98,13 +102,110 @@ display:
         type: calendar_row
         options:
           colors:
-            legend: type
+            legend: taxonomy
             calendar_colors_type:
-              article: '#ffffff'
-              page: '#ffffff'
-            taxonomy_field: ''
-            calendar_colors_vocabulary: {  }
+              announcement: '#ffffff'
+              by_the_numbers: '#ffffff'
+              campus_news: '#ffffff'
+              committee_meeting: '#ffffff'
+              committee_page: '#ffffff'
+              custom_web_page: '#ffffff'
+              degree: '#ffffff'
+              department_page: '#ffffff'
+              document: '#ffffff'
+              event: '#ffffff'
+              faculty_page: '#ffffff'
+              homepage_hero: '#ffffff'
+              home_page: '#ffffff'
+              images: '#ffffff'
+              jetsnews: '#ffffff'
+              map_page: '#ffffff'
+              news_center: '#ffffff'
+              new_student_step: '#ffffff'
+              pathways: '#ffffff'
+              program: '#ffffff'
+              resource_links: '#ffffff'
+              sdccd_campaign: '#ffffff'
+              slick: '#ffffff'
+              webform: '#ffffff'
+            taxonomy_field: field_event_type
+            calendar_colors_vocabulary:
+              field_event_type: event_types
+            calendar_colors_taxonomy:
+              7: '#008080'
+              8: '#808080'
+              319: '#ffd4f1'
+              9: '#719500'
+              309: '#ff0000'
+              10: '#0000ff'
+              312: '#642566'
+              11: '#000000'
+              12: '#008000'
+              13: '#d1d4d3'
       fields:
+        field_event_type:
+          id: field_event_type
+          table: node__field_event_type
+          field: field_event_type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         title:
           id: title
           table: node_field_data
@@ -167,10 +268,137 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: field
+        field_committee:
+          id: field_committee
+          table: node__field_committee
+          field: field_committee
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         field_event_date:
           id: field_event_date
           table: node__field_event_date
           field: field_event_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: daterange_plain
+          settings:
+            timezone_override: ''
+            separator: '-'
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_meeting_date_time:
+          id: field_meeting_date_time
+          table: node__field_meeting_date_time
+          field: field_meeting_date_time
           relationship: none
           group_type: group
           admin_label: ''
@@ -252,6 +480,7 @@ display:
           admin_label: ''
           operator: in
           value:
+            committee_meeting: committee_meeting
             event: event
           group: 1
           exposed: false
@@ -296,7 +525,7 @@ display:
           exposed: true
           expose:
             operator_id: field_event_type_target_id_op
-            label: 'Event Type (field_event_type)'
+            label: ''
             description: ''
             use_operator: false
             operator: field_event_type_target_id_op
@@ -349,7 +578,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          order: ASC
+          order: DESC
           exposed: false
           expose:
             label: ''
@@ -361,6 +590,8 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      css_class: calendar
+      title: 'Campus Calendar'
     cache_metadata:
       max-age: -1
       contexts:
@@ -371,7 +602,10 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.field_committee'
         - 'config:field.storage.node.field_event_date'
+        - 'config:field.storage.node.field_event_type'
+        - 'config:field.storage.node.field_meeting_date_time'
   page_day:
     display_plugin: page
     id: page_day
@@ -489,7 +723,10 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.field_committee'
         - 'config:field.storage.node.field_event_date'
+        - 'config:field.storage.node.field_event_type'
+        - 'config:field.storage.node.field_meeting_date_time'
   page_month:
     display_plugin: page
     id: page_month
@@ -497,7 +734,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: calendar-field_event_date/month
+      path: events-calendar
       display_description: ''
       menu:
         type: tab
@@ -585,7 +822,10 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.field_committee'
         - 'config:field.storage.node.field_event_date'
+        - 'config:field.storage.node.field_event_type'
+        - 'config:field.storage.node.field_meeting_date_time'
   page_week:
     display_plugin: page
     id: page_week
@@ -703,7 +943,10 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.field_committee'
         - 'config:field.storage.node.field_event_date'
+        - 'config:field.storage.node.field_event_type'
+        - 'config:field.storage.node.field_meeting_date_time'
   page_year:
     display_plugin: page
     id: page_year
@@ -821,4 +1064,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.field_committee'
         - 'config:field.storage.node.field_event_date'
+        - 'config:field.storage.node.field_event_type'
+        - 'config:field.storage.node.field_meeting_date_time'

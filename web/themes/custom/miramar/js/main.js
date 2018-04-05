@@ -4,6 +4,9 @@ function _toggleArrow(ele) {
 }
 var pushDown = document.getElementById("push");
 
+
+
+
 (function($) {
   $('a.mobile-menu').click(function(){
     if($(pushDown).hasClass("push")){

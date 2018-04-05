@@ -1,24 +1,25 @@
-uuid: 13e7563d-ec25-4456-9063-60dd4c86c593
+uuid: 5c6d3569-0319-4315-91e0-3284ba93e921
 langcode: en
 status: true
 dependencies:
   module:
     - block_visibility_groups
-    - miramarcustom
+    - calendar
     - system
   theme:
     - miramar
-id: miramartest
+id: calendarlegend
 theme: miramar
 region: content
-weight: -19
+weight: -25
 provider: null
-plugin: miramar_test
+plugin: calendar_legend_block
 settings:
-  id: miramar_test
-  label: 'Miramar Test'
-  provider: miramarcustom
+  id: calendar_legend_block
+  label: 'Calendar legend'
+  provider: calendar
   label_display: '0'
+  calendar_legend_view_settings_view: 'event_date_on_calendar:page_month'
 visibility:
   condition_group:
     id: condition_group
@@ -27,6 +28,6 @@ visibility:
     context_mapping: {  }
   request_path:
     id: request_path
-    pages: /test/test
+    pages: "/events-calendar\r\n/events-calendar/*"
     negate: false
     context_mapping: {  }

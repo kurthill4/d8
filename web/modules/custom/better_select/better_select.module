@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+/*function better_select_theme($existing, $type, $theme, $path) {
+	$('#edit-field-event-type-target-id').dropdownchecklist();
+}
+
+
+function better_select_element_info_alter(array &$types) {
+  if (isset($types['select'])) {
+    $types['select']['#attached']['library'][] = 'better_select/better_select';
+  }
+}*/
