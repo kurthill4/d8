@@ -61,6 +61,8 @@
   vertical-align: top;
   margin: 0;
   padding: 0;
+height:10%;
+overflow-y:scroll;
 }
 
 /**

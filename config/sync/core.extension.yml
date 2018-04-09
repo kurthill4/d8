@@ -47,7 +47,6 @@ module:
   help: 0
   history: 0
   image: 0
-  jquery_ui_multiselect_widget: 0
   layout_discovery: 0
   libraries: 0
   link: 0
