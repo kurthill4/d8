@@ -601,7 +601,7 @@ nav.mobile-nav li:first-child ol li{
 }
 
 .slide-campaign {
-	background: transparent url(../images/ad/miramar_Spring18_0.png) no-repeat center 0;
+	background: transparent url(../images/ad/miramar_Summer18_0.png) no-repeat center 0;
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
   -o-background-size: 100% auto;
@@ -2413,7 +2413,7 @@ section#hero {max-height:602px!important}
 		}
 
 		.slide-campaign {
-			background: transparent url(../images/ad/miramar_Spring18_1.png) no-repeat bottom 0;
+			background: transparent url(../images/ad/miramar_Summer18_1.png) no-repeat bottom 0;
 		  -webkit-background-size: 960px 606px;
 		  -moz-background-size: 960px 606px;
 		  -o-background-size: 960px 606px;
@@ -2646,7 +2646,7 @@ section#hero {max-height:602px!important}
 
 		.carousel {position:static;}
 		.slide-campaign {
-			background: transparent url(../images/ad/miramar_Spring18_sm.png) no-repeat center bottom local;
+			background: transparent url(../images/ad/miramar_Summer18_sm.png) no-repeat center bottom local;
 			-webkit-background-size: 100% auto;
 			-moz-background-size: 100% auto;
 			-o-background-size: 100% auto;
