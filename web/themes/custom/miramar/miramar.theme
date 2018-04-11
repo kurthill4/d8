@@ -44,6 +44,7 @@ function miramar_preprocess_block(&$variables) {
   $variables['nodeid'] = $nid;
 }
 
+
 function miramar_theme_suggestions_page_alter(&$suggestions, &$vars) {
   if (\Drupal::routeMatch()->getRouteName() == 'entity.taxonomy_term.canonical' && $tid = \Drupal::routeMatch()->getRawParameter('taxonomy_term')) {
     $term = Term::load($tid);
