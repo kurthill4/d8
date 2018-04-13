@@ -66,7 +66,7 @@
 		$numErrors = 0;
 		$numNodes = 0;
 		$totalNodes = 0;
-		$newTZ = new \DateTimeZone("UTC");
+		$newTZ = new \DateTimeZone("America/Los_Angeles");
 		
 		// Now, pull the correct nodes
 

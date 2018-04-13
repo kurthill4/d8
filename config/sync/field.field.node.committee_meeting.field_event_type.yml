@@ -7,7 +7,7 @@ dependencies:
     - node.type.committee_meeting
     - taxonomy.vocabulary.event_types
   content:
-    - 'taxonomy_term:event_types:a560162f-1c16-44fc-90e3-d04748ced4eb'
+    - 'taxonomy_term:event_types:fc2ba08a-c5a9-4213-bba7-fe38cf460953'
 id: node.committee_meeting.field_event_type
 field_name: field_event_type
 entity_type: node
@@ -18,7 +18,7 @@ required: false
 translatable: true
 default_value:
   -
-    target_uuid: a560162f-1c16-44fc-90e3-d04748ced4eb
+    target_uuid: fc2ba08a-c5a9-4213-bba7-fe38cf460953
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'

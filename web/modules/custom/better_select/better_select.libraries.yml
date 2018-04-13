@@ -1,0 +1,12 @@
+better_select:
+  header: true
+  css:
+    theme:
+      css/better_select.css: {}
+  js:
+    js/ui.dropdownchecklist.js: {}
+    #js/better_select.init.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/jquery.ui

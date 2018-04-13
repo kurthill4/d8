@@ -789,6 +789,7 @@ display:
               program_manager: '0'
               pio: '0'
               committee_content_manager: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: 'Combine fields filter'
@@ -843,6 +844,7 @@ display:
               taxonomy_manager: '0'
               user_manager: '0'
               faculty: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -895,6 +897,7 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -959,7 +962,7 @@ display:
       link_url: ''
       link_display: page_1
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -1045,7 +1048,7 @@ display:
           content: '<h5><a href="/directory/people">Back to List</a></h5>'
           plugin_id: text_custom
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -1111,7 +1114,7 @@ display:
         fields: true
         header: true
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'

@@ -40,6 +40,11 @@ libraries-override:
   youtubechannel/youtubechannel:
     js:
       js/youtubechannel.js: js/youtubechannel.js
+  calendar/calendar.theme:
+    css:
+      theme:
+        css/calendar.css: css/calendar.css
+        css/calendar_multiday.css: css/calendar_multiday .css
 
 stylesheets-remove:
  - '@modules/contrib/slick/css/theme/slick.theme.css'
