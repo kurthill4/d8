@@ -66,6 +66,13 @@ display:
           class: ''
       row:
         type: fields
+        options:
+          default_field_elements: true
+          inline:
+            field_last_name: field_last_name
+            field_last_name_1: field_last_name_1
+          separator: '<br />'
+          hide_empty: false
       fields:
         path:
           id: path
@@ -947,14 +954,30 @@ display:
           summary: ''
           description: ''
           columns:
+            path: path
+            field_custom_url: field_custom_url
             title: title
             mail: mail
             field_first_name: field_first_name
             field_last_name: field_last_name
             mail_1: mail_1
             field_first_name_1: field_first_name_1
-            field_last_name_1: field_last_name_1
+            field_last_name_1: field_last_name
           info:
+            path:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_custom_url:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
             title:
               sortable: 0
               default_sort_order: asc
@@ -980,7 +1003,7 @@ display:
               sortable: 0
               default_sort_order: asc
               align: ''
-              separator: ''
+              separator: '<br />'
               empty_column: 0
               responsive: ''
             mail_1:
