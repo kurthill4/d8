@@ -136,6 +136,8 @@
         },
 	"patches": {
 		"drupal/core": {"Role permission to view user email": "https://www.drupal.org/files/issues/role_based_email_access-2799049-2.patch"
+		},
+		"drupal/entity_reference_views_select": {"Allowing No Selection for entity references": "https://www.drupal.org/files/issues/ervs-emptyvalue-2943488-3-8x.patch"
 		}
 		
 }
