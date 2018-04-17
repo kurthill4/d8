@@ -453,7 +453,7 @@ display:
       display_extenders: {  }
       css_class: 'step-page step-panel'
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -541,7 +541,7 @@ display:
           1: AND
       title: 'Future Students'
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -563,7 +563,7 @@ display:
         title: false
       path: currentstudents
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -651,7 +651,7 @@ display:
           1: AND
       path: graduating-students
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'

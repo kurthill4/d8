@@ -14,6 +14,7 @@ body{
 
 .gateway .page-header,
 .directory .page-header,
+.calendar-page .page-header,
 .resources .page-header,
 .news-center .page-header,
 .program .page-header {
@@ -587,6 +588,13 @@ nav.mobile-nav li:first-child ol li{
 }
 .slide-pr, .slide-gr {
 	background: transparent url(../images/program-banner.jpg) no-repeat left top scroll;
+  -webkit-background-size: 1280px 600px;
+  -moz-background-size: 1280px 600px;
+  -o-background-size: 1280px 600px;
+  background-size: 1280px 600px;
+}
+.slide-cd {
+	background: transparent url(../images/calendar-banner.jpg) no-repeat left top scroll;
   -webkit-background-size: 1280px 600px;
   -moz-background-size: 1280px 600px;
   -o-background-size: 1280px 600px;
@@ -1196,6 +1204,10 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	background: #2c7d81;
 	padding: 20px;
 }
+
+.calendar-legend table {margin-left:auto;margin-right:1px}
+.calendar-legend table td {padding:0.25em}
+.calendar-legend table th {text-align:center}
 
 .view-id-directory {
 	margin: 10px 10px 0 20px;

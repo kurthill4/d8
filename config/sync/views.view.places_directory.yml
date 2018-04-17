@@ -791,7 +791,7 @@ display:
           1: AND
           2: AND
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -879,7 +879,7 @@ display:
           plugin_id: text_custom
       inherit_arguments: false
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -899,7 +899,7 @@ display:
       display_extenders: {  }
       path: directory/places
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'

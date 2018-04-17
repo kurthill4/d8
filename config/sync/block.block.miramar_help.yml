@@ -10,8 +10,8 @@ _core:
   default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
 id: miramar_help
 theme: miramar
-region: content
-weight: -29
+region: help
+weight: -30
 provider: null
 plugin: help_block
 settings:

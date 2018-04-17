@@ -66,11 +66,18 @@ display:
           class: ''
       row:
         type: fields
+        options:
+          default_field_elements: true
+          inline:
+            field_last_name: field_last_name
+            field_last_name_1: field_last_name_1
+          separator: '<br />'
+          hide_empty: false
       fields:
         path:
           id: path
           table: node
-          field: path
+          field: view_node
           relationship: none
           group_type: group
           admin_label: ''
@@ -117,7 +124,8 @@ display:
           hide_alter_empty: true
           absolute: false
           entity_type: node
-          plugin_id: node_path
+          plugin_id: entity_link
+          output_url_as_text: true
         field_custom_url:
           id: field_custom_url
           table: node__field_custom_url
@@ -777,7 +785,7 @@ display:
         path:
           id: path
           table: node
-          field: path
+          field: view_node
           relationship: none
           group_type: group
           admin_label: ''
@@ -824,7 +832,8 @@ display:
           hide_alter_empty: true
           absolute: false
           entity_type: node
-          plugin_id: node_path
+          plugin_id: entity_link
+          output_url_as_text: true
         title:
           id: title
           table: node_field_data
@@ -945,14 +954,30 @@ display:
           summary: ''
           description: ''
           columns:
+            path: path
+            field_custom_url: field_custom_url
             title: title
             mail: mail
             field_first_name: field_first_name
             field_last_name: field_last_name
             mail_1: mail_1
             field_first_name_1: field_first_name_1
-            field_last_name_1: field_last_name_1
+            field_last_name_1: field_last_name
           info:
+            path:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_custom_url:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
             title:
               sortable: 0
               default_sort_order: asc
@@ -978,7 +1003,7 @@ display:
               sortable: 0
               default_sort_order: asc
               align: ''
-              separator: ''
+              separator: '<br />'
               empty_column: 0
               responsive: ''
             mail_1:
@@ -1030,7 +1055,7 @@ display:
           content: '<p><a href="/campus/governance/info"><strong>Click Here for Information about College Governance</strong></a></p>'
           plugin_id: text_custom
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'

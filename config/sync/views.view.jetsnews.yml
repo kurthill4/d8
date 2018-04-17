@@ -6,7 +6,6 @@ dependencies:
     - field.storage.node.field_link_to_your_file
     - node.type.jetsnews
   module:
-    - datetime
     - field_token_value
     - node
     - user

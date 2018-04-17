@@ -1,0 +1,5 @@
+name: Better Select Box
+type: module
+description: 'Converts dropdown select lists to a dropdown with checkboxes.'
+core: 8.x
+
