@@ -127,8 +127,12 @@ height:10%;
  * Format days of the week header cells.
  */
 .calendar-calendar th.days {
-  color: #ccc;
-  background-color: #224;
+/*  color: #ccc;
+  background-color: #224;*/
+  color:#ffffff!important;
+  background:#1d2451!important;
+  font-family: 'Oswald', sans-serif;
+  font-size:1.5em;
   text-align: center;
   padding: 1px;
   margin: 0;

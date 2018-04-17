@@ -464,7 +464,9 @@ nav.mobile-nav li:first-child ol li{
   background-size: cover;
 }
 .page-header,
-.directory .block-title {
+.page-subheader,
+.directory .block-title,
+.directory caption {
 	padding-left:1em;
 	margin:20px 0 0 0;
 	width:100%;
