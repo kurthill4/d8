@@ -156,7 +156,8 @@
 		"drupal/core": {"Role permission to view user email": "https://www.drupal.org/files/issues/role_based_email_access-2799049-2.patch",
 		"Fixing date range filtering for Views": "https://www.drupal.org/files/issues/improve_the_views-2786577-76-core.patch"
 		},
-		"drupal/chosen": {"Fixing Chosen dropdown":"https://www.drupal.org/files/issues/2018-03-29/chosen-2957152-allow_chosen_dropdown_to_close-3.patch"}
+		"drupal/entity_reference_views_select": {"Allowing No Selection for entity references": "https://www.drupal.org/files/issues/ervs-emptyvalue-2943488-3-8x.patch"
+		}
 		
 }
 	}
