@@ -1,0 +1,8 @@
+uuid: 3d44ace7-9927-4bef-ae99-9afb82ecf027
+langcode: en
+status: true
+dependencies: {  }
+id: calendar_time
+label: 'Calendar Time'
+locked: false
+pattern: 'g:i a'

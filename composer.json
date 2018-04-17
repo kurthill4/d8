@@ -83,6 +83,7 @@
         "drupal/themable_forms": "^1.0@beta",
         "drupal/twig_blocks": "^2.0",
         "drupal/twig_field_value": "^1.1",
+        "drupal/twig_tweak": "^2.0",
         "drupal/twitter": "1.x-dev",
         "drupal/twitter_block": "^3.0@alpha",
         "drupal/video_embed_field": "^1.5",
