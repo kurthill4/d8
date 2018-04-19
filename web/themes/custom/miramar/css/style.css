@@ -482,7 +482,7 @@ nav.mobile-nav li:first-child ol li{
 	background: none;
 	margin: 0;
 }
-.breadcrumb a{
+.breadcrumb a{+
 	color: #31b8c9;
 }
 .breadcrumb li{
