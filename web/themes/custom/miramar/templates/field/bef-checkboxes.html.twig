@@ -20,7 +20,14 @@
   <!--button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#events">Type of Event
   <span class="caret"></span></button-->
 <div id="events"{{ attributes.addClass(classes) }}>
-{% set numCols = 1 %}
+  {% set current_nesting_level = 0 %}
+<select id="event-types" multiple="multiple">
+  {% for child in children %}
+{% set item = attribute(element, child) %}
+<option value="{{ item }}">{{ item }}</option>
+  {% endfor %}
+</select>
+<!-- {% set numCols = 1 %}
 {% set totalCols = 4 %}
   {% set current_nesting_level = 0 %}
   {% set r = 0 %}
@@ -36,5 +43,5 @@
   {% set r = r + 1 %}
   {% endif %}
   {% endfor %}
-</div>
+</div-->
 </div>

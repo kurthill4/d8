@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "29b5c963f2f58fa74cd06c81cdddba98",
+    "content-hash": "50749227eb3ede348567138ef4f95bcb",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2913,6 +2913,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Allowing No Selection for entity references": "https://www.drupal.org/files/issues/ervs-emptyvalue-2943488-3-8x.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3531,11 +3534,17 @@
         },
         {
             "name": "drupal/libraries",
-            "version": "dev-3.x",
+            "version": "3.0.0-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/libraries",
-                "reference": "061ead081c92a6209b09eaf23b4e3103f360946e"
+                "reference": "8.x-3.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/libraries-8.x-3.0-alpha1.zip",
+                "reference": "8.x-3.0-alpha1",
+                "shasum": "bb07036b1eaeea7d736fc7e72416238830cd8d67"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -3546,8 +3555,12 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.x-dev",
-                    "datestamp": "1487978583"
+                    "version": "8.x-3.0-alpha1",
+                    "datestamp": "1517046484",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3578,8 +3591,7 @@
                 "source": "http://cgit.drupalcode.org/libraries",
                 "issues": "http://drupal.org/project/issues/libraries",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
-            },
-            "time": "2017-03-15T17:04:08+00:00"
+            }
         },
         {
             "name": "drupal/markup",
@@ -10548,7 +10560,7 @@
         "drupal/field_redirection": 20,
         "drupal/field_token_value": 20,
         "drupal/file_entity": 10,
-        "drupal/libraries": 20,
+        "drupal/libraries": 15,
         "drupal/markup": 10,
         "drupal/media_entity_video": 10,
         "drupal/page_manager": 15,
