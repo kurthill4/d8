@@ -414,6 +414,8 @@ table.calendar-legend tr.even .stripe {
   border-bottom: 1px solid #ccc;
 }
 
+.calendar #edit-reset {margin-left:1em;}
+
  .event-type {
   display: table; /*inline-flex;
   flex-direction: column;*/
