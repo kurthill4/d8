@@ -414,7 +414,7 @@ table.calendar-legend tr.even .stripe {
   border-bottom: 1px solid #ccc;
 }
 
-.calendar #edit-reset {margin-left:1em;}
+.calendar #edit-reset {margin-left:1em;margin-top:2em;background:#d1d4d3;font-size:1.2em;}
 
  .event-type {
   display: table; /*inline-flex;
@@ -447,7 +447,7 @@ ul.event-type li * {
 	display:inline;
 }
 
-@media (max-width: 800px) {
+@media and (max-width: 800px) {
 
  .calendar-calendar td, .calendar-calendar .month-view .full tr td.single-day.today, .calendar-calendar tbody, .calendar-calendar .month-view .full td.single-day .calendar-empty, .calendar-calendar .month-view .full td.single-day.empty, .calendar-calendar .month-view .full td.date-box.empty{
         border:0;
