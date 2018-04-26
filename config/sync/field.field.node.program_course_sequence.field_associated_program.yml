@@ -1,0 +1,28 @@
+uuid: 63181f06-ddfc-4930-baa8-38cdf5b73f30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_associated_program
+    - node.type.program
+    - node.type.program_course_sequence
+id: node.program_course_sequence.field_associated_program
+field_name: field_associated_program
+entity_type: node
+bundle: program_course_sequence
+label: 'Associated Program'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      program: program
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
