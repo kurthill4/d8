@@ -1,0 +1,34 @@
+uuid: 4d7a8746-30b2-42a0-8963-6e5d1c334905
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: default
+label: Default
+description: ''
+attributes: {  }
+matchers:
+  1b22caf9-e2da-4941-8bbd-bc656833ec94:
+    uuid: 1b22caf9-e2da-4941-8bbd-bc656833ec94
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles:
+        committee_page: committee_page
+        custom_web_page: custom_web_page
+        department_page: department_page
+        program: program
+      group_by_bundle: false
+      include_unpublished: false
+  1e1ee24b-cd1c-4491-9275-18bca931ae15:
+    uuid: 1e1ee24b-cd1c-4491-9275-18bca931ae15
+    id: 'entity:taxonomy_term'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles:
+        campus_resources: campus_resources
+      group_by_bundle: false
