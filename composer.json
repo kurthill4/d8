@@ -159,6 +159,8 @@
 		"Fixing date range filtering for Views": "https://www.drupal.org/files/issues/improve_the_views-2786577-76-core.patch"
 		},
 		"drupal/entity_reference_views_select": {"Allowing No Selection for entity references": "https://www.drupal.org/files/issues/ervs-emptyvalue-2943488-3-8x.patch"
+		},
+		"drupal/feeds_ical": {"Patching property naming error": "https://www.drupal.org/files/issues/2018-04-25/feeds_ical-item_index-2966206-2_1.patch"
 		}
 		
 }

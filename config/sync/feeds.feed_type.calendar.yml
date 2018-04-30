@@ -31,7 +31,7 @@ mappings:
   -
     target: title
     map:
-      value: UID
+      value: SUMMARY
     unique: {  }
   -
     target: field_event_date
