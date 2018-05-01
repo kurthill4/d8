@@ -26,7 +26,11 @@ processor_configuration:
   skip_hash_check: false
   values:
     type: event
-custom_sources: {  }
+custom_sources:
+  categories:
+    label: CATEGORIES
+    value: CATEGORIES
+    machine_name: categories
 mappings:
   -
     target: title
@@ -39,9 +43,16 @@ mappings:
       value: DTSTART
       end_value: DTEND
     settings:
-      timezone: UTC
+      timezone: America/Los_Angeles
   -
     target: field_event_location
     map:
       value: LOCATION
     unique: {  }
+  -
+    target: field_event_type
+    map:
+      target_id: categories
+    settings:
+      reference_by: name
+      autocreate: false

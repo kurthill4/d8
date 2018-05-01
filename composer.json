@@ -160,7 +160,9 @@
 		},
 		"drupal/entity_reference_views_select": {"Allowing No Selection for entity references": "https://www.drupal.org/files/issues/ervs-emptyvalue-2943488-3-8x.patch"
 		},
-		"drupal/feeds_ical": {"Patching property naming error": "https://www.drupal.org/files/issues/2018-04-25/feeds_ical-item_index-2966206-2_1.patch"
+		"drupal/feeds_ical": {"Patching property naming error": "https://www.drupal.org/files/issues/2018-04-25/feeds_ical-item_index-2966206-2_1.patch",
+		"Fixing date field issue": "https://www.drupal.org/files/issues/2018-04-25/feeds_ical-dtend-2966214-2.patch",
+		"Another field error": "https://www.drupal.org/files/issues/2018-04-25/feeds_ical-date_case-2966211-2.patch"
 		}
 		
 }
