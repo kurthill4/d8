@@ -52,7 +52,7 @@ mappings:
   -
     target: field_event_type
     map:
-      target_id: categories
+      target_id: CATEGORIES
     settings:
       reference_by: name
-      autocreate: false
+      autocreate: 0
