@@ -56,3 +56,10 @@ mappings:
     settings:
       reference_by: name
       autocreate: 0
+  -
+    target: body
+    map:
+      value: DESCRIPTION
+      summary: SUMMARY
+    settings:
+      format: plain_text
