@@ -35,6 +35,7 @@
         "drupal/entity_reference_revisions": "^1.2",
         "drupal/entity_reference_views_select": "^1.1",
         "drupal/feeds": "3.x-dev",
+        "drupal/feeds_ical": "^1.0",
         "drupal/field_group": "^1.0@RC",
         "drupal/field_redirection": "2.x-dev",
         "drupal/field_token_value": "1.x-dev",
