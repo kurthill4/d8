@@ -1,0 +1,51 @@
+uuid: 2d3d2a6d-0c82-4a11-9537-3273c51320a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.program_course_sequence.field_associated_program
+    - field.field.node.program_course_sequence.field_award_type
+    - field.field.node.program_course_sequence.field_course_sequence_document
+    - node.type.program_course_sequence
+  module:
+    - field_layout
+    - file
+    - layout_discovery
+    - options
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.program_course_sequence.default
+targetEntityType: node
+bundle: program_course_sequence
+mode: default
+content:
+  field_associated_program:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_award_type:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_course_sequence_document:
+    weight: 103
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

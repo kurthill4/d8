@@ -1,0 +1,27 @@
+uuid: 224e0cce-38de-447b-9b76-9ec2aadf85a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_course_sequence_document
+    - node.type.program_course_sequence
+  module:
+    - file
+id: node.program_course_sequence.field_course_sequence_document
+field_name: field_course_sequence_document
+entity_type: node
+bundle: program_course_sequence
+label: 'Course Sequence Document'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: programs/courses
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

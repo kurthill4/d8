@@ -1,0 +1,21 @@
+uuid: 8165f597-3351-41a2-8eac-133505b0c976
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_award_type
+    - node.type.program_course_sequence
+  module:
+    - options
+id: node.program_course_sequence.field_award_type
+field_name: field_award_type
+entity_type: node
+bundle: program_course_sequence
+label: 'Award Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
