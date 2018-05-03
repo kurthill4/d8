@@ -90,7 +90,7 @@
 			try {
 				$node->field_event_date->value = $date2Out;
 				$node->field_event_date->end_value = $date2EndOut;
-				$node->field_event_type->target_id = 318;
+				$node->field_event_type->target_id = 320;
 				$success = TRUE;
 
 			}
