@@ -1,0 +1,65 @@
+uuid: 7a832995-040e-40bd-81fb-ec6191af527d
+langcode: en
+status: true
+dependencies:
+  module:
+    - feeds_ical
+    - node
+label: Calendar
+id: calendar
+description: ''
+import_period: 3600
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'ical icalendar ics'
+  directory: 'public://feeds'
+parser: feeds_ical
+parser_configuration: {  }
+processor: 'entity:node'
+processor_configuration:
+  update_existing: 2
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: event
+custom_sources:
+  categories:
+    label: CATEGORIES
+    value: CATEGORIES
+    machine_name: categories
+mappings:
+  -
+    target: title
+    map:
+      value: SUMMARY
+    unique: {  }
+  -
+    target: field_event_date
+    map:
+      value: DTSTART
+      end_value: DTEND
+    settings:
+      timezone: America/Los_Angeles
+  -
+    target: field_event_location
+    map:
+      value: LOCATION
+    unique: {  }
+  -
+    target: field_event_type
+    map:
+      target_id: CATEGORIES
+    settings:
+      reference_by: name
+      autocreate: 0
+  -
+    target: body
+    map:
+      value: DESCRIPTION
+      summary: SUMMARY
+    settings:
+      format: plain_text
