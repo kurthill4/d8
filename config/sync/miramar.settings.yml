@@ -9,15 +9,6 @@ favicon:
 schemas:
   bootstrap: 8000
   miramar: 8000
-features:
-  comment_user_picture: true
-  comment_user_verification: true
-  favicon: true
-  node_user_picture: true
-logo:
-  path: ''
-  url: ''
-  use_default: true
 region_wells:
   navigation: ''
   navigation_collapsible: ''
@@ -34,6 +25,16 @@ region_wells:
   content: ''
   below_content: ''
   sidebar_first: ''
-  sidebar_second: well
+  sidebar_second: ''
   footer: ''
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: ''
+  url: ''
+  use_default: true
+modal_enabled: 0
 table: ''

@@ -50,6 +50,14 @@ var pushDown = document.getElementById("push");
 		}
 	};
 })(jQuery);
+
+
+ (function ($, Drupal, settings) {
+
+  "use strict";
+
+  
+
 /*
   // Campus alert toggle.
   $('.campus-alert .fa-chevron-up').click(function() {

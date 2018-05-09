@@ -347,7 +347,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{% if field_committee  %}\n<a href=\"/node/{{ nid }}\" class=\"use-ajax\" data-dialog-type=\"modal\" data-dialog-options=\"{&quot;width&quot;:200}\">{{ field_committee }}</a>\n{% else %}\n<a href=\"/node/{{ nid }}\" class=\"use-ajax\" data-dialog-type=\"modal\" data-dialog-options=\"{&quot;width&quot;:200}\">{{ title }}</a>\n{% endif %}\n"
+            text: "{% if field_committee  %}\n<a href=\"/node/{{ nid }}\" class=\"use-ajax\" data-dialog-type=\"modal\" data-dialog-options='{\"width\":300}'>{{ field_committee }}</a>\n{% else %}\n<a href=\"/node/{{ nid }}\" class=\"use-ajax\" data-dialog-type=\"modal\" data-dialog-options='{\"width\":300}'>{{ title }}</a>\n{% endif %}\n"
             make_link: false
             path: ''
             absolute: false
