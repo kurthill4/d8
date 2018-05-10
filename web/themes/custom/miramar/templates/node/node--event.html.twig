@@ -87,16 +87,17 @@
 
 <div{{ content_attributes.addClass('content') }}>
 <h2>{{ node.title.value }}</h2>
-<h3>Event Date: {{ node.field_event_date.value|date('l, F j, Y - g:i') }}</h3>
-{% if node.field_event_date.value != node.field_event_end_date.value %}
-<h3>End Date: {{ node.field_event_end_date.value|date('l, F j, Y - g:i') }}</h3>
+<h3>{{ node.field_event_date.value|date('l, F j') }}</h3>
+<h4>{{ node.field_event_date.value|date('g:i a') }}&ndash;{{ node.field_event_end_date.value|date('g:i a') }}</h4>
+{% if node.field_event_location.value is not empty %}
+<h4>Location: {{ node.field_event_location.value }}</h4>
 {% endif %}
-
-<h3>Location: {{ node.field_event_location.value }}</h3>
 <p>{{ node.body.value }}</p>
+{% if node.field_external_website.uri is not empty %}
 <p class="bold"><a href="{{ node.field_external_website.uri }}">{{ node.field_external_website.title }}</a></p>
+{% endif %}
 {% if node.field_contact.entity.field_last_name.value is not empty %}
-<p class="bold"><a href="mailto:{{ node.field_contact.entity.mail.value }}">{{ node.field_contact.entity.field_first_name.value }} {{ node.field_contact.entity.field_last_name.value }}</a></p>
+<p class="bold"><a href="mailto:{{ node.field_contact.entity.mail.value }}">Email {{ node.field_contact.entity.field_first_name.value }} {{ node.field_contact.entity.field_last_name.value }}</a> for more information</p>
 {% endif %}
   </div>
 </article>

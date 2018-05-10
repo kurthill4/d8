@@ -97,7 +97,8 @@
 
   <div{{ content_attributes.addClass('content') }}>
 <p class="bold"><a href="{{ path('entity.node.canonical', {'node':  node.field_committee.entity.id}) }}">{{ node.field_committee.entity.title.value }} Page</a></p>
-<h3>Meeting Date: {{ node.field_meeting_date_time.value|date('l, F j, Y - g:i') }}</h3>
+<h3>{{ node.field_event_date.value|date('l, F j') }}</h3>
+<h4>{{ node.field_event_date.value|date('g:i a') }}&ndash;{{ node.field_event_end_date.value|date('g:i a') }}</h4>
 <h4>Location: {{ node.field_meeting_location.value }}</h4>
 {% if node.field_agenda.entity.uri is not empty %}
 <p class="bold"><a href="{{ node.field_agenda.entity.uri.value }}">Agenda</a></p>
