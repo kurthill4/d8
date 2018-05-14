@@ -2,6 +2,7 @@ global-styling:
   css:
     theme:
       css/bootstrap.min.css: {}
+      css/dialog.css: {}
       css/style.css: {}
       css/tabs.css: {}
       font-awesome-4.7.0/css/font-awesome.min.css: {}

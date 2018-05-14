@@ -2598,6 +2598,9 @@ section#hero {max-height:602px!important}
 
  	 /* Small Devices, Tablets */
 	 @media only screen and (max-width:768px) {
+		.ui-dialog {
+		    max-width: 92% !important;
+		  }
 		.region-content {width:100vw!important}
 		.banner-content {display:block;width:100%;margin:0;}
 		.banner-content .get-started {width:75%;margin:0 auto!important}
