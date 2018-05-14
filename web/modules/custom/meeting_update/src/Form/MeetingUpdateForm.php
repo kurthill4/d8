@@ -82,8 +82,8 @@
 			$date1 = $node->field_meeting_date_time->getString();			// Extract the date
 			$date2 = new \DateTime($date1);						// Create a new Date object
 			$date2End = new \DateTime($date1);						// Create a new Date object
-			$date2->setTimeZone($newTZ);
-			$date2End->setTimeZone($newTZ);
+			//$date2->setTimeZone($newTZ);
+			//$date2End->setTimeZone($newTZ);
 			$date2End->modify('+1 hours');
 			$date2Out = $date2->format('Y-m-d\TH:i:s');				// Format the date for Drupal storage
 			$date2EndOut = $date2End->format('Y-m-d\TH:i:s');			// Format the date for Drupal storage

@@ -61,9 +61,13 @@
   vertical-align: top;
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
 }
 
 .calendar-calendar .single-day td {
+=======
+height:10%;
+>>>>>>> fixCalendar
 }
 
 /**
@@ -95,9 +99,9 @@
  * http://www.dustindiaz.com/min-height-fast-hack .
  */
 .calendar-calendar .inner {
-  min-height: 5em;
+  /*min-height: 5em;
   height: auto !important;
-  height: 5em;
+  height: 5em;*/
   padding: 0;
   margin: 0;
 }
@@ -129,8 +133,12 @@
  * Format days of the week header cells.
  */
 .calendar-calendar th.days {
-  color: #ccc;
-  background-color: #224;
+/*  color: #ccc;
+  background-color: #224;*/
+  color:#ffffff!important;
+  background:#1d2451!important;
+  font-family: 'Oswald', sans-serif;
+  font-size:1.5em;
   text-align: center;
   padding: 1px;
   margin: 0;
@@ -144,11 +152,22 @@
   text-align: center;
   padding: 0.125em 0.25em 0 0.25em;
   margin: 0;
-  background-color: #f3f3f3;
+  /*background-color: #f3f3f3;*/
+  color:#ffffff!important;
+  background:#1d2451!important;
+
   border: 1px solid gray;
   border-width: 0 0 1px 1px;
   clear:both;
   width:1.5em;
+}
+
+.calendar-calendar div.day a {
+  color:#ffffff!important;
+  background:#1d2451!important;
+}
+.calendar-calendar div.day a:hover {
+  color:#ffd451!important;
 }
 
 /**
@@ -399,6 +418,60 @@ table.calendar-legend tr.even .stripe {
 }
 .calendar-calendar td .inner div.calendar div div.view-data-node-data-field-date-field-date-value {
   border-bottom: 1px solid #ccc;
+}
+
+.calendar #edit-reset {margin-left:1em;margin-top:2em;background:#d1d4d3;font-size:1.2em;}
+
+ .event-type {
+  display: table; /*inline-flex;
+  flex-direction: column;*/
+  justify-content: center;
+}
+.event-type-list {
+  display: table-row; /*inline-flex;
+  flex-direction: row;*/
+}
+
+.event-type-event {
+  background-color: #d1d4d3;
+  font-size: 1em;
+  text-align: left;
+  padding: 0.25em;
+  margin: 0.1em;
+  display: table-cell; /*inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;*/
+}
+
+
+ul.event-type li {
+	width:
+}
+ul.event-type li,
+ul.event-type li * {
+	display:inline;
+}
+
+@media only screen and (max-width: 800px) {
+
+ .calendar-calendar td, .calendar-calendar .month-view .full tr td.single-day.today, .calendar-calendar tbody, .calendar-calendar .month-view .full td.single-day .calendar-empty, .calendar-calendar .month-view .full td.single-day.empty, .calendar-calendar .month-view .full td.date-box.empty{
+        border:0;
+      background: none;
+  }
+  .calendar-calendar tr.date-box{
+        display:none;
+  }
+  .calendar-calendar table thead{
+        display:none;
+  }
+  .calendar-calendar td.no-entry, .calendar-calendar td.empty{
+       display:none;
+  }
+  .calendar-calendar td{
+     display:block;
+     width:100%;
+    }
 }
 
 /**

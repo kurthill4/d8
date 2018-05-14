@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c18cae4a9e930a06a21b21bfb185f2bc",
+    "content-hash": "27bcfb989c279c4a71e1bb69df1e811a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1838,6 +1838,119 @@
             }
         },
         {
+            "name": "drupal/calendar",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/calendar",
+                "reference": "73e2979f3ed951b1fb3ad942e2d89d673aa52e1d"
+            },
+            "require": {
+                "drupal/calendar_datetime": "*",
+                "drupal/core": "*",
+                "drupal/views_templates": "1.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1515077885",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "KarenS",
+                    "homepage": "https://www.drupal.org/user/45874"
+                },
+                {
+                    "name": "fizk",
+                    "homepage": "https://www.drupal.org/user/473174"
+                },
+                {
+                    "name": "geertvd",
+                    "homepage": "https://www.drupal.org/user/536694"
+                },
+                {
+                    "name": "pjonckiere",
+                    "homepage": "https://www.drupal.org/user/2442998"
+                },
+                {
+                    "name": "tedbow",
+                    "homepage": "https://www.drupal.org/user/240860"
+                }
+            ],
+            "description": "Provides a Views plugin to display views containing dates as Calendars.",
+            "homepage": "http://drupal.org/project/calendar",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/calendar",
+                "issues": "https://www.drupal.org/project/issues/calendar"
+            },
+            "time": "2018-01-04T14:54:04+00:00"
+        },
+        {
+            "name": "drupal/calendar_datetime",
+            "version": "dev-1.x",
+            "require": {
+                "drupal/calendar": "self.version",
+                "drupal/core": "~8.0"
+            },
+            "type": "metapackage",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1485600783"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "KarenS",
+                    "homepage": "https://www.drupal.org/user/45874"
+                },
+                {
+                    "name": "fizk",
+                    "homepage": "https://www.drupal.org/user/473174"
+                },
+                {
+                    "name": "geertvd",
+                    "homepage": "https://www.drupal.org/user/536694"
+                },
+                {
+                    "name": "pjonckiere",
+                    "homepage": "https://www.drupal.org/user/2442998"
+                },
+                {
+                    "name": "tedbow",
+                    "homepage": "https://www.drupal.org/user/240860"
+                }
+            ],
+            "description": "Provides a calendar specific date time.",
+            "homepage": "https://www.drupal.org/project/calendar",
+            "support": {
+                "source": "http://cgit.drupalcode.org/calendar"
+            }
+        },
+        {
             "name": "drupal/cer",
             "version": "4.0.0-alpha2",
             "source": {
@@ -2826,11 +2939,17 @@
         },
         {
             "name": "drupal/feeds",
-            "version": "dev-3.x",
+            "version": "3.0.0-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/feeds",
-                "reference": "a1290e7daeb1a1c513da619ce32d01e9a237f3f4"
+                "reference": "8.x-3.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/feeds-8.x-3.0-alpha1.zip",
+                "reference": "8.x-3.0-alpha1",
+                "shasum": "7948b205ef6a6f459e828cd99d4b81ad01ff075b"
             },
             "require": {
                 "drupal/core": "^8.3.0"
@@ -2841,8 +2960,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.x-dev",
-                    "datestamp": "1520497384",
+                    "version": "8.x-3.0-alpha1",
+                    "datestamp": "1522575180",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -2919,8 +3038,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/feeds",
                 "issues": "https://www.drupal.org/project/issues/feeds"
-            },
-            "time": "2018-03-08T10:20:00+00:00"
+            }
         },
         {
             "name": "drupal/feeds_ical",
@@ -2953,6 +3071,11 @@
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
+                },
+                "patches_applied": {
+                    "Patching property naming error": "https://www.drupal.org/files/issues/2018-04-25/feeds_ical-item_index-2966206-2_1.patch",
+                    "Fixing date field issue": "https://www.drupal.org/files/issues/2018-04-25/feeds_ical-dtend-2966214-2.patch",
+                    "Another field error": "https://www.drupal.org/files/issues/2018-04-25/feeds_ical-date_case-2966211-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3469,11 +3592,17 @@
         },
         {
             "name": "drupal/libraries",
-            "version": "dev-3.x",
+            "version": "3.0.0-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/libraries",
-                "reference": "061ead081c92a6209b09eaf23b4e3103f360946e"
+                "reference": "8.x-3.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/libraries-8.x-3.0-alpha1.zip",
+                "reference": "8.x-3.0-alpha1",
+                "shasum": "bb07036b1eaeea7d736fc7e72416238830cd8d67"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -3484,8 +3613,12 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.x-dev",
-                    "datestamp": "1487978583"
+                    "version": "8.x-3.0-alpha1",
+                    "datestamp": "1517046484",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3516,8 +3649,7 @@
                 "source": "http://cgit.drupalcode.org/libraries",
                 "issues": "http://drupal.org/project/issues/libraries",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
-            },
-            "time": "2017-03-15T17:04:08+00:00"
+            }
         },
         {
             "name": "drupal/linkit",
@@ -4966,6 +5098,61 @@
             }
         },
         {
+            "name": "drupal/twig_tweak",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/twig_tweak",
+                "reference": "8.x-2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/twig_tweak-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "e07fe9386a415f5a2122f4bd7ee2305be15c81f7"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "suggest": {
+                "symfony/var-dumper": "better dump() function for debugging Twig variables"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0",
+                    "datestamp": "1523707084",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Chi",
+                    "homepage": "https://www.drupal.org/user/556138"
+                }
+            ],
+            "description": "A Twig extension with some useful functions and filters for Drupal development.",
+            "homepage": "https://www.drupal.org/project/twig_tweak",
+            "keywords": [
+                "Drupal",
+                "Twig"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/twig_tweak",
+                "issues": "https://www.drupal.org/project/issues/twig_tweak"
+            }
+        },
+        {
             "name": "drupal/twitter",
             "version": "dev-1.x",
             "source": {
@@ -5259,6 +5446,53 @@
             "homepage": "https://github.com/TopFloorTech/drupal-views_jump_menu",
             "support": {
                 "source": "http://cgit.drupalcode.org/views_jump_menu"
+            }
+        },
+        {
+            "name": "drupal/views_templates",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views_templates",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_templates-8.x-1.0-alpha1.zip",
+                "reference": "8.x-1.0-alpha1",
+                "shasum": "4559016960917a630f8daaf0ccc7ec6fa9c630eb"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1449691739"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "geertvd",
+                    "homepage": "https://www.drupal.org/user/536694"
+                },
+                {
+                    "name": "tedbow",
+                    "homepage": "https://www.drupal.org/user/240860"
+                }
+            ],
+            "description": "Reintroduces dynamic default views.",
+            "homepage": "https://www.drupal.org/project/views_templates",
+            "support": {
+                "source": "http://cgit.drupalcode.org/views_templates"
             }
         },
         {
@@ -9025,119 +9259,6 @@
             "time": "2015-06-14T21:17:01+00:00"
         },
         {
-            "name": "drupal/calendar",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/calendar",
-                "reference": "73e2979f3ed951b1fb3ad942e2d89d673aa52e1d"
-            },
-            "require": {
-                "drupal/calendar_datetime": "*",
-                "drupal/core": "*",
-                "drupal/views_templates": "1.*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1515077885",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "KarenS",
-                    "homepage": "https://www.drupal.org/user/45874"
-                },
-                {
-                    "name": "fizk",
-                    "homepage": "https://www.drupal.org/user/473174"
-                },
-                {
-                    "name": "geertvd",
-                    "homepage": "https://www.drupal.org/user/536694"
-                },
-                {
-                    "name": "pjonckiere",
-                    "homepage": "https://www.drupal.org/user/2442998"
-                },
-                {
-                    "name": "tedbow",
-                    "homepage": "https://www.drupal.org/user/240860"
-                }
-            ],
-            "description": "Provides a Views plugin to display views containing dates as Calendars.",
-            "homepage": "http://drupal.org/project/calendar",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/calendar",
-                "issues": "https://www.drupal.org/project/issues/calendar"
-            },
-            "time": "2018-01-04T14:54:04+00:00"
-        },
-        {
-            "name": "drupal/calendar_datetime",
-            "version": "dev-1.x",
-            "require": {
-                "drupal/calendar": "self.version",
-                "drupal/core": "~8.0"
-            },
-            "type": "metapackage",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1485600783"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "KarenS",
-                    "homepage": "https://www.drupal.org/user/45874"
-                },
-                {
-                    "name": "fizk",
-                    "homepage": "https://www.drupal.org/user/473174"
-                },
-                {
-                    "name": "geertvd",
-                    "homepage": "https://www.drupal.org/user/536694"
-                },
-                {
-                    "name": "pjonckiere",
-                    "homepage": "https://www.drupal.org/user/2442998"
-                },
-                {
-                    "name": "tedbow",
-                    "homepage": "https://www.drupal.org/user/240860"
-                }
-            ],
-            "description": "Provides a calendar specific date time.",
-            "homepage": "https://www.drupal.org/project/calendar",
-            "support": {
-                "source": "http://cgit.drupalcode.org/calendar"
-            }
-        },
-        {
             "name": "drupal/config_partial_export",
             "version": "1.4.0",
             "source": {
@@ -9366,53 +9487,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/twig_vardumper",
                 "issues": "https://www.drupal.org/project/issues/twig_vardumper"
-            }
-        },
-        {
-            "name": "drupal/views_templates",
-            "version": "1.0.0-alpha1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/views_templates",
-                "reference": "8.x-1.0-alpha1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_templates-8.x-1.0-alpha1.zip",
-                "reference": "8.x-1.0-alpha1",
-                "shasum": "4559016960917a630f8daaf0ccc7ec6fa9c630eb"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-alpha1",
-                    "datestamp": "1449691739"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "geertvd",
-                    "homepage": "https://www.drupal.org/user/536694"
-                },
-                {
-                    "name": "tedbow",
-                    "homepage": "https://www.drupal.org/user/240860"
-                }
-            ],
-            "description": "Reintroduces dynamic default views.",
-            "homepage": "https://www.drupal.org/project/views_templates",
-            "support": {
-                "source": "http://cgit.drupalcode.org/views_templates"
             }
         },
         {
@@ -10694,6 +10768,7 @@
     "stability-flags": {
         "drupal/better_exposed_filters": 15,
         "drupal/cer": 15,
+        "drupal/calendar": 20,
         "drupal/ctools": 10,
         "drupal/entity_embed": 10,
         "drupal/feeds": 20,

@@ -1,0 +1,33 @@
+uuid: 5c6d3569-0319-4315-91e0-3284ba93e921
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - calendar
+    - system
+  theme:
+    - miramar
+id: calendarlegend
+theme: miramar
+region: content
+weight: -25
+provider: null
+plugin: calendar_legend_block
+settings:
+  id: calendar_legend_block
+  label: 'Calendar legend'
+  provider: calendar
+  label_display: '0'
+  calendar_legend_view_settings_view: 'event_date_on_calendar:page_month'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: "/events-calendar\r\n/events-calendar/*"
+    negate: false
+    context_mapping: {  }
