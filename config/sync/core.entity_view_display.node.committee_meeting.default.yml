@@ -16,6 +16,7 @@ dependencies:
     - node.type.committee_meeting
   module:
     - datetime
+    - datetime_range
     - field_layout
     - file_entity
     - layout_discovery
@@ -55,6 +56,16 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  field_event_date:
+    type: daterange_default
+    weight: 6
+    region: content
+    label: above
+    settings:
+      timezone_override: America/Los_Angeles
+      format_type: medium
+      separator: '-'
+    third_party_settings: {  }
   field_meeting_date_time:
     weight: 1
     label: above
@@ -82,7 +93,6 @@ content:
     type: file_download_link
     region: content
 hidden:
-  field_event_date: true
   field_event_type: true
   field_file_code: true
   field_file_instructions: true
