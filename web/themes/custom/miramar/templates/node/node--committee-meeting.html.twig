@@ -101,10 +101,10 @@
 <h4>{{ node.field_event_date.value|date('g:i a') }}&ndash;{{ node.field_event_end_date.value|date('g:i a') }}</h4>
 <h4>Location: {{ node.field_meeting_location.value }}</h4>
 {% if node.field_agenda.entity.uri is not empty %}
-<p class="bold"><a href="{{ node.field_agenda.entity.uri.value }}">Agenda</a></p>
+<p class="bold"><a href="{{ file_url(node.field_agenda.entity.uri.value) }}">Agenda</a></p>
 {% endif %}
 {% if node.field_minutes.entity.uri is not empty %}
-<p class="bold"><a href="{{ node.field_minutes.entity.uri.value }}">Minutes</a></p>
+<p class="bold"><a href="{{ file_url(node.field_minutes.entity.uri.value) }}">Minutes</a></p>
 {% endif %}
   </div>
 </article>
