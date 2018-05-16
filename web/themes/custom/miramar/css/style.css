@@ -31,6 +31,42 @@ body{
 .field--name-description p {margin-bottom:1em}
 .content img,.field--name-description img {padding:3px}
 .degree-block h2 {display:none;}
+
+.course-seq .views-view-grid {display:table!important;padding:0;}
+.course-seq .views-row {display:table-row!important;}
+.course-seq .views-col {
+	display:table-cell!important;
+	min-height:200px!important;
+	width:25%;
+	/*padding:2em;*/
+	margin:0;
+	vertical-align:bottom!important;
+border:1px solid;
+}
+.course-seq .views-col p,.course-seq .views-col span {
+	display:table-cell!important;
+	padding:0;
+	margin:0;
+	text-align:center;
+}
+
+/*.course-seq .views-view-grid .views-row .views-col img {vertical-align:bottom!important;}
+
+
+/*.field--name-field-course-sequence {display:block;clear:both;margin-top:1em!important;}
+.field--name-field-course-sequence .field__items {display:block;margin:1em 0 2em 1em;clear:both;}
+/*.field--name-field-course-sequence .field--item {float:left!important;}*/
+
+/*.course-seq .views-field-nothing {margin-top:2em!important;margin-bottom:1em!important}
+
+.course-seq .views-field-nothing .sequence-desc {display:flex;flex-direction:column;justify-content:flex-end;	height:4em;
+ }
+.course-seq p {
+	max-width:120px;
+	margin-bottom:0;
+}*/
+
+
 ul { list-style: none; }
 ul.noindent,ul.noindent li {
 	padding:0;
@@ -1220,10 +1256,6 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 .feedback-form .form-select {width:auto}
 
 .feedback-form .field--name-message {width:80%; margin: 0 auto;}
-
-/************** Modals *************/
-
-.ui-dialog-titlebar {background:#1d2451;color:#ffffff; }
 
 /************** Footer *************/
 

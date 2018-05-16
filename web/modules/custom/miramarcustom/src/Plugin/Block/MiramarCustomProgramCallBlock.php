@@ -36,6 +36,13 @@ class MiramarCustomProgramCallBlock extends BlockBase {
 	<span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
 	Course Catalog
 	</a>
+	</div>
+	<div class="spacer" style="height:0.1em">&nbsp;</div>
+	<div class="call">
+	<a href="#pgmSequence">
+	<span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+	Classes to Take
+	</a>
 	</div>'
     ];
 

@@ -1,6 +1,6 @@
-uuid: 728d4756-d529-495e-9699-c609dca8fe4b
+uuid: 2f4e6e7c-5081-4012-af83-f8310f0016a5
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.program_course_sequence
@@ -12,8 +12,8 @@ dependencies:
     - miramar
 id: views_block__program_course_sequence_block_1
 theme: miramar
-region: sidebar_second
-weight: -18
+region: content
+weight: -25
 provider: null
 plugin: 'views_block:program_course_sequence-block_1'
 settings:
