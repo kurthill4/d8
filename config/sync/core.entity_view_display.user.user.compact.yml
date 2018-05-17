@@ -13,15 +13,10 @@ dependencies:
     - field.field.user.user.field_last_name
     - field.field.user.user.field_office
     - field.field.user.user.field_phone
+    - field.field.user.user.field_program
     - field.field.user.user.field_web_pages
   module:
-    - field_layout
-    - layout_discovery
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 _core:
   default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
 id: user.user.compact
@@ -39,5 +34,6 @@ hidden:
   field_last_name: true
   field_office: true
   field_phone: true
+  field_program: true
   field_web_pages: true
   member_for: true

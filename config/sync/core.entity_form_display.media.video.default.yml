@@ -6,13 +6,8 @@ dependencies:
     - field.field.media.video.field_video_upload
     - media_entity.bundle.video
   module:
-    - field_layout
     - file
-    - layout_discovery
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
+    - path
 id: media.video.default
 targetEntityType: media
 bundle: video
@@ -38,6 +33,12 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete

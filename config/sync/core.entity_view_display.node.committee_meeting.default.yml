@@ -17,21 +17,15 @@ dependencies:
   module:
     - datetime
     - datetime_range
-    - field_layout
     - file_entity
-    - layout_discovery
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.committee_meeting.default
 targetEntityType: node
 bundle: committee_meeting
 mode: default
 content:
   field_agenda:
-    weight: 3
+    weight: 4
     label: above
     settings:
       access_message: 'You don''t have access to download this file.'
@@ -40,7 +34,7 @@ content:
     type: file_download_link
     region: content
   field_attached_documents:
-    weight: 5
+    weight: 6
     label: above
     settings:
       access_message: 'You don''t have access to download this file.'
@@ -57,13 +51,13 @@ content:
     type: entity_reference_label
     region: content
   field_event_date:
-    type: daterange_default
-    weight: 6
+    type: daterange_custom
+    weight: 2
     region: content
-    label: above
+    label: hidden
     settings:
       timezone_override: America/Los_Angeles
-      format_type: medium
+      date_format: 'g:i a'
       separator: '-'
     third_party_settings: {  }
   field_meeting_date_time:
@@ -71,12 +65,11 @@ content:
     label: above
     settings:
       timezone_override: America/Los_Angeles
-      date_format: 'M d, Y h:i A'
     third_party_settings: {  }
-    type: datetime_custom
+    type: datetime_plain
     region: content
   field_meeting_location:
-    weight: 2
+    weight: 3
     label: above
     settings:
       link_to_entity: false
@@ -84,7 +77,7 @@ content:
     type: string
     region: content
   field_minutes:
-    weight: 4
+    weight: 5
     label: above
     settings:
       access_message: 'You don''t have access to download this file.'

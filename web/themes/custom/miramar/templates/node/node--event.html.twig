@@ -88,13 +88,13 @@
 <div{{ content_attributes.addClass('content') }}>
 <h2>{{ node.title.value }}</h2>
 <h3>{{ node.field_event_date.value|date('l, F j') }}</h3>
-<h4>{{ node.field_event_date.value|date('g:i a') }}&ndash;{{ node.field_event_end_date.value|date('g:i a') }}</h4>
+<h4>{{ content.field_event_date }}</h4>
 {% if node.field_event_location.value is not empty %}
 <h4>Location: {{ node.field_event_location.value }}</h4>
 {% endif %}
 <p>{{ node.body.value }}</p>
 {% if node.field_external_website.uri is not empty %}
-<p class="bold"><a href="{{ file_url(node.field_external_website.uri.value) }}">{{ node.field_external_website.title }}</a></p>
+<p class="bold"><a href="{{ node.field_external_website.0.url }}">{{ node.field_external_website.title }}</a></p>
 {% endif %}
 {% if node.field_contact.entity.field_last_name.value is not empty %}
 <p class="bold"><a href="mailto:{{ node.field_contact.entity.mail.value }}">Email {{ node.field_contact.entity.field_first_name.value }} {{ node.field_contact.entity.field_last_name.value }}</a> for more information</p>

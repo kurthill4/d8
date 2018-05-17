@@ -7,14 +7,8 @@ dependencies:
     - field.field.block_content.academy_dates.body
     - field.field.block_content.academy_dates.field_academy_dates
   module:
-    - field_layout
-    - layout_discovery
     - tablefield
     - text
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: block_content.academy_dates.default
 targetEntityType: block_content
 bundle: academy_dates

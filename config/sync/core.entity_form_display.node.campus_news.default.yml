@@ -22,9 +22,7 @@ dependencies:
   module:
     - datetime
     - field_group
-    - field_layout
     - image
-    - layout_discovery
     - link
     - text
 third_party_settings:
@@ -45,9 +43,6 @@ third_party_settings:
         open: false
         required_fields: true
       label: 'Display & Routing Options'
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.campus_news.default
 targetEntityType: node
 bundle: campus_news

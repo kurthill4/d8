@@ -8,13 +8,7 @@ dependencies:
     - field.field.node.jetsnews.field_uploaded_file
     - node.type.jetsnews
   module:
-    - field_layout
-    - layout_discovery
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.jetsnews.teaser
 targetEntityType: node
 bundle: jetsnews

@@ -17,14 +17,8 @@ dependencies:
   module:
     - datetime
     - datetime_range
-    - field_layout
     - file
-    - layout_discovery
     - markup
-third_party_settings:
-  field_layout:
-    id: layout_twocol_bricks
-    settings: {  }
 id: node.committee_meeting.default
 targetEntityType: node
 bundle: committee_meeting
@@ -36,14 +30,14 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
-    region: first_above
+    region: content
   field_attached_documents:
     weight: 6
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
-    region: middle
+    region: content
   field_committee:
     weight: 0
     settings:
@@ -52,17 +46,17 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
-    region: top
+    region: content
   field_event_date:
     weight: 7
     settings: {  }
     third_party_settings: {  }
     type: daterange_default
-    region: middle
+    region: content
   field_event_type:
     type: entity_reference_autocomplete
-    weight: 9
-    region: bottom
+    weight: 11
+    region: content
     settings:
       match_operator: CONTAINS
       size: 60
@@ -73,13 +67,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: markup
-    region: top
+    region: content
   field_meeting_date_time:
     weight: 1
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
-    region: top
+    region: content
   field_meeting_location:
     weight: 2
     settings:
@@ -87,37 +81,46 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: top
+    region: content
   field_minutes:
     weight: 5
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
-    region: second_above
+    region: content
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 121
+    weight: 9
     third_party_settings: {  }
-    region: middle
+    region: content
+  title:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 8
-    region: bottom
+    weight: 10
+    region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 50
-    region: middle
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   field_file_code: true
   path: true
   promote: true
   sticky: true
-  title: true

@@ -8,15 +8,9 @@ dependencies:
     - field.field.node.by_the_numbers.field_image
     - node.type.by_the_numbers
   module:
-    - field_layout
     - image
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.by_the_numbers.default
 targetEntityType: node
 bundle: by_the_numbers

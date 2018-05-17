@@ -15,14 +15,8 @@ dependencies:
     - field.field.node.images.field_short_description
     - node.type.images
   module:
-    - field_layout
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.images.teaser
 targetEntityType: node
 bundle: images
