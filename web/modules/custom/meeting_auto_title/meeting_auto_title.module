@@ -29,9 +29,12 @@ function meeting_auto_title_entity_presave(Drupal\Core\Entity\EntityInterface $e
     case 'committee_meeting':
       // Setting the title with the committee name and date.
 	$c = $entity->get('field_committee')->entity->getTitle();
-	$d = date_create($entity->get('field_meeting_date_time')->value);
-      $entity->setTitle($c . ' Meeting ' . date_format($d,'m/d/Y'));
+	$d = date_create($entity->get('field_event_date')->value);
+      	$entity->setTitle($c . ' Meeting ' . date_format($d,'m/d/Y'));
 	$entity->set('field_event_type',320);
+	$entity->field_meeting_date_time->value = $d->format('Y-m-d\TH:i:s');
+	if($entity->field_event_end_date->value == "")
+		$entity->field_event_end_date->value = $d->modify("+1 hours")->format('Y-m-d\TH:i:s');
      break;
   }
 }

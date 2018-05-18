@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.committee_meeting.field_committee
     - field.field.node.committee_meeting.field_event_date
     - field.field.node.committee_meeting.field_event_type
-    - field.field.node.committee_meeting.field_file_code
     - field.field.node.committee_meeting.field_file_instructions
     - field.field.node.committee_meeting.field_meeting_date_time
     - field.field.node.committee_meeting.field_meeting_location
@@ -87,6 +86,5 @@ content:
     region: content
 hidden:
   field_event_type: true
-  field_file_code: true
   field_file_instructions: true
   links: true

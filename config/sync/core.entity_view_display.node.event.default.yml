@@ -65,11 +65,11 @@ content:
     region: content
   field_event_date:
     weight: 103
-    label: above
+    label: hidden
     settings:
-      separator: '-'
-      format_type: medium
       timezone_override: ''
+      format_type: calendar_time
+      separator: '-'
     third_party_settings: {  }
     type: daterange_default
     region: content
@@ -145,5 +145,7 @@ content:
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   feeds_item: true
