@@ -33,22 +33,24 @@ body{
 .degree-block h2 {display:none;}
 
 .course-seq .views-view-grid {display:table!important;padding:0;}
+.course-seq .views-view-grid * {float:none!important;}
 .course-seq .views-row {display:table-row!important;}
 .course-seq .views-col {
 	display:table-cell!important;
-	min-height:200px!important;
+	height:150px!important;
 	width:25%;
 	/*padding:2em;*/
 	margin:0;
 	vertical-align:bottom!important;
-border:1px solid;
 }
-.course-seq .views-col p,.course-seq .views-col span {
+.course-seq .views-col div {
 	display:table-cell!important;
 	padding:0;
 	margin:0;
 	text-align:center;
 }
+
+.course-seq .views-col p {margin-top:1em;margin-bottom:0;}
 
 /*.course-seq .views-view-grid .views-row .views-col img {vertical-align:bottom!important;}
 

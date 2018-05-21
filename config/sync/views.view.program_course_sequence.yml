@@ -339,7 +339,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<!--div class=\"sequence\"-->\n<p class=\"sequence-desc bold\"><a href=\"{{ field_course_sequence_document }}\">{{ title_1}}</a></p>\n{% if field_award_type == 'Degree' %}\n{% set d = 'Degree' %}\n{% else %}\n{% set d = 'Certificate' %}\n{% endif %}\n<span class=\"spacer sequence\"><a href=\"{{ field_course_sequence_document }}\"><img class=\"pgm-sequence\" src=\"/themes/custom/miramar/images/{{ d }}.png\" alt=\"Course Sequence for {{ title_1 }}\" /></a></span>\n<!--/div-->"
+            text: "<div class=\"sequence\">\n<p class=\"sequence-desc bold\"><a href=\"{{ field_course_sequence_document }}\">{{ title_1}}</a></p>\n{% if field_award_type == 'Degree' %}\n{% set d = 'Degree' %}\n{% else %}\n{% set d = 'Certificate' %}\n{% endif %}\n<span class=\"spacer sequence\"><a href=\"{{ field_course_sequence_document }}\"><img class=\"pgm-sequence\" src=\"/themes/custom/miramar/images/{{ d }}.png\" alt=\"Course Sequence for {{ title_1 }}\" /></a></span>\n</div>"
             make_link: false
             path: ''
             absolute: false
