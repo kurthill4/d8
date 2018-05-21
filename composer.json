@@ -88,6 +88,7 @@
         "behat/mink": "~1.7",
         "behat/mink-goutte-driver": "~1.2",
         "drupal/config_partial_export": "^1.4",
+        "drupal/devel": "^1.2",
         "drupal/migrate_plus": "^4.0@beta",
         "drupal/migrate_tools": "^4.0@beta",
         "drupal/twig_vardumper": "^1.0",

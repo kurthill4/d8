@@ -20,14 +20,8 @@ dependencies:
     - field.field.node.campus_news.field_story_type
     - node.type.campus_news
   module:
-    - field_layout
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.campus_news.teaser
 targetEntityType: node
 bundle: campus_news

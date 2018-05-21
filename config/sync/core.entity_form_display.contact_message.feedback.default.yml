@@ -7,13 +7,7 @@ dependencies:
     - field.field.contact_message.feedback.field_instructions
     - field.field.contact_message.feedback.field_nature_of_your_message
   module:
-    - field_layout
-    - layout_discovery
     - markup
-third_party_settings:
-  field_layout:
-    id: layout_twocol_bricks
-    settings: {  }
 id: contact_message.feedback.default
 targetEntityType: contact_message
 bundle: feedback
@@ -21,7 +15,7 @@ mode: default
 content:
   copy:
     weight: 5
-    region: second_below
+    region: content
     settings: {  }
     third_party_settings: {  }
   field_instructions:
@@ -29,16 +23,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: markup
-    region: first_above
+    region: content
   field_nature_of_your_message:
     weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_select
-    region: second_above
+    region: content
   mail:
     weight: 0
-    region: top
+    region: content
     settings: {  }
     third_party_settings: {  }
   message:
@@ -47,16 +41,16 @@ content:
     settings:
       rows: 12
       placeholder: ''
-    region: middle
+    region: content
     third_party_settings: {  }
   name:
     weight: 4
-    region: first_below
+    region: content
     settings: {  }
     third_party_settings: {  }
   preview:
     weight: 6
-    region: bottom
+    region: content
     settings: {  }
     third_party_settings: {  }
 hidden:

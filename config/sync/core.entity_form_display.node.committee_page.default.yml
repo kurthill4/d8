@@ -18,14 +18,8 @@ dependencies:
     - node.type.committee_page
   module:
     - entity_reference_views_select
-    - field_layout
-    - layout_discovery
     - tablefield
     - text
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.committee_page.default
 targetEntityType: node
 bundle: committee_page

@@ -7,13 +7,7 @@ dependencies:
     - field.field.paragraph.text_and_image_left.field_column_2
     - paragraphs.paragraphs_type.text_and_image_left
   module:
-    - field_layout
-    - layout_discovery
     - paragraphs_previewer
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: paragraph.text_and_image_left.default
 targetEntityType: paragraph
 bundle: text_and_image_left

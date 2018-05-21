@@ -20,14 +20,8 @@ dependencies:
     - field.field.node.program.field_web_pages
     - node.type.program
   module:
-    - field_layout
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.program.teaser
 targetEntityType: node
 bundle: program

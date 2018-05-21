@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
+    - field.field.node.event.feeds_item
     - field.field.node.event.field_contact
     - field.field.node.event.field_date_to_publish
     - field.field.node.event.field_directions
@@ -22,10 +23,8 @@ dependencies:
     - datetime_range
     - entity_reference_views_select
     - field_group
-    - field_layout
     - file
     - image
-    - layout_discovery
     - link
     - text
 third_party_settings:
@@ -74,9 +73,6 @@ third_party_settings:
         description: ''
         required_fields: true
       label: 'Location & Contact'
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -193,6 +189,7 @@ content:
     region: content
 hidden:
   created: true
+  feeds_item: true
   path: true
   promote: true
   sticky: true

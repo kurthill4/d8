@@ -11,15 +11,9 @@ dependencies:
     - taxonomy.vocabulary.schools
   module:
     - entity_reference_views_select
-    - field_layout
-    - layout_discovery
     - path
     - telephone
     - text
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: taxonomy_term.schools.default
 targetEntityType: taxonomy_term
 bundle: schools

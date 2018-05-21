@@ -39,7 +39,6 @@ module:
   feeds_ical: 0
   field: 0
   field_group: 0
-  field_layout: 0
   field_token_value: 0
   field_ui: 0
   file: 0
@@ -101,7 +100,7 @@ module:
   toolbar: 0
   tour: 0
   twig_blocks: 0
-  twig_field_value: 0
+  twig_vardumper: 0
   twitter: 0
   twitter_block: 0
   update: 0
