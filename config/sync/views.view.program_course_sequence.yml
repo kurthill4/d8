@@ -729,6 +729,7 @@ display:
         fields: false
         style: false
         row: false
+        css_class: false
       style:
         type: default
         options:
@@ -748,6 +749,7 @@ display:
         type: none
         options:
           offset: 0
+      css_class: ''
     cache_metadata:
       max-age: -1
       contexts:

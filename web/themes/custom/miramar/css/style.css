@@ -43,7 +43,6 @@ body{
 	display:table-cell!important;
 	height:150px!important;
 	width:25%;
-	/*padding:2em;*/
 	margin:0;
 	vertical-align:bottom!important;
 }
@@ -59,23 +58,6 @@ body{
 	text-align:center;
 	margin:1em auto 0;
 }
-
-/*.course-seq .views-view-grid .views-row .views-col img {vertical-align:bottom!important;}
-
-
-/*.field--name-field-course-sequence {display:block;clear:both;margin-top:1em!important;}
-.field--name-field-course-sequence .field__items {display:block;margin:1em 0 2em 1em;clear:both;}
-/*.field--name-field-course-sequence .field--item {float:left!important;}*/
-
-/*.course-seq .views-field-nothing {margin-top:2em!important;margin-bottom:1em!important}
-
-.course-seq .views-field-nothing .sequence-desc {display:flex;flex-direction:column;justify-content:flex-end;	height:4em;
- }
-.course-seq p {
-	max-width:120px;
-	margin-bottom:0;
-}*/
-
 
 ul { list-style: none; }
 ul.noindent,ul.noindent li {
