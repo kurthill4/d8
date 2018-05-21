@@ -26,9 +26,13 @@ body{
 .map-page .page-header {display:block;width:100%!important;}
 
 .spacer {clear:both}
-.content,.dir-content,.field--name-description,.degree-block {padding:5px 10px;}
+.content,.dir-content,
+.field--name-description,
+.degree-block {padding:5px 10px;}
+
 .content p,
 .field--name-description p {margin-bottom:1em}
+
 .content img,.field--name-description img {padding:3px}
 .degree-block h2 {display:none;}
 
@@ -50,7 +54,11 @@ body{
 	text-align:center;
 }
 
-.course-seq .views-col p {margin-top:1em;margin-bottom:0;}
+.course-seq .views-col p {
+	width:75%;
+	text-align:center;
+	margin:1em auto 0;
+}
 
 /*.course-seq .views-view-grid .views-row .views-col img {vertical-align:bottom!important;}
 
