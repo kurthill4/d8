@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
-    - field.field.node.event.feeds_item
     - field.field.node.event.field_contact
     - field.field.node.event.field_date_to_publish
     - field.field.node.event.field_directions
@@ -17,8 +16,10 @@ dependencies:
     - field.field.node.event.field_image
     - field.field.node.event.field_priority
     - field.field.node.event.field_rsvp_required
+    - field.field.node.event.field_test
     - node.type.event
   module:
+    - date_recur
     - datetime_range
     - file
     - image
@@ -142,10 +143,24 @@ content:
     third_party_settings: {  }
     type: boolean
     region: content
+  field_test:
+    weight: 114
+    label: above
+    settings:
+      show_rrule: true
+      show_next: 5
+      occurrence_format_type: medium
+      same_end_date_format_type: medium
+      count_per_item: true
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: date_recur_default_formatter
+    region: content
   links:
     weight: 100
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  feeds_item: true
+hidden: {  }

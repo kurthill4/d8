@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
-    - field.field.node.event.feeds_item
     - field.field.node.event.field_contact
     - field.field.node.event.field_date_to_publish
     - field.field.node.event.field_directions
@@ -17,9 +16,11 @@ dependencies:
     - field.field.node.event.field_image
     - field.field.node.event.field_priority
     - field.field.node.event.field_rsvp_required
+    - field.field.node.event.field_test
     - image.style.thumbnail
     - node.type.event
   module:
+    - date_recur
     - datetime_range
     - entity_reference_views_select
     - field_group
@@ -169,6 +170,13 @@ content:
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
+  field_test:
+    weight: 122
+    settings:
+      timezone_override: ''
+    third_party_settings: {  }
+    type: date_recur_default_widget
+    region: content
   status:
     type: boolean_checkbox
     settings:
@@ -187,9 +195,10 @@ content:
   url_redirects:
     weight: 50
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
-  feeds_item: true
   path: true
   promote: true
   sticky: true

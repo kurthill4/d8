@@ -1,0 +1,22 @@
+uuid: 84608af6-24b4-4395-8375-8e8a5c02fa8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_test
+    - node.type.event
+  module:
+    - date_recur
+id: node.event.field_test
+field_name: field_test
+entity_type: node
+bundle: event
+label: Test
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  precreate: P2Y
+field_type: date_recur
