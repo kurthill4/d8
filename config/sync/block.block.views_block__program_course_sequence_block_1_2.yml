@@ -1,23 +1,23 @@
-uuid: 5784ec00-9b42-4735-b293-bddeaa2424ee
+uuid: c4b430ef-15db-4594-8aab-a98003f2e672
 langcode: en
-status: true
+status: false
 dependencies:
   config:
-    - views.view.program_faculty
+    - views.view.program_course_sequence
   module:
     - block_visibility_groups
     - node
     - views
   theme:
     - miramar
-id: views_block__program_faculty_block_1
+id: views_block__program_course_sequence_block_1_2
 theme: miramar
 region: content
-weight: -22
+weight: -24
 provider: null
-plugin: 'views_block:program_faculty-block_1'
+plugin: 'views_block:program_course_sequence-block_1'
 settings:
-  id: 'views_block:program_faculty-block_1'
+  id: 'views_block:program_course_sequence-block_1'
   label: ''
   provider: views
   label_display: visible
