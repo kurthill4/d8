@@ -15,14 +15,8 @@ dependencies:
     - field.field.contact_message.apply_to_graduate.field_street
     - field.field.contact_message.apply_to_graduate.field_zip
   module:
-    - field_layout
-    - layout_discovery
     - telephone
     - text
-third_party_settings:
-  field_layout:
-    id: layout_twocol_bricks
-    settings: {  }
 id: contact_message.apply_to_graduate.default
 targetEntityType: contact_message
 bundle: apply_to_graduate
@@ -35,7 +29,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: first_above
+    region: content
   field_email:
     weight: 0
     settings:
@@ -43,7 +37,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: email_default
-    region: top
+    region: content
   field_first_name:
     weight: 2
     settings:
@@ -51,7 +45,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: top
+    region: content
   field_last_name:
     weight: 3
     settings:
@@ -59,7 +53,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: top
+    region: content
   field_middle_or_initial:
     weight: 4
     settings:
@@ -67,20 +61,20 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: top
+    region: content
   field_phone:
     weight: 1
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
-    region: top
+    region: content
   field_state:
     weight: 7
     settings: {  }
     third_party_settings: {  }
     type: options_select
-    region: second_above
+    region: content
   field_story:
     weight: 10
     settings:
@@ -89,7 +83,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea_with_summary
-    region: middle
+    region: content
   field_street:
     weight: 5
     settings:
@@ -97,7 +91,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: top
+    region: content
   field_zip:
     weight: 8
     settings:
@@ -105,14 +99,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: second_above
+    region: content
   message:
     type: string_textarea
     weight: 9
     settings:
       rows: 12
       placeholder: ''
-    region: middle
+    region: content
     third_party_settings: {  }
 hidden:
   copy: true

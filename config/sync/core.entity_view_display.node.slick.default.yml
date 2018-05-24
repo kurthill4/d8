@@ -8,15 +8,9 @@ dependencies:
     - field.field.node.slick.field_images
     - node.type.slick
   module:
-    - field_layout
     - image
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.slick.default
 targetEntityType: node
 bundle: slick

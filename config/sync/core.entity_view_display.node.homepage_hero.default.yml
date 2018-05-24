@@ -8,13 +8,7 @@ dependencies:
     - node.type.homepage_hero
   module:
     - blazy
-    - field_layout
-    - layout_discovery
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.homepage_hero.default
 targetEntityType: node
 bundle: homepage_hero

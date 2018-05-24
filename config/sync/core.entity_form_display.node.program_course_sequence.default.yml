@@ -8,14 +8,8 @@ dependencies:
     - field.field.node.program_course_sequence.field_course_sequence_document
     - node.type.program_course_sequence
   module:
-    - field_layout
     - file
-    - layout_discovery
     - path
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.program_course_sequence.default
 targetEntityType: node
 bundle: program_course_sequence

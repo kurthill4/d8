@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
+    - field.field.node.event.feeds_item
     - field.field.node.event.field_contact
     - field.field.node.event.field_date_to_publish
     - field.field.node.event.field_directions
@@ -19,18 +20,12 @@ dependencies:
     - node.type.event
   module:
     - datetime_range
-    - field_layout
     - file
     - image
-    - layout_discovery
     - link
     - options
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -70,11 +65,11 @@ content:
     region: content
   field_event_date:
     weight: 103
-    label: above
+    label: hidden
     settings:
-      separator: '-'
-      format_type: medium
       timezone_override: ''
+      format_type: calendar_time
+      separator: '-'
     third_party_settings: {  }
     type: daterange_default
     region: content
@@ -150,4 +145,7 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  feeds_item: true

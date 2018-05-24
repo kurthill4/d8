@@ -7,13 +7,7 @@ dependencies:
     - field.field.contact_message.feedback.field_instructions
     - field.field.contact_message.feedback.field_nature_of_your_message
   module:
-    - field_layout
-    - layout_discovery
     - options
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: contact_message.feedback.default
 targetEntityType: contact_message
 bundle: feedback

@@ -1,0 +1,8 @@
+uuid: 2f888230-d41b-451f-9064-4b2f68329f32
+langcode: en
+status: true
+dependencies: {  }
+id: mdy
+label: MDY
+locked: false
+pattern: 'M d Y'

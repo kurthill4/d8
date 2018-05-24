@@ -20,14 +20,8 @@ dependencies:
     - taxonomy.vocabulary.campus_resources
   module:
     - entity_reference_revisions
-    - field_layout
     - image
-    - layout_discovery
     - text
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: taxonomy_term.campus_resources.full
 targetEntityType: taxonomy_term
 bundle: campus_resources

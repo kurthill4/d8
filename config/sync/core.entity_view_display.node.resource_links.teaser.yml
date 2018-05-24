@@ -10,14 +10,8 @@ dependencies:
     - field.field.node.resource_links.field_user_type
     - node.type.resource_links
   module:
-    - field_layout
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.resource_links.teaser
 targetEntityType: node
 bundle: resource_links

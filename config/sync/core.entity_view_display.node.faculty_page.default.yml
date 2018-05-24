@@ -10,14 +10,8 @@ dependencies:
     - node.type.faculty_page
   module:
     - entity_reference_revisions
-    - field_layout
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.faculty_page.default
 targetEntityType: node
 bundle: faculty_page

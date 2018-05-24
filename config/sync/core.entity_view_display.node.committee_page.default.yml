@@ -17,15 +17,9 @@ dependencies:
     - field.field.node.committee_page.field_web_pages
     - node.type.committee_page
   module:
-    - field_layout
-    - layout_discovery
     - tablefield
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_twocol_bricks
-    settings: {  }
 id: node.committee_page.default
 targetEntityType: node
 bundle: committee_page
@@ -37,35 +31,35 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: top
+    region: content
   field_committee_goals:
     weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: middle
+    region: content
   field_committee_procedures:
     weight: 4
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: middle
+    region: content
   field_group_composition:
     weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
     type: tablefield
-    region: top
+    region: content
   field_membership:
     weight: 2
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: top
+    region: content
   field_standing_subcommittees:
     weight: 5
     label: above
@@ -73,7 +67,7 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: first_below
+    region: content
   field_web_pages:
     weight: 6
     label: above
@@ -81,7 +75,7 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: second_below
+    region: content
 hidden:
   field_co_chair_2: true
   field_committee_chair: true
