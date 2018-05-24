@@ -65,9 +65,7 @@
 }
 
 .calendar-calendar .single-day td {
-=======
 height:10%;
->>>>>>> fixCalendar
 }
 
 /**
@@ -256,6 +254,10 @@ table .mini-day-on a {
 .calendar-calendar .day-view .stripe {
   width: 100%;
 }
+.calendar-legend table {  margin: 0;
+  padding: 0;
+  border:none!important;
+}
 table.calendar-legend {
   background-color: #ccc;
   width: 100%;
@@ -263,14 +265,17 @@ table.calendar-legend {
   padding: 0;
 }
 table.calendar-legend tr.odd .stripe,
-table.calendar-legend tr.even .stripe {
+table.calendar-legend tr.even .stripe,
+.calendar-legend tr {
   height: 12px !important;
-  font-size: 9px !important;
+/*  font-size: 9px !important;*/
   line-height: 10px !important;
 }
 .calendar-legend td {
   text-align: left;
 }
+
+td.legend-stripe {width:2em!important}
 
 .calendar-empty {
   font-size: 1px;

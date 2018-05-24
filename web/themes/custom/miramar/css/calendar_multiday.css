@@ -614,12 +614,13 @@ table.calendar-legend tr.even .stripe {
 .calendar-calendar .month-view .full td.multi-day div.monthview,
 .calendar-calendar .week-view .full td.multi-day div.weekview,
 .calendar-calendar .day-view .full td.multi-day div.dayview {
-  background: #74a5d7;
+  background: #ffffcc;
   height: 1.9em;
   overflow: hidden;
   margin: 0px auto;
   color: #ffffff;
   position: relative;
+  border-bottom:1px solid #d1d4d3;
 }
 
 .calendar-calendar .week-view .full td.multi-day div.weekview {

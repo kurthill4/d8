@@ -27,10 +27,10 @@
     <tbody>
       {% for row in rows %}
 {% if numCols == 1 %}
-        <tr>
+        <tr class="stripe">
       {% endif %}
+          <td class="legend-stripe"><div style="background-color:{{ row.stripe }};color:{{ row.stripe }};" class="calendar-legend" title="Key: {{ row.label }}">{{ row.stripe }} &nbsp;</div></td>
           <td>{{ row.label }}</td>
-          <td><div style="background-color:{{ row.stripe }};color:{{ row.stripe }};" class="calendar-legend" title="Key: {{ row.label }}">{{ row.stripe }} &nbsp;</div></td>
 {% if (loop.last == true and numCols < totalCols) %}
 {% for i in range(numCols,totalCols) %}
 <td>&nbsp;</td>
