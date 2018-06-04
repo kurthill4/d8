@@ -1,0 +1,18 @@
+uuid: 1bb16448-788f-4a26-b852-c0cbd856e107
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.transfer_school
+id: node.transfer_school.title
+field_name: title
+entity_type: node
+bundle: transfer_school
+label: Campus
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

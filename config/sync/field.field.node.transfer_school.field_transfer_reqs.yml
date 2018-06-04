@@ -1,0 +1,21 @@
+uuid: 2c2106c2-66f8-4731-a68f-1fd8b04b3084
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_transfer_reqs
+    - node.type.transfer_school
+  module:
+    - text
+id: node.transfer_school.field_transfer_reqs
+field_name: field_transfer_reqs
+entity_type: node
+bundle: transfer_school
+label: 'Minimum Transfer Requirements'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

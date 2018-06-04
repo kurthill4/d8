@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "06586e722c2f1d22b1da94457b9bc63c",
+    "content-hash": "48f1e6f43424a20f0f9b7be58c7d8682",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1862,6 +1862,9 @@
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "Patching multiday issue for calendar": "https://www.drupal.org/files/issues/2018-04-06/calendar-date_range-2699477-71.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2478,7 +2481,8 @@
                 },
                 "patches_applied": {
                     "Role permission to view user email": "https://www.drupal.org/files/issues/role_based_email_access-2799049-2.patch",
-                    "Fixing date range filtering for Views": "https://www.drupal.org/files/issues/improve_the_views-2786577-76-core.patch"
+                    "Another Views patch for date range": "https://www.drupal.org/files/issues/2786577-270_0.patch",
+                    "First step in seconds issue for Datetime fields": "https://www.drupal.org/files/issues/2723159-43.patch"
                 }
             },
             "autoload": {

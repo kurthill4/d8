@@ -1,0 +1,19 @@
+uuid: 47fa3517-22e8-4087-9d3a-8223b6c558d1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_transfer_reqs
+field_name: field_transfer_reqs
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: 65ffb39d-0788-43f8-8bff-8b7129139c7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.transfer_school
+  module:
+    - text
+id: node.transfer_school.body
+field_name: body
+entity_type: node
+bundle: transfer_school
+label: 'Recommended Transfer Coursework'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

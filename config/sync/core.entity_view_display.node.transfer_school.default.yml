@@ -1,0 +1,48 @@
+uuid: 1306bc5a-0686-4a8d-8661-03c104af0660
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.transfer_school.body
+    - field.field.node.transfer_school.field_campus_website
+    - field.field.node.transfer_school.field_school_type
+    - field.field.node.transfer_school.field_transfer_reqs
+    - field.field.node.transfer_school.field_transfer_tips
+    - node.type.transfer_school
+  module:
+    - text
+    - user
+id: node.transfer_school.default
+targetEntityType: node
+bundle: transfer_school
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_transfer_reqs:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_transfer_tips:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_campus_website: true
+  field_school_type: true
