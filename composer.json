@@ -141,8 +141,10 @@
         },
 	"patches": {
 		"drupal/core": {"Role permission to view user email": "https://www.drupal.org/files/issues/role_based_email_access-2799049-2.patch",
-		"Fixing date range filtering for Views": "https://www.drupal.org/files/issues/improve_the_views-2786577-76-core.patch"
+		"Another Views patch for date range":"https://www.drupal.org/files/issues/2786577-270_0.patch",
+		"First step in seconds issue for Datetime fields": "https://www.drupal.org/files/issues/2723159-43.patch"
 		},
+		"drupal/calendar": {"Patching multiday issue for calendar": "https://www.drupal.org/files/issues/2018-04-06/calendar-date_range-2699477-71.patch"},
 		"drupal/entity_reference_views_select": {"Allowing No Selection for entity references": "https://www.drupal.org/files/issues/ervs-emptyvalue-2943488-3-8x.patch"
 		},
 		"drupal/feeds_ical": {"Patching property naming error": "https://www.drupal.org/files/issues/2018-04-25/feeds_ical-item_index-2966206-2_1.patch",

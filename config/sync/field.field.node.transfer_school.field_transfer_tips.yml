@@ -1,0 +1,21 @@
+uuid: 860c6f65-9bcc-4a2e-b6b1-5247936c141f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_transfer_tips
+    - node.type.transfer_school
+  module:
+    - text
+id: node.transfer_school.field_transfer_tips
+field_name: field_transfer_tips
+entity_type: node
+bundle: transfer_school
+label: 'Tips for Transfers'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

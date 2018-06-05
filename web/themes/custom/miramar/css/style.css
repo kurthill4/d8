@@ -37,6 +37,29 @@ ul.noindent,ul.noindent li {
 	margin: 0;
 }
 
+.course-seq .views-view-grid {display:table!important;padding:0;}
+.course-seq .views-view-grid * {float:none!important;}
+.course-seq .views-row {display:table-row!important;}
+.course-seq .views-col {
+	display:table-cell!important;
+	height:150px!important;
+	width:25%;
+	margin:0;
+	vertical-align:bottom!important;
+}
+.course-seq .views-col div {
+	display:table-cell!important;
+	padding:0;
+	margin:0;
+	text-align:center;
+}
+
+.course-seq .views-col p {
+	width:75%;
+	text-align:center;
+	margin:1em auto 0;
+}
+
 .content li,.field--name-description li {margin-bottom:1em;}
 .content ul li,.field--name-description ul li {
 	text-indent: -1em;
@@ -1223,7 +1246,8 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 
 /************** Modals *************/
 
-.ui-dialog-titlebar {background:#1d2451;color:#ffffff; }
+.ui-dialog-titlebar,.ui-dialog-titlebar-close {background:#1d2451;color:#ffffff!important; }
+.ui-dialog-titlebar-close:after { content: 'X'; font-weight:bold; }
 
 /************** Footer *************/
 
