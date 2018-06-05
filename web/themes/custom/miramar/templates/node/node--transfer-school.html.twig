@@ -85,21 +85,24 @@
   {% endif %}
   {{ title_suffix }}
 
-<div{{ content_attributes.addClass('content') }}>
-<h2>{{ node.title.value }}</h2>
-<h3>{{ node.field_event_date.value|date('l, F j') }}</h3>
-<h4>{{ content.field_event_date }}</h4>
-{% if node.field_event_location.value is not empty %}
-<h4>Location: {{ node.field_event_location.value }}</h4>
-{% endif %}
-{% if node.field_event_description is not empty %}
-<p>{{ node.field_event_description.value|raw }}</p>
-{% endif %}
-{% if node.field_external_website.uri is not empty %}
-<p class="bold"><a href="{{ node.field_external_website.0.url }}">{{ node.field_external_website.title }}</a></p>
-{% endif %}
-{% if node.field_contact.entity.field_last_name.value is not empty %}
-<p><a  class="bold"href="mailto:{{ node.field_contact.entity.mail.value }}">Email {{ node.field_contact.entity.field_first_name.value }} {{ node.field_contact.entity.field_last_name.value }}</a> for more information</p>
-{% endif %}
+  {% if display_submitted %}
+    <footer>
+      {{ author_picture }}
+      <div{{ author_attributes.addClass('author') }}>
+        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+        {{ metadata }}
+      </div>
+    </footer>
+  {% endif %}
+
+  <div{{ content_attributes.addClass('content') }}>
+    <h2>{{ node.field_transfer_reqs.fieldDefinition.label }}</h2>
+    {{ node.field_transfer_reqs.value|raw }}
+    <h2>{{ node.body.fieldDefinition.label }}</h2>
+    {{ node.body.value|raw }}
+    {% if node.field_transfer_tips is not empty %}
+    <h2>{{ node.field_transfer_tips.fieldDefinition.label }}</h2>
+    {{ node.field_transfer_tips.value|raw }}
+    {% endif %}
   </div>
 </article>

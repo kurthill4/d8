@@ -3,13 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.event.body
     - field.field.node.event.feeds_item
     - field.field.node.event.field_contact
     - field.field.node.event.field_date_to_publish
     - field.field.node.event.field_directions
     - field.field.node.event.field_event_date
-    - field.field.node.event.field_event_flyer
+    - field.field.node.event.field_event_description
     - field.field.node.event.field_event_location
     - field.field.node.event.field_event_type
     - field.field.node.event.field_external_website
@@ -17,21 +16,18 @@ dependencies:
     - field.field.node.event.field_image
     - field.field.node.event.field_priority
     - field.field.node.event.field_rsvp_required
-    - image.style.thumbnail
     - node.type.event
   module:
     - datetime_range
     - entity_reference_views_select
     - field_group
-    - file
-    - image
     - link
     - text
 third_party_settings:
   field_group:
     group_display_routing_options:
       children:
-        - field_event_type
+        - field_date_to_publish
         - field_priority
         - field_format
       parent_name: ''
@@ -45,10 +41,9 @@ third_party_settings:
       label: 'Display & Routing Options'
     group_date_time_information:
       children:
-        - field_date_to_publish
         - field_event_date
       parent_name: ''
-      weight: 1
+      weight: 2
       format_type: fieldset
       format_settings:
         id: ''
@@ -59,11 +54,9 @@ third_party_settings:
     group_location_contact:
       children:
         - field_event_location
-        - field_directions
         - field_external_website
         - field_rsvp_required
         - field_contact
-        - field_event_flyer
       parent_name: ''
       weight: 4
       format_type: fieldset
@@ -78,15 +71,6 @@ targetEntityType: node
 bundle: event
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 2
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
   field_contact:
     weight: 10
     settings: {  }
@@ -99,26 +83,19 @@ content:
     third_party_settings: {  }
     type: daterange_default
     region: content
-  field_directions:
-    weight: 7
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_event_date:
     weight: 3
     settings: {  }
     third_party_settings: {  }
     type: daterange_default
     region: content
-  field_event_flyer:
-    weight: 11
+  field_event_description:
+    weight: 3
     settings:
-      progress_indicator: throbber
+      size: 60
+      placeholder: 'Short description (HTML OK)'
     third_party_settings: {  }
-    type: file_generic
+    type: text_textfield
     region: content
   field_event_location:
     weight: 6
@@ -129,7 +106,7 @@ content:
     type: string_textfield
     region: content
   field_event_type:
-    weight: 3
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -143,21 +120,13 @@ content:
     type: link_default
     region: content
   field_format:
-    weight: 5
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
-  field_image:
-    weight: 3
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
   field_priority:
-    weight: 4
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -173,7 +142,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 121
+    weight: 7
     third_party_settings: {  }
     region: content
   title:
@@ -185,11 +154,15 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 50
+    weight: 6
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   feeds_item: true
+  field_directions: true
+  field_image: true
   path: true
   promote: true
   sticky: true

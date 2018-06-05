@@ -3,13 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.event.body
     - field.field.node.event.feeds_item
     - field.field.node.event.field_contact
     - field.field.node.event.field_date_to_publish
     - field.field.node.event.field_directions
     - field.field.node.event.field_event_date
-    - field.field.node.event.field_event_flyer
+    - field.field.node.event.field_event_description
     - field.field.node.event.field_event_location
     - field.field.node.event.field_event_type
     - field.field.node.event.field_external_website
@@ -20,7 +19,6 @@ dependencies:
     - node.type.event
   module:
     - datetime_range
-    - file
     - image
     - link
     - options
@@ -31,13 +29,6 @@ targetEntityType: node
 bundle: event
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_contact:
     weight: 107
     label: above
@@ -73,13 +64,12 @@ content:
     third_party_settings: {  }
     type: daterange_default
     region: content
-  field_event_flyer:
-    weight: 104
+  field_event_description:
+    weight: 114
     label: above
-    settings:
-      use_description_as_link_text: true
+    settings: {  }
     third_party_settings: {  }
-    type: file_default
+    type: text_default
     region: content
   field_event_location:
     weight: 105

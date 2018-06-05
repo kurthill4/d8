@@ -1,0 +1,21 @@
+uuid: 92e92de7-9aff-48f5-aaac-25e767a4153a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_description
+    - node.type.event
+  module:
+    - text
+id: node.event.field_event_description
+field_name: field_event_description
+entity_type: node
+bundle: event
+label: 'Event Description'
+description: 'Type a short description of the event. You can use HTML. (280 character maximum)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -11,8 +11,8 @@ id: node.event.field_external_website
 field_name: field_external_website
 entity_type: node
 bundle: event
-label: 'External Website'
-description: ''
+label: 'Website or Page'
+description: 'If there is a web address or College page where a student should go for information, put it here.'
 required: false
 translatable: true
 default_value: {  }

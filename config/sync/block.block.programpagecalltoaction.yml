@@ -11,7 +11,7 @@ dependencies:
 id: programpagecalltoaction
 theme: miramar
 region: sidebar_second
-weight: -19
+weight: -20
 provider: null
 plugin: miramar_pgmcall
 settings:
