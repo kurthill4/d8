@@ -76,7 +76,7 @@ settings:
   confirmation_type: url_message
   confirmation_title: ''
   confirmation_message: 'Your Tour Request has been submitted. A member of the Outreach team will contact you shortly.'
-  confirmation_url: /campus/outreach
+  confirmation_url: /campus/outreach-office
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
