@@ -52,6 +52,23 @@ var pushDown = document.getElementById("push");
 })(jQuery);
 
 
+(function ($) {
+/*	Drupal.behaviors.trackem = {
+		attach: function(context,settings) {
+			context.once(function() {
+				$('.slick-1 a').on('click',function() {
+					_gaq.push([‘_trackEvent’, ‘downloads’, ‘click’, ‘whitepaper’, ‘0’]);
+				}
+			}
+		}
+	}*/
+		  $('.slick-1 a').on('click',function() {
+			_gaq.push([‘_trackEvent’, ‘downloads’, ‘click’, ‘whitepaper’, ‘0’]);
+			}
+		);
+})(jQuery);
+
+
 
 /*
  (function ($, Drupal, settings) {

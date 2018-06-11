@@ -90,6 +90,9 @@ table.degrees th {text-align:center}
 table.degrees tr > td:not(:first-of-type) {
 	text-align:center!important;
 }
+
+table.schools td.image {text-align:left!important}
+
 td.vcenter {
 	vertical-align: center;
 }
