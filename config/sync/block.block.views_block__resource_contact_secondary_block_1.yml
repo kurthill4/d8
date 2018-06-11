@@ -41,6 +41,6 @@ visibility:
       node: '@node.node_route_context:node'
   request_path:
     id: request_path
-    pages: '/campus/*'
+    pages: "/campus/*\r\n/campus/forms/*"
     negate: false
     context_mapping: {  }

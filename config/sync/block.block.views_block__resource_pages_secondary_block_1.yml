@@ -35,11 +35,12 @@ visibility:
     id: node_type
     bundles:
       custom_web_page: custom_web_page
+      webform: webform
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
   request_path:
     id: request_path
-    pages: "/campus/*\r\n/forms/graduation/*"
+    pages: "/campus/*\r\n/forms/graduation/*\r\n/forms/outreach/*"
     negate: false
     context_mapping: {  }
