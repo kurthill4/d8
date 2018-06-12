@@ -37,7 +37,7 @@ class MiramarCustomCallBlock extends BlockBase {
 			</div>
 				<div class="col-lg-4 col-md-5 col-sm-6">
 					<div class="get-started">
-					<a href="https://www.sdccd.edu/docs/SSDept/SSDocs/Catalogs/Miramar%202018-2019.pdf">
+					<a href="https://www.sdccd.edu/docs/StudentServices/catalogs/2018-2019/Miramar%202018-2019.pdf">
 					<span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
 					Course Catalog
 					</a>
