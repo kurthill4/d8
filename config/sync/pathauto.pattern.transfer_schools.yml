@@ -1,0 +1,22 @@
+uuid: 0c97df48-8cd7-4027-a658-3ba10f7dbba3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: transfer_schools
+label: 'Transfer Schools'
+type: 'canonical_entities:node'
+pattern: '/articulation/[node:title]'
+selection_criteria:
+  8342ee9c-1006-4a34-b23f-0e34a88bc6bd:
+    id: node_type
+    bundles:
+      transfer_school: transfer_school
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 8342ee9c-1006-4a34-b23f-0e34a88bc6bd
+selection_logic: and
+weight: -5
+relationships: {  }

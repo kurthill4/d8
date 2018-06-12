@@ -61,7 +61,6 @@
   vertical-align: top;
   margin: 0;
   padding: 0;
-<<<<<<< HEAD
 }
 
 .calendar-calendar .single-day td {
@@ -246,24 +245,26 @@ table .mini-day-on a {
  * Formatting for the legend stripe and block.
  */
 .calendar-calendar .stripe {
-  height:  5px;
-  width: auto;
-  font-size: 1px !important;
-  line-height: 1px !important;
+  height:  20px;
+  /*width: auto;
+  /*font-size: 5px !important;
+  line-height: 5px !important;*/
 }
-.calendar-calendar .day-view .stripe {
+.calendar-calendar .stripe {
   width: 100%;
 }
 .calendar-legend table {  margin: 0;
   padding: 0;
   border:none!important;
 }
+
 table.calendar-legend {
   background-color: #ccc;
   width: 100%;
   margin: 0;
   padding: 0;
 }
+
 table.calendar-legend tr.odd .stripe,
 table.calendar-legend tr.even .stripe,
 .calendar-legend tr {
@@ -460,6 +461,12 @@ ul.event-type li * {
 
 @media only screen and (max-width: 800px) {
 
+.calendar .view-content,
+.calendar-calendar,
+.calendar-calendar table,
+.calendar-calendar .single-day {
+        width:100%!important;
+  }
  .calendar-calendar td, .calendar-calendar .month-view .full tr td.single-day.today, .calendar-calendar tbody, .calendar-calendar .month-view .full td.single-day .calendar-empty, .calendar-calendar .month-view .full td.single-day.empty, .calendar-calendar .month-view .full td.date-box.empty{
         border:0;
       background: none;
