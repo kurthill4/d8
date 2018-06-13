@@ -1,16 +1,14 @@
-uuid: 561ccbb2-657a-43f5-ab2d-cad19ce17bdf
 langcode: en
 status: closed
 dependencies:
   enforced:
     module:
       - webform_templates
-_core:
-  default_config_hash: cco81ljj_gKKnCzkAIjRvgrdap8YuVSGHrQfnsQiwwQ
 open: null
 close: null
 uid: null
 template: true
+archive: false
 id: template_issue
 title: Issue
 description: 'An issue webform template.'
@@ -55,6 +53,8 @@ settings:
   submission_login_message: ''
   submission_exception_message: ''
   submission_locked_message: ''
+  previous_submission_message: ''
+  previous_submissions_message: ''
   autofill: false
   autofill_message: ''
   autofill_excluded_elements: {  }
@@ -72,6 +72,7 @@ settings:
   preview_attributes: {  }
   preview_excluded_elements: {  }
   preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
   draft: none
   draft_multiple: false
   draft_auto_save: false
@@ -146,3 +147,6 @@ access:
     users: {  }
     permissions: {  }
 handlers: {  }
+uuid: 561ccbb2-657a-43f5-ab2d-cad19ce17bdf
+_core:
+  default_config_hash: cco81ljj_gKKnCzkAIjRvgrdap8YuVSGHrQfnsQiwwQ
