@@ -10,8 +10,8 @@ dependencies:
     - taxonomy.vocabulary.event_types
   content:
     - 'taxonomy_term:event_types:5805c437-1768-4162-bb7b-a91517285f4f'
-    - 'taxonomy_term:event_types:f562f9d1-911f-4622-b39f-9488a0f9bfe6'
   module:
+    - datetime
     - datetime_range
     - link
     - node
@@ -472,7 +472,8 @@ display:
           exposed: false
           expose:
             label: ''
-          plugin_id: standard
+          plugin_id: datetime
+          entity_type: node
       header: {  }
       footer: {  }
       empty: {  }

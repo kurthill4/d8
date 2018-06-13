@@ -1,16 +1,14 @@
-uuid: d3542b13-f7aa-435e-b329-11df872ab003
 langcode: en
 status: closed
 dependencies:
   enforced:
     module:
       - webform_templates
-_core:
-  default_config_hash: QNlSCGXBlV0di6MrLp3RlRpzQYXN6enj_DI2KOigiU8
 open: null
 close: null
 uid: null
 template: true
+archive: false
 id: template_employee_evaluation
 title: 'Employee Evaluation'
 description: 'An employee evaluation webform template.'
@@ -55,6 +53,8 @@ settings:
   submission_login_message: ''
   submission_exception_message: ''
   submission_locked_message: ''
+  previous_submission_message: ''
+  previous_submissions_message: ''
   autofill: false
   autofill_message: ''
   autofill_excluded_elements: {  }
@@ -72,6 +72,7 @@ settings:
   preview_attributes: {  }
   preview_excluded_elements: {  }
   preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
   draft: none
   draft_multiple: false
   draft_auto_save: false
@@ -146,3 +147,6 @@ access:
     users: {  }
     permissions: {  }
 handlers: {  }
+uuid: d3542b13-f7aa-435e-b329-11df872ab003
+_core:
+  default_config_hash: QNlSCGXBlV0di6MrLp3RlRpzQYXN6enj_DI2KOigiU8
