@@ -756,6 +756,15 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	font-size: 1.5em;
 }
 
+.caption a {
+	color:#ffd451;
+}
+
+.caption a:hover {
+	color:#ffffff;
+}
+
+
 .front .banner-content .get-started {width:420px; margin-left:5px;}
 .front .banner-content .get-started a {	width:inherit;
 }
