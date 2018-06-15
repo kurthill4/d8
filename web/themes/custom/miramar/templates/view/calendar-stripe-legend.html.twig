@@ -14,8 +14,28 @@
  * @ingroup themeable
  */
 #}
-<div class="calendar calendar-legend">
+<div class="calendar calendar-legend hide-lg">
   <table class="table table-responsive">
+    <thead>
+      <tr>
+        {% for header in headers %}
+          <td class="calendar-legend">{{ header.label }}</td>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in rows %}
+        <tr>
+          <td>{{ row.label }}</td>
+          <td><div style="background-color:{{ row.stripe }};color:{{ row.stripe }};" class="calendar-legend" title="Key: {{ row.label }}">{{ row.stripe }}&nbsp;</div></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<div class="calendar calendar-legend hide-xs">
+  <table class="table" border="1">
 {% set numCols = 1 %}
 {% set totalCols = 4 %}
 {% set count = rows.0['#rows'] | length %}
@@ -29,8 +49,8 @@
 {% if numCols == 1 %}
         <tr class="stripe">
       {% endif %}
-          <td class="legend-stripe"><div style="background-color:{{ row.stripe }};color:{{ row.stripe }};" class="calendar-legend" title="Key: {{ row.label }}">{{ row.stripe }} &nbsp;</div></td>
           <td>{{ row.label }}</td>
+          <td class="legend-stripe" style="background-color:{{ row.stripe }};color:{{ row.stripe }};" title="Key: {{ row.label }}">{{ row.stripe }}&nbsp;</td>
 {% if (loop.last == true and numCols < totalCols) %}
 {% for i in range(numCols,totalCols) %}
 <td>&nbsp;</td>

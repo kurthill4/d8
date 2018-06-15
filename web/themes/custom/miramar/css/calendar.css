@@ -245,7 +245,7 @@ table .mini-day-on a {
  * Formatting for the legend stripe and block.
  */
 .calendar-calendar .stripe {
-  height:  20px;
+  height:  10px!important;
   /*width: auto;
   /*font-size: 5px !important;
   line-height: 5px !important;*/
@@ -253,9 +253,14 @@ table .mini-day-on a {
 .calendar-calendar .stripe {
   width: 100%;
 }
+
+.calendar-legend {
+	margin:0 2em 0 0;
+}
 .calendar-legend table {  margin: 0;
   padding: 0;
   border:none!important;
+  width:auto;
 }
 
 table.calendar-legend {
@@ -274,9 +279,12 @@ table.calendar-legend tr.even .stripe,
 }
 .calendar-legend td {
   text-align: left;
+  padding:0;
 }
 
-td.legend-stripe {width:2em!important}
+td.legend-stripe {
+	width:1em!important;
+}
 
 .calendar-empty {
   font-size: 1px;
