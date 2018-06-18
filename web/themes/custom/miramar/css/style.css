@@ -756,6 +756,15 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	font-size: 1.5em;
 }
 
+.caption a {
+	color:#ffd451;
+}
+
+.caption a:hover {
+	color:#ffffff;
+}
+
+
 .front .banner-content .get-started {width:420px; margin-left:5px;}
 .front .banner-content .get-started a {	width:inherit;
 }
@@ -2634,6 +2643,7 @@ section#hero {max-height:602px!important}
 		.banner-content .get-started a {font-size:4vw}
 		.caption {width:100%!important;height:auto;padding:0.25em;margin:0 0 10px 0!important;}
 		.caption h1 {font-size:4vw!important}
+		.caption h3 {font-size:3vw!important}
 		.caption p {display:none!important;}
 		.slide-buttons {text-align:center}
 		.slide-buttons a {font-size:3vw}
