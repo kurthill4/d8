@@ -95,6 +95,7 @@ display:
           multiday_theme: '0'
           multiday_hidden:
             field_event_date: field_event_date
+            field_meeting_date_time: field_meeting_date_time
           granularity_links:
             day: ''
             week: ''
@@ -1172,6 +1173,7 @@ display:
         filters: false
         filter_groups: false
         fields: false
+        use_ajax: false
       row:
         type: calendar_row
         options:
@@ -1239,6 +1241,17 @@ display:
           content: '{{ arguments.field_event_date_value_full_date }}'
           pager_embed: 0
           plugin_id: calendar_header
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: '<p class="bold"><a href="/events-calendar">View Entire Month</a></p>'
+          plugin_id: text_custom
         calendar_header_1:
           id: calendar_header_1
           table: views
@@ -1574,7 +1587,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1695,6 +1708,7 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+      use_ajax: false
     cache_metadata:
       max-age: 0
       contexts:
