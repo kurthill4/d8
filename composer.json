@@ -145,7 +145,8 @@
 		"First step in seconds issue for Datetime fields": "https://www.drupal.org/files/issues/2723159-43.patch"
 		},
 		"drupal/calendar": {"Patching multiday issue for calendar": "https://www.drupal.org/files/issues/2018-04-06/calendar-date_range-2699477-71.patch",
-		"Patching Day view": "https://www.drupal.org/files/issues/2938872-replace-size-by-length_0.patch"
+		"Patching Day view": "https://www.drupal.org/files/issues/2938872-replace-size-by-length_0.patch",
+		"Timezone": "https://www.drupal.org/files/issues/2018-05-09/2604546-33.patch"
 },
 		"drupal/entity_reference_views_select": {"Allowing No Selection for entity references": "https://www.drupal.org/files/issues/ervs-emptyvalue-2943488-3-8x.patch"
 		},

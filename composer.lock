@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "48f1e6f43424a20f0f9b7be58c7d8682",
+    "content-hash": "0b9da52f1d6ba97e1e61e1c87275d5e7",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1864,7 +1864,8 @@
                     }
                 },
                 "patches_applied": {
-                    "Patching multiday issue for calendar": "https://www.drupal.org/files/issues/2018-04-06/calendar-date_range-2699477-71.patch"
+                    "Patching multiday issue for calendar": "https://www.drupal.org/files/issues/2018-04-06/calendar-date_range-2699477-71.patch",
+                    "Patching Day view": "https://www.drupal.org/files/issues/2938872-replace-size-by-length_0.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

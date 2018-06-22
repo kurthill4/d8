@@ -99,9 +99,9 @@ height:10%;
  * http://www.dustindiaz.com/min-height-fast-hack .
  */
 .calendar-calendar .inner {
-  /*min-height: 5em;
+  min-height: 5em;
   height: auto !important;
-  height: 5em;*/
+  height: 5em;
   padding: 0;
   margin: 0;
 }
@@ -249,9 +249,9 @@ table .mini-day-on a {
  */
 .calendar-calendar .stripe {
   height:  10px!important;
-  /*width: auto;
-  /*font-size: 5px !important;
-  line-height: 5px !important;*/
+  width: auto;
+  font-size: 5px !important;
+  line-height: 5px !important;
 }
 .calendar-calendar .stripe {
   width: 100%;
@@ -481,8 +481,8 @@ ul.event-type li * {
 
 @media only screen and (min-width: 800px) {
 .calendar ul.js-pager {margin:0 auto!important}
-.calendar .pager .pager__item--previous{margin-right:40%!important;}
-.calendar .pager .pager__item--next{margin-left:40%!important;}
+.calendar .pager .pager__item--previous{margin-right:25vw!important;}
+.calendar .pager .pager__item--next{margin-left:25vw!important;}
 
 }
 
@@ -491,7 +491,7 @@ ul.event-type li * {
 .calendar .view-content,
 .calendar-calendar,
 .calendar-calendar table,
-.calendar-calendar .single-day {
+.calendar-calendar .single-day, .calendar-calendar .multi-day {
         width:100%!important;
   }
 
