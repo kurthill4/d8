@@ -1,0 +1,22 @@
+uuid: 7f45e20a-888b-46f5-b284-12751a30f103
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.business_office
+  module:
+    - text
+id: node.business_office.body
+field_name: body
+entity_type: node
+bundle: business_office
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

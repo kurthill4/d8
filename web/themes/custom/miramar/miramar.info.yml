@@ -45,6 +45,7 @@ libraries-override:
       theme:
         css/calendar.css: css/calendar.css
         css/calendar_multiday.css: css/calendar_multiday.css
+        css/calendar-overlap.css: css/calendar-overlap.css
 
 stylesheets-remove:
  - '@modules/contrib/slick/css/theme/slick.theme.css'

@@ -1,0 +1,55 @@
+uuid: 189c09a8-b16c-45df-b90d-69651a12ad10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.business_office
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.table
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.text_and_image_left
+    - paragraphs.paragraphs_type.two_column
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+id: node.business_office.field_content
+field_name: field_content
+entity_type: node
+bundle: business_office
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text: text
+      two_column: two_column
+      video: video
+      image: image
+      table: table
+      text_and_image_left: text_and_image_left
+    target_bundles_drag_drop:
+      text:
+        enabled: true
+        weight: 4
+      two_column:
+        enabled: true
+        weight: 5
+      video:
+        enabled: true
+        weight: 6
+      image:
+        enabled: true
+        weight: 7
+      table:
+        enabled: true
+        weight: 8
+      text_and_image_left:
+        enabled: true
+        weight: 10
+field_type: entity_reference_revisions

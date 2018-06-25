@@ -2,7 +2,6 @@
  * Calendar calendar table styles.
  */
 .calendar .view-header h3 {text-align:center;font-size:4em}
-
 .calendar-calendar tr.odd, .calendar-calendar tr.even {
   background-color: #fff;
 }
@@ -20,6 +19,10 @@
   margin: 0;
   width: 100%;
   clear: both;
+}
+
+.calendar-calendar .month-view td {
+  min-height:4em!important;
 }
 
 /**
@@ -96,9 +99,9 @@ height:10%;
  * http://www.dustindiaz.com/min-height-fast-hack .
  */
 .calendar-calendar .inner {
-  /*min-height: 5em;
+  min-height: 5em;
   height: auto !important;
-  height: 5em;*/
+  height: 5em;
   padding: 0;
   margin: 0;
 }
@@ -246,9 +249,9 @@ table .mini-day-on a {
  */
 .calendar-calendar .stripe {
   height:  10px!important;
-  /*width: auto;
-  /*font-size: 5px !important;
-  line-height: 5px !important;*/
+  width: auto;
+  font-size: 5px !important;
+  line-height: 5px !important;
 }
 .calendar-calendar .stripe {
   width: 100%;
@@ -294,14 +297,21 @@ td.legend-stripe {
 /**
  * Formatting for the full day view.
  */
-.calendar-calendar td.calendar-agenda-hour {
-  font-family: serif;
+.calendar-calendar td.calendar-agenda-hour.calendar-calendar .table.full td.first {
   text-align: right;
   border: none;
   border-top: 1px #333 dotted;
   padding-top: .25em;
   width: 1%;
 }
+.calendar-calendar table.full .calendar-agenda-hour {
+background: #1d2451!important;
+color:#ffffff!important;
+font-family: Roboto,sans-serif;
+}
+
+
+
 .calendar-calendar td.calendar-agenda-no-hours {
   min-width: 1%;
 }
@@ -394,6 +404,8 @@ td.legend-stripe {
  * Set small font size for all items in calendar div, themes can override this.
  * Use x-small instead of em to avoid multiplying effect in nested items.
  */
+
+.calendar-calendar .contents {background:#ffc!important}
 .calendar-calendar div.calendar {
   border: none;
   font-size: x-small;
@@ -467,14 +479,22 @@ ul.event-type li * {
 	display:inline;
 }
 
+@media only screen and (min-width: 800px) {
+.calendar ul.js-pager {margin:0 auto!important}
+.calendar .pager .pager__item--previous{margin-right:25vw!important;}
+.calendar .pager .pager__item--next{margin-left:25vw!important;}
+
+}
+
 @media only screen and (max-width: 800px) {
 
 .calendar .view-content,
 .calendar-calendar,
 .calendar-calendar table,
-.calendar-calendar .single-day {
+.calendar-calendar .single-day, .calendar-calendar .multi-day {
         width:100%!important;
   }
+
  .calendar-calendar td, .calendar-calendar .month-view .full tr td.single-day.today, .calendar-calendar tbody, .calendar-calendar .month-view .full td.single-day .calendar-empty, .calendar-calendar .month-view .full td.single-day.empty, .calendar-calendar .month-view .full td.date-box.empty{
         border:0;
       background: none;
@@ -491,6 +511,9 @@ ul.event-type li * {
   .calendar-calendar td{
      display:block;
      width:100%;
+    }
+  .calendar-calendar td .contents {
+     font-size:1.25em!important;
     }
 }
 

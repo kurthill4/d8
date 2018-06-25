@@ -407,6 +407,18 @@ table.calendar-legend tr.even .stripe {
   height: auto;
   min-height: auto;
 }
+
+.calendar-calendar .month-view .full .multi-day .inner .item,
+.calendar-calendar .week-view .full .multi-day .inner .item {
+  min-height: 2em!important;
+}
+
+.calendar-calendar .month-view .full .multi-day .inner .item .view-item .monthview,
+.calendar-calendar .week-view .full .multi-day .inner .item .view-item .monthview{
+  min-height:2em!important;
+  line-height:100%!important;
+}
+
 .calendar-calendar .week-view .full .calendar-agenda-hour,
 .calendar-calendar .month-view .full .single-day .inner .view-item {
   float: left;

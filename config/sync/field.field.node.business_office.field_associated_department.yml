@@ -1,0 +1,28 @@
+uuid: 76165ae2-6a37-4110-a51f-c1b16a6eee11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_associated_department
+    - node.type.business_office
+    - node.type.department_page
+id: node.business_office.field_associated_department
+field_name: field_associated_department
+entity_type: node
+bundle: business_office
+label: 'Associated Department'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      department_page: department_page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
