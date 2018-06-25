@@ -1,0 +1,11 @@
+uuid: edacc994-b48d-4efb-b36d-146491747a3f
+langcode: en
+status: true
+dependencies:
+  module:
+    - convert_bundles
+id: convert_bundles_on_comment_type
+label: 'Convert Comment type Entity Bundles'
+type: comment_type
+plugin: convert_bundles_action_base
+configuration: {  }

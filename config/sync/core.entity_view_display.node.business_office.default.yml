@@ -1,0 +1,73 @@
+uuid: 7b3f6c5e-6f86-4b80-9e3e-816e70642dbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.business_office.body
+    - field.field.node.business_office.field_associated_campus_resource
+    - field.field.node.business_office.field_associated_committee
+    - field.field.node.business_office.field_associated_department
+    - field.field.node.business_office.field_associated_program
+    - field.field.node.business_office.field_content
+    - node.type.business_office
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.business_office.default
+targetEntityType: node
+bundle: business_office
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_associated_campus_resource:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_associated_committee:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_associated_department:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_associated_program:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_content:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

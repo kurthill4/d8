@@ -1,0 +1,28 @@
+uuid: 68b129a8-ddd3-4ea4-8e4a-9fb1c585ecd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_associated_program
+    - node.type.business_office
+    - node.type.program
+id: node.business_office.field_associated_program
+field_name: field_associated_program
+entity_type: node
+bundle: business_office
+label: 'Associated Program'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      program: program
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
