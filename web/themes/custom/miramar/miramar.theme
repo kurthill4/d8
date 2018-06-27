@@ -88,15 +88,4 @@ function miramar_field_widget_daterange_default_form_alter(&$element, FormStateI
   $element['end_value']['#date_time_element']['time']['#attributes']['step'] = 60;
 }
 
-/*function miramar_views_pre_render(&$view) {
-
-  if ($view->name=='event_date_on_calendar') {
-
-    foreach($view->result as $r) {
-      // do whatever you want with each "row"
-	
-	
-    }
-  }
-}*/
 
