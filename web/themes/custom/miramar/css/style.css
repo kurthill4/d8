@@ -21,6 +21,11 @@ body{
 	display:none;
 }
 
+hr {clear:both;border-color:#1d2451;margin:1.25em auto;}
+hr.medium {width:75%;}
+hr.short {width:50%;}
+
+.x2 {font-size:1.5em;}
 
 
 .map-page .page-header {display:block;width:100%!important;}

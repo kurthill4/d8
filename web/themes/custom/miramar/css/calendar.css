@@ -6,6 +6,10 @@
 .calendar-calendar tr.odd, .calendar-calendar tr.even {
   background-color: #fff;
 }
+.calendar-day .views-row {padding-left:1em }
+.calendar-day .odd {background-color:#d1d4d3; }
+.calendar-day .even { }
+
 .calendar-calendar table {
   border-collapse: collapse;
   border-spacing: 0;
