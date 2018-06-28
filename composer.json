@@ -77,6 +77,7 @@
         "drupal/video_embed_field": "^1.5",
         "drupal/views_bootstrap": "3.x-dev",
         "drupal/views_jump_menu": "^1.0@beta",
+        "drupal/views_php": "1.x-dev",
         "drupal/webform": "^5.0@RC",
         "drupal/webform_layout_container": "^1.1",
         "drupal/youtubechannel": "^3.0",
@@ -144,12 +145,13 @@
 	"patches": {
 		"drupal/core": {"Role permission to view user email": "https://www.drupal.org/files/issues/role_based_email_access-2799049-2.patch",
 		"Another Views patch for date range":"https://www.drupal.org/files/issues/2786577-270_0.patch",
-		"First step in seconds issue for Datetime fields": "https://www.drupal.org/files/issues/2723159-43.patch"
+		"First step in seconds issue for Datetime fields": "https://www.drupal.org/files/issues/2723159-43.patch",
+		"End date support for Date Range": "https://www.drupal.org/files/issues/2018-05-23/drupal-display-one-date-formatter-2827055-25.patch"
 		},
 		"drupal/calendar": {"Patching multiday issue for calendar": "https://www.drupal.org/files/issues/2018-04-06/calendar-date_range-2699477-71.patch",
-		"Patching Day view": "https://www.drupal.org/files/issues/2938872-replace-size-by-length_0.patch",
-		"Timezone": "https://www.drupal.org/files/issues/2018-05-09/2604546-33.patch"
-},
+		"Timezone": "https://www.drupal.org/files/issues/2018-05-09/2604546-33.patch",
+		"Patching Day view": "https://www.drupal.org/files/issues/2938872-replace-size-by-length_0.patch"
+		},
 		"drupal/entity_reference_views_select": {"Allowing No Selection for entity references": "https://www.drupal.org/files/issues/ervs-emptyvalue-2943488-3-8x.patch"
 		},
 		"drupal/feeds_ical": {"Patching property naming error": "https://www.drupal.org/files/issues/2018-04-25/feeds_ical-item_index-2966206-2_1.patch",

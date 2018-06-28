@@ -38,7 +38,7 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
+        type: none
         options: {  }
       query:
         type: views_query
@@ -96,10 +96,8 @@ display:
           multiday_hidden:
             nid: nid
             field_event_type: field_event_type
-            field_event_date: field_event_date
-            field_meeting_date_time: field_meeting_date_time
           granularity_links:
-            day: view.event_date_on_calendar.page_day
+            day: view.event_date_on_calendar.page_1
             week: ''
       row:
         type: calendar_row
@@ -414,8 +412,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: "{% if field_event_type != 'Deadline' %}\n<br />{{ field_event_date }}\n{% endif %}"
             make_link: false
             path: ''
             absolute: false
@@ -656,7 +654,7 @@ display:
           exposed: false
           expose:
             label: ''
-          granularity: second
+          granularity: minute
           plugin_id: datetime
       header: {  }
       footer: {  }
@@ -670,6 +668,82 @@ display:
       use_ajax: false
     cache_metadata:
       max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_committee'
+        - 'config:field.storage.node.field_event_date'
+        - 'config:field.storage.node.field_event_type'
+        - 'config:field.storage.node.field_meeting_date_time'
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Today
+    position: 5
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      title: 'Today''s Events'
+      defaults:
+        title: false
+        style: false
+        row: false
+        arguments: false
+      style:
+        type: default
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      path: events-calendar/today/%
+      arguments:
+        field_event_date_value_full_date:
+          id: field_event_date_value_full_date
+          table: node__field_event_date
+          field: field_event_date_value_full_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: date
+          default_argument_options: {  }
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            items_per_page: 25
+            override: false
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: true
+          validate:
+            type: calendar
+            fail: 'not found'
+          validate_options:
+            replacement_format: 'l, F j, Y'
+          plugin_id: datetime_full_date
+    cache_metadata:
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -1357,6 +1431,9 @@ display:
         exposed_form: false
         filters: false
         filter_groups: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
       exposed_form:
         type: bef
         options:
@@ -1499,6 +1576,9 @@ display:
         operator: AND
         groups:
           1: AND
+      use_more: false
+      use_more_always: false
+      use_more_text: more
     cache_metadata:
       max-age: 0
       contexts:

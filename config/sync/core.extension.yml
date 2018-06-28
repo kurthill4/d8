@@ -113,6 +113,7 @@ module:
   video_embed_wysiwyg: 0
   views_bootstrap: 0
   views_jump_menu: 0
+  views_php: 0
   views_templates: 0
   views_ui: 0
   webform: 0

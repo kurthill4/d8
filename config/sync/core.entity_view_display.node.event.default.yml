@@ -58,7 +58,7 @@ content:
     weight: 103
     label: hidden
     settings:
-      timezone_override: ''
+      timezone_override: America/Los_Angeles
       format_type: calendar_time
       separator: '-'
     third_party_settings: {  }
