@@ -1,0 +1,13 @@
+name: Twig
+description: 'Provides a text filter that renders using the Twig template engine.'
+# core: 8.x
+type: module
+
+dependencies:
+  - filter
+
+# Information added by Drupal.org packaging script on 2017-11-03
+version: '8.x-1.0'
+core: '8.x'
+project: 'twig'
+datestamp: 1509751386
