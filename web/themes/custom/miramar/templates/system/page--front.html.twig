@@ -109,7 +109,10 @@
 	</div>
 </div>
 </section>
-<div class="spacer hide-xl" style="height:10px">&nbsp;</div>
+<div class="spacer hide-xl" style="height:10px">&nbsp;</div> <!-- Comment this out when the menu is updated -->
+{#% if page.call %}
+  {{ page.call }}
+{% endif %#}
 
 {% if page.number %}
   {{ page.number }}

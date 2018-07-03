@@ -10,6 +10,7 @@ regions:
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
   banner: "Site Banner"
+#  call: "Homepage Call to Action"
   number: "Miramar By The Numbers"
   dates: "Dates/Deadlines & Program Dropdown"
   gallery: "Gallery Block"

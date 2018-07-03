@@ -805,10 +805,13 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 .banner-footer .get-started a {
 	width:100%;
 }
-
+.region-call {display:block;clear:both;background: #1d2451;}
+.region-call,.region-call > nav {width:100%;padding:0;margin:0}
 .call,.callsmall {width:100%}
 .callsmall {margin-top:0.9em}
-
+.menu-get-started {display:table;width:95%;height:100%;margin:0 auto}
+.call-menu {display:table-row;padding:0;margin:0 0 0 10%;}
+.callbar {display:table-cell;width:20%;padding:0;margin:0;}
 .call a{
 	background: #1d2451;
 	width:inherit;
@@ -820,31 +823,37 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
   	font-size: 1.5em;
 	text-transform: uppercase;
 }
-.callsmall a{
+
+.callsmall a {display:inline-block;width:inherit;font-size: 1.33em;padding: 0 50px 0 0;}
+.callbar a {width:100%;height:100%;font-size:1em;padding:0 25px 0 0;margin:0;}
+.callsmall a,.callbar a {
+	display:inline-block;
  	background: #1d2451;
-	width:inherit;
-	display: inline-block;
-	padding: 0 50px 0 0;
 	color: #fff;
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
-  	font-size: 1.33em;
 	text-transform: uppercase;
 }
 
-.call a:hover,.callsmall a:hover{
+.call a:hover,.callsmall a:hover,.callbar a:hover {
 	text-decoration: none;
 	background: #a22130;
 }
-.call span,.callsmall a span{ 
+.call span,.callsmall a span,.callbar span { 
 	margin-right: 15px;
-	height:100%;
+	height:100%!important;
 	background: #a22130;
 	display: inline-block;
-	padding: 10px 20px;
 }
-.call a:hover span,.callsmall a:hover span{
+.call span,.callsmall a span {padding: 10px 20px;}
+.callbar a span {padding: 10px 15px;font-size:1.25em!important}
+.call a:hover span,.callsmall a:hover span {
 	background: #1d2451;
+}
+
+.call-mobile,.call-mobile div {
+	padding:0!important;
+	margin:0!important;
 }
 
 .slide-buttons{
@@ -2288,21 +2297,21 @@ nav.main-menu {padding-left:0;}
 	font-family: 'Oswald', sans-serif;
 	font-size: 1.5em;
 }
+/*.region-call {margin-top:2em;padding-top:2em}*/
 		.call a{
 			padding: 0 5px 0 0;
 		  	font-size: 1.5vw;
 			width:100%;
 		}
-		.callsmall a{
+		.callsmall a,.callbar a{
 			padding: 0 5px 0 0;
 		  	font-size: 1.25vw;
-			width:100%;
-		}	
+		}
+		.callsmall a {width:100%;}
 		.call span, .callsmall span{
 			margin-right: 5px;
 			padding: 10px;
-		}	
-		 .ne-wrap .news-overlay{
+		}			 .ne-wrap .news-overlay{
 		 	padding: 22% 30px;
 		 }
 		 nav.main-menu li:first-child {
