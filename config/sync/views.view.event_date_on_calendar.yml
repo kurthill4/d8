@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_committee
     - field.storage.node.field_event_date
+    - field.storage.node.field_event_location
     - field.storage.node.field_event_type
     - field.storage.node.field_meeting_date_time
     - node.type.committee_meeting
@@ -650,7 +651,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          order: DESC
+          order: ASC
           exposed: false
           expose:
             label: ''
@@ -680,82 +681,6 @@ display:
         - 'config:field.storage.node.field_event_date'
         - 'config:field.storage.node.field_event_type'
         - 'config:field.storage.node.field_meeting_date_time'
-  page_1:
-    display_plugin: page
-    id: page_1
-    display_title: Today
-    position: 5
-    display_options:
-      display_extenders: {  }
-      display_description: ''
-      title: 'Today''s Events'
-      defaults:
-        title: false
-        style: false
-        row: false
-        arguments: false
-      style:
-        type: default
-        options:
-          row_class: ''
-          default_row_class: true
-          uses_fields: false
-      row:
-        type: fields
-        options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
-      path: events-calendar/today/%
-      arguments:
-        field_event_date_value_full_date:
-          id: field_event_date_value_full_date
-          table: node__field_event_date
-          field: field_event_date_value_full_date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          default_action: default
-          exception:
-            value: all
-            title_enable: false
-            title: All
-          title_enable: false
-          title: ''
-          default_argument_type: date
-          default_argument_options: {  }
-          default_argument_skip_url: false
-          summary_options:
-            base_path: ''
-            count: true
-            items_per_page: 25
-            override: false
-          summary:
-            sort_order: asc
-            number_of_records: 0
-            format: default_summary
-          specify_validation: true
-          validate:
-            type: calendar
-            fail: 'not found'
-          validate_options:
-            replacement_format: 'l, F j, Y'
-          plugin_id: datetime_full_date
-    cache_metadata:
-      max-age: 0
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - url
-        - user
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.field_committee'
-        - 'config:field.storage.node.field_event_date'
-        - 'config:field.storage.node.field_event_type'
-        - 'config:field.storage.node.field_meeting_date_time'
   page_day:
     display_plugin: page
     id: page_day
@@ -765,27 +690,11 @@ display:
       display_extenders: {  }
       display_description: ''
       style:
-        type: calendar
+        type: default
         options:
-          calendar_type: day
-          mini: '0'
-          name_size: '3'
-          with_weekno: '0'
-          max_items: '0'
-          max_items_behavior: more
-          groupby_times: hour
-          groupby_times_custom: null
-          theme_style: '1'
-          groupby_field: ''
-          multiday_theme: '1'
-          multiday_hidden:
-            nid: nid
-            field_event_type: field_event_type
-            field_event_date: field_event_date
-            field_meeting_date_time: field_meeting_date_time
-          granularity_links:
-            day: ''
-            week: ''
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
       defaults:
         style: false
         row: false
@@ -795,16 +704,14 @@ display:
         filter_groups: false
         fields: false
         use_ajax: false
+        css_class: false
       row:
-        type: calendar_row
+        type: fields
         options:
-          colors:
-            legend: type
-            calendar_colors_type:
-              article: '#ffffff'
-              page: '#ffffff'
-            taxonomy_field: ''
-            calendar_colors_vocabulary: {  }
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
       path: calendar-field_event_date/day
       menu:
         type: tab
@@ -869,22 +776,10 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          empty: false
-          tokenize: false
-          content: '<p class="bold"><a href="/events-calendar">View Entire Month</a></p>'
-          plugin_id: text_custom
-        calendar_header_1:
-          id: calendar_header_1
-          table: views
-          field: calendar_header
-          relationship: none
-          group_type: group
-          admin_label: 'Calendar Pager'
           empty: true
-          tokenize: 1
-          content: ''
-          pager_embed: 1
-          plugin_id: calendar_header
+          tokenize: false
+          content: '<p class="back-link"><a class="back-link" href="/events-calendar">View Entire Month</a></p>'
+          plugin_id: text_custom
       filters:
         status:
           value: '1'
@@ -1171,7 +1066,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: h2
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -1237,7 +1132,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: p
-          element_class: ''
+          element_class: 'bold x2'
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -1253,6 +1148,7 @@ display:
           settings:
             timezone_override: ''
             date_format: 'g:i a'
+            fromto: both
             separator: '-'
           group_column: value
           group_columns: {  }
@@ -1329,7 +1225,71 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        field_event_location:
+          id: field_event_location
+          table: node__field_event_location
+          field: field_event_location
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: p
+          element_class: 'bold x2'
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
       use_ajax: false
+      css_class: 'calendar calendar-day'
     cache_metadata:
       max-age: 0
       contexts:
@@ -1341,6 +1301,7 @@ display:
       tags:
         - 'config:field.storage.node.field_committee'
         - 'config:field.storage.node.field_event_date'
+        - 'config:field.storage.node.field_event_location'
         - 'config:field.storage.node.field_event_type'
         - 'config:field.storage.node.field_meeting_date_time'
   page_month:
@@ -1413,6 +1374,19 @@ display:
           content: '{{ arguments.field_event_date_value_year_month }}'
           pager_embed: 0
           plugin_id: calendar_header
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<p class="back-link"><a class="back-link" href="/calendar-field_event_date/day/{{ ''now''|date(''Ymd'') }}">Today''s Events</a></p>'
+            format: twig_allowed
+          plugin_id: text
         calendar_header_1:
           id: calendar_header_1
           table: views

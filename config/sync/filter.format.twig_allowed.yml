@@ -1,0 +1,35 @@
+uuid: f053a426-bf6c-4972-a1d6-e6c9c2c0f37a
+langcode: en
+status: true
+dependencies:
+  module:
+    - twig
+name: 'Twig Allowed'
+format: twig_allowed
+weight: 0
+filters:
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 72
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_twig:
+    id: filter_twig
+    provider: twig
+    status: true
+    weight: -22
+    settings: {  }
