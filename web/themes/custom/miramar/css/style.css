@@ -556,41 +556,6 @@ nav.mobile-nav li:first-child ol li{
   -o-background-size: 1280px 853px!important;
   background-size: 1280px 853px!important;
 }
-.slide-1{
-	background: transparent url(../images/herofront/Hero_1.png) no-repeat left top local;
-  -webkit-background-size: 1280 px 853px;
-  -moz-background-size: 1280px 853px;
-  -o-background-size: 1280px 853px;
-  background-size: 1280px 853px;
-}
-.slide-2{
-	background: transparent url(../images/herofront/Hero_2.png) no-repeat left top local;
-  -webkit-background-size: 1280px 853px;
-  -moz-background-size: 1280px 853px;
-  -o-background-size: 1280px 853px;
-  background-size: 1280px 853px;
-}
-.slide-3{
-	background: transparent url(../images/herofront/Hero_3.png) no-repeat left top local;
-  -webkit-background-size: 1280px 853px;
-  -moz-background-size: 1280px 853px;
-  -o-background-size: 1280px 853px;
-  background-size: 1280px 853px;
-}
-.slide-4{
-	background: transparent url(../images/herofront/Hero_5.png) no-repeat left top local;
-  -webkit-background-size: 1280px 853px;
-  -moz-background-size: 1280px 853px;
-  -o-background-size: 1280px 853px;
-  background-size: 1280px 853px;
-}
-.slide-5{
-	background: transparent url(../images/herofront/Pony.png) no-repeat left top local;
-  -webkit-background-size: 1280px 853px;
-  -moz-background-size: 1280px 853px;
-  -o-background-size: 1280px 853px;
-  background-size: 1280px 853px;
-}
 .slide-cr{
 	background: transparent url(../images/campus-resources-banner.png) no-repeat left top scroll;
   -webkit-background-size: 1280px 600px;
