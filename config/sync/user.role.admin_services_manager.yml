@@ -1,0 +1,17 @@
+uuid: ea2fe00d-d954-4a3b-8337-57cec309f839
+langcode: en
+status: true
+dependencies: {  }
+id: admin_services_manager
+label: 'Admin Services Manager'
+weight: 16
+is_admin: null
+permissions:
+  - 'create business_office content'
+  - 'create document content'
+  - 'delete any document content'
+  - 'delete own document files'
+  - 'edit any business_office content'
+  - 'edit any document content'
+  - 'edit any document files'
+  - 'edit own business_office content'
