@@ -47,10 +47,11 @@ third_party_settings:
       weight: 2
       format_type: fieldset
       format_settings:
+        label: 'Date & Time Information'
+        description: 'Current date is default; change as required. You don''t need to enter seconds.'
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: true
       label: 'Date & Time Information'
     group_location_contact:
       children:
