@@ -10,6 +10,7 @@ regions:
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
   banner: "Site Banner"
+  call: "Homepage Call to Action"
   number: "Miramar By The Numbers"
   dates: "Dates/Deadlines & Program Dropdown"
   gallery: "Gallery Block"
@@ -41,11 +42,11 @@ libraries-override:
     js:
       js/youtubechannel.js: js/youtubechannel.js
   calendar/calendar.theme:
-    css:
-      theme:
-        css/calendar.css: css/calendar.css
-        css/calendar_multiday.css: css/calendar_multiday.css
-        css/calendar-overlap.css: css/calendar-overlap.css
+   css:
+     theme:
+       css/calendar.css: css/calendar.css
+       css/calendar_multiday.css: css/calendar_multiday.css
+       css/calendar-overlap.css: css/calendar-overlap.css
 
 stylesheets-remove:
  - '@modules/contrib/slick/css/theme/slick.theme.css'

@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: get-started
 label: 'Get Started'
-description: ''
+description: 'Calls to action on homepage'
 locked: false

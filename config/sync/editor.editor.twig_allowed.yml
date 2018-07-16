@@ -1,14 +1,12 @@
-uuid: 338a598e-b50f-4eab-b444-41a3481c31dd
+uuid: e26aa5df-56a8-4cf7-b1b4-4994299dcee7
 langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.basic_html
+    - filter.format.twig_allowed
   module:
     - ckeditor
-_core:
-  default_config_hash: AqlPmO16LvJI4D0Ih6u4GFQIzqr5OnLgAUSjcUGWk2g
-format: basic_html
+format: twig_allowed
 editor: ckeditor
 settings:
   toolbar:
@@ -20,7 +18,7 @@ settings:
             - Bold
             - Italic
         -
-          name: Linking
+          name: Links
           items:
             - DrupalLink
             - DrupalUnlink
@@ -30,21 +28,14 @@ settings:
             - BulletedList
             - NumberedList
         -
-          name: 'Block Formatting'
+          name: Media
           items:
-            - Styles
-            - Format
+            - Blockquote
+            - DrupalImage
         -
           name: Tools
           items:
             - Source
-        -
-          name: Utilities
-          items:
-            - Cut
-            - Copy
-            - Paste
-            - PasteFromWord
   plugins:
     stylescombo:
       styles: ''
@@ -60,7 +51,7 @@ settings:
           width: '854'
           height: '480'
 image_upload:
-  status: true
+  status: false
   scheme: public
   directory: inline-images
   max_size: ''

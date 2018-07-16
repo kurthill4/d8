@@ -1,10 +1,32 @@
 /**
  * Calendar calendar table styles.
  */
+.calendar .page-subheader {text-align:center}
 .calendar .view-header h3 {text-align:center;font-size:4em}
+.calendar p.back-link {	margin:1em 0 1em 1em;text-align:center;
+}
+.calendar a.back-link {
+	background: #a22130;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.2em;
+	font-weight: 500;
+	width: 145px;
+	text-align: center;
+	padding: 6px 3px;
+}
+.calendar a.back-link:hover{
+	background: #1d2451;
+}
 .calendar-calendar tr.odd, .calendar-calendar tr.even {
   background-color: #fff;
 }
+.calendar-day .views-row {padding-left:1em }
+.calendar-day .odd {background-color:#d1d4d3; }
+.calendar-day .even { }
+
 .calendar-calendar table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -478,7 +500,12 @@ ul.event-type li,
 ul.event-type li * {
 	display:inline;
 }
+@media only screen and (min-width: 1900px) {
+.calendar ul.js-pager {margin:0 auto!important}
+.calendar .pager .pager__item--previous{margin-right:10%!important;}
+.calendar .pager .pager__item--next{margin-left:20%!important;}
 
+}
 @media only screen and (min-width: 800px) {
 .calendar ul.js-pager {margin:0 auto!important}
 .calendar .pager .pager__item--previous{margin-right:25vw!important;}

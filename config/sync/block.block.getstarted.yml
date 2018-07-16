@@ -1,0 +1,35 @@
+uuid: 21f35228-63a7-410a-b486-2e4e2f9d416d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.get-started
+  module:
+    - block_visibility_groups
+    - system
+  theme:
+    - miramar
+id: getstarted
+theme: miramar
+region: call
+weight: 0
+provider: null
+plugin: 'system_menu_block:get-started'
+settings:
+  id: 'system_menu_block:get-started'
+  label: 'Get Started'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -37,11 +37,11 @@ label[for="edit-field-event-type-target-id"] {
 .multiselect-native-select .btn-group:hover,
 .multiselect-native-select .btn-group:focus,
 .multiselect-native-select .btn-group.open,
-.multiselect-native-select ul  {background: #1d2451!important}
+.multiselect-native-select ul  {filter:none!important;background: #1d2451!important}
 
-.multiselect-native-select button:active {color:#000000;}
+/*.multiselect-native-select button:active {color:#000000;}*/
 
 .multiselect-native-select button,
 .multiselect-native-select button:hover,
 .multiselect-native-select button span,
-.multiselect-native-select ul li a {background:inherit!important;font-size:1.25em!important;color:#ffffff!important;}
+.multiselect-native-select ul li a {background:#1d2451!important;font-size:1.25em!important;color:#ffffff!important;}

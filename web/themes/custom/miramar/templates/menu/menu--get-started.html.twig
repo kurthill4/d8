@@ -1,0 +1,67 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *
+ * @ingroup templates
+ */
+#}
+{% import _self as menus %}
+
+{#
+  We call a macro which calls itself to render the full tree.
+  @see http://twig.sensiolabs.org/doc/tags/macro.html
+#}
+{{ menus.menu_links(items, attributes, 0) }}
+
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+<div id="menu-get-started">
+    <div class="call-mobile hide-lg">
+    <div class="form-group js-viewsJumpMenu">
+    <label for="getStarted" style="display:none">Get Started</label>
+    <select type="text" class="form-control" id="getStarted">
+    <option data-url="">Get Started Now!</option>
+    {% for item in items %}
+      {%
+        set item_classes = [
+          item.is_expanded? 'expanded',
+          item.is_expanded and menu_level == 0 ? 'dropdown',
+          item.in_active_trail ? 'active',
+        ]
+      %}   
+    <option data-url="{{ item.url }}">{{ item.title }}</option>
+    {% endfor %}
+    </select>
+    </div>
+    </div>
+<div class="menu-get-started hide-xs">
+    <div class="call-menu">
+    {% for item in items %}
+      {%
+        set item_classes = [
+          item.is_expanded? 'expanded',
+          item.is_expanded and menu_level == 0 ? 'dropdown',
+          item.in_active_trail ? 'active',
+        ]
+      %}   
+	<div class="callbar">
+	<a href="{{ item.url }}"><span><i class="fa fa-diamond" aria-hidden="true"></i>&nbsp;</span>
+{{ item.title }}</a>
+	</div>
+    {% endfor %}
+    </div>
+</div>
+</div> 
+  {% endif %}
+{% endmacro %}
