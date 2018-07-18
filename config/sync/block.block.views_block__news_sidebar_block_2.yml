@@ -12,7 +12,7 @@ dependencies:
 id: views_block__news_sidebar_block_2
 theme: miramar
 region: buttons
-weight: -28
+weight: -30
 provider: null
 plugin: 'views_block:news_sidebar-block_2'
 settings:

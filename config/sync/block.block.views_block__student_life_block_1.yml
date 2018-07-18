@@ -1,28 +1,34 @@
-uuid: 38994d73-b395-43f7-a15d-74845f85caef
+uuid: afda0332-cad6-4945-9ca2-af7d41266193
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.important_dates
+    - views.view.student_life
   module:
+    - block_visibility_groups
     - system
     - views
   theme:
     - miramar
-id: views_block__important_dates_block_1
+id: views_block__student_life_block_1
 theme: miramar
 region: dates
-weight: -32
+weight: -31
 provider: null
-plugin: 'views_block:important_dates-block_1'
+plugin: 'views_block:student_life-block_1'
 settings:
-  id: 'views_block:important_dates-block_1'
+  id: 'views_block:student_life-block_1'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
   items_per_page: none
 visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
   request_path:
     id: request_path
     pages: '<front>'

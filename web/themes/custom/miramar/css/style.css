@@ -879,6 +879,14 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	width:33.33%;
 }
 
+.region-dates .block-views-blockstudent-life-block-1 {
+	width:66.67%;
+	padding-left:6.67%;
+	margin-left:0;
+	padding-right:0;
+	margin-right:0;
+}
+
 .region-dates .block-views-blockwhat-do-you-want-to-be-block-1 {
 	width:66.67%;
 	background: #a22130;
@@ -2626,6 +2634,7 @@ section#hero {max-height:602px!important}
 		.caption p {display:none!important;}
 		.slide-buttons {text-align:center}
 		.slide-buttons a {font-size:3vw}
+		.block-views-blockstudent-life-block-1 {display:block;margin-top:1px;}
 		.block-views-blockwhat-do-you-want-to-be-block-1 {display:block;margin-top:1px;}
 		.block-views-blockwhat-do-you-want-to-be-block-1 h1 {font-size:5vw!important;}
 		.block-views-blockwhat-do-you-want-to-be-block-1 p {font-size:3vw!important;}
@@ -2704,6 +2713,21 @@ section#hero {max-height:602px!important}
 		.region-dates .block-views-blockimportant-dates-block-1 {
 			width:100%;
 		}
+
+		.block-views-blockstudent-life-block-1 {
+			display:block;
+			width:100%!important;
+			padding:0!important;
+			margin:0!important;
+		}
+.block-views-blockstudent-life-block-1 img.hide-lg {
+			width:100%;
+}
+.block-views-blockstudent-life-block-1 div {
+			width:100%!important;
+			padding:0!important;
+			margin:0!important;
+}
 
 		.region-dates .block-views-blockwhat-do-you-want-to-be-block-1 {
 			width:100%;
