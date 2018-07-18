@@ -141,7 +141,9 @@
             "web/themes/custom/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
         },
-	"patches": {
+"drupal-scaffold": { 
+       "excludes": [ ".htaccess", "robots.txt" ]
+       },	"patches": {
 		"drupal/core": {"Role permission to view user email": "https://www.drupal.org/files/issues/role_based_email_access-2799049-2.patch",
 		"Another Views patch for date range":"https://www.drupal.org/files/issues/2786577-270_0.patch",
 		"First step in seconds issue for Datetime fields": "https://www.drupal.org/files/issues/2723159-43.patch",
