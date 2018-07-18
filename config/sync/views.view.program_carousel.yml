@@ -466,6 +466,9 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
+      title: 'What do You Want to Study?'
+      defaults:
+        title: false
     cache_metadata:
       max-age: -1
       contexts:
