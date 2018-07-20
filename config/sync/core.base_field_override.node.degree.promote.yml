@@ -1,14 +1,14 @@
-uuid: 08818834-6830-4a6c-9def-17fff26eea41
+uuid: e777f5bd-7f94-4878-a153-86bf7d0c1436
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.map_page
-id: node.map_page.sticky
-field_name: sticky
+    - node.type.degree
+id: node.degree.promote
+field_name: promote
 entity_type: node
-bundle: map_page
-label: 'Sticky at top of lists'
+bundle: degree
+label: 'Promoted to front page'
 description: ''
 required: false
 translatable: true

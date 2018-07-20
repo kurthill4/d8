@@ -13,6 +13,6 @@ name: Pathways
 type: pathways
 description: 'This holds information on each College stakeholder pathway'
 help: ''
-new_revision: true
+new_revision: false
 preview_mode: 1
 display_submitted: false
