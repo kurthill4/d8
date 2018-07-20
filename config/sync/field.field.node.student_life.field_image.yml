@@ -12,7 +12,7 @@ field_name: field_image
 entity_type: node
 bundle: student_life
 label: Image
-description: ''
+description: 'The image that will display on the homepage for desktop and large tablet displays.'
 required: false
 translatable: true
 default_value: {  }

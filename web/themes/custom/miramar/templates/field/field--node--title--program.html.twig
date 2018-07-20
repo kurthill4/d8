@@ -28,7 +28,7 @@
   ]
 %}
 <span{{ attributes.addClass(classes) }}>
-  {%- for item in items -%}
+  {% for item in items %}
     <h1 class="page-header hide-title">{{ item.content }}</h1>
-  {%- endfor -%}
+  {% endfor %}
 </span>

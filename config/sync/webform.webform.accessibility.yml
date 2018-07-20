@@ -1,4 +1,4 @@
-uuid: e2acaf7e-aa0a-4c04-bc96-f88963120620
+uuid: 00de52c5-70d3-4a0e-a148-33ed64ffce2c
 langcode: en
 status: open
 dependencies: {  }
@@ -7,11 +7,11 @@ close: null
 uid: 1877
 template: false
 archive: false
-id: website_feedback
-title: 'Website Feedback'
+id: accessibility
+title: Accessibility
 description: ''
-category: 'Website Feedback'
-elements: null
+category: Accessibility
+elements: "email:\n  '#type': email\n  '#title': Email\n  '#maxlength': '255'\n  '#size': '25'\n  '#required': true\nyour_name:\n  '#type': textfield\n  '#title': 'Your Name'\n  '#maxlength': '255'\n  '#size': '50'\n  '#required': true\nurl_of_page:\n  '#type': textfield\n  '#title': 'URL of Page'\n  '#maxlength': '255'\n  '#size': '40'\n  '#autocomplete': 'off'\n  '#required': true\ndescription_of_problem:\n  '#type': textarea\n  '#title': 'Description of Problem'\n  '#required': true\n"
 css: ''
 javascript: ''
 settings:
@@ -144,4 +144,37 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  email:
+    id: email
+    label: Email
+    handler_id: email
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: btsmith@sdccd.edu
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: mmweb@sdccd.edu
+      from_options: {  }
+      from_name: default
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''

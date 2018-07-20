@@ -51,6 +51,7 @@ module:
   google_analytics: 0
   help: 0
   history: 0
+  honeypot: 0
   image: 0
   kint: 0
   layout_discovery: 0

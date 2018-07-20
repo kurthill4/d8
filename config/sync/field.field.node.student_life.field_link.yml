@@ -10,7 +10,7 @@ field_name: field_link
 entity_type: node
 bundle: student_life
 label: URL
-description: ''
+description: 'The link that you want this image to go to. For non-Miramar websites, use the FULL URL; e.g., "https://www.google.com." For College pages, use everything that comes AFTER "sdmiramar.edu;" e.g., "/campus/asg."'
 required: false
 translatable: true
 default_value: {  }
