@@ -1,0 +1,22 @@
+uuid: f02b0e22-f9e4-4b8a-beb3-2df97ab8b4f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.new_student_step
+id: node.new_student_step.promote
+field_name: promote
+entity_type: node
+bundle: new_student_step
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

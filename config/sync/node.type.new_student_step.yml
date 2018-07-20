@@ -13,6 +13,6 @@ name: Step
 type: new_student_step
 description: 'Contains each step for students to follow. Displayed by a View.'
 help: ''
-new_revision: true
+new_revision: false
 preview_mode: 1
 display_submitted: false

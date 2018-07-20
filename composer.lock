@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "879ab50bc43714cc5f18aa31595eb99e",
+    "content-hash": "a8cd41803c447b91f25273f6805b6f8f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2269,95 +2269,6 @@
             ],
             "description": "Drupal Console Extend Plugin",
             "time": "2017-07-28T17:11:54+00:00"
-        },
-        {
-            "name": "drupal/content_type_clone",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/content_type_clone",
-                "reference": "e4948ca14f73c98f44dae5139f01b0f3c5a66a1e"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1518348780",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "David Fiaty",
-                    "homepage": "https://www.drupal.org/user/3448299"
-                }
-            ],
-            "description": "Allows to clone content types from a simple link added to each content type in the content type list",
-            "homepage": "https://www.drupal.org/project/content_type_clone",
-            "support": {
-                "source": "http://cgit.drupalcode.org/content_type_clone"
-            },
-            "time": "2018-02-18T16:53:08+00:00"
-        },
-        {
-            "name": "drupal/convert_bundles",
-            "version": "1.0.0-alpha1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/convert_bundles",
-                "reference": "8.x-1.0-alpha1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/convert_bundles-8.x-1.0-alpha1.zip",
-                "reference": "8.x-1.0-alpha1",
-                "shasum": "6594245c718b71b34848cf04bfe7585a408693cd"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-alpha1",
-                    "datestamp": "1528805884",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "el1_1el",
-                    "homepage": "https://www.drupal.org/user/1795292"
-                }
-            ],
-            "description": "Convert entity bundles from one value to another",
-            "homepage": "https://www.drupal.org/project/convert_bundles",
-            "support": {
-                "source": "http://cgit.drupalcode.org/convert_bundles"
-            }
         },
         {
             "name": "drupal/core",
@@ -9531,6 +9442,95 @@
             }
         },
         {
+            "name": "drupal/content_type_clone",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/content_type_clone",
+                "reference": "e4948ca14f73c98f44dae5139f01b0f3c5a66a1e"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1518348780",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "David Fiaty",
+                    "homepage": "https://www.drupal.org/user/3448299"
+                }
+            ],
+            "description": "Allows to clone content types from a simple link added to each content type in the content type list",
+            "homepage": "https://www.drupal.org/project/content_type_clone",
+            "support": {
+                "source": "http://cgit.drupalcode.org/content_type_clone"
+            },
+            "time": "2018-02-18T16:53:08+00:00"
+        },
+        {
+            "name": "drupal/convert_bundles",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/convert_bundles",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/convert_bundles-8.x-1.0-alpha1.zip",
+                "reference": "8.x-1.0-alpha1",
+                "shasum": "6594245c718b71b34848cf04bfe7585a408693cd"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1528805884",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "el1_1el",
+                    "homepage": "https://www.drupal.org/user/1795292"
+                }
+            ],
+            "description": "Convert entity bundles from one value to another",
+            "homepage": "https://www.drupal.org/project/convert_bundles",
+            "support": {
+                "source": "http://cgit.drupalcode.org/convert_bundles"
+            }
+        },
+        {
             "name": "drupal/devel",
             "version": "1.2.0",
             "source": {
@@ -11076,8 +11076,6 @@
         "drupal/better_exposed_filters": 15,
         "drupal/calendar": 20,
         "drupal/cer": 15,
-        "drupal/content_type_clone": 20,
-        "drupal/convert_bundles": 15,
         "drupal/ctools": 10,
         "drupal/entity_embed": 10,
         "drupal/feeds": 20,
@@ -11103,6 +11101,8 @@
         "drupal/views_bootstrap": 20,
         "drupal/views_jump_menu": 10,
         "drupal/webform": 5,
+        "drupal/content_type_clone": 20,
+        "drupal/convert_bundles": 15,
         "drupal/migrate_plus": 10,
         "drupal/migrate_tools": 10
     },
