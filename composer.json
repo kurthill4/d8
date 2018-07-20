@@ -45,6 +45,7 @@
         "drupal/file_entity": "^2.0@beta",
         "drupal/fortytwo_admin": "^1.7",
         "drupal/google_analytics": "^2.2",
+        "drupal/honeypot": "^1.27",
         "drupal/imce": "^1.5",
         "drupal/libraries": "^3.0@dev",
         "drupal/linkit": "^4.3",
