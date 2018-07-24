@@ -55,10 +55,6 @@ flickity:
   js:
     js/flickity.pkgd.min.js: {}
 
-google_pgms:
-  js:
-    js/google-event-programs.js: {}
-
 sdccd:
   header: true
   js:
