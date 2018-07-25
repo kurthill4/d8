@@ -54,7 +54,8 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      conditional_fields: {  }
     type: string_textfield
     region: content
   field_custom_content:

@@ -8,10 +8,12 @@ dependencies:
     - field.field.node.program.field_catalog_pages
     - field.field.node.program.field_certificate_link
     - field.field.node.program.field_contact_2
+    - field.field.node.program.field_contact_3
     - field.field.node.program.field_course_sequence
     - field.field.node.program.field_degrees
     - field.field.node.program.field_director_contact
     - field.field.node.program.field_image
+    - field.field.node.program.field_phone
     - field.field.node.program.field_program_emphasis
     - field.field.node.program.field_program_hero_image
     - field.field.node.program.field_school
@@ -92,9 +94,11 @@ content:
     third_party_settings: {  }
 hidden:
   field_contact_2: true
+  field_contact_3: true
   field_degrees: true
   field_director_contact: true
   field_image: true
+  field_phone: true
   field_program_hero_image: true
   field_school: true
   field_web_pages: true
