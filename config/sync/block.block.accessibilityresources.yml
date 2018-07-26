@@ -1,9 +1,9 @@
-uuid: 4920d175-0165-4c60-ab9d-d17042371e4e
+uuid: 3ee05c88-e2ba-4872-88d7-d295b4f39a74
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:4f50c1b6-ab98-48da-b04c-2f938b2254eb'
+    - 'block_content:basic:60912474-733d-432a-988f-a86b6857a5f9'
   module:
     - block_content
     - block_visibility_groups
@@ -15,9 +15,9 @@ theme: miramar
 region: sidebar_second
 weight: 0
 provider: null
-plugin: 'block_content:4f50c1b6-ab98-48da-b04c-2f938b2254eb'
+plugin: 'block_content:60912474-733d-432a-988f-a86b6857a5f9'
 settings:
-  id: 'block_content:4f50c1b6-ab98-48da-b04c-2f938b2254eb'
+  id: 'block_content:60912474-733d-432a-988f-a86b6857a5f9'
   label: 'Accessibility Resources'
   provider: block_content
   label_display: visible

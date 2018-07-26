@@ -1,9 +1,12 @@
+uuid: 561ccbb2-657a-43f5-ab2d-cad19ce17bdf
 langcode: en
 status: closed
 dependencies:
   enforced:
     module:
       - webform_templates
+_core:
+  default_config_hash: cco81ljj_gKKnCzkAIjRvgrdap8YuVSGHrQfnsQiwwQ
 open: null
 close: null
 uid: null
@@ -147,6 +150,3 @@ access:
     users: {  }
     permissions: {  }
 handlers: {  }
-uuid: 561ccbb2-657a-43f5-ab2d-cad19ce17bdf
-_core:
-  default_config_hash: cco81ljj_gKKnCzkAIjRvgrdap8YuVSGHrQfnsQiwwQ
