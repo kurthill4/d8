@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_image
-    - field.storage.node.field_mobile_image
     - field.storage.node.field_link
+    - field.storage.node.field_mobile_image
     - node.type.student_life
   module:
     - image
@@ -351,7 +351,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<a href=\"{{ field_link }}\">\n<span class=\"hide-xs\">{{ field_image }}</span>\n<span class=\"hide-lg\">{{ field_mobile_image }}</span>\n</a>"
+            text: "<div class=\"sl-wrap hide-xs\">\n<a class=\"news-overlay\" href=\"{{ field_link }}\">&nbsp;</a>\n{{ field_image }}\n</div>\n<div class=\"sl-mobile hide-lg\">\n<a href=\"{{ field_link }}\">\n<span class=\"hide-lg\">{{ field_mobile_image }}</span>\n</a>\n</div>\n"
             make_link: false
             path: ''
             absolute: false
@@ -444,8 +444,8 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_image'
-        - 'config:field.storage.node.field_mobile_image'
         - 'config:field.storage.node.field_link'
+        - 'config:field.storage.node.field_mobile_image'
   block_1:
     display_plugin: block
     id: block_1
@@ -463,5 +463,5 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_image'
-        - 'config:field.storage.node.field_mobile_image'
         - 'config:field.storage.node.field_link'
+        - 'config:field.storage.node.field_mobile_image'

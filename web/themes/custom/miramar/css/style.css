@@ -1205,6 +1205,32 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	display: block;
 }
 
+.sl-wrap {
+	position:relative;
+}
+
+.sl-wrap img{
+	width: 100%;
+}
+
+.sl-wrap .news-overlay{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	padding:15% 5px;
+}
+
+.sl-wrap:hover .news-overlay{
+  	background: rgba(29, 26, 81, 0.5);
+}
+
+.sl-wrap .news-overlay span {
+	display:block;
+}
+
 .newscenter {margin-top:2em!important;}
 .newscenter .views-field-title {max-width:120px!important}
 .newscenter a {font-weight:bold!important;width:inherit}
