@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.student_life.field_caption
     - field.field.node.student_life.field_image
     - field.field.node.student_life.field_link
     - field.field.node.student_life.field_mobile_image
@@ -22,6 +23,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_caption:
+    weight: 124
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_image:
     weight: 121
     settings:

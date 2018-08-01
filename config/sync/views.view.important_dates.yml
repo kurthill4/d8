@@ -481,12 +481,17 @@ display:
       arguments: {  }
       display_extenders: {  }
       title: 'Important Dates'
-      css_class: ''
+      css_class: deadlines
       filter_groups:
         operator: AND
         groups:
           1: AND
       use_ajax: true
+      use_more: true
+      use_more_always: true
+      use_more_text: 'Campus Calendar'
+      link_url: /events-calendar
+      link_display: custom_url
     cache_metadata:
       max-age: -1
       contexts:

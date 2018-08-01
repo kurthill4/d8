@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.student_life.field_caption
     - field.field.node.student_life.field_image
     - field.field.node.student_life.field_link
     - field.field.node.student_life.field_mobile_image
@@ -15,6 +16,14 @@ targetEntityType: node
 bundle: student_life
 mode: default
 content:
+  field_caption:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_image:
     weight: 101
     label: above
