@@ -144,8 +144,8 @@ display:
           label: ''
           exclude: true
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '{{ path }}?utm_source=dropdown&utm_medium=homepage&utm_campaign=programs'
             make_link: false
             path: ''
             absolute: false
@@ -182,10 +182,11 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
+          text: view
+          output_url_as_text: true
           absolute: false
           entity_type: node
           plugin_id: entity_link
-          output_url_as_text: true
       filters:
         status:
           value: '1'

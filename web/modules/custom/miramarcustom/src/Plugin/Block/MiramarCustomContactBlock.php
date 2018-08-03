@@ -37,7 +37,7 @@ class MiramarCustomContactBlock extends BlockBase {
 	}
 
     if($theIP == '10.72.20.102' or substr($theIP,0,4) == '10.7' or !(\Drupal::currentUser()->isAnonymous()))
-	$intra = '<li><a href="http://webissues.ics.sdmiramar.net/issue/report?url=' . $_SERVER['REQUEST_URI'] . '">Report Issues With This Page</a></li>';
+	$intra = '<li><a href="https://webissues.ics.sdmiramar.net/issue/report?url=' . $_SERVER['REQUEST_URI'] . '">Report Issues With This Page</a></li>';
 
     $build['contact']['content'] = [
       '#markup' => '
@@ -79,11 +79,12 @@ class MiramarCustomContactBlock extends BlockBase {
                 <p class="img" role="heading"><img src="' . $imagepath . '/images/icon-users.png" alt="Resources & Information"></p>
                 <strong>Resources &amp; Information</strong>
                 <ul class="miramar">
-                  <li><a href="http://police.sdccd.edu/jclery.cfm">Clery Act Information</a></li>
+                  <li><a href="/508">Website Accessibility Information</a></li>
+                  <li><a href="https://police.sdccd.edu/jclery.cfm">Clery Act Information</a></li>
                   <li><a href="/campus/foundation">Miramar College Foundation</a></li>
                   <li><a href="/privacy">Privacy Statement</a></li>
                   <li><a href="/facultystaff/faculty-info">Resources for Faculty &amp; Staff</a></li>
-                  <li><a href="http://www.sdccd.edu/daapp/">Smoking/Substance Policy</a></li>
+                  <li><a href="https://www.sdccd.edu/daapp/">Smoking/Substance Policy</a></li>
                   <li><a href="https://get.adobe.com/reader/" target="_blank">Get Adobe Reader</a></li>' . $intra .
                '</ul>
               </div>

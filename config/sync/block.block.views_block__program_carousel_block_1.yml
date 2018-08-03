@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.program_carousel
   module:
+    - block_visibility_groups
     - system
     - views
   theme:
@@ -19,7 +20,7 @@ settings:
   id: 'views_block:program_carousel-block_1'
   label: ''
   provider: views
-  label_display: '0'
+  label_display: visible
   views_label: ''
   items_per_page: none
 visibility:
@@ -27,4 +28,9 @@ visibility:
     id: request_path
     pages: '<front>'
     negate: false
+    context_mapping: {  }
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
     context_mapping: {  }

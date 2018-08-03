@@ -51,7 +51,7 @@
 	{% set href = 'JavaScript://' %}
 	{% set icon = 'search' %}
       {% endif %}
-        <a {{ class }}href="{{ href }}"><i class="fa fa-{{ icon }}" aria-hidden="true"></i> {{ item.title }}</a>
+        <a {{ class }}href="{{ href }}?utm_source=homepage_topbar&utm_medium=homepage&utm_campaign=menu"><i class="fa fa-{{ icon }}" aria-hidden="true"></i> {{ item.title }}</a>
     {% endfor %}
     <div class="search-desktop">
       <a class="close-x" href="#"><i class="fa fa-times" aria-hidden="true" title="Close Search"></i><span class="sr-only">Close Search</span></a>

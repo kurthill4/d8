@@ -129,7 +129,7 @@ display:
           exclude: true
           alter:
             alter_text: false
-            text: ''
+            text: '{{ path|raw }}{{ nothing|raw }}'
             make_link: false
             path: ''
             absolute: false
@@ -150,7 +150,7 @@ display:
             more_link: false
             more_link_text: ''
             more_link_path: ''
-            strip_tags: false
+            strip_tags: true
             trim: false
             preserve_tags: ''
             html: false
@@ -167,7 +167,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           text: view
-          output_url_as_text: false
+          output_url_as_text: true
           absolute: false
           entity_type: node
           plugin_id: entity_link
@@ -181,10 +181,10 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<a href="{{ path }}?utm_source=carousel&utm_medium=homepage&utm_campaign=programs">{{ field_image }}</a>'
             make_link: false
-            path: ''
+            path: '{{ path|raw }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -223,7 +223,7 @@ display:
           type: image
           settings:
             image_style: ''
-            image_link: content
+            image_link: ''
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -245,10 +245,10 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<a href="{{ path }}?utm_source=carousel&utm_medium=homepage&utm_campaign=programs">{{ title }}</a>'
             make_link: false
-            path: ''
+            path: '{{ path }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -286,7 +286,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -466,6 +466,9 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
+      title: 'What do You Want to Study?'
+      defaults:
+        title: false
     cache_metadata:
       max-age: -1
       contexts:

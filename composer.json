@@ -28,9 +28,8 @@
         "drupal/bootstrap_layouts": "^4.1",
         "drupal/calendar": "1.x-dev",
         "drupal/cer": "^4.0@alpha",
+        "drupal/conditional_fields": "^1.0@alpha",
         "drupal/console": "~1.8",
-        "drupal/content_type_clone": "1.x-dev",
-        "drupal/convert_bundles": "^1.0@alpha",
         "drupal/core": "^8.5",
         "drupal/csv_serialization": "^1.3",
         "drupal/ctools": "^3.0@beta",
@@ -45,6 +44,7 @@
         "drupal/file_entity": "^2.0@beta",
         "drupal/fortytwo_admin": "^1.7",
         "drupal/google_analytics": "^2.2",
+        "drupal/honeypot": "^1.27",
         "drupal/imce": "^1.5",
         "drupal/libraries": "^3.0@dev",
         "drupal/linkit": "^4.3",
@@ -90,6 +90,8 @@
         "behat/mink": "~1.7",
         "behat/mink-goutte-driver": "~1.2",
         "drupal/config_partial_export": "^1.4",
+        "drupal/content_type_clone": "1.x-dev",
+        "drupal/convert_bundles": "^1.0@alpha",
         "drupal/devel": "^1.2",
         "drupal/migrate_plus": "^4.0@beta",
         "drupal/migrate_tools": "^4.0@beta",
@@ -141,8 +143,11 @@
             "web/themes/custom/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
         },
-	"patches": {
+"drupal-scaffold": { 
+       "excludes": [ ".htaccess", "robots.txt" ]
+       },	"patches": {
 		"drupal/core": {"Role permission to view user email": "https://www.drupal.org/files/issues/role_based_email_access-2799049-2.patch",
+		"Fixing More link": "https://www.drupal.org/files/issues/views-more-link-564106-154.patch",
 		"Another Views patch for date range":"https://www.drupal.org/files/issues/2786577-270_0.patch",
 		"First step in seconds issue for Datetime fields": "https://www.drupal.org/files/issues/2723159-43.patch",
 		"End date support for Date Range": "https://www.drupal.org/files/issues/2018-05-23/drupal-display-one-date-formatter-2827055-25.patch"

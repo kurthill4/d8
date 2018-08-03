@@ -11,8 +11,8 @@ dependencies:
     - miramar
 id: views_block__what_do_you_want_to_be_block_1
 theme: miramar
-region: dates
-weight: -13
+region: buttons
+weight: -29
 provider: null
 plugin: 'views_block:what_do_you_want_to_be-block_1'
 settings:

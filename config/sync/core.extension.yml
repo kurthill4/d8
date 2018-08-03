@@ -19,6 +19,7 @@ module:
   ckeditor: 0
   color: 0
   comment: 0
+  conditional_fields: 0
   config: 0
   contact: 0
   content_type_clone: 0
@@ -51,6 +52,7 @@ module:
   google_analytics: 0
   help: 0
   history: 0
+  honeypot: 0
   image: 0
   kint: 0
   layout_discovery: 0

@@ -513,7 +513,7 @@ ul.event-type li * {
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 769px) {
 
 .calendar .view-content,
 .calendar-calendar,

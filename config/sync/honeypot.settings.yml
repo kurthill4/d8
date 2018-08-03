@@ -1,0 +1,48 @@
+unprotected_forms:
+  - user_login_form
+  - search_form
+  - search_block_form
+  - views_exposed_form
+  - honeypot_settings_form
+protect_all_forms: false
+log: false
+element_name: demo
+time_limit: 5
+expire: 300
+form_settings:
+  user_register_form: false
+  user_pass: false
+  contact_message_apply_to_graduate_form: false
+  contact_message_feedback_form: false
+  contact_message_personal_form: false
+  node_announcement_form: false
+  node_business_office_form: false
+  node_by_the_numbers_form: false
+  node_campus_news_form: false
+  node_committee_meeting_form: false
+  node_committee_page_form: false
+  node_custom_web_page_form: false
+  node_degree_form: false
+  node_department_page_form: false
+  node_document_form: false
+  node_event_form: false
+  node_faculty_page_form: false
+  node_home_page_form: false
+  node_homepage_hero_form: false
+  node_images_form: false
+  node_jetsnews_form: false
+  node_map_page_form: false
+  node_new_student_step_form: false
+  node_news_center_form: false
+  node_pathways_form: false
+  node_program_form: false
+  node_program_course_sequence_form: false
+  node_resource_links_form: false
+  node_sdccd_campaign_form: false
+  node_slick_form: false
+  node_student_life_form: false
+  node_transfer_school_form: false
+  node_webform_form: false
+  comment_comment_form: false
+_core:
+  default_config_hash: 9bVDfWSa_In6VzTXmy04jJ_3ZQobihKjO9isuuUCPaw

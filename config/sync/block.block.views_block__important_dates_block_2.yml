@@ -1,0 +1,36 @@
+uuid: 1bf07cd8-36fe-4262-aed6-51269b315e2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.important_dates
+  module:
+    - block_visibility_groups
+    - system
+    - views
+  theme:
+    - miramar
+id: views_block__important_dates_block_2
+theme: miramar
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:important_dates-block_2'
+settings:
+  id: 'views_block:important_dates-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /studentlife
+    negate: false
+    context_mapping: {  }

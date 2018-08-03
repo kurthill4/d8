@@ -12,7 +12,7 @@ dependencies:
 id: views_block__important_dates_block_1
 theme: miramar
 region: dates
-weight: -14
+weight: -32
 provider: null
 plugin: 'views_block:important_dates-block_1'
 settings:

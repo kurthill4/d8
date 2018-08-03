@@ -1,0 +1,19 @@
+uuid: b59889f5-5d40-408e-9a31-c928cf3eb61c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.student_life
+id: node.student_life.field_link
+field_name: field_link
+entity_type: node
+bundle: student_life
+label: URL
+description: 'The link that you want this image to go to. For non-Miramar websites, use the FULL URL; e.g., "https://www.google.com." For College pages, use everything that comes AFTER "sdmiramar.edu;" e.g., "/campus/asg."'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
