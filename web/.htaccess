@@ -223,5 +223,6 @@ AddEncoding gzip svgz
 
   Redirect 302 /academics/automotive/about/toyota /programs/automotive-technology/toyota
   Redirect 302 /academics/automotive/about/honda  /programs/automotive-technology/honda
+  Redirect 302 /commencement /graduating-students
 
 </IfModule>
