@@ -63,10 +63,6 @@ module:
   meeting_auto_title: 0
   meeting_update: 0
   menu_ui: 0
-  migrate: 0
-  migrate_plus: 0
-  migrate_source_csv: 0
-  migrate_tools: 0
   miramarcustom: 0
   mobile_app: 0
   node: 0

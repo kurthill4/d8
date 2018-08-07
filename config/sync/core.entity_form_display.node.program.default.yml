@@ -11,7 +11,9 @@ dependencies:
     - field.field.node.program.field_course_sequence
     - field.field.node.program.field_degrees
     - field.field.node.program.field_director_contact
+    - field.field.node.program.field_email
     - field.field.node.program.field_image
+    - field.field.node.program.field_phone
     - field.field.node.program.field_program_emphasis
     - field.field.node.program.field_program_hero_image
     - field.field.node.program.field_school
@@ -21,11 +23,28 @@ dependencies:
     - node.type.program
   module:
     - entity_reference_views_select
+    - field_group
     - file
     - image
     - link
     - path
+    - telephone
     - text
+third_party_settings:
+  field_group:
+    group_alternate_contact:
+      children:
+        - field_email
+        - field_phone
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: 'If no contact person is designated, add desired contact info here.'
+        required_fields: true
+      label: 'Alternate Contact'
 id: node.program.default
 targetEntityType: node
 bundle: program
@@ -41,7 +60,7 @@ content:
     third_party_settings: {  }
     region: content
   field_career_transfer_options:
-    weight: 5
+    weight: 6
     settings:
       rows: 5
       placeholder: ''
@@ -49,7 +68,7 @@ content:
     type: text_textarea
     region: content
   field_catalog_pages:
-    weight: 10
+    weight: 11
     settings:
       size: 60
       placeholder: ''
@@ -57,7 +76,7 @@ content:
     type: string_textfield
     region: content
   field_certificate_link:
-    weight: 26
+    weight: 16
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -71,14 +90,14 @@ content:
     type: erviews_options_select
     region: content
   field_course_sequence:
-    weight: 13
+    weight: 14
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
     region: content
   field_degrees:
-    weight: 12
+    weight: 13
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -89,23 +108,15 @@ content:
     third_party_settings: {  }
     type: erviews_options_select
     region: content
-  field_image:
-    weight: 8
+  field_email:
+    weight: 19
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
-  field_program_emphasis:
-    weight: 4
-    settings:
-      rows: 5
+      size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
+    type: string_textfield
     region: content
-  field_program_hero_image:
+  field_image:
     weight: 9
     settings:
       progress_indicator: throbber
@@ -113,14 +124,37 @@ content:
     third_party_settings: {  }
     type: image_image
     region: content
+  field_phone:
+    weight: 20
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_program_emphasis:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_program_hero_image:
+    weight: 10
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
   field_school:
-    weight: 11
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_student_learning_outcomes:
-    weight: 6
+    weight: 7
     settings:
       rows: 5
       placeholder: ''
@@ -128,14 +162,14 @@ content:
     type: text_textarea
     region: content
   field_web_pages:
-    weight: 7
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   path:
     type: path
-    weight: 14
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -143,7 +177,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 121
+    weight: 18
     third_party_settings: {  }
     region: content
   title:
@@ -155,8 +189,10 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 50
+    weight: 17
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   promote: true

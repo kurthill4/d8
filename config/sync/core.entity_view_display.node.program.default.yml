@@ -11,7 +11,9 @@ dependencies:
     - field.field.node.program.field_course_sequence
     - field.field.node.program.field_degrees
     - field.field.node.program.field_director_contact
+    - field.field.node.program.field_email
     - field.field.node.program.field_image
+    - field.field.node.program.field_phone
     - field.field.node.program.field_program_emphasis
     - field.field.node.program.field_program_hero_image
     - field.field.node.program.field_school
@@ -70,6 +72,21 @@ content:
       text: 'Download [file:name]'
     third_party_settings: {  }
     type: file_download_link
+    region: content
+  field_email:
+    weight: 8
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_phone:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
     region: content
   field_program_emphasis:
     weight: 2
