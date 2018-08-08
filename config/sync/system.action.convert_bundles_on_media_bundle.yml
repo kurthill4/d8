@@ -1,0 +1,11 @@
+uuid: d4074101-2160-465d-9ad3-94418ef802d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - convert_bundles
+id: convert_bundles_on_media_bundle
+label: 'Convert Media bundle Entity Bundles'
+type: media_bundle
+plugin: convert_bundles_action_base
+configuration: {  }

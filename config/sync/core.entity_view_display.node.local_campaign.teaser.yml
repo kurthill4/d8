@@ -1,0 +1,28 @@
+uuid: cdc9519d-b28e-4b4e-88ed-e80bf0820857
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.local_campaign.body
+    - node.type.local_campaign
+  module:
+    - text
+    - user
+id: node.local_campaign.teaser
+targetEntityType: node
+bundle: local_campaign
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

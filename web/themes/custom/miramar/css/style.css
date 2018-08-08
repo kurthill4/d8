@@ -613,6 +613,16 @@ nav.mobile-nav li:first-child ol li{
   -o-background-size: 100% auto;
   background-size: 100% auto;
 }
+
+.slide-campaign-local {
+	background: transparent url(../images/ad/sdmiramar-kusi-0.png) no-repeat center 0;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+}
+
+
 section#hero {max-height:640px;margin:0}
 
 .banner {position:relative;}
@@ -726,7 +736,7 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	font-size: 1.5em;
 }
 
-.caption a {
+.caption a,.adtext-r a {
 	color:#ffd451;
 }
 
@@ -2454,6 +2464,16 @@ section#hero {max-height:602px!important}
 		  -o-background-size: 960px 606px;
 		  background-size: 960px 606px;
 		}
+
+		.slide-campaign-local {
+			background: transparent url(../images/ad/sdmiramar-kusi-1.png) no-repeat bottom 0;
+		  -webkit-background-size: 960px 606px;
+		  -moz-background-size: 960px 606px;
+		  -o-background-size: 960px 606px;
+		  background-size: 960px 606px;
+		}
+
+
 		/*section#hero {max-height:606px}*/
 		.notfront .banner-content,.custom .banner-content{
 			position: absolute;

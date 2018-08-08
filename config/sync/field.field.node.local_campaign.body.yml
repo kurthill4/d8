@@ -1,0 +1,22 @@
+uuid: 3d61477b-a42f-45a1-8675-a145d80d5c11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.local_campaign
+  module:
+    - text
+id: node.local_campaign.body
+field_name: body
+entity_type: node
+bundle: local_campaign
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

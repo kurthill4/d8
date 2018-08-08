@@ -1,0 +1,22 @@
+uuid: c8551554-0271-4594-baff-792f5f018fac
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.local_campaign
+id: node.local_campaign.promote
+field_name: promote
+entity_type: node
+bundle: local_campaign
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

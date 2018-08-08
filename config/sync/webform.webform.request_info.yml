@@ -1,3 +1,4 @@
+uuid: 9387ddfe-d0c8-4359-bb96-cc1db56c7506
 langcode: en
 status: open
 dependencies: {  }
@@ -6,18 +7,18 @@ close: null
 uid: 1877
 template: false
 archive: false
-id: website_feedback
-title: 'Website Feedback'
+id: request_info
+title: 'Request Info'
 description: ''
-category: 'Website Feedback'
-elements: null
+category: 'Student Services'
+elements: "name:\n  '#type': textfield\n  '#title': Name\n  '#minlength': '1'\n  '#maxlength': '255'\n  '#size': '50'\n  '#required': true\n  '#required_error': 'Please Enter Your Name'\nemail:\n  '#type': email\n  '#title': Email\n  '#title_display': inline\n  '#required': true\n  '#required_error': 'Please Enter Desired Email'\nphone:\n  '#type': tel\n  '#title': Phone\n  '#title_display': inline\nhigh_school_attended:\n  '#type': textfield\n  '#title': 'High School Attended'\ngrade_level:\n  '#type': textfield\n  '#title': 'Grade Level'\n  '#maxlength': '10'\n  '#size': '12'\n"
 css: ''
 javascript: ''
 settings:
-  ajax: false
+  ajax: true
   ajax_scroll_top: form
   page: true
-  page_submit_path: ''
+  page_submit_path: /forms/request-info
   page_confirm_path: ''
   form_submit_once: false
   form_exception_message: ''
@@ -39,7 +40,7 @@ settings:
   form_unsaved: false
   form_disable_back: false
   form_submit_back: false
-  form_autofocus: false
+  form_autofocus: true
   form_details_toggle: false
   form_login: false
   form_login_message: ''
@@ -75,10 +76,10 @@ settings:
   draft_auto_save: false
   draft_saved_message: ''
   draft_loaded_message: ''
-  confirmation_type: page
+  confirmation_type: url
   confirmation_title: ''
   confirmation_message: ''
-  confirmation_url: ''
+  confirmation_url: /pigskin
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -143,5 +144,37 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
-uuid: e2acaf7e-aa0a-4c04-bc96-f88963120620
+handlers:
+  email:
+    id: email
+    label: Email
+    handler_id: email
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: btsmith@sdccd.edu
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: 'Future Student'
+      subject: 'Information Request'
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''

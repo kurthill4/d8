@@ -21,7 +21,9 @@ module:
   comment: 0
   config: 0
   contact: 0
+  content_type_clone: 0
   contextual: 0
+  convert_bundles: 0
   csv_serialization: 0
   ctools: 0
   ctools_views: 0

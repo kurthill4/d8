@@ -65,6 +65,13 @@ sdccd:
     https://www.googletagmanager.com/gtag/js?id=UA-102982479-1: { type: external, attributes: { async: true } }
     js/sdccd-google.js: {}
 
+ad:
+  header: true
+  js:
+    https://www.googletagmanager.com/gtag/js?id=UA-108867324-1: { type: external, attributes: { async: true } }
+    js/ad-google.js: {}
+
+
 sdccd_blank:
   js:
     js/sdccd-blank.js: {}

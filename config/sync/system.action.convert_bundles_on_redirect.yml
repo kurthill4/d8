@@ -1,0 +1,11 @@
+uuid: cf884ebe-13f1-43ae-9bae-64f3b25f7d54
+langcode: en
+status: true
+dependencies:
+  module:
+    - convert_bundles
+id: convert_bundles_on_redirect
+label: 'Convert Redirect Entity Bundles'
+type: redirect
+plugin: convert_bundles_action_base
+configuration: {  }

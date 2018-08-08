@@ -1,0 +1,26 @@
+uuid: a983e366-7de6-4c23-8764-7bbacea49332
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.local_campaign.body
+    - node.type.local_campaign
+  module:
+    - text
+    - user
+id: node.local_campaign.default
+targetEntityType: node
+bundle: local_campaign
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }
