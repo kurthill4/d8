@@ -24,6 +24,6 @@
     {{ item.entry }}
   </div>
 {% if item.entry|length >= 3 and 'date-box' not in item.class %}
-<a href="/events-calendar/{{ item.date|date('Ymd') }}">...</a>
+<a href="/calendar-field_event_date/day/{{ item.date|date('Ymd') }}">...</a>
 {% endif %}
 </td>

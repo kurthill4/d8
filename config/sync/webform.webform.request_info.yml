@@ -157,7 +157,7 @@ handlers:
         - completed
       to_mail: btsmith@sdccd.edu
       to_options: {  }
-      cc_mail: ''
+      cc_mail: khill@sdccd.edu
       cc_options: {  }
       bcc_mail: ''
       bcc_options: {  }
