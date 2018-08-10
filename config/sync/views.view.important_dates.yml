@@ -9,9 +9,14 @@ dependencies:
     - node.type.event
     - taxonomy.vocabulary.event_types
   content:
+    - 'taxonomy_term:event_types:20c672bd-9a86-42a2-adae-ec4fe5e3be00'
+    - 'taxonomy_term:event_types:3d7c1751-a33c-43e9-8341-4edf8df9e8dc'
+    - 'taxonomy_term:event_types:50d5b5af-2b93-4d7a-8389-711f9974ca3c'
+    - 'taxonomy_term:event_types:570fdb17-f97c-40cc-a7da-615b4e700582'
     - 'taxonomy_term:event_types:5805c437-1768-4162-bb7b-a91517285f4f'
+    - 'taxonomy_term:event_types:7356263a-48d2-4afc-ba4c-094dffa179a9'
     - 'taxonomy_term:event_types:793aec53-1eca-4b50-a1f4-73f417112778'
-    - 'taxonomy_term:event_types:a5bf587c-5c15-4117-a616-f9fbc9191c2d'
+    - 'taxonomy_term:event_types:8cd4aad1-9548-4246-89a6-0a91df338d6b'
   module:
     - datetime
     - datetime_range
@@ -84,6 +89,72 @@ display:
           separator: ''
           hide_empty: false
       fields:
+        nid:
+          id: nid
+          table: node_field_data
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: true
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: node
+          entity_field: nid
+          plugin_id: field
         body:
           id: body
           table: node__body
@@ -341,7 +412,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<p>\n{% if body is not empty %}\n<a href=\"{{ path }}\">{{ title }}</a>\n{% elseif field_external_website is not empty %}\n<a href=\"{{ field_external_website }}\">{{ title }}</a>\n{% else %}\n{{ title }}\n{% endif %}\n</p>"
+            text: "<p>\n<a href=\"/node/{{ nid }}\" class=\"use-ajax\" data-dialog-type=\"modal\">{{ title }}</a>\n</p>"
             make_link: false
             path: ''
             absolute: false
@@ -483,17 +554,17 @@ display:
       arguments: {  }
       display_extenders: {  }
       title: 'Important Dates'
-      css_class: ''
+      css_class: deadlines
       filter_groups:
         operator: AND
         groups:
           1: AND
       use_ajax: true
-      link_url: /events-calendar
-      link_display: custom_url
       use_more: true
       use_more_always: true
       use_more_text: 'Campus Calendar'
+      link_url: /events-calendar
+      link_display: custom_url
     cache_metadata:
       max-age: -1
       contexts:
@@ -859,24 +930,15 @@ display:
   block_2:
     display_plugin: block
     id: block_2
-    display_title: 'Events Sidebar'
+    display_title: Events
     position: 1
     display_options:
       display_extenders: {  }
-      display_description: ''
-      title: 'Dates & Events'
+      title: 'Campus Events'
       defaults:
         title: false
-        css_class: false
         filters: false
         filter_groups: false
-        pager: false
-        use_more: false
-        use_more_always: false
-        use_more_text: false
-        link_display: false
-        link_url: false
-      css_class: events-side
       filters:
         status:
           value: '1'
@@ -906,10 +968,16 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          operator: not
+          operator: or
           value:
+            7: 7
+            8: 8
             320: 320
-            11: 11
+            9: 9
+            309: 309
+            10: 10
+            312: 312
+            12: 12
           group: 1
           exposed: false
           expose:
@@ -948,16 +1016,7 @@ display:
         operator: AND
         groups:
           1: AND
-      pager:
-        type: some
-        options:
-          items_per_page: 5
-          offset: 0
-      use_more: true
-      use_more_always: true
-      use_more_text: 'Campus Calendar'
-      link_display: custom_url
-      link_url: /events-calendar
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:

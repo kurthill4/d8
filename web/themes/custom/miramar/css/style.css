@@ -953,7 +953,7 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	padding: 0;
 	list-style:none;
 }
-.important-dates ul,.events-side ul li{
+.important-dates ul li,.events-side ul li{
 	position: relative;
 	padding: 0 0 0 115px;
 	background: #fff;
@@ -1148,12 +1148,17 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	font-size: 30px;
 	z-index: 1;
 }
-.news-block .see-more a,
-.committee-meetings-block .see-more a {
+.more-link a {
 	color: #1e6e78;
 	font-weight: bold;
 	float:right;
 }
+
+.deadlines .more-link a {
+	margin-top:1em;
+	font-size:1.25em;
+}
+
 .news-title{
 	position: relative;
 	padding: 0 0 0 65px;
