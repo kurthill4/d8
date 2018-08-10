@@ -67,9 +67,9 @@
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
     %}
-<div class="spacer" style="height:1px">&nbsp;</div>
     <header>
         {{ page.navigation }}
+
       {# Navigation (collapsible) #}
       {% if page.navigation_collapsible %}
         {{ page.navigation_collapsible }}
@@ -79,21 +79,19 @@
 {% endif %}
 <div id="push" class="">
 <div class="banner notfront">
-  <div class="carousel">
-      <div class="carousel-cell slide-ns notfront"></div>
-</div>
-        <div class="banner-content hide-xs">
-          <div class="caption">
-            <h1>News Center</h1>
-            <p>Always Something Going On at Miramar.</p>
+      <div class="carousel-cell slide-sl">
+          <div class="banner-content">
+		<div class="caption">
+                    <h1>Student Life at Miramar</h1>
+                   <p>Success begins when you're involved.</p>
+		</div>
           </div>
+     </div>
 </div>
-</div>
-
 {# Main #}
 {% block main %}
-<div class="spacer hide-title" style="height:2em">&nbsp;</div>
-  <div role="main" class="main-container {{ container }} js-quickedit-main-content gateway news-center">
+<div class="spacer hide-title" style="height:1em">&nbsp;</div>
+  <div role="main" class="main-container {{ container }} js-quickedit-main-content gateway">
     <div class="row">
 
       {# Header #}

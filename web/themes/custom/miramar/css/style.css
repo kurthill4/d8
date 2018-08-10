@@ -598,6 +598,16 @@ nav.mobile-nav li:first-child ol li{
   -o-background-size: 1280px 600px;
   background-size: 1280px 600px;
 }
+
+.slide-sl {
+	background: transparent url(../images/sl-banner.png) no-repeat left top scroll;
+  -webkit-background-size: 1280px 600px;
+  -moz-background-size: 1280px 600px;
+  -o-background-size: 1280px 600px;
+  background-size: 1280px 600px;
+}
+
+
 .slide-custom {
 /*	background: transparent no-repeat left top scroll;*/
   -webkit-background-size: 1280px 600px;
@@ -938,12 +948,12 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	color: #31b7c8;
 	font-size: 30px;
 }
-.important-dates ul{
+.important-dates ul,.events-side ul{
 	margin: 0;
 	padding: 0;
 	list-style:none;
 }
-.important-dates ul li{
+.important-dates ul,.events-side ul li{
 	position: relative;
 	padding: 0 0 0 115px;
 	background: #fff;
@@ -956,7 +966,7 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 .important-dates ul li:last-child{
 	margin-bottom: 0;
 }
-.important-dates ul span{
+.important-dates ul span,.events-side ul span{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -974,11 +984,11 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 .important-dates ul p {
 	font-size:1.25em;
 }
-.important-dates ul a {
+.important-dates ul a,.events-side ul a {
 	color:#000000;
 	vertical-align:middle;
 }
-.important-dates ul a:hover {
+.important-dates ul a:hover,.events-side ul a hover {
 	color:#000000;
 	text-decoration:underline;
 }
@@ -2414,6 +2424,16 @@ section#hero {max-height:602px!important}
   -o-background-size: 1024px 480px;
   background-size: 1024px 480px;
 }
+
+.slide-sl{
+	background: transparent url(../images/sl-banner.png) no-repeat left top scroll;
+  -webkit-background-size: 1024px 480px;
+  -moz-background-size: 1024px 480px;
+  -o-background-size: 1024px 480px;
+  background-size: 1024px 480px;
+}
+
+
 .slide-pr, .slide-gr {
 	background: transparent url(../images/program-banner.jpg) no-repeat left top scroll;
   -webkit-background-size: 1024px 480px;
@@ -2567,6 +2587,13 @@ section#hero {max-height:602px!important}
 		}
 		.slide-pa{
 			background: transparent url(../images/personas-path-banner.jpg) no-repeat left top scroll;
+		  -webkit-background-size: 960px 450px;
+		  -moz-background-size: 960px 450px;
+		  -o-background-size: 960px 450px;
+		  background-size: 960px 450px;
+		}
+		.slide-sl{
+			background: transparent url(../images/sl-banner.png) no-repeat left top scroll;
 		  -webkit-background-size: 960px 450px;
 		  -moz-background-size: 960px 450px;
 		  -o-background-size: 960px 450px;
