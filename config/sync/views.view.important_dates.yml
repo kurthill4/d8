@@ -939,6 +939,7 @@ display:
         title: false
         filters: false
         filter_groups: false
+        css_class: false
       filters:
         status:
           value: '1'
@@ -1017,6 +1018,7 @@ display:
         groups:
           1: AND
       display_description: ''
+      css_class: events-side
     cache_metadata:
       max-age: -1
       contexts:
