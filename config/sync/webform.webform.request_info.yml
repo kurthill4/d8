@@ -155,9 +155,9 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: btsmith@sdccd.edu
+      to_mail: miraoutreach@sdccd.edu
       to_options: {  }
-      cc_mail: khill@sdccd.edu
+      cc_mail: ''
       cc_options: {  }
       bcc_mail: ''
       bcc_options: {  }
