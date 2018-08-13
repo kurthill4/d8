@@ -31,6 +31,7 @@ regions:
 libraries:
   - 'miramar/global-styling'
   - 'miramar/bootstrap-scripts'
+#  - 'miramar/google-local'
   - 'miramar/flickity'
   - 'miramar/vtour'
   - 'miramar/Roboto'

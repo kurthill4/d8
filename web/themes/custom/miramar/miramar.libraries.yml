@@ -55,9 +55,10 @@ flickity:
   js:
     js/flickity.pkgd.min.js: {}
 
-google_pgms:
+google_local:
+  header: true
   js:
-    js/google-event-programs.js: {}
+    js/sdmiramar-google.js: {}
 
 sdccd:
   header: true
