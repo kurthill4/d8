@@ -778,7 +778,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: '<p class="back-link"><a class="back-link" href="/events-calendar">View Entire Month</a></p>'
+          content: '<p class="back-link"><a class="back-link" href="/calendar">View Entire Month</a></p>'
           plugin_id: text_custom
       filters:
         status:
@@ -1311,7 +1311,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: events-calendar
+      path: calendar
       display_description: ''
       menu:
         type: tab

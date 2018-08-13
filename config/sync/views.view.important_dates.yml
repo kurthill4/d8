@@ -563,7 +563,7 @@ display:
       use_more: true
       use_more_always: true
       use_more_text: 'Campus Calendar'
-      link_url: /events-calendar
+      link_url: /calendar
       link_display: custom_url
     cache_metadata:
       max-age: -1
