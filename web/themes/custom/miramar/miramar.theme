@@ -43,8 +43,24 @@ function miramar_preprocess_block(&$variables) {
 }
   $variables['nodeid'] = $nid;
 }
+/*
+function miramar_preprocess_node(&$variables) {
+	extract($variables);
+	if(!empty($variables['node']))
+	{
+		$node = $variables['node'];
 
-
+		switch($node->getType()) {
+			case "event":
+				$start_date = $node->field_event_date->value;
+				$range_start = DrupalDatetime::createFromTimestamp((int)$start_date); // unix timestamp
+				$range_start->setTimezone(new \Datetimezone('PST'));
+				$node->field_event_date->value = format_date($range_start->getTimestamp() , 'custom', 'Y-m-d\TH:i:s', 'PST');
+				break;
+			default:
+		}
+	}
+}*/
 function miramar_theme_suggestions_page_alter(&$suggestions, &$vars) {
   if (\Drupal::routeMatch()->getRouteName() == 'entity.taxonomy_term.canonical' && $tid = \Drupal::routeMatch()->getRawParameter('taxonomy_term')) {
     $term = Term::load($tid);

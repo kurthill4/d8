@@ -107,6 +107,7 @@ display:
             legend: taxonomy
             calendar_colors_type:
               announcement: '#ffffff'
+              business_office: '#ffffff'
               by_the_numbers: '#ffffff'
               campus_news: '#ffffff'
               committee_meeting: '#ffffff'
@@ -121,6 +122,7 @@ display:
               home_page: '#ffffff'
               images: '#ffffff'
               jetsnews: '#ffffff'
+              local_campaign: '#ffffff'
               map_page: '#ffffff'
               news_center: '#ffffff'
               new_student_step: '#ffffff'
@@ -130,6 +132,7 @@ display:
               resource_links: '#ffffff'
               sdccd_campaign: '#ffffff'
               slick: '#ffffff'
+              transfer_school: '#ffffff'
               webform: '#ffffff'
             taxonomy_field: field_event_type
             calendar_colors_vocabulary:
