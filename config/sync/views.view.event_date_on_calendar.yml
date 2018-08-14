@@ -454,8 +454,9 @@ display:
           click_sort_column: value
           type: daterange_custom
           settings:
-            timezone_override: ''
+            timezone_override: America/Los_Angeles
             date_format: 'g:i a'
+            fromto: both
             separator: '-'
           group_column: value
           group_columns: {  }
@@ -778,7 +779,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: '<p class="back-link"><a class="back-link" href="/calendar">View Entire Month</a></p>'
+          content: '<p class="back-link"><a class="back-link" href="/calendar">View Current Month</a></p>'
           plugin_id: text_custom
       filters:
         status:
@@ -1384,7 +1385,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<p class="back-link"><a class="back-link" href="/calendar-field_event_date/day/{{ ''now''|date(''Ymd'') }}">Today''s Events</a></p>'
+            value: '<p class="back-link"><a class="back-link" href="/calendar-field_event_date/day/{{ ''now''|date(''Ymd'') }}">View Today''s Events</a></p>'
             format: twig_allowed
           plugin_id: text
         calendar_header_1:

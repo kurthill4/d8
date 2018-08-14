@@ -87,7 +87,7 @@
 
 <div{{ content_attributes.addClass('content') }}>
 <h2>{{ node.title.value }}</h2>
-<h3>{{ node.field_event_date.value|date('l, F j') }}</h3>
+<h3>{{ content.field_event_date.value|date('l, F j') }}</h3>
 <h4>{{ content.field_event_date }}</h4>
 {% if node.field_event_location.value is not empty %}
 <h4>Location: {{ node.field_event_location.value }}</h4>
