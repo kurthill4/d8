@@ -500,23 +500,16 @@ ul.event-type li,
 ul.event-type li * {
 	display:inline;
 }
-@media only screen and (min-width: 1900px) {
-.calendar ul.js-pager {margin:0 auto!important}
-.calendar .pager .pager__item--previous{margin-right:10%!important;}
-.calendar .pager .pager__item--next{margin-left:20%!important;}
 
-}
+.calendar ul.js-pager__items {width:75%;padding:0!important;margin:0 auto!important}
+.calendar .pager .pager__item--previous{float:left;}
+.calendar .pager .pager__item--next{float:right;}
+
 @media only screen and (min-width: 800px) {
-.calendar ul.js-pager {margin:0 auto!important}
-.calendar .pager .pager__item--previous{margin-right:25vw!important;}
-.calendar .pager .pager__item--next{margin-left:25vw!important;}
+
+
 }
-
-@media only screen and (max-width: 800px) {
-
-.calendar ul.js-pager {margin:0 auto!important}
-.calendar .pager .pager__item--previous{margin-right:12vw!important;}
-.calendar .pager .pager__item--next{margin-left:10vw!important;margin-right:8vw!important;}
+@media only screen and (max-width: 767px) {
 
 
 .calendar .view-content,

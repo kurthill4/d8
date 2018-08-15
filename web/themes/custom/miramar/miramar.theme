@@ -43,7 +43,9 @@ function miramar_preprocess_block(&$variables) {
 }
   $variables['nodeid'] = $nid;
 }
-
+/**
+	Reformats event dates for display using correct time zone.
+**/
 function miramar_preprocess_node(&$variables) {
 	if(!empty($variables['node']))
 	{
@@ -54,11 +56,11 @@ function miramar_preprocess_node(&$variables) {
 			case "committee_meeting":
 				$realTimezone = new DateTimeZone('PST');
 				$gmtTimezone = new DateTimeZone('GMT');
-				$myDateTime = new DateTime($node->field_event_date->value, $gmtTimezone);
-				$offset = $realTimezone->getOffset($myDateTime);
-				$myInterval = DateInterval::createFromDateString((string)$offset . 'seconds');
-				$myDateTime->add($myInterval);
-				$result = $myDateTime->format('l, F j');
+				$localDateTime = new DateTime($node->field_event_date->value, $gmtTimezone);
+				$offset = $realTimezone->getOffset($localDateTime);
+				$localInterval = DateInterval::createFromDateString((string)$offset . 'seconds');
+				$localDateTime->add($localInterval);
+				$result = $localDateTime->format('l, F j');
 				$variables['newdate'] = $result;
 				break;
 			default:
