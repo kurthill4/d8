@@ -87,7 +87,7 @@
 
 <div{{ content_attributes.addClass('content') }}>
 <h2>{{ node.title.value }}</h2>
-<h3>{{ node.field_event_date.value|date('U')|format_date('custom','l, F j','America/Los_Angeles') }}</h3>
+<h3>{{ node.field_event_date.value|format_date('custom','l, F j','America/Los_Angeles') }}</h3>
 {% if content.field_event_type[0]['#title'] != 'Deadline' %}
 <h4>{{ content.field_event_date }}</h4>
 {% endif %}

@@ -55,7 +55,7 @@ function miramar_preprocess_node(&$variables) {
 				$start_date = $node->field_event_date->value;
 				$range_start = DrupalDatetime::createFromTimestamp((int)$start_date); // unix timestamp
 				$range_start->setTimezone(new \Datetimezone('PST'));
-				$node->field_event_date->value = format_date($range_start->getTimestamp() , 'custom', 'Y-m-d\TH:i:s', 'PST');
+				$variables['newdate'] = format_date($range_start->getTimestamp() , 'custom', 'Y-m-d\TH:i:s', 'PST');
 				break;
 			default:
 		}
