@@ -85,19 +85,10 @@
   {% endif %}
   {{ title_suffix }}
 
-  {% if display_submitted %}
-    <footer>
-      {{ author_picture }}
-      <div{{ author_attributes.addClass('author') }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
 
   <div{{ content_attributes.addClass('content') }}>
 <p class="bold"><a href="{{ path('entity.node.canonical', {'node':  node.field_committee.entity.id}) }}">{{ node.field_committee.entity.title.value }} Page</a></p>
-<h3>{{ node.field_event_date.value|date('l, F j', 'America/Los_Angeles') }}</h3>
+<h3>{{ newdate }}</h3>
 <h4>{{ content.field_event_date }}</h4>
 <h4>Location: {{ node.field_meeting_location.value }}</h4>
 {% if node.field_agenda.entity.uri is not empty %}

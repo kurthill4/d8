@@ -8,7 +8,7 @@
 
 
 use Drupal\taxonomy\Entity\Term;
-
+use Drupal\Core\Datetime\DrupalDateTime;
 /**
  * Implements hook_preprocess_HOOK() for block templates.
  *
@@ -43,24 +43,28 @@ function miramar_preprocess_block(&$variables) {
 }
   $variables['nodeid'] = $nid;
 }
-/*
+
 function miramar_preprocess_node(&$variables) {
-	extract($variables);
 	if(!empty($variables['node']))
 	{
 		$node = $variables['node'];
 
 		switch($node->getType()) {
 			case "event":
-				$start_date = $node->field_event_date->value;
-				$range_start = DrupalDatetime::createFromTimestamp((int)$start_date); // unix timestamp
-				$range_start->setTimezone(new \Datetimezone('PST'));
-				$variables['newdate'] = format_date($range_start->getTimestamp() , 'custom', 'Y-m-d\TH:i:s', 'PST');
+			case "committee_meeting":
+				$realTimezone = new DateTimeZone('PST');
+				$gmtTimezone = new DateTimeZone('GMT');
+				$myDateTime = new DateTime($node->field_event_date->value, $gmtTimezone);
+				$offset = $realTimezone->getOffset($myDateTime);
+				$myInterval = DateInterval::createFromDateString((string)$offset . 'seconds');
+				$myDateTime->add($myInterval);
+				$result = $myDateTime->format('l, F j');
+				$variables['newdate'] = $result;
 				break;
 			default:
 		}
 	}
-}*/
+}
 function miramar_theme_suggestions_page_alter(&$suggestions, &$vars) {
   if (\Drupal::routeMatch()->getRouteName() == 'entity.taxonomy_term.canonical' && $tid = \Drupal::routeMatch()->getRawParameter('taxonomy_term')) {
     $term = Term::load($tid);
