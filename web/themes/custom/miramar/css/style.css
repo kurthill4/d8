@@ -963,8 +963,15 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	margin: 0 0 10px;
 	height: 50px;
 	line-height: 25px;
+}
+
+.important-dates ul li {
 	font-size:1.1em;
 }
+.events-side ul li{
+	font-size:1em;
+}
+
 .important-dates ul li:last-child{
 	margin-bottom: 0;
 }

@@ -208,7 +208,7 @@ AddEncoding gzip svgz
 <IfModule mod_rewrite.c>
   # Custom Redirects
   # Redirect 302 /library http://www1.sdmiramar.edu/library
-  # Redirect 302 /campus/library http://www1.sdmiramar.edu/library
+  Redirect 302 /campus/library /library
   Redirect 302 /campus/av http://www.sdmiramar.edu/library/av
   Redirect 301 /campus/asg http://www.sdmiramarasg.com/
   Redirect 301 /campus/campus-police http://police.sdccd.edu
