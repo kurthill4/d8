@@ -1,4 +1,4 @@
-uuid: 1633949a-6179-4ca0-ad43-a9d6e0962766
+uuid: cfc4cb03-4da1-4aaf-ac8b-6e2ca14dad46
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ dependencies:
 id: views_block__jetsnews_block_1
 theme: miramar
 region: mission
-weight: -26
+weight: 0
 provider: null
 plugin: 'views_block:jetsnews-block_1'
 settings:

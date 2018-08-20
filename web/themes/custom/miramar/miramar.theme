@@ -54,7 +54,7 @@ function miramar_preprocess_node(&$variables) {
 		switch($node->getType()) {
 			case "event":
 			case "committee_meeting":
-				$realTimezone = new DateTimeZone('PST');
+				$realTimezone = new DateTimeZone('America/Los_Angeles');
 				$gmtTimezone = new DateTimeZone('GMT');
 				$localDateTime = new DateTime($node->field_event_date->value, $gmtTimezone);
 				$offset = $realTimezone->getOffset($localDateTime);

@@ -32,7 +32,12 @@ hr.short {width:50%;}
 .map-page .page-header {display:block;width:100%!important;}
 
 .spacer {clear:both}
-.content,.dir-content,.field--name-description,.degree-block {padding:5px 10px;}
+.content,
+.dir-content,
+.field--name-description,
+.degree-block {
+	padding:5px 20px;
+}
 .content p,
 .field--name-description p {margin-bottom:1em}
 .content img,.field--name-description img {padding:3px}
@@ -920,6 +925,11 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	background:#dbf3f5;
 }
 
+.twit {
+	max-height:50vh;
+	overflow-y:scroll;
+}
+
 .region-below-content .views-view-grid {
 	width:95%;
 	margin: 0 auto;
@@ -985,13 +995,16 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	border-radius: 5px 0 0 5px;
 	background: #1d2451;
 	font-family: 'Oswald', sans-serif;
-	font-size: 28px;
+	font-size: 2em;
 	text-align: center;
 	color: #fff;
 	line-height: 49px;
 }
 .important-dates ul p {
 	font-size:1.25em;
+}
+.events-side ul p {
+	font-size:1em;
 }
 .important-dates ul a,.events-side ul a {
 	color:#000000;
@@ -2651,6 +2664,7 @@ section#hero {max-height:602px!important}
 		/*nav.main-menu li:first-child {
 			/*margin-left:30%;
 		}*/
+
 	 }
 
 	 /*@media only screen and (max-height : 600px){
@@ -2703,6 +2717,12 @@ section#hero {max-height:602px!important}
 	margin: 0 auto;
 	background:#dbf3f5!important;
 }
+	.field--name-field-column-1,
+	.field--name-field-column-2 {
+		display:block!important;
+		width:100%;
+		vertical-align:top;
+	}
 		aside {display:block;clear:both;position:relative;width:100vw!important;float:none;}
 		.homecall .get-started {
 			display:block;
@@ -3003,7 +3023,7 @@ section#hero {max-height:602px!important}
 			 line-height: 40px;
 		 }
 		 .id-block .rfm-block {
-    	 padding: 0 10px;
+    			 padding: 0 10px;
 		 }
 		 .id-block .rfm-block h4{
 			 margin: 30px 0 10px;

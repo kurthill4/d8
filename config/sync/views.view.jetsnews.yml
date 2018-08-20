@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_link_to_your_file
     - node.type.jetsnews
   module:
+    - datetime
     - field_token_value
     - node
     - user
@@ -236,10 +237,10 @@ display:
           entity_field: type
           plugin_id: bundle
       sorts:
-        field_date_published_value:
-          id: field_date_published_value
-          table: node__field_date_published
-          field: field_date_published_value
+        field_publication_date_value:
+          id: field_publication_date_value
+          table: node__field_publication_date
+          field: field_publication_date_value
           relationship: none
           group_type: group
           admin_label: ''
@@ -247,7 +248,7 @@ display:
           exposed: false
           expose:
             label: ''
-          granularity: month
+          granularity: second
           plugin_id: datetime
       header: {  }
       footer: {  }
