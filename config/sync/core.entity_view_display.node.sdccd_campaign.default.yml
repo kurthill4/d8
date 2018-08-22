@@ -3,9 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.sdccd_campaign.body
+    - field.field.node.sdccd_campaign.field_ad_text
+    - field.field.node.sdccd_campaign.field_ad_text_2
+    - field.field.node.sdccd_campaign.field_header
+    - field.field.node.sdccd_campaign.field_image_desktop
+    - field.field.node.sdccd_campaign.field_image_mobile_landscape
+    - field.field.node.sdccd_campaign.field_image_mobile_portrait
+    - field.field.node.sdccd_campaign.field_image_tablet
     - node.type.sdccd_campaign
   module:
+    - image
     - text
     - user
 id: node.sdccd_campaign.default
@@ -13,12 +20,63 @@ targetEntityType: node
 bundle: sdccd_campaign
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
+  field_ad_text:
+    weight: 107
+    label: above
     settings: {  }
     third_party_settings: {  }
+    type: text_default
+    region: content
+  field_ad_text_2:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_header:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_image_desktop:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_image_mobile_landscape:
+    weight: 105
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_image_mobile_portrait:
+    weight: 104
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_image_tablet:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
     region: content
   links:
     weight: 100

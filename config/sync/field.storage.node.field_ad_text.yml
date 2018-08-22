@@ -1,0 +1,20 @@
+uuid: 473bdaca-5284-4550-9e45-ca85235f1f2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_ad_text
+field_name: field_ad_text
+entity_type: node
+type: text
+settings:
+  max_length: 144
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,22 +1,21 @@
-uuid: 3d61477b-a42f-45a1-8675-a145d80d5c11
+uuid: 98ba35ea-47f9-4d6b-a0b3-38f979934df0
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.body
+    - field.storage.node.field_ad_text_2
     - node.type.local_campaign
   module:
     - text
-id: node.local_campaign.body
-field_name: body
+id: node.local_campaign.field_ad_text_2
+field_name: field_ad_text_2
 entity_type: node
 bundle: local_campaign
-label: Body
+label: 'Ad Text 2'
 description: ''
 required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
-settings:
-  display_summary: true
-field_type: text_with_summary
+settings: {  }
+field_type: text

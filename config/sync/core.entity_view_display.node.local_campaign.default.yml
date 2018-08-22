@@ -3,7 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.local_campaign.body
+    - field.field.node.local_campaign.field_ad_text
+    - field.field.node.local_campaign.field_ad_text_2
+    - field.field.node.local_campaign.field_header
     - node.type.local_campaign
   module:
     - text
@@ -13,12 +15,27 @@ targetEntityType: node
 bundle: local_campaign
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
+  field_ad_text:
+    weight: 103
+    label: above
     settings: {  }
     third_party_settings: {  }
+    type: text_default
+    region: content
+  field_ad_text_2:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_header:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   links:
     weight: 100

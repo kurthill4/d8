@@ -1,0 +1,21 @@
+uuid: bbf430d1-bdbb-42d9-81b1-b4f071bbcfbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ad_text_2
+    - node.type.sdccd_campaign
+  module:
+    - text
+id: node.sdccd_campaign.field_ad_text_2
+field_name: field_ad_text_2
+entity_type: node
+bundle: sdccd_campaign
+label: 'Ad Text 2'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

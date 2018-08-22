@@ -88,9 +88,8 @@
   </div>
         <div class="banner-content hide-xs">
           <div class="caption">
-            <h1>Alarm Clock Pep Rally<br />on KUSI-TV</h1>
-	    <h2 class="hide-xl"><a href="/forms/request-info">More Information</a></h2>
-	    <h2 class="hide-lg"><a href="/forms/request-info" class="use-ajax" data-dialog-type="modal">More Information</a></h2>
+            <h1>{{ node.field_header.value|raw }}</h1>
+	    <h2>{{ node.field_ad_text.value|raw }}</h2>
           </div>
 	</div>
 	<div class="adbuttons hide-xs">
@@ -116,10 +115,10 @@
 	<img class="ad img-responsive hide-tablet" src="/themes/custom/miramar/images/ad/sdmiramar-kusi-xs.png" alt="Imagine the Possibilities at Miramar College" />
 	<div class="adtext">
 	<div class="adtext-l">
-            <h2>Alarm Clock Pep Rally<br />on KUSI-TV</h2>
+            <h2>{{ node.field_header.value|raw }}</h2>
 	</div>
 	<div class="adtext-r">
-            <h2><span class="italic"><a href="/forms/request-info">More Information</a></span></h2>
+            <h2><span class="italic">{{ node.field_ad_text.value|raw }}</span></h2>
 	</div>
 	</div>
           <div class="get-started">

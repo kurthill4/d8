@@ -1,0 +1,19 @@
+uuid: fc0487d2-e1d1-451a-b2c4-417c17f326f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header
+    - node.type.sdccd_campaign
+id: node.sdccd_campaign.field_header
+field_name: field_header
+entity_type: node
+bundle: sdccd_campaign
+label: Header
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

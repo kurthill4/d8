@@ -1,0 +1,21 @@
+uuid: 9def8138-5ab5-4a13-a8c0-920d366135c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ad_text
+    - node.type.local_campaign
+  module:
+    - text
+id: node.local_campaign.field_ad_text
+field_name: field_ad_text
+entity_type: node
+bundle: local_campaign
+label: 'Ad Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

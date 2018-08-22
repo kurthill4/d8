@@ -63,6 +63,8 @@ function miramar_preprocess_node(&$variables) {
 				$result = $localDateTime->format('l, F j');
 				$variables['newdate'] = $result;
 				break;
+			case "sdccd_campaign":
+			break;
 			default:
 		}
 	}
