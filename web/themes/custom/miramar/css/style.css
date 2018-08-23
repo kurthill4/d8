@@ -965,7 +965,7 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	padding: 0;
 	list-style:none;
 }
-.important-dates ul li,.events-side ul li{
+.important-dates ul li{
 	position: relative;
 	padding: 0 0 0 115px;
 	background: #fff;
@@ -973,6 +973,17 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	margin: 0 0 10px;
 	height: 50px;
 	line-height: 25px;
+}
+
+.events-side ul li {
+	position: relative;
+	padding: 0 0 0 8vw;
+	background: #fff;
+	border-radius: 5px;
+	margin: 0 0 10px;
+	height: 50px;
+	line-height: 25px;
+}
 }
 
 .important-dates ul li {
