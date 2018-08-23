@@ -985,7 +985,7 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 .important-dates ul li:last-child{
 	margin-bottom: 0;
 }
-.important-dates ul span,.events-side ul span{
+.important-dates ul span{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -999,6 +999,10 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	text-align: center;
 	color: #fff;
 	line-height: 49px;
+}
+.events-side ul span {
+	width:6vw;
+	font-size:1.5em;
 }
 .important-dates ul p {
 	font-size:1.25em;
