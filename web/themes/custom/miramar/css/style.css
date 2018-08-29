@@ -144,6 +144,42 @@ h2.mobile {background:none;}
 	width:80%;
 }
 
+.paragraph--bp-accordion-container {
+	padding:0!important;
+}
+
+.paragraph--bp-accordion-container > button {
+	margin-right:2em!important;
+}
+
+.paragraph--type--bp-accordion {
+	padding:0!important;
+}
+.paragraph--type--bp-accordion .paragraph__column {
+	width:100%!important;
+	padding-left:0!important;
+}
+
+.paragraph--type--bp-accordion .panel{
+	padding:0!important;
+	margin:0!important;
+}
+
+.paragraph--type--bp-accordion .panel-heading {
+	background: #1d2451!important;
+}
+
+.paragraph--type--bp-accordion .panel-heading a{
+	font-size:2em;
+	font-weight:bold;
+	color:#ffffff;
+}
+
+.paragraph--type--bp-accordion .panel-heading a:after{
+	float:left!important;
+	margin-right:1em!important;
+}
+
 .field--name-field-column-1,
 .field--name-field-column-2 {
 	display:table-cell;
@@ -1275,10 +1311,14 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 /*.newscenter .col {padding-bottom:1em!important}*/
 .newscenter .col .views-field-field-image {}
 #block-views-block-news-sidebar-block-2 {
-	margin:0 1em;
+	margin:0;
 }
-.jetsnews .views-field-title {
-	font-size:2em;
+
+.block-views-block-jetsnews-block-1 {
+	margin-left:0.5em;
+}
+.jetsnews p {
+	font-size:1.5em;
 
 }
 #block-youtubechannel {padding-left:4em!important}
@@ -2695,8 +2735,6 @@ section#hero {max-height:602px!important}
 		 .jump-to select {
 				width: 86%!important;
 			}
-	 }
-	 @media only screen and (min-width : 769px) {
 			/*.call a {font-size:1.5vw}*/
 }
 	 @media only screen and (min-width:667px) {
@@ -2727,6 +2765,8 @@ section#hero {max-height:602px!important}
 		.block-views-blockwhat-do-you-want-to-be-block-1 {display:block;margin-top:1px;}
 		.block-views-blockwhat-do-you-want-to-be-block-1 h1 {font-size:5vw!important;}
 		.block-views-blockwhat-do-you-want-to-be-block-1 p {font-size:3vw!important;}
+		#block-youtubechannel {padding-left:1em!important}
+		#youtubechannel-list {height:auto!important}
 		 #block-twitterforhomepage {
 	width:99%;
 	margin: 0 auto;

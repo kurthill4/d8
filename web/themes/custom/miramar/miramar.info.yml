@@ -39,8 +39,11 @@ libraries:
 
 libraries-override:
   youtubechannel/youtubechannel:
-    js:
-      js/youtubechannel.js: js/youtubechannel.js
+   js:
+     js/youtubechannel.js: js/youtubechannel.js
+   css:
+     theme:
+        css/youtubechannel.css: css/youtubechannel.css  
   calendar/calendar.theme:
    css:
      theme:

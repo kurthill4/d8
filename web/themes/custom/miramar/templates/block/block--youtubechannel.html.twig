@@ -54,15 +54,13 @@
   ]
 %}
 <section{{ attributes.addClass(classes)}}{{create_attribute({'role':['widget']}) }}>
-<div class="hide-xs">
+<div>
   {{ title_prefix }}
 <h2><img src="/{{ directory }}/images/icon-globe.png" alt="Miramar on YouTube"> From Our YouTube Channel</h2>
   {{ title_suffix }}
-
   {% block content %}
     {{ content }}
   {% endblock %}
 </div>
-<h3 class="mobile hide-lg"><img src="/{{ directory }}/images/icon-globe.png" alt="Miramar on YouTube"> From Our YouTube Channel</h3>
 </section>
 

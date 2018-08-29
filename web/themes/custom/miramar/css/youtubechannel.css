@@ -1,0 +1,51 @@
+#youtubechannel-player {
+position:relative;
+padding-bottom:56.25%;
+padding-right:0.5em;
+height:0;
+overflow:hidden;
+  margin-bottom: 10px;
+margin-right:1em;
+}
+#youtubechannel-player iframe,#youtubechannel-player object,#youtubechannel-player embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+#youtubechannel-list {
+  overflow-y: auto;
+}
+
+#youtubechannel-list ul {
+  margin: 0;
+  padding: 0;
+}
+
+#youtubechannel-list ul li {
+  background: none;
+  display: inline;
+  float: left;
+}
+
+#youtubechannel-list ul li {
+  margin: 0 0 1em 0;
+  padding: 0 0.5em 0 0;
+}
+
+/*#youtubechannel-list h2 {
+  font-size: 1;
+}*/
+
+
+#youtubechannel-list img {
+  border: 1px solid #c3c3c3;
+  height: 55px;
+  padding: 2px;
+}
+
+#channel_url {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}

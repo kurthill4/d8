@@ -42,11 +42,11 @@
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
+  {#{ title_prefix }}
   {% if title %}
     {{ title }}
   {% endif %}
-  {{ title_suffix }}
+  {{ title_suffix }#}
   {% if header %}
     <div class="view-header">
       {{ header }}
@@ -58,7 +58,7 @@
     </div>
   {% endif %}
   {% if attachment_before %}
-    <div class="attachment attachment-before hide-lg hide-xl">
+    <div class="attachment attachment-before hide-lg">
       {{ attachment_before }}
     </div>
   {% endif %}

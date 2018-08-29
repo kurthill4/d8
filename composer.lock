@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dd596ddbbc39385d6dbc488671a0b8ea",
+    "content-hash": "b00bb133593cf3d32225c02f175b462f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1835,6 +1835,64 @@
             "homepage": "https://www.drupal.org/project/bootstrap_layouts",
             "support": {
                 "source": "http://cgit.drupalcode.org/bootstrap_layouts"
+            }
+        },
+        {
+            "name": "drupal/bootstrap_paragraphs",
+            "version": "2.0.0-beta5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/bootstrap_paragraphs",
+                "reference": "8.x-2.0-beta5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_paragraphs-8.x-2.0-beta5.zip",
+                "reference": "8.x-2.0-beta5",
+                "shasum": "d0f75fd3aa8800a967045e1de9b27179e52cda00"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/entity_reference_revisions": "*",
+                "drupal/paragraphs": "*",
+                "drupal/viewsreference": "*"
+            },
+            "require-dev": {
+                "drupal/contact_formatter": "*",
+                "drupal/paragraphs": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-beta5",
+                    "datestamp": "1531408721",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "albertski",
+                    "homepage": "https://www.drupal.org/user/1327432"
+                },
+                {
+                    "name": "thejimbirch",
+                    "homepage": "https://www.drupal.org/user/2507260"
+                }
+            ],
+            "description": "A suite of Paragraph bundles made with the Boostrap framework.",
+            "homepage": "https://www.drupal.org/project/bootstrap_paragraphs",
+            "support": {
+                "source": "http://cgit.drupalcode.org/bootstrap_paragraphs"
             }
         },
         {
@@ -5591,6 +5649,68 @@
             "homepage": "https://www.drupal.org/project/views_templates",
             "support": {
                 "source": "http://cgit.drupalcode.org/views_templates"
+            }
+        },
+        {
+            "name": "drupal/viewsreference",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/viewsreference",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/viewsreference-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "5ccceed4ebb1b55c6a459431829e7c72477171b5"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "conflict": {
+                "drupal/viewsreferennce": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1515538984",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "New Zeal",
+                    "homepage": "https://www.drupal.org/user/93571"
+                },
+                {
+                    "name": "joekers",
+                    "homepage": "https://www.drupal.org/user/2229066"
+                },
+                {
+                    "name": "seanB",
+                    "homepage": "https://www.drupal.org/user/545912"
+                }
+            ],
+            "description": "Views Reference",
+            "homepage": "http://drupal.org/project/viewsreference",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/viewsreference",
+                "issues": "http://drupal.org/project/issues/viewsreference"
             }
         },
         {
@@ -11023,6 +11143,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/better_exposed_filters": 15,
+        "drupal/bootstrap_paragraphs": 10,
         "drupal/calendar": 20,
         "drupal/cer": 15,
         "drupal/content_type_clone": 20,
