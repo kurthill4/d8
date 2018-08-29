@@ -3,11 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.jetsnews.field_link_to_your_file
     - field.field.node.jetsnews.field_publication_date
     - field.field.node.jetsnews.field_uploaded_file
     - node.type.jetsnews
   module:
     - datetime
+    - field_token_value
     - file
     - path
 id: node.jetsnews.default
@@ -21,6 +23,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_link_to_your_file:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: field_token_value_default
+    region: content
   field_publication_date:
     weight: 6
     settings: {  }

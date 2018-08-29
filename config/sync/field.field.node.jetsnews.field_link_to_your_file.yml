@@ -1,0 +1,25 @@
+uuid: 56c42e52-a421-461f-8c78-6271b8d54251
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_to_your_file
+    - node.type.jetsnews
+  module:
+    - field_token_value
+id: node.jetsnews.field_link_to_your_file
+field_name: field_link_to_your_file
+entity_type: node
+bundle: jetsnews
+label: 'Link to Your File'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings:
+  field_value: '<a href="[node:field_uploaded_file]">[node:field_uploaded_file]</a>'
+  remove_empty: 0
+field_type: field_token_value

@@ -12,6 +12,7 @@ module:
   block: 0
   block_content: 0
   block_visibility_groups: 0
+  bootstrap_paragraphs: 0
   breakpoint: 0
   calendar: 0
   calendar_datetime: 0
@@ -101,6 +102,7 @@ module:
   twig: 0
   twig_blocks: 0
   twig_field_value: 0
+  twig_tweak: 0
   twitter: 0
   twitter_block: 0
   update: 0
@@ -112,6 +114,7 @@ module:
   views_jump_menu: 0
   views_templates: 0
   views_ui: 0
+  viewsreference: 0
   webform: 0
   webform_bootstrap: 0
   webform_layout_container: 0

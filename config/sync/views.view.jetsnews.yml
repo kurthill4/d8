@@ -161,7 +161,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<a href="{{field_link_to_your_file}}">{{title}}</a>'
+            text: '<p><a href="{{field_link_to_your_file}}">{{title}}</a></p>'
             make_link: false
             path: ''
             absolute: false
@@ -186,7 +186,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: p
           element_class: ''
           element_label_type: ''
           element_label_class: ''

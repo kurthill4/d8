@@ -1,0 +1,9 @@
+uuid: 0f5c1758-3cc6-404e-b625-350a458c1a6a
+langcode: en
+status: true
+dependencies: {  }
+id: two_column_dropdown
+label: 'Two Column Dropdown'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

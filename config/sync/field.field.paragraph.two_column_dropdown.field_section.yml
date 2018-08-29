@@ -1,25 +1,18 @@
-uuid: 98ec8b79-beaf-45d3-8d3a-846b568b179d
+uuid: 94a5daed-cc7f-4bfa-a440-eed457a97b00
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_content
-    - node.type.custom_web_page
-    - paragraphs.paragraphs_type.bp_accordion
-    - paragraphs.paragraphs_type.bp_accordion_section
-    - paragraphs.paragraphs_type.image
-    - paragraphs.paragraphs_type.table
-    - paragraphs.paragraphs_type.text
-    - paragraphs.paragraphs_type.text_and_image_left
+    - field.storage.paragraph.field_section
     - paragraphs.paragraphs_type.two_column
-    - paragraphs.paragraphs_type.video
+    - paragraphs.paragraphs_type.two_column_dropdown
   module:
     - entity_reference_revisions
-id: node.custom_web_page.field_content
-field_name: field_content
-entity_type: node
-bundle: custom_web_page
-label: Content
+id: paragraph.two_column_dropdown.field_section
+field_name: field_section
+entity_type: paragraph
+bundle: two_column_dropdown
+label: Section
 description: ''
 required: false
 translatable: false
@@ -30,39 +23,14 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      text: text
       two_column: two_column
-      video: video
-      image: image
-      table: table
-      text_and_image_left: text_and_image_left
-      bp_accordion: bp_accordion
-      bp_accordion_section: bp_accordion_section
     target_bundles_drag_drop:
-      text:
-        enabled: true
-        weight: 4
-      two_column:
-        enabled: true
-        weight: 5
-      video:
-        enabled: true
-        weight: 6
-      image:
-        enabled: true
-        weight: 7
-      table:
-        enabled: true
-        weight: 8
-      text_and_image_left:
-        enabled: true
-        weight: 10
       bp_accordion:
-        enabled: true
         weight: 23
+        enabled: false
       bp_accordion_section:
-        enabled: true
         weight: 24
+        enabled: false
       bp_blank:
         weight: 25
         enabled: false
@@ -102,7 +70,25 @@ settings:
       bp_view:
         weight: 37
         enabled: false
+      image:
+        weight: 38
+        enabled: false
+      table:
+        weight: 39
+        enabled: false
+      text:
+        weight: 40
+        enabled: false
+      text_and_image_left:
+        weight: 41
+        enabled: false
+      two_column:
+        enabled: true
+        weight: 42
       two_column_dropdown:
         weight: 43
+        enabled: false
+      video:
+        weight: 44
         enabled: false
 field_type: entity_reference_revisions
