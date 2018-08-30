@@ -51,14 +51,18 @@
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
     'clearfix',
+    'twitter-side',
   ]
 %}
-<section{{ attributes.addClass(classes)}}{{create_attribute({'role':['complementary']}) }}>
-            <div class="news-block">
-                    <!--h3><img src="/{{ directory }}/images/icon-news.png" alt="All Campus News"> All Campus News</h3-->
-		  {% block content %}
+<section{{ attributes.addClass(classes)}}{{create_attribute({'role':['widget']}) }}>
+<div class="hide-xs">
+  {{ title_prefix }}
+	<h3><img src="/{{ directory }}/images/icon-globe.png" alt="Recent Tweets"> Social Media</h3>
+  {{ title_suffix }}
+
+  {% block content %}
     {{ content }}
-	    </div>
   {% endblock %}
+</div>
 </section>
 

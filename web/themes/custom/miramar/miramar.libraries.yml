@@ -45,6 +45,15 @@ multiselect:
   dependencies:
     - core/jquery
 
+tooltips:
+  js:
+    js/init-tooltips.js: {}
+  css:
+    theme:
+      css/tooltips.css: {}
+  dependencies:
+    - core/jquery
+
 vtour:
   js:
     https://www.youvisit.com/tour/Embed/js2: { type: external }

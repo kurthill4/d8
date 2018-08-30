@@ -1303,13 +1303,11 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 }
 
 .newscenter {margin-top:2em!important;}
-.newscenter .views-field-title {max-width:120px!important}
-.newscenter a {font-weight:bold!important;width:inherit}
 .newscenter ul li .views-field-field-image,
 .newscenter ul li .views-field-field-image * {display:inline;}
 
-/*.newscenter .col {padding-bottom:1em!important}*/
-.newscenter .col .views-field-field-image {}
+.newscenter .views-col,.newscenter .views-col .field-content {padding:0!important;margin:0!important}
+.newscenter .col,.newscenter .col div  {width:auto!important;padding:0!important;margin:0!important;}
 #block-views-block-news-sidebar-block-2 {
 	margin:0;
 }
