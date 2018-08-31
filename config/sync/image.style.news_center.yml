@@ -1,0 +1,14 @@
+uuid: 45928225-16b9-4ea2-bfe1-3c6e13c5db49
+langcode: en
+status: true
+dependencies: {  }
+name: news_center
+label: 'News Center'
+effects:
+  13b5e0fc-7547-496b-85e1-df3bf5ccbebc:
+    uuid: 13b5e0fc-7547-496b-85e1-df3bf5ccbebc
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 160

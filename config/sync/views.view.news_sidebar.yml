@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_image
+    - image.style.news_center
     - image.style.news_sidebar
     - node.type.campus_news
   module:
@@ -322,14 +323,36 @@ display:
       displays:
         block_2: block_2
       style:
-        type: html_list
+        type: table
         options:
           grouping: {  }
           row_class: ''
           default_row_class: true
-          type: ul
-          wrapper_class: item-list
-          class: ' nobull'
+          override: true
+          sticky: false
+          caption: ''
+          summary: ''
+          description: ''
+          columns:
+            field_image: field_image
+            title: title
+          info:
+            field_image:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            title:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          default: '-1'
+          empty_table: false
       defaults:
         style: false
         row: false
@@ -595,7 +618,7 @@ display:
       pager:
         type: mini
         options:
-          items_per_page: 20
+          items_per_page: 12
           offset: 0
           id: 0
           total_pages: null
@@ -771,14 +794,14 @@ display:
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
-          empty: '<a href="{{ view_node }}" data-toggle="tooltip" data-html="true" title="{{ title }}"><img src="/themes/custom/miramar/images/default.png" /></a>'
+          empty: '<a href="{{ view_node }}" data-toggle="tooltip" data-html="true" title="{{ title }}"><img src="/themes/custom/miramar/images/default1.png" /></a>'
           hide_empty: false
           empty_zero: false
           hide_alter_empty: false
           click_sort_column: target_id
           type: image
           settings:
-            image_style: news_sidebar
+            image_style: news_center
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -798,7 +821,7 @@ display:
           row_class: ''
           default_row_class: true
           alignment: horizontal
-          columns: '12'
+          columns: '999'
           col_xs: col-xs-6
           col_sm: col-sm-4
           col_md: col-md-3
