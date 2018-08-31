@@ -10,6 +10,7 @@ dependencies:
     - image
     - node
     - user
+    - views_bootstrap
 id: news_sidebar
 label: 'News Sidebar'
 module: views
@@ -594,7 +595,7 @@ display:
       pager:
         type: mini
         options:
-          items_per_page: 12
+          items_per_page: 20
           offset: 0
           id: 0
           total_pages: null
@@ -610,15 +611,15 @@ display:
             offset: false
             offset_label: Offset
       fields:
-        field_image:
-          id: field_image
-          table: node__field_image
-          field: field_image
+        view_node:
+          id: view_node
+          table: node
+          field: view_node
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -642,7 +643,7 @@ display:
             more_link: false
             more_link_text: ''
             more_link_path: ''
-            strip_tags: false
+            strip_tags: true
             trim: false
             preserve_tags: ''
             html: false
@@ -653,27 +654,16 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
-          empty: '<img src="/themes/custom/miramar/images/default.png" />'
+          element_default_classes: false
+          empty: ''
           hide_empty: false
           empty_zero: false
-          hide_alter_empty: false
-          click_sort_column: target_id
-          type: image
-          settings:
-            image_style: news_sidebar
-            image_link: ''
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
+          hide_alter_empty: true
+          text: view
+          output_url_as_text: true
+          absolute: false
+          entity_type: node
+          plugin_id: entity_link
         title:
           id: title
           table: node_field_data
@@ -682,7 +672,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -725,7 +715,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -737,17 +727,82 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        field_image:
+          id: field_image
+          table: node__field_image
+          field: field_image
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<a href="{{ view_node }}" data-toggle="tooltip" data-html="true" title="{{ title }}">{{ field_image }}</a>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: '<a href="{{ view_node }}" data-toggle="tooltip" data-html="true" title="{{ title }}"><img src="/themes/custom/miramar/images/default.png" /></a>'
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_style: news_sidebar
+            image_link: ''
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
       style:
-        type: grid
+        type: views_bootstrap_grid
         options:
           grouping: {  }
-          columns: 6
-          automatic_width: true
+          row_class: ''
+          default_row_class: true
           alignment: horizontal
-          col_class_default: true
-          col_class_custom: ''
-          row_class_default: true
-          row_class_custom: ''
+          columns: '12'
+          col_xs: col-xs-6
+          col_sm: col-sm-4
+          col_md: col-md-3
+          col_lg: col-lg-2
       row:
         type: fields
         options:

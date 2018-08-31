@@ -64,7 +64,7 @@ class MiramarCustomContactBlock extends BlockBase {
           <div class="col-sm-9 hide-xs">
             <div class="row">
               <div class="col-sm-4">
-                <p class="img" role="heading"><img src="' . $imagepath . '/images/icon-building.png" alt="Campus Information"></p>
+                <p class="img" role="heading"><img src="' . $imagepath . '/images/icon-building.png" alt="Campus Information" /></p>
                 <strong>Campus Information</strong>
                 <ul class="campus">
                   <li><a href="/directory/people">Directory</a></li>

@@ -12,7 +12,7 @@ dependencies:
 id: missionstatement_2
 theme: miramar
 region: mission
-weight: -29
+weight: -32
 provider: null
 plugin: 'block_content:3a5653f1-0482-4f0f-a3e1-f90917629ef5'
 settings:

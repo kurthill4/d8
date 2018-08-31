@@ -14,7 +14,7 @@ dependencies:
 id: views_block__committee_contact_block_1
 theme: miramar
 region: sidebar_second
-weight: -28
+weight: -30
 provider: null
 plugin: 'views_block:committee_contact-block_1'
 settings:

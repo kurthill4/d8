@@ -14,7 +14,7 @@ dependencies:
 id: views_block__program_contact_block_2
 theme: miramar
 region: sidebar_second
-weight: -29
+weight: -31
 provider: null
 plugin: 'views_block:program_contact-block_2'
 settings:

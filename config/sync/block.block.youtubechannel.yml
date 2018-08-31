@@ -11,7 +11,7 @@ dependencies:
 id: youtubechannel
 theme: miramar
 region: mission
-weight: -27
+weight: -30
 provider: null
 plugin: youtubechannel_block
 settings:

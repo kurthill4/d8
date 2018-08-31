@@ -13,7 +13,7 @@ dependencies:
 id: accreditationlinks
 theme: miramar
 region: sidebar_second
-weight: 0
+weight: -6
 provider: null
 plugin: 'block_content:190751fe-3101-4b92-9cf1-93a5b526f866'
 settings:

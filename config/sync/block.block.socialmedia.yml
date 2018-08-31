@@ -1,28 +1,29 @@
-uuid: 1cd2e3f5-e2cd-4b45-a65a-be77541f6acd
+uuid: 89fc47a4-534d-4f09-89af-ccfd355878ac
 langcode: en
 status: true
 dependencies:
-  config:
-    - views.view.college_governance
+  content:
+    - 'block_content:basic:e53d5b35-a957-48b0-91ea-4269cc45520a'
   module:
+    - block_content
     - block_visibility_groups
     - system
-    - views
   theme:
     - miramar
-id: views_block__college_governance_block_1
+id: socialmedia
 theme: miramar
 region: sidebar_second
-weight: -11
+weight: 0
 provider: null
-plugin: 'views_block:college_governance-block_1'
+plugin: 'block_content:e53d5b35-a957-48b0-91ea-4269cc45520a'
 settings:
-  id: 'views_block:college_governance-block_1'
-  label: ''
-  provider: views
+  id: 'block_content:e53d5b35-a957-48b0-91ea-4269cc45520a'
+  label: 'Social Media'
+  provider: block_content
   label_display: visible
-  views_label: ''
-  items_per_page: none
+  status: true
+  info: ''
+  view_mode: full
 visibility:
   condition_group:
     id: condition_group
@@ -31,6 +32,6 @@ visibility:
     context_mapping: {  }
   request_path:
     id: request_path
-    pages: '/campus/governance/committees/*'
+    pages: /studentlife
     negate: false
     context_mapping: {  }
