@@ -1,26 +1,26 @@
-uuid: 6e94a501-ae58-4bdb-84c8-d0e7ef0f333e
+uuid: d5d710c2-d40b-4423-ba21-e22fa9c0bafd
 langcode: en
-status: true
+status: false
 dependencies:
   config:
-    - views.view.faculty_contact_info
+    - views.view.program_course_sequence
   module:
     - block_visibility_groups
     - node
     - views
   theme:
     - miramar
-id: views_block__faculty_contact_info_block_1
+id: views_block__program_course_sequence_block_1
 theme: miramar
 region: content
-weight: -30
+weight: -27
 provider: null
-plugin: 'views_block:faculty_contact_info-block_1'
+plugin: 'views_block:program_course_sequence-block_1'
 settings:
-  id: 'views_block:faculty_contact_info-block_1'
+  id: 'views_block:program_course_sequence-block_1'
   label: ''
   provider: views
-  label_display: '0'
+  label_display: visible
   views_label: ''
   items_per_page: none
   context_mapping: {  }
@@ -33,7 +33,7 @@ visibility:
   node_type:
     id: node_type
     bundles:
-      faculty_page: faculty_page
+      program: program
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'

@@ -21,10 +21,12 @@ class MiramarCustomSocialBlock extends BlockBase {
    */
   public function build() {
         $imagepath = base_path() . drupal_get_path('theme', 'miramar');
-	if(!\Drupal::currentUser()->isAnonymous())
+	if(!\Drupal::currentUser()->isAnonymous()) {
 		$logOut = ' | <a href="/user/logout">Log Out</a>';
-	else
+	}
+	else {
 		$logOut = '';
+	}
     $build['social']['content'] = [
       '#markup' => '
 <div class="bottom-footer">
