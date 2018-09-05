@@ -538,6 +538,7 @@ ul.event-type li * {
     }
   .calendar-calendar td .contents {
      font-size:1.25em!important;
+	margin-bottom:1em!important;
     }
 }
 
