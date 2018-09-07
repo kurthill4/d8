@@ -5,7 +5,10 @@
  * Main module file for ERNI Digital.
  */
 
-
+/**
+ * Implements hook_preprocess_page()
+ * 
+ */
 function miramarcustom_preprocess_page(&$variables) {
 
 	// Set path to theme images
@@ -59,3 +62,35 @@ function miramarcustom_preprocess_page(&$variables) {
 
 
 }
+
+/**
+ * Implements hook_preprocess_page()
+ * Reformats event dates for display using correct time zone.
+ */
+
+function miramarcustom_preprocess_node(&$variables) {
+	if(!empty($variables['node']))
+	{
+		$node = $variables['node'];
+
+		switch($node->getType()) {
+			case "event":
+			case "committee_meeting":
+				$realTimezone = new DateTimeZone('America/Los_Angeles');
+				$gmtTimezone = new DateTimeZone('GMT');
+				$localDateTime = new DateTime($node->field_event_date->value, $gmtTimezone);
+				$offset = $realTimezone->getOffset($localDateTime);
+				$localInterval = DateInterval::createFromDateString((string)$offset . 'seconds');
+				$localDateTime->add($localInterval);
+				$result = $localDateTime->format('l, F j');
+				$variables['newdate'] = $result;
+				break;
+			case "sdccd_campaign":
+			break;
+			default:
+		}
+	}
+}
+
+
+

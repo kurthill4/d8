@@ -43,32 +43,7 @@ function miramar_preprocess_block(&$variables) {
 }
   $variables['nodeid'] = $nid;
 }
-/**
-	Reformats event dates for display using correct time zone.
-**/
-function miramar_preprocess_node(&$variables) {
-	if(!empty($variables['node']))
-	{
-		$node = $variables['node'];
 
-		switch($node->getType()) {
-			case "event":
-			case "committee_meeting":
-				$realTimezone = new DateTimeZone('America/Los_Angeles');
-				$gmtTimezone = new DateTimeZone('GMT');
-				$localDateTime = new DateTime($node->field_event_date->value, $gmtTimezone);
-				$offset = $realTimezone->getOffset($localDateTime);
-				$localInterval = DateInterval::createFromDateString((string)$offset . 'seconds');
-				$localDateTime->add($localInterval);
-				$result = $localDateTime->format('l, F j');
-				$variables['newdate'] = $result;
-				break;
-			case "sdccd_campaign":
-			break;
-			default:
-		}
-	}
-}
 function miramar_theme_suggestions_page_alter(&$suggestions, &$vars) {
   if (\Drupal::routeMatch()->getRouteName() == 'entity.taxonomy_term.canonical' && $tid = \Drupal::routeMatch()->getRawParameter('taxonomy_term')) {
     $term = Term::load($tid);
