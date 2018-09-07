@@ -19,7 +19,7 @@ class MiramarCustomDescriptionBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-	$intra1 = '';
+   $intra1 = '';
    $prefix = '<br /><span class=\"hide-lg\">';
    $suffix = '</span>';
  

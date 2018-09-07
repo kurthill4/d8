@@ -20,8 +20,6 @@ class MiramarCustomFinancialCallBlock extends BlockBase {
    */
   public function build() {
 
-    $imagepath = base_path() . drupal_get_path('theme', 'miramar');
-
     $build['fincall']['content'] = [
       '#markup' => '
 	<div class="call">

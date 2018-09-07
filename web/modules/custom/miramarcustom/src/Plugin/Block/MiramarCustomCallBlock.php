@@ -20,8 +20,6 @@ class MiramarCustomCallBlock extends BlockBase {
    */
   public function build() {
 
-    $imagepath = base_path() . drupal_get_path('theme', 'miramar');
-
     $build['call']['content'] = [
       '#markup' => '
 	<div class="container-full">

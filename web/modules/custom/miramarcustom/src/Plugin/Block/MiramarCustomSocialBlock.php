@@ -20,7 +20,6 @@ class MiramarCustomSocialBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-        $imagepath = base_path() . drupal_get_path('theme', 'miramar');
 	if(!\Drupal::currentUser()->isAnonymous()) {
 		$logOut = ' | <a href="/user/logout">Log Out</a>';
 	}
@@ -36,7 +35,7 @@ class MiramarCustomSocialBlock extends BlockBase {
             <!-- Social Media -->
 	    <div class="spacer hide-xs" style="height:0.75em">&nbsp;</div>
             <div class="centered center hide-xs">
-        	<a href="http://www.sos.ca.gov/elections/voting-resources/voting-california/"><img src="' . $imagepath . '/images/footer/vote.png" alt="Register to Vote"></a>
+        	<a href="http://www.sos.ca.gov/elections/voting-resources/voting-california/"><img src="' . \Drupal::config('sdmiramarcustom.settings')->get('image_path') . '/images/footer/vote.png" alt="Register to Vote"></a>
 	    </div>
 	    <div class="spacer hide-xs" style="height:0.75em">&nbsp;</div>
             <div class="social-media hide-xs">

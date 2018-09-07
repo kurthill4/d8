@@ -20,8 +20,6 @@ class MiramarCustomAdmissionsCallBlock extends BlockBase {
    */
   public function build() {
 
-    $imagepath = base_path() . drupal_get_path('theme', 'miramar');
-
     $build['admcall']['content'] = [
       '#markup' => '
 	<div class="call">
