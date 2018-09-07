@@ -20,31 +20,19 @@ class MiramarCustomDescriptionBlock extends BlockBase {
    */
   public function build() {
 	$intra1 = '';
-        $imagepath = base_path() . drupal_get_path('theme', 'miramar');
+   $prefix = '<br /><span class=\"hide-lg\">';
+   $suffix = '</span>';
+ 
+    if(\Drupal::config('sdmiramarcustom.settings')->get('local_ip') == TRUE or !(\Drupal::currentUser()->isAnonymous())) {
+	$intra1 = $prefix . \Drupal::config('sdmiramarcustom.settings')->get('issues_link') . $suffix;
+	}
 
-	if (!empty($_SERVER["HTTP_CLIENT_IP"]))
-	{
-	 //check for ip from share internet
-	 $theIP = $_SERVER["HTTP_CLIENT_IP"];
-	}
-	elseif (!empty($_SERVER["HTTP_X_FORWARDED_FOR"]))
-	{
-	 // Check for the Proxy User
-	 $theIP = $_SERVER["HTTP_X_FORWARDED_FOR"];
-	}
-	else
-	{
-	 $theIP = $_SERVER["REMOTE_ADDR"];
-	}
-    if(substr($theIP,0,2) == '10' or !(\Drupal::currentUser()->isAnonymous())) {
-	$intra1 = '<br /><span class="hide-lg"><a href="http://webissues.ics.sdmiramar.net/issue/report?url=' . $_SERVER['REQUEST_URI'] . '">Report Issues With This Page</a></span>';
-	}
     $build['description']['content'] = [
       '#markup' => '
         <div class="row hide-lg">
           <div class="col-sm-12">
             <div class="centered center hide-lg">
-        	<a href="http://www.sos.ca.gov/elections/voting-resources/voting-california/"><img src="' . $imagepath . '/images/footer/vote.png" alt="Register to Vote"></a>
+        	<a href="http://www.sos.ca.gov/elections/voting-resources/voting-california/"><img src="' . \Drupal::config('sdmiramarcustom.settings')->get('image_path') . '/images/footer/vote.png" alt="Register to Vote"></a>
 	    </div>
  	    <div class="spacer" style="height:0.75em">&nbsp;</div>
            <!-- Social Media -->

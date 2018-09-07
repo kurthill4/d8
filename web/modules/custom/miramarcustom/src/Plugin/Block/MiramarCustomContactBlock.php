@@ -19,25 +19,12 @@ class MiramarCustomContactBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    $intra = '';
-    $imagepath = base_path() . drupal_get_path('theme', 'miramar');
-  	if (!empty($_SERVER["HTTP_CLIENT_IP"]))
-	{
-	 //check for ip from share internet
-	 $theIP = $_SERVER["HTTP_CLIENT_IP"];
-	}
-	elseif (!empty($_SERVER["HTTP_X_FORWARDED_FOR"]))
-	{
-	 // Check for the Proxy User
-	 $theIP = $_SERVER["HTTP_X_FORWARDED_FOR"];
-	}
-	else
-	{
-	 $theIP = $_SERVER["REMOTE_ADDR"];
-	}
-
-    if(substr($theIP,0,2) == '10' or !(\Drupal::currentUser()->isAnonymous())) {
-	$intra = '<li><a href="http://webissues.ics.sdmiramar.net/issue/report?url=' . $_SERVER['REQUEST_URI'] . '">Report Issues With This Page</a></li>';
+   $intra = '';
+   $prefix = '<li>';
+   $suffix = '</li>';
+ 
+    if(\Drupal::config('sdmiramarcustom.settings')->get('local_ip') == TRUE or !(\Drupal::currentUser()->isAnonymous())) {
+	$intra = $prefix . \Drupal::config('sdmiramarcustom.settings')->get('issues_link') . $suffix;
 }
     $build['contact']['content'] = [
       '#markup' => '
@@ -64,7 +51,7 @@ class MiramarCustomContactBlock extends BlockBase {
           <div class="col-sm-9 hide-xs">
             <div class="row">
               <div class="col-sm-4">
-                <p class="img" role="heading"><img src="' . $imagepath . '/images/icon-building.png" alt="Campus Information" /></p>
+                <p class="img" role="heading"><img src="' . \Drupal::config('sdmiramarcustom.settings')->get('image_path') . '/images/icon-building.png" alt="Campus Information" /></p>
                 <strong>Campus Information</strong>
                 <ul class="campus">
                   <li><a href="/directory/people">Directory</a></li>
@@ -76,7 +63,7 @@ class MiramarCustomContactBlock extends BlockBase {
                 </ul>
               </div>
               <div class="col-sm-4">
-                <p class="img" role="heading"><img src="' . $imagepath . '/images/icon-users.png" alt="Resources & Information"></p>
+                <p class="img" role="heading"><img src="' . \Drupal::config('sdmiramarcustom.settings')->get('image_path') . '/images/icon-users.png" alt="Resources & Information"></p>
                 <strong>Resources &amp; Information</strong>
                 <ul class="miramar">
                   <li><a href="/508">Website Accessitility Information</a></li>
@@ -89,7 +76,7 @@ class MiramarCustomContactBlock extends BlockBase {
                '</ul>
               </div>
               <div class="col-sm-4">
-                <p class="img" role="heading"><img src="' . $imagepath . '/images/icon-note.png" alt="Accreditation"></p>
+                <p class="img" role="heading"><img src="' . \Drupal::config('sdmiramarcustom.settings')->get('image_path') . '/images/icon-note.png" alt="Accreditation"></p>
                 <strong>Accreditation Information</strong>
                 <ul class="acc-info">
                   <li><a href="/accreditation">Accreditation</a></li>

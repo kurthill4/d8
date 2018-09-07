@@ -5,3 +5,57 @@
  * Main module file for ERNI Digital.
  */
 
+
+function miramarcustom_preprocess_page(&$variables) {
+
+	// Set path to theme images
+
+	$imagepath = base_path() . drupal_get_path('theme', 'miramar');
+
+	\Drupal::configFactory()
+		->getEditable('sdmiramarcustom.settings')
+		->set('image_path', $imagepath)
+		->save();
+
+	// Get client IP and determine if it's from on campus
+
+	if (!empty($_SERVER["HTTP_CLIENT_IP"]))
+	{
+	 //check for ip from share internet
+	 $theIP = $_SERVER["HTTP_CLIENT_IP"];
+	}
+	elseif (!empty($_SERVER["HTTP_X_FORWARDED_FOR"]))
+	{
+	 // Check for the Proxy User
+	 $theIP = $_SERVER["HTTP_X_FORWARDED_FOR"];
+	}
+	else
+	{
+	 $theIP = $_SERVER["REMOTE_ADDR"];
+	}
+
+	if(substr($theIP,0,2) == '10') {
+		\Drupal::configFactory()
+			->getEditable('sdmiramarcustom.settings')
+			->set('local_ip', TRUE)
+			->save();
+	}
+	else {
+		\Drupal::configFactory()
+			->getEditable('sdmiramarcustom.settings')
+			->set('local_ip', FALSE)
+			->save();
+	}
+
+	\Drupal::configFactory()
+		->getEditable('sdmiramarcustom.settings')
+		->set('client_ip', $theIP)
+		->save();
+
+	\Drupal::configFactory()
+		->getEditable('sdmiramarcustom.settings')
+		->set('issues_link', '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=' . $_SERVER['REQUEST_URI'] . '">Report Issues With This Page</a>')
+		->save();
+
+
+}
