@@ -1,0 +1,9 @@
+uuid: cacbb496-c353-4393-8763-6ba9ae80bd5c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Editorial Section'
+vid: editorial_section
+description: 'Defines website sections for editing permissions'
+hierarchy: 0
+weight: 0

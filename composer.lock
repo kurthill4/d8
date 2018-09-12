@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "92ec4b28fd8220e72913bea89d849bd4",
+    "content-hash": "259eba1af0b7e069d215b45f6f09e9a3",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1351,57 +1351,6 @@
             "time": "2017-12-08T22:53:11+00:00"
         },
         {
-            "name": "drupal/acl",
-            "version": "1.0.0-alpha1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/acl",
-                "reference": "8.x-1.0-alpha1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acl-8.x-1.0-alpha1.zip",
-                "reference": "8.x-1.0-alpha1",
-                "shasum": "2cb076c451ab99beeb7433272ca56aea4bf48430"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-alpha1",
-                    "datestamp": "1445215139",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "merlinofchaos",
-                    "homepage": "https://www.drupal.org/user/26979"
-                },
-                {
-                    "name": "salvis",
-                    "homepage": "https://www.drupal.org/user/82964"
-                }
-            ],
-            "description": "Access control list API. Has no features on its own.",
-            "homepage": "https://www.drupal.org/project/acl",
-            "support": {
-                "source": "http://cgit.drupalcode.org/acl"
-            }
-        },
-        {
             "name": "drupal/admin_toolbar",
             "version": "1.23.0",
             "source": {
@@ -2378,61 +2327,6 @@
             ],
             "description": "Drupal Console Extend Plugin",
             "time": "2017-07-28T17:11:54+00:00"
-        },
-        {
-            "name": "drupal/content_access",
-            "version": "1.0.0-alpha1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/content_access",
-                "reference": "8.x-1.0-alpha1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/content_access-8.x-1.0-alpha1.zip",
-                "reference": "8.x-1.0-alpha1",
-                "shasum": "8ead8bd29ac8cb26731710fc03a5bde288e37bbd"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-alpha1",
-                    "datestamp": "1510069084",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "fago",
-                    "homepage": "https://www.drupal.org/user/16747"
-                },
-                {
-                    "name": "good_man",
-                    "homepage": "https://www.drupal.org/user/265439"
-                },
-                {
-                    "name": "id.tarzanych",
-                    "homepage": "https://www.drupal.org/user/2776543"
-                }
-            ],
-            "description": "Provides flexible content access control.",
-            "homepage": "https://www.drupal.org/project/content_access",
-            "support": {
-                "source": "http://cgit.drupalcode.org/content_access"
-            }
         },
         {
             "name": "drupal/content_type_clone",
@@ -5161,6 +5055,67 @@
             "homepage": "https://www.drupal.org/project/tablefield",
             "support": {
                 "source": "http://cgit.drupalcode.org/tablefield"
+            }
+        },
+        {
+            "name": "drupal/taxonomy_manager",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/taxonomy_manager",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/taxonomy_manager-8.x-1.0-alpha1.zip",
+                "reference": "8.x-1.0-alpha1",
+                "shasum": "b8ca893d46e222462e14f25a2b4805e3aa725665"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1525698784",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Matthias Hutterer (mpdonadio)",
+                    "homepage": "https://www.drupal.org/u/mh86",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "joaogarin",
+                    "homepage": "https://www.drupal.org/user/612814"
+                },
+                {
+                    "name": "kalinchernev",
+                    "homepage": "https://www.drupal.org/user/231185"
+                },
+                {
+                    "name": "mh86",
+                    "homepage": "https://www.drupal.org/user/59747"
+                }
+            ],
+            "description": "Taxonomy_Manager provides a powerful interface for managing taxonomies via a tree view.",
+            "homepage": "https://drupal.org/project/taxonomy_manager",
+            "support": {
+                "source": "http://cgit.drupalcode.org/taxonomy_manager",
+                "issues": "https://drupal.org/project/issues/taxonomy_manager"
             }
         },
         {
@@ -11248,12 +11203,10 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/acl": 15,
         "drupal/better_exposed_filters": 15,
         "drupal/bootstrap_paragraphs": 10,
         "drupal/calendar": 20,
         "drupal/cer": 15,
-        "drupal/content_access": 15,
         "drupal/content_type_clone": 20,
         "drupal/convert_bundles": 15,
         "drupal/ctools": 10,
@@ -11275,6 +11228,7 @@
         "drupal/slick_extras": 10,
         "drupal/slick_views": 5,
         "drupal/tablefield": 15,
+        "drupal/taxonomy_manager": 15,
         "drupal/themable_forms": 10,
         "drupal/twitter": 20,
         "drupal/twitter_block": 15,

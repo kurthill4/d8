@@ -2,7 +2,8 @@
 
 /**
  * @file
- * Main module file for ERNI Digital.
+ * Main module file for Miramar College.
+ * Contains functions that alter Drupal setting and behaviors
  */
 
 /**

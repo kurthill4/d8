@@ -7,6 +7,7 @@ dependencies:
     - field.field.taxonomy_term.campus_resources.field_contact_2
     - field.field.taxonomy_term.campus_resources.field_contact_3
     - field.field.taxonomy_term.campus_resources.field_custom_content
+    - field.field.taxonomy_term.campus_resources.field_editorial_section
     - field.field.taxonomy_term.campus_resources.field_fax
     - field.field.taxonomy_term.campus_resources.field_hours
     - field.field.taxonomy_term.campus_resources.field_image
@@ -68,6 +69,15 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
+    region: content
+  field_editorial_section:
+    weight: 16
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_fax:
     weight: 3

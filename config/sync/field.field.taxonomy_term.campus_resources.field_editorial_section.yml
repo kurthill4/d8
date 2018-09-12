@@ -1,0 +1,29 @@
+uuid: 3cca19f1-1105-4c72-9cc3-f3699a376c34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_editorial_section
+    - taxonomy.vocabulary.campus_resources
+    - taxonomy.vocabulary.editorial_section
+id: taxonomy_term.campus_resources.field_editorial_section
+field_name: field_editorial_section
+entity_type: taxonomy_term
+bundle: campus_resources
+label: 'Editorial Section'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      editorial_section: editorial_section
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
