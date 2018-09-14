@@ -1,0 +1,10 @@
+uuid: 9e4e8836-8308-499b-b9f1-d578a01adb88
+langcode: en
+status: true
+dependencies: {  }
+id: restricted
+label: Restricted
+weight: 17
+is_admin: null
+permissions:
+  - 'edit own program content'

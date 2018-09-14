@@ -1,0 +1,14 @@
+uuid: dbcb95ad-4637-469c-ad00-81470eaa961c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hourly
+  module:
+    - user
+id: user_remove_role_action.hourly
+label: 'Remove the Hourly role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: hourly

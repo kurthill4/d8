@@ -1,0 +1,15 @@
+uuid: 967bb18d-3302-4252-82ab-7d80799f65c1
+langcode: en
+status: true
+dependencies: {  }
+id: hourly
+label: Hourly
+weight: 18
+is_admin: null
+permissions:
+  - 'edit any custom_web_page content'
+  - 'edit own custom_web_page content'
+  - 'edit own program content'
+  - 'edit terms in campus_resources'
+  - 'edit terms in editorial_section'
+  - 'use workbench access'

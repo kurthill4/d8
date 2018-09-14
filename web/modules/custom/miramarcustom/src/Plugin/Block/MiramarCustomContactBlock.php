@@ -26,6 +26,10 @@ class MiramarCustomContactBlock extends BlockBase {
     if(\Drupal::config('sdmiramarcustom.settings')->get('local_ip') == TRUE or !(\Drupal::currentUser()->isAnonymous())) {
 	$intra = $prefix . \Drupal::config('sdmiramarcustom.settings')->get('issues_link') . $suffix;
 }
+    else {
+        $intra1 = "";
+    }
+
     $build['contact']['content'] = [
       '#markup' => '
         <div class="row hide-xs">

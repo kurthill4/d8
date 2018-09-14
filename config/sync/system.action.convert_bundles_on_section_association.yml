@@ -1,0 +1,11 @@
+uuid: 5045415e-483e-499a-9b19-304c9fe78f0a
+langcode: en
+status: true
+dependencies:
+  module:
+    - convert_bundles
+id: convert_bundles_on_section_association
+label: 'Convert Section association Entity Bundles'
+type: section_association
+plugin: convert_bundles_action_base
+configuration: {  }

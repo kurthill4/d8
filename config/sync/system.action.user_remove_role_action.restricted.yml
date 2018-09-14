@@ -1,0 +1,14 @@
+uuid: 7a1a0f79-f714-43ae-89d9-0082bd831ac4
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.restricted
+  module:
+    - user
+id: user_remove_role_action.restricted
+label: 'Remove the Restricted role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: restricted

@@ -26,6 +26,9 @@ class MiramarCustomDescriptionBlock extends BlockBase {
     if(\Drupal::config('sdmiramarcustom.settings')->get('local_ip') == TRUE or !(\Drupal::currentUser()->isAnonymous())) {
 	$intra1 = $prefix . \Drupal::config('sdmiramarcustom.settings')->get('issues_link') . $suffix;
 	}
+    else {
+        $intra1 = "";
+    }
 
     $build['description']['content'] = [
       '#markup' => '

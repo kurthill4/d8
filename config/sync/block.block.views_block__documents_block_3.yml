@@ -12,7 +12,7 @@ dependencies:
 id: views_block__documents_block_3
 theme: miramar
 region: sidebar_second
-weight: -13
+weight: -14
 provider: null
 plugin: 'views_block:documents-block_3'
 settings:

@@ -1,0 +1,14 @@
+uuid: 2e6d6c18-15fa-4e90-ae0f-48b93595761d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hourly
+  module:
+    - user
+id: user_add_role_action.hourly
+label: 'Add the Hourly role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: hourly

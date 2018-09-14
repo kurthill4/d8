@@ -1,18 +1,20 @@
-uuid: 30fe933c-743c-49c7-8e58-bf0510fd7cad
+uuid: 109afa8b-b88c-45ab-b827-38931dd09eb4
 langcode: en
 status: true
 dependencies:
   config:
     - views.view.program_contact
   module:
-    - ctools
+    - block_visibility_groups
+    - node
+    - user
     - views
   theme:
     - miramar
 id: views_block__program_contact_block_1
 theme: miramar
 region: sidebar_second
-weight: -32
+weight: -33
 provider: null
 plugin: 'views_block:program_contact-block_1'
 settings:
@@ -24,10 +26,23 @@ settings:
   items_per_page: none
   context_mapping: {  }
 visibility:
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  node_type:
+    id: node_type
     bundles:
       program: program
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
