@@ -83,6 +83,7 @@ module:
   redirect: 0
   responsive_image: 0
   rest: 0
+  rules: 0
   search: 0
   search_exclude: 0
   serialization: 0
@@ -108,6 +109,7 @@ module:
   twig_tweak: 0
   twitter: 0
   twitter_block: 0
+  typed_data: 0
   update: 0
   user: 0
   video_embed_field: 0

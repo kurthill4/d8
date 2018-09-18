@@ -23,6 +23,7 @@ permissions:
   - 'edit any custom_web_page content'
   - 'edit any document content'
   - 'edit any document files'
+  - 'edit own custom_web_page content'
   - 'edit own document content'
   - 'edit own images content'
   - 'edit own slideshows content'
@@ -32,4 +33,5 @@ permissions:
   - 'rebuild tablefield'
   - 'use text format basic_html'
   - 'use text format full_html'
+  - 'use workbench access'
   - 'view any paragraphs previewer'
