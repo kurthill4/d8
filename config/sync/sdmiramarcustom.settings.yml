@@ -1,4 +1,4 @@
-local_ip: true
+local_ip: false
 image_path: /themes/custom/miramar
-client_ip: 10.70.50.251
-issues_link: '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=/user/login?destination=/node/16157&autologout_timeout=1">Report Issues With This Page</a>'
+client_ip: 127.0.0.1
+issues_link: '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=/managers/users">Report Issues With This Page</a>'

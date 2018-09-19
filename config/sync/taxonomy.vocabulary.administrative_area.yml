@@ -1,0 +1,9 @@
+uuid: cdee98a9-b44d-4690-8abb-584fcc57ed86
+langcode: en
+status: true
+dependencies: {  }
+name: 'Administrative Area'
+vid: administrative_area
+description: 'Administrative sections for content access'
+hierarchy: 0
+weight: 0
