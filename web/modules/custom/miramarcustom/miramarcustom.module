@@ -17,7 +17,7 @@ function miramarcustom_preprocess_page(&$variables) {
 	$imagepath = base_path() . drupal_get_path('theme', 'miramar');
 
 	\Drupal::configFactory()
-		->getEditable('sdmiramarcustom.settings')
+		->getEditable('miramarcustom.settings')
 		->set('image_path', $imagepath)
 		->save();
 
@@ -40,24 +40,24 @@ function miramarcustom_preprocess_page(&$variables) {
 
 	if(substr($theIP,0,2) == '10') {
 		\Drupal::configFactory()
-			->getEditable('sdmiramarcustom.settings')
+			->getEditable('miramarcustom.settings')
 			->set('local_ip', TRUE)
 			->save();
 	}
 	else {
 		\Drupal::configFactory()
-			->getEditable('sdmiramarcustom.settings')
+			->getEditable('miramarcustom.settings')
 			->set('local_ip', FALSE)
 			->save();
 	}
 
 	\Drupal::configFactory()
-		->getEditable('sdmiramarcustom.settings')
+		->getEditable('miramarcustom.settings')
 		->set('client_ip', $theIP)
 		->save();
 
 	\Drupal::configFactory()
-		->getEditable('sdmiramarcustom.settings')
+		->getEditable('miramarcustom.settings')
 		->set('issues_link', '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=' . $_SERVER['REQUEST_URI'] . '">Report Issues With This Page</a>')
 		->save();
 

@@ -23,8 +23,8 @@ class MiramarCustomDescriptionBlock extends BlockBase {
    $prefix = '<br /><span class=\"hide-lg\">';
    $suffix = '</span>';
  
-    if(\Drupal::config('sdmiramarcustom.settings')->get('local_ip') == TRUE or !(\Drupal::currentUser()->isAnonymous())) {
-	$intra1 = $prefix . \Drupal::config('sdmiramarcustom.settings')->get('issues_link') . $suffix;
+    if(\Drupal::config('miramarcustom.settings')->get('local_ip') == TRUE or !(\Drupal::currentUser()->isAnonymous())) {
+	$intra1 = $prefix . \Drupal::config('miramarcustom.settings')->get('issues_link') . $suffix;
 	}
     else {
         $intra1 = "";
@@ -35,7 +35,7 @@ class MiramarCustomDescriptionBlock extends BlockBase {
         <div class="row hide-lg">
           <div class="col-sm-12">
             <div class="centered center hide-lg">
-        	<a href="http://www.sos.ca.gov/elections/voting-resources/voting-california/"><img src="' . \Drupal::config('sdmiramarcustom.settings')->get('image_path') . '/images/footer/vote.png" alt="Register to Vote"></a>
+        	<a href="http://www.sos.ca.gov/elections/voting-resources/voting-california/"><img src="' . \Drupal::config('miramarcustom.settings')->get('image_path') . '/images/footer/vote.png" alt="Register to Vote"></a>
 	    </div>
  	    <div class="spacer" style="height:0.75em">&nbsp;</div>
            <!-- Social Media -->

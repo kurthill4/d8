@@ -1,4 +1,0 @@
-local_ip: false
-image_path: /themes/custom/miramar
-client_ip: 127.0.0.1
-issues_link: '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=/managers/users">Report Issues With This Page</a>'

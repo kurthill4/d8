@@ -23,8 +23,8 @@ class MiramarCustomContactBlock extends BlockBase {
    $prefix = '<li>';
    $suffix = '</li>';
  
-    if(\Drupal::config('sdmiramarcustom.settings')->get('local_ip') == TRUE or !(\Drupal::currentUser()->isAnonymous())) {
-	$intra = $prefix . \Drupal::config('sdmiramarcustom.settings')->get('issues_link') . $suffix;
+    if(\Drupal::config('miramarcustom.settings')->get('local_ip') == TRUE or !(\Drupal::currentUser()->isAnonymous())) {
+	$intra = $prefix . \Drupal::config('miramarcustom.settings')->get('issues_link') . $suffix;
 }
     else {
         $intra1 = "";
@@ -55,7 +55,7 @@ class MiramarCustomContactBlock extends BlockBase {
           <div class="col-sm-9 hide-xs">
             <div class="row">
               <div class="col-sm-4">
-                <p class="img" role="heading"><img src="' . \Drupal::config('sdmiramarcustom.settings')->get('image_path') . '/images/icon-building.png" alt="Campus Information" /></p>
+                <p class="img" role="heading"><img src="' . \Drupal::config('miramarcustom.settings')->get('image_path') . '/images/icon-building.png" alt="Campus Information" /></p>
                 <strong>Campus Information</strong>
                 <ul class="campus">
                   <li><a href="/directory/people">Directory</a></li>
@@ -67,7 +67,7 @@ class MiramarCustomContactBlock extends BlockBase {
                 </ul>
               </div>
               <div class="col-sm-4">
-                <p class="img" role="heading"><img src="' . \Drupal::config('sdmiramarcustom.settings')->get('image_path') . '/images/icon-users.png" alt="Resources & Information"></p>
+                <p class="img" role="heading"><img src="' . \Drupal::config('miramarcustom.settings')->get('image_path') . '/images/icon-users.png" alt="Resources & Information"></p>
                 <strong>Resources &amp; Information</strong>
                 <ul class="miramar">
                   <li><a href="/508">Website Accessitility Information</a></li>
@@ -80,7 +80,7 @@ class MiramarCustomContactBlock extends BlockBase {
                '</ul>
               </div>
               <div class="col-sm-4">
-                <p class="img" role="heading"><img src="' . \Drupal::config('sdmiramarcustom.settings')->get('image_path') . '/images/icon-note.png" alt="Accreditation"></p>
+                <p class="img" role="heading"><img src="' . \Drupal::config('miramarcustom.settings')->get('image_path') . '/images/icon-note.png" alt="Accreditation"></p>
                 <strong>Accreditation Information</strong>
                 <ul class="acc-info">
                   <li><a href="/accreditation">Accreditation</a></li>
