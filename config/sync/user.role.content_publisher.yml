@@ -9,9 +9,12 @@ is_admin: null
 permissions:
   - 'access content overview'
   - 'access toolbar'
+  - 'administer nodes'
   - 'create document content'
   - 'delete own document content'
   - 'edit any document content'
   - 'edit own document content'
+  - 'publish any node type custom_web_page'
+  - 'unpublish any node type custom_web_page'
   - 'use text format basic_html'
   - 'view own unpublished content'
