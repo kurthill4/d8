@@ -3,12 +3,14 @@ langcode: en
 status: true
 dependencies: {  }
 id: hourly
-label: Hourly
+label: Editor
 weight: 18
 is_admin: null
 permissions:
   - 'create custom_web_page content'
+  - 'edit any committee_page content'
   - 'edit any custom_web_page content'
+  - 'edit any program content'
   - 'edit own custom_web_page content'
   - 'edit own program content'
   - 'edit terms in campus_resources'

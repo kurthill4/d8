@@ -3,11 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.campus_resources.field_administrative_area
     - field.field.taxonomy_term.campus_resources.field_contact
     - field.field.taxonomy_term.campus_resources.field_contact_2
     - field.field.taxonomy_term.campus_resources.field_contact_3
     - field.field.taxonomy_term.campus_resources.field_custom_content
-    - field.field.taxonomy_term.campus_resources.field_editorial_section
+    - field.field.taxonomy_term.campus_resources.field_do_not_display
     - field.field.taxonomy_term.campus_resources.field_fax
     - field.field.taxonomy_term.campus_resources.field_hours
     - field.field.taxonomy_term.campus_resources.field_image
@@ -38,6 +39,15 @@ content:
       placeholder: ''
       rows: 5
     third_party_settings: {  }
+  field_administrative_area:
+    weight: 18
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_contact:
     weight: 6
     settings: {  }
@@ -70,14 +80,11 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
-  field_editorial_section:
-    weight: 16
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+  field_do_not_display:
+    weight: 17
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_fax:
     weight: 3

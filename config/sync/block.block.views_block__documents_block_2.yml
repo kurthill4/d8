@@ -6,7 +6,6 @@ dependencies:
     - views.view.documents
   module:
     - block_visibility_groups
-    - ctools
     - system
     - views
   theme:
@@ -14,7 +13,7 @@ dependencies:
 id: views_block__documents_block_2
 theme: miramar
 region: sidebar_second
-weight: -13
+weight: -12
 provider: null
 plugin: 'views_block:documents-block_2'
 settings:
@@ -26,13 +25,6 @@ settings:
   items_per_page: none
   context_mapping: {  }
 visibility:
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
-    bundles:
-      committee_page: committee_page
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
   condition_group:
     id: condition_group
     negate: false
@@ -40,6 +32,6 @@ visibility:
     context_mapping: {  }
   request_path:
     id: request_path
-    pages: '/campus/governance/committees/*'
+    pages: "/campus/governance/committees/*\r\n/campus/governance/committees/*/*"
     negate: false
     context_mapping: {  }

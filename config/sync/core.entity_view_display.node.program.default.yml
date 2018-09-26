@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.program.body
+    - field.field.node.program.field_administrative_area
     - field.field.node.program.field_career_transfer_options
     - field.field.node.program.field_catalog_pages
     - field.field.node.program.field_certificate_link
@@ -23,6 +24,7 @@ dependencies:
   module:
     - file_entity
     - link
+    - telephone
     - text
     - user
 id: node.program.default
@@ -84,9 +86,10 @@ content:
   field_phone:
     weight: 9
     label: above
-    settings: {  }
+    settings:
+      title: ''
     third_party_settings: {  }
-    type: basic_string
+    type: telephone_link
     region: content
   field_program_emphasis:
     weight: 2
@@ -108,6 +111,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_administrative_area: true
   field_contact_2: true
   field_degrees: true
   field_director_contact: true

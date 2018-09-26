@@ -1,0 +1,20 @@
+uuid: 9076e6ef-06b1-432a-a08b-c22705b975a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_administrative_area
+field_name: field_administrative_area
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

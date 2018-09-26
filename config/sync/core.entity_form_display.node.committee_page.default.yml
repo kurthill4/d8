@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.committee_page.field_administrative_area
     - field.field.node.committee_page.field_chair_requirements
     - field.field.node.committee_page.field_co_chair_2
     - field.field.node.committee_page.field_committee_chair
@@ -25,6 +26,15 @@ targetEntityType: node
 bundle: committee_page
 mode: default
 content:
+  field_administrative_area:
+    weight: 122
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_chair_requirements:
     weight: 4
     settings:

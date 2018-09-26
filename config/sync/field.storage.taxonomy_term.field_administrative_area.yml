@@ -1,11 +1,11 @@
-uuid: 07b56af3-9b5b-4d4d-a38d-94a7b231149d
+uuid: 4e276437-f73a-4108-aeed-951d72cf5615
 langcode: en
 status: true
 dependencies:
   module:
     - taxonomy
-id: taxonomy_term.field_editorial_section
-field_name: field_editorial_section
+id: taxonomy_term.field_administrative_area
+field_name: field_administrative_area
 entity_type: taxonomy_term
 type: entity_reference
 settings:

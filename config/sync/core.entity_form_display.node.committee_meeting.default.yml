@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.committee_meeting.field_agenda
+    - field.field.node.committee_meeting.field_associated_committee
     - field.field.node.committee_meeting.field_attached_documents
     - field.field.node.committee_meeting.field_committee
     - field.field.node.committee_meeting.field_event_date
@@ -95,6 +96,7 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_associated_committee: true
   field_event_type: true
   field_meeting_date_time: true
   path: true

@@ -3,11 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.campus_resources.field_administrative_area
     - field.field.taxonomy_term.campus_resources.field_contact
     - field.field.taxonomy_term.campus_resources.field_contact_2
     - field.field.taxonomy_term.campus_resources.field_contact_3
     - field.field.taxonomy_term.campus_resources.field_custom_content
-    - field.field.taxonomy_term.campus_resources.field_editorial_section
+    - field.field.taxonomy_term.campus_resources.field_do_not_display
     - field.field.taxonomy_term.campus_resources.field_fax
     - field.field.taxonomy_term.campus_resources.field_hours
     - field.field.taxonomy_term.campus_resources.field_image
@@ -21,6 +22,7 @@ dependencies:
   module:
     - entity_reference_revisions
     - image
+    - options
     - text
 id: taxonomy_term.campus_resources.default
 targetEntityType: taxonomy_term
@@ -43,13 +45,12 @@ content:
       link: ''
     third_party_settings: {  }
     region: content
-  field_editorial_section:
+  field_do_not_display:
     weight: 4
     label: above
-    settings:
-      link: true
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_label
+    type: list_default
     region: content
   field_image:
     weight: 2
@@ -69,6 +70,7 @@ content:
     type: string
     region: content
 hidden:
+  field_administrative_area: true
   field_contact: true
   field_contact_2: true
   field_contact_3: true

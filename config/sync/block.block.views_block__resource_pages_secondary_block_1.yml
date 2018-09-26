@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block_visibility_groups.block_visibility_group.committees
     - views.view.resource_pages_secondary
   module:
     - block_visibility_groups
@@ -15,7 +14,7 @@ dependencies:
 id: views_block__resource_pages_secondary_block_1
 theme: miramar
 region: sidebar_second
-weight: -19
+weight: -20
 provider: null
 plugin: 'views_block:resource_pages_secondary-block_1'
 settings:
@@ -29,7 +28,7 @@ visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: committees
+    block_visibility_group: ''
     context_mapping: {  }
   node_type:
     id: node_type

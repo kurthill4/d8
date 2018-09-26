@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.custom_web_page.body
+    - field.field.node.custom_web_page.field_administrative_area
     - field.field.node.custom_web_page.field_associated_campus_resource
     - field.field.node.custom_web_page.field_associated_committee
     - field.field.node.custom_web_page.field_associated_department
@@ -34,6 +35,15 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_administrative_area:
+    weight: 122
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_associated_campus_resource:
     weight: 3
     settings:

@@ -23,7 +23,6 @@ module:
   comment: 0
   config: 0
   contact: 0
-  content_access: 0
   content_type_clone: 0
   contextual: 0
   convert_bundles: 0

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.committee_meeting.field_agenda
+    - field.field.node.committee_meeting.field_associated_committee
     - field.field.node.committee_meeting.field_attached_documents
     - field.field.node.committee_meeting.field_committee
     - field.field.node.committee_meeting.field_event_date
@@ -58,6 +59,7 @@ content:
       timezone_override: America/Los_Angeles
       date_format: 'g:i a'
       separator: '-'
+      fromto: both
     third_party_settings: {  }
   field_meeting_date_time:
     weight: 1
@@ -85,6 +87,7 @@ content:
     type: file_download_link
     region: content
 hidden:
+  field_associated_committee: true
   field_event_type: true
   field_file_instructions: true
   links: true

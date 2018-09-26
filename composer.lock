@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3bca15a4174bef6f2b98d573a260effa",
+    "content-hash": "ef31d3788093e072706b8f38f467e784",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2378,61 +2378,6 @@
             ],
             "description": "Drupal Console Extend Plugin",
             "time": "2017-07-28T17:11:54+00:00"
-        },
-        {
-            "name": "drupal/content_access",
-            "version": "1.0.0-alpha1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/content_access",
-                "reference": "8.x-1.0-alpha1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/content_access-8.x-1.0-alpha1.zip",
-                "reference": "8.x-1.0-alpha1",
-                "shasum": "8ead8bd29ac8cb26731710fc03a5bde288e37bbd"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-alpha1",
-                    "datestamp": "1510069084",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "fago",
-                    "homepage": "https://www.drupal.org/user/16747"
-                },
-                {
-                    "name": "good_man",
-                    "homepage": "https://www.drupal.org/user/265439"
-                },
-                {
-                    "name": "id.tarzanych",
-                    "homepage": "https://www.drupal.org/user/2776543"
-                }
-            ],
-            "description": "Provides flexible content access control.",
-            "homepage": "https://www.drupal.org/project/content_access",
-            "support": {
-                "source": "http://cgit.drupalcode.org/content_access"
-            }
         },
         {
             "name": "drupal/content_type_clone",
@@ -11434,7 +11379,6 @@
         "drupal/bootstrap_paragraphs": 10,
         "drupal/calendar": 20,
         "drupal/cer": 15,
-        "drupal/content_access": 15,
         "drupal/content_type_clone": 20,
         "drupal/convert_bundles": 15,
         "drupal/ctools": 10,

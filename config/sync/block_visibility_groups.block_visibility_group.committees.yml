@@ -1,4 +1,4 @@
-uuid: 79b2956d-b7ef-4465-9727-2170749e6657
+uuid: b9678cc4-87a6-4672-8095-f30ddb222c60
 langcode: en
 status: true
 dependencies:
@@ -6,12 +6,12 @@ dependencies:
     - system
 id: committees
 label: Committees
-logic: and
+logic: or
 conditions:
-  f053a573-0b4d-4546-a97d-31a524caa8f1:
+  ac53631a-230a-44e9-80e6-80e9e27fc8f3:
     id: request_path
-    pages: '/campus/governance/committees/*'
+    pages: "/campus/governance/committees/*\r\n/campus/governance/committees/*/*"
     negate: true
     context_mapping: {  }
-    uuid: f053a573-0b4d-4546-a97d-31a524caa8f1
+    uuid: ac53631a-230a-44e9-80e6-80e9e27fc8f3
 allow_other_conditions: true

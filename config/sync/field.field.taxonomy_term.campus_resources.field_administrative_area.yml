@@ -1,16 +1,16 @@
-uuid: 3cca19f1-1105-4c72-9cc3-f3699a376c34
+uuid: d760710c-67ab-438a-8efc-60f7611232c9
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.taxonomy_term.field_editorial_section
+    - field.storage.taxonomy_term.field_administrative_area
+    - taxonomy.vocabulary.administrative_area
     - taxonomy.vocabulary.campus_resources
-    - taxonomy.vocabulary.editorial_section
-id: taxonomy_term.campus_resources.field_editorial_section
-field_name: field_editorial_section
+id: taxonomy_term.campus_resources.field_administrative_area
+field_name: field_administrative_area
 entity_type: taxonomy_term
 bundle: campus_resources
-label: 'Editorial Section'
+label: 'Administrative Area'
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      editorial_section: editorial_section
+      administrative_area: administrative_area
     sort:
       field: name
       direction: asc

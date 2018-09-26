@@ -66,7 +66,7 @@
 		$numErrors = 0;
 		$numNodes = 0;
 		$totalNodes = 0;
-		$newTZ = new \DateTimeZone("America/Los_Angeles");
+		//$newTZ = new \DateTimeZone("America/Los_Angeles");
 		
 		// Now, pull the correct nodes
 
@@ -79,6 +79,7 @@
 		foreach ($nids as $nid) {							// Do this as long as there are nodes:
 			$success = FALSE;
 			$node = node_load($nid, NULL, TRUE);					// Get one node
+/*
 			$date1 = $node->field_meeting_date_time->getString();			// Extract the date
 			$date2 = new \DateTime($date1);						// Create a new Date object
 			$date2End = new \DateTime($date1);						// Create a new Date object
@@ -87,11 +88,15 @@
 			$date2End->modify('+1 hours');
 			$date2Out = $date2->format('Y-m-d\TH:i:s');				// Format the date for Drupal storage
 			$date2EndOut = $date2End->format('Y-m-d\TH:i:s');			// Format the date for Drupal storage
+*/
 			try {
-				$node->field_event_date->value = $date2Out;
+				/*$node->field_event_date->value = $date2Out;
 				$node->field_event_date->end_value = $date2EndOut;
-				$node->field_event_type->target_id = 320;
-				$success = TRUE;
+				$node->field_event_type->target_id = 320;*/
+//				$c = $entity->get('field_committee')->entity->getID();
+				$c = $node->field_committee->target_id;
+				$node->field_associated_committee[] = ['target_id' => $c];	
+			$success = TRUE;
 
 			}
 			catch(Exception $e) {

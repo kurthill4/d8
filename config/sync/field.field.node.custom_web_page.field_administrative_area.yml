@@ -1,0 +1,29 @@
+uuid: b42ec65c-85db-4889-b8b6-fd102e1d128a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_administrative_area
+    - node.type.custom_web_page
+    - taxonomy.vocabulary.administrative_area
+id: node.custom_web_page.field_administrative_area
+field_name: field_administrative_area
+entity_type: node
+bundle: custom_web_page
+label: 'Administrative Area'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      administrative_area: administrative_area
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

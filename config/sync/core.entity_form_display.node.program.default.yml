@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.program.body
+    - field.field.node.program.field_administrative_area
     - field.field.node.program.field_career_transfer_options
     - field.field.node.program.field_catalog_pages
     - field.field.node.program.field_certificate_link
@@ -58,6 +59,15 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
+    region: content
+  field_administrative_area:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_career_transfer_options:
     weight: 6

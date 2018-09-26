@@ -1,0 +1,23 @@
+uuid: ddcc6813-aaca-4b55-8dcf-711cba3de166
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_do_not_display
+    - taxonomy.vocabulary.campus_resources
+  module:
+    - options
+id: taxonomy_term.campus_resources.field_do_not_display
+field_name: field_do_not_display
+entity_type: taxonomy_term
+bundle: campus_resources
+label: 'Do Not Display'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '0'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

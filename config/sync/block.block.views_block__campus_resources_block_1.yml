@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block_visibility_groups.block_visibility_group.committees
     - views.view.campus_resources
   module:
     - block_visibility_groups
@@ -14,7 +13,7 @@ dependencies:
 id: views_block__campus_resources_block_1
 theme: miramar
 region: sidebar_second
-weight: -9
+weight: -8
 provider: null
 plugin: 'views_block:campus_resources-block_1'
 settings:
@@ -33,5 +32,5 @@ visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: committees
+    block_visibility_group: ''
     context_mapping: {  }
