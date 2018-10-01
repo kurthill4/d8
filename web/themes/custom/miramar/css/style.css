@@ -28,6 +28,7 @@ hr.short {width:50%;}
 
 .x2 {font-size:1.5em;}
 
+/*.offset {margin-left:1em;}*/
 
 .map-page .page-header {display:block;width:100%!important;}
 
@@ -2799,7 +2800,7 @@ section#hero {max-height:602px!important}
 	padding: 5px 10px;
 	margin-right: 5px;
 }
-		 .hide-xs{
+		 .hide-xs,.course-seq .views-view-grid{
 			 display: none!important;
 		 }
 .navbar-collapse.collapse {
