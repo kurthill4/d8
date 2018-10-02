@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "20262776cc4c51cad915caf268a1b7c6",
+    "content-hash": "da3eb18fb1f6849afb4eaf357fb66dc3",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5169,67 +5169,6 @@
             "homepage": "https://www.drupal.org/project/tablefield",
             "support": {
                 "source": "http://cgit.drupalcode.org/tablefield"
-            }
-        },
-        {
-            "name": "drupal/taxonomy_manager",
-            "version": "1.0.0-alpha1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/taxonomy_manager",
-                "reference": "8.x-1.0-alpha1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/taxonomy_manager-8.x-1.0-alpha1.zip",
-                "reference": "8.x-1.0-alpha1",
-                "shasum": "b8ca893d46e222462e14f25a2b4805e3aa725665"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-alpha1",
-                    "datestamp": "1525698784",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Matthias Hutterer (mpdonadio)",
-                    "homepage": "https://www.drupal.org/u/mh86",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "joaogarin",
-                    "homepage": "https://www.drupal.org/user/612814"
-                },
-                {
-                    "name": "kalinchernev",
-                    "homepage": "https://www.drupal.org/user/231185"
-                },
-                {
-                    "name": "mh86",
-                    "homepage": "https://www.drupal.org/user/59747"
-                }
-            ],
-            "description": "Taxonomy_Manager provides a powerful interface for managing taxonomies via a tree view.",
-            "homepage": "https://drupal.org/project/taxonomy_manager",
-            "support": {
-                "source": "http://cgit.drupalcode.org/taxonomy_manager",
-                "issues": "https://drupal.org/project/issues/taxonomy_manager"
             }
         },
         {
@@ -11463,7 +11402,6 @@
         "drupal/slick_extras": 10,
         "drupal/slick_views": 5,
         "drupal/tablefield": 15,
-        "drupal/taxonomy_manager": 15,
         "drupal/themable_forms": 10,
         "drupal/twitter": 20,
         "drupal/twitter_block": 15,
