@@ -1,4 +1,4 @@
-local_ip: false
-client_ip: 127.0.0.1
-issues_link: '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=/admin/modules/uninstall">Report Issues With This Page</a>'
+local_ip: true
+client_ip: 10.70.22.31
+issues_link: '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=/programs/accountancy">Report Issues With This Page</a>'
 image_path: /themes/custom/miramar
