@@ -1,0 +1,14 @@
+uuid: 2e2917e9-162a-4d3a-b2ff-da81d2e13710
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.btcwi
+  module:
+    - user
+id: user_remove_role_action.btcwi
+label: 'Remove the BTCWI role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: btcwi

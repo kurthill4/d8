@@ -1,0 +1,9 @@
+uuid: 222d02e7-abab-4dcf-9d39-18197cb7a622
+langcode: en
+status: true
+dependencies: {  }
+id: vpss
+label: VPSS
+weight: 22
+is_admin: null
+permissions: {  }

@@ -1,5 +1,4 @@
 module:
-  acl: 0
   action: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
@@ -124,7 +123,6 @@ module:
   webform_node: 0
   webform_templates: 0
   webform_ui: 0
-  workbench_access: 0
   youtubechannel: 0
   menu_link_content: 1
   pathauto: 1

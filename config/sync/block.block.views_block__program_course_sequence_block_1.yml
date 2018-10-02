@@ -1,6 +1,6 @@
 uuid: d5d710c2-d40b-4423-ba21-e22fa9c0bafd
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.program_course_sequence

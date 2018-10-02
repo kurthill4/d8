@@ -1,0 +1,14 @@
+uuid: f23506bd-2108-4f73-a68e-d08ba20d6898
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.la
+  module:
+    - user
+id: user_add_role_action.la
+label: 'Add the LA role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: la

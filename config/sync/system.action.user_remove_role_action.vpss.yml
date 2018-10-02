@@ -1,0 +1,14 @@
+uuid: e0c4a90d-bb7b-496d-af1c-1a1afac9cc2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.vpss
+  module:
+    - user
+id: user_remove_role_action.vpss
+label: 'Remove the VPSS role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: vpss

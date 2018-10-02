@@ -1,0 +1,14 @@
+uuid: 9e5e3df5-6802-4408-b8a3-36b56e60be72
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.btcwi
+  module:
+    - user
+id: user_add_role_action.btcwi
+label: 'Add the BTCWI role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: btcwi

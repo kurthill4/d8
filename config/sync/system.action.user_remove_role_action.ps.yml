@@ -1,0 +1,14 @@
+uuid: 48bdad95-158f-4087-b86c-42225a73afad
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ps
+  module:
+    - user
+id: user_remove_role_action.ps
+label: 'Remove the PS role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: ps

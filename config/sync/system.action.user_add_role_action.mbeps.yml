@@ -1,0 +1,14 @@
+uuid: 57dc8329-af9d-4e8e-a76f-598e6a493fe2
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mbeps
+  module:
+    - user
+id: user_add_role_action.mbeps
+label: 'Add the MBEPS role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: mbeps

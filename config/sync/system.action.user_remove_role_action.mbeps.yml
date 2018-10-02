@@ -1,0 +1,14 @@
+uuid: 4f20faf8-73f9-40c8-989c-6e53aabe0269
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mbeps
+  module:
+    - user
+id: user_remove_role_action.mbeps
+label: 'Remove the MBEPS role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: mbeps

@@ -1,0 +1,9 @@
+uuid: a910740b-3acc-4209-a62a-de4b094c9847
+langcode: en
+status: true
+dependencies: {  }
+id: la
+label: LA
+weight: 20
+is_admin: null
+permissions: {  }

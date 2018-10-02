@@ -1,0 +1,14 @@
+uuid: 30743ff2-dd51-4ba4-aef1-dd127252fa5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ps
+  module:
+    - user
+id: user_add_role_action.ps
+label: 'Add the PS role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: ps
