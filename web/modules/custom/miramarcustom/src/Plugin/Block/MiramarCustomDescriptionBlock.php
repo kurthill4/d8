@@ -30,6 +30,7 @@ class MiramarCustomDescriptionBlock extends BlockBase {
         $intra1 = "";
     }
 
+    $build['#cache']['max-age'] = 0;
     $build['description']['content'] = [
       '#markup' => '
         <div class="row hide-lg">

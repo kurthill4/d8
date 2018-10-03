@@ -27,9 +27,10 @@ class MiramarCustomContactBlock extends BlockBase {
 	$intra = $prefix . \Drupal::config('miramarcustom.settings')->get('issues_link') . $suffix;
 }
     else {
-        $intra1 = "";
+        $intra = "";
     }
 
+    $build['#cache']['max-age'] = 0;
     $build['contact']['content'] = [
       '#markup' => '
         <div class="row hide-xs">

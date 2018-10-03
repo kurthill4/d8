@@ -19,7 +19,8 @@ class MiramarCustomProgramCallBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-
+    $pc = \Drupal::config('miramarcustom.settings')->get('prog_call');
+    $build['#cache']['max-age'] = 0;
     $build['pgmcall']['content'] = [
       '#markup' => '
 	<div class="call">
@@ -34,14 +35,7 @@ class MiramarCustomProgramCallBlock extends BlockBase {
 	<span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
 	Course Catalog
 	</a>
-	</div>
-	<div class="spacer" style="height:0.1em">&nbsp;</div>
-	<div class="call hide-xs">
-	<a href="#course_seq">
-	<span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-	What to Take
-	</a>
-	</div>'
+	</div>' . $pc
     ];
 
     return $build;
