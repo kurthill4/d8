@@ -8,6 +8,7 @@ dependencies:
   module:
     - block_visibility_groups
     - ctools
+    - node
     - system
     - views
   theme:
@@ -44,3 +45,11 @@ visibility:
     pages: "/campus/*\r\n/campus/forms/*"
     negate: false
     context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      custom_web_page: custom_web_page
+      webform: webform
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
