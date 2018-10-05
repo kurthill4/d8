@@ -27,4 +27,9 @@
     'see-more',
   ]
 %}
+{% set newlink = element['#view'].result[0].node_field_data_node__field_associated_committee_nid %}
+{% if newlink is not empty %}
+<div{{ attributes.addClass(classes) }}><a href="/campus/governance/committees/archive/{{ newlink }}">All Meetings</a></div>
+{% else %}
 <div{{ attributes.addClass(classes) }}>{{ children }}</div>
+{% endif %}

@@ -10,11 +10,24 @@
  * Implements hook_preprocess_page()
  * 
  */
+
+
+
+/**
+ * Implements hook_preprocess_HOOK() for block templates.
+ *
+ * @todo This is just a poor man's implementation of changing svg logo to png.
+ *
+ * @see https://www.drupal.org/node/2472127#comment-10458517
+ */
+
 function miramarcustom_preprocess_page(&$variables) {
 
 	// Set path to theme images
 
 	$imagepath = base_path() . drupal_get_path('theme', 'miramar');
+
+
 
 	\Drupal::configFactory()
 		->getEditable('miramarcustom.settings')
@@ -87,13 +100,18 @@ function miramarcustom_preprocess_node(&$variables) {
 				break;
 			case "sdccd_campaign":
 			break;
+		case "committee":
+			$variables['ctype'] = "committee";
+		break;
 		case "program":
+			$variables['ctype'] = "program";
 			\Drupal::configFactory()
 				->getEditable('miramarcustom.settings')
 				->set('prog_call', '<div class="spacer" style="height:0.1em">&nbsp;</div><div class="call hide-xs"><a href="#course_seq"><span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>What to Take</a></div>')
 				->save();
 		break;
 		case "custom_web_page":
+			$variables['ctype'] = "page";
 			\Drupal::configFactory()
 				->getEditable('miramarcustom.settings')
 				->set('prog_call', '')
