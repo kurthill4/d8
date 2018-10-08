@@ -59,4 +59,7 @@ class MiramarCustomDescriptionBlock extends BlockBase {
 
     return $build;
   }
+  public function getCacheMaxAge() {
+	return 0;
+  }
 }

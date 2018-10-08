@@ -97,4 +97,7 @@ class MiramarCustomContactBlock extends BlockBase {
 
     return $build;
   }
+  public function getCacheMaxAge() {
+	return 0;
+  }
 }
