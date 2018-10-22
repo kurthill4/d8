@@ -21,7 +21,7 @@ class MiramarCustomProgramCallBlock extends BlockBase {
   public function build() {
     $pc = \Drupal::config('miramarcustom.settings')->get('prog_call');
     $build['#cache']['max-age'] = 0;
-    $build['pgmcall']['content'] = [dev
+    $build['pgmcall']['content'] = [
       '#markup' => '
 	<div class="call">
 	<a href="http://schedule.sdccd.edu" target="_blank">
