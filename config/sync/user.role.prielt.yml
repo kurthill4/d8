@@ -1,10 +1,10 @@
-uuid: 222d02e7-abab-4dcf-9d39-18197cb7a622
+uuid: 86f7a292-c307-4686-a975-d462ede8bf9c
 langcode: en
 status: true
 dependencies: {  }
-id: vpss
-label: VPSS
-weight: 22
+id: prielt
+label: PRIELT
+weight: 25
 is_admin: null
 permissions:
   - 'edit any custom_web_page content'

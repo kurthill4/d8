@@ -6,4 +6,6 @@ id: la
 label: LA
 weight: 20
 is_admin: null
-permissions: {  }
+permissions:
+  - 'edit any custom_web_page content'
+  - 'edit any program content'

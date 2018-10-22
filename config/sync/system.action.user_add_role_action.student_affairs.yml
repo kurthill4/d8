@@ -1,0 +1,14 @@
+uuid: 89f8e05d-d664-4e22-b084-ed4532780136
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.student_affairs
+  module:
+    - user
+id: user_add_role_action.student_affairs
+label: 'Add the Student Affairs role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: student_affairs

@@ -6,4 +6,8 @@ id: btcwi
 label: BTCWI
 weight: 23
 is_admin: null
-permissions: {  }
+permissions:
+  - 'create custom_web_page content'
+  - 'edit any custom_web_page content'
+  - 'edit any program content'
+  - 'use workbench access'

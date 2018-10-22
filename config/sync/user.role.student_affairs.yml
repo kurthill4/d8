@@ -1,10 +1,10 @@
-uuid: 222d02e7-abab-4dcf-9d39-18197cb7a622
+uuid: b8f022d7-aef8-47a6-8644-c1d70cb5891c
 langcode: en
 status: true
 dependencies: {  }
-id: vpss
-label: VPSS
-weight: 22
+id: student_affairs
+label: 'Student Affairs'
+weight: 24
 is_admin: null
 permissions:
   - 'edit any custom_web_page content'
