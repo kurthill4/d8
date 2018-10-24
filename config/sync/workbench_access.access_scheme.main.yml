@@ -3,10 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.committee_page.field_administrative_area
-    - field.field.node.custom_web_page.field_administrative_area
-    - field.field.node.program.field_administrative_area
-    - field.field.taxonomy_term.campus_resources.field_administrative_area
     - taxonomy.vocabulary.administrative_area
 id: main
 label: Main
@@ -15,20 +11,4 @@ scheme: taxonomy
 scheme_settings:
   vocabularies:
     - administrative_area
-  fields:
-    -
-      entity_type: node
-      bundle: custom_web_page
-      field: field_administrative_area
-    -
-      entity_type: node
-      bundle: program
-      field: field_administrative_area
-    -
-      entity_type: node
-      bundle: committee_page
-      field: field_administrative_area
-    -
-      entity_type: taxonomy_term
-      bundle: campus_resources
-      field: field_administrative_area
+  fields: {  }
