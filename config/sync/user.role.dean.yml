@@ -35,4 +35,6 @@ permissions:
   - 'edit own department_page content'
   - 'edit own document content'
   - 'edit own program content'
+  - 'edit terms in campus_resources'
   - 'use text format basic_html'
+  - 'use workbench access'

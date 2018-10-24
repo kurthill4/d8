@@ -33,5 +33,4 @@ permissions:
   - 'rebuild tablefield'
   - 'use text format basic_html'
   - 'use text format full_html'
-  - 'use workbench access'
   - 'view any paragraphs previewer'

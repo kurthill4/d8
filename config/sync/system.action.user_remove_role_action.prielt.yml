@@ -1,0 +1,14 @@
+uuid: 04d5dc6a-9849-425a-bf77-261ff44702a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.prielt
+  module:
+    - user
+id: user_remove_role_action.prielt
+label: 'Remove the PRIELT role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: prielt

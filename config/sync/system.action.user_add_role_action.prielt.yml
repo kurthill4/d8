@@ -1,0 +1,14 @@
+uuid: b0ba6b06-007c-41d3-b279-d7b05bbbfba7
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.prielt
+  module:
+    - user
+id: user_add_role_action.prielt
+label: 'Add the PRIELT role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: prielt

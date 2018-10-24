@@ -1,0 +1,14 @@
+uuid: 13ad16cb-741f-46df-a5f8-ddb666872b93
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.student_affairs
+  module:
+    - user
+id: user_remove_role_action.student_affairs
+label: 'Remove the Student Affairs role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: student_affairs

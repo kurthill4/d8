@@ -8,5 +8,6 @@ weight: 12
 is_admin: null
 permissions:
   - 'edit own custom_web_page content'
+  - 'edit own faculty_page content'
   - 'use text format basic_html'
   - 'use text format full_html'
