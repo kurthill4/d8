@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "039be3bd4e875a1f063fa70a830f416a",
+    "content-hash": "635fbd85166e6c870614abb2f11a3453",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5176,21 +5176,21 @@
             }
         },
         {
-            "name": "drupal/term_csv_export_import",
-            "version": "1.0.0-alpha6",
+            "name": "drupal/taxonomy_manager",
+            "version": "1.0.0-alpha2",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/term_csv_export_import",
-                "reference": "8.x-1.0-alpha6"
+                "url": "https://git.drupal.org/project/taxonomy_manager",
+                "reference": "8.x-1.0-alpha2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/term_csv_export_import-8.x-1.0-alpha6.zip",
-                "reference": "8.x-1.0-alpha6",
-                "shasum": "248144d1d2bb1b01d9dfa0d79751bb55d86ed491"
+                "url": "https://ftp.drupal.org/files/projects/taxonomy_manager-8.x-1.0-alpha2.zip",
+                "reference": "8.x-1.0-alpha2",
+                "shasum": "7becfad1cad0d26f471b8e097afcadde94a9f266"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -5198,28 +5198,42 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha6",
-                    "datestamp": "1510675985",
+                    "version": "8.x-1.0-alpha2",
+                    "datestamp": "1538074980",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
-                    "name": "el1_1el",
-                    "homepage": "https://www.drupal.org/user/1795292"
+                    "name": "Matthias Hutterer (mpdonadio)",
+                    "homepage": "https://www.drupal.org/u/mh86",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "joaogarin",
+                    "homepage": "https://www.drupal.org/user/612814"
+                },
+                {
+                    "name": "kalinchernev",
+                    "homepage": "https://www.drupal.org/user/231185"
+                },
+                {
+                    "name": "mh86",
+                    "homepage": "https://www.drupal.org/user/59747"
                 }
             ],
-            "description": "Import and Export Taxonomy terms as csv.",
-            "homepage": "https://www.drupal.org/project/term_csv_export_import",
+            "description": "Taxonomy_Manager provides a powerful interface for managing taxonomies via a tree view.",
+            "homepage": "https://drupal.org/project/taxonomy_manager",
             "support": {
-                "source": "http://cgit.drupalcode.org/term_csv_export_import"
+                "source": "http://cgit.drupalcode.org/taxonomy_manager",
+                "issues": "https://drupal.org/project/issues/taxonomy_manager"
             }
         },
         {
@@ -11453,6 +11467,7 @@
         "drupal/slick_extras": 10,
         "drupal/slick_views": 5,
         "drupal/tablefield": 15,
+        "drupal/taxonomy_manager": 15,
         "drupal/themable_forms": 10,
         "drupal/twitter": 20,
         "drupal/twitter_block": 15,
