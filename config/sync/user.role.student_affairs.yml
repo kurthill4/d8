@@ -8,5 +8,6 @@ weight: 24
 is_admin: null
 permissions:
   - 'edit any custom_web_page content'
+  - 'edit any document content'
   - 'edit terms in campus_resources'
   - 'use workbench access'

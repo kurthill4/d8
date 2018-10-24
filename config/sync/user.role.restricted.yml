@@ -7,4 +7,6 @@ label: Restricted
 weight: 17
 is_admin: null
 permissions:
-  - 'edit own program content'
+  - 'edit any committee_page content'
+  - 'edit any custom_web_page content'
+  - 'use workbench access'

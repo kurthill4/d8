@@ -26,3 +26,4 @@ permissions:
   - 'edit own announcement content'
   - 'edit own campus_news content'
   - 'use text format full_html'
+  - 'use workbench access'

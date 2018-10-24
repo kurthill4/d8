@@ -95,6 +95,7 @@ module:
   tablefield: 0
   taxonomy: 0
   telephone: 0
+  term_csv_export_import: 0
   text: 0
   themable_forms: 0
   token: 0
