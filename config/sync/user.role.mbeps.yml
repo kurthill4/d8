@@ -6,4 +6,10 @@ id: mbeps
 label: MBEPS
 weight: 19
 is_admin: null
-permissions: {  }
+permissions:
+  - 'create custom_web_page content'
+  - 'create document content'
+  - 'edit any custom_web_page content'
+  - 'edit any document content'
+  - 'edit any program content'
+  - 'use workbench access'
