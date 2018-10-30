@@ -1,0 +1,26 @@
+uuid: cf66ff38-5551-4fdf-a3e9-7f528656be34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.subcommittee.body
+    - node.type.subcommittee
+  module:
+    - text
+    - user
+id: node.subcommittee.default
+targetEntityType: node
+bundle: subcommittee
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

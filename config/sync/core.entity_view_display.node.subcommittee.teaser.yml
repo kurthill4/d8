@@ -1,0 +1,28 @@
+uuid: 3971e568-5ffd-45d5-b85e-37f03e4e642b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.subcommittee.body
+    - node.type.subcommittee
+  module:
+    - text
+    - user
+id: node.subcommittee.teaser
+targetEntityType: node
+bundle: subcommittee
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

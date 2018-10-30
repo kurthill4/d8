@@ -8,6 +8,11 @@ weight: 17
 is_admin: null
 permissions:
   - 'administer actions'
+  - 'administer autologout'
+  - 'administer blazy'
+  - 'administer blocks'
+  - 'administer calendar settings'
+  - 'change own logout threshold'
   - 'edit any committee_page content'
   - 'edit any custom_web_page content'
   - 'use workbench access'

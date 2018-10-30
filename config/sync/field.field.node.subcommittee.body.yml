@@ -1,0 +1,22 @@
+uuid: 5ac3d88d-970f-4864-aedb-b5c57bf63f14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.subcommittee
+  module:
+    - text
+id: node.subcommittee.body
+field_name: body
+entity_type: node
+bundle: subcommittee
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
