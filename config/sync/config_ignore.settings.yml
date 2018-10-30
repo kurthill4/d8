@@ -1,0 +1,6 @@
+ignored_config_entities:
+  0: 'user.*'
+  2: '*.role.*'
+  4: miramarcustom.settings
+_core:
+  default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
