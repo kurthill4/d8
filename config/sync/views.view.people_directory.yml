@@ -10,8 +10,12 @@ dependencies:
     - field.storage.user.field_last_name
     - field.storage.user.field_office
     - field.storage.user.field_phone
+    - taxonomy.vocabulary.employment_type
+  content:
+    - 'taxonomy_term:employment_type:998f26ae-6798-47f3-ab60-b1962bf20092'
   module:
     - link
+    - taxonomy
     - telephone
     - user
     - views_bootstrap
@@ -911,6 +915,50 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: string
+        field_employment_type_target_id:
+          id: field_employment_type_target_id
+          table: user__field_employment_type
+          field: field_employment_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: not
+          value:
+            402: 402
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: employment_type
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
       sorts:
         field_last_name_value:
           id: field_last_name_value
@@ -968,6 +1016,7 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user
       tags:
         - 'config:field.storage.user.field_assignment'
         - 'config:field.storage.user.field_external_website'
@@ -1053,6 +1102,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - user
       tags:
         - 'config:field.storage.user.field_assignment'
         - 'config:field.storage.user.field_external_website'
@@ -1120,6 +1170,7 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user
       tags:
         - 'config:field.storage.user.field_assignment'
         - 'config:field.storage.user.field_external_website'

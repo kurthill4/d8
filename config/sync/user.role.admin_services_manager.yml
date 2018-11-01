@@ -8,6 +8,7 @@ weight: 16
 is_admin: null
 permissions:
   - 'create business_office content'
+  - 'create custom_web_page content'
   - 'create document content'
   - 'delete any document content'
   - 'delete own document files'

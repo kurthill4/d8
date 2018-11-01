@@ -7,6 +7,7 @@ label: VPSS
 weight: 22
 is_admin: null
 permissions:
+  - 'create custom_web_page content'
   - 'edit any custom_web_page content'
   - 'edit terms in campus_resources'
   - 'use workbench access'
