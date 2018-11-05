@@ -891,20 +891,38 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 /*.slide-buttons{
 	margin: 15px 0 0 60px;
 }*/
-.slide-buttons a{
+
+.slide-buttons a,
+.dropdown-mobile a{
 	display: inline-block;
 	background: #a22130;
 	color: #fff;
 	font-family: 'Oswald', sans-serif;
-	font-size: 20px;
-	padding: 5px 30px;
 	text-transform: uppercase;
 	text-decoration: none;
 }
-.slide-buttons a:hover,.slide-buttons a.active{
+
+.slide-buttons a {
+	font-size: 20px;
+	padding: 5px 30px;
+}
+.dropdown-mobile a{
+	width:75%;
+	font-size:1em;
+	padding:0.3em 1em;
+	margin-bottom:1.5em;
+	text-align:center;
+}
+.resources-mobile {margin-bottom:1em}
+.slide-buttons a:hover,.slide-buttons a.active,
+.dropdown-mobile a:hover,.dropdown-mobile a.active{
 	text-decoration: none;
 	background: #1d2451;
 }
+
+/*.getstarted-mobile .odd {
+	background-color:#dbf3f5;
+}*/
 .region-number {
 	background-color:#d1d4d3;
 	margin: 0 auto;
@@ -2284,6 +2302,9 @@ background: #a22130;
 .getstarted .news-title h3 {
 	margin-top:1em!important;
 }
+.getstarted-mobile {width:100%;padding-left:0.5em}
+.getstarted-mobile div.getstarted-rowSteps {width:100%;}
+.getstarted-mobile div.getstarted-rowPaths {width:100%;}
 td.resources-students {
 	background: #daf2f4;
 	width:40%;

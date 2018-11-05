@@ -27,8 +27,6 @@ function miramarcustom_preprocess_page(&$variables) {
 
 	$imagepath = base_path() . drupal_get_path('theme', 'miramar');
 
-
-
 	\Drupal::configFactory()
 		->getEditable('miramarcustom.settings')
 		->set('image_path', $imagepath)
@@ -123,29 +121,11 @@ function miramarcustom_preprocess_node(&$variables) {
 }
 /*
 function miramarcustom_views_pre_render(\Drupal\views\ViewExecutable $view) {
-  if ($view->id() == "committee_meetings" && $view->current_display == 'block_2') {
-	$item = $variables['row'];
-	$node = node_load($item->nid);
-	$variables['committee'] = $node->field_committee->target_id;
+  if ($view->id() == "get_started") {
+	module_load_include('inc', 'views_jump_menu', 'views_jump_menu');
   }
-}
-*/
-/*
-function miramarcustom_views_pre_render(\Drupal\views\ViewExecutable $view) {
-$variables['committee'] = 'bar';
-	if ($view->name == "committee_meetings" && $view->current_display == 'block_2') {
-drupal_set_message("FOO");
-		$foo = 0;
-		foreach($view->result as $key => $item) {
-			$bar = $item->field_field_nid_1[0]['raw']['value'];
-//			$bar = $item->_field_data['nid']['entity']->field_field_nid_1['und'][0]['alt'];
-			$variables['committee'] = $bar;
-			$foo++;
-			if($foo > 0)
-				break;
-		}
-	}
 }*/
+
 
 
 
