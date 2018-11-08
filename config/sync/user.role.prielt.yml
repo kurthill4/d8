@@ -10,4 +10,5 @@ permissions:
   - 'edit any custom_web_page content'
   - 'edit any document content'
   - 'edit terms in campus_resources'
+  - 'use text format full_html'
   - 'use workbench access'

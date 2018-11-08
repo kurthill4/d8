@@ -18,4 +18,5 @@ permissions:
   - 'edit any document files'
   - 'edit own business_office content'
   - 'edit terms in campus_resources'
+  - 'use text format full_html'
   - 'use workbench access'

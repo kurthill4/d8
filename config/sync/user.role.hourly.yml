@@ -8,11 +8,13 @@ weight: 18
 is_admin: null
 permissions:
   - 'create custom_web_page content'
-  - 'edit any committee_page content'
+  - 'create document content'
+  - 'download any document files'
   - 'edit any custom_web_page content'
-  - 'edit any program content'
+  - 'edit any document content'
   - 'edit own custom_web_page content'
   - 'edit own program content'
   - 'edit terms in campus_resources'
   - 'edit terms in editorial_section'
+  - 'use text format full_html'
   - 'use workbench access'

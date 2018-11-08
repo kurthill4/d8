@@ -1512,7 +1512,14 @@ footer h4,footer p.img {
 	font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
 }
-.step-panel .step-title{
+
+.step-panel-mobile .step-title {
+	font-size: 1.2em!important;
+}
+
+
+.step-panel .step-title,
+.step-panel-mobile .step-title{
 	width:100%;
 }
 
@@ -1522,6 +1529,14 @@ footer h4,footer p.img {
   padding: 10px 20px;
 	margin-right: 25px;
 }
+
+.step-panel-mobile .step-title span{
+	background: #a22130;
+  display: inline-block;
+  padding: 10px 20px;
+	margin-right: 15px;
+}
+
 .step-panel .step-title i{
 	font-size: 1.25em;
 	color: #1d2451;
@@ -2302,9 +2317,8 @@ background: #a22130;
 .getstarted .news-title h3 {
 	margin-top:1em!important;
 }
-.getstarted-mobile {width:100%;padding-left:0.5em}
-.getstarted-mobile div.getstarted-rowSteps {width:100%;}
-.getstarted-mobile div.getstarted-rowPaths {width:100%;}
+.getstarted-mobile {width:100%;padding-left:0.75em}
+
 td.resources-students {
 	background: #daf2f4;
 	width:40%;

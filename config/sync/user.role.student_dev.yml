@@ -1,14 +1,18 @@
-uuid: 222d02e7-abab-4dcf-9d39-18197cb7a622
+uuid: 99ab27ca-3d66-4b81-9ad7-525dad341dcc
 langcode: en
 status: true
 dependencies: {  }
-id: vpss
-label: VPSS
-weight: 22
+id: student_dev
+label: 'Student Dev'
+weight: 26
 is_admin: null
 permissions:
   - 'create custom_web_page content'
+  - 'create document content'
+  - 'delete own document content'
+  - 'download any document files'
   - 'edit any custom_web_page content'
+  - 'edit any document files'
   - 'edit terms in campus_resources'
   - 'use text format full_html'
   - 'use workbench access'

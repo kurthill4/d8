@@ -18,3 +18,4 @@ permissions:
   - 'edit any degree content'
   - 'edit any program content'
   - 'edit own document files'
+  - 'use workbench access'

@@ -37,4 +37,5 @@ permissions:
   - 'edit own program content'
   - 'edit terms in campus_resources'
   - 'use text format basic_html'
+  - 'use text format full_html'
   - 'use workbench access'
