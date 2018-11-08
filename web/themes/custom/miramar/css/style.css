@@ -2747,7 +2747,7 @@ section#hero {max-height:602px!important}
 		*.hide-title {display:block!important}
 	}*/
 
-	 @media only screen and (min-width : 769px) {
+	 @media only screen and (min-width:801px) {
 		 .hide-lg{
 			 display: none!important;
 		 }
@@ -2768,7 +2768,7 @@ section#hero {max-height:602px!important}
 		}
 
  	 /* Small Devices, Tablets */
-	 @media only screen and (max-width:768px) {
+	 @media only screen and (max-width:800px) {
 		.ui-dialog {
 		    max-width: 92% !important;
 		  }

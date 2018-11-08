@@ -18,6 +18,7 @@ permissions:
   - 'delete own document content'
   - 'download any document files'
   - 'edit any committee_meeting content'
+  - 'edit any committee_page content'
   - 'edit any document content'
   - 'edit any document files'
   - 'edit own committee_meeting content'
