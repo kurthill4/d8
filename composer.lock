@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d87028e92af2a112e1d7aecd90133f54",
+    "content-hash": "1f8b09c2883c1fd87f8a95eac4e38fd6",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2811,6 +2811,7 @@
                 },
                 "patches_applied": {
                     "Role permission to view user email": "https://www.drupal.org/files/issues/role_based_email_access-2799049-2.patch",
+                    "Fixing debug suggestions for views": "https://www.drupal.org/files/issues/2118743-139-twig-debug-info.patch",
                     "Fixing More link": "https://www.drupal.org/files/issues/views-more-link-564106-154.patch",
                     "Another Views patch for date range": "https://www.drupal.org/files/issues/2786577-270_0.patch",
                     "First step in seconds issue for Datetime fields": "https://www.drupal.org/files/issues/2723159-43.patch",
