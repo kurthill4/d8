@@ -21,7 +21,7 @@ body{
 .program .page-header {
 	display:none;
 }
-
+.attachment {padding:0;margin:0}
 hr {clear:both;border-color:#1d2451;margin:1.25em auto;}
 hr.medium {width:75%;}
 hr.short {width:50%;}
@@ -567,7 +567,7 @@ nav.mobile-nav li:first-child ol li{
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 }
-.main-container {padding-top:0!important;margin-top:0!important}
+.main-container {padding-top:0!important;margin-top:0!important;}
 .gateway,.map-page {width:100%;padding:0!important;margin:0!important;}
 .gateway .views-view-grid {
 	width:100%;
@@ -576,9 +576,9 @@ nav.mobile-nav li:first-child ol li{
 	background: #dbf3f5;
 }
 .gateway .container,.map-page .container, /*.gateway .views-row*/ {width:100%;}
-.gateway .container {
-	padding:0;
-	margin:0;
+.gateway .container,.gateway .row {
+	padding:0!important;
+	margin:0!important;
 }
 .gateway .views-row {width:90%;display:block;
 	padding:0;
@@ -1488,6 +1488,11 @@ footer h4,footer p.img {
 }
 .step-panel{
 	margin-left: 6px;
+	margin-top:0;padding:top:0;
+	width:100%;
+}
+.step-panel-mobile{
+	margin-top:0;padding:top:0;
 	width:100%;
 }
 .step-panel ul.resource{
@@ -1511,6 +1516,7 @@ footer h4,footer p.img {
 	font-size: 1.5909090909090908em;
 	font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
+	margin:0;
 }
 
 .step-panel-mobile .step-title {
@@ -2790,7 +2796,7 @@ section#hero {max-height:602px!important}
 		.banner-content {display:block;width:100%;margin:0;}
 		.banner-content .get-started {width:75%;margin:0 auto!important}
 		.banner-content .get-started a {font-size:4vw}
-		.caption {width:100%!important;height:auto;padding:0.25em;margin:0 0 10px 0!important;}
+		.caption {width:100%!important;height:auto;padding:0.25em;margin:0 0 5px 0!important;}
 		.caption h1 {font-size:4vw!important}
 		.caption h3 {font-size:3vw!important}
 		.caption p {display:none!important;}

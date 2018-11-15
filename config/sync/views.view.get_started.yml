@@ -412,7 +412,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      css_class: 'step-panel getstarted'
+      css_class: getstarted
       group_by: false
     cache_metadata:
       max-age: -1
@@ -765,7 +765,7 @@ display:
           hide_alter_empty: true
           counter_start: 1
           plugin_id: counter
-      css_class: 'getstarted getstarted-mobile hide-lg'
+      css_class: 'getstarted getstarted-mobile'
       displays:
         page_1: page_1
       group_by: false
