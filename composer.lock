@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1f8b09c2883c1fd87f8a95eac4e38fd6",
+    "content-hash": "2e0afad1ee02d7e4fe2aeb368bc2385e",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2815,7 +2815,8 @@
                     "Fixing More link": "https://www.drupal.org/files/issues/views-more-link-564106-154.patch",
                     "Another Views patch for date range": "https://www.drupal.org/files/issues/2786577-270_0.patch",
                     "First step in seconds issue for Datetime fields": "https://www.drupal.org/files/issues/2723159-43.patch",
-                    "End date support for Date Range": "https://www.drupal.org/files/issues/2018-05-23/drupal-display-one-date-formatter-2827055-25.patch"
+                    "End date support for Date Range": "https://www.drupal.org/files/issues/2018-05-23/drupal-display-one-date-formatter-2827055-25.patch",
+                    "Entity reference fix": "https://www.drupal.org/files/issues/2174633-174.patch"
                 }
             },
             "autoload": {
