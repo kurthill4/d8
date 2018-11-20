@@ -6,10 +6,7 @@
  * Contains functions that alter Drupal setting and behaviors
  */
 
-/**
- * Implements hook_preprocess_page()
- * 
- */
+
 
 
 
@@ -21,12 +18,16 @@
  * @see https://www.drupal.org/node/2472127#comment-10458517
  */
 
+/**
+ * Implements hook_preprocess_html()
+ * 
+ */
 function miramarcustom_preprocess_html(&$variables) {
 	include_once __DIR__ . "/../vendor/mobiledetect/mobiledetectlib/Mobile_Detect.php";
 	$detect = new Mobile_Detect;
 	if($detect->isMobile())
 		$variables['mobile'] = "mobile";
-	elseif($detect->isMobile())
+	elseif($detect->isTablet())
 		$variables['mobile'] = "tablet";
 	else
 		$variables['mobile'] = "desktop";
