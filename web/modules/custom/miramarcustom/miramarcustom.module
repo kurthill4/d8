@@ -119,6 +119,14 @@ function miramarcustom_preprocess_node(&$variables) {
 		}
 	}
 }
+
+/*function miramarcustom_node_view(array &$build, NodeInterface $node, $display, $view_mode) {
+  if ($node->getType() == 'home_page' && $view_mode == 'full') {
+    //\Drupal::service('page_cache_kill_switch')->trigger();
+  }
+}*/
+
+
 /*
 function miramarcustom_views_pre_render(\Drupal\views\ViewExecutable $view) {
   if ($view->id() == "get_started") {
