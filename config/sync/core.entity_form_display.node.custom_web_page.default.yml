@@ -37,12 +37,9 @@ content:
     third_party_settings: {  }
   field_administrative_area:
     weight: 122
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_associated_campus_resource:
     weight: 3

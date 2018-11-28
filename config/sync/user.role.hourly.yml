@@ -18,3 +18,4 @@ permissions:
   - 'edit terms in editorial_section'
   - 'use text format full_html'
   - 'use workbench access'
+  - 'view own unpublished content'
