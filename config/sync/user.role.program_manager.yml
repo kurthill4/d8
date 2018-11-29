@@ -19,3 +19,4 @@ permissions:
   - 'edit any program content'
   - 'edit own document files'
   - 'use workbench access'
+  - 'view any paragraphs previewer'

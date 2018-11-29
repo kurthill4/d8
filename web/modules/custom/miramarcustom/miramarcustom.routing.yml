@@ -1,6 +1,0 @@
-homepage.route:
-   path: '/'
-   defaults:
-     _controller: '\Drupal\miramarcustom\Controller\HomeController::response'
-   options:
-     no_cache: TRUE

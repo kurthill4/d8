@@ -16,6 +16,7 @@ permissions:
   - 'create slideshows content'
   - 'create videos content'
   - 'delete any document files'
+  - 'delete own custom_web_page content'
   - 'delete own document content'
   - 'delete own images content'
   - 'delete own slideshows content'
@@ -34,3 +35,4 @@ permissions:
   - 'use text format basic_html'
   - 'use text format full_html'
   - 'view any paragraphs previewer'
+  - 'view custom_web_page revisions'
