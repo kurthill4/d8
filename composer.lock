@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ec97231ecf12ca8c697ccca3a0a1b068",
+    "content-hash": "ddf40ca0f023365b2898ed047d4235fd",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4931,6 +4931,64 @@
             "homepage": "https://www.drupal.org/project/php",
             "support": {
                 "source": "http://cgit.drupalcode.org/php"
+            }
+        },
+        {
+            "name": "drupal/private_taxonomy",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/private_taxonomy",
+                "reference": "8.x-2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/private_taxonomy-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "6bc2463c5e93121ccc054b59719a2ac188d991fc"
+            },
+            "require": {
+                "drupal/core": "^8.3"
+            },
+            "require-dev": {
+                "drupal/pathauto": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.2",
+                    "datestamp": "1522889584",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "electricmonk",
+                    "homepage": "https://www.drupal.org/user/273866"
+                },
+                {
+                    "name": "mvidelgauz",
+                    "homepage": "https://www.drupal.org/user/468368"
+                },
+                {
+                    "name": "trobey",
+                    "homepage": "https://www.drupal.org/user/653476"
+                }
+            ],
+            "description": "Allows per-user taxonomy terms for a given vocabulary.",
+            "homepage": "https://www.drupal.org/project/private_taxonomy",
+            "support": {
+                "source": "http://cgit.drupalcode.org/private_taxonomy"
             }
         },
         {

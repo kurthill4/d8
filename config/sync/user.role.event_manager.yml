@@ -12,6 +12,7 @@ permissions:
   - 'create document content'
   - 'create event content'
   - 'create images content'
+  - 'create terms in tags'
   - 'delete any campus_news content'
   - 'delete any event content'
   - 'delete own images content'

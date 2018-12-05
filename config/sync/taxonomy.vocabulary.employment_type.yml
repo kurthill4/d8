@@ -1,7 +1,12 @@
 uuid: 54493aab-163d-4bd6-aaad-3a97ffddadf3
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - private_taxonomy
+third_party_settings:
+  private_taxonomy:
+    private: 0
 name: 'Employment Type'
 vid: employment_type
 description: 'Categories of employment'

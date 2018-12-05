@@ -1,7 +1,12 @@
 uuid: 1a49058a-639a-4688-9711-06d3ef497e48
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - private_taxonomy
+third_party_settings:
+  private_taxonomy:
+    private: 0
 name: Schools
 vid: schools
 description: ''

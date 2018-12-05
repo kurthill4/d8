@@ -66,6 +66,7 @@
         "drupal/paragraphs_previewer": "1.x-dev",
         "drupal/pathauto": "^1.0@RC",
         "drupal/php": "^1.0@beta",
+        "drupal/private_taxonomy": "^2.2",
         "drupal/publishcontent": "^1.0",
         "drupal/redirect": "^1.0@alpha",
         "drupal/search_exclude": "^1.1",

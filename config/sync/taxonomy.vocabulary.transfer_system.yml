@@ -1,7 +1,12 @@
 uuid: 413245a4-3535-4888-9642-2d31fa3cea54
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - private_taxonomy
+third_party_settings:
+  private_taxonomy:
+    private: 0
 name: 'Transfer System'
 vid: transfer_system
 description: ''
