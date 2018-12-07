@@ -225,6 +225,20 @@ form.webform-submission-form {
 	margin-bottom:1em;
 }
 
+.events-export {
+	margin-left:1em;
+}
+
+.events-export .view-header {
+	margin:3ex 0 3ex 0.5em!important;
+}
+
+
+.events-export .view-header a {
+	font-size:1.25em;
+	font-weight:bold;
+}
+
 
 /*--------------------------------------*/
 .campus-news img {float:left}

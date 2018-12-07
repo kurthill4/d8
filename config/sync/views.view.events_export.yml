@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_event_date
+    - field.storage.node.field_event_location
     - node.type.event
     - taxonomy.vocabulary.tags
   module:
     - better_exposed_filters
     - datetime_range
+    - entity_print_views
     - node
     - private_taxonomy
     - taxonomy
@@ -39,7 +41,7 @@ display:
         type: views_query
         options:
           disable_sql_rewrite: false
-          distinct: false
+          distinct: true
           replica: false
           query_comment: ''
           query_tags: {  }
@@ -50,7 +52,7 @@ display:
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
+          expose_sort_order: false
           sort_asc_label: Asc
           sort_desc_label: Desc
           input_required: false
@@ -61,7 +63,7 @@ display:
               secondary_label: 'Advanced options'
               autosubmit: true
               autosubmit_hide: true
-            uid:
+            tid:
               bef_format: default
               more_options:
                 bef_select_all_none: false
@@ -88,43 +90,61 @@ display:
       row:
         type: fields
       fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          entity_type: node
-          entity_field: title
-          label: ''
-          alter:
-            alter_text: false
-            make_link: false
-            absolute: false
-            trim: false
-            word_boundary: false
-            ellipsis: false
-            strip_tags: false
-            html: false
-          hide_empty: false
-          empty_zero: false
-          settings:
-            link_to_entity: true
-          plugin_id: field
+        field_event_date_1:
+          id: field_event_date_1
+          table: node__field_event_date
+          field: field_event_date
           relationship: none
           group_type: group
           admin_label: ''
-          exclude: false
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
           element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
+          hide_empty: false
+          empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: string
+          type: daterange_custom
+          settings:
+            timezone_override: ''
+            date_format: 'M d Y'
+            fromto: both
+            separator: '-'
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -135,6 +155,135 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          plugin_id: field
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<span class=\"bold\">{{ title }}</span>\n<br />\n{{ field_event_date_1 }}"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+        field_event_location:
+          id: field_event_location
+          table: node__field_event_location
+          field: field_event_location
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         field_event_date:
           id: field_event_date
           table: node__field_event_date
@@ -189,7 +338,7 @@ display:
             timezone_override: ''
             date_format: 'g:i a'
             fromto: both
-            separator: '-'
+            separator: ' - '
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -297,7 +446,7 @@ display:
           exposed: true
           expose:
             operator_id: tid_op
-            label: Term
+            label: 'Your Tags'
             description: ''
             use_operator: false
             operator: tid_op
@@ -372,7 +521,19 @@ display:
             label: ''
           granularity: second
       title: 'Events Export'
-      header: {  }
+      header:
+        area_entity_print_views:
+          id: area_entity_print_views
+          table: views
+          field: area_entity_print_views
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          export_type: pdf
+          link_text: 'Export to PDF'
+          display_id: page_1
+          plugin_id: entity_print_views_link
       footer: {  }
       empty: {  }
       relationships:
@@ -391,6 +552,7 @@ display:
       arguments: {  }
       display_extenders: {  }
       group_by: false
+      css_class: events-export
     cache_metadata:
       max-age: -1
       contexts:
@@ -402,6 +564,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_event_date'
+        - 'config:field.storage.node.field_event_location'
   page_1:
     display_plugin: page
     id: page_1
@@ -410,6 +573,59 @@ display:
     display_options:
       display_extenders: {  }
       path: events-export
+      style:
+        type: table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          override: true
+          sticky: false
+          caption: ''
+          summary: ''
+          description: ''
+          columns:
+            field_event_date_1: field_event_date_1
+            title: title
+            field_event_location: field_event_location
+            field_event_date: field_event_date
+          info:
+            field_event_date_1:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            title:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_event_location:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_event_date:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          default: '-1'
+          empty_table: false
+      defaults:
+        style: false
+        row: false
+      row:
+        type: fields
+        options: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -421,3 +637,4 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_event_date'
+        - 'config:field.storage.node.field_event_location'

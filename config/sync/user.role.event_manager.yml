@@ -19,4 +19,7 @@ permissions:
   - 'edit any campus_news content'
   - 'edit any event content'
   - 'edit own images content'
+  - 'entity print access bundle bp_view'
+  - 'entity print access bundle event'
+  - 'entity print views access'
   - 'use text format basic_html'

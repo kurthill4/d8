@@ -40,6 +40,8 @@ module:
   embed: 0
   emergency: 0
   entity: 0
+  entity_print: 0
+  entity_print_views: 0
   entity_reference_revisions: 0
   entity_reference_views_select: 0
   feeds: 0

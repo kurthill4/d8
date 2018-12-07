@@ -1,0 +1,16 @@
+uuid: 4a923dd5-96ff-48ad-9080-a65a4f0d627c
+langcode: en
+status: true
+dependencies: {  }
+id: dompdf
+settings:
+  orientation: portrait
+  default_paper_size: letter
+  username: ''
+  password: ''
+  enable_html5_parser: true
+  disable_log: 0
+  enable_remote: true
+  cafile: 'https://dev.sdmiramar.edu/cacert.pem'
+  verify_peer: false
+  verify_peer_name: false
