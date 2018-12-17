@@ -37,7 +37,7 @@ display:
       query:
         type: views_query
         options:
-          disable_sql_rewrite: false
+          disable_sql_rewrite: true
           distinct: true
           replica: false
           query_comment: ''

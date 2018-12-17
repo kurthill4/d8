@@ -1,0 +1,11 @@
+uuid: 456de571-3b56-4670-84c2-979b0437bb3c
+langcode: en
+status: true
+dependencies:
+  module:
+    - convert_bundles
+id: convert_bundles_on_print_engine
+label: 'Convert Print Engine Entity Bundles'
+type: print_engine
+plugin: convert_bundles_action_base
+configuration: {  }

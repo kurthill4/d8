@@ -4,5 +4,6 @@ ignored_config_entities:
   4: config_ignore.settings
   6: miramarcustom.settings
   8: 'devel.*'
+  10: 'workbench_access.*'
 _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk

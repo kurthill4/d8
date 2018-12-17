@@ -1,8 +1,9 @@
-uuid: a07daaa6-59c2-4b6c-b0ee-831ab00aff16
+uuid: 91cee550-8687-44e6-a284-66a79cb76fda
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.custom
     - field.field.node.program.body
     - field.field.node.program.field_administrative_area
     - field.field.node.program.field_career_transfer_options
@@ -22,72 +23,29 @@ dependencies:
     - field.field.node.program.field_web_pages
     - node.type.program
   module:
-    - link
-    - text
     - user
-id: node.program.default
+id: node.program.custom
 targetEntityType: node
 bundle: program
-mode: default
+mode: custom
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_career_transfer_options:
-    weight: 3
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_catalog_pages:
-    weight: 5
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_certificate_link:
-    weight: 6
-    label: above
-    settings:
-      trim_length: null
-      target: _blank
-      url_only: false
-      url_plain: false
-      rel: '0'
-    third_party_settings: {  }
-    type: link
-    region: content
-  field_program_emphasis:
-    weight: 2
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_student_learning_outcomes:
-    weight: 4
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  links:
+  field_web_pages:
+    type: entity_reference_label
     weight: 0
     region: content
-    settings: {  }
+    label: hidden
+    settings:
+      link: true
     third_party_settings: {  }
 hidden:
+  body: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
   field_administrative_area: true
+  field_career_transfer_options: true
+  field_catalog_pages: true
+  field_certificate_link: true
   field_contact_2: true
   field_course_sequence: true
   field_degrees: true
@@ -95,6 +53,8 @@ hidden:
   field_email: true
   field_image: true
   field_phone: true
+  field_program_emphasis: true
   field_program_hero_image: true
   field_school: true
-  field_web_pages: true
+  field_student_learning_outcomes: true
+  links: true

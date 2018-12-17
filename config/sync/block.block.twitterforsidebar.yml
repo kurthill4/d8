@@ -2,10 +2,7 @@ uuid: f24b49fc-921d-46c0-b1f5-1ca7bdafac8a
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:3ebd47ad-4640-4bed-9139-15686e871982'
   module:
-    - block_content
     - block_visibility_groups
     - system
   theme:
@@ -13,7 +10,7 @@ dependencies:
 id: twitterforsidebar
 theme: miramar
 region: sidebar_second
-weight: -4
+weight: -5
 provider: null
 plugin: 'block_content:3ebd47ad-4640-4bed-9139-15686e871982'
 settings:

@@ -2,10 +2,7 @@ uuid: 89fc47a4-534d-4f09-89af-ccfd355878ac
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:e53d5b35-a957-48b0-91ea-4269cc45520a'
   module:
-    - block_content
     - block_visibility_groups
     - system
   theme:
@@ -13,7 +10,7 @@ dependencies:
 id: socialmedia
 theme: miramar
 region: sidebar_second
-weight: -3
+weight: -4
 provider: null
 plugin: 'block_content:e53d5b35-a957-48b0-91ea-4269cc45520a'
 settings:

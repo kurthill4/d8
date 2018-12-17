@@ -1,25 +1,24 @@
-uuid: b810e18c-7397-4d05-88ef-c7a90c52dba6
+uuid: 5965f787-e341-4796-ae34-867df933fbb9
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.other_pages
+    - views.view.program_web_pages
   module:
     - block_visibility_groups
-    - ctools
     - node
     - system
     - views
   theme:
     - miramar
-id: views_block__other_pages_block_2
+id: views_block__program_web_pages_block_1
 theme: miramar
 region: sidebar_second
 weight: -22
 provider: null
-plugin: 'views_block:other_pages-block_2'
+plugin: 'views_block:program_web_pages-block_1'
 settings:
-  id: 'views_block:other_pages-block_2'
+  id: 'views_block:program_web_pages-block_1'
   label: ''
   provider: views
   label_display: visible
@@ -27,13 +26,11 @@ settings:
   items_per_page: none
   context_mapping: {  }
 visibility:
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
-    bundles:
-      custom_web_page: custom_web_page
+  condition_group:
+    id: condition_group
     negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
+    block_visibility_group: ''
+    context_mapping: {  }
   node_type:
     id: node_type
     bundles:
@@ -45,9 +42,4 @@ visibility:
     id: request_path
     pages: '/programs/*'
     negate: false
-    context_mapping: {  }
-  condition_group:
-    id: condition_group
-    negate: false
-    block_visibility_group: ''
     context_mapping: {  }
