@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.pathway_resources
   module:
+    - block_visibility_groups
     - system
     - views
   theme:
@@ -25,6 +26,11 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /newstudents
+    pages: /futurestudents
     negate: false
+    context_mapping: {  }
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
     context_mapping: {  }
