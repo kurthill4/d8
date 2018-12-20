@@ -30,13 +30,14 @@ function miramar_preprocess_block(&$variables) {
     }
   }
 // Get Node ID
-
+  $variables['is_term'] = FALSE;
   $node = \Drupal::routeMatch()->getParameter('node');
   if ($node) {
     $nid = $node->id();
   }
   elseif(\Drupal::routeMatch()->getRouteName() == 'entity.taxonomy_term.canonical') {
 	  $nid = \Drupal::routeMatch()->getRawParameter('taxonomy_term');
+	  $variables['is_term'] = TRUE;
 }
    else {
      $nid = 0;

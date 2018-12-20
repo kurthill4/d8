@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_associated_program
-    - field.storage.node.field_web_pages
     - node.type.custom_web_page
   module:
     - node
@@ -405,7 +404,7 @@ display:
       title: 'Program Web Pages'
       relationships: {  }
       display_description: ''
-      group_by: false
+      group_by: true
       query:
         type: views_query
         options:
