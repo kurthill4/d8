@@ -22,6 +22,8 @@
  * Implements hook_preprocess_html()
  * 
  */
+
+/*
 function miramarcustom_preprocess_html(&$variables) {
 	include_once __DIR__ . "/../vendor/mobiledetect/mobiledetectlib/Mobile_Detect.php";
 	$detect = new Mobile_Detect;
@@ -33,7 +35,7 @@ function miramarcustom_preprocess_html(&$variables) {
 		$variables['mobile'] = "desktop";
 	
 		
-}
+}*/
 
 function miramarcustom_preprocess_page(&$variables) {
 

@@ -1,0 +1,6 @@
+name: Route Access
+description: Restricts access to ceratin paths to Admin role
+package: Custom
+
+type: module
+core: 8.x

@@ -170,6 +170,8 @@
 		"drupal/feeds_ical": {"Patching property naming error": "https://www.drupal.org/files/issues/2018-04-25/feeds_ical-item_index-2966206-2_1.patch",
 		"Fixing date field issue": "https://www.drupal.org/files/issues/2018-04-25/feeds_ical-dtend-2966214-2.patch",
 		"Another field error": "https://www.drupal.org/files/issues/2018-04-25/feeds_ical-date_case-2966211-2.patch"
+		},
+		"drupal/pathauto": {"Allow to save new path on node after deleting old one": "https://www.drupal.org/files/issues/2018-10-23/pathauto-custom-alias-2756703-17.patch"
 		}
 		
 }

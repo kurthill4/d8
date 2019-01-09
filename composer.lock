@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b7dad834bc2e60eea55034914e8825b9",
+    "content-hash": "c32ed6408035e69afa789110aba1d4d0",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4951,6 +4951,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Allow to save new path on node after deleting old one": "https://www.drupal.org/files/issues/2018-10-23/pathauto-custom-alias-2756703-17.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

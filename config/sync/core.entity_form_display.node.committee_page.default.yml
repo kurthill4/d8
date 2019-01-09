@@ -19,6 +19,7 @@ dependencies:
     - node.type.committee_page
   module:
     - entity_reference_views_select
+    - path
     - tablefield
     - text
 id: node.committee_page.default
@@ -27,7 +28,7 @@ bundle: committee_page
 mode: default
 content:
   field_administrative_area:
-    weight: 122
+    weight: 15
     settings:
       match_operator: CONTAINS
       size: 60
@@ -86,7 +87,7 @@ content:
     type: text_textarea
     region: content
   field_custom_url:
-    weight: 15
+    weight: 11
     settings:
       size: 60
       placeholder: ''
@@ -94,7 +95,7 @@ content:
     type: string_textfield
     region: content
   field_group_composition:
-    weight: 26
+    weight: 12
     settings:
       input_type: textfield
     third_party_settings: {  }
@@ -120,11 +121,17 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
+  path:
+    type: path
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 121
+    weight: 14
     third_party_settings: {  }
     region: content
   title:
@@ -136,11 +143,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 50
+    weight: 13
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
-  path: true
   promote: true
   sticky: true
   uid: true

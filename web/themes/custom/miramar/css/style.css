@@ -8,6 +8,28 @@ body{
 	background:#dbf3f5;
 }
 
+/*----------------- SVG Image Display ----------------*/
+.svg-outer {
+    height:0;
+    width:100%;
+    padding-top:63.63%; /* 350px/550px */
+    position: relative;
+}
+
+svg {
+    height: 80%;
+    display:block;
+    width: 80%;
+    position: absolute;
+    top:0;
+    left: 50%;
+   -webkit-transform: translateX(-50%);
+   transform: translateX(-50%);
+}
+
+/*---------------*/
+
+
 .noshow,div.author {
 	display:none!important;
 }
@@ -2817,7 +2839,10 @@ section#hero {max-height:602px!important}
 
  	 /* Small Devices, Tablets */
 	 @media only screen and (max-width:800px) {
-		.ui-dialog {
+svg {
+    height: 100%;
+    width: 100%;
+}		.ui-dialog {
 		    max-width: 92% !important;
 		  }
 		.region-content {width:100vw!important}

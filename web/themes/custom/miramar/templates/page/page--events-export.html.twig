@@ -60,6 +60,7 @@
 {{ attach_library('miramar/twitter_hack') }}
 {{ attach_library('miramar/multiselect') }}
 {{ attach_library('miramar/multiselect_init') }}
+
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
   {% block navbar %}
@@ -71,7 +72,7 @@
       ]
     %}
 <div class="spacer" style="height:1px">&nbsp;</div>
-    <header role="landmark">
+    <header>
         {{ page.navigation }}
 
       {# Navigation (collapsible) #}
@@ -82,47 +83,11 @@
   {% endblock %}
 {% endif %}
 <div id="push" class="">
-<section id="hero" role="banner">
-<div class="banner notfront">
-	<div class="carousel">
-		<div class="carousel-cell slide-cd notfront"></div>
-	</div>
-	<div class="banner-content hide-xs">
-		<div class="caption">
-			<h1>Campus Calendar</h1>
-			<p>Student Life. Activities. Dates &amp; Deadlines.</p>
-		</div>
-	</div>
-</div>
-
-</section>
-{% if page.number %}
-  {{ page.number }}
-{% endif %}
-
-{% if page.dates %}
-  {{ page.dates }}
-{% endif %}
-
-{% if page.gallery %}
-  {{ page.gallery }}
-{% endif %}
-
-{% if page.buttons %}
-  {{ page.buttons }}
-{% endif %}
-
-{% if page.mission %}
-  {{ page.mission }}
-{% endif %}
-
-{% if page.news %}
-  {{ page.news }}
-{% endif %}
+<div class="page-cover">&nbsp;</div>
 
 {# Main #}
 {% block main %}
-  <div role="main" class="main-container {{ container }} calendar-page">
+  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">
 
       {# Header #}
@@ -149,7 +114,7 @@
           page.sidebar_first and page.sidebar_second ? 'col-sm-6',
           page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
           page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
-          page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
+          page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12',
         ]
       %}
       <section{{ content_attributes.addClass(content_classes) }}>
@@ -200,5 +165,12 @@
     </div>
   </div>
 {% endblock %}
+    {# Below Content #}
+      {% if page.below_content %}
+        {% block below_content %}
+          {{ page.below_content }}
+        {% endblock %}
+      {% endif %}
+
 {% include 'footer.html.twig' %}
 </div>

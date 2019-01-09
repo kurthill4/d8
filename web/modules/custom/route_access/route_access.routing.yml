@@ -1,0 +1,6 @@
+route_access:
+  path: /archive
+  defaults:
+    _entity_view: node.default
+  requirements:
+    _role: 'administrator'
