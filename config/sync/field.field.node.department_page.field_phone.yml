@@ -7,6 +7,12 @@ dependencies:
     - node.type.department_page
   module:
     - telephone
+    - telephone_validation
+third_party_settings:
+  telephone_validation:
+    format: 0
+    country:
+      US: US
 id: node.department_page.field_phone
 field_name: field_phone
 entity_type: node

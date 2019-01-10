@@ -76,6 +76,7 @@
         "drupal/slick_views": "^1.0@RC",
         "drupal/tablefield": "^2.0@alpha",
         "drupal/taxonomy_manager": "^1.0@alpha",
+        "drupal/telephone_validation": "^2.1",
         "drupal/themable_forms": "^1.0@beta",
         "drupal/twig_blocks": "^2.0",
         "drupal/twig_field_value": "^1.1",

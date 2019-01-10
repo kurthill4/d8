@@ -101,6 +101,7 @@ module:
   taxonomy: 0
   taxonomy_manager: 0
   telephone: 0
+  telephone_validation: 0
   text: 0
   themable_forms: 0
   token: 0
