@@ -1,18 +1,17 @@
 <?php
 
-namespace Drupal\route_access\Access;
+namespace Drupal\route_access\Controller;
 
-use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\Access\AccessResult;
-use Drupal\Core\Routing\Access\AccessInterface;
+use Drupal\Core\Session\AccountInterface;
 
 /**
- * Checks access for displaying configuration translation page.
+ * Builds an route_access page.
  */
-class CustomAccessCheck implements AccessInterface{
+class RouteAccessController {
 
   /**
-   * A custom access check.
+   * Checks access for a specific request.
    *
    * @param \Drupal\Core\Session\AccountInterface $account
    *   Run access checks for this account.
@@ -20,7 +19,7 @@ class CustomAccessCheck implements AccessInterface{
   public function access(AccountInterface $account) {
     // Check permissions and combine that with any custom access checking needed. Pass forward
     // parameters from the route and/or request as needed.
-    return ($account->hasRole('administrator')) ? AccessResult::allowed() : AccessResult::forbidden();
+    return AccessResult::allowedIf($account->hasRole('administrator'));
   }
 
 }
