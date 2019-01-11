@@ -23,9 +23,9 @@
  * 
  */
 
-/*
+
 function miramarcustom_preprocess_html(&$variables) {
-	include_once __DIR__ . "/../vendor/mobiledetect/mobiledetectlib/Mobile_Detect.php";
+	include_once(__DIR__ . "/vendor/mobiledetect/mobiledetectlib/Mobile_Detect.php");
 	$detect = new Mobile_Detect;
 	if($detect->isMobile())
 		$variables['mobile'] = "mobile";
@@ -35,7 +35,7 @@ function miramarcustom_preprocess_html(&$variables) {
 		$variables['mobile'] = "desktop";
 	
 		
-}*/
+}
 
 function miramarcustom_preprocess_page(&$variables) {
 

@@ -93,7 +93,6 @@
         "drupal/youtubechannel": "^3.0",
         "drush/drush": "~9.0",
         "kenwheeler/slick": "^1.6",
-        "mobiledetect/mobiledetectlib": "^2.8",
         "oomphinc/composer-installers-extender": "^1.1",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
@@ -146,6 +145,7 @@
         "installer-paths": {
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library", "kenwheeler/slick"],
+	    "web/vendor/{$name}": ["type:drupal-library", "mobiledetect/mobiledetectlib"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/modules/custom/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
