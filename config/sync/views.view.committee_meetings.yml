@@ -971,7 +971,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
+          label: Date
           exclude: false
           alter:
             alter_text: true
@@ -1016,7 +1016,7 @@ display:
           type: datetime_custom
           settings:
             timezone_override: America/Los_Angeles
-            date_format: 'M d Y g:i A'
+            date_format: 'M d Y'
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1035,7 +1035,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
+          label: Location
           exclude: false
           alter:
             alter_text: false
@@ -1072,7 +1072,7 @@ display:
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
-          empty: ''
+          empty: n/a
           hide_empty: true
           empty_zero: false
           hide_alter_empty: true
@@ -1380,11 +1380,11 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
+          label: Date
           exclude: false
           alter:
             alter_text: true
-            text: '<a href="node/{{ nid }}" class="use-ajax" data-dialog-type="modal" data-dialog-options="{&quot;width&quot;:200}">{{ field_meeting_date_time }}</a>'
+            text: '<a href="/node/{{ nid }}" class="use-ajax" data-dialog-type="modal" data-dialog-options="{&quot;width&quot;:200}">{{ field_meeting_date_time }}</a>'
             make_link: false
             path: 'node/{{ nid }}'
             absolute: true
@@ -1410,7 +1410,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: ''
-          element_class: ''
+          element_class: bold
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -1444,7 +1444,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
+          label: Location
           exclude: false
           alter:
             alter_text: false
@@ -1481,7 +1481,7 @@ display:
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
-          empty: ''
+          empty: n/a
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true

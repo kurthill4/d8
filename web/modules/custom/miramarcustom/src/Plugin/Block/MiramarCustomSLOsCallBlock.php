@@ -23,21 +23,25 @@ class MiramarCustomSLOsCallBlock extends BlockBase {
     $build['slocall']['content'] = [
       '#markup' => '
 <div class="menu-content-call hide-xs">
-    <div class="call-menu">
-				<div class="callbar">
-				<a href="/campus/planning/outcomes/evidence">
-				<span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-				Evidence of Assessment
-				</a>
-				</div>
-				<div class="callbar">
-				<a href="/campus/planning/outcomes/slo">
-				<span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-				SLO/SUO Development
-				</a>
-				</div>
-			</div>
-	</div>'
+	<div class="call-menu">
+		<div class="callbar">
+		<a href="/campus/planning/outcomes/evidence">
+		<span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+		Evidence of Assessment
+		</a>
+		</div>
+		<div class="callbar">
+		<a href="/campus/planning/outcomes/slo">
+		<span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+		SLO/SUO Development
+		</a>
+		</div>
+	</div>
+</div>
+<div class="hide-lg">
+	<p class="bold"><a href="/campus/planning/outcomes/evidence">Evidence of Assessment</a></p>
+	<p class="bold"><a href="/campus/planning/outcomes/slo">SLO/SUO Development</a></p>
+</div>'
     ];
 
     return $build;

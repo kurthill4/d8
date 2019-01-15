@@ -1,4 +1,4 @@
-uuid: 51409c3f-9e9e-4a75-b0f6-a8f3d4ccb1af
+uuid: 762b9331-3e77-4d8d-865b-d26aa43b9602
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
 id: slospagecalltoaction
 theme: miramar
 region: content
-weight: -31
+weight: -30
 provider: null
 plugin: miramar_call
 settings:
