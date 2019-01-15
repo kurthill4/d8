@@ -593,7 +593,7 @@ nav.mobile-nav li:first-child ol li{
 	background: none;
 	margin: 0;
 }
-.breadcrumb a{+
+.breadcrumb a{
 	color: #31b8c9;
 }
 .breadcrumb li{
@@ -875,6 +875,7 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 .call,.callsmall {width:100%}
 .callsmall {margin-top:0.9em}
 .menu-get-started {display:table;width:95%;height:100%;margin:0 auto}
+.menu-content-call {display:table;width:75%;height:100%;margin:1em auto;border-spacing:1em}
 .call-menu {display:table-row;padding:0;margin:0 0 0 10%;}
 .callbar {display:table-cell;width:20%;padding:0;margin:0;}
 .call a{
@@ -912,7 +913,7 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 }
 .call span,.callsmall a span {padding: 10px 20px;}
 .callbar a span {padding: 10px 15px;font-size:1.25em!important}
-.call a:hover span,.callsmall a:hover span {
+.call a:hover span,.callsmall a:hover span, .menu-content-call .callbar a:hover span {
 	background: #1d2451;
 }
 

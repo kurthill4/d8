@@ -1,0 +1,37 @@
+uuid: bbfd2161-32b2-4622-a34a-de2dd8941e97
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:10bf2492-b776-4ac3-8ade-6408565f41d4'
+  module:
+    - block_content
+    - block_visibility_groups
+    - system
+  theme:
+    - miramar
+id: allocationgraphic
+theme: miramar
+region: content
+weight: -30
+provider: null
+plugin: 'block_content:10bf2492-b776-4ac3-8ade-6408565f41d4'
+settings:
+  id: 'block_content:10bf2492-b776-4ac3-8ade-6408565f41d4'
+  label: 'Allocation Graphic'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /test/test
+    negate: false
+    context_mapping: {  }

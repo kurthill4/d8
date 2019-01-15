@@ -1,0 +1,32 @@
+uuid: 51409c3f-9e9e-4a75-b0f6-a8f3d4ccb1af
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - miramarcustom
+    - system
+  theme:
+    - miramar
+id: slospagecalltoaction
+theme: miramar
+region: content
+weight: -31
+provider: null
+plugin: miramar_call
+settings:
+  id: miramar_call
+  label: 'SLOs Page Call to Action'
+  provider: miramarcustom
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /campus/planning/outcomes
+    negate: false
+    context_mapping: {  }

@@ -4,6 +4,10 @@ status: true
 dependencies:
   config:
     - field.storage.taxonomy_term.field_custom_content
+    - paragraphs.paragraphs_type.bp_columns
+    - paragraphs.paragraphs_type.table
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.video
     - taxonomy.vocabulary.campus_resources
   module:
     - entity_reference_revisions
@@ -20,15 +24,77 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles: null
+    negate: 0
+    target_bundles:
+      text: text
+      video: video
+      bp_columns: bp_columns
+      table: table
     target_bundles_drag_drop:
       text:
+        enabled: true
         weight: 4
-        enabled: false
       two_column:
         weight: 5
         enabled: false
       video:
+        enabled: true
         weight: 6
+      bp_accordion:
+        weight: 23
+        enabled: false
+      bp_accordion_section:
+        weight: 24
+        enabled: false
+      bp_blank:
+        weight: 25
+        enabled: false
+      bp_block:
+        weight: 26
+        enabled: false
+      bp_carousel:
+        weight: 27
+        enabled: false
+      bp_columns:
+        enabled: true
+        weight: 28
+      bp_columns_three_uneven:
+        weight: 29
+        enabled: false
+      bp_columns_two_uneven:
+        weight: 30
+        enabled: false
+      bp_column_wrapper:
+        weight: 31
+        enabled: false
+      bp_image:
+        weight: 32
+        enabled: false
+      bp_modal:
+        weight: 33
+        enabled: false
+      bp_simple:
+        weight: 34
+        enabled: false
+      bp_tabs:
+        weight: 35
+        enabled: false
+      bp_tab_section:
+        weight: 36
+        enabled: false
+      bp_view:
+        weight: 37
+        enabled: false
+      image:
+        weight: 38
+        enabled: false
+      table:
+        enabled: true
+        weight: 39
+      text_and_image_left:
+        weight: 41
+        enabled: false
+      two_column_dropdown:
+        weight: 43
         enabled: false
 field_type: entity_reference_revisions

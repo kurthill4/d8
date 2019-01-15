@@ -14,7 +14,7 @@ mode: default
 content:
   field_url_to_video:
     weight: 1
-    label: above
+    label: hidden
     settings:
       responsive: true
       width: 854
