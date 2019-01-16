@@ -14,6 +14,7 @@ dependencies:
   module:
     - node
     - telephone
+    - telephone_formatter
     - user
 id: program_contact
 label: 'Program Contact'
@@ -441,9 +442,11 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: telephone_link
+          type: telephone_formatter
           settings:
-            title: ''
+            format: 1
+            link: true
+            default_country: ''
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1060,9 +1063,11 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: telephone_link
+          type: telephone_formatter
           settings:
-            title: ''
+            format: 2
+            link: true
+            default_country: US
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1376,9 +1381,11 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: telephone_link
+          type: telephone_formatter
           settings:
-            title: ''
+            format: 2
+            link: true
+            default_country: US
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1502,9 +1509,11 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: telephone_link
+          type: telephone_formatter
           settings:
-            title: ''
+            format: 2
+            link: true
+            default_country: US
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1952,9 +1961,11 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: telephone_link
+          type: telephone_formatter
           settings:
-            title: ''
+            format: 2
+            link: true
+            default_country: US
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -2268,9 +2279,11 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: telephone_link
+          type: telephone_formatter
           settings:
-            title: ''
+            format: 2
+            link: true
+            default_country: US
           group_column: value
           group_columns: {  }
           group_rows: true

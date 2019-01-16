@@ -1,0 +1,38 @@
+ <?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\NodeInterface;
+use Drupal\Core\Entity;
+use Drupal\Core\Entity\EntityInterface;
+
+
+/**
+ * Implements hook_entity_presave().
+ */
+/*
+function better_field_input_entity_presave(Drupal\Core\Entity\EntityInterface $entity) {
+  switch ($entity->bundle()) {
+    // Here you modify only content types you want
+    case 'jetsnews':
+     break;
+    case 'committee_meeting':
+      // Setting the title with the committee name and date.
+	$c = $entity->get('field_committee')->entity->getTitle();
+	$d = date_create($entity->get('field_event_date')->value);
+      	$entity->setTitle($c . ' Meeting ' . date_format($d,'m/d/Y'));
+	$entity->set('field_event_type',320);
+	$e = $entity->field_committee->target_id;
+	$entity->field_associated_committee[] = ['target_id' => $e];
+	$entity->field_meeting_date_time->value = $d->format('Y-m-d\TH:i:s');
+	if($entity->field_event_end_date->value == "")
+		$entity->field_event_end_date->value = $d->modify("+1 hours")->format('Y-m-d\TH:i:s');
+     break;
+  }
+}
+*/
+
+function better_field_input_user_presave(Drupal\Core\Entity\EntityInterface $entity) {
+	$entity->field_phone->value = preg_replace("/[^0-9]/", "", $entity->field_phone->value);
+  }
+}
+

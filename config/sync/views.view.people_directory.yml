@@ -16,7 +16,7 @@ dependencies:
   module:
     - link
     - taxonomy
-    - telephone
+    - telephone_formatter
     - user
     - views_bootstrap
 id: people_directory
@@ -740,9 +740,11 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: telephone_link
+          type: telephone_formatter
           settings:
-            title: ''
+            format: 2
+            link: true
+            default_country: US
           group_column: value
           group_columns: {  }
           group_rows: true

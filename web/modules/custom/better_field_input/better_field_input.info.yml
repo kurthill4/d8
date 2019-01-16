@@ -1,0 +1,6 @@
+name: Better Field Input
+type: module
+description: "Fixes input for fields that don't have self validation"
+package: Custom
+core: 8.x
+

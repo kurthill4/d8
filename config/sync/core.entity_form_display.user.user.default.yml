@@ -101,7 +101,7 @@ content:
   field_phone:
     weight: 5
     settings:
-      placeholder: ''
+      placeholder: 619388xxxx
     third_party_settings: {  }
     type: telephone_default
     region: content
@@ -123,6 +123,8 @@ content:
   google_analytics:
     weight: 3
     region: content
+    settings: {  }
+    third_party_settings: {  }
   language:
     weight: 13
     region: content

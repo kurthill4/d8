@@ -1,0 +1,11 @@
+uuid: 7699d91c-c08a-4985-9afd-a8077873e0a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - convert_bundles
+id: convert_bundles_on_field_validation_rule_set
+label: 'Convert Field validation rule set Entity Bundles'
+type: field_validation_rule_set
+plugin: convert_bundles_action_base
+configuration: {  }

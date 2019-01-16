@@ -127,7 +127,7 @@ content:
   field_phone:
     weight: 2
     settings:
-      placeholder: ''
+      placeholder: '6193889999'
     third_party_settings: {  }
     type: telephone_default
     region: content

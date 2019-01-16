@@ -16,7 +16,7 @@ dependencies:
     - field.field.user.user.field_web_pages
   module:
     - link
-    - telephone
+    - telephone_formatter
     - user
 _core:
   default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
@@ -81,9 +81,11 @@ content:
     weight: 6
     label: above
     settings:
-      title: ''
+      format: 2
+      default_country: US
+      link: false
     third_party_settings: {  }
-    type: telephone_link
+    type: telephone_formatter
     region: content
   field_program:
     weight: 11
@@ -102,6 +104,9 @@ content:
     type: entity_reference_label
     region: content
 hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
   field_degree_or_honor: true
   field_employment_type: true
   member_for: true
