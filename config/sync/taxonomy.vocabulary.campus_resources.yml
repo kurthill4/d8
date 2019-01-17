@@ -1,12 +1,7 @@
 uuid: a221adf0-0dea-430e-943a-0aadcf2ac44e
 langcode: en
 status: true
-dependencies:
-  module:
-    - private_taxonomy
-third_party_settings:
-  private_taxonomy:
-    private: 0
+dependencies: {  }
 name: 'Campus Resources'
 vid: campus_resources
 description: 'Campus office main pages'

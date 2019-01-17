@@ -1,12 +1,7 @@
 uuid: b1d15f58-209d-4521-b83b-460bde5fbab0
 langcode: en
 status: true
-dependencies:
-  module:
-    - private_taxonomy
-third_party_settings:
-  private_taxonomy:
-    private: 0
+dependencies: {  }
 name: 'Student Life'
 vid: student_life
 description: ''

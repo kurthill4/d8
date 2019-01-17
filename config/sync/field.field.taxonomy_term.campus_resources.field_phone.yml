@@ -10,9 +10,9 @@ dependencies:
     - telephone_validation
 third_party_settings:
   telephone_validation:
-    format: 0
+    format: 2
     country:
-      US: US
+      - US
 id: taxonomy_term.campus_resources.field_phone
 field_name: field_phone
 entity_type: taxonomy_term

@@ -1,0 +1,21 @@
+uuid: 89e79517-26f5-4899-b497-50c865237d7b
+langcode: en
+status: true
+dependencies: {  }
+name: node_program
+label: 'node program validation'
+entity_type: node
+bundle: program
+field_validation_rules:
+  47c83dc6-dab6-48e3-95d4-22146b3d10cf:
+    uuid: 47c83dc6-dab6-48e3-95d4-22146b3d10cf
+    id: numeric_field_validation_rule
+    title: 'Phone Input'
+    weight: '1'
+    field_name: field_phone
+    column: value
+    error_message: 'Phone must be a 10-digit phone number (no punctuation)'
+    data:
+      min: '0'
+      max: '9999999999'
+      step: ''

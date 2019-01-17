@@ -16,14 +16,12 @@ dependencies:
     - field.field.node.event.field_image
     - field.field.node.event.field_priority
     - field.field.node.event.field_rsvp_required
-    - field.field.node.event.field_tags
     - node.type.event
   module:
     - datetime_range
     - image
     - link
     - options
-    - private_taxonomy
     - text
     - user
 id: node.event.default
@@ -133,13 +131,6 @@ content:
       format_custom_true: ''
     third_party_settings: {  }
     type: boolean
-    region: content
-  field_tags:
-    weight: 115
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: private_taxonomy_term_reference_link
     region: content
   links:
     weight: 100

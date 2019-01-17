@@ -1,12 +1,7 @@
 uuid: dec12872-b612-4746-8b52-12aa08851149
 langcode: en
 status: true
-dependencies:
-  module:
-    - private_taxonomy
-third_party_settings:
-  private_taxonomy:
-    private: 0
+dependencies: {  }
 name: 'Event Types'
 vid: event_types
 description: 'For campus calendar'

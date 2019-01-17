@@ -163,7 +163,8 @@
 		"Another Views patch for date range":"https://www.drupal.org/files/issues/2786577-270_0.patch",
 		"First step in seconds issue for Datetime fields": "https://www.drupal.org/files/issues/2723159-43.patch",
 		"End date support for Date Range": "https://www.drupal.org/files/issues/2018-05-23/drupal-display-one-date-formatter-2827055-25.patch",
-		"Entity reference fix": "https://www.drupal.org/files/issues/2174633-174.patch"
+		"Entity reference fix": "https://www.drupal.org/files/issues/2174633-174.patch",
+		"Fixing Combined Fields search": "https://www.drupal.org/files/issues/combine_fields_filter-1782678-1_0.patch"
 		},
 		"drupal/calendar": {"Patching multiday issue for calendar": "https://www.drupal.org/files/issues/2018-04-06/calendar-date_range-2699477-71.patch",
 		"Timezone": "https://www.drupal.org/files/issues/2018-05-09/2604546-33.patch",
