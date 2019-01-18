@@ -1,7 +1,4 @@
-route_access:
-  path: /hidden/*
-  defaults:
-    _controller: \Drupal\route_access\Controller\RouteAccessController::access
-    #_entity_view: node.default
+route_access.hidden:
+  path: '/hidden/{node}'
   requirements:
-    _custom_access: \Drupal\route_access\Controller\RouteAccessController::access
+    _role: 'administrator'
