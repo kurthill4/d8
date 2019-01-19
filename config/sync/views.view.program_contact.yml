@@ -1343,7 +1343,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<i class="fa fa-phone"></i>{{ field_phone_1 }}'
+            text: '<i class="fa fa-phone"> </i>{{ field_phone_1 }}'
             make_link: false
             path: ''
             absolute: false
@@ -1407,10 +1407,10 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
-            make_link: true
-            path: 'mailto:{{ field_email }}'
+            alter_text: true
+            text: '<i class="fa fa-envelope"> </i><a href="mailto:{{ field_email }}">{{ field_email }}</a>'
+            make_link: false
+            path: ''
             absolute: false
             external: false
             replace_spaces: false
@@ -1470,8 +1470,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<i class="fa fa-phone"> </i>{{ field_phone_1 }}'
             make_link: false
             path: ''
             absolute: false
@@ -2241,7 +2241,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<i class="fa fa-phone"></i>{{ field_phone_1 }}'
+            text: '<i class="fa fa-phone"> </i>{{ field_phone_1 }}'
             make_link: false
             path: ''
             absolute: false
@@ -2295,20 +2295,20 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_email:
-          id: field_email
+        field_email_1:
+          id: field_email_1
           table: node__field_email
           field: field_email
-          relationship: none
+          relationship: field_associated_program
           group_type: group
           admin_label: ''
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
-            make_link: true
-            path: 'mailto:{{ field_email }}'
+            alter_text: true
+            text: '<i class="fa fa-envelope"></i> <a href="mailto:{{ field_email_1 }}">{{ field_email_1 }}</a>'
+            make_link: false
+            path: ''
             absolute: false
             external: false
             replace_spaces: false
@@ -2358,18 +2358,18 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_phone_1:
-          id: field_phone_1
+        field_phone_3:
+          id: field_phone_3
           table: node__field_phone
           field: field_phone
-          relationship: none
+          relationship: field_associated_program
           group_type: group
           admin_label: ''
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<i class="fa fa-phone"> </i>{{ field_phone_3 }}'
             make_link: false
             path: ''
             absolute: false
@@ -2407,9 +2407,11 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: telephone_link
+          type: telephone_formatter
           settings:
-            title: ''
+            format: 2
+            link: true
+            default_country: US
           group_column: value
           group_columns: {  }
           group_rows: true

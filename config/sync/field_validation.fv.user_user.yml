@@ -11,7 +11,7 @@ field_validation_rules:
     uuid: f5a6bc8a-6b34-4135-a2fa-b3f1eab84017
     id: numeric_field_validation_rule
     title: 'User Phone'
-    weight: 1
+    weight: '1'
     field_name: field_phone
     column: value
     error_message: 'Phone must be a 10-digit phone number (no punctuation)'

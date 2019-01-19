@@ -176,6 +176,8 @@
 		"Another field error": "https://www.drupal.org/files/issues/2018-04-25/feeds_ical-date_case-2966211-2.patch"
 		},
 		"drupal/pathauto": {"Allow to save new path on node after deleting old one": "https://www.drupal.org/files/issues/2018-10-23/pathauto-custom-alias-2756703-17.patch"
+		},
+		"drupal/field_validation": {"Fixing rule create bug": "https://www.drupal.org/files/issues/2019-01-18/field_validation-prevent_destination_redirect-2956940-4.patch"
 		}
 		
 }
