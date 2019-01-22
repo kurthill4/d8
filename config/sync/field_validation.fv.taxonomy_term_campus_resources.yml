@@ -19,3 +19,27 @@ field_validation_rules:
       min: '0'
       max: '9999999999'
       step: ''
+  1e8e99bb-da28-4bba-8881-858836a6faf6:
+    uuid: 1e8e99bb-da28-4bba-8881-858836a6faf6
+    id: numeric_field_validation_rule
+    title: 'Fax Number'
+    weight: '2'
+    field_name: field_fax
+    column: value
+    error_message: 'Fax must be a 10-digit phone number (no punctuation)'
+    data:
+      min: '0'
+      max: '9999999999'
+      step: '9999999999'
+  b06c51c2-7b1a-4c61-ba2f-f6cdce05ff2d:
+    uuid: b06c51c2-7b1a-4c61-ba2f-f6cdce05ff2d
+    id: numeric_field_validation_rule
+    title: 'TTY Number'
+    weight: '3'
+    field_name: field_tty
+    column: value
+    error_message: 'TTY must be a 10-digit phone number (no punctuation)'
+    data:
+      min: '0'
+      max: '9999999999'
+      step: '9999999999'

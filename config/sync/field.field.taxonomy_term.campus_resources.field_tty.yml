@@ -7,12 +7,18 @@ dependencies:
     - taxonomy.vocabulary.campus_resources
   module:
     - telephone
+    - telephone_validation
+third_party_settings:
+  telephone_validation:
+    format: 2
+    country:
+      - US
 id: taxonomy_term.campus_resources.field_tty
 field_name: field_tty
 entity_type: taxonomy_term
 bundle: campus_resources
 label: TTY
-description: ''
+description: 'Enter the TTY number (area code included) as a ten-digit number, no dashes, spaces, etc.'
 required: false
 translatable: false
 default_value: {  }
