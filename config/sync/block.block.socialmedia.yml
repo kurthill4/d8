@@ -16,7 +16,7 @@ plugin: 'block_content:e53d5b35-a957-48b0-91ea-4269cc45520a'
 settings:
   id: 'block_content:e53d5b35-a957-48b0-91ea-4269cc45520a'
   label: 'Social Media'
-  provider: block_content
+  provider: core
   label_display: visible
   status: true
   info: ''

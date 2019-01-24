@@ -761,7 +761,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<a href="{{ view_node }}" data-toggle="tooltip" data-html="true" title="{{ title }}">{{ field_image }}</a>'
+            text: '<a href="{{ view_node }}" data-toggle="tooltip" data-placement="bottom" data-html="true" title="{{ title }}">{{ field_image }}</a>'
             make_link: false
             path: ''
             absolute: false
@@ -794,7 +794,7 @@ display:
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
-          empty: '<a href="{{ view_node }}" data-toggle="tooltip" data-html="true" title="{{ title }}"><img src="/themes/custom/miramar/images/default1.png" /></a>'
+          empty: '<a href="{{ view_node }}" data-toggle="tooltip" data-placement="bottom" data-html="true" title="{{ title }}"><img src="/themes/custom/miramar/images/default1.png" /></a>'
           hide_empty: false
           empty_zero: false
           hide_alter_empty: false

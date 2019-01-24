@@ -1,8 +1,11 @@
-uuid: f24b49fc-921d-46c0-b1f5-1ca7bdafac8a
+uuid: 0459d2c6-eebd-49b8-9999-ba11a165f7aa
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:basic:bb806156-1743-4da1-9b8f-83ae3dc582ec'
   module:
+    - block_content
     - block_visibility_groups
     - system
   theme:
@@ -10,11 +13,11 @@ dependencies:
 id: twitterforsidebar
 theme: miramar
 region: sidebar_second
-weight: -5
+weight: 0
 provider: null
-plugin: 'block_content:3ebd47ad-4640-4bed-9139-15686e871982'
+plugin: 'block_content:bb806156-1743-4da1-9b8f-83ae3dc582ec'
 settings:
-  id: 'block_content:3ebd47ad-4640-4bed-9139-15686e871982'
+  id: 'block_content:bb806156-1743-4da1-9b8f-83ae3dc582ec'
   label: 'Twitter for Sidebar'
   provider: block_content
   label_display: visible
@@ -29,6 +32,6 @@ visibility:
     context_mapping: {  }
   request_path:
     id: request_path
-    pages: /studentlife
+    pages: "/studentlife\r\n/news"
     negate: false
     context_mapping: {  }
