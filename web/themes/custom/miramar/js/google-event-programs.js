@@ -10,3 +10,7 @@
 (function ($) {
 	$('#selectProgram option').on('change',function(){ga('send','Program','Drop','Clickthrough')});
 }(jQuery));
+
+(function ($) {
+	$('.numbers a').on('click',function(){ga('send','Numbers','By_The_Numbers','Clickthrough')});
+}(jQuery));
