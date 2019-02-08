@@ -1038,6 +1038,7 @@ display:
       title: 'Faculty & Staff'
       link_url: ''
       link_display: page_1
+      use_ajax: true
     cache_metadata:
       max-age: -1
       contexts:

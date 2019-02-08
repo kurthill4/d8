@@ -1,23 +1,26 @@
-uuid: 0459d2c6-eebd-49b8-9999-ba11a165f7aa
+uuid: 68cb0fc5-7f91-469b-8d4f-1e7d37d0c3d6
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:basic:557bd782-bf5f-4198-94e4-cd143519020d'
   module:
+    - block_content
     - block_visibility_groups
     - system
   theme:
     - miramar
-id: twitterforsidebar
+id: planningframework
 theme: miramar
-region: sidebar_second
+region: below_content
 weight: 0
 provider: null
-plugin: 'block_content:bb806156-1743-4da1-9b8f-83ae3dc582ec'
+plugin: 'block_content:557bd782-bf5f-4198-94e4-cd143519020d'
 settings:
-  id: 'block_content:bb806156-1743-4da1-9b8f-83ae3dc582ec'
-  label: 'Twitter for Sidebar'
+  id: 'block_content:557bd782-bf5f-4198-94e4-cd143519020d'
+  label: 'Planning Framework'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
@@ -29,6 +32,6 @@ visibility:
     context_mapping: {  }
   request_path:
     id: request_path
-    pages: "/studentlife\r\n/news"
+    pages: /campus/planning/framework
     negate: false
     context_mapping: {  }
