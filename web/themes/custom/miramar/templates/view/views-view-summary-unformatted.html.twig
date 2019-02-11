@@ -23,7 +23,12 @@
 <div class="alpha_pager">
 <ul class="pagination js-pager__items hide-xs">
 {% for row in rows  %}
-<li class="pager__item {{ rowClass }}"><a href="{{ row.url }}" {{ row.attributes.addClass('active')|without('href') }}>{{ row.link }}</a></li><!---->
+{% if row.active %}
+{% set rowClass = 'active' %}
+{% else %}
+{% set rowClass = 'not-active' %}
+{% endif %}
+<li class="pager__item {{ rowClass }}"><a href="{{ row.url }}" {{ row.attributes.addClass(rowClass) }}>{{ row.link }}</a></li><!---->
 {% endfor %}
 </ul>
 <div class="hide-lg">
@@ -32,7 +37,7 @@
   {% if row.separator -%}
     {{ row.separator }}
   {%- endif %}
-  <a href="{{ row.url }}"{{ row.attributes.addClass('active')|without('href') }}>{{ row.link }}</a>
+  <a href="{{ row.url }}"{{ row.active ?: row.attributes.addClass('active')|without('href') }}>{{ row.link }}</a>
   {% if options.count %}
     ({{ row.count }})
   {% endif %}
