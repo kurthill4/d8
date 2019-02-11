@@ -2132,9 +2132,13 @@ background: #a22130;
 .pagination>.active>span:focus,
 .pagination>.active>span:hover,
 .pagination>li>a:focus,
+.pagination>li>a.active,
 .pagination>li>a:hover,
+.pagination>li>a:active,
 .pagination>li>span:focus,
-.pagination>li>span:hover {
+.pagination>li>span.active,
+.pagination>li>span:hover,
+.pagination>li>span:active {
 	background: #2c7d80;
 	border-color: #2c7d80;
 	color: #fff;
