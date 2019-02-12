@@ -2143,6 +2143,16 @@ background: #a22130;
 	border-color: #2c7d80;
 	color: #fff;
 }
+.pagination-mobile>.active-mobile>a,
+.pagination-mobile>.active-mobile>a:focus,
+.pagination-mobile>.active-mobile>a:hover,
+.pagination-mobile>.active-mobile>a:active,
+.pagination-mobile>span>a:focus,
+.pagination-mobile>span>a:hover,
+.pagination-mobile>span>a:active {
+	font-weight:bolder;
+	color: red;
+}
 .pagination>li.prev a, .pagination>li.next a {
 	color: #31b6c7;
 	background: transparent !important;

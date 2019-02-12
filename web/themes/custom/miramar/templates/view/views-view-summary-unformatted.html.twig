@@ -31,22 +31,22 @@
 <li class="pager__item {{ rowClass }}"><a href="{{ row.url }}" {{ row.attributes.addClass(rowClass) }}>{{ row.link }}</a></li><!---->
 {% endfor %}
 </ul>
-<div class="hide-lg">
+<div class="pagination-mobile hide-lg">
 {% for row in rows  %}
 {% if row.active %}
-{% set rowClass = 'active' %}
+{% set rowClassMobile = 'active-mobile' %}
 {% else %}
-{% set rowClass = 'not-active' %}
+{% set rowClassMobile = 'not-active-mobile' %}
 {% endif %}
-  {{ options.inline ? '<span' : '<div' }} >
+  {#{ options.inline ? '<span' : '<div' }} >
   {% if row.separator -%}
     {{ row.separator }}
-  {%- endif %}
-  <a href="{{ row.url }}"{{ row.attributes.addClass(rowClass) }}>{{ row.link }}</a>
-  {% if options.count %}
+  {%- endif %#}
+  <span class="{{ rowClassMobile }}"><a href="{{ row.url }}"{{ row.attributes.addClass(rowClassMobile) }}>{{ row.link }}</a></span>
+  {#% if options.count %}
     ({{ row.count }})
   {% endif %}
-  {{ options.inline ? '</span>' : '</div>' }}
+  {{ options.inline ? '</span>' : '</div>' }#}
 {% endfor %}
 
 </div>
