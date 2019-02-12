@@ -33,11 +33,16 @@
 </ul>
 <div class="hide-lg">
 {% for row in rows  %}
+{% if row.active %}
+{% set rowClass = 'active' %}
+{% else %}
+{% set rowClass = 'not-active' %}
+{% endif %}
   {{ options.inline ? '<span' : '<div' }} >
   {% if row.separator -%}
     {{ row.separator }}
   {%- endif %}
-  <a href="{{ row.url }}"{{ row.active ?: row.attributes.addClass('active')|without('href') }}>{{ row.link }}</a>
+  <a href="{{ row.url }}"{{ row.attributes.addClass(rowClass) }}>{{ row.link }}</a>
   {% if options.count %}
     ({{ row.count }})
   {% endif %}
