@@ -1,39 +1,36 @@
-uuid: 7215c2cb-5cf9-4025-b0d4-e4119739f5c2
+uuid: 9036384f-1b37-43d4-b419-02c3d2026ba3
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.articulation_sidebar
+    - views.view.jetsnews
   module:
     - block_visibility_groups
-    - node
+    - system
     - views
   theme:
     - miramar
-id: views_block__articulation_sidebar_block_2
+id: views_block__jetsnews_block_2
 theme: miramar
 region: sidebar_second
-weight: -19
+weight: -12
 provider: null
-plugin: 'views_block:articulation_sidebar-block_2'
+plugin: 'views_block:jetsnews-block_2'
 settings:
-  id: 'views_block:articulation_sidebar-block_2'
+  id: 'views_block:jetsnews-block_2'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
   items_per_page: none
-  context_mapping: {  }
 visibility:
   condition_group:
     id: condition_group
     negate: false
     block_visibility_group: ''
     context_mapping: {  }
-  node_type:
-    id: node_type
-    bundles:
-      transfer_school: transfer_school
+  request_path:
+    id: request_path
+    pages: /campus/president
     negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
+    context_mapping: {  }

@@ -12,7 +12,7 @@ dependencies:
 id: views_block__resource_web_pages_block_1
 theme: miramar
 region: sidebar_second
-weight: -21
+weight: -22
 provider: null
 plugin: 'views_block:resource_web_pages-block_1'
 settings:

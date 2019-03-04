@@ -10,7 +10,7 @@ dependencies:
 id: twitterforsidebar
 theme: miramar
 region: sidebar_second
-weight: 0
+weight: -4
 provider: null
 plugin: 'block_content:bb806156-1743-4da1-9b8f-83ae3dc582ec'
 settings:
