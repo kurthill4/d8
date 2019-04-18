@@ -86,9 +86,13 @@ content:
     type: entity_reference_label
     region: content
 hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
   field_co_chair_2: true
   field_committee_chair: true
   field_committee_co_chair: true
   field_committee_code: true
   field_custom_url: true
+  langcode: true
   links: true

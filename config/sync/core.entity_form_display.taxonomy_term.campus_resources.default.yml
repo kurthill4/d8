@@ -15,6 +15,7 @@ dependencies:
     - field.field.taxonomy_term.campus_resources.field_include_in_directory
     - field.field.taxonomy_term.campus_resources.field_location
     - field.field.taxonomy_term.campus_resources.field_phone
+    - field.field.taxonomy_term.campus_resources.field_search_terms
     - field.field.taxonomy_term.campus_resources.field_slogan
     - field.field.taxonomy_term.campus_resources.field_tty
     - field.field.taxonomy_term.campus_resources.field_web_pages
@@ -131,6 +132,15 @@ content:
     third_party_settings: {  }
     type: telephone_default
     region: content
+  field_search_terms:
+    weight: 19
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_slogan:
     weight: 12
     settings:
@@ -155,6 +165,13 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   name:
     type: string_textfield
     weight: 0

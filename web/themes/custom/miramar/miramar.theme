@@ -88,6 +88,12 @@ function miramar_field_widget_daterange_default_form_alter(&$element, FormStateI
   $element['value']['#date_time_element']['time']['#attributes']['step'] = 60;
   $element['end_value']['#date_time_element']['time']['#attributes']['step'] = 60;
 }
+/*----------------------------------
+function miramar_form_search_block_form_alter(&$form, &$form_state, $form_id) {
+    $form['#action'] = '/find';
+}
+*/
+
 /*
 function miramar_preprocess_views_view_table__committee_meetings__block_2(&$variables) {
 	$view = $variables['view'];

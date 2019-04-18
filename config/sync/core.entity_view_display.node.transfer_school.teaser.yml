@@ -5,6 +5,12 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.transfer_school.body
+    - field.field.node.transfer_school.field_articulation_agreements
+    - field.field.node.transfer_school.field_campus_website
+    - field.field.node.transfer_school.field_links
+    - field.field.node.transfer_school.field_school_type
+    - field.field.node.transfer_school.field_transfer_reqs
+    - field.field.node.transfer_school.field_transfer_tips
     - node.type.transfer_school
   module:
     - text
@@ -26,9 +32,13 @@ content:
     weight: 100
     region: content
 hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
   field_articulation_agreements: true
   field_campus_website: true
   field_links: true
   field_school_type: true
   field_transfer_reqs: true
   field_transfer_tips: true
+  langcode: true

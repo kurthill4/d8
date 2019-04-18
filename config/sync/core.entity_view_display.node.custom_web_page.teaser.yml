@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.custom_web_page.body
+    - field.field.node.custom_web_page.field_administrative_area
     - field.field.node.custom_web_page.field_associated_campus_resource
     - field.field.node.custom_web_page.field_associated_committee
     - field.field.node.custom_web_page.field_associated_department
@@ -31,8 +32,13 @@ content:
     weight: 100
     region: content
 hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_administrative_area: true
   field_associated_campus_resource: true
   field_associated_committee: true
   field_associated_department: true
   field_associated_program: true
   field_content: true
+  langcode: true

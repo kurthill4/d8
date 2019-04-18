@@ -2309,6 +2309,7 @@ background: #a22130;
 	width:75%!important;
 	margin: 0 auto;
 }
+/*
 .search-results ul {list-style:none;}
 .search-results li {
 	margin: 25px 0;
@@ -2321,6 +2322,11 @@ background: #a22130;
 .search-results a {
 	color: #31b8c9;
 }
+*/
+
+.search-results .even {background-color:#c9c9c9;}
+.search-results .views-row {padding:0.5em 0 1em 0;}
+
 .download {
 	margin-left: 50px;
 }

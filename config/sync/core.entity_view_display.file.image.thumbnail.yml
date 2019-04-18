@@ -35,8 +35,12 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
   field_image_alt_text: true
   field_image_title_text: true
   filemime: true
   filesize: true
+  langcode: true
   uid: true

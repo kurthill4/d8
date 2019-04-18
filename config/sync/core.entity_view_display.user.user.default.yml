@@ -109,4 +109,5 @@ hidden:
   entity_print_view_word_docx: true
   field_degree_or_honor: true
   field_employment_type: true
+  langcode: true
   member_for: true

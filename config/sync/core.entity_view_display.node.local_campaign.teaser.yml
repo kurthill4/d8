@@ -19,6 +19,10 @@ content:
     weight: 100
     region: content
 hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
   field_ad_text: true
   field_ad_text_2: true
   field_header: true
+  langcode: true

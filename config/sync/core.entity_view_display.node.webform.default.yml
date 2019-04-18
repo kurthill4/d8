@@ -39,4 +39,8 @@ content:
     type: webform_entity_reference_entity_view
     region: content
 hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
   field_associated_campus_resource: true
+  langcode: true

@@ -52,3 +52,4 @@ hidden:
   field_phone: true
   field_slogan: true
   field_tty: true
+  langcode: true

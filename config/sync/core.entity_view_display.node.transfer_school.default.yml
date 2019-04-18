@@ -66,6 +66,10 @@ content:
     type: text_default
     region: content
 hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
   field_campus_website: true
   field_school_type: true
+  langcode: true
   links: true

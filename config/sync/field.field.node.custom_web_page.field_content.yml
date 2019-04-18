@@ -8,6 +8,9 @@ dependencies:
     - paragraphs.paragraphs_type.bp_accordion
     - paragraphs.paragraphs_type.bp_accordion_section
     - paragraphs.paragraphs_type.bp_columns
+    - paragraphs.paragraphs_type.bp_image
+    - paragraphs.paragraphs_type.bp_simple
+    - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.table
     - paragraphs.paragraphs_type.text
     - paragraphs.paragraphs_type.video
@@ -30,10 +33,13 @@ settings:
     target_bundles:
       text: text
       video: video
+      image: image
       table: table
       bp_accordion: bp_accordion
       bp_accordion_section: bp_accordion_section
       bp_columns: bp_columns
+      bp_image: bp_image
+      bp_simple: bp_simple
     target_bundles_drag_drop:
       text:
         enabled: true
@@ -45,8 +51,8 @@ settings:
         enabled: true
         weight: 6
       image:
+        enabled: true
         weight: 7
-        enabled: false
       table:
         enabled: true
         weight: 8
@@ -81,14 +87,14 @@ settings:
         weight: 31
         enabled: false
       bp_image:
+        enabled: true
         weight: 32
-        enabled: false
       bp_modal:
         weight: 33
         enabled: false
       bp_simple:
+        enabled: true
         weight: 34
-        enabled: false
       bp_tab_section:
         weight: 35
         enabled: false

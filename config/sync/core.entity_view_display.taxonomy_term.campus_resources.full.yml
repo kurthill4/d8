@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.taxonomy_term.full
+    - field.field.taxonomy_term.campus_resources.field_administrative_area
     - field.field.taxonomy_term.campus_resources.field_contact
     - field.field.taxonomy_term.campus_resources.field_contact_2
     - field.field.taxonomy_term.campus_resources.field_contact_3
     - field.field.taxonomy_term.campus_resources.field_custom_content
+    - field.field.taxonomy_term.campus_resources.field_do_not_display
     - field.field.taxonomy_term.campus_resources.field_fax
     - field.field.taxonomy_term.campus_resources.field_hours
     - field.field.taxonomy_term.campus_resources.field_image
@@ -61,9 +63,14 @@ content:
     type: string
     region: content
 hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_administrative_area: true
   field_contact: true
   field_contact_2: true
   field_contact_3: true
+  field_do_not_display: true
   field_fax: true
   field_hours: true
   field_include_in_directory: true
@@ -71,3 +78,4 @@ hidden:
   field_phone: true
   field_tty: true
   field_web_pages: true
+  langcode: true

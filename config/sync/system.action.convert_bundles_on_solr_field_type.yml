@@ -1,0 +1,11 @@
+uuid: c0ee081d-86df-4c8f-8fb4-8583a1208006
+langcode: en
+status: true
+dependencies:
+  module:
+    - convert_bundles
+id: convert_bundles_on_solr_field_type
+label: 'Convert Solr Field Type Entity Bundles'
+type: solr_field_type
+plugin: convert_bundles_action_base
+configuration: {  }

@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.sdccd_campaign.field_ad_text
+    - field.field.node.sdccd_campaign.field_ad_text_2
     - field.field.node.sdccd_campaign.field_header
     - field.field.node.sdccd_campaign.field_image_desktop
     - field.field.node.sdccd_campaign.field_image_mobile_landscape
@@ -21,8 +23,14 @@ content:
     weight: 100
     region: content
 hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_ad_text: true
+  field_ad_text_2: true
   field_header: true
   field_image_desktop: true
   field_image_mobile_landscape: true
   field_image_mobile_portrait: true
   field_image_tablet: true
+  langcode: true

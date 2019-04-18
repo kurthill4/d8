@@ -26,6 +26,9 @@ content:
     weight: 100
     region: content
 hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
   field_associated_campus_resource: true
   field_associated_committee: true
   field_associated_department: true
@@ -36,3 +39,4 @@ hidden:
   field_linking_instructions: true
   field_short_description: true
   field_uploaded_file: true
+  langcode: true

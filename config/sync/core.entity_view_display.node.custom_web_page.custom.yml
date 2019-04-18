@@ -37,4 +37,5 @@ hidden:
   field_associated_department: true
   field_associated_program: true
   field_content: true
+  langcode: true
   links: true

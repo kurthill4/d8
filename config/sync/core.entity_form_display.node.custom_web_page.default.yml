@@ -12,7 +12,7 @@ dependencies:
     - field.field.node.custom_web_page.field_content
     - node.type.custom_web_page
   module:
-    - paragraphs_previewer
+    - paragraphs
     - path
     - text
 id: node.custom_web_page.default
@@ -78,7 +78,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_content:
-    type: entity_reference_paragraphs_previewer
+    type: entity_reference_paragraphs
     weight: 2
     settings:
       title: Paragraph
@@ -89,6 +89,13 @@ content:
       default_paragraph_type: _none
     third_party_settings: {  }
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   path:
     type: path
     weight: 7

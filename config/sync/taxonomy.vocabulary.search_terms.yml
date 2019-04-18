@@ -1,0 +1,9 @@
+uuid: 18f7666e-4716-4b09-beff-423f802369e6
+langcode: en
+status: true
+dependencies: {  }
+name: 'Search Terms'
+vid: search_terms
+description: 'CUrated keywords for website search'
+hierarchy: 0
+weight: 0

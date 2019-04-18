@@ -15,6 +15,7 @@ dependencies:
     - field.field.taxonomy_term.campus_resources.field_include_in_directory
     - field.field.taxonomy_term.campus_resources.field_location
     - field.field.taxonomy_term.campus_resources.field_phone
+    - field.field.taxonomy_term.campus_resources.field_search_terms
     - field.field.taxonomy_term.campus_resources.field_slogan
     - field.field.taxonomy_term.campus_resources.field_tty
     - field.field.taxonomy_term.campus_resources.field_web_pages
@@ -22,7 +23,6 @@ dependencies:
   module:
     - entity_reference_revisions
     - image
-    - options
     - text
 id: taxonomy_term.campus_resources.default
 targetEntityType: taxonomy_term
@@ -44,13 +44,6 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    region: content
-  field_do_not_display:
-    weight: 4
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
     region: content
   field_image:
     weight: 2
@@ -77,10 +70,13 @@ hidden:
   field_contact: true
   field_contact_2: true
   field_contact_3: true
+  field_do_not_display: true
   field_fax: true
   field_hours: true
   field_include_in_directory: true
   field_location: true
   field_phone: true
+  field_search_terms: true
   field_tty: true
   field_web_pages: true
+  langcode: true

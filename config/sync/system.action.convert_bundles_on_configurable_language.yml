@@ -1,0 +1,11 @@
+uuid: 4a60a1cc-ae81-4163-ab94-80268b6e6b0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - convert_bundles
+id: convert_bundles_on_configurable_language
+label: 'Convert Language Entity Bundles'
+type: configurable_language
+plugin: convert_bundles_action_base
+configuration: {  }

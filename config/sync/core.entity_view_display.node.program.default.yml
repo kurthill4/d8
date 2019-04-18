@@ -98,3 +98,4 @@ hidden:
   field_program_hero_image: true
   field_school: true
   field_web_pages: true
+  langcode: true

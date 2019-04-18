@@ -50,3 +50,4 @@ hidden:
   field_associated_committee: true
   field_associated_department: true
   field_associated_program: true
+  langcode: true

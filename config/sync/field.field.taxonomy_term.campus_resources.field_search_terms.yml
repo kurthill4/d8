@@ -1,0 +1,29 @@
+uuid: 2db9395e-3ce8-4c6e-acdd-fc18e73cc5bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_search_terms
+    - taxonomy.vocabulary.campus_resources
+    - taxonomy.vocabulary.search_terms
+id: taxonomy_term.campus_resources.field_search_terms
+field_name: field_search_terms
+entity_type: taxonomy_term
+bundle: campus_resources
+label: 'Search Terms'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      search_terms: search_terms
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

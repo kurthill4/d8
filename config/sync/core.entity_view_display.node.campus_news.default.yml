@@ -75,6 +75,9 @@ content:
     type: list_default
     region: content
 hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
   field_display_on_pathways: true
   field_end_date: true
   field_featured_on_homepage_: true
@@ -84,4 +87,5 @@ hidden:
   field_link_label: true
   field_priority: true
   field_start_date: true
+  langcode: true
   links: true

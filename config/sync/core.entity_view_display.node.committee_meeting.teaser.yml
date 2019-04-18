@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.committee_meeting.field_agenda
+    - field.field.node.committee_meeting.field_associated_committee
     - field.field.node.committee_meeting.field_attached_documents
     - field.field.node.committee_meeting.field_committee
     - field.field.node.committee_meeting.field_event_date
@@ -25,7 +26,11 @@ content:
     weight: 100
     region: content
 hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
   field_agenda: true
+  field_associated_committee: true
   field_attached_documents: true
   field_committee: true
   field_event_date: true
@@ -34,3 +39,4 @@ hidden:
   field_meeting_date_time: true
   field_meeting_location: true
   field_minutes: true
+  langcode: true

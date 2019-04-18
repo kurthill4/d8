@@ -279,7 +279,7 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: true
+            alter_text: false
             text: '<span>{{ field_event_date__value|date("M d") }} </span>'
             make_link: false
             path: ''
@@ -305,7 +305,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: span
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -322,6 +322,7 @@ display:
           settings:
             timezone_override: ''
             date_format: 'F j'
+            fromto: start_date
             separator: '-'
           group_column: value
           group_columns: {  }

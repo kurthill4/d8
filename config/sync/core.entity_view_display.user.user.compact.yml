@@ -25,6 +25,9 @@ bundle: user
 mode: compact
 content: {  }
 hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
   field_assignment: true
   field_degree_or_honor: true
   field_employment_type: true
@@ -36,4 +39,5 @@ hidden:
   field_phone: true
   field_program: true
   field_web_pages: true
+  langcode: true
   member_for: true

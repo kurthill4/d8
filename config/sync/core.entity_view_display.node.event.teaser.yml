@@ -29,6 +29,9 @@ content:
     weight: 100
     region: content
 hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
   feeds_item: true
   field_contact: true
   field_date_to_publish: true
@@ -42,3 +45,4 @@ hidden:
   field_image: true
   field_priority: true
   field_rsvp_required: true
+  langcode: true

@@ -57,4 +57,5 @@ hidden:
   field_program_hero_image: true
   field_school: true
   field_student_learning_outcomes: true
+  langcode: true
   links: true

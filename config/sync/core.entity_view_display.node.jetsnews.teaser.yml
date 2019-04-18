@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.jetsnews.field_link_to_your_file
     - field.field.node.jetsnews.field_publication_date
     - field.field.node.jetsnews.field_uploaded_file
     - node.type.jetsnews
@@ -18,5 +19,10 @@ content:
     weight: 100
     region: content
 hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_link_to_your_file: true
   field_publication_date: true
   field_uploaded_file: true
+  langcode: true
