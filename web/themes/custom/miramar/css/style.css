@@ -62,6 +62,14 @@ hr.short {width:50%;}
 .degree-block {
 	padding:5px 20px;
 }
+
+.content.gradstream,
+div.grad, div.grad iframe {
+	padding:0!important;
+	margin:0!important;
+}
+
+
 .content p,
 .field--name-description p {margin-bottom:1em}
 .content img,.field--name-description img {padding:3px}
