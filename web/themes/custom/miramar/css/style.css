@@ -64,11 +64,15 @@ hr.short {width:50%;}
 }
 
 .content.gradstream,
-div.grad, div.grad iframe {
+div.grad iframe {
 	padding:0!important;
 	margin:0!important;
 }
 
+div.grad {
+	max-width:854px;
+	margin:0 auto!important;
+}
 
 .content p,
 .field--name-description p {margin-bottom:1em}
