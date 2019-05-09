@@ -63,15 +63,24 @@ hr.short {width:50%;}
 	padding:5px 20px;
 }
 
-.content.gradstream,
-div.grad iframe {
-	padding:0!important;
+.content.gradstream
+{
+	padding:0.25em!important;
 	margin:0!important;
 }
 
-div.grad {
-	max-width:854px;
-	margin:0 auto!important;
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 .content p,
