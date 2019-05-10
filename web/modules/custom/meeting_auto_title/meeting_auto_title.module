@@ -1,4 +1,4 @@
- <?php
+<?php
 
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\node\NodeInterface;
