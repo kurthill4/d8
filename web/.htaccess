@@ -225,4 +225,6 @@ AddEncoding gzip svgz
   Redirect 302 /academics/automotive/about/honda  /programs/automotive-technology/honda
   Redirect 302 /commencement /graduating-students
 
+  Redirect 301 /students/international /campus/international/requirements
+
 </IfModule>
