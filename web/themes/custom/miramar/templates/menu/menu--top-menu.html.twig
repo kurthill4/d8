@@ -42,9 +42,9 @@
 	{% set icon = 'briefcase' %}
       {% elseif item.title == 'Library' %}
 	{% set icon = 'book' %}
-      {% elseif item.title == 'Canvas' %}
+      {% elseif item.title == 'Canvas' or item.title == 'Blackboard' %}
 	{% set icon = 'laptop' %}
-      {% elseif item.title == 'Employee Resources' %}
+      {% elseif (item.title) == 'Employee Resources' %}
 	{% set icon = 'lightbulb-o' %}
       {% else %}
 	{% set class = 'class=search  '|raw %}
