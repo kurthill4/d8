@@ -71,7 +71,7 @@ class MiramarCustomContactBlock extends BlockBase {
                 <p class="img" role="heading"><img src="' . \Drupal::config('miramarcustom.settings')->get('image_path') . '/images/icon-users.png" alt="Resources & Information"></p>
                 <strong>Resources &amp; Information</strong>
                 <ul class="miramar">
-                  <li><a href="/508">Website Accessitility Information</a></li>
+                  <li><a href="/508">Website Accessibility Information</a></li>
                   <li><a href="http://police.sdccd.edu/jclery.cfm" target="_blank">Clery Act Information</a></li>
                   <li><a href="/campus/foundation">Miramar College Foundation</a></li>
                   <li><a href="/privacy">Privacy Statement</a></li>
