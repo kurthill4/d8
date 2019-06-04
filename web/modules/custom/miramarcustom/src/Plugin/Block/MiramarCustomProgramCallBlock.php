@@ -24,14 +24,14 @@ class MiramarCustomProgramCallBlock extends BlockBase {
     $build['pgmcall']['content'] = [
       '#markup' => '
 	<div class="call">
-	<a href="http://schedule.sdccd.edu" target="_blank">
+	<a href="http://classschedule.sdccd.edu" target="_blank">
 	<span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
 	Class Schedule
 	</a>
 	</div>
 	<div class="spacer" style="height:0.1em">&nbsp;</div>
 	<div class="call">
-	<a href="https://www.sdccd.edu/docs/StudentServices/catalogs/2018-2019/Miramar%202018-2019.pdf">
+	<a href="http://classschedule.sdccd.edu">
 	<span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
 	Course Catalog
 	</a>

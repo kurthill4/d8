@@ -27,7 +27,7 @@ class MiramarCustomCallBlock extends BlockBase {
 		<div class="homecall">
 			<div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6">
 				<div class="get-started">
-				<a href="http://schedule.sdccd.edu" target="_blank">
+				<a href="http://classschedule.sdccd.edu" target="_blank">
 				<span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
 				Class Schedule
 				</a>
@@ -35,7 +35,7 @@ class MiramarCustomCallBlock extends BlockBase {
 			</div>
 				<div class="col-lg-4 col-md-5 col-sm-6">
 					<div class="get-started">
-					<a href="https://www.sdccd.edu/docs/StudentServices/catalogs/2018-2019/Miramar%202018-2019.pdf">
+					<a href="http://classschedule.sdccd.edu">
 					<span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
 					Course Catalog
 					</a>
