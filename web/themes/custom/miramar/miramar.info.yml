@@ -36,6 +36,7 @@ libraries:
   - 'miramar/Roboto'
   - 'miramar/Oswald'
   - 'miramar/Nixie'
+  - 'miramar/google_civilian'
 
 libraries-override:
   youtubechannel/youtubechannel:
