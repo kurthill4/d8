@@ -28,3 +28,7 @@
 
 # Ignore sasscache stuff
 .sass-cache*
+
+# Ignore certs
+/web/.well-known
+
