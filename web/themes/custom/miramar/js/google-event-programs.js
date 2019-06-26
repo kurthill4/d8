@@ -4,13 +4,13 @@
 
  */
 (function ($) {
-	$('.slick__slide a').on('click',function(){ga('send','Program','Slider','Clickthrough')});
+	$('.slick__slide a').on('click',function(){ga('send','event','Program','Slider','Clickthrough')});
 }(jQuery));
 
 (function ($) {
-	$('#selectProgram option').on('change',function(){ga('send','Program','Drop','Clickthrough')});
+	$('#selectProgram option').on('change',function(){ga('send','event','Program','Drop','Clickthrough')});
 }(jQuery));
 
 (function ($) {
-	$('.numbers a').on('click',function(){ga('send','Numbers','By_The_Numbers','Clickthrough')});
+	$('.numbers a').on('click',function(){ga('send','event','Numbers','By_The_Numbers','Clickthrough')});
 }(jQuery));

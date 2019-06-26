@@ -51,7 +51,33 @@ var pushDown = document.getElementById("push");
 	};
 })(jQuery);
 
+(function ($) {
+	$('a.sched').click(function(evt) {
+		evt.preventDefault();
 
+/*var data = {
+    "SSR_CLSRCH_WRK_CAMPUS$1": "MIRA"
+}
+
+	fetch("https://myportal.sdccd.edu/psp/CSGUEST/EMPLOYEE/SA/c/COMMUNITY_ACCESS.CLASS_SEARCH.GBL?X_DEF_OPT=CLASS_SRCH_WRK2_ACAD_CAREER%24268%24&X_DEF_VAL=UGRD", {
+		mode: "no-cors",
+		method: "POST",
+		body:  JSON.stringify(data)
+	})
+	.then(res => res.ok ? res.json() : Promise.reject(res));*/
+                $.ajax({
+                  type: 'POST',
+                  crossDomain: true,
+                  beforeSend: function(request) {
+                    request.setRequestHeader('Allow-Control-Allow-Origin', '*.sdmiramar.edu');
+                    //request.setRequestHeader('Access-Control-Allow-Origin', '*');
+                  },
+                  url: 'https://myportal.sdccd.edu/psp/CSGUEST/EMPLOYEE/SA/c/COMMUNITY_ACCESS.CLASS_SEARCH.GBL?X_DEF_OPT=CLASS_SRCH_WRK2_ACAD_CAREER%24268%24&X_DEF_VAL=UGRD',
+                  //    data: {'SSR_CLSRCH_WRK_CAMPUS$1': 'MIRA','SSR_CLSRCH_WRK_SRCH$2': 'AVIA'}
+                  data: { 'SSR_CLSRCH_WRK_CAMPUS$1':'MIRA'}
+                });
+	});
+})(jQuery);
 
 /*
  (function ($, Drupal, settings) {
