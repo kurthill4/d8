@@ -4,34 +4,27 @@
  *
  */
 
+var step = [
+	['/campus/outreach-office','Tour'],
+	['apply.sdccd.edu','Apply'],
+	['/campus/counseling/orientation','Orientation'],
+	['/campus/assessment','Assessment'],
+	['/campus/counseling/edplan','SEP'],
+	['my.sdccd.edu','Register'],
+	['/resources','Resources']
+];
 
 (function ($) {
-	$('.step-desc a[href*="/campus/outreach-office"]').on('click',function(){ga('send','event','NewStudentSteps','Tour','Future_Students_Step_1')});
+	for(var i=0;i<step.length;i++) {
+		j = i + 1;
+		url = step[i][0];
+		action = step[i][1];
+		label = 'Future_Students_Step_' + j;
+		stringOut = "'send','event','NewStudentSteps','" + action + "','" + label + "'";
+		$('.step-desc a[href$="' + url + '"]').on('click',function(){ga(stringOut);});
+	}
 }(jQuery));
 
-(function ($) {
-	$('.step-desc a[href$="apply.sdccd.edu"]').on('click',function(){ga('send','event','NewStudentSteps','Apply','Future_Students_Step_2')});
-}(jQuery));
-
-(function ($) {
-	$('.step-desc a[href*="/campus/counseling/orientation"]').on('click',function(){ga('send','event','NewStudentSteps','Orientation','Future_Students_Step_3')});
-}(jQuery));
-
-(function ($) {
-	$('.step-desc a[href*="/campus/assessment"]').on('click',function(){ga('send','event','NewStudentSteps','Assessment','Future_Students_Step_4')});
-}(jQuery));
-
-(function ($) {
-	$('.step-desc a[href*="/campus/counseling/edplan"]').on('click',function(){ga('send','event','NewStudentSteps','SEP','Future_Students_Step_5')});
-}(jQuery));
-
-(function ($) {
-	$('.step-desc a[href*="my.sdccd.edu"]').on('click',function(){ga('send','event','NewStudentSteps','Register','Future_Students_Step_6')});
-}(jQuery));
-
-(function ($) {
-	$('.step-desc a[href*="/campus/resources"]').on('click',function(){ga('send','event','NewStudentSteps','Resources','Future_Students_Step_7')});
-}(jQuery));
 
 
 
