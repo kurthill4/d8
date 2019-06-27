@@ -75,6 +75,12 @@ google_civilian:
   dependencies:
     - core/jquery
 
+google_newstudent_steps:
+  js:
+    js/google-event-new-steps.js: {}
+  dependencies:
+    - core/jquery
+
 sdccd:
   header: true
   js:
