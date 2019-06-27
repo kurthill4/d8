@@ -50,12 +50,12 @@ var pushDown = document.getElementById("push");
 		}
 	};
 })(jQuery);
-
+/*
 (function ($) {
 	$('a.sched').click(function(evt) {
 		evt.preventDefault();
 
-/*var data = {
+var data = {
     "SSR_CLSRCH_WRK_CAMPUS$1": "MIRA"
 }
 
@@ -64,7 +64,7 @@ var pushDown = document.getElementById("push");
 		method: "POST",
 		body:  JSON.stringify(data)
 	})
-	.then(res => res.ok ? res.json() : Promise.reject(res));*/
+	.then(res => res.ok ? res.json() : Promise.reject(res));
                 $.ajax({
                   type: 'POST',
                   crossDomain: true,
@@ -77,7 +77,7 @@ var pushDown = document.getElementById("push");
                   data: { 'SSR_CLSRCH_WRK_CAMPUS$1':'MIRA'}
                 });
 	});
-})(jQuery);
+})(jQuery);*/
 
 /*
  (function ($, Drupal, settings) {
