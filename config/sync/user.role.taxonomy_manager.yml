@@ -25,3 +25,4 @@ permissions:
   - 'edit terms in student_life'
   - 'edit terms in tags'
   - 'use text format basic_html'
+  - 'use text format full_html'
