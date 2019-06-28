@@ -20,7 +20,7 @@ var step = [
 		url = step[i][0];
 		action = step[i][1];
 		label = 'Current_Students_Step_' + j;
-		stringOut = "'send','event','CurrStudentSteps','" + action + "','" + label + "'";
+		stringOut = "'send','event','CurrentStudentSteps','" + action + "','" + label + "'";
 		$('.step-desc a[href$="' + url + '"]').on('click',function(){ga(stringOut);});
 	}
 }(jQuery));

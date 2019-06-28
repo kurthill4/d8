@@ -69,7 +69,7 @@ google_local:
   js:
     js/sdmiramar-google.js: {}
 
-google_civilian:
+google_apply:
   js:
     js/google-event-apply.js: {}
   dependencies:
