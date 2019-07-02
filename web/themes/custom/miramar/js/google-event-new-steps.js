@@ -16,12 +16,10 @@ var step = [
 
 (function ($) {
 	for(var i=0;i<step.length;i++) {
-		j = i + 1;
 		url = step[i][0];
 		action = step[i][1];
-		label = 'Future_Students_Step_' + j;
-		stringOut = "'send','event','NewStudentSteps','" + action + "','" + label + "'";
-		$('.step-desc a[href$="' + url + '"]').on('click',function(){ga(stringOut);});
+		label = 'Future_Students_Step_' + (i + 1);
+		$('.step-desc a[href*="' + url + '"]').on('click',{a: action,l: label},function(e){ga('send','event',e.data.a,e.data.l);});
 	}
 }(jQuery));
 
