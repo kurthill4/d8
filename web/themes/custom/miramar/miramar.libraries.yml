@@ -87,6 +87,12 @@ google_student_steps:
   dependencies:
     - core/jquery
 
+google_grad_steps:
+  js:
+    js/google-event-grad-steps.js: {}
+  dependencies:
+    - core/jquery
+
 sdccd:
   header: true
   js:

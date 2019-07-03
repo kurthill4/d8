@@ -1,5 +1,5 @@
 image_path: /themes/custom/miramar
 local_ip: false
 client_ip: 127.0.0.1
-issues_link: '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=/user/login?destination=/home&autologout_timeout=1">Report Issues With This Page</a>'
+issues_link: '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=/admin/structure/types/manage/program/form-display">Report Issues With This Page</a>'
 prog_call: ''

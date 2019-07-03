@@ -90,7 +90,7 @@ content:
   field_fax:
     weight: 3
     settings:
-      placeholder: ''
+      placeholder: '6193889999'
     third_party_settings: {  }
     type: telephone_default
     region: content
@@ -152,7 +152,7 @@ content:
   field_tty:
     weight: 4
     settings:
-      placeholder: ''
+      placeholder: '6193889999'
     third_party_settings: {  }
     type: telephone_default
     region: content
