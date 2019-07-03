@@ -19,22 +19,10 @@ field_validation_rules:
       min: '0'
       max: '9999999999'
       step: ''
-  b06c51c2-7b1a-4c61-ba2f-f6cdce05ff2d:
-    uuid: b06c51c2-7b1a-4c61-ba2f-f6cdce05ff2d
-    id: numeric_field_validation_rule
-    title: 'TTY Number'
-    weight: '3'
-    field_name: field_tty
-    column: value
-    error_message: 'TTY must be a 10-digit phone number (no punctuation)'
-    data:
-      min: '0'
-      max: '9999999999'
-      step: '9999999999'
-  1e8e99bb-da28-4bba-8881-858836a6faf6:
-    uuid: 1e8e99bb-da28-4bba-8881-858836a6faf6
-    id: numeric_field_validation_rule
-    title: 'Fax Number'
+  bf5c6994-40fc-4297-92dd-a182f986c393:
+    uuid: bf5c6994-40fc-4297-92dd-a182f986c393
+    id: integer_field_validation_rule
+    title: Fax
     weight: '2'
     field_name: field_fax
     column: value
@@ -42,4 +30,14 @@ field_validation_rules:
     data:
       min: '0'
       max: '9999999999'
-      step: '9999999999'
+  c1331ff3-234b-4f55-b967-23d1eb6e50e4:
+    uuid: c1331ff3-234b-4f55-b967-23d1eb6e50e4
+    id: integer_field_validation_rule
+    title: TTY
+    weight: 3
+    field_name: field_tty
+    column: value
+    error_message: 'TTY must be a 10-digit phone number (no punctuation)'
+    data:
+      min: '0'
+      max: '9999999999'
