@@ -93,6 +93,11 @@ google_grad_steps:
   dependencies:
     - core/jquery
 
+google_tag:
+  header: true
+  js:
+    js/google-tag.js: {}
+
 sdccd:
   header: true
   js:
