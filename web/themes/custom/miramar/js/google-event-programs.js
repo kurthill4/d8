@@ -25,6 +25,6 @@
 }(jQuery));
 
 (function ($) {
-	$('#selectProgram').on('change',{ a: $('#selectProgram :selected').text() },function(e){ga('send','event','Program','Dropdown',e.data.a)});
+	$('#selectProgram').on('change',function(e){ga('send','event','Program','Dropdown',$('#selectProgram :selected').text())});
 }(jQuery));
 
