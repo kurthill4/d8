@@ -5,7 +5,9 @@ pushd web
 
 $dr sset system.maintenance_mode 1
 $dr cr
-$dr arb
+
+#drush arb no longer supported
+#$dr arb
 
 git pull
 if [[ $1 != "" ]]; then
@@ -14,7 +16,7 @@ fi
 
 cd ..
 
-composer install
+composer install --no-dev
 
 cd web
 $dr cim
