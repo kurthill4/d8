@@ -81,6 +81,12 @@ google_progs_home:
   dependencies:
     - core/jquery
 
+google_progs_page:
+  js:
+    js/google-event-program-page.js: {}
+  dependencies:
+    - core/jquery
+
 google_newstudent_steps:
   js:
     js/google-event-new-steps.js: {}

@@ -145,7 +145,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: '{{ path }}?utm_source=dropdown&utm_medium=homepage&utm_campaign=programs'
+            text: '{{ path }}'
             make_link: false
             path: ''
             absolute: false

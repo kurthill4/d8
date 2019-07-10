@@ -321,7 +321,7 @@ display:
           type: daterange_custom
           settings:
             timezone_override: ''
-            date_format: 'F j'
+            date_format: 'M j'
             fromto: start_date
             separator: '-'
           group_column: value
