@@ -75,6 +75,12 @@ google_apply:
   dependencies:
     - core/jquery
 
+google_call_to_action:
+  js:
+    js/google-event-calltoaction.js: {}
+  dependencies:
+    - core/jquery
+
 google_progs_home:
   js:
     js/google-event-programs.js: {}
