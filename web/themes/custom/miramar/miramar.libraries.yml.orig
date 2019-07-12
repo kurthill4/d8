@@ -75,6 +75,8 @@ google_apply:
   dependencies:
     - core/jquery
 
+<<<<<<< HEAD
+=======
 google_progs_home:
   js:
     js/google-event-programs.js: {}
@@ -87,6 +89,7 @@ google_progs_page:
   dependencies:
     - core/jquery
 
+>>>>>>> db6fe
 google_newstudent_steps:
   js:
     js/google-event-new-steps.js: {}

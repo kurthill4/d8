@@ -57,10 +57,17 @@
  */
 #}
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
-{{ attach_library('miramar/google_progs_page') }}
+{{ attach_library('miramar/twitter_hack') }}
+{{ attach_library('miramar/google_local') }}
+{{ attach_library('miramar/google_apply') }}
+<<<<<<< HEAD
+=======
+{{ attach_library('miramar/google_progs_home') }}
+>>>>>>> db6fe
+
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
- {% block navbar %}
+  {% block navbar %}
     {%
       set navbar_classes = [
         'navbar',
@@ -68,9 +75,9 @@
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
     %}
-    <header>
-         {{ page.navigation }}
-        {# .btn-navbar is used as the toggle for collapsed navbar content #}
+<div class="spacer" style="height:1px">&nbsp;</div>
+    <header role="landmark">
+        {{ page.navigation }}
 
       {# Navigation (collapsible) #}
       {% if page.navigation_collapsible %}
@@ -79,24 +86,68 @@
     </header>
   {% endblock %}
 {% endif %}
-
 <div id="push" class="">
-<div class="banner notfront">
-  <div class="carousel">
-      <div class="carousel-cell slide-pr"></div>
-</div>
+<section id="hero" role="banner">
+<div class="banner front" role="marquee">
+  <div class="carousel" data-flickity='{ "draggable": false, "wrapAround": true, "autoPlay": 7500, "pauseAutoPlayOnHover": false, "pageDots": false }'>
+    {% for item in home_hero %}
+      <div class="carousel-cell slide-0 front" style="background:url({{ item }}) transparent no-repeat left top local"></div>
+    {% endfor %}
+  </div>
         <div class="banner-content">
           <div class="caption">
-            <h1>Our Programs</h1>
-            <h2>Miramar offers over 150 degrees and certificates. Start Here. Get There!</h2>
+            <!--h1>Success Starts With You</h1>
+            <h2 class="hide-xs">Prepare for university transfer and for high-demand, well-paying careers.</h2-->
+            <h1>Success Starts With Free College!</h1>
+            <h2 class="hide-xs">Qualifying students can enroll for FREE.</h2>
+            <h3><a href="http://www.sdccd.edu/promise" target="_blank"><span class="fa fa-chevron-right" aria-hidden="true"></span>&nbsp;Learn about the San Diego Promise</a></h3>
           </div>
-	</div>
+          <!--div class="get-started">
+            <a href="/futurestudents">
+              <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+              Get Started Now
+            </a>
+          </div>
+          <div class="slide-buttons">
+            <a href="#tour" class="hide-xs">Virtual Tour</a>
+            <a href="https://apply.sdccd.edu" target="_blank">Apply</a>
+            <a href="https://studentweb.sdccd.edu/reg-e" target="_blank">Register</a>
+          </div>
+	</div-->
 </div>
+</section>
+<!--div class="spacer hide-xl" style="height:10px">&nbsp;</div> <!-- Comment this out when the menu is updated -->
+{% if page.call %}
+  {{ page.call }}
+{% endif %}
+
+{% if page.number %}
+  {{ page.number }}
+{% endif %}
+
+{% if page.dates %}
+  {{ page.dates }}
+{% endif %}
+
+{% if page.gallery %}
+  {{ page.gallery }}
+{% endif %}
+
+{% if page.buttons %}
+  {{ page.buttons }}
+{% endif %}
+
+{% if page.mission %}
+  {{ page.mission }}
+{% endif %}
+
+{% if page.news %}
+  {{ page.news }}
+{% endif %}
 
 {# Main #}
 {% block main %}
- <div class="spacer hide-lg" style="height:2em">&nbsp;</div>
- <div role="main" class="main-container {{ container }} js-quickedit-main-content gateway">
+  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">
 
       {# Header #}
