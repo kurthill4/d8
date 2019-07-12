@@ -11,3 +11,10 @@
 	});
 }(jQuery));
 
+(function ($) {
+	$('.call-menu a').each(function() {
+		label = $(this).text();
+		$(this).on('click',{ a: label },function(e){ga('send','event','Call to Action--Nav Bar','Homepage',e.data.a)});
+	});
+}(jQuery));
+

@@ -4,7 +4,7 @@
 
  */
 (function ($) {
-	$('a[href*="apply.sdccd.edu"]').not("div.step-desc a").on('click',function(){ga('send','event','Apply Now','Apply Nonstep',window.location.pathname)});
+	$('a[href*="apply.sdccd.edu"]').not("div.step-desc a").not('.call-menu a').on('click',function(){ga('send','event','Apply Now','Apply Nonstep',window.location.pathname)});
 }(jQuery));
 
 (function ($) {
