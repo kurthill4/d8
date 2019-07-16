@@ -23,7 +23,7 @@ class MiramarCustomAdmissionsCallBlock extends BlockBase {
     $build['admcall']['content'] = [
       '#markup' => '
 	<div class="call">
-	<a href="https://www.sdccd.edu/students/transcripts/" target="_blank">
+	<a href="http://my.sdccd.edu" target="_blank">
 	<span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
 	Transcripts
 	</a>
