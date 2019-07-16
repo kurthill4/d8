@@ -113,6 +113,7 @@ google_grad_steps:
 
 google_tag:
   header: true
+  async: true
   js:
     js/google-tag.js: {}
 
