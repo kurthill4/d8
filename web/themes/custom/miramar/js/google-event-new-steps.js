@@ -18,7 +18,7 @@ var step = [
 	for(var i=0;i<step.length;i++) {
 		url = step[i][0];
 		action = step[i][1];
-		label = 'Future_Students_Step_' + (i + 1);
+		label = 'Future Students Step ' + (i + 1);
 		$('.step-desc a[href*="' + url + '"]').on('click',{a: action,l: label},function(e){ga('send','event',e.data.a,e.data.l);});
 	}
 }(jQuery));

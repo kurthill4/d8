@@ -20,7 +20,7 @@
 (function ($) {
 	$('a.numbers').each(function() {
 		label = $(this).find('img').attr('alt');
-		$(this).on('click',{ a: label },function(e){ga('send','event','Numbers','By_The_Numbers',e.data.a)});
+		$(this).on('click',{ a: label },function(e){ga('send','event','Numbers','By The Numbers',e.data.a)});
 	});
 }(jQuery));
 

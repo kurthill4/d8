@@ -7,6 +7,7 @@ dependencies:
     - field.field.taxonomy_term.campus_resources.field_contact
     - field.field.taxonomy_term.campus_resources.field_contact_2
     - field.field.taxonomy_term.campus_resources.field_contact_3
+    - field.field.taxonomy_term.campus_resources.field_custom_contact_info
     - field.field.taxonomy_term.campus_resources.field_custom_content
     - field.field.taxonomy_term.campus_resources.field_do_not_display
     - field.field.taxonomy_term.campus_resources.field_fax
@@ -36,6 +37,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_custom_contact_info:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_custom_content:
     type: entity_reference_revisions_entity_view
     weight: 3

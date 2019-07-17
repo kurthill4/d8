@@ -13,7 +13,7 @@
 			label = $(this).text();
 		}
 		
-		$(this).on('click',{ a: label },function(e){ga('send','event','Program','Programs_Page',e.data.a)});
+		$(this).on('click',{ a: label },function(e){ga('send','event','Program','Programs Page',e.data.a)});
 	});
 }(jQuery));
 

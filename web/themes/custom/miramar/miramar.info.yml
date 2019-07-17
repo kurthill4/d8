@@ -32,6 +32,7 @@ libraries:
   - 'miramar/global-styling'
   - 'miramar/bootstrap-scripts'
   - 'miramar/google_tag'
+  - 'miramar/google_call_to_action'
   - 'miramar/flickity'
   - 'miramar/vtour'
   - 'miramar/Roboto'

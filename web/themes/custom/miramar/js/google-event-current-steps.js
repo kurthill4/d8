@@ -10,7 +10,7 @@ var step = [
 	['/campus/transfer','Transfer'],
 	['/campus/counseling/orientation','Orientation'],
 	['/campus/counseling','Counseling'],
-	['/campus/studentaffairs/asg','StudentLife'],
+	['/campus/studentaffairs/asg','Student Life'],
 	['/graduating-students','Graduation']
 ];
 
@@ -18,7 +18,7 @@ var step = [
 	for(var i=0;i<step.length;i++) {
 		url = step[i][0];
 		action = step[i][1];
-		label = 'Current_Students_Step_' + (i + 1);
+		label = 'Current Students Step ' + (i + 1);
 		$('.step-desc a[href*="' + url + '"]').on('click',{a: action,l: label},function(e){ga('send','event',e.data.a,e.data.l);});
 	}
 }(jQuery));

@@ -1,0 +1,21 @@
+uuid: 3565a9df-a5a8-4ff0-9db9-170d2c00abf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_custom_contact_info
+    - taxonomy.vocabulary.campus_resources
+  module:
+    - text
+id: taxonomy_term.campus_resources.field_custom_contact_info
+field_name: field_custom_contact_info
+entity_type: taxonomy_term
+bundle: campus_resources
+label: 'Custom Contact Info'
+description: 'This is for off-campus and.or non-District staff contact information only! Use wisely.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
