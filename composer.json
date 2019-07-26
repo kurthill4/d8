@@ -42,6 +42,7 @@
         "drupal/entity_print": "^2.1",
         "drupal/entity_reference_revisions": "^1.2",
         "drupal/entity_reference_views_select": "^1.1",
+        "drupal/entity_ui": "^1.2",
         "drupal/feeds": "3.x@dev",
         "drupal/feeds_ex": "^1.0@alpha",
         "drupal/feeds_ical": "^1.0",
@@ -168,7 +169,8 @@
 		"First step in seconds issue for Datetime fields": "https://www.drupal.org/files/issues/2723159-43.patch",
 		"End date support for Date Range": "https://www.drupal.org/files/issues/2018-05-23/drupal-display-one-date-formatter-2827055-25.patch",
 		"Entity reference fix": "https://www.drupal.org/files/issues/2174633-174.patch",
-		"Fixing Combined Fields search": "https://www.drupal.org/files/issues/combine_fields_filter-1782678-1_0.patch"
+		"Fixing Combined Fields search": "https://www.drupal.org/files/issues/combine_fields_filter-1782678-1_0.patch",
+		"Fixing CKEditor multiple styles": "https://www.drupal.org/files/issues/2018-05-18/allow-multiple-elements-2973706-2.patch"
 		},
 		"drupal/calendar": {"Patching multiday issue for calendar": "https://www.drupal.org/files/issues/2018-04-06/calendar-date_range-2699477-71.patch",
 		"Timezone": "https://www.drupal.org/files/issues/2018-05-09/2604546-33.patch",
