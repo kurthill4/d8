@@ -27,4 +27,5 @@ permissions:
   - 'export tablefield'
   - 'import tablefield'
   - 'rebuild tablefield'
+  - 'use text format full_html'
   - 'use workbench access'
