@@ -34,7 +34,7 @@
  */
 #}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-<div class="top-links" role="navigation">
+<div class="top-links no-print" role="navigation">
   {% block content %}
     {{ content }}
   {% endblock %}

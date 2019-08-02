@@ -10,4 +10,3 @@ permissions:
   - 'access user profiles'
   - 'administer users'
   - 'use text format basic_html'
-  - 'use text format full_html'

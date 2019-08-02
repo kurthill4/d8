@@ -9,6 +9,8 @@ is_admin: null
 permissions:
   - 'create custom_web_page content'
   - 'create document content'
+  - 'delete any document files'
+  - 'delete own document files'
   - 'download any document files'
   - 'edit any custom_web_page content'
   - 'edit any document content'
