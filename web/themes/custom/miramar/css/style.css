@@ -8,6 +8,9 @@ body{
 	background:#dbf3f5;
 }
 
+
+.print-only {display:none}
+
 /*----------------- SVG Image Display ----------------*/
 .svg-outer {
     height:0;
@@ -654,6 +657,8 @@ nav.mobile-nav li:first-child ol li{
   width: 100%;
   height: 100vh;
 	color: #fff;
+-webkit-print-color-adjust: exact;
+
 }
 .slide-0{
  /*	background: transparent no-repeat left top scroll;*/
@@ -661,6 +666,7 @@ nav.mobile-nav li:first-child ol li{
   -moz-background-size: 1280px 853px!important;
   -o-background-size: 1280px 853px!important;
   background-size: 1280px 853px!important;
+-webkit-print-color-adjust: exact;
 }
 .slide-cr{
 	background: transparent url(../images/campus-resources-banner.png) no-repeat left top scroll;
@@ -668,6 +674,7 @@ nav.mobile-nav li:first-child ol li{
   -moz-background-size: 1280px 600px;
   -o-background-size: 1280px 600px;
   background-size: 1280px 600px;
+-webkit-print-color-adjust: exact;
 }
 .slide-dr,.slide-ns{
 	background: transparent url(../images/Directory_Hero.png) no-repeat left top scroll;
@@ -675,6 +682,7 @@ nav.mobile-nav li:first-child ol li{
   -moz-background-size: 1280px 600px;
   -o-background-size: 1280px 600px;
   background-size: 1280px 600px;
+-webkit-print-color-adjust: exact;
 }
 .slide-ns{
 	background: transparent url(../images/student-banner.jpg) no-repeat left top scroll;
@@ -682,6 +690,7 @@ nav.mobile-nav li:first-child ol li{
   -moz-background-size: 1280px 600px;
   -o-background-size: 1280px 600px;
   background-size: 1280px 600px;
+-webkit-print-color-adjust: exact;
 }
 .slide-pa{
 	background: transparent url(../images/personas-path-banner.jpg) no-repeat left top scroll;
@@ -689,6 +698,7 @@ nav.mobile-nav li:first-child ol li{
   -moz-background-size: 1280px 600px;
   -o-background-size: 1280px 600px;
   background-size: 1280px 600px;
+-webkit-print-color-adjust: exact;
 }
 .slide-pr, .slide-gr {
 	background: transparent url(../images/program-banner.jpg) no-repeat left top scroll;
@@ -696,6 +706,7 @@ nav.mobile-nav li:first-child ol li{
   -moz-background-size: 1280px 600px;
   -o-background-size: 1280px 600px;
   background-size: 1280px 600px;
+-webkit-print-color-adjust: exact;
 }
 .slide-cd {
 	background: transparent url(../images/calendar-banner.jpg) no-repeat left top scroll;
@@ -703,6 +714,7 @@ nav.mobile-nav li:first-child ol li{
   -moz-background-size: 1280px 600px;
   -o-background-size: 1280px 600px;
   background-size: 1280px 600px;
+-webkit-print-color-adjust: exact;
 }
 
 .slide-sl {
@@ -711,6 +723,7 @@ nav.mobile-nav li:first-child ol li{
   -moz-background-size: 1280px 600px;
   -o-background-size: 1280px 600px;
   background-size: 1280px 600px;
+-webkit-print-color-adjust: exact;
 }
 
 
@@ -720,6 +733,7 @@ nav.mobile-nav li:first-child ol li{
   -moz-background-size: 1280px 600px;
   -o-background-size: 1280px 600px;
   background-size: 1280px 600px;
+-webkit-print-color-adjust: exact;
 }
 
 .slide-campaign {
@@ -744,6 +758,7 @@ nav.mobile-nav li:first-child ol li{
   -moz-background-size: 100% auto;
   -o-background-size: 100% auto;
   background-size: 100% auto;
+-webkit-print-color-adjust: exact;
 }
 
 
@@ -3380,3 +3395,4 @@ svg {
     right: -50px;
     text-align: center;
 }
+

@@ -37,13 +37,11 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_custom_contact_info:
+  entity_print_view_pdf:
     weight: 4
-    label: above
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: text_default
-    region: content
   field_custom_content:
     type: entity_reference_revisions_entity_view
     weight: 3
@@ -72,12 +70,12 @@ content:
     region: content
 hidden:
   entity_print_view_epub: true
-  entity_print_view_pdf: true
   entity_print_view_word_docx: true
   field_administrative_area: true
   field_contact: true
   field_contact_2: true
   field_contact_3: true
+  field_custom_contact_info: true
   field_do_not_display: true
   field_fax: true
   field_hours: true

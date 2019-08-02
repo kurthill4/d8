@@ -70,6 +70,7 @@
         "drupal/paragraphs_previewer": "1.x-dev",
         "drupal/pathauto": "^1.0@RC",
         "drupal/php": "^1.0@beta",
+        "drupal/printable": "^1.1",
         "drupal/private_taxonomy": "^2.2",
         "drupal/publishcontent": "^1.0",
         "drupal/redirect": "^1.0@alpha",
@@ -101,6 +102,7 @@
         "drupal/youtubechannel": "^3.0",
         "drush/drush": "~9.0",
         "kenwheeler/slick": "^1.6",
+        "mikehaertl/phpwkhtmltopdf": "^2.4",
         "oomphinc/composer-installers-extender": "^1.1",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
