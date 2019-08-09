@@ -12,14 +12,13 @@ body{
 .print-only {display:none}
 
 /*----------------- SVG Image Display ----------------*/
-/*.svg-outer {
-    height:0;
-    width:100%;
-    padding-top:63.63%; /* 350px/550px 
-    position: relative;
+.region-header .svg-outer {
+    display:block;
+    clear:both;
+    padding-top:0.5em;
 }
 
-svg {
+/*svg {
     height: 80%;
     display:block;
     width: 80%;
@@ -32,7 +31,11 @@ svg {
 
 /*---------------*/
 
-
+/*.region-header {
+	display:block;
+    clear:both;
+	margin-top:0.5em;
+}*/
 .noshow,div.author {
 	display:none!important;
 }
@@ -2729,6 +2732,7 @@ section#hero {max-height:602px!important}
 
 	 @media only screen and (max-width : 992px) {
 		.body {max-width:960px;}
+.region-header {margin-top:1em}
 		#views-bootstrap-committee-meetings-page-1 .row {
 			margin:2em auto;
 		}
