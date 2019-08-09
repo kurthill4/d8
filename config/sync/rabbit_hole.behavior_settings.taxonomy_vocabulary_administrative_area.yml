@@ -1,0 +1,11 @@
+uuid: 755c31e2-48a1-4c2d-9fc1-97477c04b79a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.administrative_area
+id: taxonomy_vocabulary_administrative_area
+action: access_denied
+allow_override: 1
+redirect: ''
+redirect_code: 301

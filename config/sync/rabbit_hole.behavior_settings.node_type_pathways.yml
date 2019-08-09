@@ -1,0 +1,11 @@
+uuid: 1ac518d2-2db6-44b0-aaf0-767d87ce83a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.pathways
+id: node_type_pathways
+action: access_denied
+allow_override: 1
+redirect: ''
+redirect_code: 301

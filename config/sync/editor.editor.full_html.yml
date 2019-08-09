@@ -68,7 +68,7 @@ settings:
             - PasteFromWord
   plugins:
     stylescombo:
-      styles: "p,div,span.float-left|Image inline left\r\np,div,span.float-right|Image inline right\r\n"
+      styles: "p.float-left|Image inline left\r\np.float-right|Image inline right\r\n"
     language:
       language_list: un
     linkit:

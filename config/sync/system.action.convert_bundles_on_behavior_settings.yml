@@ -1,0 +1,11 @@
+uuid: 4331f4fe-975e-4392-85bb-a5b1d6eceffb
+langcode: en
+status: true
+dependencies:
+  module:
+    - convert_bundles
+id: convert_bundles_on_behavior_settings
+label: 'Convert Rabbit hole settings Entity Bundles'
+type: behavior_settings
+plugin: convert_bundles_action_base
+configuration: {  }

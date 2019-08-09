@@ -1,0 +1,11 @@
+uuid: a25285e5-d278-4493-8f48-7f26dc5e8c21
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.administrative_area
+id: taxonomy_term.administrative_area
+target_entity_type_id: taxonomy_term
+target_bundle: administrative_area
+default_langcode: site_default
+language_alterable: false

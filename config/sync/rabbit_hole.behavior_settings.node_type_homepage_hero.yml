@@ -1,0 +1,11 @@
+uuid: 1139736c-3f04-43cb-82f1-1eb23648ebcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.homepage_hero
+id: node_type_homepage_hero
+action: page_redirect
+allow_override: 1
+redirect: /
+redirect_code: 302

@@ -1,0 +1,21 @@
+uuid: fd537469-83ee-4257-ae2d-ec27539eb0ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: gimHnqWBi-ZWU-0Cmx_2gtMjN1_32kHWQLUCRFygeH8
+id: node.field_review_notes
+field_name: field_review_notes
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
