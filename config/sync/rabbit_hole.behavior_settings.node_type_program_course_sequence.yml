@@ -5,7 +5,7 @@ dependencies:
   config:
     - node.type.program_course_sequence
 id: node_type_program_course_sequence
-action: access_denied
+action: page_redirect
 allow_override: 1
-redirect: ''
+redirect: /programs
 redirect_code: 301

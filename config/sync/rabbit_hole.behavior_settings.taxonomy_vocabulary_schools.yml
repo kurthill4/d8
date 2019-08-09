@@ -1,0 +1,11 @@
+uuid: bfaedda6-3a03-4763-84af-bc6501b0a37b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.schools
+id: taxonomy_vocabulary_schools
+action: page_redirect
+allow_override: 1
+redirect: /campus/schools
+redirect_code: 301

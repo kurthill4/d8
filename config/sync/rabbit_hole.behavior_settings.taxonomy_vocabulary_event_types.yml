@@ -5,7 +5,7 @@ dependencies:
   config:
     - taxonomy.vocabulary.event_types
 id: taxonomy_vocabulary_event_types
-action: access_denied
+action: page_redirect
 allow_override: 1
-redirect: ''
+redirect: /calendar
 redirect_code: 301

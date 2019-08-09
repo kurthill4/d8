@@ -1,10 +1,10 @@
-uuid: 1ac518d2-2db6-44b0-aaf0-767d87ce83a8
+uuid: 2cbef69d-8d2b-457c-9c00-dbe9d60dab11
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.pathways
-id: node_type_pathways
+    - node.type.new_student_step
+id: node_type_new_student_step
 action: page_redirect
 allow_override: 1
 redirect: /getstarted
