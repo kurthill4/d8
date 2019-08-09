@@ -5,7 +5,7 @@ dependencies:
   config:
     - taxonomy.vocabulary.pathways
 id: taxonomy_vocabulary_pathways
-action: page_not_found
+action: page_redirect
 allow_override: 1
-redirect: ''
+redirect: /getstarted
 redirect_code: 301
