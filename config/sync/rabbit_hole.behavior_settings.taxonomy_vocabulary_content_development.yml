@@ -1,0 +1,11 @@
+uuid: cd43db80-5033-4354-ab0a-7091f9d8db6f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: DgerX1WLi5w-5OHUW_UxtyVqfLuEVZ2pOpfhCPOr58E
+id: taxonomy_vocabulary_content_development
+action: page_redirect
+allow_override: 1
+redirect: '/admin/content/audit?content_status=[term:tid]'
+redirect_code: 301

@@ -1,0 +1,11 @@
+uuid: 13328184-3f99-4cae-ac72-ed47c83d4027
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.jetsnews
+id: node_type_jetsnews
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301

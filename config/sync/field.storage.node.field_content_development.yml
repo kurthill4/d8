@@ -1,0 +1,22 @@
+uuid: 63c57edc-8bd7-4271-b85c-106d6af5c353
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+_core:
+  default_config_hash: 40UEkc-DmG6yTFl6k-aimTpOSG5jOeNv96DPnDwixO4
+id: node.field_content_development
+field_name: field_content_development
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

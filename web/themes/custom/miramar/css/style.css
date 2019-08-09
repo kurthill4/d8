@@ -12,10 +12,10 @@ body{
 .print-only {display:none}
 
 /*----------------- SVG Image Display ----------------*/
-.svg-outer {
+/*.svg-outer {
     height:0;
     width:100%;
-    padding-top:63.63%; /* 350px/550px */
+    padding-top:63.63%; /* 350px/550px 
     position: relative;
 }
 
@@ -28,7 +28,7 @@ svg {
     left: 50%;
    -webkit-transform: translateX(-50%);
    transform: translateX(-50%);
-}
+}*/
 
 /*---------------*/
 
@@ -99,6 +99,8 @@ ul.noindent,ul.noindent li {
 	padding:0;
 	margin: 0;
 }
+
+.region-content a {font-weight:bold}
 
 .course-seq .views-view-grid {display:table!important;padding:0;}
 .course-seq .views-view-grid * {float:none!important;}

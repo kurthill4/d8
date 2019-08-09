@@ -1,0 +1,11 @@
+uuid: 4936e419-8822-483e-bf1b-c871b696cc64
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.employment_type
+id: taxonomy_vocabulary_employment_type
+action: access_denied
+allow_override: 1
+redirect: ''
+redirect_code: 301

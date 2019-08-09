@@ -5,5 +5,5 @@ dependencies: {  }
 name: 'Administrative Area'
 vid: administrative_area
 description: 'Administrative sections for content access'
-hierarchy: 1
+hierarchy: 0
 weight: 0
