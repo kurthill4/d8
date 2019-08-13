@@ -2922,6 +2922,10 @@ section#hero {max-height:602px!important}
 
  	 /* Small Devices, Tablets */
 	 @media only screen and (max-width:800px) {
+.svg-outer {
+	margin-top:1em;
+}
+
 svg {
     height: 100%;
     width: 100%;
