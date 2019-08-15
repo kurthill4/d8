@@ -665,6 +665,7 @@ nav.mobile-nav li:first-child ol li{
 -webkit-print-color-adjust: exact;
 
 }
+
 .slide-0{
  /*	background: transparent no-repeat left top scroll;*/
  -webkit-background-size: 1280 px 853px!important;
@@ -928,10 +929,13 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 .region-call,.region-call > nav {width:100%;padding:0;margin:0}
 .call,.callsmall {width:100%}
 .callsmall {margin-top:0.9em}
-.menu-get-started {display:table;width:95%;height:100%;margin:0 auto}
+#menu-get-started-mobile {margin-top:1.5vh;clear:both}
+.menu-get-started {display:table;width:95%;height:100%;margin:0 auto; table-layout:fixed}
+.menu-get-started-mobile {display:table;width:100%;height:100%;margin:0; border-collapse:collapse}
 .menu-content-call {display:table;width:75%;height:100%;margin:1em auto;border-spacing:1em}
-.call-menu {display:table-row;padding:0;margin:0 0 0 10%;}
-.callbar {display:table-cell;width:20%;padding:0;margin:0;}
+.call-menu,.call-mobile {display:table-row;padding:0;}
+.callbar {display:table-cell;width:20%;padding:0 0.25em 0 0;margin:0;}
+.callbar-mobile {display:table-cell;width:50%;padding:0.5em 0;margin:0;}
 .call a{
 	background: #1d2451;
 	width:inherit;
@@ -945,8 +949,10 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 }
 
 .callsmall a {display:inline-block;width:inherit;font-size: 1.33em;padding: 0 50px 0 0;}
-.callbar a {width:100%;height:100%;font-size:1em;padding:0 25px 0 0;margin:0;}
-.callsmall a,.callbar a {
+.call-menu .callbar a {width:100%;height:100%;font-size:1.2vw;padding:0;margin:0;}
+.call-mobile .callbar a,.callbar-mobile a {width:100%;height:100%;font-size:1.25em;padding:0;margin:0;}
+
+.callsmall a,.callbar a,.callbar-mobile a  {
 	display:inline-block;
  	background: #1d2451;
 	color: #fff;
@@ -955,26 +961,39 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	text-transform: uppercase;
 }
 
-.call a:hover,.callsmall a:hover,.callbar a:hover {
+.callbar {height:100%!important}
+.callbar-mobile {height:100%!important}
+
+.call a:hover,.callsmall a:hover,.callbar a:hover,.callbar-mobile a:hover {
 	text-decoration: none;
 	background: #a22130;
 }
-.call span,.callsmall a span,.callbar span { 
+.call span,.callsmall a span,.call-menu .callbar span { 
 	margin-right: 15px;
 	height:100%!important;
 	background: #a22130;
 	display: inline-block;
 }
+
+.call-mobile .callbar-mobile span { 
+	margin-right: 0.5em;
+	height:100%!important;
+	background: #a22130;
+	display: inline-block;
+}
+
+
 .call span,.callsmall a span {padding: 10px 20px;}
-.callbar a span {padding: 10px 15px;font-size:1.25em!important}
+.call-menu .callbar a span {padding: 10px 15px;font-size:1.25em!important;}
+.call-mobile .callbar a span {padding: 0.2em 0.25em;font-size:1em!important;}
 .call a:hover span,.callsmall a:hover span, .menu-content-call .callbar a:hover span {
 	background: #1d2451;
 }
 
-.call-mobile,.call-mobile div {
+/*.call-mobile,.call-mobile div {
 	padding:0!important;
 	margin:0!important;
-}
+}*/
 
 .slide-buttons{
 	margin: 15px 0 0 5px;
@@ -2493,6 +2512,8 @@ td.resources-students {
 	.red-box{
 		min-height: 326px;
 	}
+.call-menu .callbar a {font-size:1.25em!important;}
+
 }
 
 	 @media only screen and (max-width : 1350px) {
@@ -2578,12 +2599,26 @@ nav.main-menu {padding-left:0;}
 	 }
 
 	 /* Medium Devices, Desktops */
+@media only screen and (min-width:993px) {
+#menu-get-started {display:block!important}
+#menu-get-started-mobile {display:none!important}
+
+}
+@media only screen and (max-width:992px) {
+#menu-get-started {display:none!important}
+#menu-get-started-mobile {display:block!important;}
+
+}
+
+
 	 @media only screen and (max-width : 1024px) {
+
 .show-ipad {display:default}
-		section#hero {max-height:590px}
+		section#hero {max-height:590px;overflow:hidden}
 .front .caption {
 	width: 500px;
 }
+
 .notfront .caption,.custom .caption {
 	width: 450px;
 }
@@ -2732,6 +2767,7 @@ section#hero {max-height:602px!important}
 
 	 @media only screen and (max-width : 992px) {
 		.body {max-width:960px;}
+
 .region-header {margin-top:1em}
 		#views-bootstrap-committee-meetings-page-1 .row {
 			margin:2em auto;
@@ -2900,8 +2936,8 @@ section#hero {max-height:602px!important}
 		*.hide-title {display:block!important}
 	}*/
 
-	 @media only screen and (min-width:801px) {
-		 .hide-lg,.getstarted-mobile {
+	 @media only screen and (min-width:800px) {
+		 .hide-lg {
 			 display: none!important;
 		 }
 		.social-media,copyright {width:75%;margin:0 auto}
