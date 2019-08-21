@@ -1,4 +1,4 @@
-uuid: 70b3e46b-fe5a-4376-9001-d2735512e93b
+uuid: e3682bd0-b9c0-4210-b7c4-d470e1463c65
 langcode: en
 status: true
 dependencies:
@@ -10,10 +10,10 @@ dependencies:
     - system
   theme:
     - miramar
-id: integratedplanningframework_2
+id: integratedplanningframework_3
 theme: miramar
-region: header
-weight: 0
+region: content
+weight: -31
 provider: null
 plugin: 'block_content:7c1141b1-e114-48fe-9461-5b6af1cc6a5b'
 settings:
@@ -32,6 +32,6 @@ visibility:
     context_mapping: {  }
   request_path:
     id: request_path
-    pages: "/campus/planning/framework2\r\n/hidden/student-success-framework\r\n/hidden/student-success-framework-2"
+    pages: /hidden/student-success-framework
     negate: false
     context_mapping: {  }

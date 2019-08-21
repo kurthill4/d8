@@ -11,7 +11,7 @@ dependencies:
 id: calendarlegend
 theme: miramar
 region: content
-weight: -28
+weight: -29
 provider: null
 plugin: calendar_legend_block
 settings:

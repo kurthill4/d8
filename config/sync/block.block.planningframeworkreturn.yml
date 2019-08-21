@@ -1,24 +1,24 @@
-uuid: 70b3e46b-fe5a-4376-9001-d2735512e93b
+uuid: 76f518d1-7997-4b4b-b05f-0b88d46d7b78
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:7c1141b1-e114-48fe-9461-5b6af1cc6a5b'
+    - 'block_content:basic:59972475-0f11-454a-9a73-3ac7bacf8634'
   module:
     - block_content
     - block_visibility_groups
     - system
   theme:
     - miramar
-id: integratedplanningframework_2
+id: planningframeworkreturn
 theme: miramar
 region: header
 weight: 0
 provider: null
-plugin: 'block_content:7c1141b1-e114-48fe-9461-5b6af1cc6a5b'
+plugin: 'block_content:59972475-0f11-454a-9a73-3ac7bacf8634'
 settings:
-  id: 'block_content:7c1141b1-e114-48fe-9461-5b6af1cc6a5b'
-  label: 'Integrated Planning Framework'
+  id: 'block_content:59972475-0f11-454a-9a73-3ac7bacf8634'
+  label: 'Planning Framework Return'
   provider: block_content
   label_display: '0'
   status: true
@@ -32,6 +32,6 @@ visibility:
     context_mapping: {  }
   request_path:
     id: request_path
-    pages: "/campus/planning/framework2\r\n/hidden/student-success-framework\r\n/hidden/student-success-framework-2"
+    pages: /hidden/student-success-framework
     negate: false
     context_mapping: {  }
