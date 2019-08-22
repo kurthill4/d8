@@ -17,6 +17,8 @@ body{
     padding-top:0.5em;
 }
 
+figure a:hover img {opacity:0.5;}
+
 svg {width:100%;}
 
 /*svg {
