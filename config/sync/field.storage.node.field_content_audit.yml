@@ -1,0 +1,22 @@
+uuid: 96615f44-11ab-4953-8d37-76a8c1b1cd26
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+_core:
+  default_config_hash: PxV0xYM3A7jmbQh7ar1BHBeisvIoSn9Xwjs9ub9d8R8
+id: node.field_content_audit
+field_name: field_content_audit
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

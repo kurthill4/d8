@@ -1,0 +1,11 @@
+uuid: 383457f5-86f4-4d5c-8a43-140352fae7d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.program_course_sequence
+id: node.program_course_sequence
+target_entity_type_id: node
+target_bundle: program_course_sequence
+default_langcode: site_default
+language_alterable: false

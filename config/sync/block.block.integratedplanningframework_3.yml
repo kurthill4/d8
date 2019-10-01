@@ -1,0 +1,37 @@
+uuid: e3682bd0-b9c0-4210-b7c4-d470e1463c65
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7c1141b1-e114-48fe-9461-5b6af1cc6a5b'
+  module:
+    - block_content
+    - block_visibility_groups
+    - system
+  theme:
+    - miramar
+id: integratedplanningframework_3
+theme: miramar
+region: content
+weight: -31
+provider: null
+plugin: 'block_content:7c1141b1-e114-48fe-9461-5b6af1cc6a5b'
+settings:
+  id: 'block_content:7c1141b1-e114-48fe-9461-5b6af1cc6a5b'
+  label: 'Integrated Planning Framework'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /hidden/student-success-framework
+    negate: false
+    context_mapping: {  }

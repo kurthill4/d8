@@ -1,0 +1,11 @@
+uuid: 9eaa7018-14ef-4797-8019-aea23b9b2893
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.degree
+id: node_type_degree
+action: page_redirect
+allow_override: 1
+redirect: /degrees
+redirect_code: 301

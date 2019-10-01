@@ -1,0 +1,11 @@
+uuid: f46718bc-90da-4302-90b6-4b1a092cd919
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.pathways
+id: taxonomy_vocabulary_pathways
+action: page_redirect
+allow_override: 1
+redirect: /getstarted
+redirect_code: 301

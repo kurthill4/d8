@@ -67,10 +67,10 @@ settings:
             - Paste
             - PasteFromWord
   plugins:
+    stylescombo:
+      styles: "p.float-left|Image inline left\r\np.float-right|Image inline right\r\n"
     language:
       language_list: un
-    stylescombo:
-      styles: ''
     linkit:
       linkit_profile: default
     video_embed:

@@ -1,0 +1,22 @@
+@page {
+margin:.25in;
+padding:0;
+}
+
+@media print {
+	html, body {
+	width:100%;
+	height:auto;
+	margin:auto;
+	padding:0;
+	}
+	a[href]:after {
+		content: none !important;
+	}
+	*.hide-lg,*.hide-xl,.banner,.no-print {
+		display:none!important;
+	}
+	.print-only {display:block!important;}
+	.print-logo {width:50%;text-align:center}
+
+}

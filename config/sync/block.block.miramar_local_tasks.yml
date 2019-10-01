@@ -9,7 +9,7 @@ _core:
 id: miramar_local_tasks
 theme: miramar
 region: content
-weight: -33
+weight: -34
 provider: null
 plugin: local_tasks_block
 settings:

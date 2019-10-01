@@ -1,0 +1,37 @@
+uuid: c211f0f1-fb69-44a8-8eea-f6c94db56888
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7c1141b1-e114-48fe-9461-5b6af1cc6a5b'
+  module:
+    - block_content
+    - block_visibility_groups
+    - system
+  theme:
+    - miramar
+id: integratedplanningframework
+theme: miramar
+region: below_content
+weight: 0
+provider: null
+plugin: 'block_content:7c1141b1-e114-48fe-9461-5b6af1cc6a5b'
+settings:
+  id: 'block_content:7c1141b1-e114-48fe-9461-5b6af1cc6a5b'
+  label: 'Integrated Planning Framework'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /campus/planning/framework
+    negate: false
+    context_mapping: {  }

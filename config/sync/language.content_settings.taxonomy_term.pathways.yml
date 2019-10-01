@@ -1,0 +1,11 @@
+uuid: d5df073b-5952-46ca-9b24-fd5b4177cf49
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.pathways
+id: taxonomy_term.pathways
+target_entity_type_id: taxonomy_term
+target_bundle: pathways
+default_langcode: site_default
+language_alterable: false

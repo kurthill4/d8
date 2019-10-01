@@ -1,0 +1,11 @@
+uuid: a7c46078-c307-4f4d-8384-1d9a50bb83d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.degree
+id: node.degree
+target_entity_type_id: node
+target_bundle: degree
+default_langcode: site_default
+language_alterable: false

@@ -8,6 +8,8 @@ weight: 22
 is_admin: null
 permissions:
   - 'create custom_web_page content'
+  - 'delete any document files'
+  - 'delete own document files'
   - 'edit any custom_web_page content'
   - 'edit terms in campus_resources'
   - 'use text format full_html'

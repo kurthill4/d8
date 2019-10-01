@@ -1,0 +1,11 @@
+uuid: c122b3dc-28bf-45fa-bc3c-cb819e6da510
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.new_student_step
+id: node.new_student_step
+target_entity_type_id: node
+target_bundle: new_student_step
+default_langcode: site_default
+language_alterable: false

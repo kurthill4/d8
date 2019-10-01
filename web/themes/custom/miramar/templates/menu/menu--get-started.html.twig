@@ -26,6 +26,7 @@
 {% macro menu_links(items, attributes, menu_level) %}
   {% import _self as menus %}
   {% if items %}
+{#
 <div id="menu-get-started">
     <div class="call-mobile hide-lg">
     <div class="form-group js-viewsJumpMenu">
@@ -45,24 +46,51 @@
     </select>
     </div>
     </div>
-<div class="menu-get-started hide-xs">
-    <div class="call-menu">
-    {% for item in items %}
-      {%
-        set item_classes = [
-          item.is_expanded? 'expanded',
-          item.is_expanded and menu_level == 0 ? 'dropdown',
-          item.in_active_trail ? 'active',
-        ]
-      %} 
-  
-	<div class="callbar">
-	<a href="{{ item.url }}"><span><i class="fa fa-road" aria-hidden="true"></i>&nbsp;</span>
-{{ item.title }}</a>
+#}
+<div id="menu-get-started-mobile">		{# Container #}
+<div style="clear: both;"></div>
+	<div class="menu-get-started-mobile">		{# "Table" #}
+		<div class="call-mobile">	{# Row #}
+		{% set numItems = 0 %}
+		{% for item in items %}
+			{%
+			set item_classes = [
+			  item.is_expanded? 'expanded',
+			  item.is_expanded and menu_level == 0 ? 'dropdown',
+			  item.in_active_trail ? 'active',
+			]
+			%} 
+			{% if numItems == 2 %}
+				</div>
+				<div class="call-mobile">
+			{% endif %}
+			{% if item.title != 'Virtual Tour' %}
+				<div class="callbar-mobile" {{ (numItems >= 2) ? 'style="border-top:0.25em solid white"' }}>
+				<a href="{{ item.url }}"><span><i class="fa fa-road" aria-hidden="true"></i>&nbsp;</span>{{ item.title }}</a>
+				</div>
+				{% set numItems = numItems + 1 %}
+			{% endif %}
+		{% endfor %}
+		</div>
 	</div>
-    {% endfor %}
-    </div>
 </div>
-</div> 
+<div id="menu-get-started">
+	<div class="menu-get-started">
+	    <div class="call-menu">
+	    {% for item in items %}
+	      {%
+		set item_classes = [
+		  item.is_expanded? 'expanded',
+		  item.is_expanded and menu_level == 0 ? 'dropdown',
+		  item.in_active_trail ? 'active',
+		]
+	      %} 
+		<div class="callbar">
+		<a href="{{ item.url }}"><span><i class="fa fa-road" aria-hidden="true"></i>&nbsp;</span>{{ item.title }}</a>
+		</div>
+	    {% endfor %}
+	    </div>
+	</div>
+</div>
   {% endif %}
 {% endmacro %}

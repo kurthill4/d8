@@ -1,0 +1,11 @@
+uuid: 781d8103-df72-41e4-8b87-d2c0015b79f9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: DoRkeMqLrJhybBjtBQDeScYtsG9DTSj_Bp_kKjQ2dWA
+name: 'Content development'
+vid: content_development
+description: 'Use <em>Content development</em> to assign a status during content creation. <em>Note: Terms redirected via Rabbit hole.</em>'
+hierarchy: 0
+weight: 0
