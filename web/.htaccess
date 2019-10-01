@@ -207,14 +207,11 @@ AddEncoding gzip svgz
 
 <IfModule mod_rewrite.c>
   # Custom Redirects
-  # Redirect 302 /library http://www1.sdmiramar.edu/library
   Redirect 302 /campus/library /library
   Redirect 302 /campus/av http://www.sdmiramar.edu/library/av
-  Redirect 301 /campus/asg http://www.sdmiramarasg.com/
   Redirect 301 /campus/campus-police http://police.sdccd.edu
   Redirect 301 /campus/bookstore http://www.bookstore.sdccd.edu/miramar
   Redirect 301 /campus/athletics http://www.miramarjets.com
-  Redirect 301 /campus/as http://www.sdmiramarasg.com
   Redirect 302 /academics/ilc /campus/labs/ilc?surl=academics/ilc
   Redirect 302 /dsps /campus/dsps?surl=dsps
   Redirect 302 /campus/aquatics-center https://www.sandiego.gov/park-and-recreation/centers/aquatics/nedbaumer
