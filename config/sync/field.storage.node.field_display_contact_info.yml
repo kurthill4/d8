@@ -1,0 +1,18 @@
+uuid: 674c9c05-df6f-468a-9efb-375a743612c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_display_contact_info
+field_name: field_display_contact_info
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

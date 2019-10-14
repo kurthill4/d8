@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.document.field_associated_committee
     - field.field.node.document.field_associated_department
     - field.field.node.document.field_associated_faculty_member
+    - field.field.node.document.field_associated_page
     - field.field.node.document.field_associated_program
     - field.field.node.document.field_date_uploaded
     - field.field.node.document.field_link_to_your_file
@@ -70,6 +71,15 @@ content:
     region: content
   field_associated_faculty_member:
     weight: 8
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_associated_page:
+    weight: 122
     settings:
       match_operator: CONTAINS
       size: 60

@@ -1,0 +1,32 @@
+uuid: 1d604bd7-69cb-453e-887b-b5a32d7bf444
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - miramarcustom
+    - system
+  theme:
+    - miramar
+id: planningpagecalltoaction
+theme: miramar
+region: highlighted
+weight: 0
+provider: null
+plugin: miramar_plancall
+settings:
+  id: miramar_plancall
+  label: 'Planning Page Call to Action'
+  provider: miramarcustom
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /hidden/planning/framework/fullsize
+    negate: false
+    context_mapping: {  }

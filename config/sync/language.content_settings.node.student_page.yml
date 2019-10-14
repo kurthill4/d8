@@ -1,0 +1,11 @@
+uuid: 2dc3a3d9-ce3c-45e2-ac42-f9d832c545fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.student_page
+id: node.student_page
+target_entity_type_id: node
+target_bundle: student_page
+default_langcode: site_default
+language_alterable: false

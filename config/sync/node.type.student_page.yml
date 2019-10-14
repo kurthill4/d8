@@ -1,0 +1,18 @@
+uuid: 9283a75f-ecd8-4b54-a620-680b2a8be0b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Student Page'
+type: student_page
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

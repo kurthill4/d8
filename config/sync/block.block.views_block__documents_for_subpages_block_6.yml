@@ -1,0 +1,39 @@
+uuid: c3955a75-9420-4158-a02d-43d0762f9d5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.documents_for_subpages
+  module:
+    - block_visibility_groups
+    - node
+    - views
+  theme:
+    - miramar
+id: views_block__documents_for_subpages_block_6
+theme: miramar
+region: sidebar_second
+weight: -5
+provider: null
+plugin: 'views_block:documents_for_subpages-block_6'
+settings:
+  id: 'views_block:documents_for_subpages-block_6'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      custom_web_page: custom_web_page
+      student_page: student_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

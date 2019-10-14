@@ -1,0 +1,155 @@
+uuid: 1647b024-82b2-412d-b70d-7cd14e9719f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.student_page.body
+    - field.field.node.student_page.field_contact
+    - field.field.node.student_page.field_display_contact_info
+    - field.field.node.student_page.field_email
+    - field.field.node.student_page.field_first_name
+    - field.field.node.student_page.field_last_name
+    - field.field.node.student_page.field_phone
+    - node.type.student_page
+  module:
+    - field_group
+    - path
+    - telephone
+    - text
+third_party_settings:
+  field_group:
+    group_contact_information:
+      children:
+        - field_display_contact_info
+        - field_contact
+        - group_alternate_contact
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Contact Information (optional)'
+    group_alternate_contact:
+      children:
+        - field_email
+        - field_first_name
+        - field_last_name
+        - field_phone
+      parent_name: group_contact_information
+      weight: 18
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: 'This is optional if you don''t want a College staff member as contact person or if you want a different email'
+        required_fields: true
+      label: 'Alternate Contact'
+id: node.student_page.default
+targetEntityType: node
+bundle: student_page
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_contact:
+    weight: 17
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_display_contact_info:
+    weight: 16
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_email:
+    weight: 19
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_first_name:
+    weight: 20
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_last_name:
+    weight: 21
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_phone:
+    weight: 22
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  promote: true
+  sticky: true

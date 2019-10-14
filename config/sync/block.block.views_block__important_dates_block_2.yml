@@ -13,7 +13,7 @@ dependencies:
 id: views_block__important_dates_block_2
 theme: miramar
 region: sidebar_second
-weight: -6
+weight: -9
 provider: null
 plugin: 'views_block:important_dates-block_2'
 settings:

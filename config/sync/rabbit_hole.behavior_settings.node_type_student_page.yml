@@ -1,0 +1,11 @@
+uuid: 1f33919e-18e2-4471-8eae-bf3bd3a4d7cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.student_page
+id: node_type_student_page
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301

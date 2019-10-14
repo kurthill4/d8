@@ -90,7 +90,7 @@ function miramar_field_widget_daterange_default_form_alter(&$element, FormStateI
 }
 /*----------------------------------
 function miramar_form_search_block_form_alter(&$form, &$form_state, $form_id) {
-    $form['#action'] = '/find';
+    //$form['#action'] = '/find';
 }
 */
 

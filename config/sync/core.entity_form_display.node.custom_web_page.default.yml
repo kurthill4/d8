@@ -31,12 +31,12 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 9
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   field_administrative_area:
-    weight: 122
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -89,16 +89,9 @@ content:
       default_paragraph_type: _none
     third_party_settings: {  }
     region: content
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   path:
     type: path
-    weight: 7
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -106,7 +99,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 121
+    weight: 11
     third_party_settings: {  }
     region: content
   title:
@@ -119,7 +112,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 8
+    weight: 7
     region: content
     settings:
       match_operator: CONTAINS
@@ -127,10 +120,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 50
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  langcode: true
   promote: true
   sticky: true

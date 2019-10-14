@@ -32,6 +32,6 @@ visibility:
     context_mapping: {  }
   request_path:
     id: request_path
-    pages: /hidden/student-success-framework
+    pages: /hidden/planning/framework/fullsize2
     negate: false
     context_mapping: {  }
