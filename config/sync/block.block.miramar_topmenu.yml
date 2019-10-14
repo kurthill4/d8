@@ -11,7 +11,7 @@ dependencies:
 id: miramar_topmenu
 theme: miramar
 region: navigation
-weight: -12
+weight: -38
 provider: null
 plugin: 'system_menu_block:top-menu'
 settings:
