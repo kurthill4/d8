@@ -2380,13 +2380,15 @@ background: #a22130;
     color: #fff;
     margin-left: -15px;
 }
-.mobile-search {position:static; margin:1em 0;padding:0!important}
+.mobile-search,
+.mobile-search .search-form,
+.main-menu .search-block-form  {position:static; width:75%!important;margin:1em 0;padding:0!important}
 .mobile-search .btn {margin:0!important}
 #block-searchform-4 {margin:1em 0;padding:0!important}
 
 /*.mobile-search form {text-align:center;}*/
-.mobile-search input#edit-keys--2 {
-	width:80%!important;
+.mobile-search input[type="text"] {
+	width:50%!important;
 	margin: 0 auto;
 }
 /*
