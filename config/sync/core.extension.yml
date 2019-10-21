@@ -85,7 +85,6 @@ module:
   paragraphs_edit: 0
   paragraphs_previewer: 0
   path: 0
-  pdf_api: 0
   quickedit: 0
   rabbit_hole: 0
   rdf: 0
