@@ -940,9 +940,9 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 #menu-get-started-mobile {margin-top:1.5vh;clear:both}
 .menu-get-started {display:table;width:95%;height:100%;margin:0 auto; table-layout:fixed}
 .menu-get-started-mobile {display:table;width:100%;height:4em;margin:0 0 0 0.1em; border-collapse:collapse}
-.menu-content-call {display:table;width:75%;height:100%;margin:1em auto;border-spacing:1em}
+.menu-content-call {display:table;width:85%;height:100%;margin:1em auto;border-spacing:1em}
 .call-menu,.call-mobile {display:table-row;padding:0;}
-.callbar {display:table-cell;width:20%;padding:0 0.25em 0 0;margin:0;}
+.callbar {display:table-cell;width:33%;padding:0 0.25em 0 0;margin:0;}
 .callbar-mobile {display:table-cell;width:50%;padding:0;margin:0;}
 .call a{
 	background: #1d2451;
@@ -3126,7 +3126,7 @@ svg {
 		 	}*/
 		.push{
 		  transition: transform 0.5s;
-		  transform: translate(0px, 160px);
+		  transform: translate(0px, 225px);
 		}
 
 		.pushUp{

@@ -10,8 +10,8 @@ dependencies:
     - miramar
 id: planningpagecalltoaction
 theme: miramar
-region: highlighted
-weight: 0
+region: below_content
+weight: -37
 provider: null
 plugin: miramar_plancall
 settings:

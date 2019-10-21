@@ -120,11 +120,11 @@
     {# Below Content #}
       {% if page.below_content %}
         {% block below_content %}
+		<div class="row">
           <div class="col-sm-12" role="foo">
-<div class="row">
           {{ page.below_content }}
-</div>
-</div>
+		</div>
+	</div>
         {% endblock %}
       {% endif %}
 

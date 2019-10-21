@@ -13,7 +13,7 @@ dependencies:
 id: map
 theme: miramar
 region: below_content
-weight: 0
+weight: -33
 provider: null
 plugin: 'block_content:6d5c52b3-9a5d-4fe0-8616-d3abe270738c'
 settings:

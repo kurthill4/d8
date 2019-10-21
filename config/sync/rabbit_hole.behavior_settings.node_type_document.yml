@@ -1,0 +1,11 @@
+uuid: 6c5825c4-150c-45fc-98ae-16b9f5096fb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.document
+id: node_type_document
+action: page_redirect
+allow_override: 1
+redirect: '[node:field_uploaded_file:entity:url]'
+redirect_code: 302
