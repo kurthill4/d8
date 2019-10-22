@@ -192,6 +192,8 @@
 		},
 		"drupal/rabbit_hole": {"Double encoding":"https://www.drupal.org/files/issues/2018-11-02/htmlspecialchars_decode-2995993-7.patch"
 					
+		},
+		"drupal/views_jump_menu": {"Row index":"https://www.drupal.org/files/issues/views_jump_menu-views_row_index_not_set-2892314-9-D8.patch"
 		}
 		
 }
