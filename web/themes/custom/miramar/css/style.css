@@ -3126,7 +3126,8 @@ svg {
 		 	}*/
 		.push{
 		  transition: transform 0.5s;
-		  transform: translate(0px, 225px);
+/*		  transform: translate(0px, 225px);*/
+		  transform: translate(0px, 180px);
 		}
 
 		.pushUp{
@@ -3139,7 +3140,7 @@ svg {
 			min-height:160px;
 			width:100vw;
 			background: #1d2451;
-			margin:0 0 0.5em 0;
+			margin:0 0 1em 0;
 		}
 		nav.main-menu {
 			margin:0;/* 0 10px 0;*/
@@ -3398,6 +3399,7 @@ svg {
 
 	 /* Extra Small Devices, Phones */
 	 @media only screen and (max-width : 480px) {
+#push {margin-top:2px!important;clear:both}
 .banner-content .get-started a {font-size:5vw}
 .caption h1 {font-size:6vw}
 .caption p {font-size:4.25vw}
