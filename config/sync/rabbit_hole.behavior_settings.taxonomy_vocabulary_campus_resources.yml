@@ -1,0 +1,11 @@
+uuid: 3bcc30e7-b4e2-418f-b56d-a44568dc2f1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.campus_resources
+id: taxonomy_vocabulary_campus_resources
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
