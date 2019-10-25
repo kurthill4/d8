@@ -74,7 +74,6 @@
         "drupal/publishcontent": "^1.0",
         "drupal/rabbit_hole": "^1.0@beta",
         "drupal/redirect": "^1.0@alpha",
-        "drupal/sa11y": "^1.0@beta",
         "drupal/search_api": "^1.11",
         "drupal/search_api_attachments": "^1.0@beta",
         "drupal/search_api_sort_priority": "^1.9",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e7582f4cbe81f727ff9fcbb5beb33cc",
+    "content-hash": "3f7da7f2376a7982bc2d4e3dd63f04df",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5514,54 +5514,6 @@
             }
         },
         {
-            "name": "drupal/sa11y",
-            "version": "1.0.0-beta4",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/sa11y.git",
-                "reference": "8.x-1.0-beta4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/sa11y-8.x-1.0-beta4.zip",
-                "reference": "8.x-1.0-beta4",
-                "shasum": "b1be3a07eb4d83968b06a9971d7de9f45f46d1c2"
-            },
-            "require": {
-                "drupal/core": "*",
-                "drupal/simple_sitemap": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-beta4",
-                    "datestamp": "1530731321",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "b_sharpe",
-                    "homepage": "https://www.drupal.org/user/2512258"
-                }
-            ],
-            "description": "Processes accessibility results into reports and on-screen helpers.",
-            "homepage": "https://www.drupal.org/project/sa11y",
-            "support": {
-                "source": "https://git.drupalcode.org/project/sa11y"
-            }
-        },
-        {
             "name": "drupal/search_api",
             "version": "1.11.0",
             "source": {
@@ -5776,67 +5728,6 @@
             "homepage": "https://www.drupal.org/project/search_exclude",
             "support": {
                 "source": "http://cgit.drupalcode.org/search_exclude"
-            }
-        },
-        {
-            "name": "drupal/simple_sitemap",
-            "version": "3.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/simple_sitemap.git",
-                "reference": "8.x-3.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/simple_sitemap-8.x-3.4.zip",
-                "reference": "8.x-3.4",
-                "shasum": "7cb1944ca2659e426e20680ef8e7cd48747545c8"
-            },
-            "require": {
-                "drupal/core": "~8.0",
-                "ext-xmlwriter": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-3.4",
-                    "datestamp": "1570445886",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^9"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Pawel Ginalski (gbyte.co)",
-                    "homepage": "https://www.drupal.org/u/gbyte.co",
-                    "email": "contact@gbyte.co",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "gbyte.co",
-                    "homepage": "https://www.drupal.org/user/2381352"
-                }
-            ],
-            "description": "Creates a standard conform hreflang XML sitemap of the site content and provides a framework for developing other sitemap types.",
-            "homepage": "https://drupal.org/project/simple_sitemap",
-            "support": {
-                "source": "https://cgit.drupalcode.org/simple_sitemap",
-                "issues": "https://drupal.org/project/issues/simple_sitemap",
-                "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {
@@ -13293,7 +13184,6 @@
         "drupal/php": 10,
         "drupal/rabbit_hole": 10,
         "drupal/redirect": 15,
-        "drupal/sa11y": 10,
         "drupal/search_api_attachments": 10,
         "drupal/slick_extras": 10,
         "drupal/slick_views": 5,
