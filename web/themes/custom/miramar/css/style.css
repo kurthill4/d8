@@ -759,7 +759,7 @@ nav.mobile-nav li:first-child ol li{
 }
 
 .slide-campaign-local {
-	background: transparent url(../images/ad/sdmiramar-kusi-0.png) no-repeat center 0;
+	background: transparent url(../images/ad/intersession0.png) no-repeat center 0;
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
   -o-background-size: 100% auto;
@@ -814,7 +814,7 @@ section#hero {max-height:640px;margin:0}
 }
 .adbuttons {
 	position:absolute;
-	bottom:2em;
+	bottom:1em;
 	width:100%;
 	text-align:center;
 }
@@ -825,6 +825,7 @@ display:inline-block;
 }
 .adbuttons .get-started a{
 	/*min-width:20vw;*/
+font-size:1.2em;
 }
 img.ad {width:100%;padding:0!important;margin:0!important;}
 .notfront .banner-content,.custom .banner-content{
@@ -2805,7 +2806,7 @@ section#hero {max-height:602px!important}
 		}
 
 		.slide-campaign-local {
-			background: transparent url(../images/ad/sdmiramar-kusi-1.png) no-repeat bottom 0;
+			background: transparent url(../images/ad/intersession1.png) no-repeat bottom 0;
 		  -webkit-background-size: 960px 606px;
 		  -moz-background-size: 960px 606px;
 		  -o-background-size: 960px 606px;
@@ -2966,11 +2967,11 @@ section#hero {max-height:602px!important}
 			}
 			/*.call a {font-size:1.5vw}*/
 }
-	 @media only screen and (min-width:667px) {
+	 @media only screen and (max-width:797px) {
 			.hide-tablet {display:none!important}
 			.hide-mobile {display:static!important}
 }
-	 @media only screen and (max-width: 666px) {
+	 @media only screen and (min-width: 798px) {
 			.hide-mobile {display:none!important}
 		 	.hide-tablet {display:static!important}
 
@@ -3071,6 +3072,14 @@ svg {
 			-o-background-size: 100% auto;
 			background-size: 100% auto;
 		}
+		/*.slide-campaign-local {
+			background: transparent url(../images/ad/intersession2.png) no-repeat bottom 0;
+			-webkit-background-size: 100% auto;
+			-moz-background-size: 100% auto;
+			-o-background-size: 100% auto;
+			background-size: 100% auto;
+		}*/
+
 
 		*.hide-title {display:block!important}
 		body p {font-size:12px;}

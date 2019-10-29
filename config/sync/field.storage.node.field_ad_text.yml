@@ -10,7 +10,7 @@ field_name: field_ad_text
 entity_type: node
 type: text
 settings:
-  max_length: 144
+  max_length: 1024
 module: text
 locked: false
 cardinality: 1
