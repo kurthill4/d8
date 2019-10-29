@@ -37,17 +37,26 @@ class MiramarCustomPlanningCallBlock extends BlockBase {
 			</a>
 		</div>
 		<div class="callbar">
-			<a href="/campus/planning/framework3">
+			<a href="/campus/planning/framework">
 			<span class="hide-xs"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
 			Integrated Planning
 			</a>
 		</div>
 	</div>
-<div class="hide-lg">
-	<p class="bold"><a href="/campus/planning/framework/review">Program Review</a></p>
-	<p class="bold"><a href="/campus/planning/framework/alignment">Alignment Taskforce</a></p>
-	<p class="bold"><a href="/campus/planning/framework">Integrated Planning Main</a></p>
-</div></div>'
+</div>
+<div class="planning-mobile hide-lg">
+			<div class="call">
+				<a href="/campus/planning/framework/review"><span><i class="fa fa-road" aria-hidden="true"></i>&nbsp;</span>Program Review</a>
+			</div>
+			<br style="height:0.5em" />
+			<div class="call">
+				<a href="/campus/planning/framework/alignment"><span><i class="fa fa-road" aria-hidden="true"></i>&nbsp;</span>Alignment Taskforce</a>
+			</div>
+			<br style="height:0.5em" />
+			<div class="call">
+				<a href="/campus/planning/framework"><span><i class="fa fa-road" aria-hidden="true"></i>&nbsp;</span>Integrated Planning</a>
+			</div>
+</div>'
     ];
 
     return $build;

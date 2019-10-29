@@ -957,6 +957,9 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 }
 
 .callsmall a {display:inline-block;width:inherit;font-size: 1.33em;padding: 0 50px 0 0;}
+.planning-mobile {display:block;margin:1em 0!important;padding-top:1px}
+.planning-mobile .call {width:70%!important;height:1.1em!important;margin: 0.25em auto;}
+.planning-mobile .call a {font-size: 1em!important;}
 .call-menu .callbar a {width:100%;height:100%;font-size:1.2vw;padding:0;margin:0;}
 .call-mobile .callbar a,.callbar-mobile a {width:100%;height:100%;font-size:1.25em;line-height:2em;padding:0;margin:0;}
 .callbar-mobile a:nth-child(odd) {border-right: 0.1em solid white;}
