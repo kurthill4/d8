@@ -22,7 +22,7 @@ class MiramarCustomPlanningCallBlock extends BlockBase {
 
     $build['plancall']['content'] = [
       '#markup' => '
-<div class="menu-content-call">
+<div class="menu-content-call hide-xs">
 	<div class="call-menu hide-xs" style="margin:0 auto">
 		<div class="callbar">
 			<a href="/campus/planning/framework/review">
@@ -45,17 +45,17 @@ class MiramarCustomPlanningCallBlock extends BlockBase {
 	</div>
 </div>
 <div class="planning-mobile hide-lg">
-			<div class="call">
-				<a href="/campus/planning/framework/review"><span><i class="fa fa-road" aria-hidden="true"></i>&nbsp;</span>Program Review</a>
-			</div>
-			<br style="height:0.5em" />
-			<div class="call">
-				<a href="/campus/planning/framework/alignment"><span><i class="fa fa-road" aria-hidden="true"></i>&nbsp;</span>Alignment Taskforce</a>
-			</div>
-			<br style="height:0.5em" />
-			<div class="call">
-				<a href="/campus/planning/framework"><span><i class="fa fa-road" aria-hidden="true"></i>&nbsp;</span>Integrated Planning</a>
-			</div>
+	<div class="call">
+		<a href="/campus/planning/framework/review"><span><i class="fa fa-road" aria-hidden="true"></i>&nbsp;</span>Program Review</a>
+	</div>
+	<br style="height:0.5em" />
+	<div class="call">
+		<a href="/campus/planning/framework/alignment"><span><i class="fa fa-road" aria-hidden="true"></i>&nbsp;</span>Alignment Taskforce</a>
+	</div>
+	<br style="height:0.5em" />
+	<div class="call">
+		<a href="/campus/planning/framework"><span><i class="fa fa-road" aria-hidden="true"></i>&nbsp;</span>Integrated Planning</a>
+	</div>
 </div>'
     ];
 
