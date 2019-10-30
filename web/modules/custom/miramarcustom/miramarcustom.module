@@ -25,18 +25,16 @@
 
 /*
 function miramarcustom_preprocess_html(&$variables) {
-	include_once(__DIR__ . "/vendor/mobiledetect/mobiledetectlib/Mobile_Detect.php");
-	$detect = new Mobile_Detect;
-	if($detect->isMobile())
+	$detection_service = \Drupal::service('mobile_device_detection.object');
+
+	if($detection_service->isMobile())
 		$variables['mobile'] = "mobile";
-	elseif($detect->isTablet())
+	elseif($detection_service->isTablet())
 		$variables['mobile'] = "tablet";
 	else
 		$variables['mobile'] = "desktop";
-	
-		
-}
-*/
+}*/
+
 function miramarcustom_preprocess_page(&$variables) {
 
 	// Set path to theme images

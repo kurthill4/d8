@@ -157,7 +157,6 @@
         "installer-paths": {
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library", "kenwheeler/slick"],
-	    "web/vendor/{$name}": ["type:drupal-library", "mobiledetect/mobiledetectlib"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/modules/custom/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
