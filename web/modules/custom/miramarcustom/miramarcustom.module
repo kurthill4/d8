@@ -25,14 +25,9 @@
 
 /*
 function miramarcustom_preprocess_html(&$variables) {
-	$detection_service = \Drupal::service('mobile_device_detection.object');
 
-	if($detection_service->isMobile())
-		$variables['mobile'] = "mobile";
-	elseif($detection_service->isTablet())
-		$variables['mobile'] = "tablet";
-	else
-		$variables['mobile'] = "desktop";
+Just a basic browser-level preprocess, for possible future use.
+
 }*/
 
 function miramarcustom_preprocess_page(&$variables) {
@@ -132,27 +127,6 @@ function miramarcustom_preprocess_node(&$variables) {
 		default:
 		}
 	}
-}
-
-function sendForm() {
-
-# Our new data
-$data = array(
-    'SSR_CLSRCH_WRK_CAMPUS$1' => 'MIRA',
-);
-# Create a connection
-$url = 'https://myportal.sdccd.edu/psp/CSGUEST/EMPLOYEE/SA/c/COMMUNITY_ACCESS.CLASS_SEARCH.GBL?X_DEF_OPT=CLASS_SRCH_WRK2_ACAD_CAREER%24268%24&X_DEF_VAL=UGRD';
-$ch = curl_init($url);
-# Form data string
-$postString = http_build_query($data, '', '&');
-# Setting our options
-curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $postString);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-# Get the response
-$response = curl_exec($ch);
-curl_close($ch);
-
 }
 
 /*function miramarcustom_node_view(array &$build, NodeInterface $node, $display, $view_mode) {

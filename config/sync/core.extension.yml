@@ -76,6 +76,7 @@ module:
   menu_ui: 0
   miramarcustom: 0
   mobile_app: 0
+  mobile_detect_twig_extensions: 0
   node: 0
   oauth: 0
   options: 0
