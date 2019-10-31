@@ -5,7 +5,7 @@ dependencies:
   config:
     - views.view.announcement
   module:
-    - system
+    - block_visibility_groups
     - views
   theme:
     - miramar
@@ -23,8 +23,8 @@ settings:
   views_label: ''
   items_per_page: none
 visibility:
-  request_path:
-    id: request_path
-    pages: '<front>'
+  condition_group:
+    id: condition_group
     negate: false
+    block_visibility_group: ''
     context_mapping: {  }

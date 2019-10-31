@@ -111,7 +111,9 @@ ul.noindent,ul.noindent li {
 	margin: 0;
 }
 
-.region-content a {font-weight:bold}
+.region-content .field--name-description a,
+.region-content .field--name-body a,
+.region-content .paragraph a {font-weight:bold}
 
 .course-seq .views-view-grid {display:table!important;padding:0;}
 .course-seq .views-view-grid * {float:none!important;}
