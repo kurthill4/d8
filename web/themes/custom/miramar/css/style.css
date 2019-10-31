@@ -768,16 +768,6 @@ nav.mobile-nav li:first-child ol li{
   background-size: 100% auto;
 }
 
-.slide-planning {
-	background: transparent url(../images/planning.png) no-repeat center 0;
-  -webkit-background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  -o-background-size: 100% auto;
-  background-size: 100% auto;
--webkit-print-color-adjust: exact;
-}
-
-
 section#hero {max-height:640px;margin:0}
 
 .banner {position:relative;}
