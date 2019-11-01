@@ -9,6 +9,7 @@ var pushDown = document.getElementById("push");
 
 (function($) {
   $('a.mobile-menu').click(function(){
+    $("#berder").toggleClass("fa-rotate-90");
     if($(pushDown).hasClass("push")){
       pushDown.className = "pushUp";
     }
