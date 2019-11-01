@@ -331,6 +331,7 @@ header{
 	padding: 40px 30px;
 	z-index: 2;
 }
+
 .top-links{
 	top: 0;
 	right: 15px;
@@ -3115,7 +3116,7 @@ svg {
 			 top:0;
 			 width: 100vw;
 			 min-height: 80px;
-			 padding: 26px 70px 0 30px;
+			 padding: 26px 75px 0 10px;
 		 }
 		 .logo a.mobile-menu, .logo button {
 			 position: absolute;
@@ -3404,6 +3405,11 @@ svg {
 	 /* Extra Small Devices, Phones */
 	 @media only screen and (max-width : 480px) {
 #push {margin-top:2px!important;clear:both}
+/*.logo {padding-left:0!important;padding-right:0!important}
+.logo img.hide-lg {
+	margin-right: 2em;
+}
+*/
 .banner-content .get-started a {font-size:5vw}
 .caption h1 {font-size:6vw}
 .caption p {font-size:4.25vw}

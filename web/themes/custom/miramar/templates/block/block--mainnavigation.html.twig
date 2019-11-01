@@ -35,8 +35,11 @@
 #}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
 <nav class="main-menu navbar-static-top" role="navigation">
+<span class="hide-lg">
+{{ render_block('searchform') }}
+<div class="spacer" style="height:0.01em">&nbsp;</div>
+</span>
   {% block content %}
     {{ content }}
   {% endblock %}
-<span class="hide-lg">{{ render_block('searchform') }}</span>
 </nav>
