@@ -3130,9 +3130,8 @@ svg {
 		 		transform: rotate(90deg);
 		 	}*/
 		.push{
-		  transition: transform 0.5s;
-/*		  transform: translate(0px, 225px);*/
-		  transform: translate(0px, 180px);
+		  transform: translate(0px, 225px);
+/*		  transform: translate(0px, 180px);*/
 		}
 
 		.pushUp{

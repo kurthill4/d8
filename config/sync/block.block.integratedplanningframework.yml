@@ -32,6 +32,6 @@ visibility:
     context_mapping: {  }
   request_path:
     id: request_path
-    pages: "/campus/planning/framework\r\n/hidden/planning/framework/fullsize"
+    pages: /hidden/planning/framework/fullsize
     negate: false
     context_mapping: {  }
