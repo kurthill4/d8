@@ -3116,14 +3116,14 @@ svg {
 			 top:0;
 			 width: 100vw;
 			 min-height: 80px;
-			 padding: 26px 75px 0 10px;
+			 padding: 26px 75px 0 5px;
 		 }
 		 .logo a.mobile-menu, .logo button {
 			 position: absolute;
 		 	 top: 0px;
 		 	 right: 0px;
 		 	 color: #ffffff!important;
-		 	 font-size: 25px;
+		 	 font-size: 1.6em;
 		 	 transition: transform 0.5s;
 		 }
 		 /*.logo a.mobile-menu.collapsed {
