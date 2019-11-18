@@ -3142,7 +3142,7 @@ svg {
 		#navbar-collapse {
 			/*position:fixed;
 			top:80px;*/
-			min-height:160px;
+			min-height:220px;
 			width:100vw;
 			background: #1d2451;
 			margin:0 0 1em 0;
