@@ -111,6 +111,8 @@ ul.noindent,ul.noindent li {
 	margin: 0;
 }
 
+ul li.inline {display:inline;}
+
 .region-content .field--name-description a,
 .region-content .field--name-body a,
 .region-content .paragraph a {font-weight:bold}
@@ -934,9 +936,18 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 #menu-get-started-mobile {margin-top:1.5vh;clear:both}
 .menu-get-started {display:table;width:95%;height:100%;margin:0 auto; table-layout:fixed}
 .menu-get-started-mobile {display:table;width:100%;height:4em;margin:0 0 0 0.1em; border-collapse:collapse}
+.menu-get-started-mobile-notfront {display:table;width:100%;height:4em;margin:0 0 0 0.1em; border-collapse:collapse}
 .menu-content-call {display:table;width:85%;height:100%;margin:1em auto;border-spacing:1em}
-.call-menu,.call-mobile {display:table-row;padding:0;}
-.callbar {display:table-cell;width:33%;padding:0 0.25em 0 0;margin:0;}
+.call-menu,.call-menu-notfront,.call-mobile {display:table-row;padding:0;}
+/*************************************************/
+div.mobile-menu {min-width:200px;margin:0}
+ul.mobile-menu {width:100%;text-align:center;margin:0 auto}
+ul.mobile-menu li {text-align:center;font-size:1.25em}
+ul.mobile-menu li:not(:last-child):after {content: "\ \|\ "}
+/***********************************************/
+.callbar {display:table-cell;min-width:0;padding:0 0.25em 0 0;margin:0;} /*width:33%;*/
+.callbar.not-front {padding:0 0.2em 0 0!important;} 
+/*.call-menu-notfront .callbar {display:table-cell;width:2%;padding:0 0.2em 0 0;margin:0;} /*width:20%;*/
 .callbar-mobile {display:table-cell;width:50%;padding:0;margin:0;}
 .call a{
 	background: #1d2451;
@@ -955,6 +966,8 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 .planning-mobile .call {width:55%!important;height:0.5em!important;margin: 0.5em auto;}
 .planning-mobile .call a {font-size: 0.9em!important;}
 .call-menu .callbar a {width:100%;height:100%;font-size:1.2vw;padding:0;margin:0;}
+.call-menu .callbar.not-front a {
+	width:100%;height:100%;font-size:0.85vw!important;padding:0;margin:0;}
 .call-mobile .callbar a,.callbar-mobile a {width:100%;height:100%;font-size:1.25em;line-height:2em;padding:0;margin:0;}
 .callbar-mobile a:nth-child(odd) {border-right: 0.1em solid white;}
 
@@ -967,6 +980,7 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	text-transform: uppercase;
 }
 
+
 .callbar {height:100%!important}
 .callbar-mobile {height:100%!important}
 
@@ -974,7 +988,7 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 	text-decoration: none;
 	background: #a22130;
 }
-.call span,.callsmall a span,.call-menu .callbar span { 
+.call span,.callsmall a span,.call-menu .callbar span,.call-menu-notfront .callbar span { 
 	margin-right: 15px;
 	height:100%!important;
 	background: #a22130;
@@ -991,6 +1005,9 @@ img.ad {width:100%;padding:0!important;margin:0!important;}
 
 .call span,.callsmall a span {padding: 10px 20px;}
 .call-menu .callbar a span {padding: 10px 15px;font-size:1.25em!important;}
+/**************************************************************************************/
+.callbar.not-front a span {padding: 5px 5px;font-size:1em!important;}
+
 .call-mobile .callbar a span {padding: 0.2em 0.25em;font-size:1em!important;}
 .call a:hover span,.callsmall a:hover span, .menu-content-call .callbar a:hover span {
 	background: #1d2451;
@@ -2528,8 +2545,8 @@ td.resources-students {
 	.red-box{
 		min-height: 326px;
 	}
-.call-menu .callbar a {font-size:1.25em!important;}
-
+.call-menu .callbar a{font-size:1.25em!important;}
+.call-menu .callbar.not-front a {font-size:1em!important}
 }
 
 	 @media only screen and (max-width : 1350px) {

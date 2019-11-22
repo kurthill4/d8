@@ -129,6 +129,73 @@ function miramarcustom_preprocess_node(&$variables) {
 	}
 }
 
+function miramarcustom_theme($existing, $type, $theme, $path) {
+$arrLrcItems = array(
+			0 => array
+			(
+				title => 'Catalog',
+				url	=> 'http://libcat.sdccd.edu.libraryaccess.sdmiramar.edu:8080/ipac20/ipac.jsp?profile=mm'
+			),
+			1 => array
+			(
+				title => 'My Account',
+				url	=> 'http://libcat.sdccd.edu.libraryaccess.sdmiramar.edu:8080/ipac20/ipac.jsp?session=L4527172H8614.52&profile=mm&menu=account&ts=1452717226201'
+			),
+			2 => array
+			(
+				title => 'Articles/Databases',
+				url	=> 'campus/lrc/databases'
+			),
+			3 => array
+			(
+				title => 'Videos',
+				url	=> 'http://libcat.sdccd.edu.libraryaccess.sdmiramar.edu:8080/hipres/sdccd/avsearch_miramar.html'
+			),
+			4 => array
+			(
+				title => 'Research Guides',
+				url	=> 'http://sdmiramar.libguides.com/'
+			)
+
+		);
+
+$arrPlanItems = array(
+			0 => array
+			(
+				title => 'Program Review',
+				url	=> '/campus/planning/framework/review'
+			),
+			1 => array
+			(
+				title => 'Alignment Taskforce',
+				url	=> '/campus/planning/framework/alignment'
+			),
+			2 => array
+			(
+				title => 'Integrated Planning',
+				url	=> '/campus/planning/framework'
+			)
+		);
+
+  return [
+    'lrccall'=> [
+			'variables' =>
+			[
+				// define defaults for any variables you want in the twig file
+				'items' =>  $arrLrcItems
+			]
+		],
+
+    'plancall'=> [
+			'variables' =>
+			[
+				// define defaults for any variables you want in the twig file
+				'items' =>  $arrPlanItems
+			]
+		],
+  ];
+}
+
 /*function miramarcustom_node_view(array &$build, NodeInterface $node, $display, $view_mode) {
   if ($node->getType() == 'home_page' && $view_mode == 'full') {
     //\Drupal::service('page_cache_kill_switch')->trigger();

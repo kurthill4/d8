@@ -20,7 +20,7 @@ class MiramarCustomPlanningCallBlock extends BlockBase {
    */
   public function build() {
 
-    $build['plancall']['content'] = [
+/*    $build['plancall']['content'] = [
       '#markup' => '
 <div class="menu-content-call hide-xs">
 	<div class="call-menu hide-xs" style="margin:0 auto">
@@ -57,7 +57,8 @@ class MiramarCustomPlanningCallBlock extends BlockBase {
 		<a href="/campus/planning/framework"><span><i class="fa fa-road" aria-hidden="true"></i>&nbsp;</span>Integrated Planning</a>
 	</div>
 </div>'
-    ];
+    ];*/
+    $build['#theme'] = 'plancall';
 
     return $build;
   }
