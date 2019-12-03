@@ -2741,14 +2741,14 @@ section#hero {max-height:602px!important}
   -o-background-size: 1024px 480px;
   background-size: 1024px 480px;
 }
-
+/*
 .slide-lrc{
 	background: transparent url(../images/lrc_hero.jpg) no-repeat left top scroll;
   -webkit-background-size: 1024px 480px;
   -moz-background-size: 1024px 480px;
   -o-background-size: 1024px 480px;
   background-size: 1024px 480px;
-}
+}*/
 
 .slide-dr,.slide-ns{
 	background: transparent url(../images/Directory_Hero.png) no-repeat left top scroll;
@@ -2926,13 +2926,13 @@ section#hero {max-height:602px!important}
 		  -o-background-size: 960px 450px;
 		  background-size: 960px 450px;
 		}
-		.slide-lrc{
+		/*.slide-lrc{
 			background: transparent url(../images/lrc_hero.jpg) no-repeat left top scroll;
 		  -webkit-background-size: 960px 450px;
 		  -moz-background-size: 960px 450px;
 		  -o-background-size: 960px 450px;
 		  background-size: 960px 450px;
-		}
+		}*/
 		.slide-ns{
 			background: transparent url(../images/student-banner.jpg) no-repeat left top scroll;
 		  -webkit-background-size: 960px 450px;
