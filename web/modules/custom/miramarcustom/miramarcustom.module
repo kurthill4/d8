@@ -144,7 +144,7 @@ $arrLrcItems = array(
 			2 => array
 			(
 				title => 'Articles/Databases',
-				url	=> 'campus/lrc/databases'
+				url	=> '/campus/lrc/databases'
 			),
 			3 => array
 			(

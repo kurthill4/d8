@@ -49,11 +49,9 @@ function miramar_theme_suggestions_page_alter(&$suggestions, &$vars) {
   if (\Drupal::routeMatch()->getRouteName() == 'entity.taxonomy_term.canonical' && $tid = \Drupal::routeMatch()->getRawParameter('taxonomy_term')) {
     $term = Term::load($tid);
     $suggestions[] = 'page__taxonomy__' . $term->getVocabularyId();
+    $suggestions[] = 'page__taxonomy__' . $tid;
   }
-	/*if ($node = \Drupal::routeMatch()->getParameter('node')) {
-	    $content_type = $node->bundle();
-	    $suggestions[] = 'page__'.$content_type;
-  }*/
+
 if ($node = \Drupal::request()->attributes->get('node')) {
     array_splice($suggestions, 1, 0, 'page__' . $node->getType());
   }
