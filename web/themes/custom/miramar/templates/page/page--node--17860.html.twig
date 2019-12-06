@@ -57,6 +57,7 @@
  */
 #}
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
+{{ attach_library('miramar/google_apply') }}
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
   {% block navbar %}
@@ -79,13 +80,11 @@
   {% endblock %}
 {% endif %}
 <div id="push" class="">
-<div class="page-cover no-print">&nbsp;</div>
-<div class="banner notfront">
-      <div class="carousel-cell slide-planning"></div>
-</div>
+<div class="page-cover">&nbsp;</div>
+
 {# Main #}
 {% block main %}
-  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+  <div role="main" class="main-container {{ container }} js-quickedit-main-content lrc">
     <div class="row">
 
       {# Header #}
