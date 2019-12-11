@@ -12,45 +12,51 @@
  */
 #}
   {% if items %}
+{#
 <div id="menu-get-started-mobile">
 <div style="clear: both;"></div>
-{#	<div class="mobile-menu">
-		<ul class="mobile-menu">
-		{% set numItems = 0 %}
-		{% for key,item in items %}
-			{% if numItems == 3 %}
-				</ul>
-				<ul class="mobile-menu">
-			{% endif %}
-				<li class="inline bold" {{ (numItems >= 2) ? 'style="border-top:0.25em solid white"' }}>
-				<a href="{{ item.url }}">{{ item.title }}</a>
-				</li>
-				{% set numItems = numItems + 1 %}
-		{% endfor %}
-		</ul>
-	</div>
-{# Mobile Menu 3 #}
 <div class="slide-buttons centered center hide-lg">
 	{% for key,item in items %}
 		<a href="{{ item.url }}">{{ item.title }}</a>
-		{#% if loop.last == false %}
-			<br style="height:0.5em" />
-		{% endif %#}
 	{% endfor %}
 </div>
 
 </div>
-
-
+#}
 <div id="menu-get-started">
 	<div class="menu-get-started">
-	    <div class="call-menu">
-	    {% for key,item in items %}
-		<div class="callbar not-front">
-		<a href="{{ item.url }}"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;</span>{{ item.title }}</a>
+		<div class="call-menu">
+		{% for key,item in items %}
+			<div class="callbar">
+			<a href="{{ item.url }}"><span><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;</span>{{ item.title }}</a>
+			</div>
+		{% endfor %}
 		</div>
-	    {% endfor %}
-	    </div>
+	</div>
+</div>
+<div id="menu-get-started-mobile">
+<div id="mobilespace" class="spacer"style="background-color:#dbf3f5">&nbsp;</div>
+	<div class="menu-get-started-mobile">
+		{% for key,item in items %}
+		{% if loop.first %}
+		<div class="call-mobile">
+		{% endif %}
+			<div class="callbar-mobile" {{ (loop.index > 2) ? 'style="border-top:0.25em solid white"' }}>
+			<a href="{{ item.url }}"><span><i class="fa fa-road" aria-hidden="true"></i>&nbsp;</span>{{ item.title }}</a>
+			</div>
+			{% if loop.last and loop.index is not divisible by(2) %}
+				<div class="callbar-mobile" style="border-top:0.25em solid white">
+				</div>
+			{% endif %}
+		{% if loop.index is divisible by(2) %}
+			{% if not loop.last %}
+			</div>
+			<div class="call-mobile">
+			{% else %}
+			</div>
+			{% endif %}
+		{% endif %}
+		{% endfor %}
 	</div>
 </div>
   {% endif %}

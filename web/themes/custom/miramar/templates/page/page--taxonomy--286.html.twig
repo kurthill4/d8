@@ -87,7 +87,6 @@
     </header>
   {% endblock %}
 {% endif %}
-
 <div id="push" class="">
 <section id="hero" role="banner">
 <div class="banner notfront">
@@ -95,6 +94,12 @@
      </div>
 </div>
 </section>
+{% if page.call %}
+<section id="call">
+  {{ page.call }}
+</section>
+{% endif %}
+
 {# Main #}
 {% block main %}
   <div role="main" class="resource main-container {{ container }} js-quickedit-main-content">
