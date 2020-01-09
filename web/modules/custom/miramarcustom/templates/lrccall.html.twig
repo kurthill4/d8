@@ -33,10 +33,10 @@
 			<div class="callbar-mobile" {{ (loop.index > 2) ? 'style="border-top:0.25em solid white"' }}>
 			<a href="{{ item.url }}"><span><i class="fa fa-road" aria-hidden="true"></i>&nbsp;</span>{{ item.title }}</a>
 			</div>
-			{% if loop.last and loop.index is not divisible by(2) %}
-				<div class="callbar-mobile" style="border-top:0.25em solid white">
-				</div>
-			{% endif %}
+		{% if loop.last and loop.index is not divisible by(2) %}
+			<div class="callbar-mobile" style="border-top:0.25em solid white">
+			</div>
+		{% endif %}
 		{% if loop.index is divisible by(2) %}
 			</div>
 			{% if not loop.last %}
