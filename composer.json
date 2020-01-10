@@ -49,7 +49,6 @@
         "drupal/field_group": "^1.0@RC",
         "drupal/field_redirection": "2.x-dev",
         "drupal/field_token_value": "1.x-dev",
-        "drupal/field_validation": "^1.0@alpha",
         "drupal/file_entity": "^2.0@beta",
         "drupal/fortytwo_admin": "^1.7",
         "drupal/google_analytics": "^2.2",
