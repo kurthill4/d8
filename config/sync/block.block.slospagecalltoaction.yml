@@ -11,7 +11,7 @@ dependencies:
 id: slospagecalltoaction
 theme: miramar
 region: content
-weight: -32
+weight: -34
 provider: null
 plugin: miramar_call
 settings:

@@ -13,7 +13,7 @@ dependencies:
 id: integratedplanningframework_3
 theme: miramar
 region: content
-weight: -31
+weight: -33
 provider: null
 plugin: 'block_content:7c1141b1-e114-48fe-9461-5b6af1cc6a5b'
 settings:

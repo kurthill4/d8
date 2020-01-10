@@ -114,6 +114,10 @@ ul.noindent,ul.noindent li {
 
 ul li.inline {display:inline;}
 
+ul.nav-tabs {list-style-type:none!important;}
+ul.nav-tabs > li {list-style-type:none!important;}
+ul.nav-tabs > li::before {content:""!important;}
+
 .region-content .field--name-description a,
 .region-content .field--name-body a,
 .region-content .paragraph a {font-weight:bold}

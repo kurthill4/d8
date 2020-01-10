@@ -1,26 +1,24 @@
-uuid: 89fc47a4-534d-4f09-89af-ccfd355878ac
+uuid: 2e0cf446-1376-4568-acf8-35377cd4cd8c
 langcode: en
 status: true
 dependencies:
   module:
     - block_visibility_groups
+    - miramarcustom
     - system
   theme:
     - miramar
-id: socialmedia
+id: avpagecalltoaction
 theme: miramar
 region: sidebar_second
-weight: -7
+weight: -27
 provider: null
-plugin: 'block_content:e53d5b35-a957-48b0-91ea-4269cc45520a'
+plugin: miramar_avcall
 settings:
-  id: 'block_content:e53d5b35-a957-48b0-91ea-4269cc45520a'
-  label: 'Social Media'
-  provider: core
-  label_display: visible
-  status: true
-  info: ''
-  view_mode: full
+  id: miramar_avcall
+  label: 'AV Page Call to Action'
+  provider: miramarcustom
+  label_display: '0'
 visibility:
   condition_group:
     id: condition_group
@@ -29,6 +27,6 @@ visibility:
     context_mapping: {  }
   request_path:
     id: request_path
-    pages: /studentlife
+    pages: "/campus/avs\r\n/campus/avs/*"
     negate: false
     context_mapping: {  }
