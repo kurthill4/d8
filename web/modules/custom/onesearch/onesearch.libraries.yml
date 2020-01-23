@@ -1,0 +1,22 @@
+onesearch:
+  css:
+    theme:
+      css/onesearch.css {}
+scope:
+  js:
+    js/scope.js: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery
+    - core/jquery.once
+
+btnSubmit:
+  js:
+    js/buttonSubmit.js: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery
+    - core/jquery.once
+

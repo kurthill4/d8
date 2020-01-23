@@ -1,0 +1,4 @@
+name: OneSearch
+description: Generates OneSearch widget for LRC pages
+type: module
+core: 8.x

@@ -288,6 +288,8 @@ h2.mobile {background:none;}
 
 /*--------------- FORMS -------------------*/
 
+form#simple .form-type-select,form#simple .form-type-textfield {display:inline-block;width:33%;}
+
 form.webform-submission-form {
 	margin:1em 1em;
 }

@@ -67,7 +67,9 @@
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
     %}
+{#{ attach_library('onesearch/test') }#}
 <div class="spacer" style="height:1px">&nbsp;</div>
+
     <header>
         {{ page.navigation }}
         {# .btn-navbar is used as the toggle for collapsed navbar content #}
@@ -88,6 +90,7 @@
   {% endblock %}
 {% endif %}
 <div id="push" class="">
+
 <section id="hero" role="banner">
 <div class="banner notfront">
       <div class="carousel-cell slide-lrc notfront">
@@ -102,6 +105,15 @@
 
 {# Main #}
 {% block main %}
+
+<!--script>
+	//Windows on load function to load the intitial change
+	window.onload = function() {
+	 var scope = document.getElementById("scopeSelecter"); 
+	primoScopeSwitch(scope);
+window.alert('JavaScript loaded');
+	};
+</script-->
   <div role="main" class="resource main-container {{ container }} js-quickedit-main-content">
     <div class="row">
 
