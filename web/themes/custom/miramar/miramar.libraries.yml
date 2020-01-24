@@ -10,7 +10,7 @@ global-styling:
       css/slick.theme.css: {}
       css/slick.theme--classic.css: {}
   js:
-    bootstrap/assets/javascripts/bootstrap.min.js: {}
+    #bootstrap/assets/javascripts/bootstrap.min.js: {}
     js/main.js: {}
   dependencies:
     - core/jquery

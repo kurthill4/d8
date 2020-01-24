@@ -1,6 +1,0 @@
-name: Meeting Update
-type: module
-description: "One-time update for Committee Meeting date/time field"
-package: Custom
-core: 8.x
-

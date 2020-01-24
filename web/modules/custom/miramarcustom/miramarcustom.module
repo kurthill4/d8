@@ -31,7 +31,7 @@ Just a basic browser-level preprocess, for possible future use.
 }*/
 
 function miramarcustom_preprocess_page(&$variables) {
-
+ 
 	// Set path to theme images
 
 	$imagepath = base_path() . drupal_get_path('theme', 'miramar');

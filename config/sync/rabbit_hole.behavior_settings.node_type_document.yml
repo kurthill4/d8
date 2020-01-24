@@ -5,7 +5,7 @@ dependencies:
   config:
     - node.type.document
 id: node_type_document
-action: page_redirect
+action: display_page
 allow_override: 1
 redirect: '[node:field_uploaded_file:entity:url]'
 redirect_code: 302

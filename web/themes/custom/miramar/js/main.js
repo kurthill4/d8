@@ -1,7 +1,7 @@
 // Custom _toggleArrow() function
-function _toggleArrow(ele) {
+/*function _toggleArrow(ele) {
   $(ele).toggleClass('fa-chevron-down').effect('pulsate', 'fast');
-}
+}*/
 var pushDown = document.getElementById("push");
 
 
@@ -66,7 +66,6 @@ var pushDown = document.getElementById("push");
 		    {string: navigator.userAgent, subString: "Firefox", identity: "Firefox"},
 		    {string: navigator.userAgent, subString: "Opera", identity: "Opera"},  
 		    {string: navigator.userAgent, subString: "OPR", identity: "Opera"},  
-
 		    {string: navigator.userAgent, subString: "Chrome", identity: "Chrome"}, 
 		    {string: navigator.userAgent, subString: "Safari", identity: "Safari"}       
 		]

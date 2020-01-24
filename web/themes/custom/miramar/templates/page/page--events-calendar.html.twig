@@ -59,7 +59,7 @@
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {{ attach_library('miramar/twitter_hack') }}
 {{ attach_library('miramar/multiselect') }}
-{{ attach_library('miramar/multiselect_init') }}
+{#{ attach_library('miramar/multiselect_init') }#}
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
   {% block navbar %}
@@ -90,7 +90,7 @@
 	<div class="banner-content hide-xs">
 		<div class="caption">
 			<h1>Campus Calendar</h1>
-			<p>Student LIfe. Activities. Dates &amp; Deadlines.</p>
+			<p>Student LIfe. Activities. Dates &amp; Deadlines. Foobar.</p>
 		</div>
 	</div>
 </div>

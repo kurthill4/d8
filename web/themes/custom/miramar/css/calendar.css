@@ -542,6 +542,8 @@ ul.event-type li * {
     }
 }
 
+#edit-actions {margin-left:2em}
+
 /**
  * The following are not used by default but are available for themes.
  */

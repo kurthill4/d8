@@ -13,6 +13,6 @@ name: 'Custom Web Page'
 type: custom_web_page
 description: ''
 help: ''
-new_revision: false
+new_revision: true
 preview_mode: 1
 display_submitted: false

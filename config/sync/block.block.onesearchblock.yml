@@ -1,23 +1,23 @@
-uuid: 762b9331-3e77-4d8d-865b-d26aa43b9602
+uuid: 4dd71e80-3e11-4732-bbac-3a2c96745dee
 langcode: en
 status: true
 dependencies:
   module:
     - block_visibility_groups
-    - miramarcustom
+    - onesearch
     - system
   theme:
     - miramar
-id: slospagecalltoaction
+id: onesearchblock
 theme: miramar
 region: content
-weight: -35
+weight: -33
 provider: null
-plugin: miramar_call
+plugin: onesearch_search__block
 settings:
-  id: miramar_call
-  label: 'SLOs Page Call to Action'
-  provider: miramarcustom
+  id: onesearch_search__block
+  label: 'OneSearch block'
+  provider: onesearch
   label_display: '0'
 visibility:
   condition_group:
@@ -27,6 +27,6 @@ visibility:
     context_mapping: {  }
   request_path:
     id: request_path
-    pages: /campus/planning/outcomes
+    pages: /campus/lrc
     negate: false
     context_mapping: {  }

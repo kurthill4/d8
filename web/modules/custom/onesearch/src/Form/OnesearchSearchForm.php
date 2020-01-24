@@ -112,20 +112,17 @@ class OneSearchSearchForm extends FormBase {
 			),
 		),
 	);
-    $form['keywords'] = array(
+	$form['keywords'] = array(
 		'#type' => 'textfield',
 		'#id' => 'primoQueryTemp',
 		'#size' => '38',
 		'#maxlength' => '60',
 	);
-    $form['onesearch_submit'] = array(
-	'#id' => 'onesearch_submit',
-	'#type' => 'submit',
-	'#attributes' => [
-		'class' => 'button js-form-submit form-submit btn-primary btn btn-secondary icon-only',
-      ],
-);
-    return $form;
+	$form['onesearch_submit'] = array(
+		'#id' => 'onesearch_submit',
+		'#type' => 'submit',
+	);
+	return $form;
 }  
 
   /**
