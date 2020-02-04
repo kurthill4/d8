@@ -24,18 +24,12 @@ class MiramarCustomLibraryCheckoutCallBlock extends BlockBase {
     $build['lrccocall']['content'] = [
       '#markup' => '
 	<div class="call">
-	<a href="http://libcat.sdccd.edu.libraryaccess.sdmiramar.edu:8080/ipac20/ipac.jsp?session=N449Q72976852.288&profile=mm&menu=account&ts=1449772976900" target="_blank">
+	<a href="https://caccl-sdccd.primo.exlibrisgroup.com/discovery/account?vid=01CACCL_SDCCD:SDMIRAMAR&section=overview" target="_blank">
 	<span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
 	Renew Online
 	</a>
 	</div>
-	<div class="spacer" style="height:0.1em">&nbsp;</div>
-	<div class="call">
-	<a href="http://libcat.sdccd.edu/hipres/sdccd/newbooks/current.html">
-	<span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-	New Titles
-	</a>
-	</div>' . $pc
+	<div class="spacer" style="height:0.1em">&nbsp;</div>' . $pc
     ];
 
     return $build;

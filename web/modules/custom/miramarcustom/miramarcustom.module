@@ -134,12 +134,12 @@ $arrLrcItems = array(
 			0 => array
 			(
 				'title' => 'Catalog',
-				'url'	=> 'http://libcat.sdccd.edu.libraryaccess.sdmiramar.edu:8080/ipac20/ipac.jsp?profile=mm'
+				'url'	=> 'https://caccl-sdccd.primo.exlibrisgroup.com/discovery/search?vid=01CACCL_SDCCD:SDMIRAMAR&lang=en'
 			),
 			1 => array
 			(
 				'title' => 'My Account',
-				'url'	=> 'http://libcat.sdccd.edu.libraryaccess.sdmiramar.edu:8080/ipac20/ipac.jsp?session=L4527172H8614.52&profile=mm&menu=account&ts=1452717226201'
+				'url'	=> 'https://caccl-sdccd.primo.exlibrisgroup.com/discovery/account?vid=01CACCL_SDCCD:SDMIRAMAR&section=overview'
 			),
 			2 => array
 			(
