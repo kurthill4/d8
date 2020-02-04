@@ -26,7 +26,14 @@ class OneSearchSearchForm extends FormBase {
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
 	$form['#id'] = 'simple';
-	$form['#attached']['library'] =	'onesearch/btnSubmit';
+	$form['#attached'] = array(
+		'library' => array(
+			'onesearch/btnSubmit',
+		),
+	);
+	//$form['#prefix'] = '<div id="onesearch">';
+	//$form['#suffix'] = '</div>';
+
 	$form['institution'] = array(
 		'#name' => 'institution',
 		'#type' => 'hidden',
@@ -40,14 +47,18 @@ class OneSearchSearchForm extends FormBase {
 	$form['tab'] = array(
 		'#name' => 'tab',
 		'#type' => 'hidden',
-		'#id' => 'primoTab',
 		'#value' => 'Everything',
+		'#attributes' => array(
+			'id' => 'primoTab',
+			),
 		);
 	$form['search_scope'] = array(
 		'#name' => 'search_scope',
 		'#type' => 'hidden',
-		'#id' => 'primoScope',
 		'#value' => 'mm_LibraryCatalog_and_CI',
+		'#attributes' => array(
+			'id' => 'primoScope',
+			),
 		);
 	$form['mode'] = array(
 		'#name' => 'mode',
@@ -77,7 +88,10 @@ class OneSearchSearchForm extends FormBase {
 	$form['queryOut'] = array(
 		'#name' => 'query',
 		'#type' => 'hidden',
-		'#id' => 'primoQuery',
+		'#attributes' => array(
+			'id' => 'primoQuery',
+			),
+
 		 );
 	$form['displayField'] = array(
 		'#name' => 'displayField',
@@ -86,77 +100,63 @@ class OneSearchSearchForm extends FormBase {
 		);
 	$form['pc'] = array(
 		'#name' => 'pcAvailabiltyMode',
-		'#id' => 'pcAvailabiltyMode',
 		'#type' => 'hidden',
 		'#value' => "true",
-		);
-	$form['scope_options'] = array(
-		'#type' => 'value',
-		'#value' => array(
-			'mm_LibraryCatalog_and_CI' => t('Everything'),
-			'SDCCDLibraryCatalog' => t('SDCCDLibraryCatalog'),
-			'mm_CourseReserves' => t('CourseReserves')
-			)
-		);
-	$form['scope'] = array(
-		'#type' => 'select',
-		'#id' => 'scopeSelecter',
-		'#name' => 'scopeSelecter',
-		'#options' => $form['scope_options']['#value'],
 		'#attributes' => array(
-			'class' => 'onesearch',
-		),
-		'#attached' => array(
-			'library' => array(
-				'onesearch/scope',
+			'id' => 'pcAvailabiltyMode',
 			),
-		),
-	);
+
+		);
 	$form['keywords'] = array(
 		'#type' => 'textfield',
 		'#id' => 'primoQueryTemp',
 		'#size' => '38',
 		'#maxlength' => '60',
+		'#attributes' => array(
+			'placeholder' => 'Find articles, books, & more',
+		),
 	);
 	$form['onesearch_submit'] = array(
 		'#id' => 'onesearch_submit',
 		'#type' => 'submit',
 	);
+
 	return $form;
 }  
 
   /**
    * {@inheritdoc}
    */
-public function validateForm(array &$form, FormStateInterface $form_state) {
-	$form_state->setValue('queryOut', 'any,contains,' . $form_state->getValue('keywords','#value'));
-}
+	public function validateForm(array &$form, FormStateInterface $form_state) {
+
+	}
 
   /**
    * {@inheritdoc}
    */
-public function submitForm(array &$form, FormStateInterface $form_state) {
-	$arrNames = array(
-		'institution',
-		'vid',
-		'tab',
-		'search_scope',
-		'mode',
-		'displayMode',
-		'bulkSize',
-		'highlight',
-		'dum',
-		'queryOut',
-		'displayField',
-		'pc'
-	);
-	foreach($arrNames as $item) {
-		$q .= $form[$item]['#name'] . '=' . $form_state->getValue($item,'#value') . '&';
+	public function submitForm(array &$form, FormStateInterface $form_state) {
+		$form_state->setValue('queryOut', 'any,contains,' . $form_state->getValue('keywords','#value'));
+
+		$arrNames = array( 
+			'institution',
+			'vid',
+			'tab',
+			'mode',
+			'displayMode',
+			'bulkSize',
+			'highlight',
+			'dum',
+			'queryOut',
+			'displayField',
+			'pc'
+		);
+		foreach($arrNames as $item) {
+			$queryOut .= $form[$item]['#name'] . '=' . $form_state->getValue($item,'#value') . '&';
+		}
+		$urlOut = 'https://caccl-sdccd.primo.exlibrisgroup.com/discovery/search?' . $queryOut;
+		$form['#action'] = $urlOut;
+		$response = new TrustedRedirectResponse($urlOut, Response::HTTP_FOUND);
+		$form_state->setResponse($response);
 	}
-	$u = 'https://caccl-sdccd.primo.exlibrisgroup.com/discovery/search?' . $q;
-	$form['#action'] = $u;
-	$response = new TrustedRedirectResponse($u, Response::HTTP_FOUND);
-	$form_state->setResponse($response);
-}
-     
+
 }

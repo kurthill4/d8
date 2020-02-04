@@ -8,8 +8,12 @@
 namespace Drupal\onesearch\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Block\BlockPluginInterface;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\TrustedRedirectResponse;
+use Symfony\Component\HttpFoundation\Response;
+use Drupal\Component\Utility\UrlHelper;
 
 /**
  * Provides a 'OneSearch' block.
@@ -19,23 +23,13 @@ use Drupal\Core\Form\FormStateInterface;
  *   admin_label = @Translation("OneSearch block"),
  * )
  */
-class OnesearchSearchBlock extends BlockBase {
+class OnesearchSearchBlock extends BlockBase implements BlockPluginInterface {
 
-	/**
-	* {@inheritdoc}
-	*/
-	function onesearch_search__block_preprocess_block(&$variables) {
-		if ($variables['plugin_id'] == 'block_header') {
-			$variables['#attached']['library'][] = 'onesearch/onesearch';
-		}
-	}
-
-	/**
-	* {@inheritdoc}
-	*/
-	public function build() {
-		$form =  \Drupal::formBuilder()->getForm('Drupal\onesearch\Form\OnesearchSearchForm');
-		return $form;
+public function build() {
+	$form = \Drupal::formBuilder()->getForm('Drupal\onesearch\Form\OnesearchSearchForm');
+	$block['form'] = $form;
+	$block['#theme'] = 'onesearch_block';
+	return $block;
 	}
 }
 

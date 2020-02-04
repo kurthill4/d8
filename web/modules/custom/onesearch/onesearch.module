@@ -1,20 +1,23 @@
 <?php
 
-/**
- * Implements hook_theme
- */
-/*
-function onesearch_theme($existing, $type, $theme, $path) {
-  return [
-    'onesearch'     => [
-      'variables' => [
-        // define defaults for any variables you want in the twig file
-	'form' => \Drupal::formBuilder()->getForm('Drupal\onesearch\Form\OnesearchSearchForm'),
-        'attributes' => [
-           'class' => ['onesearch'],
-         ], //etc
-      ],
-    ],
-  ];
-}
-*/
+	/**
+	 * Implements hook_theme
+	 */
+	function onesearch_theme($existing, $type, $theme, $path) {
+		return [
+			'onesearch_block' => [
+			'render element' => 'form',
+			'template' => 'onesearch',
+			],
+		];
+	}
+
+	/**
+	* {@inheritdoc}
+	*/
+	function onesearch_preprocess_block(&$variables) {
+		if ($variables['plugin_id'] == 'onesearch_search__block') {
+			$variables['#attached']['library'][] = 'onesearch/onesearch';
+		}
+	}
+
