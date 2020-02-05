@@ -120,7 +120,6 @@ module:
   twig_blocks: 0
   twig_field_value: 0
   twig_tweak: 0
-  twig_vardumper: 0
   twitter: 0
   twitter_block: 0
   typed_data: 0
