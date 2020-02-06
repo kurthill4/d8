@@ -64,7 +64,7 @@ class MiramarCustomContactBlock extends BlockBase {
                   <li><a href="/map">Interactive Map</a></li>
                   <li><a href="/campus/directions">Parking/Transit</a></li>
                   <li><a href="/campus/president">President\'s Message</a></li>
-                  <li><a href="http://police.sdccd.edu">Safety</a></li>
+                  <li><a href="https://www.sdccd.edu/about/departments-and-offices/police-department/">Safety</a></li>
                 </ul>
               </div>
               <div class="col-sm-4">
@@ -72,7 +72,7 @@ class MiramarCustomContactBlock extends BlockBase {
                 <strong>Resources &amp; Information</strong>
                 <ul class="miramar">
                   <li><a href="/508">Website Accessibility Information</a></li>
-                  <li><a href="http://police.sdccd.edu/jclery.cfm" target="_blank">Clery Act Information</a></li>
+                  <li><a href="https://www.sdccd.edu/about/departments-and-offices/police-department/clery-act.aspx" target="_blank">Clery Act Information</a></li>
                   <li><a href="/campus/foundation">Miramar College Foundation</a></li>
                   <li><a href="/privacy">Privacy Statement</a></li>
                   <li><a href="/facultystaff/faculty-info">Resources for Faculty &amp; Staff</a></li>
