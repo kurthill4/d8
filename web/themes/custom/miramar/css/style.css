@@ -8,6 +8,10 @@ body{
 	background:#dbf3f5;
 }
 
+div#maintenance {margin:2em auto;width:75%}
+div#maintenance p {font-size:2em;margin-top:2em}
+div#maintenance * {text-align:center}
+
 .print-only {display:none}
 .pushspace {height:3em!important;}
 
