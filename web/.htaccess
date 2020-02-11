@@ -209,7 +209,7 @@ AddEncoding gzip svgz
   # Custom Redirects
   Redirect 302 /campus/library /library
   Redirect 302 /campus/av http://www.sdmiramar.edu/library/av
-  Redirect 301 /campus/campus-police http://police.sdccd.edu
+  Redirect 301 /campus/campus-police http://www.sdccd.edu/about/departments-and-offices/police-department/
   Redirect 301 /campus/bookstore http://www.bookstore.sdccd.edu/miramar
   Redirect 301 /campus/athletics http://www.miramarjets.com
   Redirect 302 /academics/ilc /campus/labs/ilc?surl=academics/ilc
