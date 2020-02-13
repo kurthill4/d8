@@ -107,7 +107,6 @@ module:
   system: 0
   tablefield: 0
   taxonomy: 0
-  taxonomy_manager: 0
   telephone: 0
   telephone_formatter: 0
   telephone_validation: 0
