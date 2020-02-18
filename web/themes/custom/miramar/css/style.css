@@ -742,7 +742,7 @@ nav.mobile-nav li:first-child ol li{
 -webkit-print-color-adjust: exact;
 }
 .slide-lrc{
-	background: transparent url(../images/lrc_hero.png) no-repeat left top scroll;
+	background: transparent url(../images/Library-front.png) no-repeat left top scroll;
   -webkit-background-size: 1280px 600px;
   -moz-background-size: 1280px 600px;
   -o-background-size: 1280px 600px;
@@ -2790,7 +2790,7 @@ section#hero {max-height:602px!important}
 }
 /*
 .slide-lrc{
-	background: transparent url(../images/lrc_hero.jpg) no-repeat left top scroll;
+	background: transparent url(../images/Library-front.jpg) no-repeat left top scroll;
   -webkit-background-size: 1024px 480px;
   -moz-background-size: 1024px 480px;
   -o-background-size: 1024px 480px;
@@ -2974,7 +2974,7 @@ section#hero {max-height:602px!important}
 		  background-size: 960px 450px;
 		}
 		/*.slide-lrc{
-			background: transparent url(../images/lrc_hero.jpg) no-repeat left top scroll;
+			background: transparent url(../images/Library-front.jpg) no-repeat left top scroll;
 		  -webkit-background-size: 960px 450px;
 		  -moz-background-size: 960px 450px;
 		  -o-background-size: 960px 450px;
