@@ -81,6 +81,7 @@ function miramarcustom_preprocess_page(&$variables) {
 		->set('issues_link', '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=' . $_SERVER['REQUEST_URI'] . '">Report Issues With This Page</a>')
 		->save();
 
+
 }
 
 /**
@@ -133,25 +134,20 @@ function miramarcustom_theme($existing, $type, $theme, $path) {
 $arrLrcItems = array(
 			0 => array
 			(
-				'title' => 'Catalog',
+				'title' => 'OneSearch--Books & More',
 				'url'	=> 'https://caccl-sdccd.primo.exlibrisgroup.com/discovery/search?vid=01CACCL_SDCCD:SDMIRAMAR&lang=en'
 			),
 			1 => array
 			(
-				'title' => 'My Account',
-				'url'	=> 'https://caccl-sdccd.primo.exlibrisgroup.com/discovery/account?vid=01CACCL_SDCCD:SDMIRAMAR&section=overview'
-			),
-			2 => array
-			(
 				'title' => 'Articles/Databases',
 				'url'	=> '/campus/lrc/databases'
 			),
-			3 => array
+			2 => array
 			(
-				'title' => 'Videos',
+				'title' => 'Video Collections',
 				'url'	=> 'http://libcat.sdccd.edu.libraryaccess.sdmiramar.edu:8080/hipres/sdccd/avsearch_miramar.html'
 			),
-			4 => array
+			3 => array
 			(
 				'title' => 'Research Guides',
 				'url'	=> 'http://sdmiramar.libguides.com/'

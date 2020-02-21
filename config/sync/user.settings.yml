@@ -1,9 +1,9 @@
-anonymous: guest
+anonymous: 'William Smith'
 register: admin_only
 password_strength: false
 verify_mail: false
-cancel_method: null
+cancel_method: user_cancel_block
 notify:
-  status_activated: false
+  status_activated: true
   status_blocked: false
   status_canceled: false
