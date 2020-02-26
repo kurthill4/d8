@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "853a2bc09cf1e4253b43ea405a0e05f0",
@@ -2085,7 +2085,6 @@
                     }
                 },
                 "patches_applied": {
-                    "Patching multiday issue for calendar": "https://www.drupal.org/files/issues/2018-04-06/calendar-date_range-2699477-71.patch",
                     "Timezone": "https://www.drupal.org/files/issues/2018-05-09/2604546-33.patch"
                 }
             },
@@ -2124,7 +2123,7 @@
                 "source": "http://cgit.drupalcode.org/calendar",
                 "issues": "https://www.drupal.org/project/issues/calendar"
             },
-            "time": "2018-07-05T11:35:40+00:00"
+            "time": "2018-07-05 11:35:40"
         },
         {
             "name": "drupal/calendar_datetime",
@@ -2656,7 +2655,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/content_type_clone"
             },
-            "time": "2018-02-18T16:53:08+00:00"
+            "time": "2018-02-18 16:53:08"
         },
         {
             "name": "drupal/convert_bundles",
@@ -3824,7 +3823,7 @@
                 "source": "http://cgit.drupalcode.org/field_redirection",
                 "issues": "http://drupal.org/project/issues/field_redirection"
             },
-            "time": "2017-09-06T18:16:12+00:00"
+            "time": "2017-09-06 18:16:12"
         },
         {
             "name": "drupal/field_token_value",
@@ -3863,7 +3862,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/field_token_value"
             },
-            "time": "2017-06-27T00:33:57+00:00"
+            "time": "2017-06-27 00:33:57"
         },
         {
             "name": "drupal/file_entity",
@@ -5062,7 +5061,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/paragraphs_previewer"
             },
-            "time": "2018-02-10T18:39:34+00:00"
+            "time": "2018-02-10 18:39:34"
         },
         {
             "name": "drupal/pathauto",
@@ -6361,7 +6360,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/twitter"
             },
-            "time": "2017-06-21T03:19:03+00:00"
+            "time": "2017-06-21 03:19:03"
         },
         {
             "name": "drupal/twitter_block",
@@ -6654,7 +6653,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/views_bootstrap"
             },
-            "time": "2017-10-07T17:46:52+00:00"
+            "time": "2017-10-07 17:46:52"
         },
         {
             "name": "drupal/views_bulk_operations",
@@ -11946,7 +11945,9 @@
             "version": "2.0",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/ehynds/jquery-ui-multiselect-widget/archive/master.zip"
+                "url": "https://github.com/ehynds/jquery-ui-multiselect-widget/archive/master.zip",
+                "reference": null,
+                "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
