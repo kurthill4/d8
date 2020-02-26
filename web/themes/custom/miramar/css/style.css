@@ -1567,7 +1567,8 @@ ul.mobile-menu li:not(:last-child):after {content: "\ \|\ "}
 /************** Modals *************/
 
 .ui-dialog-titlebar,.ui-dialog-titlebar-close {background:#1d2451;color:#ffffff!important; }
-.ui-dialog-titlebar-close:after { content: 'X'; font-weight:bold; }
+/*.ui-dialog-titlebar-close:after {font-weight:bold; }*/
+#drupal-modal--body {background:#ffffff}
 
 /************** Footer *************/
 

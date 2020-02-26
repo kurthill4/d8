@@ -3,19 +3,24 @@
     "description": "Project template for Drupal 8 projects with composer",
     "type": "project",
     "license": "GPL-2.0+",
-    "authors": [
+    "authors":
+	[
         {
             "name": "",
             "role": ""
         }
     ],
-    "repositories": [
+
+    "repositories":
+	[
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
     ],
-    "require": {
+
+    "require": 
+	{
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.2",
@@ -25,7 +30,7 @@
         "drupal/autologout": "^1.0",
         "drupal/better_exposed_filters": "^3.0@alpha",
         "drupal/block_visibility_groups": "^1.3",
-        "drupal/bootstrap": "^3.3",
+        "drupal/bootstrap": "^3.4",
         "drupal/bootstrap_layouts": "^4.1",
         "drupal/bootstrap_paragraphs": "^2.0@beta",
         "drupal/calendar": "1.x-dev",
@@ -35,7 +40,7 @@
         "drupal/console": "~1.8",
         "drupal/content_type_clone": "1.x-dev",
         "drupal/convert_bundles": "^1.0@alpha",
-        "drupal/core": "8.5.11",
+        "drupal/core": "~8.6.1",
         "drupal/csv_serialization": "^1.3",
         "drupal/ctools": "^3.0@beta",
         "drupal/entity_embed": "^1.0@beta",
@@ -107,7 +112,9 @@
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
     },
-    "require-dev": {
+
+    "require-dev": 
+	{
         "behat/mink": "~1.7",
         "behat/mink-goutte-driver": "~1.2",
         "drupal/config_partial_export": "^1.4",
@@ -122,37 +129,26 @@
         "phpunit/phpunit": ">=4.8.28 <5",
         "symfony/css-selector": "~2.8"
     },
-    "conflict": {
-        "drupal/drupal": "*"
-    },
+
+    "conflict": { "drupal/drupal": "*" },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "config": {
-      "sort-packages": true
-    },
-    "autoload": {
-        "classmap": [
-            "scripts/composer/ScriptHandler.php"
-        ]
-    },
-    "scripts": {
+    "prefer-stable": true, 
+	"config": { "sort-packages": true },
+    "autoload": { "classmap": [ "scripts/composer/ScriptHandler.php" ] },
+    "scripts": 
+	{
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-        "pre-install-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
-        ],
-        "pre-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
-        ],
-        "post-install-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ],
-        "post-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ]
+        "pre-install-cmd": [ "DrupalProject\\composer\\ScriptHandler::checkComposerVersion" ],
+        "pre-update-cmd": [ "DrupalProject\\composer\\ScriptHandler::checkComposerVersion" ],
+        "post-install-cmd": [ "DrupalProject\\composer\\ScriptHandler::createRequiredFiles" ],
+        "post-update-cmd": [ "DrupalProject\\composer\\ScriptHandler::createRequiredFiles" ]
     },
-    "extra": {
+
+    "extra": 
+	{
 		"installer-types": ["library"],
-        "installer-paths": {
+        "installer-paths": 
+		{
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library", "kenwheeler/slick"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
@@ -162,35 +158,39 @@
             "web/themes/custom/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
         },
-	"patches": {
-		"drupal/core": {"Role permission to view user email": "https://www.drupal.org/files/issues/role_based_email_access-2799049-2.patch",
-		"Fixing debug suggestions for views": "https://www.drupal.org/files/issues/2118743-139-twig-debug-info.patch",
-		"Fixing More link": "https://www.drupal.org/files/issues/views-more-link-564106-154.patch",
-		"Another Views patch for date range":"https://www.drupal.org/files/issues/2786577-270_0.patch",
-		"First step in seconds issue for Datetime fields": "https://www.drupal.org/files/issues/2723159-43.patch",
-		"End date support for Date Range": "https://www.drupal.org/files/issues/2018-05-23/drupal-display-one-date-formatter-2827055-25.patch",
-		"Entity reference fix": "https://www.drupal.org/files/issues/2174633-174.patch",
-		"Fixing Combined Fields search": "https://www.drupal.org/files/issues/combine_fields_filter-1782678-1_0.patch",
-		"Fixing CKEditor multiple styles": "https://www.drupal.org/files/issues/2018-05-18/allow-multiple-elements-2973706-2.patch"
-		},
-		"drupal/calendar": {"Patching multiday issue for calendar": "https://www.drupal.org/files/issues/2018-04-06/calendar-date_range-2699477-71.patch",
-		"Timezone": "https://www.drupal.org/files/issues/2018-05-09/2604546-33.patch",
-		"Patching Day view": "https://www.drupal.org/files/issues/2938872-replace-size-by-length_0.patch"
-		},
-		"drupal/entity_reference_views_select": {"Allowing No Selection for entity references": "https://www.drupal.org/files/issues/ervs-emptyvalue-2943488-3-8x.patch"
-		},
-		"drupal/feeds_ical": {"Patching property naming error": "https://www.drupal.org/files/issues/2018-04-25/feeds_ical-item_index-2966206-2_1.patch",
-		"Fixing date field issue": "https://www.drupal.org/files/issues/2018-04-25/feeds_ical-dtend-2966214-2.patch",
-		"Another field error": "https://www.drupal.org/files/issues/2018-04-25/feeds_ical-date_case-2966211-2.patch"
-		},
-		"drupal/pathauto": {"Allow to save new path on node after deleting old one": "https://www.drupal.org/files/issues/2018-10-23/pathauto-custom-alias-2756703-17.patch"
-		},
-		"drupal/rabbit_hole": {"Double encoding":"https://www.drupal.org/files/issues/2018-11-02/htmlspecialchars_decode-2995993-7.patch"
-					
-		},
-		"drupal/views_jump_menu": {"Row index":"https://www.drupal.org/files/issues/views_jump_menu-views_row_index_not_set-2892314-9-D8.patch"
-		}
 		
-}
+		"patches":
+		 {
+			"drupal/core": 
+			{
+				"Role permission to view user email": "https://www.drupal.org/files/issues/2018-12-04/role_based_email_access-drupal-8-6-2799049-17.patch",
+				"Fixing debug suggestions for views": "https://www.drupal.org/files/issues/2018-09-11/2118743-179-twig-debug-info.patch",
+				"Fixing More link": "https://www.drupal.org/files/issues/2018-06-27/views-more-link-token-replacement_564106_171.patch",
+				"First step in seconds issue for Datetime fields": "https://www.drupal.org/files/issues/2723159-43.patch",
+				"End date support for Date Range": "https://www.drupal.org/files/issues/2018-05-23/drupal-display-one-date-formatter-2827055-25.patch",
+				"Entity reference fix": "https://www.drupal.org/files/issues/2174633-174.patch",
+				"Fixing Combined Fields search": "https://www.drupal.org/files/issues/combine_fields_filter-1782678-1_0.patch",
+				"Fixing CKEditor multiple styles": "https://www.drupal.org/files/issues/2018-05-18/allow-multiple-elements-2973706-2.patch"
+			},
+
+			"drupal/calendar":
+			{
+				"Patching multiday issue for calendar": "https://www.drupal.org/files/issues/2018-04-06/calendar-date_range-2699477-71.patch",
+				"Timezone": "https://www.drupal.org/files/issues/2018-05-09/2604546-33.patch"
+			},
+
+			"drupal/entity_reference_views_select": { "Allowing No Selection for entity references": "https://www.drupal.org/files/issues/ervs-emptyvalue-2943488-3-8x.patch" },
+			"drupal/feeds_ical":
+			{
+				"Patching property naming error": "https://www.drupal.org/files/issues/2018-04-25/feeds_ical-item_index-2966206-2_1.patch",
+				"Fixing date field issue": "https://www.drupal.org/files/issues/2018-04-25/feeds_ical-dtend-2966214-2.patch",
+				"Another field error": "https://www.drupal.org/files/issues/2018-04-25/feeds_ical-date_case-2966211-2.patch"
+			},
+
+			"drupal/pathauto": { "Allow to save new path on node after deleting old one": "https://www.drupal.org/files/issues/2018-10-23/pathauto-custom-alias-2756703-17.patch" },
+			"drupal/rabbit_hole": { "Double encoding":"https://www.drupal.org/files/issues/2018-11-02/htmlspecialchars_decode-2995993-7.patch" },
+			"drupal/views_jump_menu": { "Row index":"https://www.drupal.org/files/issues/views_jump_menu-views_row_index_not_set-2892314-9-D8.patch" }
+		
+		}
 	}
-    }
+}

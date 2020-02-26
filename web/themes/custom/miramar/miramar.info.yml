@@ -29,7 +29,7 @@ regions:
   page_bottom: 'Page bottom'
 
 libraries:
-  - 'miramar/global-styling'
+  - 'miramar/framework'
   - 'miramar/bootstrap-scripts'
   - 'miramar/google_tag'
   - 'miramar/google_call_to_action'
