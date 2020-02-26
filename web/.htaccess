@@ -202,14 +202,13 @@ AddEncoding gzip svgz
   RequestHeader unset Proxy
 </IfModule>
 
-
 # All custom alterations start here
 
 <IfModule mod_rewrite.c>
   # Custom Redirects
   Redirect 302 /campus/library /library
   Redirect 302 /campus/av http://www.sdmiramar.edu/library/av
-  Redirect 301 /campus/campus-police http://www.sdccd.edu/about/departments-and-offices/police-department/
+  Redirect 301 /campus/campus-police http://police.sdccd.edu
   Redirect 301 /campus/bookstore http://www.bookstore.sdccd.edu/miramar
   Redirect 301 /campus/athletics http://www.miramarjets.com
   Redirect 302 /academics/ilc /campus/labs/ilc?surl=academics/ilc
@@ -225,9 +224,6 @@ AddEncoding gzip svgz
   Redirect 301 /students/international /campus/international/requirements
 
   #Temprary redirect, remove in Jan-2020.
-  #Redirect 301 /campus/counseling/dreamers /campus/dreamers-support-program
-
-  #Temporary Redirect, remove in Dec. 2020 (new page is permanent (301), but no need to maintain redir permanently
-  Redirect 301 /sites/default/custom/pages/biotech /programs/biotechnology/scbc
+  Redirect 301 /campus/counseling/dreamers /campus/dreamers-support-program
 
 </IfModule>
