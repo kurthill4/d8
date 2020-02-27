@@ -33,6 +33,7 @@ hidden:
   field_associated_committee: true
   field_associated_department: true
   field_associated_faculty_member: true
+  field_associated_page: true
   field_associated_program: true
   field_date_uploaded: true
   field_link_to_your_file: true
