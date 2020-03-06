@@ -23,6 +23,7 @@ settings:
   label_display: visible
   views_label: ''
   items_per_page: none
+  context_mapping: {  }
 visibility:
   condition_group:
     id: condition_group
@@ -34,6 +35,7 @@ visibility:
     bundles:
       custom_web_page: custom_web_page
       student_page: student_page
+      webform: webform
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'

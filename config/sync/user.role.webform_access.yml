@@ -1,0 +1,11 @@
+uuid: c34938a0-09ab-4e57-8ae6-abf3f377eb67
+langcode: en
+status: true
+dependencies: {  }
+id: webform_access
+label: 'Webform Access'
+weight: 27
+is_admin: null
+permissions:
+  - 'view any webform submission'
+  - 'view webform submissions own node'

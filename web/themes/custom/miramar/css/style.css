@@ -309,7 +309,8 @@ form.webform-submission-form {
 .webform-flex .form-email {
 	width:inherit!important;
 }
-
+.form-wrapper {max-width:100%!important}
+.webform-key {width:50%!important}
 .webform-submission-scholarship-awards-rsvp-form #edit-student-name-first,
 .webform-submission-scholarship-awards-rsvp-form #edit-student-name-last {
 	width:80%;
@@ -3074,7 +3075,9 @@ section#hero {max-height:602px!important}
 svg {
     height: 100%;
     width: 100%;
-}		.ui-dialog {
+}
+		.webform-key {width:100%!important}
+		.ui-dialog {
 		    max-width: 92% !important;
 		  }
 		.region-content {width:100vw!important}
@@ -3402,7 +3405,7 @@ svg {
 			 left: 15px;
 		 }
 		.news-block-2 ul li {
-			font-size: 0.75emem;
+			font-size: 0.75em;
 		}
 		 .ca-desc{
 			 border-top: 0;
