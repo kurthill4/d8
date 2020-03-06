@@ -7,6 +7,7 @@ dependencies:
     - node.type.custom_web_page
     - node.type.document
     - node.type.student_page
+    - node.type.webform
 id: node.document.field_associated_page
 field_name: field_associated_page
 entity_type: node
@@ -23,6 +24,7 @@ settings:
     target_bundles:
       custom_web_page: custom_web_page
       student_page: student_page
+      webform: webform
     sort:
       field: title
       direction: ASC

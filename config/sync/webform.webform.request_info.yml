@@ -1,6 +1,6 @@
 uuid: 9387ddfe-d0c8-4359-bb96-cc1db56c7506
 langcode: en
-status: open
+status: closed
 dependencies: {  }
 open: null
 close: null
@@ -155,7 +155,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: miraoutreach@sdccd.edu
+      to_mail: btsmith@sdccd.edu
       to_options: {  }
       cc_mail: ''
       cc_options: {  }

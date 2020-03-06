@@ -10,7 +10,9 @@ path: results
 weight: 0
 plugin: search_exclude_node_search
 configuration:
-  rankings: {  }
+  rankings:
+    relevance: '10'
+    recent: '5'
   excluded_bundles:
     announcement: announcement
     by_the_numbers: by_the_numbers
@@ -26,4 +28,3 @@ configuration:
     resource_links: resource_links
     sdccd_campaign: sdccd_campaign
     slick: slick
-    webform: webform
