@@ -1,5 +1,5 @@
 image_path: /themes/custom/miramar
-local_ip: false
-client_ip: 127.0.0.1
-issues_link: '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=/admin/structure/webform/manage/deans_user_management/results/submissions">Report Issues With This Page</a>'
+local_ip: true
+client_ip: 10.70.20.218
+issues_link: '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=/manage/new-editor">Report Issues With This Page</a>'
 prog_call: ''
