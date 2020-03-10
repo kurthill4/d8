@@ -1,4 +1,4 @@
-uuid: c34938a0-09ab-4e57-8ae6-abf3f377eb67
+uuid: 1a1f2ea2-d542-46c5-a440-f63181248a6b
 langcode: en
 status: true
 dependencies: {  }
@@ -7,5 +7,5 @@ label: 'Webform Access'
 weight: 27
 is_admin: null
 permissions:
-  - 'view any webform submission'
+  - 'view own webform submission'
   - 'view webform submissions own node'
