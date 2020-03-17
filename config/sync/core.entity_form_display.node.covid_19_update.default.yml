@@ -1,12 +1,12 @@
-uuid: 6a3a81ea-89cc-480a-b675-24acb4fe2a10
+uuid: c144c7bb-6e1b-4d81-b138-eaa5ecb0786c
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.covid_19_update.body
+    - field.field.node.covid_19_update.field_story_date
     - node.type.covid_19_update
   module:
-    - path
     - text
 id: node.covid_19_update.default
 targetEntityType: node
@@ -14,57 +14,30 @@ bundle: covid_19_update
 mode: default
 content:
   body:
-    weight: 121
+    type: text_textarea_with_summary
+    weight: 1
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea_with_summary
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 4
     region: content
     settings: {  }
-    third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 15
-    region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
-    region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 16
+    weight: 2
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
@@ -72,16 +45,17 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 3
+    region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
-    region: content
     third_party_settings: {  }
-  url_redirects:
-    weight: 50
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  field_story_date: true
+  langcode: true
+  path: true
+  promote: true
+  sticky: true
+  url_redirects: true

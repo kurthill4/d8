@@ -1,11 +1,13 @@
-uuid: 8b36035a-ce1b-4a02-9093-8e793541df2d
+uuid: f9216b15-4438-4a82-94ad-ceb72cd12b3d
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.covid_19_update.body
+    - field.field.node.covid_19_update.field_story_date
     - node.type.covid_19_update
   module:
+    - datetime
     - text
     - user
 id: node.covid_19_update.default
@@ -14,16 +16,25 @@ bundle: covid_19_update
 mode: default
 content:
   body:
-    weight: 101
-    label: above
+    label: hidden
+    type: text_default
+    weight: 2
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    region: content
+  field_story_date:
+    weight: 1
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    type: datetime_default
     region: content
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   langcode: true

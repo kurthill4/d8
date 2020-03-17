@@ -24,12 +24,9 @@ content:
     region: content
   bp_view:
     weight: 2
-    settings:
-      match_operator: CONTAINS
-      size: '60'
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: viewsreference_autocomplete
+    type: viewsreference_select
     region: content
   bp_width:
     weight: 1

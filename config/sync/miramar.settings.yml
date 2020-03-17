@@ -1,8 +1,11 @@
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'https://dev.sdmiramar.edu/themes/contrib/bootstrap/favicon.ico'
+  url: 'http://www.sdmiramar.edu/themes/custom/miramar/favicon.ico'
   use_default: true
+schemas:
+  bootstrap: 8000
+  miramar: 8000
 features:
   comment_user_picture: true
   comment_user_verification: true
@@ -12,6 +15,5 @@ logo:
   path: ''
   url: ''
   use_default: true
-schemas:
-  bootstrap: 8000
-  miramar: 8000
+cdn_version: 3.3.7
+cdn_theme: bootstrap

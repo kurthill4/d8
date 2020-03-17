@@ -1,0 +1,24 @@
+uuid: d989416b-3b0f-48e3-b90c-2ff95071ab37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_story_date
+    - node.type.covid_19_update
+  module:
+    - datetime
+id: node.covid_19_update.field_story_date
+field_name: field_story_date
+entity_type: node
+bundle: covid_19_update
+label: Date
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

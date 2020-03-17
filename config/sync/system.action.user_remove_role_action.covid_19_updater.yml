@@ -1,0 +1,14 @@
+uuid: 7fb9177a-e71b-4738-8997-3b04304dc8f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.covid_19_updater
+  module:
+    - user
+id: user_remove_role_action.covid_19_updater
+label: 'Remove the COVID-19 Updater role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: covid_19_updater

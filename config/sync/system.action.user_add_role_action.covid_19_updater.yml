@@ -1,0 +1,14 @@
+uuid: 30511e87-2ca2-4c4f-b019-487c70b7c4fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.covid_19_updater
+  module:
+    - user
+id: user_add_role_action.covid_19_updater
+label: 'Add the COVID-19 Updater role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: covid_19_updater

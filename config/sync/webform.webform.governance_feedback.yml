@@ -155,17 +155,17 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: btsmith@sdccd.edu
+      to_mail: rmartine@sdccd.edu
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
-      bcc_mail: ''
+      bcc_mail: btsmith@sdccd.edu
       bcc_options: {  }
       from_mail: default
       from_options: {  }
       from_name: 'Governance Feedback'
       subject: 'Feedback submission for new Governance Handbook'
-      body: default
+      body: "<p>Submitted on [webform_submission:created]</p>\r\n<p>Submitted values are:</p>\r\n[webform_submission:values]"
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true

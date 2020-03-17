@@ -1,0 +1,31 @@
+uuid: 7eda7c49-c717-4e18-8e7c-890b2e066559
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.covid_19_update.body
+    - node.type.covid_19_update
+  module:
+    - text
+    - user
+id: node.covid_19_update.teaser
+targetEntityType: node
+bundle: covid_19_update
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
