@@ -1,0 +1,22 @@
+uuid: 58d7a8b4-f6b6-4d79-9a97-4e97849577c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.covid_19_update
+  module:
+    - text
+id: node.covid_19_update.body
+field_name: body
+entity_type: node
+bundle: covid_19_update
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

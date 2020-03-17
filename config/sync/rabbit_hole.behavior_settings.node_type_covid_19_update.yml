@@ -1,0 +1,11 @@
+uuid: 55689f69-9ffd-49e7-8b77-08770afe1b8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.covid_19_update
+id: node_type_covid_19_update
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301

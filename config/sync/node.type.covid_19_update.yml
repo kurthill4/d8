@@ -1,0 +1,18 @@
+uuid: 32b04e3f-2cd6-4540-ba2f-8a61b3d19569
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'COVID-19 Update'
+type: covid_19_update
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

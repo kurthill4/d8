@@ -1,0 +1,18 @@
+uuid: 32ee384b-b34b-4c2c-8f25-e18d9818ba05
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.covid_19_update
+id: node.covid_19_update.title
+field_name: title
+entity_type: node
+bundle: covid_19_update
+label: Headline
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

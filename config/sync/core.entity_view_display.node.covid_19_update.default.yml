@@ -1,0 +1,29 @@
+uuid: 8b36035a-ce1b-4a02-9093-8e793541df2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.covid_19_update.body
+    - node.type.covid_19_update
+  module:
+    - text
+    - user
+id: node.covid_19_update.default
+targetEntityType: node
+bundle: covid_19_update
+mode: default
+content:
+  body:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

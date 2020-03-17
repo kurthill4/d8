@@ -1,0 +1,11 @@
+uuid: 3722730e-0eb1-43fb-b595-3be4795a3f18
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.covid_19_update
+id: node.covid_19_update
+target_entity_type_id: node
+target_bundle: covid_19_update
+default_langcode: site_default
+language_alterable: false
