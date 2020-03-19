@@ -1,0 +1,21 @@
+uuid: e9241bce-0b6b-40b7-953c-386bbd981f7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.blog_page
+  module:
+    - user
+id: node.blog_page.teaser
+targetEntityType: node
+bundle: blog_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

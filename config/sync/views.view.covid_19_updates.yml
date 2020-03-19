@@ -421,7 +421,7 @@ display:
     position: 3
     display_options:
       display_extenders: {  }
-      path: hidden/covid
+      path: covid19-info
       enabled: false
     cache_metadata:
       max-age: -1

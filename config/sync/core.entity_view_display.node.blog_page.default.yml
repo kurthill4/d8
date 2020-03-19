@@ -1,0 +1,31 @@
+uuid: bfda87f9-d5be-4db3-bc4d-a3c5ba47006a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.blog_page.field_content
+    - node.type.blog_page
+  module:
+    - entity_reference_revisions
+    - user
+id: node.blog_page.default
+targetEntityType: node
+bundle: blog_page
+mode: default
+content:
+  field_content:
+    weight: 101
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
