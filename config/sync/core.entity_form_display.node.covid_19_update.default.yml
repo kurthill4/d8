@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.covid_19_update.body
-    - field.field.node.covid_19_update.field_story_date
     - node.type.covid_19_update
   module:
     - text
@@ -53,7 +52,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
 hidden:
-  field_story_date: true
   langcode: true
   path: true
   promote: true

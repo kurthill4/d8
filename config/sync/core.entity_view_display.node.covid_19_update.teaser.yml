@@ -28,5 +28,4 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_story_date: true
   langcode: true

@@ -1,0 +1,37 @@
+uuid: aec23558-4538-462f-b34c-b9dfd358db93
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:efa7cbff-87ce-4761-b122-8242dd69124b'
+  module:
+    - block_content
+    - block_visibility_groups
+    - system
+  theme:
+    - miramar
+id: covid19calltoaction
+theme: miramar
+region: content
+weight: -36
+provider: null
+plugin: 'block_content:efa7cbff-87ce-4761-b122-8242dd69124b'
+settings:
+  id: 'block_content:efa7cbff-87ce-4761-b122-8242dd69124b'
+  label: 'COVID-19 Call to Action'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /covid-info
+    negate: false
+    context_mapping: {  }

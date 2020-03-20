@@ -9,7 +9,7 @@ _core:
 id: miramar_local_actions
 theme: miramar
 region: content
-weight: -38
+weight: -39
 provider: null
 plugin: local_actions_block
 settings:

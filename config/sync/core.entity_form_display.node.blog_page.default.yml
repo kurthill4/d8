@@ -1,12 +1,15 @@
-uuid: aedaac91-97c3-442c-8c04-e0b320992fba
+uuid: 199fdf79-8d85-4c14-bf82-430502c42a02
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.blog_page.field_associated_campus_resource
+    - field.field.node.blog_page.field_associated_committee
+    - field.field.node.blog_page.field_associated_program
     - field.field.node.blog_page.field_content
     - node.type.blog_page
   module:
-    - entity_reference_revisions
+    - paragraphs
     - path
 id: node.blog_page.default
 targetEntityType: node
@@ -19,14 +22,44 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_content:
-    weight: 121
+  field_associated_campus_resource:
+    weight: 122
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_revisions_autocomplete
+    type: entity_reference_autocomplete
+    region: content
+  field_associated_committee:
+    weight: 124
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_associated_program:
+    weight: 123
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_content:
+    weight: 121
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
     region: content
   langcode:
     type: language_select
@@ -81,7 +114,7 @@ content:
     third_party_settings: {  }
   url_redirects:
     weight: 50
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

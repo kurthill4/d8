@@ -11,14 +11,14 @@ id: deans_user_management
 title: 'Deans User Management'
 description: ''
 category: Admin
-elements: "user:\n  '#type': entity_autocomplete\n  '#title': 'Authorizing Dean or Manager'\n  '#required': true\n  '#wrapper_attributes':\n    class:\n      - webform-key\n  '#target_type': user\n  '#selection_handler': views\n  '#selection_settings':\n    view:\n      view_name: adminstaff\n      display_name: entity_reference_1\n      arguments: {  }\ncontainer_01:\n  '#type': container\n  '#states':\n    visible:\n      ':input[name=\"user\"]':\n        empty: true\n  '#attributes':\n    style: 'form--inline clearfix'\n  '#format': details\nflexbox:\n  '#type': webform_flexbox\nflexbox_01:\n  '#type': webform_flexbox\n  contact_information:\n    '#type': webform_section\n    '#title': 'Contact Information'\n    '#title_tag': h3\n    name_of_editor:\n      '#type': webform_name\n      '#title': 'Name of Editor'\n      '#required': true\n      '#wrapper_attributes':\n        style: 'max-width:90%'\n      '#attributes':\n        style: 'width:40%'\n      '#title__access': false\n      '#middle__access': false\n      '#suffix__access': false\n      '#degree__access': false\n    email:\n      '#type': email\n      '#title': Email\n      '#maxlength': '255'\n      '#size': '40'\n      '#autocomplete': 'off'\n      '#required': true\n    office:\n      '#type': textfield\n      '#title': Office\n      '#maxlength': '10'\n      '#size': '10'\n    extension:\n      '#type': textfield\n      '#title': Extension\n      '#maxlength': '20'\n      '#size': '10'\narea_s_this_user_will_edit:\n  '#type': textarea\n  '#title': 'Area(s) this user will edit'\n  '#maxlength': '1024'\n  '#autocomplete': 'off'\n  '#required': true\n  '#required_error': 'Please enter the areas of the website that this person will edit'\n  '#wrapper_attributes':\n    style: 'max-width:75%'\nagendas_minutes:\n  '#type': radios\n  '#title': Agendas/Minutes\n  '#description': 'Will this user be posting agendas/minutes?'\n  '#description_display': before\n  '#options':\n    'Yes': 'Yes'\n    'No': 'No'\n  '#options_display': side_by_side\nis_trained:\n  '#type': radios\n  '#title': Trained\n  '#description': 'Has this user attended a Web content training session?'\n  '#description_display': before\n  '#options':\n    'Yes': 'Yes'\n    'No': 'No'\n"
+elements: "user:\n  '#type': entity_autocomplete\n  '#title': 'Authorizing Dean'\n  '#wrapper_attributes':\n    class:\n      - webform-key\n  '#target_type': user\n  '#selection_handler': views\n  '#selection_settings':\n    view:\n      view_name: adminstaff\n      display_name: entity_reference_1\n      arguments: {  }\n  '#required': true\ncontainer_01:\n  '#type': container\n  '#states':\n    visible:\n      ':input[name=\"user\"]':\n        empty: true\n  '#attributes':\n    style: 'form--inline clearfix'\n  '#format': details\n  name_of_editor:\n    '#type': webform_section\n    '#title': 'Name of Editor'\n    '#title_tag': h3\n    '#format': details\n    editor_name:\n      '#type': entity_autocomplete\n      '#title': 'Name of Editor'\n      '#target_type': user\n      '#selection_handler': views\n      '#selection_settings':\n        view:\n          view_name: adminstaff\n          display_name: entity_reference_1\n          arguments: {  }\n      '#required': true\n    flexbox:\n      '#type': webform_flexbox\n      contact_information:\n        '#type': webform_section\n        '#title': 'Contact Information'\n        '#title_tag': h3\n        flexbox_01:\n          '#type': webform_flexbox\n          email:\n            '#type': email\n            '#title': Email\n            '#maxlength': '255'\n            '#size': '40'\n            '#autocomplete': 'off'\n            '#default_value': '[webform_submission:values:name_of_editor:entity:mail]'\n          office:\n            '#type': textfield\n            '#title': Office\n            '#maxlength': '10'\n            '#size': '10'\n          extension:\n            '#type': textfield\n            '#title': Extension\n            '#maxlength': '20'\n            '#size': '10'\narea_s_this_user_will_edit:\n  '#type': textarea\n  '#title': 'Area(s) this user will edit'\n  '#maxlength': '1024'\n  '#autocomplete': 'off'\n  '#required': true\n  '#required_error': 'Please enter the areas of the website that this person will edit'\nagendas_minutes:\n  '#type': radios\n  '#title': 'Will this user be posting agendas/minutes?'\n  '#options':\n    'Yes': 'Yes'\n    'No': 'No'\n  '#options_display': side_by_side\nis_trained:\n  '#type': radios\n  '#title': 'Has this user attended a training session?'\n  '#options':\n    'Yes': 'Yes'\n    'No': 'No'\ntest:\n  '#type': webform_computed_token\n  '#title': Test\n  '#value': '[webform_submission:values:name_of_editor:entity:mail]'\n"
 css: ''
 javascript: ''
 settings:
   ajax: false
   ajax_scroll_top: form
   page: true
-  page_submit_path: /manage/new-editor
+  page_submit_path: ''
   page_confirm_path: ''
   form_submit_once: false
   form_exception_message: ''
@@ -46,12 +46,7 @@ settings:
   form_login_message: ''
   submission_label: ''
   submission_log: false
-  submission_user_columns:
-    - serial
-    - created
-    - element__name_of_editor__first
-    - element__name_of_editor__last
-    - element__area_s_this_user_will_edit
+  submission_user_columns: {  }
   submission_login: false
   submission_login_message: ''
   submission_exception_message: ''
@@ -130,8 +125,7 @@ access:
     users: {  }
     permissions: {  }
   view_own:
-    roles:
-      - admin
+    roles: {  }
     users: {  }
     permissions: {  }
   update_own:
@@ -147,7 +141,8 @@ access:
     users: {  }
     permissions: {  }
   test:
-    roles: {  }
+    roles:
+      - administrator
     users: {  }
     permissions: {  }
 handlers:

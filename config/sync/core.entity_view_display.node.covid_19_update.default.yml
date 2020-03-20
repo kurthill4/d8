@@ -4,10 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.covid_19_update.body
-    - field.field.node.covid_19_update.field_story_date
     - node.type.covid_19_update
   module:
-    - datetime
     - text
     - user
 id: node.covid_19_update.default
@@ -21,15 +19,6 @@ content:
     weight: 2
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_story_date:
-    weight: 1
-    label: hidden
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    type: datetime_default
     region: content
   links:
     weight: 0

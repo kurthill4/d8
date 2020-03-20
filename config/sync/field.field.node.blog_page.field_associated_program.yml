@@ -1,0 +1,28 @@
+uuid: 7b227360-8933-455e-a3ca-037ee9c7ef80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_associated_program
+    - node.type.blog_page
+    - node.type.program
+id: node.blog_page.field_associated_program
+field_name: field_associated_program
+entity_type: node
+bundle: blog_page
+label: 'Associated Program'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      program: program
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

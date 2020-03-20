@@ -36,18 +36,21 @@ visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
     bundles:
+      blog_page: blog_page
       custom_web_page: custom_web_page
+      webform: webform
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
   request_path:
     id: request_path
-    pages: "/campus/*\r\n/campus/forms/*"
+    pages: "/campus/*\r\n/campus/forms/*\r\n/covid-info"
     negate: false
     context_mapping: {  }
   node_type:
     id: node_type
     bundles:
+      blog_page: blog_page
       custom_web_page: custom_web_page
       webform: webform
     negate: false

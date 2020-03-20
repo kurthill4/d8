@@ -1,13 +1,15 @@
-uuid: a69fd67f-3463-4ce6-9f64-ee8977eae0a5
+uuid: 8b734a9e-0901-49e5-a0eb-18b7f75e3d1c
 langcode: en
 status: true
 dependencies: {  }
 id: covid_19_updater
 label: 'COVID-19 Updater'
-weight: 29
+weight: 28
 is_admin: null
 permissions:
   - 'create covid_19_update content'
   - 'delete any covid_19_update content'
+  - 'delete covid_19_update revisions'
+  - 'delete own covid_19_update content'
   - 'edit any covid_19_update content'
-  - 'use text format full_html'
+  - 'edit own covid_19_update content'

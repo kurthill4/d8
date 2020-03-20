@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.taxonomy_term.field_web_pages
+    - node.type.blog_page
     - node.type.custom_web_page
     - node.type.webform
     - taxonomy.vocabulary.campus_resources
@@ -21,6 +22,7 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
+      blog_page: blog_page
       custom_web_page: custom_web_page
       webform: webform
     sort:
