@@ -1,0 +1,23 @@
+uuid: 13d04375-1b65-466a-a0e6-b0c9a29169f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sticky_at_top_of_page_
+    - node.type.covid_19_update
+id: node.covid_19_update.field_sticky_at_top_of_page_
+field_name: field_sticky_at_top_of_page_
+entity_type: node
+bundle: covid_19_update
+label: 'Sticky at Top of Page '
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

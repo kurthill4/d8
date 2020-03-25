@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.covid_19_update.body
+    - field.field.node.covid_19_update.field_sticky_at_top_of_page_
     - node.type.covid_19_update
   module:
     - text
@@ -27,6 +28,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_sticky_at_top_of_page_:
+    weight: 26
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   status:
     type: boolean_checkbox
     settings:

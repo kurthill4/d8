@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.covid_19_update.body
+    - field.field.node.covid_19_update.field_sticky_at_top_of_page_
     - node.type.covid_19_update
   module:
     - text
@@ -16,7 +17,7 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -26,4 +27,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_sticky_at_top_of_page_: true
   langcode: true

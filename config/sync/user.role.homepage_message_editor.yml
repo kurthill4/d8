@@ -1,0 +1,10 @@
+uuid: 75575766-1fa2-4d9f-8085-07b9f678377d
+langcode: en
+status: true
+dependencies: {  }
+id: homepage_message_editor
+label: 'Homepage Message Editor'
+weight: 29
+is_admin: null
+permissions:
+  - 'change homepage message'
