@@ -92,6 +92,9 @@ hr.short {width:50%;}
 .float-left {float:left;}
 .float-right {float:right;}
 .red {color:red!important}
+.big {font-size:1.5em}
+.huge {font-size:1.75em}
+.ginormous {font-size:2em}
 
 .content.gradstream
 {
@@ -176,6 +179,7 @@ dl dd:not(:last-child) {margin-bottom:1em}
 	margin:1em auto 0;
 }
 
+.sticky {background-color:#dcdcdc}
 .content li,.field--name-description li {margin-bottom:1em;}
 .content ul li,.field--name-description ul li {
 	text-indent: -1em;

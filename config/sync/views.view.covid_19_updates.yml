@@ -159,7 +159,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{% if field_sticky_at_top_of_page_  == 'Yes' %}\r\n<p class=\"bold italic red\" style=\"font-size:1.5em\">*** Important ***</p>\r\n{% endif %}\r\n<h2>{{ created }}</h2>\r\n"
+            text: "{% if field_sticky_at_top_of_page_  == 'Yes' %}\r\n<p class=\"bold italic red big\" style=\"font-size:1.5em\">*** Important ***</p>\r\n{% endif %}\r\n<h2>{{ created }}</h2>\r\n"
             make_link: false
             path: ''
             absolute: false
