@@ -1,0 +1,6 @@
+name: Homepage Message
+description: Edit Miramar's homepage message
+package: Custom
+
+type: module
+core: 8.x

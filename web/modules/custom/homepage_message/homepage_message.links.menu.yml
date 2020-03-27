@@ -1,0 +1,6 @@
+homepage_message.admin:
+  title: 'Change Homepage Message'
+  description: 'Change or edit hero message on homepage'
+  parent: system.admin_config_content
+  route_name: homepage_message.admin
+  weight: 100

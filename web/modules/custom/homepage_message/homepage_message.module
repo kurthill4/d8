@@ -1,0 +1,51 @@
+<?php
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * @file
+ * Edit Miramar's homepage message.
+ * Contains functions that alter Drupal setting and behaviors
+ */
+
+/**
+ * Implements hook_preprocess()
+ *
+ */
+function homepage_message_preprocess(&$variables,$hook) {
+	$variables['home_head1'] = \Drupal::config('homepage_message.settings')->get('home_headline_1');
+	$variables['home_head2'] = \Drupal::config('homepage_message.settings')->get('home_headline_2');
+	$variables['home_link1'] = \Drupal::config('homepage_message.settings')->get('home_link_text');
+	$variables['home_link2'] = \Drupal::config('homepage_message.settings')->get('home_link_url');
+}
+
+/**
+ * Implements hook_theme()
+ *
+ */
+function homepage_message_theme($existing, $type, $theme, $path) { 
+
+	// Declare template
+	return [
+		'homepagemsg' => [
+		  '#theme' => 'homepagemsg',
+		]
+	     ];
+}
+
+
+function homepage_message_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.homepage_message':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Changes the message on the hero image for the Home Page ONLY') . '</p>';
+      return $output;
+    case 'admin.page.homepage_message':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Changes the message on the hero image for the Home Page ONLY') . '</p>';
+      return $output;
+  }
+}
+
+

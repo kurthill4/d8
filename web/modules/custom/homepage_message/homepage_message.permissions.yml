@@ -1,0 +1,4 @@
+change homepage message:
+  title: 'Change Homepage Message'
+  description: 'Edit and update hero message on homepage'
+  restrict access: TRUE

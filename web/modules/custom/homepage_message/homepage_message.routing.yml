@@ -1,0 +1,7 @@
+homepage_message.admin:
+  path: '/admin/config/homepage_message'
+  defaults:
+    _form: '\Drupal\homepage_message\Form\HomepageMessageForm'
+    _title: 'Homepage Message'
+  requirements:
+    _permission: 'change homepage message'
