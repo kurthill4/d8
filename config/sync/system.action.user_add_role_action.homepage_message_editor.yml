@@ -1,0 +1,14 @@
+uuid: d3949a8d-4268-4670-9cf1-306f89b002ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.homepage_message_editor
+  module:
+    - user
+id: user_add_role_action.homepage_message_editor
+label: 'Add the Homepage Message Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: homepage_message_editor

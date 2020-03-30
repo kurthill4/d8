@@ -1,0 +1,14 @@
+uuid: ab267b11-35aa-44fe-9c9b-894d0882dd0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.homepage_message_editor
+  module:
+    - user
+id: user_remove_role_action.homepage_message_editor
+label: 'Remove the Homepage Message Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: homepage_message_editor
