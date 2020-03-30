@@ -109,6 +109,7 @@ class HomepageMessageForm extends ConfigFormBase {
 			->set('home_link_text', $form_state->getValue('homepage_link_text'))
 			->set('home_link_url', $form_state->getValue('homepage_link_url'))
 			->save();
+		drupal_flush_all_caches();
 
 		parent::submitForm($form, $form_state);
 	}
