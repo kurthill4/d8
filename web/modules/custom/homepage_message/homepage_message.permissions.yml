@@ -1,3 +1,7 @@
+view homepage message:
+  title: 'View Homepage Message'
+  description: 'View hero message on homepage'
+
 change homepage message:
   title: 'Change Homepage Message'
   description: 'Edit and update hero message on homepage'
