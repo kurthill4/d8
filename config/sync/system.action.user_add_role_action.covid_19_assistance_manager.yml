@@ -1,0 +1,14 @@
+uuid: 2b1913fa-8991-45df-bdbf-c02153d84b88
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.covid_19_assistance_manager
+  module:
+    - user
+id: user_add_role_action.covid_19_assistance_manager
+label: 'Add the COVID-19 Assistance Manager role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: covid_19_assistance_manager

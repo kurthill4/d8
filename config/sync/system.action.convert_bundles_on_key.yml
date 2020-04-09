@@ -1,0 +1,11 @@
+uuid: 9f2b75f7-ba85-4863-b0d7-2498b16baed0
+langcode: en
+status: true
+dependencies:
+  module:
+    - convert_bundles
+id: convert_bundles_on_key
+label: 'Convert Key Entity Bundles'
+type: key
+plugin: convert_bundles_action_base
+configuration: {  }

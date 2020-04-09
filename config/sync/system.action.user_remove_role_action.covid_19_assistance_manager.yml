@@ -1,0 +1,14 @@
+uuid: 9e72a130-bfcb-466f-b37a-6e5e05a1525d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.covid_19_assistance_manager
+  module:
+    - user
+id: user_remove_role_action.covid_19_assistance_manager
+label: 'Remove the COVID-19 Assistance Manager role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: covid_19_assistance_manager

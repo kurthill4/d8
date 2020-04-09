@@ -1,0 +1,11 @@
+uuid: 570388c8-05ca-485c-9567-60fece0663b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - convert_bundles
+id: convert_bundles_on_encryption_profile
+label: 'Convert Encryption Profile Entity Bundles'
+type: encryption_profile
+plugin: convert_bundles_action_base
+configuration: {  }

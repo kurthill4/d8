@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a feed icon.
+ *
+ * Available variables:
+ * - url: An internal system path or a fully qualified external URL of the feed.
+ * - attributes: Remaining HTML attributes for the feed link.
+ *   - title: A descriptive title of the feed link.
+ *   - class: HTML classes to be applied to the feed link.
+ *
+ * @ingroup themeable
+ */
+#}
+
+<div class="menu-content-call hide-xs" style="max-width:350px">
+	<div class="call-menu hide-xs" style="margin:0 auto">
+		<div class="callbar">
+			<a href="{{ url }}">
+			<span class="hide-xs"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+			Export Full Output to CSV
+			</a>
+		</div>
+	</div>
+</div>

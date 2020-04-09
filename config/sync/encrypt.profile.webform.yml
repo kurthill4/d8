@@ -1,0 +1,13 @@
+uuid: bda78635-aaa6-42e9-8a2c-20587b7456ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - key.key.default
+  module:
+    - real_aes
+id: webform
+label: Webform
+encryption_method: real_aes
+encryption_key: default
+encryption_method_configuration: {  }

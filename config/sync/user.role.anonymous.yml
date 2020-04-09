@@ -17,4 +17,5 @@ permissions:
   - 'download any document files'
   - 'search content'
   - 'view files'
+  - 'view homepage message'
   - 'view private files'

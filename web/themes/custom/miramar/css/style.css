@@ -341,6 +341,12 @@ form.webform-submission-form {
 	margin-bottom:1em;
 }
 
+fieldset.wf-radio {width:75%!important;border:1px solid}
+fieldset.wf-radio legend {width:50%!important;border:1px solid}
+fieldset.wf-radio {margin-left:10%}
+fieldset.wf-radio .fieldset-wrapper {padding-left:5%!important;}
+/********************************************************************************/
+
 .events-export {
 	margin-left:1em;
 }
@@ -3080,12 +3086,16 @@ svg {
     height: 100%;
     width: 100%;
 }
+fieldset.wf-radio {width:100%!important;margin-left:0!important}
+fieldset.wf-radio legend {width:60%!important}
+fieldset.wf-radio .fieldset-wrapper {width:40%;padding:0!important;}
+fieldset.wf-radio input {padding-right:20px!important;}
 		.webform-key {width:100%!important}
 		.ui-dialog {
 		    max-width: 92% !important;
 		  }
 		.region-content {width:100vw!important}
-		.banner-content {display:block;width:100%;margin:0;}
+		.banner-content {display:block!important;width:100%;margin:0;}
 		.banner-content .get-started {width:75%;margin:0 auto!important}
 		.banner-content .get-started a {font-size:4vw}
 		.caption {width:100%!important;height:auto;padding:0.25em;margin:0 0 5px 0!important;}
