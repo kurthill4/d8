@@ -102,9 +102,9 @@ settings:
   draft_auto_save: false
   draft_saved_message: ''
   draft_loaded_message: ''
-  confirmation_type: message
+  confirmation_type: page
   confirmation_title: 'Request Submitted'
-  confirmation_message: '<p class="big bold">Your request for an emergency laptop loan has been sent.</p>'
+  confirmation_message: "<p class=\"big bold\">Your request for an emergency laptop loan has been sent.</p>\r\n<p class=\"big bold\">\r\n<a href=\"/\">Miramar College Home Page</a>\r\n</p>"
   confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true

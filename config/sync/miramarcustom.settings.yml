@@ -1,5 +1,5 @@
 image_path: /themes/custom/miramar
 local_ip: false
 client_ip: 127.0.0.1
-issues_link: '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=/webform/covid_19_emergency_assistance/test">Report Issues With This Page</a>'
+issues_link: '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=/form/covid-19-emergency-assistance/confirmation?token=eQQ-XB3afbHh26VZc1CB9WBIsfglPWGqyaflKQ2Yoc8">Report Issues With This Page</a>'
 prog_call: ''
