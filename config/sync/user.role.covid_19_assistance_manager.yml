@@ -6,5 +6,4 @@ id: covid_19_assistance_manager
 label: 'COVID-19 Assistance Manager'
 weight: 30
 is_admin: null
-permissions:
-  - 'view encrypted values'
+permissions: {  }
