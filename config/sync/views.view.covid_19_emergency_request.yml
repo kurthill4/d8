@@ -650,10 +650,10 @@ display:
           entity_type: webform_submission
           entity_field: sid
           plugin_id: field
-        webform_submission_value:
-          id: webform_submission_value
-          table: webform_submission_field_covid_19_emergency_assistance_date
-          field: webform_submission_value
+        created:
+          id: created
+          table: webform_submission
+          field: created
           relationship: none
           group_type: group
           admin_label: ''
@@ -698,10 +698,25 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          webform_element_format: short
-          webform_multiple_value: true
-          webform_multiple_delta: 0
-          plugin_id: webform_submission_field
+          click_sort_column: value
+          type: timestamp
+          settings:
+            date_format: short
+            custom_date_format: ''
+            timezone: ''
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: webform_submission
+          entity_field: created
+          plugin_id: field
         webform_submission_value_8:
           id: webform_submission_value_8
           table: webform_submission_field_covid_19_emergency_assistance_csid_
