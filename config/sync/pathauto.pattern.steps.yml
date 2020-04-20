@@ -1,0 +1,22 @@
+uuid: 5336d596-edae-42c5-86b8-2c45341128cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: steps
+label: Steps
+type: 'canonical_entities:node'
+pattern: '/hidden/step/[node:nid]'
+selection_criteria:
+  7ecb6be5-1c10-4099-a537-f7b3daceff8e:
+    id: node_type
+    bundles:
+      new_student_step: new_student_step
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 7ecb6be5-1c10-4099-a537-f7b3daceff8e
+selection_logic: and
+weight: -5
+relationships: {  }

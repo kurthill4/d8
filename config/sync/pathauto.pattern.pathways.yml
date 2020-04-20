@@ -1,0 +1,22 @@
+uuid: d610bd71-1851-4c19-a64e-37bb310114a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: pathways
+label: Pathways
+type: 'canonical_entities:node'
+pattern: '/hidden/pathways/[node:nid]'
+selection_criteria:
+  6976a191-1642-4401-9269-354529c5384c:
+    id: node_type
+    bundles:
+      pathways: pathways
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 6976a191-1642-4401-9269-354529c5384c
+selection_logic: and
+weight: -5
+relationships: {  }

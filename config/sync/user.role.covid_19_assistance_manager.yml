@@ -1,9 +1,10 @@
-uuid: 8a55afbd-7ea4-41bc-98ae-12745ee18d2d
+uuid: 2fe40112-22ac-4e2a-8e48-cdd86249504b
 langcode: en
 status: true
 dependencies: {  }
 id: covid_19_assistance_manager
 label: 'COVID-19 Assistance Manager'
-weight: 30
+weight: 29
 is_admin: null
-permissions: {  }
+permissions:
+  - 'view encrypted values'

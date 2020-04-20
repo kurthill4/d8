@@ -1,0 +1,22 @@
+uuid: 32701df5-a620-4c5d-a1fa-447eb4ae0608
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: by_the_numbers
+label: 'By The Numbers'
+type: 'canonical_entities:node'
+pattern: '/hidden/by-the-numbers/[node:nid]'
+selection_criteria:
+  cf23bc26-6077-4cca-85e5-3b2c344b00a7:
+    id: node_type
+    bundles:
+      by_the_numbers: by_the_numbers
+    negate: false
+    context_mapping:
+      node: node
+    uuid: cf23bc26-6077-4cca-85e5-3b2c344b00a7
+selection_logic: and
+weight: -5
+relationships: {  }

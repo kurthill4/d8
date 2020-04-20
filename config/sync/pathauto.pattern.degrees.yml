@@ -1,0 +1,22 @@
+uuid: 00f76326-1280-4421-abd5-e26b6190fc46
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: degrees
+label: Degrees
+type: 'canonical_entities:node'
+pattern: '/hidden/degrees/[node:nid]'
+selection_criteria:
+  616ba75c-ebcd-4d6c-b871-9bfea8923608:
+    id: node_type
+    bundles:
+      degree: degree
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 616ba75c-ebcd-4d6c-b871-9bfea8923608
+selection_logic: and
+weight: -5
+relationships: {  }

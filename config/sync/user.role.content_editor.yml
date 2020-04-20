@@ -27,4 +27,5 @@ permissions:
   - 'edit own images content'
   - 'edit own program content'
   - 'use text format basic_html'
+  - 'use text format full_html'
   - 'view own unpublished content'

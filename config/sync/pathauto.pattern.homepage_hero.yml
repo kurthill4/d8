@@ -1,0 +1,22 @@
+uuid: f9691b07-8720-421a-bc8a-3724c75f52d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: homepage_hero
+label: 'Homepage Hero'
+type: 'canonical_entities:node'
+pattern: '/hidden/home/[node:nid]'
+selection_criteria:
+  8148612e-aece-4a45-a805-769a79b6a071:
+    id: node_type
+    bundles:
+      homepage_hero: homepage_hero
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 8148612e-aece-4a45-a805-769a79b6a071
+selection_logic: and
+weight: -5
+relationships: {  }
