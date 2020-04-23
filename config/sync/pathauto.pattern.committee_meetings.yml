@@ -1,0 +1,22 @@
+uuid: f62bb6b9-ec54-486e-b77e-b1a2651f5eef
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: committee_meetings
+label: 'Committee Meetings'
+type: 'canonical_entities:node'
+pattern: '/hidden/committees/[node:nid]'
+selection_criteria:
+  68671736-49f3-48fb-b2b2-9dbf2ca65f19:
+    id: node_type
+    bundles:
+      committee_meeting: committee_meeting
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 68671736-49f3-48fb-b2b2-9dbf2ca65f19
+selection_logic: and
+weight: -5
+relationships: {  }
