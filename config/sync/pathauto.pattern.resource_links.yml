@@ -1,0 +1,22 @@
+uuid: 460b4b04-e68c-430d-a4a1-2d1ac3190520
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: resource_links
+label: 'Resource Links'
+type: 'canonical_entities:node'
+pattern: '/hidden/resource-links/[node:nid]'
+selection_criteria:
+  c81d51ba-e2f4-45ed-b1b9-15522da392bd:
+    id: node_type
+    bundles:
+      resource_links: resource_links
+    negate: false
+    context_mapping:
+      node: node
+    uuid: c81d51ba-e2f4-45ed-b1b9-15522da392bd
+selection_logic: and
+weight: -5
+relationships: {  }
