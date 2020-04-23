@@ -62,26 +62,7 @@ function miramar_webform_form_alter(&$form, FormStateInterface $form_state, $for
 
   }
 
-/**
- * Implements hook_element_info_alter().
- */
-/*function miramar_element_info_alter(array &$types) {
-  $types['daterange_default']['#process'][] = 'miramar_datetime_set_format';
-}
 
-function miramar_daterange_default_set_format($element) {
-  // Remove seconds in browsers that support HTML5 type=date.
-  $element['time']['#attributes']['step'] = 60;
- // $element['#attached']['library'][] = 'datetime_tweaks/default_date';
-  return $element;
-}
-
-function miramar_preprocess_input(&$variables) {
-  if ($variables['theme_hook_original'] == 'input__date' && $variables['attributes']['type'] == 'time') {
-        $variables['attributes']['step'] = 0;
-    }
-}
-*/
 function miramar_field_widget_daterange_default_form_alter(&$element, FormStateInterface $form_state, $context) {
   $element['value']['#date_time_element']['time']['#attributes']['step'] = 60;
   $element['end_value']['#date_time_element']['time']['#attributes']['step'] = 60;
@@ -92,31 +73,4 @@ function miramar_form_search_block_form_alter(&$form, &$form_state, $form_id) {
 }
 */
 
-/*
-function miramar_preprocess_views_view_table__committee_meetings__block_2(&$variables) {
-	$view = $variables['view'];
-	$foo = 0;
-//	$item = $rows[0][0];
-	foreach($view->result as $item) {
-	$node = node_load($item->nid);
-	$variables['committee'] = 'bar';
-//	$variables['committee'] = $node->nid_1;
-	$foo++;
-	if($foo > 0)
-		break;
-}
-	
-}
-*/
-/*
-function miramar_views_pre_render(\Drupal\views\ViewExecutable $view) {
-  if ($view->id() == "committee_meetings" && $view->current_display == 'block_2') {
-	$item = $view->result[1];
-	//$item = $variables['row'];
-	$node = node_load($item->nid);
-	$variables['committee'] = $node->field_committee->target_id;
-	//$variables['committee'] = 'bar';
-  }
-}
-*/
 

@@ -13,11 +13,13 @@ dependencies:
     - field.field.node.committee_meeting.field_meeting_date_time
     - field.field.node.committee_meeting.field_meeting_location
     - field.field.node.committee_meeting.field_minutes
+    - field.field.node.committee_meeting.field_virtual_location
     - node.type.committee_meeting
   module:
     - datetime
     - datetime_range
     - file_entity
+    - link
     - user
 id: node.committee_meeting.default
 targetEntityType: node
@@ -85,6 +87,18 @@ content:
       text: 'Download [file:name]'
     third_party_settings: {  }
     type: file_download_link
+    region: content
+  field_virtual_location:
+    weight: 7
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
 hidden:
   entity_print_view_epub: true

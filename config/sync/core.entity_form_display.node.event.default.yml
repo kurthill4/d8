@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.event.field_image
     - field.field.node.event.field_priority
     - field.field.node.event.field_rsvp_required
+    - field.field.node.event.field_virtual_location
     - node.type.event
   module:
     - datetime_range
@@ -56,6 +57,7 @@ third_party_settings:
     group_location_contact:
       children:
         - field_event_location
+        - field_virtual_location
         - field_external_website
         - field_rsvp_required
         - field_contact
@@ -140,6 +142,14 @@ content:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
+    region: content
+  field_virtual_location:
+    weight: 7
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   langcode:
     type: language_select

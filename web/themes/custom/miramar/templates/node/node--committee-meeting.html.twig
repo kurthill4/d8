@@ -90,7 +90,12 @@
 <p class="bold"><a href="{{ path('entity.node.canonical', {'node':  node.field_committee.entity.id}) }}">{{ node.field_committee.entity.title.value }} Page</a></p>
 <h3>{{ newdate }}</h3>
 <h4>{{ content.field_event_date }}</h4>
+{% if node.field_meeting_location is not empty %}
 <h4>Location: {{ node.field_meeting_location.value }}</h4>
+{% endif %}
+{% if node.field_virtual_location.uri is not empty %}
+<h4><a href="{{ node.field_virtual_location.0.url }}">{{ node.field_virtual_location.title }}</a></h4>
+{% endif %}
 {% if node.field_agenda.entity.uri is not empty %}
 <p class="bold"><a href="{{ file_url(node.field_agenda.entity.uri.value) }}">Agenda</a></p>
 {% endif %}

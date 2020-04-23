@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.event.field_image
     - field.field.node.event.field_priority
     - field.field.node.event.field_rsvp_required
+    - field.field.node.event.field_virtual_location
     - node.type.event
   module:
     - datetime_range
@@ -44,6 +45,7 @@ content:
       separator: '-'
       format_type: medium
       timezone_override: ''
+      fromto: both
     third_party_settings: {  }
     type: daterange_default
     region: content
@@ -61,6 +63,7 @@ content:
       timezone_override: America/Los_Angeles
       format_type: calendar_time
       separator: '-'
+      fromto: both
     third_party_settings: {  }
     type: daterange_default
     region: content
@@ -131,6 +134,18 @@ content:
       format_custom_true: ''
     third_party_settings: {  }
     type: boolean
+    region: content
+  field_virtual_location:
+    weight: 115
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   links:
     weight: 100

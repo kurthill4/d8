@@ -92,6 +92,9 @@
 {% if node.field_event_location.value is not empty %}
 <h4>Location: {{ node.field_event_location.value }}</h4>
 {% endif %}
+{% if node.field_virtual_location.uri is not empty %}
+<h4><a href="{{ node.field_virtual_location.0.url }}">{{ node.field_virtual_location.title }}</a></h4>
+{% endif %}
 {% if node.field_event_description is not empty %}
 <p>{{ node.field_event_description.value|raw }}</p>
 {% endif %}
