@@ -1,5 +1,6 @@
 image_path: /themes/custom/miramar
 local_ip: false
 client_ip: 192.168.68.127
-issues_link: '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=/campus/governance/committees/webc">Report Issues With This Page</a>'
+
+issues_link: '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=/hidden/editor-request/report">Report Issues With This Page</a>'
 prog_call: ''

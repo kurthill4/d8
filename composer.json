@@ -175,7 +175,8 @@
 				"Fixing Combined Fields search": "https://www.drupal.org/files/issues/combine_fields_filter-1782678-1_0.patch",
 				"Fixing CKEditor multiple styles": "https://www.drupal.org/files/issues/2018-05-18/allow-multiple-elements-2973706-2.patch"
 			},
-
+			"drupal/webform_views": {"Fixing issue with entity relationships": "https://www.drupal.org/files/issues/2019-12-08/fix-reverse-relationships-with-webforms.patch",
+						"User relationships": "https://www.drupal.org/files/issues/2018-04-18/2954655-user-to-submission-relation-_8.x-5.0-alpha4_6.patch"},
 			"drupal/calendar":
 			{
 				"Patching multiday issue for calendar": "https://www.drupal.org/files/issues/2018-04-06/calendar-date_range-2699477-71.patch",

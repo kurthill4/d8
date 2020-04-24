@@ -217,8 +217,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: CSID
-          exclude: false
+          label: ''
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -250,7 +250,7 @@ display:
           element_class: ''
           element_label_type: span
           element_label_class: bold
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
