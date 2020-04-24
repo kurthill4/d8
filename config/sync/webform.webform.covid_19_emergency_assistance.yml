@@ -155,7 +155,9 @@ access:
     users: {  }
     permissions: {  }
   view_own:
-    roles: {  }
+    roles:
+      - anonymous
+      - authenticated
     users: {  }
     permissions: {  }
   update_own:

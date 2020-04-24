@@ -11,7 +11,7 @@ id: deans_user_management
 title: 'Deans Editor Request'
 description: ''
 category: Admin
-elements: "user:\n  '#type': entity_autocomplete\n  '#title': 'Authorizing Dean'\n  '#required': true\n  '#wrapper_attributes':\n    class:\n      - webform-key\n  '#label_attributes':\n    class:\n      - big\n  '#target_type': user\n  '#selection_handler': views\n  '#selection_settings':\n    view:\n      view_name: adminmgrs\n      display_name: entity_reference_1\n      arguments: {  }\neditor_information:\n  '#type': webform_section\n  '#title': 'Editor Information'\n  name_of_editor:\n    '#type': textfield\n    '#title': 'Name of Editor'\n    '#description': '<em>First, Last</em>'\n    '#wrapper_attributes':\n      style: 'max-width:550px'\n  flexbox_01:\n    '#type': webform_flexbox\n    email:\n      '#type': email\n      '#title': Email\n      '#maxlength': '255'\n      '#size': '40'\n      '#autocomplete': 'off'\n      '#required': true\n    office:\n      '#type': textfield\n      '#title': Office\n      '#maxlength': '10'\n      '#size': '10'\n    extension:\n      '#type': textfield\n      '#title': Extension\n      '#maxlength': '20'\n      '#size': '10'\narea_s_this_user_will_edit:\n  '#type': textarea\n  '#title': 'Area(s) this user will edit'\n  '#maxlength': '1024'\n  '#autocomplete': 'off'\n  '#required': true\n  '#required_error': 'Please enter the areas of the website that this person will edit'\nagendas_minutes:\n  '#type': radios\n  '#title': 'Will this user be posting agendas/minutes?'\n  '#options':\n    'Yes': 'Yes'\n    'No': 'No'\n  '#options_display': side_by_side\nis_trained:\n  '#type': radios\n  '#title': 'Has this user attended a training session?'\n  '#options':\n    'Yes': 'Yes'\n    'No': 'No'\n  '#options_display': two_columns\n  '#attributes':\n    style: 'margin-bottom:1em'\n"
+elements: "user:\n  '#type': entity_autocomplete\n  '#title': 'Authorizing Dean'\n  '#required': true\n  '#wrapper_attributes':\n    class:\n      - webform-key\n  '#label_attributes':\n    class:\n      - big\n  '#target_type': user\n  '#selection_handler': views\n  '#selection_settings':\n    view:\n      view_name: adminmgrs\n      display_name: entity_reference_1\n      arguments: {  }\neditor_information:\n  '#type': webform_section\n  '#title': 'Editor Information'\n  name_of_editor:\n    '#type': textfield\n    '#title': 'Name of Editor'\n    '#description': '<em>First, Last</em>'\n    '#autocomplete': 'off'\n    '#wrapper_attributes':\n      style: 'max-width:550px'\n  flexbox_01:\n    '#type': webform_flexbox\n    email:\n      '#type': email\n      '#title': Email\n      '#maxlength': '255'\n      '#size': '40'\n      '#autocomplete': 'off'\n      '#required': true\n    office:\n      '#type': textfield\n      '#title': Office\n      '#maxlength': '10'\n      '#size': '10'\n    extension:\n      '#type': textfield\n      '#title': Extension\n      '#maxlength': '20'\n      '#size': '10'\narea_s_this_user_will_edit:\n  '#type': textarea\n  '#title': 'Area(s) this user will edit'\n  '#maxlength': '1024'\n  '#autocomplete': 'off'\n  '#required': true\n  '#required_error': 'Please enter the areas of the website that this person will edit'\nagendas_minutes:\n  '#type': radios\n  '#title': 'Will this user be posting agendas/minutes?'\n  '#options':\n    'Yes': 'Yes'\n    'No': 'No'\n  '#options_display': side_by_side\nis_trained:\n  '#type': radios\n  '#title': 'Has this user attended a training session?'\n  '#options':\n    'Yes': 'Yes'\n    'No': 'No'\n  '#options_display': two_columns\n  '#attributes':\n    style: 'margin-bottom:1em'\ntest:\n  '#type': textfield\n  '#title': Test\n  '#multiple': true\n"
 css: ''
 javascript: ''
 settings:
@@ -109,7 +109,8 @@ access:
     users: {  }
     permissions: {  }
   view_any:
-    roles: {  }
+    roles:
+      - administrator
     users: {  }
     permissions: {  }
   update_any:
@@ -117,27 +118,36 @@ access:
     users: {  }
     permissions: {  }
   delete_any:
-    roles: {  }
+    roles:
+      - administrator
     users: {  }
     permissions: {  }
   purge_any:
-    roles: {  }
+    roles:
+      - administrator
     users: {  }
     permissions: {  }
   view_own:
-    roles: {  }
+    roles:
+      - administrator
+      - admin
     users: {  }
     permissions: {  }
   update_own:
-    roles: {  }
+    roles:
+      - administrator
+      - admin
     users: {  }
     permissions: {  }
   delete_own:
-    roles: {  }
+    roles:
+      - administrator
+      - admin
     users: {  }
     permissions: {  }
   administer:
-    roles: {  }
+    roles:
+      - administrator
     users: {  }
     permissions: {  }
   test:

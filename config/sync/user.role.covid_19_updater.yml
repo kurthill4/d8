@@ -13,3 +13,4 @@ permissions:
   - 'delete own covid_19_update content'
   - 'edit any covid_19_update content'
   - 'edit own covid_19_update content'
+  - 'use text format full_html'

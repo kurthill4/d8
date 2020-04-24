@@ -18,5 +18,6 @@ permissions:
   - 'edit any degree content'
   - 'edit any program content'
   - 'edit own document files'
+  - 'use text format full_html'
   - 'use workbench access'
   - 'view any paragraphs previewer'

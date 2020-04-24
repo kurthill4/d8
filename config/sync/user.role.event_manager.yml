@@ -19,3 +19,4 @@ permissions:
   - 'edit any event content'
   - 'edit own images content'
   - 'use text format basic_html'
+  - 'use text format full_html'

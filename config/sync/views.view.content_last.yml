@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - better_exposed_filters
     - node
     - user
 id: content_last
@@ -36,7 +37,7 @@ display:
           query_comment: ''
           query_tags: {  }
       exposed_form:
-        type: basic
+        type: bef
         options:
           submit_button: Apply
           reset_button: false
@@ -45,24 +46,27 @@ display:
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
+          input_required: false
+          text_input_required: 'Select any filter and click on Apply to see results'
+          bef:
+            general:
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              autosubmit: false
+              autosubmit_hide: false
+            type:
+              bef_format: bef
+              more_options:
+                bef_select_all_none: false
+                bef_collapsible: false
+                is_secondary: false
+                rewrite:
+                  filter_rewrite_values: ''
+          text_input_required_format: basic_html
       pager:
-        type: mini
+        type: none
         options:
-          items_per_page: 10
           offset: 0
-          id: 0
-          total_pages: null
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          tags:
-            previous: ‹‹
-            next: ››
       style:
         type: default
         options:
@@ -194,7 +198,7 @@ display:
           id: name
           table: users_field_data
           field: name
-          relationship: uid
+          relationship: uid_1
           group_type: group
           admin_label: ''
           label: ''
@@ -267,6 +271,75 @@ display:
           expose:
             operator: ''
           group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: type_op
+            label: 'Content type'
+            description: ''
+            use_operator: false
+            operator: type_op
+            identifier: type
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              admin: '0'
+              event_manager: '0'
+              content_editor: '0'
+              content_publisher: '0'
+              custom_web_page_manager: '0'
+              dean: '0'
+              block_manager: '0'
+              taxonomy_manager: '0'
+              user_manager: '0'
+              faculty: '0'
+              program_manager: '0'
+              pio: '0'
+              committee_content_manager: '0'
+              admin_services_manager: '0'
+              restricted: '0'
+              hourly: '0'
+              mbeps: '0'
+              la: '0'
+              ps: '0'
+              vpss: '0'
+              btcwi: '0'
+              student_affairs: '0'
+              prielt: '0'
+              student_dev: '0'
+              webform_access: '0'
+              covid_19_updater: '0'
+              covid_19_assistance_manager: '0'
+              homepage_message_editor: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
       sorts:
         created:
           id: created
@@ -287,8 +360,8 @@ display:
       footer: {  }
       empty: {  }
       relationships:
-        uid:
-          id: uid
+        uid_1:
+          id: uid_1
           table: node_field_revision
           field: uid
           relationship: none
@@ -305,7 +378,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
+        - url
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
