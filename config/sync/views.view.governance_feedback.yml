@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - user.role.administrator
-    - user.role.governance_feedback_manager
     - webform.webform.governance_feedback
   module:
     - csv_serialization
@@ -391,6 +390,10 @@ display:
       displays:
         page_1: page_1
         default: '0'
+      pager:
+        type: none
+        options:
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:

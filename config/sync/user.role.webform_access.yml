@@ -7,5 +7,7 @@ label: 'Webform Access'
 weight: 27
 is_admin: null
 permissions:
+  - 'edit any webform content'
   - 'view own webform submission'
+  - 'view webform submissions any node'
   - 'view webform submissions own node'

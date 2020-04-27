@@ -1,9 +1,0 @@
-uuid: e8da8440-f700-436c-be23-5734c18e979e
-langcode: en
-status: true
-dependencies: {  }
-id: homepage_message_editor
-label: 'Homepage Message Editor'
-weight: 30
-is_admin: null
-permissions: {  }

@@ -1,5 +1,5 @@
 image_path: /themes/custom/miramar
 local_ip: false
 client_ip: 127.0.0.1
-issues_link: '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=/admin/structure/views/view/deans_editor_request?destination=/admin/structure/views">Report Issues With This Page</a>'
+issues_link: '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=/admin/structure/views/view/governance_feedback/edit/data_export_1">Report Issues With This Page</a>'
 prog_call: ''
