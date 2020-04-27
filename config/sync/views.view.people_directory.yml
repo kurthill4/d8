@@ -144,14 +144,14 @@ display:
               align: ''
               separator: ''
               empty_column: 0
-              responsive: priority-low
+              responsive: priority-medium
             field_assignment:
               sortable: 1
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: 0
-              responsive: priority-low
+              responsive: priority-medium
             field_office:
               sortable: 0
               default_sort_order: asc

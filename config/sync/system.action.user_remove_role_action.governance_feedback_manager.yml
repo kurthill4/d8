@@ -1,0 +1,14 @@
+uuid: 7796af62-83a6-44c4-bcde-c902a7599a0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.governance_feedback_manager
+  module:
+    - user
+id: user_remove_role_action.governance_feedback_manager
+label: 'Remove the Governance Feedback Manager role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: governance_feedback_manager

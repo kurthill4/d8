@@ -1,0 +1,14 @@
+uuid: 8e65284b-d798-4fa5-8e2a-379edc39c063
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.governance_feedback_manager
+  module:
+    - user
+id: user_add_role_action.governance_feedback_manager
+label: 'Add the Governance Feedback Manager role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: governance_feedback_manager

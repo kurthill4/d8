@@ -3143,7 +3143,7 @@ fieldset.wf-radio input {padding-right:20px!important;}
 	padding: 5px 10px;
 	margin-right: 5px;
 }
-		 .hide-xs,.course-seq .views-view-grid{
+		 .hide-xs,.course-seq .views-view-grid,.cia-feedback td.priority-low,.cia-feedback th.priority-low{
 			 display: none!important;
 		 }
 .navbar-collapse.collapse {
