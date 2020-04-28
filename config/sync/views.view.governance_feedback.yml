@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - user.role.administrator
+    - user.role.governance_feedback_manager
     - webform.webform.governance_feedback
   module:
     - csv_serialization
