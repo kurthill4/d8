@@ -100,17 +100,45 @@ var pushDown = document.getElementById("push");
 	};
 })(jQuery);
 
-
 (function ($) {
-	Drupal.behaviors.closeSearch = {
-		attach: function(context,settings) {
-		  $('.search-desktop a.close-x').unbind('click').click(function() {
-		    $(this).parent().fadeToggle();
-		    $('#edit-keys').blur();
-		  });
+	$('a.esars-prime').addClass('esars');
+	$("a.esars").click(function(event){
+		event.preventDefault();
+	});
+	$('#lastSemesterEnroll,#oneSemesterComplete,#termAgreement').click(function() {
+		var last = $('#lastSemesterEnroll').prop('checked');
+		var one = $('#oneSemesterComplete').prop('checked');
+		var term = $('#termAgreement').prop('checked');
+	    	if(last == true && one == true && term == true) {
+			$('a.esars-prime').removeClass('esars');
+			$('a.esars-prime').off('click');
 		}
-	};
+		else {
+			$('a.esars-prime').addClass('esars');
+			$("a.esars").click(function(event){
+			  event.preventDefault();
+			});
+		}
+	  });
 })(jQuery);
+
+/*
+(function ($) {
+	$('#esars').hide();
+	$('#lastSemesterEnroll,#oneSemesterComplete,#termAgreement').click(function() {
+		var last = $('#lastSemesterEnroll').prop('checked');
+		var one = $('#oneSemesterComplete').prop('checked');
+		var term = $('#termAgreement').prop('checked');
+	    	if(last == true && one == true && term == true) {
+			$('#esars').show();
+		}
+		else {
+			$('#esars').hide();
+		}
+	  });
+})(jQuery);
+*/
+
 
 /*
  (function ($, Drupal, settings) {
