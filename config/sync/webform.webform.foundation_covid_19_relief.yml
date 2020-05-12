@@ -1,24 +1,44 @@
-uuid: d0b1598c-f442-40e4-92ed-35b29a85174d
+uuid: ad67272e-469d-48c8-aaaf-8239461ebacc
 langcode: en
 status: open
-dependencies: {  }
+dependencies:
+  module:
+    - webform_encrypt
+third_party_settings:
+  webform_encrypt:
+    element:
+      last_name:
+        encrypt: true
+        encrypt_profile: webform
+      first_name:
+        encrypt: true
+        encrypt_profile: webform
+      csid:
+        encrypt: true
+        encrypt_profile: webform
+      email:
+        encrypt: true
+        encrypt_profile: webform
+      email_confirm:
+        encrypt: true
+        encrypt_profile: webform
 open: null
 close: null
 uid: 1877
 template: false
 archive: false
-id: deans_user_management
-title: 'Deans Editor Request'
+id: foundation_covid_19_relief
+title: 'Foundation COVID-19 Relief'
 description: ''
-category: Admin
-elements: "editor_information:\n  '#type': webform_section\n  '#title': 'Editor Information'\n  school:\n    '#type': webform_entity_select\n    '#title': School\n    '#wrapper_attributes':\n      style: 'max-width:550px'\n    '#target_type': taxonomy_term\n    '#selection_handler': 'default:taxonomy_term'\n    '#selection_settings':\n      target_bundles:\n        schools: schools\n      sort:\n        field: name\n        direction: ASC\n    '#required': true\n  name_of_editor:\n    '#type': textfield\n    '#title': 'Name of Editor'\n    '#description': '<em>First, Last</em>'\n    '#autocomplete': 'off'\n    '#wrapper_attributes':\n      style: 'max-width:550px'\n    '#required': true\n  flexbox_01:\n    '#type': webform_flexbox\n    email:\n      '#type': email\n      '#title': Email\n      '#maxlength': '255'\n      '#size': '40'\n      '#autocomplete': 'off'\n      '#required': true\n    office:\n      '#type': textfield\n      '#title': Office\n      '#maxlength': '10'\n      '#size': '10'\n    extension:\n      '#type': textfield\n      '#title': Extension\n      '#maxlength': '20'\n      '#size': '10'\narea_s_this_user_will_edit:\n  '#type': textarea\n  '#title': 'Area(s) this user will edit'\n  '#maxlength': '1024'\n  '#autocomplete': 'off'\n  '#required': true\n  '#required_error': 'Please enter the areas of the website that this person will edit'\nagendas_minutes:\n  '#type': radios\n  '#title': 'Will this user be posting agendas/minutes?'\n  '#options':\n    'Yes': 'Yes'\n    'No': 'No'\n  '#options_display': side_by_side\nis_trained:\n  '#type': radios\n  '#title': 'Has this user attended a training session?'\n  '#options':\n    'Yes': 'Yes'\n    'No': 'No'\n  '#options_display': two_columns\n  '#attributes':\n    style: 'margin-bottom:1em'\n"
+category: 'Student Services'
+elements: "personal_information:\n  '#type': webform_section\n  '#title': 'Personal Information'\n  '#description': 'All information entered into this section is encrypted for your privacy.'\n  layout_1:\n    '#type': layout_container\n    last_name:\n      '#type': textfield\n      '#title': 'Last Name'\n      '#maxlength': '255'\n      '#size': '50'\n      '#placeholder': 'Last Name'\n      '#autocomplete': 'off'\n      '#required': true\n    first_name:\n      '#type': textfield\n      '#title': 'First Name'\n      '#maxlength': '255'\n      '#size': '50'\n      '#placeholder': 'First Name'\n      '#autocomplete': 'off'\n      '#required': true\n    csid:\n      '#type': number\n      '#title': 'Your District CSID Number'\n      '#size': '12'\n      '#placeholder': 'CSID #'\n      '#autocomplete': 'off'\n      '#required': true\n      '#min': '1'\n      '#max': '9999999999'\n  layout_2:\n    '#type': layout_container\n    email:\n      '#type': email\n      '#title': 'Your Correct Email Address'\n      '#maxlength': '255'\n      '#size': '45'\n      '#placeholder': Email\n      '#autocomplete': 'off'\n      '#required': true\n      '#wrapper_attributes':\n        style: 'max-width:300px'\nhorizontal_rule:\n  '#type': webform_horizontal_rule\n  '#attributes':\n    style: 'width:80%;margin:2em auto'\nyour_answers_to_the_following_are_required:\n  '#type': webform_section\n  '#title': 'Your Answers to the Following Are Required'\n  majority_of_my_enrolled_units_are_at_miramar_college:\n    '#type': radios\n    '#title': 'Majority of my enrolled units are at Miramar College'\n    '#title_display': inline\n    '#options': yes_no\n    '#options_display': side_by_side\n    '#required': true\n    '#attributes':\n      class:\n        - wf-radio\n  funds_use:\n    '#type': radios\n    '#title': 'Funds will help me with housing, food, wifi access, etc.'\n    '#title_display': inline\n    '#options': yes_no\n    '#options_display': side_by_side\n    '#required': true\n    '#attributes':\n      class:\n        - wf-radio\nhorizontal_rule_01:\n  '#type': webform_horizontal_rule\n  '#attributes':\n    style: 'width:10%;margin:2em auto'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Submit Your Aid Request'\n"
 css: ''
 javascript: ''
 settings:
   ajax: false
   ajax_scroll_top: form
-  page: true
-  page_submit_path: /hidden/editor-request
+  page: false
+  page_submit_path: ''
   page_confirm_path: ''
   form_submit_once: false
   form_exception_message: ''
@@ -32,15 +52,15 @@ settings:
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
-  form_reset: true
+  form_reset: false
   form_disable_autocomplete: false
   form_novalidate: false
   form_disable_inline_errors: false
-  form_required: true
+  form_required: false
   form_unsaved: false
   form_disable_back: false
   form_submit_back: false
-  form_autofocus: false
+  form_autofocus: true
   form_details_toggle: false
   form_login: false
   form_login_message: ''
@@ -76,9 +96,9 @@ settings:
   draft_auto_save: false
   draft_saved_message: ''
   draft_loaded_message: ''
-  confirmation_type: message
+  confirmation_type: page
   confirmation_title: 'Request Sent'
-  confirmation_message: "<p class=\"big bold\">The Web staff will add this editor and inform you when they can log in.</p>\r\n\r\n<p class=\"big bold\"><a href=\"/hidden/editor-request/report\" style=\"color:blue!important\">View and Download List of Approved Editors</a></p>"
+  confirmation_message: "<p class=\"big bold\">Your request for COVID-19 emergency assistance has been sent.</p>\r\n\r\n<p class=\"big bold\"><a href=\"/\">Miramar College Home Page</a></p>"
   confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
@@ -104,23 +124,14 @@ settings:
 access:
   create:
     roles:
-      - administrator
-      - admin
-      - mbeps
-      - la
-      - ps
-      - btcwi
-      - prielt
+      - anonymous
+      - authenticated
     users: {  }
     permissions: {  }
   view_any:
     roles:
       - administrator
-      - mbeps
-      - la
-      - ps
-      - btcwi
-      - prielt
+      - covid_19_assistance_manager
     users: {  }
     permissions: {  }
   update_any:
@@ -128,42 +139,32 @@ access:
     users: {  }
     permissions: {  }
   delete_any:
-    roles:
-      - administrator
+    roles: {  }
     users: {  }
     permissions: {  }
   purge_any:
-    roles:
-      - administrator
+    roles: {  }
     users: {  }
     permissions: {  }
   view_own:
-    roles:
-      - administrator
-      - admin
+    roles: {  }
     users: {  }
     permissions: {  }
   update_own:
-    roles:
-      - administrator
-      - admin
+    roles: {  }
     users: {  }
     permissions: {  }
   delete_own:
-    roles:
-      - administrator
-      - admin
+    roles: {  }
     users: {  }
     permissions: {  }
   administer:
-    roles:
-      - administrator
+    roles: {  }
     users: {  }
     permissions: {  }
   test:
     roles:
-      - administrator
-      - admin
+      - covid_19_assistance_manager
     users: {  }
     permissions: {  }
 handlers:
@@ -185,12 +186,12 @@ handlers:
       bcc_options: {  }
       from_mail: default
       from_options: {  }
-      from_name: 'User Management'
-      subject: 'Editor request '
+      from_name: default
+      subject: default
       body: default
       excluded_elements: {  }
-      ignore_access: true
-      exclude_empty: false
+      ignore_access: false
+      exclude_empty: true
       exclude_empty_checkbox: false
       html: true
       attachments: false

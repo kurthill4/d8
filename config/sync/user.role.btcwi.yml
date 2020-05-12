@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: btcwi
-label: BTCWI
+label: Business/Tech/Workforce
 weight: 23
 is_admin: null
 permissions:

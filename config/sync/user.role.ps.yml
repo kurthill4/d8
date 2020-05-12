@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: ps
-label: PS
+label: 'Public Safety'
 weight: 21
 is_admin: null
 permissions:
