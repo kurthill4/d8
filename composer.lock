@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9819cf23698e875d74ca6ae8d7839745",
+    "content-hash": "f01d41b1a800d89392ad13e97ed7d7c3",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -7393,7 +7393,8 @@
                 },
                 "patches_applied": {
                     "Fixing issue with entity relationships": "https://www.drupal.org/files/issues/2019-12-08/fix-reverse-relationships-with-webforms.patch",
-                    "User relationships": "https://www.drupal.org/files/issues/2018-04-18/2954655-user-to-submission-relation-_8.x-5.0-alpha4_6.patch"
+                    "User relationships": "https://www.drupal.org/files/issues/2018-04-18/2954655-user-to-submission-relation-_8.x-5.0-alpha4_6.patch",
+                    "Entity reference filter": "https://www.drupal.org/files/issues/2019-05-10/webform_views-conf-property-doesnt-exist-3051379-4.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
