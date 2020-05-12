@@ -35,6 +35,7 @@ div#onesearch {
 }
 
 figure a:hover img {opacity:0.5;}
+.alert-success a {color:blue!important}
 
 svg {width:100%;}
 

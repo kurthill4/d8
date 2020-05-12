@@ -1,5 +1,5 @@
 image_path: /themes/custom/miramar
 local_ip: false
-client_ip: 127.0.0.1
-issues_link: '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=/admin/structure/webform/manage/deans_user_management">Report Issues With This Page</a>'
-prog_call: ''
+client_ip: 192.168.68.127
+issues_link: '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=/hidden/editor-request/report">Report Issues With This Page</a>'
+prog_call: '<div class="spacer" style="height:0.1em">&nbsp;</div><div class="call hide-xs"><a href="#course_seq"><span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>What to Take</a></div>'

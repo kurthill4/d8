@@ -1,4 +1,4 @@
-uuid: e8da8440-f700-436c-be23-5734c18e979e
+uuid: 9b982da3-a3c7-4f6f-8fd1-914fd5cd186a
 langcode: en
 status: true
 dependencies: {  }
@@ -6,4 +6,5 @@ id: homepage_message_editor
 label: 'Homepage Message Editor'
 weight: 30
 is_admin: null
-permissions: {  }
+permissions:
+  - 'change homepage message'
