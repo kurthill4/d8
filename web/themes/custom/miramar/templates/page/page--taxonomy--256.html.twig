@@ -57,12 +57,8 @@
  */
 #}
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
-{{ attach_library('miramar/twitter_hack') }}
-{{ attach_library('miramar/google_local') }}
 {{ attach_library('miramar/google_apply') }}
-{{ attach_library('miramar/google_progs_home') }}
 {{ attach_library('miramar/vtour') }}
-
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
   {% block navbar %}
@@ -74,8 +70,17 @@
       ]
     %}
 <div class="spacer" style="height:1px">&nbsp;</div>
-    <header role="landmark">
+    <header>
         {{ page.navigation }}
+        {# .btn-navbar is used as the toggle for collapsed navbar content #}
+        {% if page.navigation_collapsible %}
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        {% endif %}
 
       {# Navigation (collapsible) #}
       {% if page.navigation_collapsible %}
@@ -84,52 +89,13 @@
     </header>
   {% endblock %}
 {% endif %}
+
 <div id="push" class="">
-<section id="hero" role="banner">
-<div class="banner front" role="marquee">
-  <div class="carousel" data-flickity='{ "draggable": false, "wrapAround": true, "autoPlay": 7500, "pauseAutoPlayOnHover": false, "pageDots": false }'>
-    {% for item in home_hero %}
-      <div class="carousel-cell slide-0 front" style="background:url({{ item }}) transparent no-repeat left top local"></div>
-    {% endfor %}
-  </div>
-        <div class="banner-content">
-{% include 'homepagemsg.html.twig' %}
-</div>
-</section>
-<!--div class="spacer hide-xl" style="height:10px">&nbsp;</div> <!-- Comment this out when the menu is updated -->
-{% if page.call %}
-<section id="call">
-  {{ page.call }}
-</section>
-{% endif %}
-
-{% if page.number %}
-  {{ page.number }}
-{% endif %}
-
-{% if page.dates %}
-  {{ page.dates }}
-{% endif %}
-
-{% if page.gallery %}
-  {{ page.gallery }}
-{% endif %}
-
-{% if page.buttons %}
-  {{ page.buttons }}
-{% endif %}
-
-{% if page.mission %}
-  {{ page.mission }}
-{% endif %}
-
-{% if page.news %}
-  {{ page.news }}
-{% endif %}
+<div class="page-cover">&nbsp;</div>
 
 {# Main #}
 {% block main %}
-  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+  <div role="main" class="resource main-container {{ container }} js-quickedit-main-content">
     <div class="row">
 
       {# Header #}
@@ -156,7 +122,7 @@
           page.sidebar_first and page.sidebar_second ? 'col-sm-6',
           page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
           page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
-          page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
+          page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12',
         ]
       %}
       <section{{ content_attributes.addClass(content_classes) }}>
@@ -207,5 +173,11 @@
     </div>
   </div>
 {% endblock %}
+    {# Below Content #}
+      {% if page.below_content %}
+        {% block below_content %}
+          {{ page.below_content }}
+        {% endblock %}
+      {% endif %}
 {% include 'footer.html.twig' %}
 </div>
