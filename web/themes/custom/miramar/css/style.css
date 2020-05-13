@@ -116,6 +116,27 @@ hr.short {width:50%;}
     width:100%;
     position:absolute;
 }
+a.esars-prime {
+    font-size:1em!important;
+}
+a.esars {
+    filter:alpha(opacity=50);
+    opacity: 0.5;
+    -moz-opacity:0.50;
+    cursor:default;
+    pointer-events:auto;
+    z-index:2000;
+    font-size:1em!important;
+}
+
+a.esars:hover  {
+ 	background: #1d2451!important;
+}
+
+a.esars:hover span  {
+ 	background: #a22130!important;
+}
+
 
 .content p,
 .field--name-description p {margin-bottom:1em}
