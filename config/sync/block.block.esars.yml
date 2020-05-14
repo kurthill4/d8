@@ -1,9 +1,9 @@
-uuid: 0e8c9c8b-13eb-4b2a-b707-903873a76c98
+uuid: 9a53574f-93c7-4e15-979e-b23f7cf1ad41
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:30533ffd-eeee-41cf-97d0-9945b7cc777e'
+    - 'block_content:basic:ddc07ce1-09c2-4871-86b5-64db451f4666'
   module:
     - block_content
     - block_visibility_groups
@@ -15,9 +15,9 @@ theme: miramar
 region: content
 weight: 0
 provider: null
-plugin: 'block_content:30533ffd-eeee-41cf-97d0-9945b7cc777e'
+plugin: 'block_content:ddc07ce1-09c2-4871-86b5-64db451f4666'
 settings:
-  id: 'block_content:30533ffd-eeee-41cf-97d0-9945b7cc777e'
+  id: 'block_content:ddc07ce1-09c2-4871-86b5-64db451f4666'
   label: eSARS
   provider: block_content
   label_display: '0'
