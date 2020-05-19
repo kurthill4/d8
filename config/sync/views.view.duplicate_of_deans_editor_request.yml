@@ -754,6 +754,7 @@ display:
           1: AND
       group_by: false
       use_ajax: true
+      title: 'Deans Editor Request'
     cache_metadata:
       max-age: -1
       contexts:
