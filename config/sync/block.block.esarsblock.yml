@@ -1,29 +1,24 @@
-uuid: 3a147ef9-d712-49b3-9630-22d61876e8f0
+uuid: d8648b29-26f7-446f-ad73-b21083107a73
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:8045d05e-2300-42d4-af0c-f67b435174bc'
   module:
-    - block_content
     - block_visibility_groups
+    - esars
     - system
   theme:
     - miramar
-id: esars
+id: esarsblock
 theme: miramar
 region: content
 weight: 0
 provider: null
-plugin: 'block_content:8045d05e-2300-42d4-af0c-f67b435174bc'
+plugin: esars_block
 settings:
-  id: 'block_content:8045d05e-2300-42d4-af0c-f67b435174bc'
-  label: eSARS
-  provider: block_content
+  id: esars_block
+  label: 'eSARS block'
+  provider: esars
   label_display: '0'
-  status: true
-  info: ''
-  view_mode: full
 visibility:
   condition_group:
     id: condition_group

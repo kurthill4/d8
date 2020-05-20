@@ -1,0 +1,10 @@
+esars:
+  css:
+    theme:
+      css/esars.css: {}
+  js:
+    js/esars.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+

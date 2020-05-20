@@ -45,6 +45,7 @@ module:
   entity_embed: 0
   entity_reference_revisions: 0
   entity_reference_views_select: 0
+  esars: 0
   feeds: 0
   feeds_ex: 0
   feeds_ical: 0

@@ -1,5 +1,5 @@
 image_path: /themes/custom/miramar
 local_ip: false
-client_ip: 127.0.0.1
+client_ip: 192.168.68.127
 issues_link: '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=/campus/counseling/esars">Report Issues With This Page</a>'
 prog_call: ''

@@ -1,0 +1,14 @@
+<?php
+
+	/**
+	 * Implements hook_theme
+	 */
+	function esars_theme($existing, $type, $theme, $path) {
+		return [
+			'esars_block' => [
+			'template' => 'block--esars',	// Set Twig template for eSARS block
+			],
+		];
+	}
+
+

@@ -99,12 +99,6 @@ google_newstudent_steps:
   dependencies:
     - core/jquery
 
-esars:
-  js:
-    js/esars.js: {}
-  dependencies:
-    - core/jquery
-
 google_student_steps:
   js:
     js/google-event-current-steps.js: {}
