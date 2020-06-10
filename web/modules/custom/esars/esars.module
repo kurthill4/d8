@@ -8,6 +8,9 @@
 			'esars_block' => [
 			'template' => 'block--esars',	// Set Twig template for eSARS block
 			],
+			'sep_block' => [
+			'template' => 'block--sep',	// Set Twig template for SEP block
+			],
 		];
 	}
 

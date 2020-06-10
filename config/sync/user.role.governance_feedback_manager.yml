@@ -1,0 +1,9 @@
+uuid: b57fb113-84bf-4b1b-ac0c-5911d19bc061
+langcode: en
+status: true
+dependencies: {  }
+id: governance_feedback_manager
+label: 'Governance Feedback Manager'
+weight: 31
+is_admin: null
+permissions: {  }

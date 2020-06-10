@@ -1,4 +1,4 @@
 name: eSARS
-description: Generates eSARS registration block for Counseling pages
+description: Generates eSARS and SEP registration blocks for Counseling pages
 type: module
 core: 8.x

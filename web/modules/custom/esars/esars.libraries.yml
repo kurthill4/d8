@@ -7,4 +7,13 @@ esars:
   dependencies:
     - core/jquery
     - core/jquery.once
+sep:
+  css:
+    theme:
+      css/sep.css: {}
+  js:
+    js/sep.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
 

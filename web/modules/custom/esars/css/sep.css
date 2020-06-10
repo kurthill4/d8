@@ -1,0 +1,20 @@
+a.sep-prime {
+    font-size:1em!important;
+}
+a.sep {
+    filter:alpha(opacity=50);
+    opacity: 0.5;
+    -moz-opacity:0.50;
+    cursor:default;
+    pointer-events:auto;
+    z-index:2000;
+    font-size:1em!important;
+}
+
+a.sep:hover  {
+ 	background: #1d2451!important;
+}
+
+a.sep:hover span  {
+ 	background: #a22130!important;
+}
