@@ -8,6 +8,38 @@ body{
 	background:#dbf3f5;
 }
 
+/************************************************/
+/*** Changes homepage hero to fixed block for ***/
+/*** fullscreen video display                 ***/
+/*** ALSO CHANGES section#hero                ***/
+/************************************************/
+
+/*
+.home-vid-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}*/
+
+.home-vid-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+	overflow:hidden;
+    padding-top: 56.25%;
+}
+
+
+.home-vid-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 div#maintenance {margin:2em auto;width:75%}
 div#maintenance p {font-size:2em;margin-top:2em}
 div#maintenance * {text-align:center}
