@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: mbeps
-label: 'Math/Bio/Exer/Phys Sciences'
+label: MBEPS
 weight: 19
 is_admin: null
 permissions:

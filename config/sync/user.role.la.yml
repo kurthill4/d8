@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: la
-label: 'Liberal Arts'
+label: LA
 weight: 20
 is_admin: null
 permissions:

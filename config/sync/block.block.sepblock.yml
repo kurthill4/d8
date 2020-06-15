@@ -1,0 +1,32 @@
+uuid: 0ef7ffbe-7ae1-4b41-b91c-0c551dba9d99
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - esars
+    - system
+  theme:
+    - miramar
+id: sepblock
+theme: miramar
+region: content
+weight: 0
+provider: null
+plugin: sep_block
+settings:
+  id: sep_block
+  label: 'SEP block'
+  provider: esars
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /campus/counseling/walk-in
+    negate: false
+    context_mapping: {  }

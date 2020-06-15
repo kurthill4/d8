@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: prielt
-label: Planning/Research/Lib/Tech
+label: PRIELT
 weight: 25
 is_admin: null
 permissions:
