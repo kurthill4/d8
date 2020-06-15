@@ -7,7 +7,8 @@
 		var app = $('#haveSDCCDApp').prop('checked');
 		var trans = $('#haveTranscripts').prop('checked');
 		var term = $('#termAgreement').prop('checked');
-	    	if(app == true && trans == true && term == true) {
+		
+	    if(app == true && trans == true && term == true) {
 			$('a.esars-prime').removeClass('esars');
 			$('a.esars-prime').off('click');
 		}

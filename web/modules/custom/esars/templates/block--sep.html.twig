@@ -4,16 +4,32 @@
 <p><strong>Each of the following criteria must be met and checked before scheduling a counseling appointment:</strong></p>
                		
 <div id="counselingCheckboxes" class="checks">
-	<input id="haveSDCCDApp" class="test" type="checkbox">
-	<label for="haveSDCCDApp">Have active SDCCD application</label><br>
-	<input id="haveTranscripts" class="test" type="checkbox">
-	<label for="haveTranscripts">Have transcripts from all prior colleges on file and evaluated for course equivalencies</label><br>		
+	<label for="haveSDCCDApp"><input id="haveSDCCDApp" class="test" type="checkbox" role="checkbox">
+	I have an active SDCCD application, and a 10-digit User or Student ID number</label><br>
+	<label for="haveFirst"><input id="haveFirst" class="test" type="checkbox" role="checkbox">
+	I am a first-time college student</label><br>		
+	<label for="haveOrientation"><input id="haveOrientation" class="test" type="checkbox" role="checkbox">
+	I completed the online Orientation at Future Students</label><br>		
+	<label for="haveVideo"><input id="haveVideo" class="test" type="checkbox" role="checkbox">
+	I completed the presentation component of the SEP through my high school OR I watched the entire Required SEP Presentation</label><br>		
+  <hr style="margin: 1em auto;width:75%">
+	<fieldset id="milestoneSource">
+		<legend><strong>Milestone Levels for English &amp; Math Placement</strong><span class="italic">(select one)</span></legend>
+		<label for="email"><input name="source" id="email" type="radio" role="radio" value="Email">
+		I received Milestone levels via email (See "Message Center" in <a href="https://myportal.sdccd.edu/psp/IHPRD/?cmd=login&languageCd=ENG&">mySDCCD</a>)</label><br>
+		<label for="assistant"><input name="source" id="assistant" type="radio" role="radio" value="Placement Assistant">
+		I completed and received Milestones through the <a href="https://c0acb673.caspio.com/dp/9D676000b7798fab2fca4d33a516">Placement Assistant</a></label><br>
+		<label for="test"><input name="source" id="test" type="radio" role="radio" value="Assessment Test">
+		I completed and received Milestones through an assessment test for English Language Acquisition (ELAC)</label><br>
+	</fieldset>
   <hr style="margin: 1em auto;width:75%">
   <p>
-By checking this box, I acknowledge that I have met the above criteria for scheduling a counseling appointment. I understand that appointments go through a screening process, and students who do not meet the above criteria will be provided with other options for meeting with a counselor.
+By checking the boxes above, I acknowledge that I have met the above criteria for scheduling a New Student SEP session. I understand that sessions go through a screening process, and students who not meet the above criteria will be directed to other options for meeting with a counselor.
 </p>
 <div class="centered center">
-	<input id="termAgreement" class="test" type="checkbox"> <label for="termAgreement"><span class="big bold">I Agree</span></label>
+	<label for="termAgreement"><input id="termAgreement" class="test" type="checkbox" role="checkbox">
+	<span class="big bold">I Agree</span></label>
+</div>
 </div>
 </div>
 <div class="menu-content-call" style="max-width:350px">

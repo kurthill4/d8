@@ -60,10 +60,8 @@
 {{ attach_library('miramar/twitter_hack') }}
 {{ attach_library('miramar/google_local') }}
 {{ attach_library('miramar/google_apply') }}
-<<<<<<< HEAD
-=======
 {{ attach_library('miramar/google_progs_home') }}
->>>>>>> db6fe
+{{ attach_library('miramar/vtour') }}
 
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
@@ -95,30 +93,14 @@
     {% endfor %}
   </div>
         <div class="banner-content">
-          <div class="caption">
-            <!--h1>Success Starts With You</h1>
-            <h2 class="hide-xs">Prepare for university transfer and for high-demand, well-paying careers.</h2-->
-            <h1>Success Starts With Free College!</h1>
-            <h2 class="hide-xs">Qualifying students can enroll for FREE.</h2>
-            <h3><a href="http://www.sdccd.edu/promise" target="_blank"><span class="fa fa-chevron-right" aria-hidden="true"></span>&nbsp;Learn about the San Diego Promise</a></h3>
-          </div>
-          <!--div class="get-started">
-            <a href="/futurestudents">
-              <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-              Get Started Now
-            </a>
-          </div>
-          <div class="slide-buttons">
-            <a href="#tour" class="hide-xs">Virtual Tour</a>
-            <a href="https://apply.sdccd.edu" target="_blank">Apply</a>
-            <a href="https://studentweb.sdccd.edu/reg-e" target="_blank">Register</a>
-          </div>
-	</div-->
+{% include 'homepagemsg.html.twig' %}
 </div>
 </section>
 <!--div class="spacer hide-xl" style="height:10px">&nbsp;</div> <!-- Comment this out when the menu is updated -->
 {% if page.call %}
+<section id="call">
   {{ page.call }}
+</section>
 {% endif %}
 
 {% if page.number %}
