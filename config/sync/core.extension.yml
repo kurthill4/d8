@@ -108,6 +108,7 @@ module:
   slick_ui: 0
   slick_views: 0
   statistics: 0
+  student_svcs_chat: 0
   syslog: 0
   system: 0
   tablefield: 0
