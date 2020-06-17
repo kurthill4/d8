@@ -23,15 +23,15 @@
  * 
  */
 
-/*
-function miramarcustom_preprocess_html(&$variables) {
-
-Just a basic browser-level preprocess, for possible future use.
-
+/*function miramarcustom_preprocess_html(&$variables) {
 }*/
 
+/**
+ * Implements hook_preprocess_page()
+ * 
+ */
+
 function miramarcustom_preprocess_page(&$variables) {
- 
 	// Set path to theme images
 
 	$imagepath = base_path() . drupal_get_path('theme', 'miramar');
@@ -81,11 +81,10 @@ function miramarcustom_preprocess_page(&$variables) {
 		->set('issues_link', '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=' . $_SERVER['REQUEST_URI'] . '">Report Issues With This Page</a>')
 		->save();
 
-
 }
 
 /**
- * Implements hook_preprocess_page()
+ * Implements hook_preprocess_node()
  * Reformats event dates for display using correct time zone.
  */
 

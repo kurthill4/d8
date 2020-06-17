@@ -1,0 +1,8 @@
+<?php
+
+	/**
+	  *	@file
+	  *	Event subscriber for iframe display
+	  * Allows designated pages to display in an external iframe
+	**/
+

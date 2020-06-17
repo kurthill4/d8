@@ -1,0 +1,5 @@
+services:
+  my_event_subscriber:
+    class: '\Drupal\iframe_ok\EventSubscriber\IFrameOK'
+    tags:
+      - { name: 'event_subscriber' }
