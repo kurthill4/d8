@@ -85,15 +85,17 @@
   {% endblock %}
 {% endif %}
 <div id="push" class="">
-<section id="hero" role="banner">
-<div class="banner front" role="marquee">
-  <div class="carousel" data-flickity='{ "draggable": false, "wrapAround": true, "autoPlay": 7500, "pauseAutoPlayOnHover": false, "pageDots": false }'>
-    {% for item in home_hero %}
-      <div class="carousel-cell slide-0 front" style="background:url({{ item }}) transparent no-repeat left top local"></div>
-    {% endfor %}
-  </div>
-        <div class="banner-content">
-{% include 'homepagemsg.html.twig' %}
+<div class="page-cover">&nbsp;</div>
+<section id="hero" role="banner" style="clear:both">
+<div class="row">
+<div class="col-sm-12">
+<div class="home-vid-container">
+<iframe src="https://vgrad.z19.web.core.windows.net/gatech/index.html" class="home-vid-video"></iframe>
+</div>
+<!--div class="embed-responsive">
+<iframe src="https://vgrad.z19.web.core.windows.net/gatech/index.html" class="embed-responsive-item"></iframe>
+</div-->
+</div>
 </div>
 </section>
 <!--div class="spacer hide-xl" style="height:10px">&nbsp;</div> <!-- Comment this out when the menu is updated -->

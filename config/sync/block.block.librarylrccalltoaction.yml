@@ -11,7 +11,7 @@ dependencies:
 id: librarylrccalltoaction
 theme: miramar
 region: call
-weight: -37
+weight: -39
 provider: null
 plugin: miramar_lrccall
 settings:
