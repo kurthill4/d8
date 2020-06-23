@@ -1,0 +1,19 @@
+uuid: 7cbc8ab4-2006-4afb-a2e2-867b497ec758
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_major
+    - node.type.graduate
+id: node.graduate.field_major
+field_name: field_major
+entity_type: node
+bundle: graduate
+label: Major
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

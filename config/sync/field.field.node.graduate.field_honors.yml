@@ -1,0 +1,19 @@
+uuid: 42b0a261-488c-4573-87a2-51541a719544
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_honors
+    - node.type.graduate
+id: node.graduate.field_honors
+field_name: field_honors
+entity_type: node
+bundle: graduate
+label: Honors
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
