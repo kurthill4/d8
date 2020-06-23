@@ -73,16 +73,24 @@ custom_sources:
     label: Message
     value: Message
     machine_name: message
+  full_name:
+    label: 'Full Name'
+    value: 'Full Name'
+    machine_name: full_name
+  last:
+    label: Last
+    value: Last
+    machine_name: last
 mappings:
   -
     target: title
     map:
-      value: graduate_name
+      value: full_name
     unique: {  }
   -
     target: field_last_name
     map:
-      value: grad_last_name
+      value: last_name
     unique: {  }
   -
     target: field_first_name

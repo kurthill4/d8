@@ -836,6 +836,16 @@ nav.mobile-nav li:first-child ol li{
 -webkit-print-color-adjust: exact;
 }
 
+.slide-grad {
+	background: transparent url(../images/herofront/Hero_3.png) no-repeat left top scroll;
+  -webkit-background-size: 1280px 600px;
+  -moz-background-size: 1280px 600px;
+  -o-background-size: 1280px 600px;
+  background-size: 1280px 600px;
+-webkit-print-color-adjust: exact;
+}
+
+
 .slide-sl {
 	background: transparent url(../images/sl-banner.png) no-repeat left top scroll;
   -webkit-background-size: 1280px 600px;

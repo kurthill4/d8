@@ -28,4 +28,9 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  feeds_item: true
+  field_first_name: true
+  field_honors: true
+  field_last_name: true
+  field_major: true
   langcode: true
