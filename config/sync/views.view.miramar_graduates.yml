@@ -181,6 +181,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      css_class: ''
     cache_metadata:
       max-age: -1
       contexts:
@@ -203,6 +204,7 @@ display:
         fields: false
         style: false
         row: false
+        css_class: false
       fields:
         title:
           id: title
@@ -400,6 +402,7 @@ display:
           separator: ''
           hide_empty: false
           default_field_elements: true
+      css_class: hometick
     cache_metadata:
       max-age: -1
       contexts:
