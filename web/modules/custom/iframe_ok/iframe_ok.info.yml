@@ -1,0 +1,5 @@
+name: IFrame OK
+type: module
+description: 'Allows designated pages to display in an external iframe'
+core: 8.x
+package: Other

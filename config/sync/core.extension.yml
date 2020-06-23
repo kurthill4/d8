@@ -60,6 +60,7 @@ module:
   help: 0
   history: 0
   homepage_message: 0
+  iframe_ok: 0
   image: 0
   key: 0
   language: 0
