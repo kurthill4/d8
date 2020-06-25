@@ -1,0 +1,19 @@
+uuid: c506107c-66f0-45bc-93ed-d5e9265bd6ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_award
+    - node.type.graduate
+id: node.graduate.field_award
+field_name: field_award
+entity_type: node
+bundle: graduate
+label: Award
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

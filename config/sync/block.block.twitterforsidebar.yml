@@ -1,8 +1,11 @@
-uuid: 0459d2c6-eebd-49b8-9999-ba11a165f7aa
+uuid: 32b1e5b7-ba16-49d4-b832-045c512848e8
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:basic:fa8632d0-266d-4c13-b0ff-5cea6e997652'
   module:
+    - block_content
     - block_visibility_groups
     - system
   theme:
@@ -10,14 +13,14 @@ dependencies:
 id: twitterforsidebar
 theme: miramar
 region: sidebar_second
-weight: -6
+weight: 0
 provider: null
-plugin: 'block_content:bb806156-1743-4da1-9b8f-83ae3dc582ec'
+plugin: 'block_content:fa8632d0-266d-4c13-b0ff-5cea6e997652'
 settings:
-  id: 'block_content:bb806156-1743-4da1-9b8f-83ae3dc582ec'
+  id: 'block_content:fa8632d0-266d-4c13-b0ff-5cea6e997652'
   label: 'Twitter for Sidebar'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
@@ -29,6 +32,6 @@ visibility:
     context_mapping: {  }
   request_path:
     id: request_path
-    pages: "/studentlife\r\n/news"
+    pages: /commencement2020
     negate: false
     context_mapping: {  }

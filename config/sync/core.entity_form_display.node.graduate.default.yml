@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.graduate.body
+    - field.field.node.graduate.feeds_item
+    - field.field.node.graduate.field_award
     - field.field.node.graduate.field_first_name
     - field.field.node.graduate.field_honors
     - field.field.node.graduate.field_last_name
@@ -32,6 +34,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_award:
+    weight: 126
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_first_name:
     weight: 123
     settings:

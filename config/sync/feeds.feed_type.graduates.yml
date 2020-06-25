@@ -81,6 +81,10 @@ custom_sources:
     label: Last
     value: Last
     machine_name: last
+  award:
+    label: Award
+    value: Award
+    machine_name: award
 mappings:
   -
     target: title
@@ -114,3 +118,8 @@ mappings:
       summary: message
     settings:
       format: plain_text
+  -
+    target: field_award
+    map:
+      value: award
+    unique: {  }

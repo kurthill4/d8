@@ -1,24 +1,28 @@
-uuid: b8170b9a-bf40-4d1d-a27a-93c1dd679948
+uuid: 045c0c46-07e2-4094-84d3-1d4943f92985
 langcode: en
 status: true
 dependencies:
+  config:
+    - views.view.graduates_marquee
   module:
     - block_visibility_groups
-    - miramarcustom
     - system
+    - views
   theme:
     - miramar
-id: admissionspagecalltoaction
+id: views_block__graduates_marquee_block_2
 theme: miramar
 region: sidebar_second
-weight: -34
+weight: -10
 provider: null
-plugin: miramar_admcall
+plugin: 'views_block:graduates_marquee-block_2'
 settings:
-  id: miramar_admcall
-  label: 'Admissions Page Call to Action'
-  provider: miramarcustom
-  label_display: '0'
+  id: 'views_block:graduates_marquee-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
 visibility:
   condition_group:
     id: condition_group
@@ -27,6 +31,6 @@ visibility:
     context_mapping: {  }
   request_path:
     id: request_path
-    pages: "/campus/admissions\r\n/campus/admissions/*"
+    pages: /commencement2020
     negate: false
     context_mapping: {  }

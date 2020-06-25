@@ -10,7 +10,7 @@ dependencies:
 id: accessibilityresources
 theme: miramar
 region: sidebar_second
-weight: -10
+weight: -14
 provider: null
 plugin: 'block_content:e7f87413-34de-4366-90e1-a6821bc8143d'
 settings:

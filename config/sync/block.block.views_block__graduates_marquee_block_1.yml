@@ -1,30 +1,28 @@
-uuid: 0ba11f7a-faf4-4fdb-a27a-79f2a0d5c05d
+uuid: 7366808c-17f8-4bfc-b246-3aecb057183a
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.committee_contact
+    - views.view.graduates_marquee
   module:
     - block_visibility_groups
     - node
-    - system
     - views
   theme:
     - miramar
-id: views_block__committee_contact_block_2
+id: views_block__graduates_marquee_block_1
 theme: miramar
-region: sidebar_second
-weight: -39
+region: call
+weight: 0
 provider: null
-plugin: 'views_block:committee_contact-block_2'
+plugin: 'views_block:graduates_marquee-block_1'
 settings:
-  id: 'views_block:committee_contact-block_2'
+  id: 'views_block:graduates_marquee-block_1'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
   items_per_page: none
-  context_mapping: {  }
 visibility:
   condition_group:
     id: condition_group
@@ -34,12 +32,7 @@ visibility:
   node_type:
     id: node_type
     bundles:
-      custom_web_page: custom_web_page
+      home_page: home_page
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
-  request_path:
-    id: request_path
-    pages: '/campus/governance/*'
-    negate: false
-    context_mapping: {  }
