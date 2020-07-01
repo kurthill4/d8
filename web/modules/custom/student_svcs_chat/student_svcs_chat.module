@@ -1,0 +1,14 @@
+<?php
+
+	/**
+	 * Implements hook_theme
+	 */
+	function student_svcs_chat_theme($existing, $type, $theme, $path) {
+		return [
+			'chat_block' => [
+			'template' => 'block--chat',	// Set Twig template for chat block
+			],
+		];
+	}
+
+

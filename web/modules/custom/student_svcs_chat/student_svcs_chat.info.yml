@@ -1,0 +1,4 @@
+name: Student Services Chat
+description: Generates a third-party (uChat) chat widget for various Student Services pages
+type: module
+core: 8.x

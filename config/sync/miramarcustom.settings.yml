@@ -1,5 +1,10 @@
 image_path: /themes/custom/miramar
 local_ip: false
+<<<<<<< HEAD
 client_ip: 46.229.168.153
 issues_link: '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=/directory/people?combine&combine_1&order=field_assignment&page=8%2C9&sort=desc">Report Issues With This Page</a>'
+=======
+client_ip: 127.0.0.1
+issues_link: '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=/admin/modules">Report Issues With This Page</a>'
+>>>>>>> chat
 prog_call: ''
