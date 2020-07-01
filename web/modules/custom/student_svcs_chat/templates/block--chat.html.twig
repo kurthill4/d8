@@ -45,7 +45,6 @@
  * @see template_process()
  */
 #}
-{#{ attach_library('student_svcs_chat/chat') }#}
 {%
   set classes = [
     'block',
@@ -56,7 +55,6 @@
 %}
 <section{{ attributes.addClass(classes)}}{{create_attribute({'role':['section']}) }}>
   {% block content %}
-		<!--script type="text/javascript" src="https://uchat.co/widget.js?school=mosr"></script-->
 		<!--
 				uChat attached by module
 		-->

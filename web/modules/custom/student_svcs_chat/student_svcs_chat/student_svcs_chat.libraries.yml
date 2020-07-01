@@ -1,3 +1,0 @@
-chat:
-  js:
-    https://uchat.co/widget.js?school=mosr: { type: external}
