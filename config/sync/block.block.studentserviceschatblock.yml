@@ -1,0 +1,32 @@
+uuid: 9fe85e8b-d5d8-4ca3-9257-00de22350faf
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - student_svcs_chat
+    - system
+  theme:
+    - miramar
+id: studentserviceschatblock
+theme: miramar
+region: below_content
+weight: 0
+provider: null
+plugin: student_svcs_chat_block
+settings:
+  id: student_svcs_chat_block
+  label: 'Student Services Chat block'
+  provider: student_svcs_chat
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /campus/outreach
+    negate: false
+    context_mapping: {  }
