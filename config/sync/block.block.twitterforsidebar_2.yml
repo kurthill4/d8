@@ -1,26 +1,26 @@
-uuid: 32b1e5b7-ba16-49d4-b832-045c512848e8
+uuid: 02f7992a-4034-459b-bd39-9666d8f6e4a5
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:fa8632d0-266d-4c13-b0ff-5cea6e997652'
+    - 'block_content:basic:83a04e99-8b3c-4a45-9f25-856768fa944c'
   module:
     - block_content
     - block_visibility_groups
     - system
   theme:
     - miramar
-id: twitterforsidebar
+id: twitterforsidebar_2
 theme: miramar
 region: sidebar_second
 weight: 0
 provider: null
-plugin: 'block_content:fa8632d0-266d-4c13-b0ff-5cea6e997652'
+plugin: 'block_content:83a04e99-8b3c-4a45-9f25-856768fa944c'
 settings:
-  id: 'block_content:fa8632d0-266d-4c13-b0ff-5cea6e997652'
+  id: 'block_content:83a04e99-8b3c-4a45-9f25-856768fa944c'
   label: 'Twitter for Sidebar'
   provider: block_content
-  label_display: '0'
+  label_display: visible
   status: true
   info: ''
   view_mode: full

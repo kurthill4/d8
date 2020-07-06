@@ -29,7 +29,9 @@ function custom_hero_preprocess_page(&$variables) {
 			}
 			case "home_page": {
 				$nids = \Drupal::entityQuery('node')->
-					condition('type','homepage_hero')->execute();		// Get Homepage Hero content type
+					condition('type','homepage_hero')->
+					condition('status', 1)->
+						execute();		// Get Homepage Hero content type
 				$targetNodes =  \Drupal\node\Entity\Node::loadMultiple($nids);	// Now, load the nodes
 				usort($targetNodes,"cmp");					// Sort nodes for custom display order
 				foreach($targetNodes as $targetNode) {				// Loop through content types

@@ -7,9 +7,10 @@ dependencies:
     - field.field.node.graduate.feeds_item
     - field.field.node.graduate.field_award
     - field.field.node.graduate.field_first_name
-    - field.field.node.graduate.field_honors
     - field.field.node.graduate.field_last_name
     - field.field.node.graduate.field_major
+    - field.field.node.graduate.field_middle_name
+    - field.field.node.graduate.field_suffix
     - node.type.graduate
   module:
     - path
@@ -50,14 +51,6 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_honors:
-    weight: 125
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_last_name:
     weight: 122
     settings:
@@ -68,6 +61,22 @@ content:
     region: content
   field_major:
     weight: 124
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_middle_name:
+    weight: 125
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_suffix:
+    weight: 127
     settings:
       size: 60
       placeholder: ''

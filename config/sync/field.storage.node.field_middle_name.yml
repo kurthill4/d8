@@ -1,11 +1,11 @@
-uuid: 912713cf-471f-46bb-bcec-243c9fc02252
+uuid: 7d3797a1-8ce5-421a-9e2e-416f3fdfdcbb
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_award
-field_name: field_award
+id: node.field_middle_name
+field_name: field_middle_name
 entity_type: node
 type: string
 settings:

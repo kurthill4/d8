@@ -1,4 +1,4 @@
-uuid: 97e4a401-723c-4d5d-975c-a56b9fec4438
+uuid: a1e506e4-69af-4844-b9d9-92c959a32b68
 langcode: en
 status: true
 dependencies:
@@ -29,97 +29,87 @@ processor_configuration:
   values:
     type: graduate
 custom_sources:
-  fullname:
-    label: Fullname
-    value: Fullname
-    machine_name: fullname
-  last_name:
-    label: 'Last Name'
-    value: 'Last Name'
-    machine_name: last_name
-  first_name:
-    label: 'First Name'
-    value: 'First Name'
-    machine_name: first_name
-  major:
-    label: Major
-    value: Major
-    machine_name: major
-  honors:
-    label: Honors
-    value: Honors
-    machine_name: honors
-  graduate_name:
-    label: Fullname
-    value: Fullname
-    machine_name: graduate_name
-  grad_last_name:
-    label: 'Last Name'
-    value: 'Last Name'
-    machine_name: grad_last_name
-  grad_first_name:
-    label: 'First Name'
-    value: 'First Name'
-    machine_name: grad_first_name
-  grad_major:
-    label: Major
-    value: Major
-    machine_name: grad_major
-  grad_honors:
-    label: Honors
-    value: Honors
-    machine_name: grad_honors
-  message:
-    label: Message
-    value: Message
-    machine_name: message
   full_name:
     label: 'Full Name'
     value: 'Full Name'
     machine_name: full_name
+  major:
+    label: Major
+    value: Major
+    machine_name: major
+  award:
+    label: Major
+    value: Major
+    machine_name: award
+  message:
+    label: Message
+    value: Message
+    machine_name: message
   last:
     label: Last
     value: Last
     machine_name: last
-  award:
-    label: Award
-    value: Award
-    machine_name: award
+  first:
+    label: First
+    value: First
+    machine_name: first
+  middle:
+    label: Middle
+    value: Middle
+    machine_name: middle
+  grad_last:
+    label: Last
+    value: Last
+    machine_name: grad_last
+  grad_first:
+    label: First
+    value: First
+    machine_name: grad_first
+  grad_middle:
+    label: Middle
+    value: Middle
+    machine_name: grad_middle
+  degree:
+    label: Degree
+    value: Degree
+    machine_name: degree
+  x:
+    label: X
+    value: X
+    machine_name: x
 mappings:
   -
-    target: title
+    target: field_major
     map:
-      value: full_name
+      value: award
     unique: {  }
   -
     target: field_last_name
     map:
-      value: last_name
+      value: grad_last
     unique: {  }
   -
     target: field_first_name
     map:
-      value: grad_first_name
+      value: grad_first
     unique: {  }
   -
-    target: field_major
+    target: field_middle_name
     map:
-      value: grad_major
+      value: grad_middle
     unique: {  }
-  -
-    target: field_honors
-    map:
-      value: grad_honors
-    unique: {  }
-  -
-    target: body
-    map:
-      value: message
-      summary: message
-    settings:
-      format: plain_text
   -
     target: field_award
     map:
-      value: award
+      value: degree
+    unique: {  }
+  -
+    target: field_suffix
+    map:
+      value: x
+    unique: {  }
+  -
+    target: title
+    map:
+      value: full_name
     unique: {  }

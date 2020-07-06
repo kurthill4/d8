@@ -1,23 +1,24 @@
-uuid: 7366808c-17f8-4bfc-b246-3aecb057183a
+uuid: 71f2670f-224c-4736-81c0-f4b32a2658df
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.graduates_marquee
+    - views.view.miramar_graduates
   module:
     - block_visibility_groups
     - node
+    - system
     - views
   theme:
     - miramar
-id: views_block__graduates_marquee_block_1
+id: views_block__miramar_graduates_block_1
 theme: miramar
 region: call
-weight: 0
+weight: -42
 provider: null
-plugin: 'views_block:graduates_marquee-block_1'
+plugin: 'views_block:miramar_graduates-block_1'
 settings:
-  id: 'views_block:graduates_marquee-block_1'
+  id: 'views_block:miramar_graduates-block_1'
   label: ''
   provider: views
   label_display: '0'
@@ -36,3 +37,8 @@ visibility:
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

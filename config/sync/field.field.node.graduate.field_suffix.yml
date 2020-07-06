@@ -1,15 +1,15 @@
-uuid: 01ae7ee3-b415-4a2f-93a0-f0a9b93d9e15
+uuid: 3814c1e8-25cf-4558-8e1b-64f4bc89791a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_award
+    - field.storage.node.field_suffix
     - node.type.graduate
-id: node.graduate.field_award
-field_name: field_award
+id: node.graduate.field_suffix
+field_name: field_suffix
 entity_type: node
 bundle: graduate
-label: Award
+label: Suffix
 description: ''
 required: false
 translatable: false

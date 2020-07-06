@@ -1,15 +1,15 @@
-uuid: 42b0a261-488c-4573-87a2-51541a719544
+uuid: f5a4162e-7375-42ed-a986-896ef50301b0
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_honors
+    - field.storage.node.field_middle_name
     - node.type.graduate
-id: node.graduate.field_honors
-field_name: field_honors
+id: node.graduate.field_middle_name
+field_name: field_middle_name
 entity_type: node
 bundle: graduate
-label: Honors
+label: 'Middle Name'
 description: ''
 required: false
 translatable: false

@@ -23,7 +23,6 @@ body{
     padding-top: 56.25%;
 }
 
-
 .home-vid-video {
     position: absolute;
     top: 0;
@@ -32,18 +31,22 @@ body{
     height: 100%;
 }
 
-
 .hometick .carousel-caption,
 .blocktick .carousel-caption {
 	display:none!important;
 }
 
 .hometick {
-	background:#2e9797;
+	background:#000000;
+	padding:0.5em 0;
 }
 
 .hometick .carousel-inner span {
 	margin:0 2em;
+}
+
+.hometick .carousel-inner br {
+	display:none!important;
 }
 
 .hometick .carousel-inner h2,.hometick .carousel-inner {
@@ -53,13 +56,10 @@ body{
 
 .blocktick .carousel-inner * {
 	text-align:center;
+	margin-top:1em;
 }
 
-.blocktick .carousel-inner p {
-	font-style:italic;
-}
-
-section#block-views-block-graduates-marquee-block-2 {
+section#block-views-block-miramar-graduates-block-2 {
 	min-height:300px!important;
 	background:url(../images/gradbg.png) center no-repeat;
 }
@@ -3220,11 +3220,15 @@ fieldset.wf-radio input {padding-right:20px!important;}
 .hometick .carousel-inner h2,.hometick .carousel-inner p {
 	font-size:1em!important;
 }
+.hometick .carousel-inner br {
+	display:block!important;
+}
+
 
 .hometick .carousel-inner span {
 	margin:0 0.75em!important;
 }
-		 .hide-xs,.course-seq .views-view-grid{
+		 .hide-xs,.course-seq .views-view-grid {
 			 display: none!important;
 		 }
 .navbar-collapse.collapse {
