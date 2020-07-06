@@ -862,7 +862,7 @@ nav.mobile-nav li:first-child ol li{
 }
 
 .slide-grad {
-	background: transparent url(../images/herofront/Hero_3.png) no-repeat left top scroll;
+	background: transparent url(../images/grads1a.png) no-repeat left top scroll;
   -webkit-background-size: 1280px 600px;
   -moz-background-size: 1280px 600px;
   -o-background-size: 1280px 600px;
@@ -2925,6 +2925,14 @@ section#hero {max-height:602px!important}
   -o-background-size: 1024px 480px;
   background-size: 1024px 480px;
 }
+
+.slide-grad {
+	background: transparent url(../images/grads1a.png) no-repeat left top scroll;
+  -webkit-background-size: 1024px 480px;
+  -moz-background-size: 1024px 480px;
+  -o-background-size: 1024px 480px;
+  background-size: 1024px 480px;
+}
 .grn-block.ad {
 	padding:50px 0 25px 15px;
 	margin:0;
@@ -3098,6 +3106,16 @@ section#hero {max-height:602px!important}
 		  -o-background-size: 960px 450px;
 		  background-size: 960px 450px;
 		}
+
+slide-grad {
+	background: transparent url(../images/grads1a.png) no-repeat left top scroll;
+  -webkit-background-size: 1280px 600px;
+  -moz-background-size: 1280px 600px;
+  -o-background-size: 1280px 600px;
+  background-size: 1280px 600px;
+-webkit-print-color-adjust: exact;
+}
+
 		.hide-xl {display:none!important;}
 /*.gateway .page-header,.directory .page-header, .resources .page-header,.map-page .page-header {display:block;margin:0 0 2em 0}*/
 
