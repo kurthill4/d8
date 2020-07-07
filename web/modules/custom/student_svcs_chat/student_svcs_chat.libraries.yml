@@ -1,3 +1,20 @@
-chat:
+chat_outreach:
   js:
     https://uchat.co/widget.js?school=mosr: { type: external }
+
+chat_career:
+  js:
+    https://uchat.co/widget.js?school=mcc: { type: external }
+
+chat_finaid:
+  js:
+    https://uchat.co/widget.js?school=mfa: { type: external }
+
+chat_stdaff:
+  js:
+    https://uchat.co/widget.js?school=msa: { type: external }
+
+chat_business:
+  js:
+    https://uchat.co/widget.js?school=msbtc: { type: external }
+

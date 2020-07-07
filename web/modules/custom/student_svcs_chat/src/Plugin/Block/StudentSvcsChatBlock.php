@@ -21,8 +21,8 @@ use Drupal\Core\Block\BlockPluginInterface;
 class StudentSvcsChatBlock extends BlockBase implements BlockPluginInterface {
 
 public function build() {
+	$block['#cache']['max-age'] = 0;
 	$block['#theme'] = 'chat_block';
-	$block['#attached']['library'][] = 'student_svcs_chat/chat';
 	return $block;
 	}
 }
