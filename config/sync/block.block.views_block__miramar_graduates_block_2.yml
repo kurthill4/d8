@@ -1,6 +1,6 @@
 uuid: 76002b3c-acf8-4daf-be8b-f9e95039a2a7
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.miramar_graduates
