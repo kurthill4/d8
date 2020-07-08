@@ -1,0 +1,22 @@
+uuid: 6f670f2c-9e7c-4af6-859d-a293701bff67
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: graduates
+label: Graduates
+type: 'canonical_entities:node'
+pattern: '/hidden/graduates/[current-page:title]'
+selection_criteria:
+  d98974a5-4144-4271-8abf-5651aa96cb85:
+    id: node_type
+    bundles:
+      graduate: graduate
+    negate: false
+    context_mapping:
+      node: node
+    uuid: d98974a5-4144-4271-8abf-5651aa96cb85
+selection_logic: and
+weight: -5
+relationships: {  }
