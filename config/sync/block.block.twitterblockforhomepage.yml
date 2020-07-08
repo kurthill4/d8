@@ -1,0 +1,32 @@
+uuid: bec307c1-17eb-4210-86ae-32e5d6ab037b
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - miramarcustom
+    - system
+  theme:
+    - miramar
+id: twitterblockforhomepage
+theme: miramar
+region: mission
+weight: -41
+provider: null
+plugin: twitterforhomepage
+settings:
+  id: twitterforhomepage
+  label: 'Twitter Block for Homepage'
+  provider: miramarcustom
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

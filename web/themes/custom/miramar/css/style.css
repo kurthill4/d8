@@ -56,7 +56,7 @@ body{
 
 .blocktick .carousel-inner * {
 	text-align:center;
-	margin-top:1em;
+	vertical-align:center;
 }
 
 section#block-views-block-miramar-graduates-block-2 {

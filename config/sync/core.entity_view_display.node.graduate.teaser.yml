@@ -34,4 +34,6 @@ hidden:
   field_honors: true
   field_last_name: true
   field_major: true
+  field_middle_name: true
+  field_suffix: true
   langcode: true

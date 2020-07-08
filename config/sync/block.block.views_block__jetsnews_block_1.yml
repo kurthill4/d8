@@ -13,7 +13,7 @@ dependencies:
 id: views_block__jetsnews_block_1
 theme: miramar
 region: mission
-weight: -29
+weight: -39
 provider: null
 plugin: 'views_block:jetsnews-block_1'
 settings:
