@@ -1,0 +1,36 @@
+uuid: 76002b3c-acf8-4daf-be8b-f9e95039a2a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.miramar_graduates
+  module:
+    - block_visibility_groups
+    - system
+    - views
+  theme:
+    - miramar
+id: views_block__miramar_graduates_block_2
+theme: miramar
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:miramar_graduates-block_2'
+settings:
+  id: 'views_block:miramar_graduates-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /commencement2020
+    negate: false
+    context_mapping: {  }

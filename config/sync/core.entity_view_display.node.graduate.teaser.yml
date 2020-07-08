@@ -1,0 +1,39 @@
+uuid: aad314ca-7af9-4cbc-8e8e-fc2e44b37e63
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.graduate.body
+    - node.type.graduate
+  module:
+    - text
+    - user
+id: node.graduate.teaser
+targetEntityType: node
+bundle: graduate
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  feeds_item: true
+  field_award: true
+  field_first_name: true
+  field_honors: true
+  field_last_name: true
+  field_major: true
+  field_middle_name: true
+  field_suffix: true
+  langcode: true

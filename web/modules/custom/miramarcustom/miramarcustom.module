@@ -221,7 +221,12 @@ $arrPlanItems = array(
 				'items' =>  $arrPlanItems
 			]
 		],
+	'twitter-homepage' => [
+	],
+	'twitter-sidebar' => [
+	],
   ];
+
 }
 
 /*function miramarcustom_node_view(array &$build, NodeInterface $node, $display, $view_mode) {

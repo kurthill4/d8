@@ -1,0 +1,4 @@
+twitter:
+  js:
+    https://platform.twitter.com/widgets.js: { type: external, attributes: { async: true,charset:utf-8 } }
+

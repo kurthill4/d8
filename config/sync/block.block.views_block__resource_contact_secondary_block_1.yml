@@ -16,7 +16,7 @@ dependencies:
 id: views_block__resource_contact_secondary_block_1
 theme: miramar
 region: sidebar_second
-weight: -34
+weight: -37
 provider: null
 plugin: 'views_block:resource_contact_secondary-block_1'
 settings:

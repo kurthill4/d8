@@ -12,7 +12,7 @@ dependencies:
 id: getstarted
 theme: miramar
 region: call
-weight: -38
+weight: -41
 provider: null
 plugin: 'system_menu_block:get-started'
 settings:

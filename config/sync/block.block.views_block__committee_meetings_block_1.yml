@@ -12,7 +12,7 @@ dependencies:
 id: views_block__committee_meetings_block_1
 theme: miramar
 region: sidebar_second
-weight: -20
+weight: -24
 provider: null
 plugin: 'views_block:committee_meetings-block_1'
 settings:

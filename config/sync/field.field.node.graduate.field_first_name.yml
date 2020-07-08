@@ -1,0 +1,19 @@
+uuid: 712f2fd0-48c3-402b-97b1-eff35e106dd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_first_name
+    - node.type.graduate
+id: node.graduate.field_first_name
+field_name: field_first_name
+entity_type: node
+bundle: graduate
+label: 'First Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

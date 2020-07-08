@@ -8,6 +8,67 @@ body{
 	background:#dbf3f5;
 }
 
+/************************************************/
+/*** Changes homepage hero to fixed block for ***/
+/*** fullscreen video display                 ***/
+/*** ALSO CHANGES section#hero                ***/
+/************************************************/
+
+
+.home-vid-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+	overflow:hidden;
+    padding-top: 56.25%;
+}
+
+.home-vid-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hometick .carousel-caption,
+.blocktick .carousel-caption {
+	display:none!important;
+}
+
+.hometick {
+	background:#000000;
+	padding:0.5em 0;
+}
+
+.hometick .carousel-inner span {
+	margin:0 2em;
+}
+
+.hometick .carousel-inner br {
+	display:none!important;
+}
+
+.hometick .carousel-inner h2,.hometick .carousel-inner {
+	text-align:center;
+	color:#ffffff;
+}
+
+.blocktick .carousel-inner * {
+	text-align:center;
+	vertical-align:center;
+}
+
+section#block-views-block-miramar-graduates-block-2 {
+	min-height:300px!important;
+	background:url(../images/gradbg.png) center no-repeat;
+}
+
+.gradpage {
+	width:100%;
+}
+
+
 div#maintenance {margin:2em auto;width:75%}
 div#maintenance p {font-size:2em;margin-top:2em}
 div#maintenance * {text-align:center}
@@ -799,6 +860,16 @@ nav.mobile-nav li:first-child ol li{
   background-size: 1280px 600px;
 -webkit-print-color-adjust: exact;
 }
+
+.slide-grad {
+	background: transparent url(../images/grads1a.png) no-repeat left top scroll;
+  -webkit-background-size: 1280px 600px;
+  -moz-background-size: 1280px 600px;
+  -o-background-size: 1280px 600px;
+  background-size: 1280px 600px;
+-webkit-print-color-adjust: exact;
+}
+
 
 .slide-sl {
 	background: transparent url(../images/sl-banner.png) no-repeat left top scroll;
@@ -2854,6 +2925,14 @@ section#hero {max-height:602px!important}
   -o-background-size: 1024px 480px;
   background-size: 1024px 480px;
 }
+
+.slide-grad {
+	background: transparent url(../images/grads1a.png) no-repeat left top scroll;
+  -webkit-background-size: 1024px 480px;
+  -moz-background-size: 1024px 480px;
+  -o-background-size: 1024px 480px;
+  background-size: 1024px 480px;
+}
 .grn-block.ad {
 	padding:50px 0 25px 15px;
 	margin:0;
@@ -3027,6 +3106,16 @@ section#hero {max-height:602px!important}
 		  -o-background-size: 960px 450px;
 		  background-size: 960px 450px;
 		}
+
+slide-grad {
+	background: transparent url(../images/grads1a.png) no-repeat left top scroll;
+  -webkit-background-size: 1280px 600px;
+  -moz-background-size: 1280px 600px;
+  -o-background-size: 1280px 600px;
+  background-size: 1280px 600px;
+-webkit-print-color-adjust: exact;
+}
+
 		.hide-xl {display:none!important;}
 /*.gateway .page-header,.directory .page-header, .resources .page-header,.map-page .page-header {display:block;margin:0 0 2em 0}*/
 
@@ -3145,7 +3234,19 @@ fieldset.wf-radio input {padding-right:20px!important;}
 	padding: 5px 10px;
 	margin-right: 5px;
 }
-		 .hide-xs,.course-seq .views-view-grid{
+
+.hometick .carousel-inner h2,.hometick .carousel-inner p {
+	font-size:1em!important;
+}
+.hometick .carousel-inner br {
+	display:block!important;
+}
+
+
+.hometick .carousel-inner span {
+	margin:0 0.75em!important;
+}
+		 .hide-xs,.course-seq .views-view-grid {
 			 display: none!important;
 		 }
 .navbar-collapse.collapse {

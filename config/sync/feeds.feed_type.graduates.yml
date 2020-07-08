@@ -1,0 +1,115 @@
+uuid: a1e506e4-69af-4844-b9d9-92c959a32b68
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+label: Graduates
+id: graduates
+description: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  update_existing: 1
+  update_non_existent: _delete
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: graduate
+custom_sources:
+  full_name:
+    label: 'Full Name'
+    value: 'Full Name'
+    machine_name: full_name
+  major:
+    label: Major
+    value: Major
+    machine_name: major
+  award:
+    label: Major
+    value: Major
+    machine_name: award
+  message:
+    label: Message
+    value: Message
+    machine_name: message
+  last:
+    label: Last
+    value: Last
+    machine_name: last
+  first:
+    label: First
+    value: First
+    machine_name: first
+  middle:
+    label: Middle
+    value: Middle
+    machine_name: middle
+  grad_last:
+    label: Last
+    value: Last
+    machine_name: grad_last
+  grad_first:
+    label: First
+    value: First
+    machine_name: grad_first
+  grad_middle:
+    label: Middle
+    value: Middle
+    machine_name: grad_middle
+  degree:
+    label: Degree
+    value: Degree
+    machine_name: degree
+  x:
+    label: X
+    value: X
+    machine_name: x
+mappings:
+  -
+    target: field_major
+    map:
+      value: award
+    unique: {  }
+  -
+    target: field_last_name
+    map:
+      value: grad_last
+    unique: {  }
+  -
+    target: field_first_name
+    map:
+      value: grad_first
+    unique: {  }
+  -
+    target: field_middle_name
+    map:
+      value: grad_middle
+    unique: {  }
+  -
+    target: field_award
+    map:
+      value: degree
+    unique: {  }
+  -
+    target: field_suffix
+    map:
+      value: x
+    unique: {  }
+  -
+    target: title
+    map:
+      value: full_name
+    unique: {  }
