@@ -27,6 +27,6 @@ visibility:
     context_mapping: {  }
   request_path:
     id: request_path
-    pages: "/campus/outreach\r\n/campus/financial-aid\r\n/campus/careerservices\r\n/campus/studentaffairs"
+    pages: "/campus/outreach\r\n/campus/outreach/*\r\n/campus/financial-aid\r\n/campus/careerservices\r\n/campus/studentaffairs\r\n/campus/assessment"
     negate: false
     context_mapping: {  }
