@@ -3,25 +3,10 @@ langcode: en
 status: open
 dependencies:
   module:
-    - webform_encrypt
+    - honeypot
 third_party_settings:
-  webform_encrypt:
-    element:
-      last_name:
-        encrypt: true
-        encrypt_profile: webform
-      first_name:
-        encrypt: true
-        encrypt_profile: webform
-      csid:
-        encrypt: true
-        encrypt_profile: webform
-      email:
-        encrypt: true
-        encrypt_profile: webform
-      email_confirm:
-        encrypt: true
-        encrypt_profile: webform
+  honeypot:
+    honeypot: true
 open: null
 close: null
 uid: 1877
