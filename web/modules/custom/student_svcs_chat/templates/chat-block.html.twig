@@ -1,6 +1,6 @@
 
 {% set attachThis = url('<current>') %}
-{% if ('/campus/outreach' in attachThis|render|render) or ('/campus/assessment' in attachThis|render|render) %}
+{% if ('/campus/outreach' in attachThis|render|render) or ('/campus/assessment' in attachThis|render|render) or ('/campus/promise' in attachThis|render|render) %}
 	{{ attach_library('student_svcs_chat/chat_outreach') }}
 {% elseif '/campus/careerservices' in attachThis|render|render %}
 	{{ attach_library('student_svcs_chat/chat_career') }}
