@@ -1,26 +1,24 @@
-uuid: 9647e697-f734-4e53-a7be-83c561706651
+uuid: 60f22018-ea53-4848-8671-8b310ed0e7a1
 langcode: en
 status: true
 dependencies:
   module:
     - block_visibility_groups
+    - miramarcustom
     - system
   theme:
     - miramar
-id: accessibilityresources
+id: accessibilityresourcesblockforsidebar
 theme: miramar
 region: sidebar_second
-weight: -14
+weight: 0
 provider: null
-plugin: 'block_content:e7f87413-34de-4366-90e1-a6821bc8143d'
+plugin: '508'
 settings:
-  id: 'block_content:e7f87413-34de-4366-90e1-a6821bc8143d'
-  label: 'Accessibility Resources'
-  provider: block_content
-  label_display: visible
-  status: true
-  info: ''
-  view_mode: full
+  id: '508'
+  label: 'Accessibility Resources Block for Sidebar'
+  provider: miramarcustom
+  label_display: '0'
 visibility:
   condition_group:
     id: condition_group
