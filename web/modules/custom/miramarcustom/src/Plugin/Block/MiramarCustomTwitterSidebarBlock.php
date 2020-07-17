@@ -8,7 +8,7 @@ use Drupal\Core\Render\Markup;
 
 
 /**
- * Provides a 'Twitter' block in the footer.
+ * Provides a 'Twitter' block in the sidebar.
  *
  * @Block(
  *   id = "twitterforsidebar",
