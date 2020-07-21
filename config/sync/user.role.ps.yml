@@ -12,3 +12,4 @@ permissions:
   - 'edit any program content'
   - 'use text format full_html'
   - 'use workbench access'
+  - 'view encrypted values'

@@ -4,9 +4,27 @@ status: open
 dependencies:
   module:
     - honeypot
+    - webform_encrypt
 third_party_settings:
   honeypot:
     honeypot: true
+  webform_encrypt:
+    element:
+      full_legal_name:
+        encrypt: true
+        encrypt_profile: webform
+      preferred_name:
+        encrypt: true
+        encrypt_profile: webform
+      date_of_birth:
+        encrypt: true
+        encrypt_profile: webform
+      email:
+        encrypt: true
+        encrypt_profile: webform
+      phone_number:
+        encrypt: true
+        encrypt_profile: webform
 open: null
 close: null
 uid: 1877
@@ -16,7 +34,7 @@ id: post_academy
 title: 'POST Academy'
 description: ''
 category: ''
-elements: "request_information:\n  '#type': webform_section\n  '#title': 'Request Information'\n  full_legal_name:\n    '#type': textfield\n    '#title': 'Full Legal Name'\n    '#help': 'Full name as it appears on your birth certificate'\n    '#maxlength': '512'\n    '#required': true\n  preferred_name:\n    '#type': textfield\n    '#title': 'Preferred Name'\n    '#help': 'The name you wish to be known by'\n    '#maxlength': '512'\n  contact_information:\n    '#type': webform_section\n    '#title': 'Contact Information'\n    '#title_tag': label\n    layout_1:\n      '#type': layout_container\n      date_of_birth:\n        '#type': date\n        '#title': 'Date of Birth'\n        '#help': 'Your date of birth as recorded on your birth certificate'\n        '#size': '6'\n        '#required': true\n        '#min': 'Jan 1 1930'\n        '#max': today\n        '#datepicker': true\n        '#date_date_format': m/d/Y\n      sdccd_id:\n        '#type': number\n        '#title': 'SDCCD Student ID'\n        '#help': 'Your District student ID'\n        '#min': '0'\n        '#max': '9999999995'\n      email:\n        '#type': email\n        '#title': Email\n        '#help': 'Your preferred email address'\n        '#required': true\n        '#wrapper_attributes':\n          style: 'max-width:300px'\n  layout_2:\n    '#type': layout_container\n    phone_number:\n      '#type': tel\n      '#title': 'Phone Number'\n      '#help': 'The phone number where you wish to be contacted'\n      '#autocomplete': 'off'\n      '#wrapper_attributes':\n        style: 'width:30%'\n  actions:\n    '#type': webform_actions\n    '#title': 'Submit button(s)'\n    '#attributes':\n      style: 'margin-top:2em;margin-bottom:2em'\n"
+elements: "request_information:\n  '#type': webform_section\n  '#title': 'Request Information'\n  '#description': \"<p style=\\\"margin-bottom:1em\\\">This form is encrypted for your privacy and data security.</p>\\r\\n<br>\"\n  full_legal_name:\n    '#type': textfield\n    '#title': 'Full Legal Name'\n    '#help': 'Full name as it appears on your birth certificate'\n    '#maxlength': '512'\n    '#required': true\n  preferred_name:\n    '#type': textfield\n    '#title': 'Preferred Name'\n    '#help': 'The name you wish to be known by'\n    '#maxlength': '512'\n  contact_information:\n    '#type': webform_section\n    '#title': 'Contact Information'\n    '#title_tag': label\n    layout_1:\n      '#type': layout_container\n      date_of_birth:\n        '#type': date\n        '#title': 'Date of Birth'\n        '#help': 'Your date of birth as recorded on your birth certificate'\n        '#size': '6'\n        '#required': true\n        '#min': 'Jan 1 1930'\n        '#max': today\n        '#datepicker': true\n        '#date_date_format': m/d/Y\n      sdccd_id:\n        '#type': number\n        '#title': 'SDCCD Student ID'\n        '#help': 'Your District student ID'\n        '#autocomplete': 'off'\n        '#min': '0'\n        '#max': '9999999995'\n      email:\n        '#type': email\n        '#title': Email\n        '#help': 'Your preferred email address'\n        '#required': true\n        '#wrapper_attributes':\n          style: 'max-width:300px'\n  layout_2:\n    '#type': layout_container\n    phone_number:\n      '#type': tel\n      '#title': 'Phone Number'\n      '#help': 'The phone number where you wish to be contacted'\n      '#autocomplete': 'off'\n      '#wrapper_attributes':\n        style: 'width:30%'\n  actions:\n    '#type': webform_actions\n    '#title': 'Submit button(s)'\n    '#attributes':\n      style: 'margin-top:2em;margin-bottom:2em'\n"
 css: ''
 javascript: ''
 settings:
