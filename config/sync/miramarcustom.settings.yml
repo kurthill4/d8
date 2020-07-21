@@ -1,5 +1,5 @@
 image_path: /themes/custom/miramar
 local_ip: false
-client_ip: 192.168.68.102
-issues_link: '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=/508">Report Issues With This Page</a>'
+client_ip: 192.168.68.120
+issues_link: '<a href="http://webissues.ics.sdmiramar.net/issue/report?url=/programs/administration-justice/post">Report Issues With This Page</a>'
 prog_call: ''
