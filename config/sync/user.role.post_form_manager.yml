@@ -6,5 +6,4 @@ id: post_form_manager
 label: 'POST Form Manager'
 weight: 32
 is_admin: null
-permissions:
-  - 'view encrypted values'
+permissions: {  }
