@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - user.role.administrator
+    - user.role.post_form_manager
     - user.role.ps
     - webform.webform.post_academy
   module:
@@ -35,6 +36,7 @@ display:
           role:
             administrator: administrator
             ps: ps
+            post_form_manager: post_form_manager
       cache:
         type: tag
         options: {  }

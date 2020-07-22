@@ -1,0 +1,10 @@
+uuid: 64c6c7b4-8a22-4e62-b5ea-e7eac7ebb266
+langcode: en
+status: true
+dependencies: {  }
+id: post_form_manager
+label: 'POST Form Manager'
+weight: 32
+is_admin: null
+permissions:
+  - 'view encrypted values'

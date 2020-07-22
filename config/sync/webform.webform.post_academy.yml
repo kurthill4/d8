@@ -25,6 +25,9 @@ third_party_settings:
       phone_number:
         encrypt: true
         encrypt_profile: webform
+      sdccd_id:
+        encrypt: true
+        encrypt_profile: webform
 open: null
 close: null
 uid: 1877
@@ -135,6 +138,7 @@ access:
     roles:
       - administrator
       - ps
+      - post_form_manager
     users: {  }
     permissions: {  }
   update_any:
