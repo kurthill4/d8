@@ -8,6 +8,8 @@
 	{{ attach_library('student_svcs_chat/chat_finaid') }}
 {% elseif '/campus/studentaffairs' in attachThis|render|render %}
 	{{ attach_library('student_svcs_chat/chat_stdaff') }}
+{% elseif '/programs/entrepreneurship' in attachThis|render|render %}
+	{{ attach_library('student_svcs_chat/chat_business') }}
 {% else %}
 {% endif %}
 		<!--
