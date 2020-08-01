@@ -1,0 +1,110 @@
+uuid: d9af27b9-579d-4457-881b-06ee8e0fdcc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.student_club_meeting.field_agenda
+    - field.field.node.student_club_meeting.field_associated_club
+    - field.field.node.student_club_meeting.field_attached_documents
+    - field.field.node.student_club_meeting.field_event_date
+    - field.field.node.student_club_meeting.field_event_type
+    - field.field.node.student_club_meeting.field_file_instructions
+    - field.field.node.student_club_meeting.field_meeting_date_time
+    - field.field.node.student_club_meeting.field_meeting_location
+    - field.field.node.student_club_meeting.field_minutes
+    - field.field.node.student_club_meeting.field_virtual_location
+    - node.type.student_club_meeting
+  module:
+    - datetime
+    - datetime_range
+    - file_entity
+    - link
+    - user
+id: node.student_club_meeting.default
+targetEntityType: node
+bundle: student_club_meeting
+mode: default
+content:
+  field_agenda:
+    weight: 4
+    label: above
+    settings:
+      access_message: 'You don''t have access to download this file.'
+      text: 'Download [file:name]'
+    third_party_settings: {  }
+    type: file_download_link
+    region: content
+  field_associated_club:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_attached_documents:
+    weight: 6
+    label: above
+    settings:
+      access_message: 'You don''t have access to download this file.'
+      text: 'Download [file:name]'
+    third_party_settings: {  }
+    type: file_download_link
+    region: content
+  field_event_date:
+    type: daterange_custom
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      timezone_override: America/Los_Angeles
+      date_format: 'g:i a'
+      separator: '-'
+      fromto: both
+    third_party_settings: {  }
+  field_meeting_date_time:
+    weight: 1
+    label: above
+    settings:
+      timezone_override: America/Los_Angeles
+    third_party_settings: {  }
+    type: datetime_plain
+    region: content
+  field_meeting_location:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_minutes:
+    weight: 5
+    label: above
+    settings:
+      access_message: 'You don''t have access to download this file.'
+      text: 'Download [file:name]'
+    third_party_settings: {  }
+    type: file_download_link
+    region: content
+  field_virtual_location:
+    weight: 7
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_event_type: true
+  field_file_instructions: true
+  langcode: true

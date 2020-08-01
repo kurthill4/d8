@@ -1,0 +1,22 @@
+uuid: 3ee8ce98-1e69-4582-8dba-f94324406434
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: student_club_meetings
+label: 'Student Club Meetings'
+type: 'canonical_entities:node'
+pattern: '/students/clubs/meetings/[node:field_associated_club]/[node:title]'
+selection_criteria:
+  a9664dee-271f-46c1-8fcd-55d73ca014de:
+    id: node_type
+    bundles:
+      student_club_meeting: student_club_meeting
+    negate: false
+    context_mapping:
+      node: node
+    uuid: a9664dee-271f-46c1-8fcd-55d73ca014de
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,31 @@
+uuid: ac563fae-4554-484e-b9a2-86a7b4f7762b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.student_club.body
+    - field.field.node.student_club.field_faculty_contact
+    - node.type.student_club
+  module:
+    - text
+    - user
+id: node.student_club.default
+targetEntityType: node
+bundle: student_club
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_faculty_contact: true
+  langcode: true

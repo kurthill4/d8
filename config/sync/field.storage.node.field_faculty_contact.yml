@@ -1,0 +1,20 @@
+uuid: 31087c64-2417-4ef3-ac50-f74c4c709e33
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: node.field_faculty_contact
+field_name: field_faculty_contact
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

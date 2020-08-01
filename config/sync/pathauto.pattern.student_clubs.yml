@@ -1,0 +1,22 @@
+uuid: c72d9dcb-0197-4c0e-a9f0-667434b48bdd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: student_clubs
+label: 'Student Clubs'
+type: 'canonical_entities:node'
+pattern: '/students/clubs/[node:title]'
+selection_criteria:
+  23fffc2c-0430-40a6-8dc7-28ceb0f6db11:
+    id: node_type
+    bundles:
+      student_club: student_club
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 23fffc2c-0430-40a6-8dc7-28ceb0f6db11
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -13,7 +13,7 @@ dependencies:
 id: views_block__documents_for_subpages_block_6
 theme: miramar
 region: sidebar_second
-weight: -7
+weight: -9
 provider: null
 plugin: 'views_block:documents_for_subpages-block_6'
 settings:

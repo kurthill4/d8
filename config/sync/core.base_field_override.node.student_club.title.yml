@@ -1,0 +1,18 @@
+uuid: 65028623-6e0e-4872-99e2-2e97c33a0be0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.student_club
+id: node.student_club.title
+field_name: title
+entity_type: node
+bundle: student_club
+label: 'Name of Club'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

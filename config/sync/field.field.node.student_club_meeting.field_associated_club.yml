@@ -1,0 +1,29 @@
+uuid: a8bc3684-6990-4510-8a6b-3320e01a348c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_associated_club
+    - node.type.student_club
+    - node.type.student_club_meeting
+id: node.student_club_meeting.field_associated_club
+field_name: field_associated_club
+entity_type: node
+bundle: student_club_meeting
+label: 'Associated Club'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      student_club: student_club
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

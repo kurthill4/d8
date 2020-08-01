@@ -1,0 +1,27 @@
+uuid: 4964ec0a-9b8f-45f7-bc97-264a742f65e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_agenda
+    - node.type.student_club_meeting
+  module:
+    - file
+id: node.student_club_meeting.field_agenda
+field_name: field_agenda
+entity_type: node
+bundle: student_club_meeting
+label: Agenda
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'committees/agendas/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf doc docx txt xml'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

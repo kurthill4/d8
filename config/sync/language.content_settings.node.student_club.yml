@@ -1,0 +1,11 @@
+uuid: bba82b6c-50ca-4f79-9d84-9eca8a3a55c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.student_club
+id: node.student_club
+target_entity_type_id: node
+target_bundle: student_club
+default_langcode: site_default
+language_alterable: false

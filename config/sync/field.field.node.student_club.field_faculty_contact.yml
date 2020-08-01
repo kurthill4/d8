@@ -1,0 +1,25 @@
+uuid: ec06cc8b-1e08-48c8-b3cd-a118af5c2160
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_faculty_contact
+    - node.type.student_club
+id: node.student_club.field_faculty_contact
+field_name: field_faculty_contact
+entity_type: node
+bundle: student_club
+label: 'Faculty Contact'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: selectfaculty
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

@@ -1,0 +1,39 @@
+uuid: acd15fee-0dcf-4ecc-9514-f1108c4b11b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.student_club_meetings
+  module:
+    - block_visibility_groups
+    - node
+    - views
+  theme:
+    - miramar
+id: views_block__student_club_meetings_block_1
+theme: miramar
+region: sidebar_second
+weight: -24
+provider: null
+plugin: 'views_block:student_club_meetings-block_1'
+settings:
+  id: 'views_block:student_club_meetings-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      student_club: student_club
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

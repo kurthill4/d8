@@ -1,0 +1,31 @@
+uuid: 2fdc38af-8f20-4f9c-bf12-d3788e47f809
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.student_club.body
+    - node.type.student_club
+  module:
+    - text
+    - user
+id: node.student_club.teaser
+targetEntityType: node
+bundle: student_club
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

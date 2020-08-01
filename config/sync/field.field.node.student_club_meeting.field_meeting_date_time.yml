@@ -1,0 +1,24 @@
+uuid: 10861a3a-b692-49c2-80f2-c57b24438415
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meeting_date_time
+    - node.type.student_club_meeting
+  module:
+    - datetime
+id: node.student_club_meeting.field_meeting_date_time
+field_name: field_meeting_date_time
+entity_type: node
+bundle: student_club_meeting
+label: 'Meeting Date & Time'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

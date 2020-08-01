@@ -666,6 +666,8 @@ display:
       use_more: false
       use_more_always: true
       use_more_text: 'All Meetings'
+      link_url: ''
+      link_display: '0'
     cache_metadata:
       max-age: -1
       contexts:

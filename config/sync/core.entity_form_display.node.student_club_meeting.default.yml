@@ -1,0 +1,130 @@
+uuid: null
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.student_club_meeting.field_agenda
+    - field.field.node.student_club_meeting.field_associated_club
+    - field.field.node.student_club_meeting.field_attached_documents
+    - field.field.node.student_club_meeting.field_event_date
+    - field.field.node.student_club_meeting.field_event_type
+    - field.field.node.student_club_meeting.field_file_instructions
+    - field.field.node.student_club_meeting.field_meeting_date_time
+    - field.field.node.student_club_meeting.field_meeting_location
+    - field.field.node.student_club_meeting.field_minutes
+    - field.field.node.student_club_meeting.field_virtual_location
+    - node.type.student_club_meeting
+  module:
+    - datetime_range
+    - file
+    - link
+    - markup
+id: node.student_club_meeting.default
+targetEntityType: node
+bundle: student_club_meeting
+mode: default
+content:
+  field_agenda:
+    weight: 6
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_associated_club:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_attached_documents:
+    weight: 8
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_committee:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_event_date:
+    type: daterange_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_file_instructions:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: markup
+    region: content
+  field_meeting_location:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_minutes:
+    weight: 7
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_virtual_location:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 10
+    third_party_settings: {  }
+    region: content
+  uid:
+    type: entity_reference_autocomplete
+    weight: 11
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_associated_committee: true
+  field_event_type: true
+  field_meeting_date_time: true
+  path: true
+  promote: true
+  sticky: true
+  title: true

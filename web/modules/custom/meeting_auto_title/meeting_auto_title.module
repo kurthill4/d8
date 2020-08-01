@@ -6,11 +6,11 @@ use Drupal\Core\Entity;
 use Drupal\Core\Entity\EntityInterface;
 
 function meeting_auto_title_form_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-$node = $form_state->getFormObject()->getEntity();
-//	switch($form['#node']->type) {
+	$node = $form_state->getFormObject()->getEntity();
 	switch($node->getType()) {
 		case 'jetsnews':
 		case 'committee_meeting':
+		case 'student_club_meeting':
 			$form['title']['#access'] = FALSE;
 			break;
 		default:
@@ -30,16 +30,30 @@ function meeting_auto_title_entity_presave(Drupal\Core\Entity\EntityInterface $e
      break;
     case 'committee_meeting':
       // Setting the title with the committee name and date.
-	$c = $entity->get('field_committee')->entity->getTitle();
+		$c = $entity->get('field_committee')->entity->getTitle();
+		$term_id = 320;
+		$e = $entity->field_committee->target_id;
+		$entity->field_associated_committee[] = ['target_id' => $e];
+		doTitle($entity,$term_id,$c);
+		
+     break;
+    case 'student_club_meeting':
+      // Setting the title with the committee name and date.
+		$c = $entity->get('field_associated_club')->entity->getTitle();
+		$term_id = 415;
+		doTitle($entity,$term_id,$c);
+		
+     break;
+  }
+}
+
+function doTitle(Drupal\Core\Entity\EntityInterface $entity, int $term_id,$title) {
 	$d = date_create($entity->get('field_event_date')->value);
-      	$entity->setTitle($c . ' Meeting ' . date_format($d,'m/d/Y'));
-	$entity->set('field_event_type',320);
-	$e = $entity->field_committee->target_id;
-	$entity->field_associated_committee[] = ['target_id' => $e];
+      	$entity->setTitle($title . ' Meeting ' . date_format($d,'m/d/Y'));
+	$entity->set('field_event_type',$term_id);
 	$entity->field_meeting_date_time->value = $d->format('Y-m-d\TH:i:s');
 	if($entity->field_event_end_date->value == "")
 		$entity->field_event_end_date->value = $d->modify("+1 hours")->format('Y-m-d\TH:i:s');
-     break;
-  }
+
 }
 

@@ -7,6 +7,7 @@ dependencies:
     - node.type.custom_web_page
     - paragraphs.paragraphs_type.bp_accordion
     - paragraphs.paragraphs_type.bp_accordion_section
+    - paragraphs.paragraphs_type.bp_block
     - paragraphs.paragraphs_type.bp_columns
     - paragraphs.paragraphs_type.bp_columns_two_uneven
     - paragraphs.paragraphs_type.bp_image
@@ -41,6 +42,7 @@ settings:
       table: table
       bp_accordion: bp_accordion
       bp_accordion_section: bp_accordion_section
+      bp_block: bp_block
       bp_columns: bp_columns
       bp_columns_two_uneven: bp_columns_two_uneven
       bp_image: bp_image
@@ -77,8 +79,8 @@ settings:
         weight: 25
         enabled: false
       bp_block:
+        enabled: true
         weight: 26
-        enabled: false
       bp_carousel:
         weight: 27
         enabled: false

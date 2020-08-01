@@ -1,0 +1,26 @@
+uuid: 58d1686f-2ef6-4a0e-ae06-9defc770e9a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_date
+    - node.type.student_club_meeting
+  module:
+    - datetime_range
+id: node.student_club_meeting.field_event_date
+field_name: field_event_date
+entity_type: node
+bundle: student_club_meeting
+label: 'Meeting Date'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    default_end_date_type: relative
+    default_end_date: '+1 hours'
+default_value_callback: ''
+settings: {  }
+field_type: daterange

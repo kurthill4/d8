@@ -1,0 +1,30 @@
+uuid: c465a371-348c-4c45-b735-35866e7a87d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_type
+    - node.type.student_club_meeting
+    - taxonomy.vocabulary.event_types
+id: node.student_club_meeting.field_event_type
+field_name: field_event_type
+entity_type: node
+bundle: student_club_meeting
+label: 'Event Type'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: fc2ba08a-c5a9-4213-bba7-fe38cf460953
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event_types: event_types
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

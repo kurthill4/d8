@@ -1,0 +1,23 @@
+uuid: 2e4a4bed-75ee-463e-877c-e6767883ae4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_virtual_location
+    - node.type.student_club_meeting
+  module:
+    - link
+id: node.student_club_meeting.field_virtual_location
+field_name: field_virtual_location
+entity_type: node
+bundle: student_club_meeting
+label: 'Virtual Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

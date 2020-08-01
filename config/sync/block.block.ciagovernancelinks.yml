@@ -13,7 +13,7 @@ dependencies:
 id: ciagovernancelinks
 theme: miramar
 region: sidebar_second
-weight: -6
+weight: -8
 provider: null
 plugin: 'block_content:b08a21b4-5c1c-4789-8d51-8419e0e2e78f'
 settings:
