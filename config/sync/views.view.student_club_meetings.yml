@@ -922,7 +922,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<a href="node/{{ nid }}" class="use-ajax" data-dialog-type="modal" data-dialog-options="{&quot;width&quot;:200}">{{ field_meeting_date_time }}</a>'
+            text: '<a href="/students/clubs/meetings/{{ nid }}" class="use-ajax" data-dialog-type="modal" data-dialog-options="{&quot;width&quot;:200}">{{ field_meeting_date_time }}</a>'
             make_link: false
             path: ''
             absolute: false
@@ -1200,7 +1200,7 @@ display:
     position: 2
     display_options:
       display_extenders: {  }
-      path: students/clubs/meetings/archive/%
+      path: students/clubs/meetings/%
       style:
         type: views_bootstrap_grid
         options:
@@ -1250,7 +1250,7 @@ display:
           title: ''
           default_argument_type: raw
           default_argument_options:
-            index: 3
+            index: 2
             use_alias: false
           default_argument_skip_url: false
           summary_options:

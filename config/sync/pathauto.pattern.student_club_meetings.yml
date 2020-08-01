@@ -7,16 +7,16 @@ dependencies:
 id: student_club_meetings
 label: 'Student Club Meetings'
 type: 'canonical_entities:node'
-pattern: '/students/clubs/meetings/[node:field_associated_club]/[node:title]'
+pattern: '/students/clubs/meetings/[node:nid]'
 selection_criteria:
-  a9664dee-271f-46c1-8fcd-55d73ca014de:
+  f0c6dcea-c1cb-4c6e-a6e1-ae4849e378c4:
     id: node_type
     bundles:
       student_club_meeting: student_club_meeting
     negate: false
     context_mapping:
       node: node
-    uuid: a9664dee-271f-46c1-8fcd-55d73ca014de
+    uuid: f0c6dcea-c1cb-4c6e-a6e1-ae4849e378c4
 selection_logic: and
 weight: -5
 relationships: {  }
