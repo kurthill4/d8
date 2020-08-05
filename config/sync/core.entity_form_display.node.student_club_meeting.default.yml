@@ -25,14 +25,14 @@ bundle: student_club_meeting
 mode: default
 content:
   field_agenda:
-    weight: 6
+    weight: 5
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
     region: content
   field_associated_club:
-    weight: 26
+    weight: 0
     settings:
       match_operator: CONTAINS
       size: 60
@@ -41,7 +41,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_attached_documents:
-    weight: 8
+    weight: 7
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
@@ -63,13 +63,13 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_file_instructions:
-    weight: 5
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: markup
     region: content
   field_meeting_location:
-    weight: 3
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -77,54 +77,44 @@ content:
     type: string_textfield
     region: content
   field_minutes:
-    weight: 7
+    weight: 6
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
     region: content
   field_virtual_location:
-    weight: 4
+    weight: 3
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
     region: content
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 10
+    weight: 8
     third_party_settings: {  }
     region: content
   uid:
     type: entity_reference_autocomplete
-    weight: 11
+    weight: 9
     region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  url_redirects:
-    weight: 9
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   created: true
   field_associated_committee: true
   field_event_type: true
   field_meeting_date_time: true
+  langcode: true
   path: true
   promote: true
   sticky: true
   title: true
+  url_redirects: true

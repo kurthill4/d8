@@ -1179,6 +1179,7 @@ display:
         options:
           items_per_page: 5
           offset: 0
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:
