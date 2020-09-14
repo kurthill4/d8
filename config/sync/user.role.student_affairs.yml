@@ -13,4 +13,3 @@ permissions:
   - 'edit terms in campus_resources'
   - 'use text format full_html'
   - 'use workbench access'
-  - 'view encrypted values'

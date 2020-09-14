@@ -1,4 +1,4 @@
-uuid: 64c6c7b4-8a22-4e62-b5ea-e7eac7ebb266
+uuid: 2a65fc7a-d08a-4709-90ed-fdc2c8d04e90
 langcode: en
 status: true
 dependencies: {  }
@@ -6,4 +6,5 @@ id: post_form_manager
 label: 'POST Form Manager'
 weight: 32
 is_admin: null
-permissions: {  }
+permissions:
+  - 'view encrypted values'

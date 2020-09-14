@@ -1,0 +1,10 @@
+uuid: 1787a0ae-ab5b-498c-bc67-9ec84e460131
+langcode: en
+status: true
+dependencies: {  }
+id: lrc_forms_manager
+label: 'LRC Forms Manager'
+weight: 33
+is_admin: null
+permissions:
+  - 'view encrypted values'

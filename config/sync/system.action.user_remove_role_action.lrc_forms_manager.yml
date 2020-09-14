@@ -1,0 +1,14 @@
+uuid: 519002f9-415d-47bb-818c-484f4e49cd4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.lrc_forms_manager
+  module:
+    - user
+id: user_remove_role_action.lrc_forms_manager
+label: 'Remove the LRC Forms Manager role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: lrc_forms_manager

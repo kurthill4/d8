@@ -1,0 +1,14 @@
+uuid: 1906b309-79fd-4118-a8d3-02430c602c1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.lrc_forms_manager
+  module:
+    - user
+id: user_add_role_action.lrc_forms_manager
+label: 'Add the LRC Forms Manager role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: lrc_forms_manager
