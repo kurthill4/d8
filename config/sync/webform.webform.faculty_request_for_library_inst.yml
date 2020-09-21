@@ -1,7 +1,21 @@
 uuid: 26cbe450-3f64-44b0-ae9a-9bb40565b446
 langcode: en
 status: open
-dependencies: {  }
+dependencies:
+  module:
+    - webform_encrypt
+third_party_settings:
+  webform_encrypt:
+    element:
+      instructor_name:
+        encrypt: true
+        encrypt_profile: webform
+      email:
+        encrypt: true
+        encrypt_profile: webform
+      phone_number_s_primary_other_:
+        encrypt: true
+        encrypt_profile: webform
 open: null
 close: null
 uid: 1877
