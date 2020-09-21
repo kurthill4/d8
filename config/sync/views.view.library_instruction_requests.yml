@@ -920,7 +920,7 @@ display:
       title: 'Faculty Request for Library Instruction'
       defaults:
         title: false
-      path: lrc/instruction-request
+      path: lrc/instruction-request/submissions
       filename: Library_Instruction_Requests.csv
       style:
         type: data_export
