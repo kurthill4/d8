@@ -1,4 +1,3 @@
-
 {% set attachThis = url('<current>') %}
 {% if ('/campus/outreach' in attachThis|render|render) or ('/campus/assessment' in attachThis|render|render) or ('/campus/promise' in attachThis|render|render) %}
 	{{ attach_library('student_svcs_chat/chat_outreach') }}
@@ -8,9 +7,8 @@
 	{{ attach_library('student_svcs_chat/chat_finaid') }}
 {% elseif '/campus/studentaffairs' in attachThis|render|render %}
 	{{ attach_library('student_svcs_chat/chat_stdaff') }}
-{% elseif '/programs/entrepreneurship' in attachThis|render|render %}
-	{{ attach_library('student_svcs_chat/chat_business') }}
 {% else %}
+	{{ attach_library('student_svcs_chat/chat_business') }}
 {% endif %}
 		<!--
 				uChat attached by module
